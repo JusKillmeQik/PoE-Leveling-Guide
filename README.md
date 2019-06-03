@@ -1,5 +1,11 @@
 # Leveling Guide
 
+![Cavern of Wrath](previews/LevelingGuidePreview1.png?raw=true "Leveling Guide in The Cavern of Wrath")
+
+![Coast](previews/LevelingGuidePreview2.png?raw=true "Leveling Guide in The Coast Act 2")
+
+![Ravaged Square](previews/LevelingGuidePreview3.png?raw=true "Leveling Guide in The Ravaged Square Part 2")
+
 ### Requirements
 
 You will need AutoHotkey to run this script. Make sure to run it with PoE in windowed fullscreen or windowed mode.
