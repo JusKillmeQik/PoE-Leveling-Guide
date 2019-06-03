@@ -1,0 +1,288 @@
+{
+	"zones" : [
+		{	"default" : "Twilight Strand",
+			"act" : "Act I",
+			"part" : "Part I",
+			"notes" : [
+				"Enemy at the Gate: GEM",
+				"_Mercy Mission: Support GEM",
+				"Breaking Some Eggs: GEM",
+				"_Dweller of the Deep: Passive",
+				"_Lower Prison: Trial",
+				"Caged Brute: Movement GEM",
+				"_Marooned Mariner: Passive",
+				"Siren's Cadence: GEM",
+				"Way Forward: Passive"
+			],
+			"list" : [
+				"Twilight Strand",
+				"Coast",
+				"Mud Flats",
+				"Tidal Island",
+				"Submerged Passage",
+				"Ledge",
+				"Flooded Depths",
+				"Climb",
+				"Lower Prison",
+				"Upper Prison",
+				"Prisoner's Gate",
+				"Ship Graveyard",
+				"Cavern of Wrath",
+				"Cavern of Anger"
+			]
+		},
+		{	"default" : "Southern Forest",
+			"act" : "Act II",
+			"part" : "Part I",
+			"notes" : [
+				"Way Forward: Passive",
+				"_Through Sacred Ground: JEWEL",
+				"_Crypt: Trial",
+				"Bandits: CHOICE",
+				"Intruders in Black: Herald GEM",
+				"_Chamber of Sins 2: Trial",
+				"Sharp and Cruel: GEM"
+
+			],
+			"list" : [
+				"Southern Forest",
+				"Old Fields",
+				"Crossroads",
+				"Chamber of Sins Level 1",
+				"Chamber of Sins Level 2",
+				"Broken Bridge",
+				"Riverways",
+				"Western Forest",
+				"Weaver's Chambers",
+				"Wetlands",
+				"Vaal Ruins",
+				"Caverns",
+				"Ancient Pyramid"
+			]
+		},
+		{	"default" : "City of Sarn",
+			"act" : "Act III",
+			"part" : "Part I",
+			"notes" : [
+				"Lost in Love: Aura GEM",
+				"_Crematorium: Trial",
+				"Victario's Secrets: Passive",
+				"_Catacombs: Trial",
+				"_Sever the Right Hand: GEM",
+				"Piety's Pets: Passive",
+				"_Fixture of Fate: GEM",
+				"_Siosa: GEMS",
+				"_Imperial Gardens: Trial"
+			],
+			"list" : [
+				"City of Sarn",
+				"Slums",
+				"Crematorium",
+				"Sewers",
+				"Marketplace",
+				"Battlefront",
+				"Docks",
+				"Solaris Temple Level 1",
+				"Solaris Temple Level 2",
+				"Ebony Barracks",
+				"Lunaris Temple Level 1",
+				"Lunaris Temple Level 2",
+				"Imperial Gardens",
+				"Sceptre of God",
+				"Upper Sceptre of God"
+			]
+		},
+		{	"default" : "Aqueduct",
+			"act" : "Act IV",
+			"part" : "Part I",
+			"notes" : [
+				"Breaking the Seal: Golem GEM",
+				"_Indomitable Spirit: Passive",
+				"Eternal Nightmare: GEM"
+			],
+			"list" : [
+				"Aqueduct",
+				"Dried Lake",
+				"Mines Level 1",
+				"Mines Level 2",
+				"Crystal Veins",
+				"Daresso's Dream",
+				"Grand Arena",
+				"Kaom's Dream",
+				"Kaom's Stronghold",
+				"Belly of the Beast Level 1",
+				"Belly of the Beast Level 2",
+				"Harvest",
+				"Ascent"
+			]
+		},
+		{	"default" : "Slave Pens",		
+			"act" : "Act V",
+			"part" : "Part I",
+			"notes" : [
+				"_In Service to Science: Passive",
+				"Death to Purity: Threshold JEWEL",
+				"_King's Feast: JEWEL",
+				"_Kitava's Torments: Passive"
+			],
+			"list" : [
+				"Slave Pens",
+				"Control Blocks",
+				"Oriath Square",
+				"Templar Courts",
+				"Chamber of Innocence",
+				"Torched Courts",
+				"Ruined Square",
+				"Ossuary",
+				"Reliquary",
+				"Cathedral Rooftop"
+			]
+		},
+		{	"default" : "Twilight Strand",
+			"act" : "Act VI",
+			"part" : "Part II",
+			"notes" : [
+				"_Fallen from Grace: 2x Respec",
+				"_Lilly: GEMS",
+				"Father of War: Passive",
+				"_Prison: Trial",
+				"_Cloven One: Passive",
+				"_Puppet Mistress: Passive"
+			],
+			"list" : [
+				"Twilight Strand",
+				"Coast",
+				"Mud Flats",
+				"Karui Fortress",
+				"Ridge",
+				"Lower Prison",
+				"Shavronne's Tower",
+				"Prisoner's Gate",
+				"Western Forest",
+				"Riverways",
+				"Wetlands",
+				"Southern Forest",
+				"Cavern of Anger",
+				"Beacon",
+				"Brine King's Reef"
+			]
+		},
+		{	"default" : "Broken Bridge",		
+			"act" : "Act VII",
+			"part" : "Part II",
+			"notes" : [
+				"_Crypt: Trial",
+				"_Chamber of Sins 2: Trial",
+				"Master of a Million Faces: Passive",
+				"_Queen of Despair: Passive",
+				"_Kishara's Star: Passive"
+			],
+			"list" : [
+				"Broken Bridge",
+				"Crossroads",
+				"Fellshrine Ruins",
+				"Crypt",
+				"Crypt 2",
+				"Chamber of Sins Level 1",
+				"Maligaro's Sanctum",
+				"Chamber of Sins Level 2",
+				"Den",
+				"Ashen Fields",
+				"Northern Forest",
+				"Dread Thicket",
+				"Causeway",
+				"Vaal City",
+				"Temple of Decay"
+			]
+		},
+		{	"default" : "Sarn Ramparts",		
+			"act" : "Act VIII",
+			"part" : "Part II",
+			"notes" : [
+				"_Love is Dead: Passive",
+				"_Gemling Legion: Passive",
+				"_Wings of Vastiri: JEWEL",
+				"_Bath House: Trial",
+				"_Reflection of Terror: Passive"
+			],
+			"list" : [
+				"Sarn Ramparts",
+				"Toxic Conduits",
+				"Doedre's Cesspool",
+				"Grand Promenade",
+				"Bath House",
+				"Lunaris Concourse",
+				"Lunaris Temple Level 1",
+				"Lunaris Temple Level 2",
+				"Quay",
+				"Grain Gate",
+				"Imperial Fields",
+				"Solaris Temple Level 1",
+				"Solaris Temple Level 2",
+				"Harbour Bridge"
+			]
+		},
+		{	"default" : "Blood Aqueduct",		
+			"act" : "Act IX",
+			"part" : "Part II",
+			"notes" : [
+				"_Storm Blade: Linked Weapon",
+				"_Queen of the Sands: Passive",
+				"_Tunnel: Trial",
+				"_Ruler of Highgate: Passive"
+			],
+			"list" : [
+				"Blood Aqueduct",
+				"Descent",
+				"Vastiri Desert",
+				"Oasis",
+				"Foothills",
+				"Boiling Lake",
+				"Tunnel",
+				"Quarry",
+				"Shrine of The Winds",
+				"Refinery",
+				"Belly of the Beast",
+				"Black Heart"
+			]
+		},
+		{	"default" : "Cathedral Rooftop",
+			"act" : "Act X",
+			"part" : "Part II",
+			"notes" : [
+				"_Ossuary: Trial",
+				"_Vilenta's Vengeance: Passive",
+				"An End to Hunger: 2x Passive"
+			],
+			"list" : [
+				"Cathedral Rooftop",
+				"Ravaged Square",
+				"Ossuary",
+				"Torched Courts",
+				"Desecrated Chambers",
+				"Reliquary",
+				"Control Blocks",
+				"Canals",
+				"Feeding Trough"
+			]
+		}
+	],
+	"p1acts" : [
+		"Act I",
+		"Act II",
+		"Act III",
+		"Act IV",
+		"Act V"
+	],
+	"p2acts" : [
+		"Act VI",
+		"Act VII",
+		"Act VIII",
+		"Act IX",
+		"Act X"
+	],
+	"parts" : [
+		"Part I",
+		"Part II"
+	]
+}
