@@ -1,4 +1,10 @@
+# Leveling Guide
+
+### Requirements
+
 You will need AutoHotkey to run this script. Make sure to run it with PoE in windowed fullscreen or windowed mode.
+
+### Description
 
 As you go through the levels this script will check your Client.txt file to see the last place you entered. Only the zone name is logged so it will guess the correct act and zone based on the Part you are in. If you go backwards, you may have to manually update the Part which will cause it to recheck the location. If the UI is hidden because you are in the wrong Part, you can press Alt+F1 show it again.
 
@@ -23,10 +29,10 @@ Shift+F1/F2 and Ctrl+F1/F2
 
 Changing acts and zones happens automatically now but you can use the hotkeys to override it for a given map. If you find any bugs please feel free to log an issue on GitHub or send me a message on Reddit u/JusKillmeQik. All of this is based off of a post by u/Poland144 who borrowed code from many other people to make this happen. I completely re-wrote all of the functions and cleaned up the code to make it more readable and removed some unnecessary bloat. I also added in more of Engineering Eternity's notes to the overlay for beginners. The script automatically reads in up to 6 images, so feel free to delete or add images you want in the overlay. Just make sure they are 110 pixels wide by 60 pixels tall. It also took quite a bit to add the automation, but I think I got all of the bugs worked out. I'm hoping the community uses the source or uploads pull requests to make it even better.
 
-Cheers!
+*Cheers!*
 
-Credits:
-rioreiser - original script framework
-Eruyome87 - updates to the library scripts
-Biggoron144 - contributions to the script
-_Treb/ Engineering Eternity - zone layout images
+Credits:  
+rioreiser - original script framework  
+Eruyome87 - updates to the library scripts  
+Biggoron144 - contributions to the script  
+_Treb/ Engineering Eternity - zone layout images  
