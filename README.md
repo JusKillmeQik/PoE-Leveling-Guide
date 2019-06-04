@@ -1,4 +1,4 @@
-# Leveling Guide
+# AHK Leveling Guide
 
 ![Cavern of Wrath](previews/LevelingGuidePreview1.png?raw=true "Leveling Guide in The Cavern of Wrath")
 
