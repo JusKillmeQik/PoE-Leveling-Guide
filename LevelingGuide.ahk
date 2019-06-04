@@ -234,7 +234,7 @@ DrawZone:
         filepath := "" A_ScriptDir "\Overlays\" CurrentAct "\" CurrentZone "_Seed_" A_Index ".jpg" ""
         xPos := xPosLayoutParent + ((maxImages - A_Index) * 115)
 
-        Gui, Image%A_Index%:New, -DPIScale -resize -SysMenu -Caption +AlwaysOnTop +hwndImage%A_Index%Window
+        Gui, Image%A_Index%:New, +E0x20 -DPIScale -resize -SysMenu -Caption +AlwaysOnTop +hwndImage%A_Index%Window
         Gui, Image%A_Index%:Add, Picture, VPic%A_Index% x0 y0 w110 h60, %filepath%
         Gui, Image%A_Index%:Show, w110 h60 x%xPos% y32, Image%A_Index%
         Gui, Image%A_Index%:+OwnerParent
