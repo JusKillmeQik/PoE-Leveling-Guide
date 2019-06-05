@@ -1,8 +1,14 @@
 {
+	"points" : "9",
 	"maxNotesLength" : "40",
 	"offset" : ".8",
 	"opacity" : "200",
 	"Comments" : "
+
+points:		This is the font size
+		I highly recommend leaving this at 9 as the GUI gets too big
+		However on large screens you could increase it slightly
+		Note that the pictures are hardcode and will not change size
 
 maxNotesLenght:	How many characters should be shown before wrapping text
 		The longer this is the larger the Notes GUI will be

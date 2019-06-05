@@ -33,6 +33,7 @@ Try {
 global maxNotesLength := 40
 global offset := .8
 global opacity := 200
+global points := 9
 
 global config := {}
 Try {
@@ -41,6 +42,9 @@ Try {
 } Catch e {
     MsgBox, 16, , % e "`n`nExiting script."
     ExitApp
+}
+If (config.points != "") {
+	points := config.points
 }
 If (config.maxNotesLength != "") {
 	maxNotesLength := config.maxNotesLength
@@ -57,8 +61,6 @@ global client := "C:\Program Files (x86)\Grinding Gear Games\Path of Exile\logs\
 
 global zone_toggle := 0
 global notes_toggle := 0
-
-global points := 9
 
 ;default
 global pixels := 12
