@@ -13,6 +13,7 @@ GroupAdd, PoEWindowGrp, Path of Exile ahk_class POEWindowClass ahk_exe PathOfExi
 GroupAdd, PoEWindowGrp, Path of Exile ahk_class POEWindowClass ahk_exe PathOfExile_x64.exe
 GroupAdd, PoEWindowGrp, Path of Exile ahk_class POEWindowClass ahk_exe PathOfExile_x64Steam.exe
 
+
 ;
 ; ========= Settings =========
 ;
@@ -103,7 +104,7 @@ Return
 
 
 ;
-; ========= MAIN / GUI =========
+; ========= HOTKEYS =========
 ;
  
 
@@ -155,6 +156,11 @@ return
 GoSub, cycleZoneUp
 return
 
+
+;
+; ========= MAIN =========
+;
+
  
 ;========== Subs and Functions =======
 
@@ -177,7 +183,7 @@ ActivatePOE:
 	    Click, down, right
 	}
 return
- 
+
  
 DrawNotes:
     Gui, Notes:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndNotesWindow
