@@ -9,9 +9,11 @@ Menu, Tray, Icon, %A_ScriptDir%\lvlG.ico
 Menu, Tray, Tip, Leveling Guide - PoE
 
 GroupAdd, PoEWindowGrp, Path of Exile ahk_class POEWindowClass ahk_exe PathOfExile.exe
+GroupAdd, PoEWindowGrp, Path of Exile ahk_class POEWindowClass ahk_exe PathOfExile_KG.exe
 GroupAdd, PoEWindowGrp, Path of Exile ahk_class POEWindowClass ahk_exe PathOfExileSteam.exe
 GroupAdd, PoEWindowGrp, Path of Exile ahk_class POEWindowClass ahk_exe PathOfExile_x64.exe
 GroupAdd, PoEWindowGrp, Path of Exile ahk_class POEWindowClass ahk_exe PathOfExile_x64Steam.exe
+GroupAdd, PoEWindowGrp, Path of Exile ahk_class POEWindowClass ahk_exe PathOfExile_x64_KG.exe
 
 
 ;
@@ -591,6 +593,15 @@ ShowGuiTimer:
 	    client .= "logs\Client.txt"
 	}
 
+	Process, Exist, PathOfExile_KG.exe
+	If(!errorlevel) {
+	    closed++
+	} Else {
+	    client := GetProcessPath( "PathOfExile_KG.exe" )
+	    StringTrimRight, client, client, 18
+	    client .= "logs\Client.txt"
+	}
+
 	Process, Exist, PathOfExile_x64.exe
 	If(!errorlevel) {
 	    closed++
@@ -609,7 +620,16 @@ ShowGuiTimer:
 	    client .= "logs\Client.txt"
 	}
 
-	if (closed = 4){
+	Process, Exist, PathOfExile_x64_KG.exe
+	If(!errorlevel) {
+	    closed++
+	} Else {
+	    client := GetProcessPath( "PathOfExile_x64_KG.exe" )
+	    StringTrimRight, client, client, 22
+	    client .= "logs\Client.txt"
+	}
+
+	if (closed = 6){
 	    GoSub, HideAllWindows
 	    ;Sleep 10 seconds, no need to keep checking this
 	    Sleep 10000
