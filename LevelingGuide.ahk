@@ -33,10 +33,14 @@ Try {
     ExitApp
 }
 
-global maxNotesLength := 40
+global points := 9
+global maxNotesWidth := 40
 global offset := .8
 global opacity := 200
-global points := 9
+
+global zone_toggle := 0
+global notes_toggle := 0
+global LG_toggle := 0
 
 global config := {}
 Try {
@@ -49,8 +53,8 @@ Try {
 If (config.points != "") {
 	points := config.points
 }
-If (config.maxNotesLength != "") {
-	maxNotesLength := config.maxNotesLength
+If (config.maxNotesWidth != "") {
+	maxNotesWidth := config.maxNotesWidth
 }
 If (config.offset != "") {
 	offset := config.offset
@@ -58,12 +62,12 @@ If (config.offset != "") {
 If (config.opacity != "") {
 	opacity := config.opacity
 }
+If (config.startHidden != "") {
+	LG_toggle := config.startHidden
+}
 
 ;Default value - this is autodetected now too
 global client := "C:\Program Files (x86)\Grinding Gear Games\Path of Exile\logs\Client.txt"
-
-global zone_toggle := 0
-global notes_toggle := 0
 
 ;default
 global pixels := 12
@@ -78,8 +82,7 @@ pixels := Round( points * (localDPI / 72) )
 spacing := Round( pixels/4 )
 pixels := pixels + spacing
 
-
-global notes_width := Floor( (maxNotesLength-1) * (pixels/2) )
+global notes_width := Floor( (maxNotesWidth-1) * (pixels/2) )
 
 global maxImages := 6
 global xPosLayoutParent := Round( (A_ScreenWidth * offset) - (maxImages * 115) - notes_width )
@@ -90,16 +93,16 @@ WinGet, PoEWindowHwnd, ID, ahk_group PoEWindowGrp
 
 global old_log := ""
 global trigger := false
-global knownZone := 1
 
 global numPart := 1
 global CurrentPart = "Part I"
 global CurrentAct = "Act I"
 global CurrentZone = "Twilight Strand"
 
-Gosub, DrawNotes
 Gosub, DrawZone
-GoSub, ShowAllWindows
+Gosub, DrawNotes
+GoSub, ToggleLevelingGuide
+
 SetTimer, ShowGuiTimer, 250
 
 Return
@@ -108,39 +111,47 @@ Return
 ;
 ; ========= HOTKEYS =========
 ;
- 
+
+;========== Toggle Everything =======
+#IfWinActive, ahk_group PoEWindowGrp
+!F1:: ; Display/Hide all GUIs
+    GoSub, ToggleLevelingGuide
+return
 
 ;========== Zone Layouts =======
 #IfWinActive, ahk_group PoEWindowGrp
-!F1:: ; Display/Hide zone layout window hotkey
-    if (zone_toggle = 0 or knownZone = 0)
+!F2:: ; Display/Hide zone layout window hotkey
+    if (zone_toggle = 0)
     {
-        Gosub, DrawZone
+	Gui, Parent:Show, NA
+        Gui, Controls:Show, NA
 	GoSub, UpdateImages
-	GoSub, ActivatePOE
+	Loop, % maxImages {
+            Gui, Image%A_Index%:Show, NA
+        }
+        zone_toggle := 1
     }
     else
     {
-        Gui, Zone:Destroy
-        Gui, Controls:Destroy
+        Gui, Parent:Cancel
+        Gui, Controls:Cancel
         Loop, % maxImages {
-            Gui, Image%A_Index%:Destroy
-        }        
+            Gui, Image%A_Index%:Cancel
+        }
         zone_toggle := 0
     }
 return
 
 ;========== Reward Notes =======
 #IfWinActive, ahk_group PoEWindowGrp
-!F2:: ; Display/Hide notes window hotkey
+!F3:: ; Display/Hide notes window hotkey
     if (notes_toggle = 0)
     {
-        Gosub, DrawNotes
-	GoSub, ActivatePOE
+        Gosub, setNotes
     }
     else
     {
-        Gui, Notes:Destroy
+        Gui, Notes:Cancel
         notes_toggle := 0
     }
 return
@@ -166,67 +177,48 @@ return
  
 ;========== Subs and Functions =======
 
-ActivatePOE:
-	;Changing the GUI causes the game to lose focus
-	;I put it back and resend the major mouse buttons
-	;This prevents movement from stopping for the refresh
 
-	WinActivate, ahk_id %PoEWindowHwnd%
-	GetKeyState, state, LButton
-	If (state = "D")
-	{
-	    Click, up
-	    Click, down
-	}
-	GetKeyState, state, RButton
-	If (state = "D")
-	{
-	    Click, up, right
-	    Click, down, right
-	}
+ToggleLevelingGuide:
+    if (LG_toggle = 0)
+    {
+        zone_toggle := 1
+	notes_toggle := 1
+	GoSub, ShowAllWindows
+	LG_toggle = 1
+    }
+    else
+    {
+	GoSub, HideAllWindows
+        zone_toggle := 0
+        notes_toggle := 0
+	LG_toggle = 0
+    }
 return
 
- 
+
 DrawNotes:
     Gui, Notes:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndNotesWindow
     Gui, Notes:font, cFFFFFF s%points% w800, Consolas
     Gui, Notes:Color, gray
     WinSet, Transparent, %opacity%
-	
+
+    ;empty space must be initialized at set length
+    ;so that text area can be edited with custom notes
+    numLines := 60
     notesText := ""
-    numLines := 0
-    For key, zoneGroup in data.zones {
-        If (zoneGroup.act = CurrentAct) {
-            For k, val in zoneGroup.notes {
-		beginString := val
-		;Wrap notes longer than maxNotesLength
-		while true
-		{
-		    StringLen, stringLength, val
-		    If (stringLength > maxNotesLength) {
-			StringLeft, beginString, val, maxNotesLength
-			StringTrimLeft, val, val, maxNotesLength
-			notesText .= beginString "`n"
-			numLines++
-		    } else {
-			notesText .= val "`n"
-			numLines++
-			break
-		    }
-		} 
-            }
-	    break
-        }        
+    Loop, % numLines {
+        Loop, % maxNotesWidth {
+	    notesText .= " "
+        }
+	notesText .= "`n"
     }
 
-    numLines := numLines = "" ? 1 : numLines
-    notesText := notesText = "" ? "Add leveling and rewards notes to data.json!" : notesText 
 
-    Gui, Notes:Add, Text, x5 y+5, % notesText
+    Gui, Notes:Add, Text, vActNotes x5 y+5 -Wrap, % notesText
 
     notes_height := (numLines * pixels) + spacing
     
-    Gui, Notes:Show, x%xPosNotes% y5 w%notes_width% h%notes_height%, Gui Notes
+    Gui, Notes:Show, x%xPosNotes% y5 w%notes_width% h%notes_height% NA, Gui Notes
     notes_toggle := 1
 return
 
@@ -246,7 +238,7 @@ DrawZone:
 
         Gui, Image%A_Index%:New, +E0x20 -DPIScale -resize -SysMenu -Caption +AlwaysOnTop +hwndImage%A_Index%Window
         Gui, Image%A_Index%:Add, Picture, VPic%A_Index% x0 y0 w110 h60, %filepath%
-        Gui, Image%A_Index%:Show, w110 h60 x%xPos% y32, Image%A_Index%
+        Gui, Image%A_Index%:Show, w110 h60 x%xPos% y32 NA, Image%A_Index%
         Gui, Image%A_Index%:+OwnerParent
 
 	id := Image%A_Index%Window
@@ -266,10 +258,9 @@ DrawZone:
     Gui, Controls:+OwnerParent
     xPos := xPosLayoutParent + ((maxImages - 4) * 115)
     control_height := 22
-    Gui, Controls:Show, h%control_height% w455 x%xPos% y5, Controls
+    Gui, Controls:Show, h%control_height% w455 x%xPos% y5 NA, Controls
 
     zone_toggle := 1
-    knownZone := 1
 return
 
 GetDelimitedPartListString(data, part) {
@@ -399,6 +390,9 @@ partSelectUI:
     CurrentZone := GetDefaultZone(data.zones, CurrentAct)
     GuiControl,,CurrentZone, % "|" test := GetDelimitedZoneListString(data.zones, CurrentAct)
 
+    If (notes_toggle){
+	GoSub, setNotes
+    }
     GoSub, UpdateImages
     trigger := true
 return
@@ -420,8 +414,42 @@ actSelectUI:
 return
 
 setNotes:
-    Gui, Notes:Destroy
-    GoSub, DrawNotes
+
+    notesText := ""
+    numLines := 0
+    For key, zoneGroup in data.zones {
+        If (zoneGroup.act = CurrentAct) {
+            For k, val in zoneGroup.notes {
+		beginString := val
+		;Wrap notes longer than maxNotesWidth
+		while true
+		{
+		    StringLen, stringLength, val
+		    If (stringLength > maxNotesWidth) {
+			StringLeft, beginString, val, maxNotesWidth
+			StringTrimLeft, val, val, maxNotesWidth
+			notesText .= beginString "`n"
+			numLines++
+		    } else {
+			notesText .= val "`n"
+			numLines++
+			break
+		    }
+		} 
+            }
+	    break
+        }        
+    }
+
+    notesText := notesText = "" ? "Add leveling and rewards notes to data.json!" : notesText 
+
+    GuiControl,Notes:,ActNotes, %notesText%
+
+    numLines := numLines = "" ? 1 : numLines
+    notes_height := (numLines * pixels) + spacing
+    
+    Gui, Notes:Show, x%xPosNotes% y5 w%notes_width% h%notes_height% NA, Gui Notes
+    notes_toggle := 1
 return
 
 zoneSelectUI:
@@ -435,25 +463,19 @@ zoneSelectUI:
 return
 
 cycleZoneUp:
-    knownZone := 1
-
     Gui, Controls:Submit, NoHide
     newZone := RotateZone("next", data.zones, CurrentAct, CurrentZone)
     GuiControl, Controls:Choose, CurrentZone, % "|" newZone
     
     GoSub, UpdateImages
-    GoSub, ActivatePOE
 return
 
 cycleZoneDown:
-    knownZone := 1
-
     Gui, Controls:Submit, NoHide
     newZone := RotateZone("previous", data.zones, CurrentAct, CurrentZone)
     GuiControl, Controls:Choose, CurrentZone, % "|" newZone
     
     GoSub, UpdateImages
-    GoSub, ActivatePOE
 return
 
 UpdateImages:
@@ -470,7 +492,6 @@ UpdateImages:
         id := Image%newIndex%Window
         
         If (FileExist(filepath)) {
-	    
             GuiControl,Image%newIndex%:,Pic%newIndex%, *w110 *h60 %filepath%
             WinSet, Transparent, %opacity%, ahk_id %id%            
         } 
@@ -479,8 +500,6 @@ UpdateImages:
 	    largeId := Image%imageIndex%Window
             WinSet, Transparent, 0, ahk_id %largeId%
         }
-        Gui, Image%A_Index%:Show
-        Gui, Image%A_Index%:+OwnerParent
     }
 return
 
@@ -489,12 +508,12 @@ return
 SearchAct:
     ;You can check more than one line to make this more robust,
     ;but then sometimes voice logs will trigger the wrong map update
-    log := Tail(1, client)
-    ;Only bother checking if the log has changed
+    log := Tail(3, client)
+    ;Only bother checking if the log has changed or someone manually changed Part
     If (log != oldLog or trigger)
     {
-	trigger := false
 	oldLog := log
+	trigger := false
 	travel := "You have entered"
 	IfInString, log, %travel%
 	{
@@ -510,7 +529,6 @@ SearchAct:
 		}
 	    }
 
-	    knownZone := 0
 	    newAct := CurrentAct
 	    ;loop through all of the acts in the current part
 	    Loop, 5 {
@@ -526,11 +544,9 @@ SearchAct:
 				}
 				GuiControl, Controls:Choose, CurrentZone, % "|" newZone
 				CurrentZone := newZone
-				knownZone := 1
 				If (notes_toggle){
 				    GoSub, setNotes
     				}
-				GoSub, ActivatePOE
 				break 3
 			    }
 			}
@@ -539,9 +555,6 @@ SearchAct:
 			break
 		    }        
 		}
-	    }
-	    If (knownZone = "0") {
-		GoSub, HideAllWindows
 	    }
 	    return
 	}
@@ -645,25 +658,17 @@ ShowGuiTimer:
 return
 
 ShowAllWindows:
-    If (zone_toggle and knownZone) {
-        If (not layout_active) {
-            Gui, Parent:Show, NoActivate
-        }
-        If (not controls_active) {
-            Gui, Controls:Show, NoActivate
-            Gui, Controls:+OwnerParent
-        }
-        
-        If (not image_active) {
-            Loop, % maxImages {
-                Gui, Image%A_Index%:Show, NoActivate
-                Gui, Image%A_Index%:+OwnerParent
-            }
+    If (zone_toggle) {
+        Gui, Parent:Show, NoActivate
+        Gui, Controls:Show, NoActivate
+
+        Loop, % maxImages {
+            Gui, Image%A_Index%:Show, NoActivate
         }
     }
     
-    If (not notes_active and notes_toggle) {
-        Gui, Notes:Show, NoActivate
+    If (notes_toggle) {
+	GoSub, setNotes
     }
 return
 
@@ -675,7 +680,6 @@ HideAllWindows:
         Gui, Image%A_Index%:Cancel
     }
     
-    Gui, Zone:Cancel
     Gui, Notes:Cancel
 return
 

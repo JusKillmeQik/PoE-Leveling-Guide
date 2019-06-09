@@ -18,6 +18,8 @@ As you go through the levels this script will check your Client.txt file to see 
 
 Based on the zone you're in, notes and diagrams from this document will be shown in an overlay to make it so you don't have to leave Path of Exile while leveling: https://docs.google.com/document/d/1sExA-AnTbroJ-HN2neZiij5G4X9u2ENlC7m_zf1tqP8/edit
 
+>NOTE: Some of these zones are outdated, there is a separate effort to update them, but if you get lost just explore.
+
 Be sure to familiarize yourself with the above document before using this tool.
 
 Based on the act you're in, your own notes on gems, quests and socket colors can be shown in the notes section. Edit the data.json file to display whatever notes you need for leveling your character. Some placeholder notes are there for an example.
@@ -26,13 +28,16 @@ The config.json file can be used to change the transparency, width and location 
 
 ### Hotkeys
 
->These can be changed directly in the script under the HOTKEYS section if you'd like different bindings
+>These can be changed directly in the script under the HOTKEYS section if you'd like different bindings.
 
-##### Display/Hide the zone layout overlay
+##### Display/Hide the whole Leveling Guide overlay
 Alt+F1 (May need to change default NVidia screenshot binding)
 
-##### Display/Hide the notes overlay
+##### Display/Hide the zone layout overlay
 Alt+F2
+
+##### Display/Hide the notes overlay
+Alt+F3
 
 ##### Increment/Decrement the zone dropdown menu
 Shift+F1 and Ctrl+F1

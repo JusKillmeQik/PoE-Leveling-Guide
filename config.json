@@ -1,8 +1,9 @@
 {
 	"points" : "9",
-	"maxNotesLength" : "40",
+	"maxNotesWidth" : "40",
 	"offset" : ".8",
 	"opacity" : "200",
+	"startHidden" : "0",
 	"Comments" : "
 
 points:		This is the font size
@@ -10,7 +11,7 @@ points:		This is the font size
 		However on large screens you could increase it slightly
 		Note that the pictures are hardcode and will not change size
 
-maxNotesLenght:	How many characters should be shown before wrapping text
+maxNotesWidth:	How many characters should be shown before wrapping text
 		The longer this is the larger the Notes GUI will be
 
 offset:		How much space to leave on the right side of the screen
@@ -24,6 +25,11 @@ offset:		How much space to leave on the right side of the screen
 opacity:	Lower this number to see through the images and notes more
 		200 makes the text crisp but can be hard to see through
 		150 is still readable but some backgrounds make it hard
+
+startHidden:	Should the overlay display on startup
+		By default it will so new users see that it is working
+		However if you would like it just as a reference you can change this value to 1
+
 
 	"
 }
