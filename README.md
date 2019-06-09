@@ -30,6 +30,8 @@ Based on the act you're in, your own notes on gems, quests and socket colors can
 
 The config.json file can be used to change the transparency, width and location of the overlay. I do not recommend changing these settngs, but I have left notes on how to change them if you desire.
 
+### Passive Tree
+
 A full passive tree can now be shown when you are picking where to place your points. This requires some work, but I will outline the steps here.  
 1) Download PoESkillTree: https://github.com/PoESkillTree/PoESkillTree/releases  
 2) Make or Import your tree. Path of Building (and other tools) can export just the skill tree in the form "https://www.pathofexile.com/passive-skill-tree/v/#=="  
@@ -44,7 +46,8 @@ Any image can go there, including a screen shot of poe.ninja's heatmap or any ot
 >These can be changed directly in the script under the HOTKEYS section if you'd like different bindings.
 
 ##### Display/Hide the whole Leveling Guide overlay
-Alt+F1 (May need to change default NVidia screenshot binding)
+Alt+F1  
+(May need to change default NVidia screenshot bindings)
 
 ##### Display/Hide the zone layout overlay
 Alt+F2
@@ -53,8 +56,8 @@ Alt+F2
 Alt+F3
 
 ##### Display/Hide the tree
-P (This will open your tree and show the image)
-If you get stuck with the tree overlay showing when you are not looking at the tree, press Spacebar.
+P  
+This will open your tree and show the image. If you get stuck with the tree overlay showing when you are not looking at the tree, press Spacebar.
 
 ##### Increment/Decrement the zone dropdown menu
 Shift+F1 and Ctrl+F1
