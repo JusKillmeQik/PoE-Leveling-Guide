@@ -2,6 +2,7 @@
 	"points" : "9",
 	"maxNotesWidth" : "40",
 	"offset" : ".8",
+	"treeSide" : "left",
 	"opacity" : "200",
 	"startHidden" : "0",
 	"Comments" : "
@@ -21,6 +22,10 @@ offset:		How much space to leave on the right side of the screen
 		Great setting if you don't use the overlay map
 		.8 = Default setting, as far as you can go without covering anything
 		This setting basically centers the UI but covers a lot of screen
+
+treeSide:	Which side of the screen to show the passive tree overlay
+		The default is the left so it does not interfere with the Inventory
+		However, I prefer it on the right and I assume others may as well
 
 opacity:	Lower this number to see through the images and notes more
 		200 makes the text crisp but can be hard to see through

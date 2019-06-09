@@ -6,9 +6,13 @@
 
 ![Ravaged Square](previews/LevelingGuidePreview3.png?raw=true "Leveling Guide in The Ravaged Square Part 2")
 
+![Passive Tree](previews/LevelingGuidePreview4.png?raw=true "Will now show PoESkillTree image")
+
 ### Requirements
 
-You will need AutoHotkey to run this script. Make sure to run it with PoE in windowed fullscreen or windowed mode.
+You will need AutoHotkey to run this script. https://www.autohotkey.com/
+
+Make sure to run it with PoE in windowed fullscreen or windowed mode.
 
 >NOTE: Some users will need to run this script with right-click 'Run as Administrator' in order for the automatic detection to work. Please try without this first.
 
@@ -26,6 +30,15 @@ Based on the act you're in, your own notes on gems, quests and socket colors can
 
 The config.json file can be used to change the transparency, width and location of the overlay. I do not recommend changing these settngs, but I have left notes on how to change them if you desire.
 
+A full passive tree can now be shown when you are picking where to place your points. This requires some work, but I will outline the steps here.  
+1) Download PoESkillTree: https://github.com/PoESkillTree/PoESkillTree/releases  
+2) Make or Import your tree. Path of Building (and other tools) can export just the skill tree in the form "https://www.pathofexile.com/passive-skill-tree/v/#=="  
+3) Go to Tools, Take Screenshot of Skilled Nodes...  
+4) Export the image as *tree.jpg*  
+5) Place the file in the "Overlays/Tree" folder  
+
+Any image can go there, including a screen shot of poe.ninja's heatmap or any other picture you want to look at while building your tree. The steps above are simply what I used to get a clean looking tree. If you don't want a tree to show up, simply delete or rename that *tree.jpg* file.
+
 ### Hotkeys
 
 >These can be changed directly in the script under the HOTKEYS section if you'd like different bindings.
@@ -38,6 +51,10 @@ Alt+F2
 
 ##### Display/Hide the notes overlay
 Alt+F3
+
+##### Display/Hide the tree
+P (This will open your tree and show the image)
+If you get stuck with the tree overlay showing when you are not looking at the tree, press Spacebar.
 
 ##### Increment/Decrement the zone dropdown menu
 Shift+F1 and Ctrl+F1

@@ -4,6 +4,7 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #Include, %A_ScriptDir%\lib\JSON.ahk
+#Include, %A_ScriptDir%\lib\Gdip.ahk
 
 Menu, Tray, Icon, %A_ScriptDir%\lvlG.ico
 Menu, Tray, Tip, Leveling Guide - PoE
@@ -36,10 +37,12 @@ Try {
 global points := 9
 global maxNotesWidth := 40
 global offset := .8
+global treeSide := "left"
 global opacity := 200
 
 global zone_toggle := 0
 global notes_toggle := 0
+global tree_toggle := 0
 global LG_toggle := 0
 
 global config := {}
@@ -58,6 +61,9 @@ If (config.maxNotesWidth != "") {
 }
 If (config.offset != "") {
 	offset := config.offset
+}
+If (config.treeSide != "") {
+	treeSide := config.treeSide
 }
 If (config.opacity != "") {
 	opacity := config.opacity
@@ -100,7 +106,10 @@ global CurrentAct = "Act I"
 global CurrentZone = "Twilight Strand"
 
 Gosub, DrawZone
+Gosub, DrawTree
 Gosub, DrawNotes
+
+Gosub, HideAllWindows
 GoSub, ToggleLevelingGuide
 
 SetTimer, ShowGuiTimer, 250
@@ -155,6 +164,31 @@ return
         notes_toggle := 0
     }
 return
+
+;========== Skill Tree =======
+#IfWinActive, ahk_group PoEWindowGrp
+~p:: ; Display/Hide tree when it's open
+    if (tree_toggle = 0)
+    {
+        Gui, Tree:Show, NA
+	tree_toggle := 1
+    }
+    else
+    {
+        Gui, Tree:Cancel
+        tree_toggle := 0
+    }
+return
+
+;========== Clear extra overlays =======
+#IfWinActive, ahk_group PoEWindowGrp
+~Space:: ; Display/Hide extra overlays
+    if (tree_toggle = 1)
+    {
+        Gui, Tree:Cancel
+        tree_toggle := 0
+    }
+return
  
 
 ;========== Switching Dropdowns =======
@@ -191,10 +225,46 @@ ToggleLevelingGuide:
 	GoSub, HideAllWindows
         zone_toggle := 0
         notes_toggle := 0
+        tree_toggle := 0
 	LG_toggle = 0
     }
 return
 
+DrawTree:
+
+    image_file := "" A_ScriptDir "\Overlays\Tree\tree.jpg" ""
+    If (FileExist(image_file)) {
+	GDIPToken := Gdip_Startup()
+
+	pBM := Gdip_CreateBitmapFromFile( image_file )
+	original_treeW:= Gdip_GetImageWidth( pBM )
+	original_treeH:= Gdip_GetImageHeight( pBM )
+
+	Gdip_DisposeImage( pBM )
+	Gdip_Shutdown( GDIPToken )
+
+	;Only build the tree if the file is a valid size picture
+	If (original_treeW and original_treeH) {
+	    treeW := Round( A_ScreenWidth / 3 )
+	    treeRatio := treeW / original_treeW
+	    treeH := original_treeH * treeRatio
+
+	    If (treeSide = "left") {
+		xTree := 0
+	    } else {
+		xTree := A_ScreenWidth - treeW
+	    }
+	    yTree := A_ScreenHeight - treeH
+
+	    Gui, Tree:+E0x20 -Caption +ToolWindow +LastFound +AlwaysOnTop -Resize +DPIScale +hwndTreeWindow
+	    Gui, Tree:Add, Picture, x0 y0 w%treeW% h%treeH%, %image_file%
+
+	    Gui, Tree:Show, x%xTree% y%yTree% w%treeW% h%treeH% NA, Gui Tree
+	    WinSet, Transparent, 240, ahk_id %TreeWindow%
+	}
+    }
+
+return
 
 DrawNotes:
     Gui, Notes:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndNotesWindow
@@ -517,8 +587,8 @@ SearchAct:
 	travel := "You have entered"
 	IfInString, log, %travel%
 	{
-	    newPart := "Lioneye's Watch"
-	    IfInString, log, %newPart%
+	    newPartTest := "Lioneye's Watch"
+	    IfInString, log, %newPartTest%
 	    {
 		act5LastZone := "Cathedral Rooftop"
 		If (CurrentZone = act5LastZone)
@@ -667,6 +737,10 @@ ShowAllWindows:
         }
     }
     
+    If (tree_toggle) {
+	Gui, Tree:Show, NoActivate
+    }
+
     If (notes_toggle) {
 	GoSub, setNotes
     }
@@ -681,6 +755,8 @@ HideAllWindows:
     }
     
     Gui, Notes:Cancel
+
+    Gui, Tree:Cancel
 return
 
 Tail(k,file)   ; Return the last k lines of file
