@@ -1,0 +1,4 @@
+Move down left from Waypoint,
+then follow path
+
+Recommend cold resistance

@@ -35,13 +35,14 @@ Try {
 }
 
 global points := 9
-global maxNotesWidth := 40
+global maxNotesWidth := 30
+global maxGuideWidth := 30
 global offset := .8
-global treeSide := "left"
+global treeSide := "right"
 global opacity := 200
 
 global zone_toggle := 0
-global notes_toggle := 0
+global level_toggle := 0
 global tree_toggle := 0
 global LG_toggle := 0
 
@@ -58,6 +59,9 @@ If (config.points != "") {
 }
 If (config.maxNotesWidth != "") {
 	maxNotesWidth := config.maxNotesWidth
+}
+If (config.maxGuideWidth != "") {
+	maxGuideWidth := config.maxGuideWidth
 }
 If (config.offset != "") {
 	offset := config.offset
@@ -84,15 +88,29 @@ RegRead, localDPI, HKEY_CURRENT_USER, Control Panel\Desktop\WindowMetrics, Appli
 If (errorlevel) {
     localDPI := 96
 }
-pixels := Round( points * (localDPI / 72) )
-spacing := Round( pixels/4 )
+pixels := Ceil( points * (localDPI / 72) )
 pixels := pixels + spacing
 
-global notes_width := Floor( (maxNotesWidth-1) * (pixels/2) )
+maxNotesWidth := maxNotesWidth < 30 ? 30 : maxNotesWidth
+maxGuideWidth := maxGuideWidth < 22 ? 22 : maxGuideWidth
+global notes_width := Ceil( (maxNotesWidth) * (pixels/2) )
+global guide_width := Ceil( (maxGuideWidth) * (pixels/2) )
+global nav_width := Ceil( (guide_width-5)/2 )
+global level_width := Ceil( 7 * (pixels/2) )
+global exp_width := Ceil( 10 * (pixels/2) )
+global control_height := pixels + 7
+global exp_height := control_height
 
 global maxImages := 6
-global xPosLayoutParent := Round( (A_ScreenWidth * offset) - (maxImages * 115) - notes_width )
+global xPosLayoutParent := Round( (A_ScreenWidth * offset) - (maxImages * 115) - guide_width - notes_width - 10 )
+global yPosNotes := 5 + control_height + 5
 global xPosNotes := xPosLayoutParent + (maxImages * 115)
+global xPosGuide := xPosLayoutParent + (maxImages * 115) + notes_width + 5
+
+global xPosLevel := Round( (A_ScreenWidth * .287) )
+global yPosLevel := Round( (A_ScreenHeight * .96) )
+global xPosExp := xPosLevel + level_width + 5
+global yPosExp := yPosLevel
 
 global PoEWindowHwnd := ""
 WinGet, PoEWindowHwnd, ID, ahk_group PoEWindowGrp
@@ -103,11 +121,15 @@ global trigger := false
 global numPart := 1
 global CurrentPart = "Part I"
 global CurrentAct = "Act I"
-global CurrentZone = "Twilight Strand"
+global CurrentZone = "01 Twilight Strand"
+global CurrentLevel = "01"
 
 Gosub, DrawZone
 Gosub, DrawTree
 Gosub, DrawNotes
+Gosub, DrawGuide
+GoSub, DrawLevel
+GoSub, DrawExp
 
 Gosub, HideAllWindows
 GoSub, ToggleLevelingGuide
@@ -129,11 +151,9 @@ return
 
 ;========== Zone Layouts =======
 #IfWinActive, ahk_group PoEWindowGrp
-!F2:: ; Display/Hide zone layout window hotkey
-    if (zone_toggle = 0)
+!F2:: ; Display/Hide zone layout images hotkey
+    if (zone_toggle = 0 and LG_toggle)
     {
-	Gui, Parent:Show, NA
-        Gui, Controls:Show, NA
 	GoSub, UpdateImages
 	Loop, % maxImages {
             Gui, Image%A_Index%:Show, NA
@@ -142,8 +162,6 @@ return
     }
     else
     {
-        Gui, Parent:Cancel
-        Gui, Controls:Cancel
         Loop, % maxImages {
             Gui, Image%A_Index%:Cancel
         }
@@ -151,23 +169,31 @@ return
     }
 return
 
-;========== Reward Notes =======
+;========== Experience Tracker =======
 #IfWinActive, ahk_group PoEWindowGrp
-!F3:: ; Display/Hide notes window hotkey
-    if (notes_toggle = 0)
+!F3:: ; Display/Hide experience hotkey
+    if (level_toggle = 0)
     {
-        Gosub, setNotes
+        Gui, Level:Show, NA
+	Gui, Exp:Show, NA
+	level_toggle := 1
     }
     else
     {
-        Gui, Notes:Cancel
-        notes_toggle := 0
+        Gui, Level:Cancel
+        Gui, Exp:Cancel
+        level_toggle := 0
     }
+return
+
+#IfWinActive, ahk_group PoEWindowGrp
+!F5:: ; Display/Hide experience hotkey
+    MsgBox %CurrentLevel%
 return
 
 ;========== Skill Tree =======
 #IfWinActive, ahk_group PoEWindowGrp
-~p:: ; Display/Hide tree when it's open
+!p:: ; Display/Hide passive tree when it's open
     if (tree_toggle = 0)
     {
         Gui, Tree:Show, NA
@@ -215,16 +241,16 @@ return
 ToggleLevelingGuide:
     if (LG_toggle = 0)
     {
-        zone_toggle := 1
-	notes_toggle := 1
+        ;zone_toggle := 1
+	;level_toggle := 1
 	GoSub, ShowAllWindows
 	LG_toggle = 1
     }
     else
     {
 	GoSub, HideAllWindows
-        zone_toggle := 0
-        notes_toggle := 0
+        ;zone_toggle := 0
+        ;level_toggle := 0
         tree_toggle := 0
 	LG_toggle = 0
     }
@@ -249,10 +275,10 @@ DrawTree:
 	    treeRatio := treeW / original_treeW
 	    treeH := original_treeH * treeRatio
 
-	    If (treeSide = "left") {
-		xTree := 0
-	    } else {
+	    If (treeSide = "right") {
 		xTree := A_ScreenWidth - treeW
+	    } else {
+		xTree := 0
 	    }
 	    yTree := A_ScreenHeight - treeH
 
@@ -284,12 +310,37 @@ DrawNotes:
     }
 
 
-    Gui, Notes:Add, Text, vActNotes x5 y+5 -Wrap, % notesText
+    Gui, Notes:Add, Text, vActNotes x5 y+3 -Wrap, % notesText
 
     notes_height := (numLines * pixels) + spacing
     
-    Gui, Notes:Show, x%xPosNotes% y5 w%notes_width% h%notes_height% NA, Gui Notes
-    notes_toggle := 1
+    Gui, Notes:Show, x%xPosNotes% y%yPosNotes% w%notes_width% h%notes_height% NA, Gui Notes
+return
+
+DrawGuide:
+    Gui, Guide:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndGuideWindow
+    Gui, Guide:font, cFFFFFF s%points% w800, Consolas
+    Gui, Guide:Color, gray
+    WinSet, Transparent, %opacity%
+
+    ;empty space must be initialized at set length
+    ;so that text area can be edited with custom notes
+    numLines := 60
+    guideText := ""
+    Loop, % numLines {
+        Loop, % maxNotesWidth {
+	    guideText .= " "
+        }
+	guideText .= "`n"
+    }
+
+
+    Gui, Guide:Add, Text, vActGuide x5 y+3 -Wrap, % guideText
+
+    guide_height := (numLines * pixels) + spacing
+
+    Gui, Guide:Show, x%xPosGuide% y%yPosNotes% w%guide_width% h%guide_height% NA, Gui Guide
+    guide_toggle := 1
 return
 
 
@@ -300,15 +351,15 @@ DrawZone:
     WinSet, TransColor, brown, A
     
     WinSet, ExStyle, +0x20, ahk_id %ParentWindow% ; 0x20 = WS_EX_CLICKTHROUGH
-    WinSet, Style, -0xC00000, ahk_id %ParentWindow%
+    WinSet, Style, -0xC00000, ahk_id %ParentWindow%x
 
     Loop, % maxImages {
         filepath := "" A_ScriptDir "\Overlays\" CurrentAct "\" CurrentZone "_Seed_" A_Index ".jpg" ""
-        xPos := xPosLayoutParent + ((maxImages - A_Index) * 115)
+        xPos := xPosLayoutParent + ((maxImages - (A_Index + 0)) * 115)
 
         Gui, Image%A_Index%:New, +E0x20 -DPIScale -resize -SysMenu -Caption +AlwaysOnTop +hwndImage%A_Index%Window
         Gui, Image%A_Index%:Add, Picture, VPic%A_Index% x0 y0 w110 h60, %filepath%
-        Gui, Image%A_Index%:Show, w110 h60 x%xPos% y32 NA, Image%A_Index%
+        Gui, Image%A_Index%:Show, w110 h60 x%xPos% y5 NA, Image%A_Index%
         Gui, Image%A_Index%:+OwnerParent
 
 	id := Image%A_Index%Window
@@ -318,19 +369,41 @@ DrawZone:
             WinSet, Transparent, %opacity%, ahk_id %id%
         }
     }
+    zone_toggle := 1
     
     Gui, Controls:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndControls
     Gui, Controls:Color, gray
     Gui, Controls:Font, s%points%, Consolas
-    Gui, Controls:Add, DropDownList, VCurrentPart GpartSelectUI x0 y0 w110 h200 , % GetDelimitedPartListString(data.parts, CurrentPart)
-    Gui, Controls:Add, DropDownList, VCurrentAct GactSelectUI x+5 y0 w110 h200 , % GetDelimitedActListString(data.zones, CurrentAct, CurrentPart)
-    Gui, Controls:Add, DropDownList, VCurrentZone GzoneSelectUI x+5 y0 w225 h300 , % GetDelimitedZoneListString(data.zones, CurrentAct)
+    Gui, Controls:Add, DropDownList, VCurrentZone GzoneSelectUI x0 y0 w%notes_width% h300 , % GetDelimitedZoneListString(data.zones, CurrentAct)
+    Gui, Controls:Add, DropDownList, VCurrentAct GactSelectUI x+5 y0 w%nav_width% h200 , % GetDelimitedActListString(data.zones, CurrentAct, CurrentPart)
+    Gui, Controls:Add, DropDownList, VCurrentPart GpartSelectUI x+5 y0 w%nav_width% h200 , % GetDelimitedPartListString(data.parts, CurrentPart)
     Gui, Controls:+OwnerParent
-    xPos := xPosLayoutParent + ((maxImages - 4) * 115)
-    control_height := 22
-    Gui, Controls:Show, h%control_height% w455 x%xPos% y5 NA, Controls
+    xPos := xPosLayoutParent + (maxImages * 115)
+    control_width := (nav_width*2) + notes_width + 10
+    Gui, Controls:Show, h%control_height% w%control_width% x%xPos% y5 NA, Controls
+return
 
-    zone_toggle := 1
+DrawLevel:
+    Gui, Level:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndlevel
+    Gui, Level:Color, gray
+    Gui, Level:Font, s%points%, Consolas
+    Gui, Level:Add, Edit, x0 y0 h%control_height% w%level_width% r1 GlevelSelectUI, Level
+    Gui, Level:Add, UpDown, vCurrentLevel GlevelSelectUI Range1-100, 1
+    Gui, Level:Show, h%control_height% w%level_width% x%xPosLevel% y%yPosLevel% NA, Level
+    level_toggle := 1
+return
+
+DrawExp:
+    Gui, Exp:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndExpWindow
+    Gui, Exp:font, cFFFFFF s%points% w%level_width%, Consolas
+    Gui, Exp:Color, gray
+    WinSet, Transparent, %opacity%
+
+    calcExp := "Exp: 100.0%"
+
+    Gui, Exp:Add, Text, vCurrentExp x3 y3, % calcExp
+
+    Gui, Exp:Show, x%xPosExp% y%yPosExp% w%exp_width% h%exp_height% NA, Gui Exp
 return
 
 GetDelimitedPartListString(data, part) {
@@ -349,7 +422,7 @@ GetDelimitedPartListString(data, part) {
 GetDelimitedActListString(data, act, part) {
 	dList := ""
 
-	For key, zoneGroup in data {        
+	For key, zoneGroup in data {
             If (zoneGroup.part = part) {
 		dList .= zoneGroup.act . "|"
 	    }
@@ -460,8 +533,9 @@ partSelectUI:
     CurrentZone := GetDefaultZone(data.zones, CurrentAct)
     GuiControl,,CurrentZone, % "|" test := GetDelimitedZoneListString(data.zones, CurrentAct)
 
-    If (notes_toggle){
+    If (LG_toggle){
 	GoSub, setNotes
+	GoSub, setGuide
     }
     GoSub, UpdateImages
     trigger := true
@@ -477,49 +551,107 @@ actSelectUI:
     CurrentZone := GetDefaultZone(data.zones, CurrentAct)
     GuiControl,,CurrentZone, % "|" test := GetDelimitedZoneListString(data.zones, CurrentAct)
         
-    If (notes_toggle){
+    If (LG_toggle){
 	GoSub, setNotes
+	GoSub, setGuide
     }
     GoSub, UpdateImages
 return
 
-setNotes:
+levelSelectUI:
+    Gui, Level:Submit, NoHide
+return
 
+setNotes:
     notesText := ""
     numLines := 0
-    For key, zoneGroup in data.zones {
-        If (zoneGroup.act = CurrentAct) {
-            For k, val in zoneGroup.notes {
-		beginString := val
-		;Wrap notes longer than maxNotesWidth
-		while true
-		{
-		    StringLen, stringLength, val
-		    If (stringLength > maxNotesWidth) {
-			StringLeft, beginString, val, maxNotesWidth
-			StringTrimLeft, val, val, maxNotesWidth
-			notesText .= beginString "`n"
-			numLines++
-		    } else {
-			notesText .= val "`n"
-			numLines++
-			break
-		    }
-		} 
-            }
-	    break
-        }        
+    filepath := "" A_ScriptDir "\Overlays\" CurrentAct "\" CurrentZone ".txt" ""
+    Loop, read, %filepath%
+    {
+	val:= A_LoopReadLine
+        beginString := A_LoopReadLine
+	;Wrap notes longer than maxNotesWidth
+	while true
+	{
+	    StringLen, stringLength, val
+	    If (stringLength > maxNotesWidth) {
+		StringLeft, beginString, val, maxNotesWidth
+		StringTrimLeft, val, val, maxNotesWidth
+		notesText .= beginString "`n"
+		numLines++
+	    } else {
+		notesText .= val "`n"
+		numLines++
+		break
+	    }
+	}
     }
 
-    notesText := notesText = "" ? "Add leveling and rewards notes to data.json!" : notesText 
+    shortpath := "" "\Overlays\" CurrentAct "\`n" CurrentZone ".txt" ""
+    numLines := notesText = "" ? 2 : numLines
+    notesText := notesText = "" ? shortpath : notesText
 
     GuiControl,Notes:,ActNotes, %notesText%
 
-    numLines := numLines = "" ? 1 : numLines
+    numLines := numLines = 0 ? 1 : numLines
     notes_height := (numLines * pixels) + spacing
     
-    Gui, Notes:Show, x%xPosNotes% y5 w%notes_width% h%notes_height% NA, Gui Notes
-    notes_toggle := 1
+    Gui, Notes:Show, x%xPosNotes% y%yPosNotes% w%notes_width% h%notes_height% NA, Gui Notes
+return
+
+setGuide:
+    guideText := ""
+    numLines := 0
+    filepath := "" A_ScriptDir "\Overlays\" CurrentAct "\" "guide.txt" ""
+    Loop, read, %filepath%
+    {
+	val:= A_LoopReadLine
+        beginString := A_LoopReadLine
+	;Wrap lines longer than maxGuideWidth
+	while true
+	{
+	    StringLen, stringLength, val
+	    If (stringLength > maxGuideWidth) {
+		StringLeft, beginString, val, maxGuideWidth
+		StringTrimLeft, val, val, maxGuideWidth
+		guideText .= beginString "`n"
+		numLines++
+	    } else {
+		guideText .= val "`n"
+		numLines++
+		break
+	    }
+	}
+    }
+
+    shortpath := "" "\Overlays\" CurrentAct "\`n" "guide.txt" ""
+    numLines := guideText = "" ? 2 : numLines
+    guideText := guideText = "" ? shortpath : guideText
+
+    GuiControl,Guide:,ActGuide, %guideText%
+
+    numLines := numLines = "" ? 1 : numLines
+    guide_height := (numLines * pixels) + spacing  
+
+    Gui, Guide:Show, x%xPosGuide% y%yPosNotes% w%guide_width% h%guide_height% NA, Gui Guide
+    guide_toggle := 1
+return
+
+SetExp:
+    safeZone := Floor(3 + (CurrentLevel/16) )
+    monsterLevel := SubStr(CurrentZone, 1, 2)
+    effectiveDiff := Max( Abs(CurrentLevel - monsterLevel) - safeZone, 0 )
+    expPenalty := (CurrentLevel+5)/(CurrentLevel+5+Sqrt(effectiveDiff*effectiveDiff*effectiveDiff*effectiveDiff*effectiveDiff))
+    expMulti := Max( Sqrt(expPenalty*expPenalty*expPenalty), 0.01 )
+
+    calcExp := "Exp: "
+
+    calcExp .= Round(expMulti * 100)
+    calcExp .= "%"
+
+    GuiControl,Exp:,CurrentExp, %calcExp%
+
+    Gui, Exp:Show, x%xPosExp% y%yPosExp% w%exp_width% h%exp_height% NA, Gui Exp
 return
 
 zoneSelectUI:
@@ -530,6 +662,15 @@ zoneSelectUI:
     }
     
     GoSub, UpdateImages
+
+    If(LG_toggle){
+	GoSub, setNotes
+	GoSub, setGuide
+    }
+
+    If(level_toggle){
+	GoSub, setExp
+    }
 return
 
 cycleZoneUp:
@@ -538,6 +679,15 @@ cycleZoneUp:
     GuiControl, Controls:Choose, CurrentZone, % "|" newZone
     
     GoSub, UpdateImages
+
+    If (LG_toggle){
+	GoSub, setNotes
+	GoSub, setGuide
+    }
+
+    If(level_toggle){
+	GoSub, setExp
+    }
 return
 
 cycleZoneDown:
@@ -546,6 +696,15 @@ cycleZoneDown:
     GuiControl, Controls:Choose, CurrentZone, % "|" newZone
     
     GoSub, UpdateImages
+
+    If (LG_toggle){
+	GoSub, setNotes
+	GoSub, setGuide
+    }
+
+    If(level_toggle){
+	GoSub, setExp
+    }
 return
 
 UpdateImages:
@@ -584,6 +743,16 @@ SearchAct:
     {
 	oldLog := log
 	trigger := false
+	levelUp := "is now level"
+	IfInString, log, %levelUp%
+	{
+	    levelPos := InStr(log, levelUp, false)
+	    newLevel := SubStr(log, levelPos+13, 2)
+	    GuiControl,Level:,CurrentLevel, %newLevel%
+	    If(level_toggle){
+		GoSub, setExp
+	    }
+	}
 	travel := "You have entered"
 	IfInString, log, %travel%
 	{
@@ -603,9 +772,10 @@ SearchAct:
 	    ;loop through all of the acts in the current part
 	    Loop, 5 {
 		For key, zoneGroup in data.zones {
-		    If (zoneGroup.act = newAct and zoneGroup.part = CurrentPart) {
+		    If (zoneGroup.act = newAct) {
 			For k, newZone in zoneGroup.list {
-			    IfInString, log, %newZone%
+			    StringTrimLeft, zoneSearch, newZone, 3
+			    IfInString, log, %zoneSearch%
 			    {
 				If (newAct != CurrentAct) {
 				    GuiControl, Controls:Choose, CurrentAct, % "|" newAct
@@ -614,9 +784,13 @@ SearchAct:
 				}
 				GuiControl, Controls:Choose, CurrentZone, % "|" newZone
 				CurrentZone := newZone
-				If (notes_toggle){
+				If (LG_toggle){
 				    GoSub, setNotes
+				    GoSub, setGuide
     				}
+				If(level_toggle){
+				    GoSub, setExp
+				}
 				break 3
 			    }
 			}
@@ -637,6 +811,7 @@ ShowGuiTimer:
     notes_active := WinActive("ahk_id" NotesWindow)
     layout_active := WinActive("ahk_id" ParentWindow)
     controls_active := WinActive("ahk_id" Controls)
+    level_active := WinActive("ahk_id" Level)
     
     image_active := false
     Loop, % maxImages {
@@ -646,7 +821,7 @@ ShowGuiTimer:
         }       
     }
     
-    If (poe_active or (notes_active or layout_active or controls_active or image_active)) {
+    If (poe_active or (notes_active or layout_active or controls_active or image_active or level_active)) {
         ; show all gui windows
         GoSub, ShowAllWindows
     } Else {
@@ -728,33 +903,44 @@ ShowGuiTimer:
 return
 
 ShowAllWindows:
-    If (zone_toggle) {
+    If (LG_toggle) {
         Gui, Parent:Show, NoActivate
         Gui, Controls:Show, NoActivate
+    }
+    controls_active := WinActive("ahk_id" Controls)
+    If (LG_toggle and !controls_active) {
+	GoSub, setNotes
+	GoSub, setGuide
+    }
 
+    If (LG_toggle and zone_toggle) {
         Loop, % maxImages {
             Gui, Image%A_Index%:Show, NoActivate
         }
     }
+
+    If (level_toggle) {
+        Gui, Level:Show, NoActivate
+	GoSub, setExp
+    }
     
     If (tree_toggle) {
 	Gui, Tree:Show, NoActivate
-    }
-
-    If (notes_toggle) {
-	GoSub, setNotes
     }
 return
 
 HideAllWindows:
     Gui, Parent:Cancel
     Gui, Controls:Cancel
+    Gui, Level:Cancel
+    Gui, Exp:Cancel
     
     Loop, % maxImages {
         Gui, Image%A_Index%:Cancel
     }
     
     Gui, Notes:Cancel
+    Gui, Guide:Cancel
 
     Gui, Tree:Cancel
 return

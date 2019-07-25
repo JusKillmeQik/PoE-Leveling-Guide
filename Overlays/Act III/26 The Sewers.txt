@@ -1,0 +1,6 @@
+Pick up the bust before the
+Waypoint, after it is another
+Up and left is the last bust
+Up and right is the exit
+
+CRAFT - Physical damage

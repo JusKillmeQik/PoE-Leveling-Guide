@@ -1,0 +1,6 @@
+Go to the center of the zone
+always left or right
+
+The hallway next to the
+Waypoint always leads to
+the next zone

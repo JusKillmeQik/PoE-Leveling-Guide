@@ -18,7 +18,7 @@ Make sure to run it with PoE in windowed fullscreen or windowed mode.
 
 ### Description
 
-As you go through the levels this script will check your Client.txt file to see the last place you entered. Only the zone name is logged so it will guess the correct act and zone based on the Part you are in. If you go backwards, you may have to manually update the Part which will cause it to recheck the location. If the UI is hidden because you are in the wrong Part, you can press Alt+F1 show it again.
+As you go through the leveling zones this script will check your Client.txt file to see the last place you entered. Only the zone name is logged so it will guess the correct act and zone based on the Part you are in. If you go backwards, you may have to manually update the Part which will cause it to recheck the location.
 
 Based on the zone you're in, notes and diagrams from this document will be shown in an overlay to make it so you don't have to leave Path of Exile while leveling: https://docs.google.com/document/d/1sExA-AnTbroJ-HN2neZiij5G4X9u2ENlC7m_zf1tqP8/edit
 
@@ -26,7 +26,7 @@ Based on the zone you're in, notes and diagrams from this document will be shown
 
 Be sure to familiarize yourself with the above document before using this tool.
 
-Based on the act you're in, your own notes on gems, quests and socket colors can be shown in the notes section. Edit the data.json file to display whatever notes you need for leveling your character. Some placeholder notes are there for an example.
+Based on the act you're in, your own notes on gems, quests and socket colors can be shown in the notes section. Each zone in the Overlays folder has a text file named after it, where you can edit the zone specific information you would like available. Each Act has a guide.txt file that you can also edit for information you would like available during the whole Act. Some placeholder notes are there for an example.
 
 The config.json file can be used to change the transparency, width and location of the overlay. I do not recommend changing these settngs, but I have left notes on how to change them if you desire.
 
@@ -39,7 +39,11 @@ A full passive tree can now be shown when you are picking where to place your po
 4) Export the image as *tree.jpg*  
 5) Place the file in the "Overlays/Tree" folder  
 
-Any image can go there, including a screen shot of poe.ninja's heatmap or any other picture you want to look at while building your tree. The steps above are simply what I used to get a clean looking tree. If you don't want a tree to show up, simply delete or rename that *tree.jpg* file.
+Any image can go there, including a screen shot of poe.ninja's heatmap or any other picture you want to look at while building your tree. The steps above are simply what I used to get a clean looking tree. If you don't want a tree to show up, simply delete or rename that *tree.jpg* file.\
+
+### Experience Tracker
+
+The guide now shows your level and percent experience gain in the current zone at the bottom left near the experience bar. This can be toggled off, but not moved at the moment. It picks up any level information logged to the client.txt right now so you may need to manually change it if you're leveling with friends of a much different level. You will also need to set it every time you restart the guide unless you want to wait until you level up again for it to pick up.
 
 ### Hotkeys
 
@@ -49,20 +53,21 @@ Any image can go there, including a screen shot of poe.ninja's heatmap or any ot
 Alt+F1  
 (May need to change default NVidia screenshot bindings)
 
-##### Display/Hide the zone layout overlay
+##### Display/Hide the zone layout images
 Alt+F2
+(Since they are outdated they may just get in the way for some people)
 
-##### Display/Hide the notes overlay
+##### Display/Hide the experience overlay
 Alt+F3
 
 ##### Display/Hide the tree
-P  
-This will open your tree and show the image. If you get stuck with the tree overlay showing when you are not looking at the tree, press Spacebar.
+Alt+P  
 
 ##### Increment/Decrement the zone dropdown menu
 Shift+F1 and Ctrl+F1
 
-Changing acts and zones happens automatically now but you can use the hotkeys to override it for a given map. If you find any bugs please feel free to log an issue on GitHub or send me a message on Reddit u/JusKillmeQik. All of this is based off of a post by u/Poland144 who borrowed code from many other people to make this happen. I completely re-wrote all of the functions and cleaned up the code to make it more readable and removed some unnecessary bloat. I also added in more of Engineering Eternity's notes to the overlay for beginners. The script automatically reads in up to 6 images, so feel free to delete or add images you want in the overlay. Just make sure they are 110 pixels wide by 60 pixels tall. It also took quite a bit to add the automation, but I think I got all of the bugs worked out. I'm hoping the community uses the source or uploads pull requests to make it even better.
+
+Changing acts and zones happens automatically now but you can use the hotkeys to override it for a given map. If you find any bugs please feel free to log an issue on GitHub or send me a message on Reddit u/JusKillmeQik. All of this is based off of a post by u/Poland144 who borrowed code from many other people to make this happen. I completely re-wrote all of the functions and cleaned up the code to make it more readable and removed some unnecessary bloat. I also added in more of Engineering Eternity's notes to the overlay for beginners. The script automatically reads in up to 6 images, so feel free to delete or add images you want in the overlay. Just make sure they are 110 pixels wide by 60 pixels tall (bigger sizes coming soon). It also took quite a bit to add the automation, but I think I got all of the bugs worked out. I'm hoping the community uses the source or uploads pull requests to make it even better.
 
 *Cheers!*
 

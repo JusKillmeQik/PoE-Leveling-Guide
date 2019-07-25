@@ -1,0 +1,3 @@
+Exits spawn in a random corner
+Can often be found by
+travelling diagonally
