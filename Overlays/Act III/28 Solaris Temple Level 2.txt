@@ -1,5 +1,2 @@
-Somewhat linear,
-follow the carpet
-but can have dead ends
-
+Follow the carpet but can have dead ends
 CRAFT - Cold damage

@@ -1,3 +1,2 @@
 Loop around clockwise
-
 CRAFT - Physical damage

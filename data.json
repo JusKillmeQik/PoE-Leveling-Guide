@@ -8,6 +8,7 @@
 				"02 The Coast",
 				"04 Mud Flats",
 				"03 Tidal Island",
+				"05 Fetid Pool",
 				"05 Submerged Passage",
 				"06 The Ledge",
 				"06 Flooded Depths",
@@ -26,10 +27,12 @@
 			"list" : [
 				"13 Southern Forest",
 				"14 Old Fields",
+				"15 The Den",
 				"15 The Crossroads",
 				"15 Chamber of Sins Level 1",
 				"16 Chamber of Sins Level 2",
 				"16 Broken Bridge",
+				"16 Fellshrine Ruins",
 				"17 The Crypt",
 				"15 The Riverways",
 				"17 Western Forest",
@@ -37,6 +40,7 @@
 				"19 The Wetlands",
 				"20 Vaal Ruins",
 				"21 Northern Forest",
+				"21 Dread Thicket",
 				"22 The Caverns",
 				"23 Ancient Pyramid"
 			]
@@ -59,6 +63,8 @@
 				"29 Lunaris Temple Level 1",
 				"30 Lunaris Temple Level 2",
 				"30 Imperial Gardens",
+				"30 The Library",
+				"31 The Archives",
 				"32 Sceptre of God",
 				"33 Upper Sceptre of God"
 			]
@@ -104,6 +110,7 @@
 			"list" : [
 				"45 Twilight Strand",
 				"45 The Coast",
+				"45 Tidal Island",
 				"46 Mud Flats",
 				"46 Karui Fortress",
 				"46 The Ridge",
@@ -149,12 +156,14 @@
 				"56 Doedre's Cesspool",
 				"56 Grand Promenade",
 				"57 Bath House",
+				"58 High Gardens",
 				"58 Lunaris Concourse",
 				"59 Lunaris Temple Level 1",
 				"59 Lunaris Temple Level 2",
 				"57 The Quay",
 				"57 Grain Gate",
 				"58 Imperial Fields",
+				"58 Solaris Concourse",
 				"59 Solaris Temple Level 1",
 				"59 Solaris Temple Level 2",
 				"60 Harbour Bridge"
@@ -191,6 +200,267 @@
 				"66 The Canals",
 				"67 Feeding Trough"
 			]
+		},
+		{	"default" : "68 Arcade",
+			"act" : "Tier 1",
+			"part" : "Maps",
+			"list" : [
+				"68 Arcade",
+				"68 Jungle Valley",
+				"68 Wharf",
+				"68 Pier"
+			]
+		},
+		{	"default" : "69 Alleyways",
+			"act" : "Tier 2",
+			"part" : "Maps",
+			"list" : [
+				"69 Alleyways",
+				"69 Cage",
+				"69 Excavation",
+				"69 Sulphur Vents",
+				"69 Armoury",
+				"69 Mesa"
+			]
+		},
+		{	"default" : "70 Pen",
+			"act" : "Tier 3",
+			"part" : "Maps",
+			"list" : [
+				"70 Pen",
+				"70 Desert",
+				"70 Fungal Hollow",
+				"70 Strand",
+				"70 Ivory Temple",
+				"70 Spider Lair",
+				"70 Mausoleum",
+				"70 Ashen Wood",
+				"70 Ramparts",
+				"70 Tropical Island",
+				"70 Whakawairua Tuahu"
+			]
+		},
+		{	"default" : "71 Arid Lake",
+			"act" : "Tier 4",
+			"part" : "Maps",
+			"list" : [
+				"71 Arid Lake",
+				"71 Flooded Mine",
+				"71 Leyline",
+				"71 Burial Chambers",
+				"71 Channel",
+				"71 Barrows",
+				"71 Fields",
+				"71 Crater",
+				"71 Arachnid Tomb",
+				"71 Cursed Crypt",
+				"71 The Coward's Trial"
+			]
+		},
+		{	"default" : "72 Lookout",
+			"act" : "Tier 5",
+			"part" : "Maps",
+			"list" : [
+				"72 Lookout",
+				"72 Beach",
+				"72 Marshes",
+				"72 Peninsula",
+				"72 City Square",
+				"72 Relic Chambers",
+				"72 Grotto",
+				"72 Glacier",
+				"72 Haunted Mansion",
+				"72 Thicket"
+			]
+		},
+		{	"default" : "73 Lighthouse",
+			"act" : "Tier 6",
+			"part" : "Maps",
+			"list" : [
+				"73 Lighthouse",
+				"73 Maze",
+				"73 Residence",
+				"73 Bone Crypt",
+				"73 Geode",
+				"73 Estuary",
+				"73 Vault",
+				"73 Overgrown Shrine",
+				"73 Racecourse",
+				"73 Ghetto",
+				"73 Arsenal",
+				"73 Doryani's Machinarium",
+				"73 Olmec's Sanctum",
+				"73 Acton's Nightmare"
+			]
+		},
+		{	"default" : "74 Port",
+			"act" : "Tier 7",
+			"part" : "Maps",
+			"list" : [
+				"74 Port",
+				"74 Chateau",
+				"74 Conservatory",
+				"74 Ancient City",
+				"74 Underground Sea",
+				"74 Bazaar",
+				"74 Waste Pool",
+				"74 Spider Forest",
+				"74 Factory",
+				"74 Villa",
+				"74 Necropolis",
+				"74 Perandus Manor",
+				"74 Oba's Cursed Trove",
+				"74 Death and Taxes"
+			]
+		},
+		{	"default" : "75 Graveyard",
+			"act" : "Tier 8",
+			"part" : "Maps",
+			"list" : [
+				"75 Graveyard",
+				"75 Cells",
+				"75 Volcano",
+				"75 Phantasmagoria",
+				"75 Atoll",
+				"75 Underground River",
+				"75 Arachnid Nest",
+				"75 Shore",
+				"75 Sepulchre",
+				"75 Temple",
+				"75 Pit",
+				"75 Maelström of Chaos",
+				"75 Caer Blaidd, Wolfpack's Den",
+				"75 Mao Kun",
+				"75 Poorjoy's Asylum"
+			]
+		},
+		{	"default" : "76 Dungeon",
+			"act" : "Tier 9",
+			"part" : "Maps",
+			"list" : [
+				"76 Dungeon",
+				"76 Coral Ruins",
+				"76 Laboratory",
+				"76 Courtyard",
+				"76 Mud Geyser",
+				"76 Mineral Pools",
+				"76 Arena",
+				"76 Scriptorium",
+				"76 Promenade",
+				"76 Waterways",
+				"76 Castle Ruins",
+				"76 The Vinktar Square",
+				"76 The Hall of Grandmasters"
+			]
+		},
+		{	"default" : "77 Iceberg",
+			"act" : "Tier 10",
+			"part" : "Maps",
+			"list" : [
+				"77 Iceberg",
+				"77 Toxic Sewer",
+				"77 Academy",
+				"77 Lava Chamber",
+				"77 Dunes",
+				"77 Overgrown Ruin",
+				"77 Moon Temple",
+				"77 Plateau",
+				"77 Bog",
+				"77 Primordial Pool",
+				"77 Pillars of Arun",
+				"77 The Twilight Temple"
+			]
+		},
+		{	"default" : "78 Gardens",
+			"act" : "Tier 11",
+			"part" : "Maps",
+			"list" : [
+				"78 Gardens",
+				"78 Vaal Pyramid",
+				"78 Tower",
+				"78 Lair",
+				"78 Caldera",
+				"78 Park",
+				"78 Shrine",
+				"78 Palace",
+				"78 Sunken City",
+				"78 Reef",
+				"78 Vaults of Atziri"
+			]
+		},
+		{	"default" : "79 Courthouse",
+			"act" : "Tier 12",
+			"part" : "Maps",
+			"list" : [
+				"79 Courthouse",
+				"79 Cemetery",
+				"79 Shipyard",
+				"79 Belfry",
+				"79 Crystal Ore",
+				"79 Malformation",
+				"79 Desert Spring",
+				"79 Plaza",
+				"79 Dig",
+				"79 Hallowed Ground"
+			]
+		},
+		{	"default" : "80 Infested Valley",
+			"act" : "Tier 13",
+			"part" : "Maps",
+			"list" : [
+				"80 Infested Valley",
+				"80 Museum",
+				"80 Wasteland",
+				"80 Precinct",
+				"80 Orchard",
+				"80 Acid Caverns",
+				"80 Crimson Temple",
+				"80 Basilica",
+				"80 Carcass",
+				"80 The Putrid Cloister"
+			]
+		},
+		{	"default" : "81 Defiled Cathedral",
+			"act" : "Tier 14",
+			"part" : "Maps",
+			"list" : [
+				"81 Defiled Cathedral",
+				"81 Summit",
+				"81 Primordial Blocks",
+				"81 Terrace",
+				"81 Core",
+				"81 Colosseum",
+				"81 Lava Lake"
+			]
+		},
+		{	"default" : "82 Canyon",
+			"act" : "Tier 15",
+			"part" : "Maps",
+			"list" : [
+				"82 Canyon",
+				"82 Siege",
+				"82 Colonnade",
+				"82 Coves",
+				"82 Dark Forest"
+			]
+		},
+		{	"default" : "83 Pit of the Chimera",
+			"act" : "Tier 16",
+			"part" : "Maps",
+			"list" : [
+				"83 Pit of the Chimera",
+				"83 Lair of the Hydra",
+				"83 Maze of the Minotaur",
+				"83 Forge of the Phoenix",
+				"83 Vaal Temple"
+			]
+		},
+		{	"default" : "84 Shaper's Realm",
+			"act" : "Tier 17",
+			"part" : "Maps",
+			"list" : [
+				"84 Shaper's Realm"
+			]
 		}
 	],
 	"p1acts" : [
@@ -207,8 +477,28 @@
 		"Act IX",
 		"Act X"
 	],
+	"maps" : [
+		"Tier 1",
+		"Tier 2",
+		"Tier 3",
+		"Tier 4",
+		"Tier 5",
+		"Tier 6",
+		"Tier 7",
+		"Tier 8",
+		"Tier 9",
+		"Tier 10",
+		"Tier 11",
+		"Tier 12",
+		"Tier 13",
+		"Tier 14",
+		"Tier 15",
+		"Tier 16",
+		"Tier 17"
+	],
 	"parts" : [
 		"Part I",
-		"Part II"
+		"Part II",
+		"Maps"
 	]
 }

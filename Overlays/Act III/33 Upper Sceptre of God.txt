@@ -1,6 +1,2 @@
-Exits spawn in a random corner
-Go up diagonally until you
-spot barricades at exit
-
-Recommend cold and
-lightning resistance
+Exits spawn in a random corner, Go up diagonally until you spot barricades at exit
+RECOMMEND cold and lightning resistance

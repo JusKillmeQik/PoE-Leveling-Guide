@@ -1,4 +1,3 @@
-_Service to Science: Passive
-Death to Purity: Unique JEWEL
-_King's Feast: JEWEL
-_Kitava's Torments: Passive
+Service to Science:  Passive
+Justicar Casticus:   Silver Flask
+Kitava's Torments:   Passive

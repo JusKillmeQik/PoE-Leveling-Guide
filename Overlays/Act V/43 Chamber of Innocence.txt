@@ -1,7 +1,3 @@
-Go up and left,
-and spiral counter clockwise
-
+Go up and left, and spiral counter clockwise
 CRAFT - Movement speed
-
-Cap fire and lightning resist
-Recommend 1,200+ EHP
+RECOMMEND fire and lightning resist, 1,200+ EHP

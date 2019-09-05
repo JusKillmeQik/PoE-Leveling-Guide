@@ -1,13 +1,3 @@
-1) Follow the halls
-2) Travel around or over the
-   center thin bridge
-3) Travel around and over
-   the thin bridge
-4) Travel around and reach the
-   middle bridge area to find
-   the ladder to the rooftop.
-
+Follow the halls, going over bridges, for 4 minizones
 CRAFT - Spell damage
-
-Cap lightning resistance
-Recommend physical mitigation
+RECOMMEND lightning resistance, physical mitigation

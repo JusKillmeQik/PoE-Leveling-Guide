@@ -1,7 +1,8 @@
-Way Forward (Bestel): Passive
-_Through Sacred Ground: JEWEL
-_Crypt: Trial
-Bandits: CHOICE
-Intruders in Black: Herald GEM
-_Chamber of Sins 2: Trial
-Sharp and Cruel: GEM
+The Great White Beast: Quicksilver
+Crypt:                 Trial
+Through Sacred Ground: JEWEL
+Chamber of Sins 2:     Trial
+Intruders in Black:    Herald GEM
+Sharp and Cruel:       GEM
+Bandits:               CHOICE
+Way Forward (Bestel):  Passive

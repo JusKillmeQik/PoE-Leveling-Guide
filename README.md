@@ -26,7 +26,7 @@ Based on the zone you're in, notes and diagrams from this document will be shown
 
 Be sure to familiarize yourself with the above document before using this tool.
 
-Based on the act you're in, your own notes on gems, quests and socket colors can be shown in the notes section. Each zone in the Overlays folder has a text file named after it, where you can edit the zone specific information you would like available. Each Act has a guide.txt file that you can also edit for information you would like available during the whole Act. Some placeholder notes are there for an example.
+Based on the act you're in, your own notes on gems, quests and socket colors can be shown in the notes section. Each zone in the Overlays folder has a text file named after it, where you can edit the zone specific information you would like available. Each Act has a guide.txt file that you can also edit for information you would like available during the whole Act. Some placeholder notes are there for an example. You can add your own [Quest Rewards](https://pathofexile.gamepedia.com/Quest_Rewards) so you save time while leveling.
 
 The config.json file can be used to change the transparency, width and location of the overlay. I do not recommend changing these settngs, but I have left notes on how to change them if you desire.
 
@@ -39,35 +39,36 @@ A full passive tree can now be shown when you are picking where to place your po
 4) Export the image as *tree.jpg*  
 5) Place the file in the "Overlays/Tree" folder  
 
-Any image can go there, including a screen shot of poe.ninja's heatmap or any other picture you want to look at while building your tree. The steps above are simply what I used to get a clean looking tree. If you don't want a tree to show up, simply delete or rename that *tree.jpg* file.\
+Any image can go there, including a screen shot of poe.ninja's heatmap or any other picture you want to look at while building your tree. The steps above are simply what I used to get a clean looking tree. If you don't want a tree to show up, simply delete or rename that *tree.jpg* file.
 
 ### Experience Tracker
 
-The guide now shows your level and percent experience gain in the current zone at the bottom left near the experience bar. This can be toggled off, but not moved at the moment. It picks up any level information logged to the client.txt right now so you may need to manually change it if you're leveling with friends of a much different level. You will also need to set it every time you restart the guide unless you want to wait until you level up again for it to pick up.
+The guide now shows your level and percent experience gain in the current zone at the bottom left near the experience bar. This can be toggled off, but not moved at the moment. It picks up any level information logged to the client.txt right now so you may need to manually change it if you're leveling with friends of a much different level. You will also need to set it every time you restart the guide unless you want to wait until you level up again for it to pick up. It also shows how many levels over the optimal level you are for a given zone. Try to keep this number at 1 or 0 to improve your speed while leveling, but do not let it stay negative.
 
 ### Hotkeys
 
 >These can be changed directly in the script under the HOTKEYS section if you'd like different bindings.
 
 ##### Display/Hide the whole Leveling Guide overlay
-Alt+F1  
-(May need to change default NVidia screenshot bindings)
+**Alt+F1** (May need to change default NVidia screenshot bindings)
+
+This guide auto hides after a few seconds (this can be increased or removed in config.json). Changing zones will show the guide again, or if you move your mouse to the top of the screen. Using **Alt+F1** while it is hidden will show it again, but if you use **Alt+F1** while it is shown it will stay off until manually called back.
 
 ##### Display/Hide the zone layout images
-Alt+F2
-(Since they are outdated they may just get in the way for some people)
+**Alt+F2** (Since they are outdated they may just get in the way for some people)
 
 ##### Display/Hide the experience overlay
-Alt+F3
+**Alt+F3**
 
 ##### Display/Hide the tree
-Alt+P  
+**Alt+P**  
 
 ##### Increment/Decrement the zone dropdown menu
-Shift+F1 and Ctrl+F1
+**Shift+F1** and **Ctrl+F1**
 
+Changing acts and zones happens automatically now but you can use the hotkeys to override it for a given map.
 
-Changing acts and zones happens automatically now but you can use the hotkeys to override it for a given map. If you find any bugs please feel free to log an issue on GitHub or send me a message on Reddit u/JusKillmeQik. All of this is based off of a post by u/Poland144 who borrowed code from many other people to make this happen. I completely re-wrote all of the functions and cleaned up the code to make it more readable and removed some unnecessary bloat. I also added in more of Engineering Eternity's notes to the overlay for beginners. The script automatically reads in up to 6 images, so feel free to delete or add images you want in the overlay. Just make sure they are 110 pixels wide by 60 pixels tall (bigger sizes coming soon). It also took quite a bit to add the automation, but I think I got all of the bugs worked out. I'm hoping the community uses the source or uploads pull requests to make it even better.
+If you find any bugs please feel free to log an issue on GitHub or send me a message on Reddit u/JusKillmeQik. All of this is based off of a post by u/Poland144 who borrowed code from many other people to make this happen. I completely re-wrote all of the functions and cleaned up the code to make it more readable and removed some unnecessary bloat. I also added in more of Engineering Eternity's notes to the overlay for beginners. The script automatically reads in up to 6 images, so feel free to delete or add images you want in the overlay. Just make sure they are 110 pixels wide by 60 pixels tall (bigger sizes coming soon). It also took quite a bit to add the automation, but I think I got all of the bugs worked out. I'm hoping the community uses the source or uploads pull requests to make it even better.
 
 *Cheers!*
 

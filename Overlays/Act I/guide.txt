@@ -1,9 +1,9 @@
-Enemy at the Gate: GEM
-_Mercy Mission: Support GEM
-Breaking Some Eggs: GEM
-_Dweller of the Deep: Passive
-_Lower Prison: Trial
-Caged Brute: Movement GEM
-_Marooned Mariner: Passive
-Siren's Cadence: GEM
-Way Forward: Passive
+Enemy at the Gate:   GEM
+Mercy Mission:       Support GEM
+Breaking Some Eggs:  GEM
+Dweller of the Deep: Passive
+Lower Prison:        Trial / Support GEM
+Caged Brute:         Movement GEM
+Marooned Mariner:    Passive
+Siren's Cadence:     GEM
+Way Forward:         Passive

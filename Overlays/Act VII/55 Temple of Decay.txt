@@ -1,6 +1,3 @@
-Long zone with multiple levels
-Go diagonally to exits
-
+Long zone with multiple levels. Go diagonally to exits
 CRAFT - Accuracy
-
-Cap lightning resistance
+RECOMMEND lightning resistance

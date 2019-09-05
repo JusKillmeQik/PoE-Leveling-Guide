@@ -1,6 +1,1 @@
-Go left when the left path
-spawns, otherwise loop around
-right side
-
-Kill Weaver for the reward
-then claim The Way Forward
+Go left when the left path spawns, otherwise loop around right side

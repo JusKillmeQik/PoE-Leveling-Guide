@@ -1,5 +1,5 @@
-_Love is Dead: Passive
-_Gemling Legion: Passive
-_Wings of Vastiri: JEWEL
-_Bath House: Trial
-_Reflection of Terror: Passive
+Love is Dead:         Passive
+Gemling Legion:       Passive
+Wings of Vastiri:     JEWEL
+Bath House:           Trial
+Reflection of Terror: Passive

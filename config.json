@@ -1,11 +1,13 @@
 {
 	"points" : "9",
-	"maxNotesWidth" : "30",
-	"maxGuideWidth" : "30",
+	"maxNotesWidth" : "50",
+	"maxGuideWidth" : "50",
 	"offset" : ".855",
 	"treeSide" : "right",
-	"opacity" : "200",
+	"opacity" : "150",
 	"startHidden" : "0",
+	"displayTimeout" : "5",
+	"persistText" : "0",
 	"Comments" : "
 
 points:		This is the font size
@@ -43,6 +45,13 @@ startHidden:	Should the overlay display on startup
 		By default it will so new users see that it is working
 		However if you would like it just as a reference you can change this value to 1
 
+displayTimeout: How long in seconds before auto hiding the control bar
+		By default it will hide after 10 seconds
+		Setting the value to 0 will never hide it
+
+persistText:	Should the Notes and Guide be shown after the timeout
+		By default it will hide as well
+		However if you want to see it after the timeout change this value to 1
 
 	"
 }
