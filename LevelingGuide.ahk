@@ -39,6 +39,7 @@ global maxNotesWidth := 30
 global maxGuideWidth := 30
 global offset := .8
 global treeSide := "right"
+global treeName := "tree.jpg"
 global opacity := 200
 global displayTimeout := 5
 global persistText := 0
@@ -72,6 +73,9 @@ If (config.offset != "") {
 }
 If (config.treeSide != "") {
 	treeSide := config.treeSide
+}
+If (config.treeName != "") {
+	treeName := config.treeName
 }
 If (config.opacity != "") {
 	opacity := config.opacity
@@ -144,6 +148,12 @@ GoSub, DrawExp
 
 Gosub, HideAllWindows
 GoSub, ToggleLevelingGuide
+
+Sleep 1000
+Loop, % maxImages {
+    Gui, Image%A_Index%:Cancel
+}
+zone_toggle := 0
 
 SetTimer, ShowGuiTimer, 250
 Return
@@ -258,7 +268,7 @@ return
 
 DrawTree:
 
-    image_file := "" A_ScriptDir "\Overlays\Tree\tree.jpg" ""
+    image_file := "" A_ScriptDir "\Overlays\Tree\" treeName ""
     If (FileExist(image_file)) {
 	GDIPToken := Gdip_Startup()
 
@@ -851,11 +861,11 @@ ShowGuiTimer:
     active_toggle := 1
   }
 
-  MouseGetPos, xposMouse, yposMouse
-  If (yposMouse = 0) {
-    activeCount := 0
-    active_toggle := 1
-  }
+  ;MouseGetPos, xposMouse, yposMouse
+  ;If (yposMouse = 0 and xposMouse = A_ScreenWidth-1) {
+  ;  activeCount := 0
+  ;  active_toggle := 1
+  ;}
 
   If (poe_active or (controls_active or level_active)) {
     ; show all gui windows

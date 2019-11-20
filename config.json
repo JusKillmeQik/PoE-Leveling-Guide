@@ -4,9 +4,10 @@
 	"maxGuideWidth" : "50",
 	"offset" : ".855",
 	"treeSide" : "right",
+	"treeName" : "tree.jpg",
 	"opacity" : "150",
 	"startHidden" : "0",
-	"displayTimeout" : "5",
+	"displayTimeout" : "3",
 	"persistText" : "0",
 	"Comments" : "
 
@@ -36,6 +37,10 @@ offset:		How much space to leave on the right side of the screen
 treeSide:	Which side of the screen to show the passive tree overlay
 		The default is the right so it does not interfere with the Health globe
 		However, you can change it to left to not block the inventory instead
+
+treeName:	This is the name of file that should be used for the passive tree overlay
+		The default is tree.jpg but you can use any valid image file name/type
+		Just make sure the file exists in the Overlay/Tree folder
 
 opacity:	Lower this number to see through the images and notes more
 		200 makes the text crisp but can be hard to see through
