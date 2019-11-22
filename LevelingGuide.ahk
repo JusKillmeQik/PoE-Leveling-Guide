@@ -764,7 +764,7 @@ return
 SearchAct:
   ;You can check more than one line to make this more robust,
   ;but then sometimes voice logs will trigger the wrong map update
-  log := Tail(3, client)
+  log := Tail(1, client)
   ;Only bother checking if the log has changed or someone manually changed Part
   If (log != oldLog or trigger)
   {
@@ -861,11 +861,11 @@ ShowGuiTimer:
     active_toggle := 1
   }
 
-  ;MouseGetPos, xposMouse, yposMouse
-  ;If (yposMouse = 0 and xposMouse = A_ScreenWidth-1) {
-  ;  activeCount := 0
-  ;  active_toggle := 1
-  ;}
+  MouseGetPos, xposMouse, yposMouse
+  If (yposMouse < 10 and xposMouse > A_ScreenWidth-Round(A_ScreenWidth/4)) {
+    activeCount := 0
+    active_toggle := 1
+  }
 
   If (poe_active or (controls_active or level_active)) {
     ; show all gui windows
