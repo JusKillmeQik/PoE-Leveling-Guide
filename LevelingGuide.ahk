@@ -789,7 +789,7 @@ SearchAct:
       newPartTest := "Lioneye's Watch"
       IfInString, log, %newPartTest%
       {
-        act5LastZone := "Cathedral Rooftop"
+        act5LastZone := "45 Cathedral Rooftop"
         If (CurrentZone = act5LastZone)
         {
           numPart := 2
