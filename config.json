@@ -1,10 +1,11 @@
 {
 	"points" : "9",
+	"overlayFolder" : "Overlays",
+	"treeSide" : "right",
+	"treeName" : "tree.jpg",
 	"maxNotesWidth" : "50",
 	"maxGuideWidth" : "50",
 	"offset" : ".855",
-	"treeSide" : "right",
-	"treeName" : "tree.jpg",
 	"opacity" : "150",
 	"startHidden" : "0",
 	"displayTimeout" : "3",
@@ -15,6 +16,21 @@ points:		This is the font size
 		I highly recommend leaving this at 9 as the GUI gets too big
 		However on large screens you could increase it slightly
 		Note that the pictures are hardcode and will not change size
+
+overlayFolder:	This is the folder that all of the notes and tree are stored in
+		By default this is _Overlays_, which has generic leveling notes already
+		If you plan on making custom notes, I recommend copying the _Overlays_ folder
+		Make all your changes in the new folder so updates don't overwrite your work
+		This way you can also store notes for different builds and switch easily
+		I don't recommend going lower as the UI covers a lot of screen
+
+treeSide:	Which side of the screen to show the passive tree overlay
+		The default is the right so it does not interfere with the Health globe
+		However, you can change it to left to not block the inventory instead
+
+treeName:	This is the name of file that should be used for the passive tree overlay
+		The default is tree.jpg but you can use any valid image file name/type
+		Just make sure the file exists in the Overlay/Tree folder
 
 maxNotesWidth:	How many characters should be shown before wrapping text
 		The longer this is the larger the Notes GUI will be
@@ -32,15 +48,6 @@ offset:		How much space to leave on the right side of the screen
 		.855 = As far right as you can go without covering the Mini-Map
 		Great setting if you don't use the overlay map
 		.8 = Default setting, as far right as you can go without covering anything
-		I don't recommend going lower as the UI covers a lot of screen
-
-treeSide:	Which side of the screen to show the passive tree overlay
-		The default is the right so it does not interfere with the Health globe
-		However, you can change it to left to not block the inventory instead
-
-treeName:	This is the name of file that should be used for the passive tree overlay
-		The default is tree.jpg but you can use any valid image file name/type
-		Just make sure the file exists in the Overlay/Tree folder
 
 opacity:	Lower this number to see through the images and notes more
 		200 makes the text crisp but can be hard to see through

@@ -34,6 +34,7 @@ Try {
     ExitApp
 }
 
+global overlayFolder := "Overlays"
 global points := 9
 global maxNotesWidth := 30
 global maxGuideWidth := 30
@@ -58,6 +59,9 @@ Try {
 } Catch e {
     MsgBox, 16, , % e "`n`nExiting script."
     ExitApp
+}
+If (config.overlayFolder != "") {
+	overlayFolder := config.overlayFolder
 }
 If (config.points != "") {
 	points := config.points
@@ -257,6 +261,7 @@ ToggleLevelingGuide:
   {
     GoSub, ShowAllWindows
     LG_toggle = 1
+    level_toggle = 1
     activeCount := 0
     active_toggle := 1
   } else {
@@ -268,7 +273,7 @@ return
 
 DrawTree:
 
-    image_file := "" A_ScriptDir "\Overlays\Tree\" treeName ""
+    image_file := "" A_ScriptDir "\" overlayFolder "\Tree\" treeName ""
     If (FileExist(image_file)) {
 	GDIPToken := Gdip_Startup()
 
@@ -364,7 +369,7 @@ DrawZone:
     WinSet, Style, -0xC00000, ahk_id %ParentWindow%x
 
     Loop, % maxImages {
-        filepath := "" A_ScriptDir "\Overlays\" CurrentAct "\" CurrentZone "_Seed_" A_Index ".jpg" ""
+        filepath := "" A_ScriptDir "\" overlayFolder "\" CurrentAct "\" CurrentZone "_Seed_" A_Index ".jpg" ""
         xPos := xPosLayoutParent + ((maxImages - (A_Index + 0)) * 115)
 
         Gui, Image%A_Index%:New, +E0x20 -DPIScale -resize -SysMenu -Caption +AlwaysOnTop +hwndImage%A_Index%Window
@@ -399,10 +404,9 @@ DrawZone:
     Gui, Level:Add, UpDown, x5 vCurrentLevel GlevelSelectUI Range1-100, 1
     Gui, Level:+OwnerParent
     Gui, Level:Show, h%control_height% w%level_width% x%xPosLevel% y%yPosLevel% NA, Level
-    level_toggle := 1
 return
 
-;never called moved to draw zone
+;never called, moved to draw zone, may use again in the future
 DrawLevel:
     Gui, Level:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndlevel
     Gui, Level:Color, gray
@@ -578,7 +582,7 @@ return
 setNotes:
   notesText := ""
   numLines := 0
-  filepath := "" A_ScriptDir "\Overlays\" CurrentAct "\" CurrentZone ".txt" ""
+  filepath := "" A_ScriptDir "\" overlayFolder "\" CurrentAct "\" CurrentZone ".txt" ""
   Loop, read, %filepath%
   {
     val:= A_LoopReadLine
@@ -602,7 +606,7 @@ setNotes:
     }
   }
 
-  shortpath := "" "Add notes to \Overlays\" CurrentAct "\`n" CurrentZone ".txt" ""
+  shortpath := "" "Add notes to \" overlayFolder "\" CurrentAct "\`n" CurrentZone ".txt" ""
   numLines := notesText = "" ? 2 : numLines
   notesText := notesText = "" ? shortpath : notesText
 
@@ -617,7 +621,7 @@ return
 setGuide:
   guideText := ""
   numLines := 0
-  filepath := "" A_ScriptDir "\Overlays\" CurrentAct "\" "guide.txt" ""
+  filepath := "" A_ScriptDir "\" overlayFolder "\" CurrentAct "\" "guide.txt" ""
   Loop, read, %filepath%
   {
     val:= A_LoopReadLine
@@ -641,7 +645,7 @@ setGuide:
     }
   }
 
-  shortpath := "" "Add guide to \Overlays\" CurrentAct "\`n" "guide.txt" ""
+  shortpath := "" "Add guide to \" overlayFolder "\" CurrentAct "\`n" "guide.txt" ""
   numLines := guideText = "" ? 2 : numLines
   guideText := guideText = "" ? shortpath : guideText
 
@@ -738,7 +742,7 @@ UpdateImages:
     emptySpaces := 0
     Loop, % maxImages {
 	imageIndex := (maxImages - A_Index) + 1
-        filepath := "" A_ScriptDir "\Overlays\" CurrentAct "\" CurrentZone "_Seed_" imageIndex ".jpg" ""
+        filepath := "" A_ScriptDir "\" overlayFolder "\" CurrentAct "\" CurrentZone "_Seed_" imageIndex ".jpg" ""
 
 	newIndex := A_index - emptySpaces
 	;This shouldn't happen anymore but if this method gets called twice quickly emptySpaces goes below 0
