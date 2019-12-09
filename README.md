@@ -8,6 +8,8 @@
 
 ![Passive Tree](previews/LevelingGuidePreview4.png?raw=true "Will now show PoESkillTree image")
 
+![Gem Setup](previews/LevelingGuidePreview5.png?raw=true "Will now show desired links at given levels")
+
 ### Requirements
 
 You will need AutoHotkey to run this script. https://www.autohotkey.com/
@@ -30,6 +32,12 @@ Based on the act you're in, your own notes on gems, quests and socket colors can
 
 The config.json file can be used to change the transparency, width and location of the overlay. I do not recommend changing these settngs, but I have left notes on how to change them if you desire.
 
+>NOTE: NEW THIS LEAGUE!
+
+### Gem Setup
+
+As you level it can be hard to remember which gems to choose for rewards and which to buy. The original intention was that the Act guide would be used for this information. However it still became difficult sometimes to remember what links to look for and where to socket the new gems. This league you can now add your desired gem setup in the gems.json file based on the levels you want to remember. The first entry must be level 2, but after that you can either set up every reward level or just the ones you make major changes at. The best part is you can color the text by putting an R/B/G/W in front of it. For myself I have included the gems I pickup in [brackets] with the name of the reward giver, and the gems I buy in (paranthesis) with the cost. This will auto update as you level, but does not show up automatically. It must be viewed/hidden with the hotkey (**Alt+G**). As always an example is included.
+
 ### Passive Tree
 
 A full passive tree can now be shown when you are picking where to place your points. This requires some work, but I will outline the steps here.  
@@ -37,7 +45,7 @@ A full passive tree can now be shown when you are picking where to place your po
 2) Make or Import your tree. Path of Building (and other tools) can export just the skill tree in the form "https://www.pathofexile.com/passive-skill-tree/v/#=="  
 3) Go to Tools, Take Screenshot of Skilled Nodes...  
 4) Export the image as *tree.jpg*  
-5) Place the file in the "Overlays/Tree" folder  
+5) Place the file in the "Overlays" folder  
 
 Any image can go there, including a screen shot of poe.ninja's heatmap or any other picture you want to look at while building your tree. The steps above are simply what I used to get a clean looking tree. If you don't want a tree to show up, simply delete or rename that *tree.jpg* file.
 
@@ -52,27 +60,35 @@ The guide now shows your level and percent experience gain in the current zone a
 ##### Display/Hide the whole Leveling Guide overlay
 **Alt+F1** (May need to change default NVidia screenshot bindings)
 
-This guide auto hides after a few seconds (this can be increased or removed in config.json). Changing zones will show the guide again, or if you move your mouse to the top of the screen. Using **Alt+F1** while it is hidden will show it again, but if you use **Alt+F1** while it is shown it will stay off until manually called back.
+This guide auto hides after a few seconds (this can be increased or removed in config.json). Changing zones will show the guide again, or if you move your mouse to the top/right of the screen. Using **Alt+F1** while it is hidden will show it again, but if you use **Alt+F1** while it is shown it will stay off until manually called back.
 
 ##### Display/Hide the zone layout images
-**Alt+F2** (Since they are outdated they may just get in the way for some people)
+**Alt+F2**
+
+>NOTE: Since they are outdated they may just get in the way for some people, they are hidden by default now
 
 ##### Display/Hide the experience overlay
 **Alt+F3**
 
+##### Display/Hide the Gem setup
+**Alt+G**
+
 ##### Display/Hide the tree
-**Alt+P**  
+**Alt+F**
+
+>NOTE: This is changed from **Alt+P** last league to make it closer to the keys that are normally pressed while playing
 
 ##### Increment/Decrement the zone dropdown menu
 **Shift+F1** and **Ctrl+F1**
 
 Changing acts and zones happens automatically now but you can use the hotkeys to override it for a given map.
 
-If you find any bugs please feel free to log an issue on GitHub or send me a message on Reddit u/JusKillmeQik. All of this is based off of a post by u/Poland144 who borrowed code from many other people to make this happen. I completely re-wrote all of the functions and cleaned up the code to make it more readable and removed some unnecessary bloat. I also added in more of Engineering Eternity's notes to the overlay for beginners. The script automatically reads in up to 6 images, so feel free to delete or add images you want in the overlay. Just make sure they are 110 pixels wide by 60 pixels tall (bigger sizes coming soon). It also took quite a bit to add the automation, but I think I got all of the bugs worked out. I'm hoping the community uses the source or uploads pull requests to make it even better.
+If you find any bugs please feel free to log an issue on GitHub or send me a message on Reddit u/JusKillmeQik. All of this is based off of a post by u/Poland144 who borrowed code from many other people to make this happen. I completely re-wrote all of the functions and cleaned up the code to make it more readable and removed some unnecessary bloat. I also added in more of Engineering Eternity's notes to the overlay for beginners. The script automatically reads in up to 6 images, so feel free to delete or add images you want in the overlay. Just make sure they are 110 pixels wide by 60 pixels tall. It also took quite a bit to add the automation, but I think I got all of the bugs worked out. I'm hoping the community uses the source or uploads pull requests to make it even better.
 
 *Cheers!*
 
-Credits:  
+Credits:
+dsnvwlmnt - many logged issues and testing
 rioreiser - original script framework  
 Eruyome87 - updates to the library scripts  
 Biggoron144 - contributions to the script  

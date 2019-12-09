@@ -38,6 +38,7 @@ global overlayFolder := "Overlays"
 global points := 9
 global maxNotesWidth := 30
 global maxGuideWidth := 30
+global maxLinksWidth := 30
 global offset := .8
 global treeSide := "right"
 global treeName := "tree.jpg"
@@ -48,6 +49,7 @@ global persistText := 0
 global zone_toggle := 0
 global level_toggle := 0
 global tree_toggle := 0
+global gems_toggle := 0
 global LG_toggle := 0
 global activeCount := 0
 global active_toggle := 1
@@ -72,6 +74,9 @@ If (config.maxNotesWidth != "") {
 If (config.maxGuideWidth != "") {
 	maxGuideWidth := config.maxGuideWidth
 }
+If (config.maxLinksWidth != "") {
+	maxLinksWidth := config.maxLinksWidth
+}
 If (config.offset != "") {
 	offset := config.offset
 }
@@ -94,6 +99,20 @@ If (config.persistText != "") {
 	persistText := config.persistText
 }
 
+global gem_data := {}
+Try {
+    FileRead, JSONFile, %A_ScriptDir%\%overlayFolder%\gems.json
+    gem_data := JSON.Load(JSONFile)
+    If (not gem_data.levels.Length()) {
+        MsgBox, 16, , Error reading gem data! `n`nExiting script.
+        ExitApp
+    }
+} Catch e {
+    MsgBox, 16, , % e "`n`nExiting script."
+    ExitApp
+}
+
+
 ;Default value - this is autodetected now too
 global client := "C:\Program Files (x86)\Grinding Gear Games\Path of Exile\logs\Client.txt"
 
@@ -114,8 +133,10 @@ maxGuideWidth := maxGuideWidth < 22 ? 22 : maxGuideWidth
 global notes_width := Ceil( (maxNotesWidth) * (pixels/2) )
 global guide_width := Ceil( (maxGuideWidth) * (pixels/2) )
 global nav_width := Ceil( (guide_width-5)/2 )
+global gems_width := Ceil( 7 * (pixels/2) )
 global level_width := Ceil( 7 * (pixels/2) )
 global exp_width := Ceil( 19 * (pixels/2) )
+global links_width := Ceil( maxLinksWidth * (pixels/2) )
 global control_height := pixels + 7
 global exp_height := control_height
 
@@ -130,6 +151,11 @@ global yPosLevel := Round( (A_ScreenHeight * .955) )
 global xPosExp := xPosLevel + level_width + 5
 global yPosExp := yPosLevel
 
+global xPosGems := Round( (A_ScreenWidth * .005) )
+global yPosGems := Round( (A_ScreenHeight * .180) )
+global xPosLinks := xPosGems
+global yPosLinks := yPosGems + control_height + 5
+
 global PoEWindowHwnd := ""
 WinGet, PoEWindowHwnd, ID, ahk_group PoEWindowGrp
 
@@ -142,6 +168,8 @@ global CurrentAct = "Act I"
 global CurrentZone = "01 Twilight Strand"
 global CurrentLevel = "01"
 
+global CurrentGem = "2"
+
 global onStartup := 1
 
 Gosub, DrawZone
@@ -149,6 +177,7 @@ Gosub, DrawTree
 Gosub, DrawNotes
 Gosub, DrawGuide
 GoSub, DrawExp
+GoSub, SetGems
 
 Gosub, HideAllWindows
 GoSub, ToggleLevelingGuide
@@ -212,7 +241,7 @@ return
 
 ;========== Skill Tree =======
 #IfWinActive, ahk_group PoEWindowGrp
-!p:: ; Display/Hide passive tree when it's open
+!f:: ; Display/Hide passive tree when it's open
   if (tree_toggle = 0)
   {
     Gui, Tree:Show, NA
@@ -222,6 +251,23 @@ return
   {
     Gui, Tree:Cancel
     tree_toggle := 0
+  }
+return
+
+;========== Gem Links =======
+#IfWinActive, ahk_group PoEWindowGrp
+!g:: ; Display/Hide gem links when it's open
+  if (gems_toggle = 0)
+  {
+    Gui, Gems:Show, NA
+    Gui, Links:Show, NA
+    gems_toggle := 1
+  }
+  else
+  {
+    Gui, Gems:Cancel
+    Gui, Links:Cancel
+    gems_toggle := 0
   }
 return
 
@@ -267,13 +313,14 @@ ToggleLevelingGuide:
   } else {
     GoSub, HideAllWindows
     tree_toggle := 0
+    gems_toggle := 0
     LG_toggle = 0
   }
 return
 
 DrawTree:
 
-    image_file := "" A_ScriptDir "\" overlayFolder "\Tree\" treeName ""
+    image_file := "" A_ScriptDir "\" overlayFolder "\" treeName ""
     If (FileExist(image_file)) {
 	GDIPToken := Gdip_Startup()
 
@@ -286,9 +333,16 @@ DrawTree:
 
 	;Only build the tree if the file is a valid size picture
 	If (original_treeW and original_treeH) {
-	    treeW := Round( A_ScreenWidth / 3 )
-	    treeRatio := treeW / original_treeW
-	    treeH := original_treeH * treeRatio
+
+            If (original_treeW > original_treeH) {
+	      treeW := Round( A_ScreenWidth / 2 )
+	      treeRatio := treeW / original_treeW
+	      treeH := original_treeH * treeRatio
+            } else {
+	      treeH := Round( A_ScreenHeight * 4 / 5 )
+	      treeRatio := treeH / original_treeH
+	      treeW := original_treeW * treeRatio
+            }
 
 	    If (treeSide = "right") {
 		xTree := A_ScreenWidth - treeW
@@ -343,7 +397,7 @@ DrawGuide:
     numLines := 60
     guideText := ""
     Loop, % numLines {
-        Loop, % maxNotesWidth {
+        Loop, % maxGuideWidth {
 	    guideText .= " "
         }
 	guideText .= "`n"
@@ -397,7 +451,15 @@ DrawZone:
     control_width := (nav_width*2) + notes_width + 10
     Gui, Controls:Show, h%control_height% w%control_width% x%xPos% y5 NA, Controls
 
-    Gui, Level:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndlevel
+    Gui, Gems:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndGems
+    Gui, Gems:Color, gray
+    Gui, Gems:Font, s%points%, Consolas
+    ;Gui, Gems:Add, Edit, x0 y0 h%control_height% w%gems_width% r1 GgemSelectUI, Gems
+    Gui, Gems:Add, DropDownList, VCurrentGem GgemSelectUI x0 y0 w%gems_width% h300 , % GetDelimitedPartListString(gem_data.levels, CurrentGem)
+    Gui, Gems:+OwnerParent
+    Gui, Gems:Show, h%control_height% w%gems_width% x%xPosGems% y%yPosGems% NA, Gems
+
+    Gui, Level:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndLevel
     Gui, Level:Color, gray
     Gui, Level:Font, s%points%, Consolas
     Gui, Level:Add, Edit, x0 y0 h%control_height% w%level_width% r1 GlevelSelectUI, Level
@@ -576,7 +638,12 @@ return
 
 levelSelectUI:
   Gui, Level:Submit, NoHide
-  GoSub, setExp
+  GoSub, SetExp
+return
+
+gemSelectUI:
+  Gui, Gems:Submit, NoHide
+  GoSub, SetGems
 return
 
 setNotes:
@@ -714,6 +781,47 @@ SetExp:
   Gui, Exp:Show, x%xPosExp% y%yPosExp% w%exp_width% h%exp_height% NA, Gui Exp
 return
 
+SetGems:
+  Gui, Links:Destroy
+  Gui, Links:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndLinksWindow
+  Gui, Links:font, cFFFFFF s%points% w%inks_width%, Consolas
+  Gui, Links:Color, gray
+  WinSet, Transparent, %opacity%
+  Gui, Links:Margin, 3, 3
+
+  numLines := 1
+  For key, levelGroup in gem_data.gems {
+    If(levelGroup.level = CurrentGem){
+      numLines := levelGroup.links.Length()
+      Loop, % levelGroup.links.Length()
+      {
+        gem_array := StrSplit(levelGroup.links[A_Index], ",")
+        If(gem_array[1] = "B"){
+	  Gui, Links:font, c0000FF
+        }
+        If(gem_array[1] = "R"){
+	  Gui, Links:font, cFF0000
+        }
+        If(gem_array[1] = "G"){
+	  Gui, Links:font, c00FF00
+        }
+        If(gem_array[1] = "W"){
+	  Gui, Links:font, cFFFFFF
+        }
+        If(A_Index = 1){
+          Gui, Links:Add, Text, xm ym, % gem_array[2]
+        } Else {
+          Gui, Links:Add, Text, xm y+0, % gem_array[2]
+        }
+      }
+    }
+  }
+
+  links_height := (numLines * pixels) + spacing
+
+  Gui, Links:Show, x%xPosLinks% y%yPosLinks% w%links_width% h%links_height% NA, Gui Exp
+return
+
 zoneSelectUI:
   Gui, Controls:Submit, NoHide
 
@@ -780,8 +888,20 @@ SearchAct:
       levelPos := InStr(log, levelUp, false)
       newLevel := SubStr(log, levelPos+13, 2)
       GuiControl,Level:,CurrentLevel, %newLevel%
+      Sleep, 100
       If(level_toggle){
-        GoSub, setExp
+        GoSub, SetExp
+      }
+      For index, level in gem_data.levels
+      {
+        If(level = newLevel){
+          GuiControl, Gems:Choose, CurrentGem, % "|" index
+          Sleep, 100
+          ; Setting the GUI triggers SetGems so we have to hide it
+          ; it will appear or disapper again based on toggle
+          Gui, Links:Cancel
+          break
+        }
       }
     }
     travel := "You have entered"
@@ -848,6 +968,7 @@ ShowGuiTimer:
   poe_active := WinActive("ahk_id" PoEWindowHwnd)
   controls_active := WinActive("ahk_id" Controls)
   level_active := WinActive("ahk_id" Level)
+  gems_active := WinActive("ahk_id" Gems)
 
   If (activeCount <= 2*displayTimeout) {
     active_toggle := 1
@@ -871,7 +992,7 @@ ShowGuiTimer:
     active_toggle := 1
   }
 
-  If (poe_active or (controls_active or level_active)) {
+  If (poe_active or (controls_active or level_active or gems_active)) {
     ; show all gui windows
     GoSub, ShowAllWindows
     Sleep 500
@@ -986,11 +1107,16 @@ ShowAllWindows:
 
   If (level_toggle) {
     Gui, Level:Show, NoActivate
-    GoSub, setExp
+    GoSub, SetExp
   }
 
   If (tree_toggle) {
     Gui, Tree:Show, NoActivate
+  }
+
+  If (gems_toggle) {
+    Gui, Gems:Show, NoActivate
+    Gui, Links:Show, NoActivate
   }
 return
 
@@ -1008,6 +1134,8 @@ HideAllWindows:
     Gui, Guide:Cancel
 
     Gui, Tree:Cancel
+    Gui, Gems:Cancel
+    Gui, Links:Cancel
 return
 
 Tail(k,file)   ; Return the last k lines of file

@@ -5,6 +5,7 @@
 	"treeName" : "tree.jpg",
 	"maxNotesWidth" : "50",
 	"maxGuideWidth" : "50",
+	"maxLinksWidth" : "30",
 	"offset" : ".855",
 	"opacity" : "150",
 	"startHidden" : "0",
@@ -39,8 +40,12 @@ maxNotesWidth:	How many characters should be shown before wrapping text
 
 maxGuideWidth:	How many characters should be shown before wrapping text
 		The longer this is the larger the Guide GUI will be
-		The Guid is tips based on notes.txt in each Act folder
+		The Guide is tips based on notes.txt in each Act folder
 		Cannot be smaller than 22
+
+maxLinksWidth:	How many characters should be shown before cutting off text
+		The longer this is the larger the Links GUI will be
+		The Links show colored notes based on gems.json
 
 offset:		How much space to leave on the right side of the screen
 		1 = All the way to right (covers the map/info)
