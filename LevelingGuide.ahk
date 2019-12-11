@@ -39,7 +39,10 @@ global points := 9
 global maxNotesWidth := 30
 global maxGuideWidth := 30
 global maxLinksWidth := 30
-global offset := .8
+global guideXoffset := .8
+global levelXoffset := .287
+global levelYoffset := .955
+global gemsYoffset := .180
 global treeSide := "right"
 global treeName := "tree.jpg"
 global opacity := 200
@@ -77,8 +80,17 @@ If (config.maxGuideWidth != "") {
 If (config.maxLinksWidth != "") {
 	maxLinksWidth := config.maxLinksWidth
 }
-If (config.offset != "") {
-	offset := config.offset
+If (config.guideXoffset != "") {
+	guideXoffset := config.guideXoffset
+}
+If (config.levelXoffset != "") {
+	levelXoffset := config.levelXoffset
+}
+If (config.levelYoffset != "") {
+	levelYoffset := config.levelYoffset
+}
+If (config.gemsYoffset != "") {
+	gemsYoffset := config.gemsYoffset
 }
 If (config.treeSide != "") {
 	treeSide := config.treeSide
@@ -141,18 +153,18 @@ global control_height := pixels + 7
 global exp_height := control_height
 
 global maxImages := 6
-global xPosLayoutParent := Round( (A_ScreenWidth * offset) - (maxImages * 115) - guide_width - notes_width - 10 )
+global xPosLayoutParent := Round( (A_ScreenWidth * guideXoffset) - (maxImages * 115) - guide_width - notes_width - 10 )
 global yPosNotes := 5 + control_height + 5
 global xPosNotes := xPosLayoutParent + (maxImages * 115)
 global xPosGuide := xPosLayoutParent + (maxImages * 115) + notes_width + 5
 
-global xPosLevel := Round( (A_ScreenWidth * .287) )
-global yPosLevel := Round( (A_ScreenHeight * .955) )
+global xPosLevel := Round( (A_ScreenWidth * levelXoffset) )
+global yPosLevel := Round( (A_ScreenHeight * levelYoffset) )
 global xPosExp := xPosLevel + level_width + 5
 global yPosExp := yPosLevel
 
 global xPosGems := Round( (A_ScreenWidth * .005) )
-global yPosGems := Round( (A_ScreenHeight * .180) )
+global yPosGems := Round( (A_ScreenHeight * gemsYoffset) )
 global xPosLinks := xPosGems
 global yPosLinks := yPosGems + control_height + 5
 
@@ -182,12 +194,6 @@ GoSub, SetGems
 Gosub, HideAllWindows
 GoSub, ToggleLevelingGuide
 
-Sleep 1000
-Loop, % maxImages {
-    Gui, Image%A_Index%:Cancel
-}
-zone_toggle := 0
-
 SetTimer, ShowGuiTimer, 250
 Return
 
@@ -211,6 +217,8 @@ return
 	Loop, % maxImages {
             Gui, Image%A_Index%:Show, NA
         }
+        zone_toggle := 1
+    } else if (zone_toggle = 0 and LG_toggle = 0) {
         zone_toggle := 1
     }
     else
@@ -480,7 +488,7 @@ DrawLevel:
 return
 
 DrawExp:
-  Gui, Exp:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndExpWindow
+  Gui, Exp:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndExp
   Gui, Exp:font, cFFFFFF s%points% w%level_width%, Consolas
   Gui, Exp:Color, gray
   WinSet, Transparent, %opacity%
