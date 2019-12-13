@@ -12,7 +12,7 @@
 
 ### Requirements
 
-You will need AutoHotkey to run this script, mininum version 1.1.32.00. https://www.autohotkey.com/
+You will need AutoHotkey to run this script, minimum version 1.1.32.00. https://www.autohotkey.com/
 
 Make sure to run it with PoE in windowed fullscreen or windowed mode.
 
