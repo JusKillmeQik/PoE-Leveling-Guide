@@ -13,8 +13,8 @@ GroupAdd, PoEWindowGrp, Path of Exile ahk_class POEWindowClass ahk_exe PathOfExi
 GroupAdd, PoEWindowGrp, Path of Exile ahk_class POEWindowClass ahk_exe PathOfExile_KG.exe
 GroupAdd, PoEWindowGrp, Path of Exile ahk_class POEWindowClass ahk_exe PathOfExileSteam.exe
 GroupAdd, PoEWindowGrp, Path of Exile ahk_class POEWindowClass ahk_exe PathOfExile_x64.exe
-GroupAdd, PoEWindowGrp, Path of Exile ahk_class POEWindowClass ahk_exe PathOfExile_x64Steam.exe
 GroupAdd, PoEWindowGrp, Path of Exile ahk_class POEWindowClass ahk_exe PathOfExile_x64_KG.exe
+GroupAdd, PoEWindowGrp, Path of Exile ahk_class POEWindowClass ahk_exe PathOfExile_x64Steam.exe
 
 
 ;
@@ -50,9 +50,9 @@ global displayTimeout := 5
 global persistText := 0
 
 global zone_toggle := 0
-global level_toggle := 0
+global level_toggle := 1
 global tree_toggle := 0
-global gems_toggle := 0
+global gems_toggle := 1
 global LG_toggle := 0
 global activeCount := 0
 global active_toggle := 1
@@ -186,8 +186,8 @@ global onStartup := 1
 
 Gosub, DrawZone
 Gosub, DrawTree
-Gosub, DrawNotes
-Gosub, DrawGuide
+Gosub, SetNotes
+Gosub, SetGuide
 GoSub, DrawExp
 GoSub, SetGems
 
@@ -205,29 +205,29 @@ Return
 ;========== Toggle Everything =======
 #IfWinActive, ahk_group PoEWindowGrp
 !F1:: ; Display/Hide all GUIs
-    GoSub, ToggleLevelingGuide
+  GoSub, ToggleLevelingGuide
 return
 
 ;========== Zone Layouts =======
 #IfWinActive, ahk_group PoEWindowGrp
 !F2:: ; Display/Hide zone layout images hotkey
-    if (zone_toggle = 0 and LG_toggle)
-    {
-	GoSub, UpdateImages
-	Loop, % maxImages {
-            Gui, Image%A_Index%:Show, NA
-        }
-        zone_toggle := 1
-    } else if (zone_toggle = 0 and LG_toggle = 0) {
-        zone_toggle := 1
+  if (zone_toggle = 0 and LG_toggle)
+  {
+    GoSub, UpdateImages
+    Loop, % maxImages {
+      Gui, Image%A_Index%:Show, NA
     }
-    else
-    {
-        Loop, % maxImages {
-            Gui, Image%A_Index%:Cancel
-        }
-        zone_toggle := 0
+    zone_toggle := 1
+  } else if (zone_toggle = 0 and LG_toggle = 0) {
+    zone_toggle := 1
+  }
+  else
+  {
+    Loop, % maxImages {
+      Gui, Image%A_Index%:Cancel
     }
+    zone_toggle := 0
+  }
 return
 
 ;========== Experience Tracker =======
@@ -315,21 +315,22 @@ ToggleLevelingGuide:
   {
     GoSub, ShowAllWindows
     LG_toggle = 1
-    level_toggle = 1
+    ;level_toggle = 1
     activeCount := 0
     active_toggle := 1
   } else {
     GoSub, HideAllWindows
     tree_toggle := 0
-    gems_toggle := 0
+    ;gems_toggle := 0
+    ;level_toggle := 0
     LG_toggle = 0
   }
 return
 
 DrawTree:
 
-    image_file := "" A_ScriptDir "\" overlayFolder "\" treeName ""
-    If (FileExist(image_file)) {
+  image_file := "" A_ScriptDir "\" overlayFolder "\" treeName ""
+  If (FileExist(image_file)) {
 	GDIPToken := Gdip_Startup()
 
 	pBM := Gdip_CreateBitmapFromFile( image_file )
@@ -368,58 +369,6 @@ DrawTree:
     }
 
 return
-
-DrawNotes:
-    Gui, Notes:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndNotesWindow
-    Gui, Notes:font, cFFFFFF s%points% w800, Consolas
-    Gui, Notes:Color, gray
-    WinSet, Transparent, %opacity%
-
-    ;empty space must be initialized at set length
-    ;so that text area can be edited with custom notes
-    numLines := 60
-    notesText := ""
-    Loop, % numLines {
-        Loop, % maxNotesWidth {
-	    notesText .= " "
-        }
-	notesText .= "`n"
-    }
-
-
-    Gui, Notes:Add, Text, vActNotes x5 y+3 -Wrap, % notesText
-
-    notes_height := (numLines * pixels) + spacing
-
-    Gui, Notes:Show, x%xPosNotes% y%yPosNotes% w%notes_width% h%notes_height% NA, Gui Notes
-return
-
-DrawGuide:
-    Gui, Guide:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndGuideWindow
-    Gui, Guide:font, cFFFFFF s%points% w800, Consolas
-    Gui, Guide:Color, gray
-    WinSet, Transparent, %opacity%
-
-    ;empty space must be initialized at set length
-    ;so that text area can be edited with custom notes
-    numLines := 60
-    guideText := ""
-    Loop, % numLines {
-        Loop, % maxGuideWidth {
-	    guideText .= " "
-        }
-	guideText .= "`n"
-    }
-
-
-    Gui, Guide:Add, Text, vActGuide x5 y+3 -Wrap, % guideText
-
-    guide_height := (numLines * pixels) + spacing
-
-    Gui, Guide:Show, x%xPosGuide% y%yPosNotes% w%guide_width% h%guide_height% NA, Gui Guide
-    guide_toggle := 1
-return
-
 
 DrawZone:
     Gui, Parent:New, +AlwaysOnTop +ToolWindow +hwndParentWindow
@@ -462,7 +411,6 @@ DrawZone:
     Gui, Gems:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndGems
     Gui, Gems:Color, gray
     Gui, Gems:Font, s%points%, Consolas
-    ;Gui, Gems:Add, Edit, x0 y0 h%control_height% w%gems_width% r1 GgemSelectUI, Gems
     Gui, Gems:Add, DropDownList, VCurrentGem GgemSelectUI x0 y0 w%gems_width% h300 , % GetDelimitedPartListString(gem_data.levels, CurrentGem)
     Gui, Gems:+OwnerParent
     Gui, Gems:Show, h%control_height% w%gems_width% x%xPosGems% y%yPosGems% NA, Gems
@@ -476,7 +424,7 @@ DrawZone:
     Gui, Level:Show, h%control_height% w%level_width% x%xPosLevel% y%yPosLevel% NA, Level
 return
 
-;never called, moved to draw zone, may use again in the future
+;Never called, moved to draw zone, may use again in the future
 DrawLevel:
     Gui, Level:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndlevel
     Gui, Level:Color, gray
@@ -498,6 +446,253 @@ DrawExp:
   Gui, Exp:Add, Text, vCurrentExp x3 y3, % calcExp
 
   Gui, Exp:Show, x%xPosExp% y%yPosExp% w%exp_width% h%exp_height% NA, Gui Exp
+return
+
+setNotes:
+  Gui, Notes:Destroy
+  Gui, Notes:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndNotesWindow
+  Gui, Notes:font, cFFFFFF s%points% w%notes_width%, Consolas
+  Gui, Notes:Color, gray
+  WinSet, Transparent, %opacity%
+  Gui, Notes:Margin, 3, 3
+
+  numLines := 0
+  filepath := "" A_ScriptDir "\" overlayFolder "\" CurrentAct "\" CurrentZone ".txt" ""
+  Loop, read, %filepath%
+  {
+    val := A_LoopReadLine
+
+    colorTest := SubStr(val, 1, 2)
+    If (colorTest = "R,") {
+      Gui, Notes:font, cFF0000
+      StringTrimLeft, val, val, 2
+    } Else If (colorTest = "< ") {
+      Gui, Notes:font, cFF0000
+    } Else If (colorTest = "G,") {
+      Gui, Notes:font, c00FF00
+      StringTrimLeft, val, val, 2
+    } Else If (colorTest = "+ ") {
+      Gui, Notes:font, c00FF00
+    } Else If (colorTest = "B,") {
+      Gui, Notes:font, c0000FF
+      StringTrimLeft, val, val, 2
+    } Else If (colorTest = "> ") {
+      Gui, Notes:font, c0000FF
+    } Else If (colorTest = "W,") {
+      Gui, Notes:font, cFFFFFF
+      StringTrimLeft, val, val, 2
+    } Else {
+      Gui, Notes:font, cFFFFFF
+    }
+
+    ;Wrap notes longer than maxNotesWidth
+    while true
+    {
+      StringLen, stringLength, val
+      If (stringLength > maxNotesWidth) {
+        StringGetPos, lastCharPos, val, %A_Space%, R1, stringLength-maxNotesWidth
+
+        StringLeft, beginString, val, lastCharPos+1
+        StringTrimLeft, val, val, lastCharPos+1
+        If(numLines = 0){
+          Gui, Notes:Add, Text, xm ym, % beginString
+        } Else {
+          Gui, Notes:Add, Text, xm y+0, % beginString
+        }
+        numLines++
+      } Else {
+        If(numLines = 0){
+          Gui, Notes:Add, Text, xm ym, % val
+        } Else {
+          Gui, Notes:Add, Text, xm y+0, % val
+        }
+        numLines++
+        break
+      }
+    }
+  }
+
+  shortpath := "" "Add notes to \" overlayFolder "\" CurrentAct "\`n" CurrentZone ".txt" ""
+  If (numLines = 0) {
+    Gui, Notes:Add, Text, xm ym, % shortpath
+  }
+
+  numLines := numLines = 0 ? 2 : numLines
+  notes_height := (numLines * pixels) + spacing
+
+  Gui, Notes:Show, x%xPosNotes% y%yPosNotes% w%notes_width% h%notes_height% NA, Gui Notes
+return
+
+setGuide:
+  Gui, Guide:Destroy
+  Gui, Guide:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndGuideWindow
+  Gui, Guide:font, cFFFFFF s%points% w%guide_width%, Consolas
+  Gui, Guide:Color, gray
+  WinSet, Transparent, %opacity%
+  Gui, Guide:Margin, 3, 3
+
+  numLines := 0
+  filepath := "" A_ScriptDir "\" overlayFolder "\" CurrentAct "\" "guide.txt" ""
+  Loop, read, %filepath%
+  {
+    val := A_LoopReadLine
+
+    colorTest := SubStr(val, 1, 2)
+    If (colorTest = "R,") {
+      Gui, Guide:font, cFF0000
+      StringTrimLeft, val, val, 2
+    } Else If (colorTest = "< ") {
+      Gui, Guide:font, cFF0000
+    } Else If (colorTest = "G,") {
+      Gui, Guide:font, c00FF00
+      StringTrimLeft, val, val, 2
+    } Else If (colorTest = "+ ") {
+      Gui, Guide:font, c00FF00
+    } Else If (colorTest = "B,") {
+      Gui, Guide:font, c0000FF
+      StringTrimLeft, val, val, 2
+    } Else If (colorTest = "> ") {
+      Gui, Guide:font, c0000FF
+    } Else If (colorTest = "W,") {
+      Gui, Guide:font, cFFFFFF
+      StringTrimLeft, val, val, 2
+    } Else {
+      Gui, Guide:font, cFFFFFF
+    }
+
+    ;Wrap lines longer than maxGuideWidth
+    while true
+    {
+      StringLen, stringLength, val
+      If (stringLength > maxGuideWidth) {
+        StringGetPos, lastCharPos, val, %A_Space%, R1, stringLength-maxGuideWidth
+
+        StringLeft, beginString, val, lastCharPos+1
+        StringTrimLeft, val, val, lastCharPos+1
+        If(numLines = 0){
+          Gui, Guide:Add, Text, xm ym, % beginString
+        } Else {
+          Gui, Guide:Add, Text, xm y+0, % beginString
+        }
+        numLines++
+      } Else {
+        If(numLines = 0){
+          Gui, Guide:Add, Text, xm ym, % val
+        } Else {
+          Gui, Guide:Add, Text, xm y+0, % val
+        }
+        numLines++
+        break
+      }
+    }
+  }
+
+  shortpath := "" "Add guide to \" overlayFolder "\" CurrentAct "\`n" "guide.txt" ""
+  If (numLies = 0) {
+    Gui, Guide:Add, Text, xm ym, % shortpath
+  }
+
+  numLines := numLines = 0 ? 2 : numLines
+  guide_height := (numLines * pixels) + spacing
+
+  Gui, Guide:Show, x%xPosGuide% y%yPosNotes% w%guide_width% h%guide_height% NA, Gui Guide
+return
+
+SetExp:
+  safeZone := Floor(3 + (CurrentLevel/16) )
+  monsterLevel := SubStr(CurrentZone, 1, 2)
+
+  If (monsterLevel = 71) {
+    monsterLevel = 70.94
+  } Else If (monsterLevel = 72) {
+    monsterLevel = 71.82
+  } Else If (monsterLevel = 73) {
+    monsterLevel = 72.64
+  } Else If (monsterLevel = 74) {
+    monsterLevel = 73.40
+  } Else If (monsterLevel = 75) {
+    monsterLevel = 74.10
+  } Else If (monsterLevel = 76) {
+    monsterLevel = 74.74
+  } Else If (monsterLevel = 77) {
+    monsterLevel = 75.32
+  } Else If (monsterLevel = 78) {
+    monsterLevel = 75.84
+  } Else If (monsterLevel = 79) {
+    monsterLevel = 76.30
+  } Else If (monsterLevel = 80) {
+    monsterLevel = 76.70
+  } Else If (monsterLevel = 81) {
+    monsterLevel = 77.04
+  } Else If (monsterLevel = 82) {
+    monsterLevel = 77.32
+  } Else If (monsterLevel = 83) {
+    monsterLevel = 77.54
+  } Else If (monsterLevel = 84) {
+    monsterLevel = 77.70
+  }
+
+  effectiveDiff := Max( Abs(CurrentLevel - monsterLevel) - safeZone, 0 )
+  expPenalty := (CurrentLevel+5)/(CurrentLevel+5+Sqrt(effectiveDiff*effectiveDiff*effectiveDiff*effectiveDiff*effectiveDiff))
+  expMulti := Sqrt(expPenalty*expPenalty*expPenalty)
+  If (CurrentLevel >= 95) {
+    expMulti := expMulti * (1/(1+(0.1*(CurrentLevel-94))))
+  }
+
+  expMulti := Max( expMulti, 0.01 )
+
+  calcExp := "Exp: "
+
+  calcExp .= Round(expMulti * 100)
+  calcExp .= "%   "
+
+  calcExp .= "Over: "
+  calcExp .= CurrentLevel - (Floor(monsterLevel) - safeZone)
+
+  GuiControl,Exp:,CurrentExp, %calcExp%
+
+  Gui, Exp:Show, x%xPosExp% y%yPosExp% w%exp_width% h%exp_height% NA, Gui Exp
+return
+
+SetGems:
+  Gui, Links:Destroy
+  Gui, Links:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndLinksWindow
+  Gui, Links:font, cFFFFFF s%points% w%links_width%, Consolas
+  Gui, Links:Color, gray
+  WinSet, Transparent, %opacity%
+  Gui, Links:Margin, 3, 3
+
+  numLines := 1
+  For key, levelGroup in gem_data.gems {
+    If(levelGroup.level = CurrentGem){
+      numLines := levelGroup.links.Length()
+      Loop, % levelGroup.links.Length()
+      {
+        gem_array := StrSplit(levelGroup.links[A_Index], ",")
+        If(gem_array[1] = "B"){
+          Gui, Links:font, c0000FF
+        }
+        If(gem_array[1] = "R"){
+          Gui, Links:font, cFF0000
+        }
+        If(gem_array[1] = "G"){
+          Gui, Links:font, c00FF00
+        }
+        If(gem_array[1] = "W"){
+          Gui, Links:font, cFFFFFF
+        }
+        If(A_Index = 1){
+          Gui, Links:Add, Text, xm ym, % gem_array[2]
+        } Else {
+          Gui, Links:Add, Text, xm y+0, % gem_array[2]
+        }
+      }
+    }
+  }
+
+  links_height := (numLines * pixels) + spacing
+
+  Gui, Links:Show, x%xPosLinks% y%yPosLinks% w%links_width% h%links_height% NA, Gui Exp
 return
 
 GetDelimitedPartListString(data, part) {
@@ -608,7 +803,7 @@ RotateAct(direction, acts, current) {
 partSelectUI:
   Gui, Controls:Submit, NoHide
 
-  If (CurrentPart = "Part I"){
+  If (CurrentPart = "Part I") {
     CurrentAct := "Act I"
     numPart := 1
   } Else If (CurrentPart = "Part II") {
@@ -627,6 +822,10 @@ partSelectUI:
   CurrentZone := GetDefaultZone(data.zones, CurrentAct)
   GuiControl,,CurrentZone, % "|" test := GetDelimitedZoneListString(data.zones, CurrentAct)
   Sleep 100
+  If (numPart != 3) {
+    GoSub, setNotes
+    GoSub, setGuide
+  }
   GoSub, UpdateImages
   trigger := true
 return
@@ -641,6 +840,10 @@ actSelectUI:
   CurrentZone := GetDefaultZone(data.zones, CurrentAct)
   GuiControl,,CurrentZone, % "|" test := GetDelimitedZoneListString(data.zones, CurrentAct)
   Sleep 100
+  If (numPart != 3) {
+    GoSub, setNotes
+    GoSub, setGuide
+  }
   GoSub, UpdateImages
 return
 
@@ -654,185 +857,11 @@ gemSelectUI:
   GoSub, SetGems
 return
 
-setNotes:
-  notesText := ""
-  numLines := 0
-  filepath := "" A_ScriptDir "\" overlayFolder "\" CurrentAct "\" CurrentZone ".txt" ""
-  Loop, read, %filepath%
-  {
-    val:= A_LoopReadLine
-    beginString := A_LoopReadLine
-    ;Wrap notes longer than maxNotesWidth
-    while true
-    {
-      StringLen, stringLength, val
-      If (stringLength > maxNotesWidth) {
-        StringGetPos, lastCharPos, val, %A_Space%, R1, stringLength-maxNotesWidth
-
-        StringLeft, beginString, val, lastCharPos+1
-        StringTrimLeft, val, val, lastCharPos+1
-        notesText .= beginString "`n"
-        numLines++
-      } Else {
-        notesText .= val "`n"
-        numLines++
-        break
-      }
-    }
-  }
-
-  shortpath := "" "Add notes to \" overlayFolder "\" CurrentAct "\`n" CurrentZone ".txt" ""
-  numLines := notesText = "" ? 2 : numLines
-  notesText := notesText = "" ? shortpath : notesText
-
-  GuiControl,Notes:,ActNotes, %notesText%
-
-  numLines := numLines = 0 ? 1 : numLines
-  notes_height := (numLines * pixels) + spacing
-
-  Gui, Notes:Show, x%xPosNotes% y%yPosNotes% w%notes_width% h%notes_height% NA, Gui Notes
-return
-
-setGuide:
-  guideText := ""
-  numLines := 0
-  filepath := "" A_ScriptDir "\" overlayFolder "\" CurrentAct "\" "guide.txt" ""
-  Loop, read, %filepath%
-  {
-    val:= A_LoopReadLine
-    beginString := A_LoopReadLine
-    ;Wrap lines longer than maxGuideWidth
-    while true
-    {
-      StringLen, stringLength, val
-      If (stringLength > maxGuideWidth) {
-        StringGetPos, lastCharPos, val, %A_Space%, R1, stringLength-maxGuideWidth
-
-        StringLeft, beginString, val, lastCharPos+1
-        StringTrimLeft, val, val, lastCharPos+1
-        guideText .= beginString "`n"
-        numLines++
-      } Else {
-        guideText .= val "`n"
-        numLines++
-        break
-      }
-    }
-  }
-
-  shortpath := "" "Add guide to \" overlayFolder "\" CurrentAct "\`n" "guide.txt" ""
-  numLines := guideText = "" ? 2 : numLines
-  guideText := guideText = "" ? shortpath : guideText
-
-  GuiControl,Guide:,ActGuide, %guideText%
-
-  numLines := numLines = "" ? 1 : numLines
-  guide_height := (numLines * pixels) + spacing
-
-  Gui, Guide:Show, x%xPosGuide% y%yPosNotes% w%guide_width% h%guide_height% NA, Gui Guide
-  guide_toggle := 1
-return
-
-SetExp:
-  safeZone := Floor(3 + (CurrentLevel/16) )
-  monsterLevel := SubStr(CurrentZone, 1, 2)
-
-  If (monsterLevel = 71) {
-    monsterLevel = 70.94
-  } Else If (monsterLevel = 72) {
-    monsterLevel = 71.82
-  } Else If (monsterLevel = 73) {
-    monsterLevel = 72.64
-  } Else If (monsterLevel = 74) {
-    monsterLevel = 73.40
-  } Else If (monsterLevel = 75) {
-    monsterLevel = 74.10
-  } Else If (monsterLevel = 76) {
-    monsterLevel = 74.74
-  } Else If (monsterLevel = 77) {
-    monsterLevel = 75.32
-  } Else If (monsterLevel = 78) {
-    monsterLevel = 75.84
-  } Else If (monsterLevel = 79) {
-    monsterLevel = 76.30
-  } Else If (monsterLevel = 80) {
-    monsterLevel = 76.70
-  } Else If (monsterLevel = 81) {
-    monsterLevel = 77.04
-  } Else If (monsterLevel = 82) {
-    monsterLevel = 77.32
-  } Else If (monsterLevel = 83) {
-    monsterLevel = 77.54
-  } Else If (monsterLevel = 84) {
-    monsterLevel = 77.70
-  }
-
-  effectiveDiff := Max( Abs(CurrentLevel - monsterLevel) - safeZone, 0 )
-  expPenalty := (CurrentLevel+5)/(CurrentLevel+5+Sqrt(effectiveDiff*effectiveDiff*effectiveDiff*effectiveDiff*effectiveDiff))
-  expMulti := Sqrt(expPenalty*expPenalty*expPenalty)
-  If (CurrentLevel >= 95) {
-    expMulti := expMulti * (1/(1+(0.1*(CurrentLevel-94))))
-  }
-
-  expMulti := Max( expMulti, 0.01 )
-
-  calcExp := "Exp: "
-
-  calcExp .= Round(expMulti * 100)
-  calcExp .= "%   "
-
-  calcExp .= "Over: "
-  calcExp .= CurrentLevel - (Floor(monsterLevel) - safeZone)
-
-  GuiControl,Exp:,CurrentExp, %calcExp%
-
-  Gui, Exp:Show, x%xPosExp% y%yPosExp% w%exp_width% h%exp_height% NA, Gui Exp
-return
-
-SetGems:
-  Gui, Links:Destroy
-  Gui, Links:+E0x20 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndLinksWindow
-  Gui, Links:font, cFFFFFF s%points% w%inks_width%, Consolas
-  Gui, Links:Color, gray
-  WinSet, Transparent, %opacity%
-  Gui, Links:Margin, 3, 3
-
-  numLines := 1
-  For key, levelGroup in gem_data.gems {
-    If(levelGroup.level = CurrentGem){
-      numLines := levelGroup.links.Length()
-      Loop, % levelGroup.links.Length()
-      {
-        gem_array := StrSplit(levelGroup.links[A_Index], ",")
-        If(gem_array[1] = "B"){
-	  Gui, Links:font, c0000FF
-        }
-        If(gem_array[1] = "R"){
-	  Gui, Links:font, cFF0000
-        }
-        If(gem_array[1] = "G"){
-	  Gui, Links:font, c00FF00
-        }
-        If(gem_array[1] = "W"){
-	  Gui, Links:font, cFFFFFF
-        }
-        If(A_Index = 1){
-          Gui, Links:Add, Text, xm ym, % gem_array[2]
-        } Else {
-          Gui, Links:Add, Text, xm y+0, % gem_array[2]
-        }
-      }
-    }
-  }
-
-  links_height := (numLines * pixels) + spacing
-
-  Gui, Links:Show, x%xPosLinks% y%yPosLinks% w%links_width% h%links_height% NA, Gui Exp
-return
-
 zoneSelectUI:
   Gui, Controls:Submit, NoHide
-
+  If (numPart != 3) {
+    GoSub, setNotes
+  }
   GoSub, UpdateImages
 return
 
@@ -879,7 +908,9 @@ UpdateImages:
     }
 return
 
+;
 ;========== Auto Magic Zone Changing =======
+;
 
 SearchAct:
   ;You can check more than one line to make this more robust,
@@ -1079,7 +1110,10 @@ ShowGuiTimer:
       active_toggle := 1
     } else {
       if (onStartup) {
-        ;delete Client.txt on startup so we don't have to read a HUGE file
+        ;Delete Client.txt on startup so we don't have to read a HUGE file!
+        ;Some people complained about this, but I assure you GGG never reads this file
+        ;they just write to it until its GIGABYTES large and you can't even open it.
+        ;If you want to keep your file and slow this program down, comment out these 4 lines
         file := FileOpen(client, "w")
         if IsObject(file) {
           file.Close()
@@ -1103,8 +1137,8 @@ ShowAllWindows:
   }
   controls_active := WinActive("ahk_id" Controls)
   If (LG_toggle and !controls_active and (active_toggle or persistText) and numPart != 3) {
-    GoSub, setNotes
-    GoSub, setGuide
+    Gui, Notes:Show, NoActivate
+    Gui, Guide:Show, NoActivate
   }
 
   If (LG_toggle and zone_toggle) {

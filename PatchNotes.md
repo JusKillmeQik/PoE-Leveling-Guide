@@ -1,5 +1,17 @@
 # Leveling Guide - Patch Notes
 
+### Delirium League
+
+* Added the ability to color notes and guides
+** Only supports Red / Green / Blue for now
+* Added user contributed "ShortNotes" folder
+** Contains step by step instructions to make it to maps
+
+#### Minor improvements
+
+* Improved auto hiding feature
+* Cleaned up unused code and fixed some bugs
+
 ### Metamorph League
 
 * Added the ability to track your desired gem links while leveling (Alt+g)
@@ -7,7 +19,7 @@
 * Added the ability to set the folder you want to read your notes from
 ** This allows you to have multiple different builds in different folders and just select the folder in the config file
 * Removed Map names since they can be different teirs in Metamorph, now you just select a tier for level information
-** Still no support for Map notes, but I'm not sure if I will leave maps in next league, it depends on how Conquer's feels
+** Still no support for Map notes, but I'm not sure if I will leave maps in next league, it depends on how Conquerer's feels
 
 ### Blight League
 

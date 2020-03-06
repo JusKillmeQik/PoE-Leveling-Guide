@@ -1,0 +1,5 @@
+> Arena
++ Kill Vilenta
+< "Vilenta's Vengeance" (Lani)
+> Town
+> Ravaged Square

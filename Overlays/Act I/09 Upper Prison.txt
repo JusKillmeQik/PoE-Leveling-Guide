@@ -1,1 +1,2 @@
-Try left first. Log out after you kill Brutus then Waypoint to Prisoner's Gate
+Try left first.
+B,Log out after you kill Brutus then Waypoint to Prisoner's Gate

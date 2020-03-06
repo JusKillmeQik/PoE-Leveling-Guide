@@ -1,10 +1,10 @@
 Lost in Love:         Aura GEM
-Crematorium:          Trial
-Victario's Secrets:   Passive
-Catacombs:            Trial
+G,Crematorium:          Trial
+B,Victario's Secrets:   Passive
+G,Catacombs:            Trial
 The Ribbon Spool:     Amulet
 Sever the Right Hand: GEM
-Piety's Pets:         Passive
+B,Piety's Pets:         Passive
 Fixture of Fate:      GEM
 Siosa:                GEMS
-Imperial Gardens:     Trial
+G,Imperial Gardens:     Trial

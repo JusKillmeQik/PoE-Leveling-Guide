@@ -1,2 +1,2 @@
 Try right first for the exit. There is a trial in this zone that you can do later thanks to the Waypoint
-TRIAL - Spike traps
+G,TRIAL - Spike traps

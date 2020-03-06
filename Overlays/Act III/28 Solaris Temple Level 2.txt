@@ -1,2 +1,2 @@
 Follow the carpet but can have dead ends
-CRAFT - Cold damage
+R,CRAFT - Cold damage

@@ -12,7 +12,7 @@
 
 ### Requirements
 
-You will need AutoHotkey to run this script. https://www.autohotkey.com/
+You will need AutoHotkey to run this script, with a minimum version of 1.1.32.00 https://www.autohotkey.com/
 
 Make sure to run it with PoE in windowed fullscreen or windowed mode.
 
@@ -30,9 +30,16 @@ Be sure to familiarize yourself with the above document before using this tool.
 
 Based on the act you're in, your own notes on gems, quests and socket colors can be shown in the notes section. Each zone in the Overlays folder has a text file named after it, where you can edit the zone specific information you would like available. Each Act has a guide.txt file that you can also edit for information you would like available during the whole Act. Some placeholder notes are there for an example. You can add your own [Quest Rewards](https://pathofexile.gamepedia.com/Quest_Rewards) so you save time while leveling.
 
-The config.json file can be used to change the transparency, width and location of the overlay. I do not recommend changing these settngs, but I have left notes on how to change them if you desire.
+The text on any line in the guide or notes files can now be changed to some basic colors. Just start the line with one of the 2 character codes in the table below. I have added color to the first 3 Acts in the "Overlays" folder as an example. The "ShortNotes" folder is completely colorized. You can change which guide to use in the config.json file by setting the "overlayFolder" value. This can be very helpful for setting up your own guides as well so you can switch between gems and trees for different characters.
 
->NOTE: NEW THIS LEAGUE!
+| 2 character code | color generated |
+|:----------------:|:---------------:|
+|   "< " or "R,"   |       Red       |
+|   "+ " or "G,"   |      Green      |
+|   "> " or "B,"   |       Blue      |
+|  "W," or nothing |      White      |
+
+The config.json file can be used to change the transparency, width and location of the overlay. I do not recommend changing these settings, but I have left notes at the bottom of the file on how to change them if you desire.
 
 ### Gem Setup
 
@@ -45,7 +52,7 @@ A full passive tree can now be shown when you are picking where to place your po
 2) Make or Import your tree. Path of Building (and other tools) can export just the skill tree in the form "https://www.pathofexile.com/passive-skill-tree/v/#=="  
 3) Go to Tools, Take Screenshot of Skilled Nodes...  
 4) Export the image as *tree.jpg*  
-5) Place the file in the "Overlays" folder  
+5) Place the file in your "overlayFolder" (By default "Overlays")
 
 Any image can go there, including a screen shot of poe.ninja's heatmap or any other picture you want to look at while building your tree. The steps above are simply what I used to get a clean looking tree. If you don't want a tree to show up, simply delete or rename that *tree.jpg* file.
 
@@ -76,8 +83,6 @@ This guide auto hides after a few seconds (this can be increased or removed in c
 ##### Display/Hide the tree
 **Alt+F**
 
->NOTE: This is changed from **Alt+P** last league to make it closer to the keys that are normally pressed while playing
-
 ##### Increment/Decrement the zone dropdown menu
 **Shift+F1** and **Ctrl+F1**
 
@@ -88,6 +93,8 @@ If you find any bugs please feel free to log an issue on GitHub or send me a mes
 *Cheers!*
 
 Credits:
+t3kkn0 - provided ShortNotes as an alternative guide
+josemaia - pointed out minimum autohotkey level
 dsnvwlmnt - many logged issues and testing
 rioreiser - original script framework  
 Eruyome87 - updates to the library scripts  

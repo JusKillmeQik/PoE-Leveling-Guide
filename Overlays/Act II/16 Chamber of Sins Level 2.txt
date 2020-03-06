@@ -1,1 +1,2 @@
-Always go up and right, the trial is top left
+Boss is up and right, trial is top left
+G,TRIAL - Sawblades

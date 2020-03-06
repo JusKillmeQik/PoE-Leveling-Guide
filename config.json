@@ -1,16 +1,16 @@
 {
 	"points" : "9",
-	"overlayFolder" : "Overlays",
+	"overlayFolder" : "ShortNotes",
 	"treeSide" : "right",
 	"treeName" : "tree.jpg",
 	"maxNotesWidth" : "50",
 	"maxGuideWidth" : "50",
 	"maxLinksWidth" : "30",
 	"guideXoffset" : ".855",
-	"levelXoffset" : ".287",
+	"levelXoffset" : ".589",
 	"levelYoffset" : ".955",
 	"gemsYoffset" : ".180",
-	"opacity" : "150",
+	"opacity" : "200",
 	"startHidden" : "0",
 	"displayTimeout" : "5",
 	"persistText" : "0",
@@ -59,6 +59,7 @@ guideXoffset:	How much space to leave on the right side of the screen for the gu
 
 levelXoffset:	How far to the right of the screen to put the exp tracker
 		.287 = As far to the left as you can go without covering the flasks on a normal resolution
+		.589 = As far to the right as you can go without covering the skill bar on a normal resolution
 		This is the default and a great option for normal screen resolutions
 		Experiment with other numbers if you want to move the exp tracker around
 

@@ -1,2 +1,2 @@
-TRIAL - Blade sentries
-CRAFT - Ele Damage w/ Attack
+G,TRIAL - Blade sentries
+R,CRAFT - Ele Damage w/ Attack
