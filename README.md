@@ -95,9 +95,9 @@ If you find any bugs please feel free to log an issue on GitHub or send me a mes
 *Cheers!*
 
 Credits:
-t3kkn0 - provided ShortNotes as an alternative guide
-josemaia - pointed out minimum autohotkey level
-dsnvwlmnt - many logged issues and testing
+Rebslack - provided ShortNotes as an alternative guide  
+josemaia - pointed out minimum autohotkey level  
+dsnvwlmnt - many logged issues and testing  
 rioreiser - original script framework  
 Eruyome87 - updates to the library scripts  
 Biggoron144 - contributions to the script  
