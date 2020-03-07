@@ -1171,13 +1171,11 @@ ShowAllWindows:
     }
   }
 
-  If (level_toggle) {
-    Gui, Level:Show, NoActivate
-    GoSub, SetExp
-  }
-
   If (tree_toggle) {
     Gui, Tree:Show, NoActivate
+  } Else If (level_toggle) {
+    Gui, Level:Show, NoActivate
+    GoSub, SetExp
   }
 
   If (gems_toggle) {
