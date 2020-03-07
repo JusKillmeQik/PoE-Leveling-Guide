@@ -48,6 +48,7 @@ global treeName := "tree.jpg"
 global opacity := 200
 global displayTimeout := 5
 global persistText := 0
+global expOrPen := 0
 
 global zone_toggle := 0
 global level_toggle := 1
@@ -102,13 +103,24 @@ If (config.opacity != "") {
 	opacity := config.opacity
 }
 If (config.startHidden != "") {
-	LG_toggle := config.startHidden
+  If (config.startHidden = 1){
+    LG_toggle := 1
+    level_toggle := 0
+    gems_toggle := 0
+  } Else If (config.startHidden = 0){
+    LG_toggle := 0
+    level_toggle := 1
+    gems_toggle := 1
+  }
 }
 If (config.displayTimeout != "") {
 	displayTimeout := config.displayTimeout
 }
 If (config.persistText != "") {
 	persistText := config.persistText
+}
+If (config.expOrPenalty != "") {
+	expOrPen := config.expOrPenalty
 }
 
 global gem_data := {}
@@ -641,10 +653,18 @@ SetExp:
 
   expMulti := Max( expMulti, 0.01 )
 
-  calcExp := "Exp: "
-
-  calcExp .= Round(expMulti * 100)
-  calcExp .= "%   "
+  If (expOrPen = 0){
+    calcExp := "Exp: "
+    If (expMulti = 1){
+      calcExp .= "100"
+    } Else {
+      calcExp .= Round((expMulti * 100), 1)
+    }
+  } Else {
+    calcExp := "Pen: "
+    calcExp .= Round((1-expMulti) * 100, 1)
+  }
+  calcExp .= "%  "
 
   calcExp .= "Over: "
   calcExp .= CurrentLevel - (Floor(monsterLevel) - safeZone)
@@ -1101,22 +1121,26 @@ ShowGuiTimer:
       client .= "logs\Client.txt"
     }
 
-    if (closed = 6){
+    If (closed = 6){
       GoSub, HideAllWindows
       ;Sleep 10 seconds, no need to keep checking this
       Sleep 10000
       ;Reset activity upon return
       activeCount := 0
       active_toggle := 1
-    } else {
-      if (onStartup) {
+    } Else {
+      If (onStartup) {
         ;Delete Client.txt on startup so we don't have to read a HUGE file!
-        ;Some people complained about this, but I assure you GGG never reads this file
-        ;they just write to it until its GIGABYTES large and you can't even open it.
-        ;If you want to keep your file and slow this program down, comment out these 4 lines
-        file := FileOpen(client, "w")
-        if IsObject(file) {
-          file.Close()
+        FileGetSize, clientSize, %client%, K  ; Retrieve the size in Kbytes.
+        If(clientSize > 10000){
+          MsgBox, 1,, Your %client% is over 10Mb and will be deleted to speed up this script. Feel free to Cancel and rename the file if you want to keep it, but deletion will not affect the game at all.
+          IfMsgBox Ok
+          {
+            file := FileOpen(client, "w")
+            If IsObject(file) {
+              file.Close()
+            }
+          }
         }
         onStartup := 0
       }

@@ -6,11 +6,13 @@
 ** Only supports Red / Green / Blue for now
 * Added user contributed "ShortNotes" folder
 ** Contains step by step instructions to make it to maps
+* Added the ability to show experience penalty instead of gain
 
 #### Minor improvements
 
 * Improved auto hiding feature
 * Cleaned up unused code and fixed some bugs
+* Added a warning before deleting large Client.txt files
 
 ### Metamorph League
 

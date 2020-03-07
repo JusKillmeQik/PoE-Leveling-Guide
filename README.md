@@ -58,7 +58,9 @@ Any image can go there, including a screen shot of poe.ninja's heatmap or any ot
 
 ### Experience Tracker
 
-The guide now shows your level and percent experience gain in the current zone at the bottom left near the experience bar. This can be toggled off, but not moved at the moment. It picks up any level information logged to the client.txt right now so you may need to manually change it if you're leveling with friends of a much different level. You will also need to set it every time you restart the guide unless you want to wait until you level up again for it to pick up. It also shows how many levels over the optimal level you are for a given zone. Try to keep this number at 1 or 0 to improve your speed while leveling, but do not let it stay negative.
+The guide now shows your level and percent experience gain in the current zone at the bottom left near the experience bar. This can be toggled off, but not moved at the moment. It picks up any level information logged to the client.txt right now so you may need to manually change it if you're leveling with friends of a much different level. You will also need to set it every time you restart the guide unless you want to wait until you level up again for it to pick up. It also shows how many levels over the OPTIMAL level you are for a given zone. So you may be getting 100% experience, but that experience is less than what you could get in a higher zone your character is ready for. Try to keep this number at 1 or 0 to improve your speed while leveling, but do not let it stay negative.
+
+You can also set the "expOrPen" in the config.json file to show you penalty percentage instead of experience percentage if you would like.
 
 ### Hotkeys
 

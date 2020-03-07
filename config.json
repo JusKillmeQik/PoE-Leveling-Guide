@@ -14,6 +14,7 @@
 	"startHidden" : "0",
 	"displayTimeout" : "5",
 	"persistText" : "0",
+	"expOrPenalty" : "0",
 	"Comments" : "
 
 points:		This is the font size
@@ -93,6 +94,10 @@ displayTimeout: How long in seconds before auto hiding the control bar
 persistText:	Should the Notes and Guide be shown after the timeout
 		By default it will hide as well
 		However if you want to see it after the timeout change this value to 1
+
+expOrPen:	Should the Experience tracker show experience or penalty percentage
+		By default it will show experience
+		However if you want to see penalty percentage change this value to 1
 
 	"
 }
