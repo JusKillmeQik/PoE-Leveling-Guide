@@ -1,4 +1,4 @@
-# AHK Leveling Guide
+# PoE Leveling Guide
 
 ![Cavern of Wrath](previews/LevelingGuidePreview1.png?raw=true "Leveling Guide in The Cavern of Wrath")
 
@@ -94,7 +94,7 @@ If you find any bugs please feel free to log an issue on GitHub or send me a mes
 
 *Cheers!*
 
-Credits:
+Credits:  
 Rebslack - provided ShortNotes as an alternative guide  
 josemaia - pointed out minimum autohotkey level  
 dsnvwlmnt - many logged issues and testing  
