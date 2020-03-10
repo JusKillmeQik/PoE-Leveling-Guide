@@ -223,14 +223,12 @@ return
 ;========== Zone Layouts =======
 #IfWinActive, ahk_group PoEWindowGrp
 !F2:: ; Display/Hide zone layout images hotkey
-  if (zone_toggle = 0 and LG_toggle)
+  if (zone_toggle = 0)
   {
     GoSub, UpdateImages
     Loop, % maxImages {
       Gui, Image%A_Index%:Show, NA
     }
-    zone_toggle := 1
-  } else if (zone_toggle = 0 and LG_toggle = 0) {
     zone_toggle := 1
   }
   else
@@ -331,7 +329,9 @@ ToggleLevelingGuide:
     activeCount := 0
     active_toggle := 1
   } else {
-    GoSub, HideAllWindows
+    Gui, Controls:Cancel
+    Gui, Notes:Cancel
+    Gui, Guide:Cancel
     tree_toggle := 0
     ;gems_toggle := 0
     ;level_toggle := 0
@@ -1165,7 +1165,7 @@ ShowAllWindows:
     Gui, Guide:Show, NoActivate
   }
 
-  If (LG_toggle and zone_toggle) {
+  If (zone_toggle) {
     Loop, % maxImages {
       Gui, Image%A_Index%:Show, NoActivate
     }
