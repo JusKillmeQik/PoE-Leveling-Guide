@@ -1,2 +1,0 @@
-Left or right wall follow, based on bottom or top being the dead end at the entrance
-RECOMMEND physical mitigation

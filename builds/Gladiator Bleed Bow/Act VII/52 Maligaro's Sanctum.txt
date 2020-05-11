@@ -1,0 +1,3 @@
+Follow the edges of the zone, and cross the bridges you encounter until you find the arena (Maligaro’s Workshop)
+G,Use a portal scroll before the fight and then to port out to Silk
+B,RECOMMEND lightning resist

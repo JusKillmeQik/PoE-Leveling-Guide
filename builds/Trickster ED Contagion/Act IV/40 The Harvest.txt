@@ -1,0 +1,5 @@
+Always one boss on right side, two left
+G,Stay in green aura against Doedre
+Maligaro does physical so keep moving
+B,Shavronne deals lightning
+R,Malachi deals fire damage

@@ -1,0 +1,3 @@
+Go up left, the right path leads past the Waypoint
+G,TRIAL - Blade sentries
+R,CRAFT - All attributes

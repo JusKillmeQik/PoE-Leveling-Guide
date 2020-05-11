@@ -1,3 +1,0 @@
-Exits are usually diagonal from entrance
-R,CRAFT - Spell damage
-B,RECOMMEND lightning resistance

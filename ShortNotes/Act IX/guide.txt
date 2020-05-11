@@ -1,4 +1,0 @@
-+ Do (kill/help/find/lab)
-- Logout
-> Go (walk/teleport)
-< Complete 

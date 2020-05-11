@@ -1,4 +1,0 @@
-Storm Blade:        Linked Weapon
-Queen of the Sands: Passive
-Tunnel:             Trial
-Ruler of Highgate:  Passive

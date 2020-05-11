@@ -1,0 +1,3 @@
+Exits spawn in a random corner, Go up diagonally until you spot barricades at exit
+G,RECOMMEND cold resist
+B,and lightning resist

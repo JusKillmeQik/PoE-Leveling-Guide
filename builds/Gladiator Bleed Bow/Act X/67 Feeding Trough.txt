@@ -1,0 +1,5 @@
+Move top left, there shouldn’t be any diversions, kill Kitava at the end to unlock maps!
+R,CRAFT - Defenses
+After Kitava, in Oriath
+G,CRAFT - Movement Speed
+R,RECOMMEND 3,700+ EHP, fire resist, Good physical mitigations, Fast Movement skill

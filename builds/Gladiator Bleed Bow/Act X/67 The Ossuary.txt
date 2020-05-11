@@ -1,0 +1,3 @@
+Left hand wall follow to find the quest item and trial. The trial entrance is in the opening in the wall, the quest item is close to that opening, but you move away from the wall to find it
+G,TRIAL - Dart traps
+R,CRAFT - Chaos damage

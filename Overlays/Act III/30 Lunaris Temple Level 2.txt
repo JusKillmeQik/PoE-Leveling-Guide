@@ -1,3 +1,0 @@
-Layout differs a lot, if you see stairs, go up these then find more stairs, until a larger area, there will be carts on both sides, pick the side where there is only one
-R,CRAFT - Lightning damage
-B,RECOMMEND lightning resistance

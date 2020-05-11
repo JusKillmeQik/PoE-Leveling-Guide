@@ -1,5 +1,22 @@
 # Leveling Guide - Patch Notes
 
+### 3.11 League
+
+* Added settings menu
+** All settings can now be modified graphically or with INI file
+* Added a build planner
+** All of your gems can be set up for each major level milestone
+** Builds are stored in different folders so you can switch between different builds
+* Colors are now configurable
+* All hotkeys are now configurable
+* Syndicate and Incursion cheatsheets are available
+
+#### Minor improvements
+
+* Images were moved to one place to take up less space
+* Script was split into multiple files to make it easier to update
+* Script now checks Autohotkey version
+
 ### Delirium League
 
 * Added the ability to color notes and guides
