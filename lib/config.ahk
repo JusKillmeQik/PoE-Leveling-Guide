@@ -18,11 +18,11 @@ global gemsYoffset := .180
 global treeSide := "Right"
 global treeName := "tree.jpg"
 global opacity := 180
-global startHidden := False
+global startHidden := "False"
 global displayTimeout := 5
-global persistText := False
-global hideGuide := False
-global expOrPen := Exp
+global persistText := "False"
+global hideGuide := "False"
+global expOrPen := "Exp"
 
 global backgroundColor := "black"
 global redColor := "FF4040"
