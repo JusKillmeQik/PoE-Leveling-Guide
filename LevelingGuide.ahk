@@ -116,7 +116,7 @@ ShowGuiTimer:
     activeCount++
   }
 
-  If (controls_active or level_active or gems_active or displayTimeout=0) {
+  If (controls_active or displayTimeout=0) {
     activeCount := 0
     active_toggle := 1
   }
@@ -128,7 +128,7 @@ ShowGuiTimer:
   ;   active_toggle := 1
   ; }
 
-  If (poe_active or (controls_active or level_active or gems_active)) {
+  If (poe_active or controls_active or level_active or gems_active) {
     ; show all gui windows
     GoSub, ShowAllWindows
     Sleep 500

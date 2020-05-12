@@ -57,9 +57,9 @@ SearchLog() {
           StringTrimRight, tempFileName, tempFileName, 4
           gemFiles.Push(tempFileName)
         }
-        For index, level in gemFiles
+        For index, someLevel in gemFiles
         {
-          If (level = newLevel) {
+          If (someLevel = newLevel) {
             GuiControl,Gems:,CurrentGem, % "|" test := GetDelimitedPartListString(gemFiles, newLevel)
             Sleep, 100
             Gui, Gems:Submit, NoHide
