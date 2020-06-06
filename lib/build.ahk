@@ -26,6 +26,8 @@ LaunchBuild() {
   global
   Critical
 
+  ClearControls()
+
   ReadGemFile(gemLevel)
 
   Gui, Build:New, -E0x20 -E0x80 +AlwaysOnTop -SysMenu +hwndBuildWindow, PoE Leveling Guide Build Creator
@@ -353,6 +355,16 @@ MergeGemFile(fileLevel){
   }
 }
 
+ClearControls(){
+  For k, someControl in controlList {
+    %someControl%group := ""
+    %someControl%gem := ""
+    %someControl%color := ""
+    %someControl%npc := ""
+    %someControl%note := ""
+  }
+}
+
 SaveGemFile(fileLevel){
   global
   folderName := A_scriptdir . "\builds\" . overlayFolder . "\gems"
@@ -618,7 +630,7 @@ ClearBuild() {
   For k, someControl in controlList {
     GuiControl,,%someControl%group, % "|" test := GetGroupList("All")
     GuiControl,Text,%someControl%gem,
-    ;Also load color, npc and notes
+    ;Also clear color, npc and notes
     GuiControl,,%someControl%color,
     GuiControl,,%someControl%note,
     GuiControl,,%someControl%npc,
@@ -626,6 +638,8 @@ ClearBuild() {
 }
 
 UpdateFilter() {
+  ;Did this work without global?
+  global
   Gui, Build:Submit, NoHide
   LoadGroup(gemLevel, charClass)
   For k, someControl in controlList {

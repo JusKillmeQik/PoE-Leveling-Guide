@@ -1,0 +1,2 @@
+Loop around clockwise
+R,CRAFT - Physical damage

@@ -177,10 +177,13 @@ NewBuild() {
   {
     Thread, NoTimers
     FileCopyDir, %A_ScriptDir%\builds\%overlayFolder%, %A_ScriptDir%\builds\%newBuildName%
+    ;Remove the gems folder so a new one can be created
+    FileRemoveDir, %A_ScriptDir%\builds\%newBuildName%\gems, 1
     Thread, NoTimers, false
     if ErrorLevel {
       MsgBox, 4096,, The build could not be created, perhaps because a folder of that name already exists.
     } Else {
+      gemLevel := "02"
       overlayFolder := newBuildName
       GuiControl,,overlayFolder,%overlayFolder%
     }
