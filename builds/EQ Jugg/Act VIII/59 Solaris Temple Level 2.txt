@@ -1,0 +1,3 @@
+Follow the carpets. Log out after Boss. Waypiont to Lunaris Concourse
+G,CRAFT - Traps and mines
+R,RECOMMEND fire resist

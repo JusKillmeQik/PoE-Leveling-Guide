@@ -1,0 +1,4 @@
+Go up and left, and spiral counter clockwise
+R,CRAFT - Movement speed
+B,RECOMMEND lightning resist
+R,and fire resist with 1,200+ EHP
