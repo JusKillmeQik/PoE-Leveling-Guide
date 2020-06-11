@@ -16,9 +16,13 @@
 
 >WARNING: This update is not compatible with previous versions, you will need to put this project in its own folder and import any custom changes you made in previous versions
 
+>WARNING: This version does not currently work with GGG's vulkan beta renderer. Please use DirectX until they fix this issue.
+
 You will need AutoHotkey to run this script, with a minimum version of 1.1.30.00 https://www.autohotkey.com/
 
-Make sure to run it with PoE in windowed fullscreen or windowed mode.
+Make sure to run it with PoE in windowed fullscreen or windowed mode. It is highly recommended to turn off text scaling for high resolution monitors.
+
+>Display Settings -> Scale and layout -> Change the size of text, apps, and other items -> 100% (Recommended)
 
 >NOTE: Some users will need to run this script with right-click 'Run as Administrator' in order for the automatic detection to work. Please try without this first.
 

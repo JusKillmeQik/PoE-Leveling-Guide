@@ -11,7 +11,7 @@ global listHeight := 200
 optionHeight := 21
 
 global gemLevel := "02"
-global charClass := ""
+global charClass := "Duelist"
 global charName := ""
 global gemFilter1 := "None"
 global gemFilter2 := "None"
@@ -22,11 +22,13 @@ global filterList := ["None"]
 
 global gemList := Object()
 
+global unsaved := 0
+
 LaunchBuild() {
   global
   Critical
 
-  ClearControls()
+  ClearControls() ;This has to happen here even though it happens in ReadGemFile to make sure new builds are fresh
 
   ReadGemFile(gemLevel)
 
@@ -44,9 +46,9 @@ LaunchBuild() {
   Loop, 6 {
     Gui, Build:Add, DropDownList, vMH%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x10 y+5, % GetGroupList(MH%A_Index%group)
     Gui, Build:Add, ComboBox, vMH%A_Index%gem gUpdateElements w%gemWidth% h%listHeight% x+5, % GetGemList(MH%A_Index%group, MH%A_Index%gem)
-    Gui, Build:Add, Edit, vMH%A_Index%color w%colorWidth% h%optionHeight% x+5, % MH%A_Index%color
-    Gui, Build:Add, Edit, vMH%A_Index%npc w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(MH%A_Index%group)][2]
-    Gui, Build:Add, Edit, vMH%A_Index%note w%noteWidth% h%optionHeight% x+5, % MH%A_Index%note
+    Gui, Build:Add, Edit, vMH%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % MH%A_Index%color
+    Gui, Build:Add, Edit, vMH%A_Index%npc gUpdateEdit w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(MH%A_Index%group)][2]
+    Gui, Build:Add, Edit, vMH%A_Index%note gUpdateEdit w%noteWidth% h%optionHeight% x+5, % MH%A_Index%note
   }
 
   ;Body Armour
@@ -61,9 +63,9 @@ LaunchBuild() {
   Loop, 6 {
     Gui, Build:Add, DropDownList, vBA%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x10 y+5, % GetGroupList(BA%A_Index%group)
     Gui, Build:Add, ComboBox, vBA%A_Index%gem gUpdateElements w%gemWidth% h%listHeight% x+5, % GetGemList(BA%A_Index%group, BA%A_Index%gem)
-    Gui, Build:Add, Edit, vBA%A_Index%color w%colorWidth% h%optionHeight% x+5, % BA%A_Index%color
-    Gui, Build:Add, Edit, vBA%A_Index%npc w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(BA%A_Index%group)][2]
-    Gui, Build:Add, Edit, vBA%A_Index%note w%noteWidth% h%optionHeight% x+5, % BA%A_Index%note
+    Gui, Build:Add, Edit, vBA%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % BA%A_Index%color
+    Gui, Build:Add, Edit, vBA%A_Index%npc gUpdateEdit w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(BA%A_Index%group)][2]
+    Gui, Build:Add, Edit, vBA%A_Index%note gUpdateEdit w%noteWidth% h%optionHeight% x+5, % BA%A_Index%note
   }
 
   ;Spacing
@@ -81,9 +83,9 @@ LaunchBuild() {
   Loop, 3 {
     Gui, Build:Add, DropDownList, vOH%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x%columnTwoX% y+5, % GetGroupList(OH%A_Index%group)
     Gui, Build:Add, ComboBox, vOH%A_Index%gem gUpdateElements w%gemWidth% h%listHeight% x+5, % GetGemList(OH%A_Index%group, OH%A_Index%gem)
-    Gui, Build:Add, Edit, vOH%A_Index%color w%colorWidth% h%optionHeight% x+5, % OH%A_Index%color
-    Gui, Build:Add, Edit, vOH%A_Index%npc w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(OH%A_Index%group)][2]
-    Gui, Build:Add, Edit, vOH%A_Index%note w%noteWidth% h%optionHeight% x+5, % OH%A_Index%note
+    Gui, Build:Add, Edit, vOH%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % OH%A_Index%color
+    Gui, Build:Add, Edit, vOH%A_Index%npc gUpdateEdit w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(OH%A_Index%group)][2]
+    Gui, Build:Add, Edit, vOH%A_Index%note gUpdateEdit w%noteWidth% h%optionHeight% x+5, % OH%A_Index%note
   }
 
   ;Helmet
@@ -98,9 +100,9 @@ LaunchBuild() {
   Loop, 4 {
     Gui, Build:Add, DropDownList, vHT%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x%columnTwoX% y+5, % GetGroupList(HT%A_Index%group)
     Gui, Build:Add, ComboBox, vHT%A_Index%gem gUpdateElements w%gemWidth% h%listHeight% x+5, % GetGemList(HT%A_Index%group, HT%A_Index%gem)
-    Gui, Build:Add, Edit, vHT%A_Index%color w%colorWidth% h%optionHeight% x+5, % HT%A_Index%color
-    Gui, Build:Add, Edit, vHT%A_Index%npc w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(HT%A_Index%group)][2]
-    Gui, Build:Add, Edit, vHT%A_Index%note w%noteWidth% h%optionHeight% x+5, % HT%A_Index%note
+    Gui, Build:Add, Edit, vHT%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % HT%A_Index%color
+    Gui, Build:Add, Edit, vHT%A_Index%npc gUpdateEdit w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(HT%A_Index%group)][2]
+    Gui, Build:Add, Edit, vHT%A_Index%note gUpdateEdit w%noteWidth% h%optionHeight% x+5, % HT%A_Index%note
   }
 
   ;Controls
@@ -121,7 +123,7 @@ LaunchBuild() {
   Gui, Build:Add, Button, gClearBuild w%groupWidth% h%optionHeight% x+5, &Clear
   Gui, Build:Add, Button, gLoadBuild w%groupWidth% h%optionHeight% x+5, &Load
 
-  Gui, Build:Add, Edit, vcharName w%charWidth% h%optionHeight% x%columnTwoX% y+5, %charName%
+  Gui, Build:Add, Edit, vcharName gUpdateEdit w%charWidth% h%optionHeight% x%columnTwoX% y+5, %charName%
   Gui, Build:Add, Button, gSaveBuild w%groupWidth% h%optionHeight% x+5, &Save
   Gui, Build:Add, Button, gCloseBuild w%groupWidth% h%optionHeight% x+5, &Close
 
@@ -140,9 +142,9 @@ LaunchBuild() {
   Loop, 4 {
     Gui, Build:Add, DropDownList, vGL%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x%columnThreeX% y+5, % GetGroupList(GL%A_Index%group)
     Gui, Build:Add, ComboBox, vGL%A_Index%gem gUpdateElements w%gemWidth% h%listHeight% x+5, % GetGemList(GL%A_Index%group, GL%A_Index%gem)
-    Gui, Build:Add, Edit, vGL%A_Index%color w%colorWidth% h%optionHeight% x+5, % GL%A_Index%color
-    Gui, Build:Add, Edit, vGL%A_Index%npc w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(GL%A_Index%group)][2]
-    Gui, Build:Add, Edit, vGL%A_Index%note w%noteWidth% h%optionHeight% x+5, % GL%A_Index%note
+    Gui, Build:Add, Edit, vGL%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % GL%A_Index%color
+    Gui, Build:Add, Edit, vGL%A_Index%npc gUpdateEdit w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(GL%A_Index%group)][2]
+    Gui, Build:Add, Edit, vGL%A_Index%note gUpdateEdit w%noteWidth% h%optionHeight% x+5, % GL%A_Index%note
   }
 
   ;Boots
@@ -157,9 +159,9 @@ LaunchBuild() {
   Loop, 4 {
     Gui, Build:Add, DropDownList, vBT%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x%columnThreeX% y+5, % GetGroupList(BT%A_Index%group)
     Gui, Build:Add, ComboBox, vBT%A_Index%gem gUpdateElements w%gemWidth% h%listHeight% x+5, % GetGemList(BT%A_Index%group, BT%A_Index%gem)
-    Gui, Build:Add, Edit, vBT%A_Index%color w%colorWidth% h%optionHeight% x+5, % BT%A_Index%color
-    Gui, Build:Add, Edit, vBT%A_Index%npc w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(BT%A_Index%group)][2]
-    Gui, Build:Add, Edit, vBT%A_Index%note w%noteWidth% h%optionHeight% x+5, % BT%A_Index%note
+    Gui, Build:Add, Edit, vBT%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % BT%A_Index%color
+    Gui, Build:Add, Edit, vBT%A_Index%npc gUpdateEdit w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(BT%A_Index%group)][2]
+    Gui, Build:Add, Edit, vBT%A_Index%note gUpdateEdit w%noteWidth% h%optionHeight% x+5, % BT%A_Index%note
   }
 
   ;Rings
@@ -174,9 +176,9 @@ LaunchBuild() {
   Loop, 2 {
     Gui, Build:Add, DropDownList, vRG%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x%columnThreeX% y+5, % GetGroupList(RG%A_Index%group)
     Gui, Build:Add, ComboBox, vRG%A_Index%gem gUpdateElements w%gemWidth% h%listHeight% x+5, % GetGemList(RG%A_Index%group, RG%A_Index%gem)
-    Gui, Build:Add, Edit, vRG%A_Index%color w%colorWidth% h%optionHeight% x+5, % RG%A_Index%color
-    Gui, Build:Add, Edit, vRG%A_Index%npc w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(RG%A_Index%group)][2]
-    Gui, Build:Add, Edit, vRG%A_Index%note w%noteWidth% h%optionHeight% x+5, % RG%A_Index%note
+    Gui, Build:Add, Edit, vRG%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % RG%A_Index%color
+    Gui, Build:Add, Edit, vRG%A_Index%npc gUpdateEdit w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(RG%A_Index%group)][2]
+    Gui, Build:Add, Edit, vRG%A_Index%note gUpdateEdit w%noteWidth% h%optionHeight% x+5, % RG%A_Index%note
   }
 
   Gui, Build:Show, w%buildWidth% h475 NA
@@ -189,7 +191,7 @@ LaunchBuild() {
 
 
 
-LoadGemFile(fileName){
+LoadGemFile(fileName) {
   global
   ;Read fileLevel.INI
   ;*** INI really should exist since they selected it
@@ -234,31 +236,34 @@ LoadGemFile(fileName){
 }
 
 
-ReadGemFile(fileLevel){
+ReadGemFile(fileLevel) {
   global
   ;Read fileLevel.INI
   ;*** Create INI if not exist
   INIGem=%A_scriptdir%\builds\%overlayFolder%\gems\%fileLevel%.ini
+  INIMeta=%A_scriptdir%\builds\%overlayFolder%\gems\meta.ini
   ifnotexist,%INIGem%
   {
     SaveGemFile(fileLevel)
+    ;This allows the IniReads later to work
   }
-  ;Only load class when we start the program
-  If (charClass = "") {
-    IniRead, charClass, %INIGem%, Build, class
+  IniRead, charClass, %INIMeta%, Build, class
+  ;If there is no class in the file, pick one
+  If (charClass = "ERROR" or charClass = "") {
+    charClass := "Duelist"
   }
-  ;If there is still no class in the file, pick Templar
-  If (charClass = "") {
-    charClass := "Templar"
+  GuiControl,,charClass, % "|" test := GetClasses(charClass)
+  IniRead, charName, %INIMeta%, Build, name
+  If (charName = "ERROR") {
+    charName := ""
   }
-  If (charName = "") {
-    IniRead, charName, %INIGem%, Build, name
-  }
+  GuiControl,,charName, %charName%
   ;Use the group for the current character class and level
   LoadGroup(gemLevel, charClass)
   For k, someControl in controlList {
     IniRead, gemName, %INIGem%, %someControl%, gem
     IniRead, groupName, %INIGem%, %someControl%, group
+    originalGroupName := groupName
     ;Replace Siosa with Lilly after he unlocks
     If (groupName = "Siosa" and gemLevel > 31){
       groupName := "Lilly"
@@ -266,13 +271,13 @@ ReadGemFile(fileLevel){
     groupIndex := GroupIndex(groupName)
     For j, someGem in groupList[groupIndex] { ;See if the gem is in the group
       If (someGem = gemName and j>2){
-        groupIndex := j
+        groupIndex := j ;any variable works here, just make sure the gem exists
         break
       } Else {
         groupIndex := 0
       }
     }
-    If (groupIndex = 0){ ;If the group doesn't exist, check the inventory
+    If (groupIndex = 0){ ;If the gem doesn't exist in the group, check the inventory
       groupName := "Inventory"
       groupIndex := GroupIndex(groupName)
       groupName := "All" ;If the gem isn't in Inventory set it to all
@@ -286,86 +291,30 @@ ReadGemFile(fileLevel){
     %someControl%group := groupName
     %someControl%gem := gemName
     IniRead, %someControl%color, %INIGem%, %someControl%, color
-    IniRead, %someControl%npc, %INIGem%, %someControl%, npc
-    IniRead, %someControl%note, %INIGem%, %someControl%, note
-
-  }
-}
-
-MergeGemFile(fileLevel){
-  global
-  ;Read fileLevel.INI
-  ;*** Create INI if not exist
-  INIGem=%A_scriptdir%\builds\%overlayFolder%\gems\%fileLevel%.ini
-  ifnotexist,%INIGem%
-  {
-    SaveGemFile(fileLevel)
-  }
-  ;Use the group for the current character class and level
-  LoadGroup(gemLevel, charClass)
-  For k, someControl in controlList {
-    IniRead, gemName, %INIGem%, %someControl%, gem
-    ;IniRead, groupName, %INIGem%, %someControl%, group, "" ;Default to empty
-    IniRead, groupName, %INIGem%, %someControl%, group
-    originalGroupName := groupName
-    gemChanged := 0
-    If (gemName = "" and groupName != "Inventory"){
-      gemName := %someControl%gem
-      gemChanged := 1
-    }
-    ;Replace Siosa with Lilly after he unlocks
-    If (groupName = "Siosa" and gemLevel > 31){
-      groupName := "Lilly"
-    }
-    groupIndex := GroupIndex(groupName)
-    For j, someGem in groupList[groupIndex] { ;See if the gem is in the group
-      If (someGem = gemName and j>2){
-        groupIndex := j
-        break
-      } Else {
-        groupIndex := 0
-      }
-    }
-    If ( (groupIndex = 0 or gemChanged) and groupName != "Inventory" ){ ;If the group doesn't exist or the gem changed, check the inventory
-      groupName := "Inventory"
-      groupIndex := GroupIndex(groupName)
-      groupName := "All" ;If the gem isn't in Inventory set it to all
-      For j, someGem in groupList[groupIndex] { ;See if the gem is in the Inventory
-        If (someGem = gemName and j>2){
-          groupName := "Inventory"
-          break
-        }
-      }
-    }
-    %someControl%group := groupName
-    %someControl%gem := gemName
-    If (gemChanged = 0) { ;We used the gem in the file, so use the metadata too
-      IniRead, %someControl%color, %INIGem%, %someControl%, color
-      If (groupName = "Inventory" and originalGroupName != "Inventory") { ;unless we moved it to inventory
-        %someControl%npc := ""
-        %someControl%note := ""
-      } Else {
-        IniRead, %someControl%npc, %INIGem%, %someControl%, npc
-        IniRead, %someControl%note, %INIGem%, %someControl%, note
-      }
-    } Else { ;keep the old color but clear the notes
+    If (groupName = "Inventory" and originalGroupName != "Inventory") { ;clear meta data for gems moved to inventory
       %someControl%npc := ""
       %someControl%note := ""
+    } Else {
+      IniRead, %someControl%npc, %INIGem%, %someControl%, npc
+      IniRead, %someControl%note, %INIGem%, %someControl%, note
     }
+
+    ;This might upset some people, but for now its a safety feature
+    For k, someGem in gemList {
+      If (someGem.name = gemName) {
+        If ( someGem.lvl > gemLevel + 2 ) { ;If the gem cannot be purchased yet, show its level instead of cost
+          %someControl%note := someGem.lvl
+        }
+        break
+      }
+    }
+
   }
+  ;Save any minor edits we made
+  SaveGemFile(fileLevel)
 }
 
-ClearControls(){
-  For k, someControl in controlList {
-    %someControl%group := ""
-    %someControl%gem := ""
-    %someControl%color := ""
-    %someControl%npc := ""
-    %someControl%note := ""
-  }
-}
-
-SaveGemFile(fileLevel){
+SaveGemFile(fileLevel) {
   global
   folderName := A_scriptdir . "\builds\" . overlayFolder . "\gems"
   If (InStr(FileExist(folderName), "D")) {
@@ -375,8 +324,9 @@ SaveGemFile(fileLevel){
     FileCreateDir, %folderName%
   }
   INIGem=%A_scriptdir%\builds\%overlayFolder%\gems\%fileLevel%.ini
-  IniWrite, %charClass%, %INIGem%, Build, class
-  IniWrite, %charName%, %INIGem%, Build, name
+  INIMeta=%A_scriptdir%\builds\%overlayFolder%\gems\meta.ini
+  IniWrite, %charClass%, %INIMeta%, Build, class
+  IniWrite, %charName%, %INIMeta%, Build, name
   For k, someControl in controlList {
     If (someControl != "") {
       IniWrite, % %someControl%group, %INIGem%, %someControl%, group
@@ -418,6 +368,7 @@ LoadGroup(loadLevel, loadChar) {
       gemList[gemList.length()].color := %tempColor%Color ;Use the settings color
       gemList[gemList.length()].cost := someGem.cost
       gemList[gemList.length()].vendor := someGem.vendor
+      gemList[gemList.length()].lvl := someGem.required_lvl
 
       ;Only populate tags the first time too
       For j, someFilter in someGem.gemTags {
@@ -498,7 +449,7 @@ LoadGroup(loadLevel, loadChar) {
       }
 
       If (thisGroup = ""){
-        thisGroup := "Unavailable"
+        thisGroup := "Drop-Only"
       } Else If (someGem.level < loadLevel) { ;Add to Inventory
         If (thisGroup = "Siosa") {
           ;Siosa gems need to stick around until after Lilly is unlocked
@@ -541,8 +492,8 @@ LoadGroup(loadLevel, loadChar) {
         }
       } Else { ;Doesn't exist (rare)
         groupList[groupList.length()+1] := []
-        If (thisGroup = "Unavailable"){
-          groupList[groupList.length()].Push("Unavailable")
+        If (thisGroup = "Drop-Only"){
+          groupList[groupList.length()].Push("Drop-Only")
           groupList[groupList.length()].Push("Trade")
           groupList[groupList.length()].Push(someGem.name)
         } Else If InStr(thisGroup, A_Space) { 
@@ -606,6 +557,26 @@ GroupIndex(checkGroup) {
 }
 
 
+CheckSave(varLevel) {
+  global
+  If (unsaved) {
+    MsgBox, 3,, You have unsaved changes, would you like to save?
+    IfMsgBox Yes
+    {
+      Gui, Build:Submit, NoHide
+      SaveGemFile(varLevel)
+      unsaved := 0
+      return 1
+    } Else IfMsgBox No
+    {
+      return 1
+    } Else {
+      return 0
+    }
+  } Else {
+    return 1
+  }
+}
 
 
 SaveBuild() {
@@ -613,6 +584,7 @@ SaveBuild() {
   Gui, Build:Submit, NoHide
 
   SaveGemFile(gemLevel)
+  unsaved := 0
 
   ;Gui, Build:Cancel
   ;WinActivate, ahk_id %PoEWindowHwnd%
@@ -621,8 +593,10 @@ SaveBuild() {
 
 CloseBuild() {
   global
-  Gui, Build:Cancel
-  ;WinActivate, ahk_id %PoEWindowHwnd%
+  If (CheckSave(gemLevel)) {
+    Gui, Build:Cancel
+    ;WinActivate, ahk_id %PoEWindowHwnd%
+  }
 }
 
 ClearBuild() {
@@ -635,10 +609,22 @@ ClearBuild() {
     GuiControl,,%someControl%note,
     GuiControl,,%someControl%npc,
   }
+
+  unsaved := 1
+}
+
+ClearControls() {
+  global
+  For k, someControl in controlList {
+    %someControl%group := ""
+    %someControl%gem := ""
+    %someControl%color := ""
+    %someControl%npc := ""
+    %someControl%note := ""
+  }
 }
 
 UpdateFilter() {
-  ;Did this work without global?
   global
   Gui, Build:Submit, NoHide
   LoadGroup(gemLevel, charClass)
@@ -649,6 +635,8 @@ UpdateFilter() {
     GuiControl,,%someControl%gem, % "|" test := GetGemList(%someControl%group, %someControl%gem)
     GuiControl,Text,%someControl%gem, %gemName%
   }
+
+  unsaved := 1
 }
 
 LoadBuild() {
@@ -665,6 +653,8 @@ LoadBuild() {
     GuiControl,,%someControl%note, % %someControl%note
     GuiControl,,%someControl%npc, % %someControl%npc
   }
+
+  unsaved := 1
 }
 
 GetGroupList(groupName) {
@@ -741,37 +731,51 @@ GetFilters(controlFilter) {
   Return dList
 }
 
-UpdateControl(){
+UpdateEdit() {
+  global
+  unsaved := 1
+}
+
+UpdateControl() {
   global
   oldGemLevel := gemLevel
 
-  Gui, Build:Submit, NoHide
-  If (oldGemLevel != gemLevel){
-   SaveGemFile(oldGemLevel)
-  }
+  If (CheckSave(oldGemLevel)) {
+    Gui, Build:Submit, NoHide ;this gets the newly selected gem level
 
-  If (gemLevel > oldGemLevel) {
-    MergeGemFile(gemLevel)
-  } Else {
+    ;incase nothing else changed, save the build class change
+    INIMeta=%A_scriptdir%\builds\%overlayFolder%\gems\meta.ini
+    IniWrite, %charClass%, %INIMeta%, Build, class
+
     ReadGemFile(gemLevel)
+
+    For k, someControl in controlList {
+
+      GuiControl,,%someControl%group, % "|" test := GetGroupList(%someControl%group)
+      gemName := %someControl%gem
+      GuiControl,,%someControl%gem, % "|" test := GetGemList(%someControl%group, %someControl%gem)
+      GuiControl,Text,%someControl%gem, %gemName%
+
+      ;This can all happen every time now since we set it different based on level
+      GuiControl,,%someControl%color, % %someControl%color
+      GuiControl,,%someControl%note, % %someControl%note
+      GuiControl,,%someControl%npc, % %someControl%npc
+
+    }
+
+    ;Have to sleep otherwise the GuiControls finishing above this reset the unsaved value
+    Sleep 100
+    ;Don't set this to unsaved since we just saved when reading the new gem file
+    unsaved := 0
+  } Else {
+    ;gemLevel := oldGemLevel
+    GuiControl,,gemLevel, % "|" test := GetLevels(oldGemLevel)
+    Gui, Build:Submit, NoHide
   }
 
-  For k, someControl in controlList {
-
-    GuiControl,,%someControl%group, % "|" test := GetGroupList(%someControl%group)
-    gemName := %someControl%gem
-    GuiControl,,%someControl%gem, % "|" test := GetGemList(%someControl%group, %someControl%gem)
-    GuiControl,Text,%someControl%gem, %gemName%
-
-    ;This can all happen every time now since we set it different based on level
-    GuiControl,,%someControl%color, % %someControl%color
-    GuiControl,,%someControl%note, % %someControl%note
-    GuiControl,,%someControl%npc, % %someControl%npc
-
-  }
 }
 
-UpdateGroup(){
+UpdateGroup() {
   global
   element := SubStr(A_GuiControl, 1 , 3)
   Gui, Build:Submit, NoHide
@@ -783,12 +787,12 @@ UpdateGroup(){
   UpdateElements()
 }
 
-UpdateElements(){
+UpdateElements() {
   global
   element := SubStr(A_GuiControl, 1 , 3)
   Gui, Build:Submit, NoHide
 
-  If (%element%gem = "") { ;If there is no text, remove the color
+  If (%element%gem = "") { ;If there is no text, remove the metadata
     colorUpdate := ""
     noteUpdate := ""
     npcUpdate := groupList[GroupIndex(%element%group)][2]
@@ -802,11 +806,14 @@ UpdateElements(){
     thisGroup := %element%group
     If (someGem.name = %element%gem) {
       colorUpdate := someGem.color
-      If ( InStr(thisGroup, A_Space) or thisGroup = "Inventory" or thisGroup = "Unavailable") { ;I want cost for All since Inventory should be used for no cost Gems
-        ;It's a quest reward or already purchased or unavailable so leave out cost
+      If ( InStr(thisGroup, A_Space) or thisGroup = "Inventory" or thisGroup = "Drop-Only") { ;I want cost for All since Inventory should be used for no cost Gems
+        ;It's a quest reward or already purchased or Drop-Only so leave out cost
         noteUpdate := ""
       } Else {
         noteUpdate := someGem.cost
+        If ( someGem.lvl > gemLevel + 2 ) { ;If the gem cannot be purchased yet, show its level instead of cost
+          noteUpdate := someGem.lvl
+        }
       }
       If (thisGroup = "All") {
         npcUpdate := someGem.vendor
@@ -817,4 +824,6 @@ UpdateElements(){
   GuiControl,,%element%color,%colorUpdate%
   GuiControl,,%element%note,%noteUpdate%
   GuiControl,,%element%npc,%npcUpdate%
+
+  unsaved := 1
 }

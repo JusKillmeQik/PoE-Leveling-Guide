@@ -6,7 +6,9 @@
 	{
     tempFileName = %A_LoopFileName%
     StringTrimRight, tempFileName, tempFileName, 4
-		gemFiles.Push(tempFileName)
+    If (tempFileName != "meta") {
+      gemFiles.Push(tempFileName)
+    }
 	}
   If (gemFiles.length() = 0){ ;If the file didnt exist it just got created, probably empty
     gemFiles := ["02"]
@@ -16,11 +18,11 @@
   Gui, Controls:Color, %backgroundColor%
   Gui, Controls:Font, s%points%, %font%
   Gui, Controls:Add, DropDownList, VCurrentZone GzoneSelectUI x0 y0 w%notes_width% h300 , % GetDelimitedZoneListString(data.zones, CurrentAct)
-  Gui, Controls:Add, DropDownList, VCurrentAct GactSelectUI x+5 y0 w%nav_width% h200 , % GetDelimitedActListString(data.zones, CurrentAct, CurrentPart)
-  Gui, Controls:Add, DropDownList, VCurrentPart GpartSelectUI x+5 y0 w%nav_width% h200 , % GetDelimitedPartListString(data.parts, CurrentPart)
-  xPos := xPosLayoutParent + (maxImages * 115)
-  control_width := (nav_width*2) + notes_width + 10
-  yPos := 5 + (A_ScreenHeight * guideYoffset)
+  Gui, Controls:Add, DropDownList, VCurrentAct GactSelectUI x+%controlSpace% y0 w%nav_width% h200 , % GetDelimitedActListString(data.zones, CurrentAct, CurrentPart)
+  Gui, Controls:Add, DropDownList, VCurrentPart GpartSelectUI x+%controlSpace% y0 w%nav_width% h200 , % GetDelimitedPartListString(data.parts, CurrentPart)
+  xPos := xPosLayoutParent + (maxImages * (images_width+controlSpace))
+  control_width := (nav_width*2) + notes_width + (controlSpace*2)
+  yPos := controlSpace + (A_ScreenHeight * guideYoffset)
   Gui, Controls:Show, h%control_height% w%control_width% x%xPos% y%yPos% NA, Controls
 
   Gui, Gems:+E0x20 +E0x80 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndGems
@@ -33,8 +35,8 @@
   Gui, Level:Color, %backgroundColor%
   Gui, Level:Font, s%points%, %font%
   Gui, Level:Add, Edit, x0 y0 h%control_height% w%level_width% r1 GlevelSelectUI, Level
-  Gui, Level:Add, UpDown, x5 vCurrentLevel GlevelSelectUI Range1-100, 1
-  Gui, Level:Show, h%control_height% w%level_width% x%xPosLevel% y%yPosLevel% NA, Level
+  Gui, Level:Add, UpDown, x%controlSpace% vCurrentLevel GlevelSelectUI Range1-100, 1
+  Gui, Level:Show, h%exp_height% w%level_width% x%xPosLevel% y%yPosLevel% NA, Level
 
   ;The names of the images have to be created now so that ShowAllWindows doesn't make empty ones that show up in the Alt Tab bar
   Loop, % maxImages {
@@ -79,7 +81,7 @@ DrawTree() {
 	    }
 	    yTree := A_ScreenHeight - treeH
 
-	    Gui, Tree:+E0x20 +E0x80 -Caption +ToolWindow +LastFound +AlwaysOnTop -Resize +DPIScale +hwndTreeWindow
+	    Gui, Tree:+E0x20 +E0x80 -Caption +ToolWindow +LastFound +AlwaysOnTop -Resize -DPIScale +hwndTreeWindow
 	    Gui, Tree:Add, Picture, x0 y0 w%treeW% h%treeH%, %image_file%
 
 	    Gui, Tree:Show, x%xTree% y%yTree% w%treeW% h%treeH% NA, Gui Tree
@@ -266,10 +268,10 @@ UpdateImages()
 	  }
     
     If (FileExist(filepath)) {
-      xPos := xPosLayoutParent + ((maxImages - (newIndex + 0)) * 115)
+      xPos := xPosLayoutParent + ((maxImages - (newIndex + 0)) * (images_width+controlSpace))
       Gui, Image%newIndex%:+E0x20 +E0x80 -DPIScale -resize -SysMenu -Caption +ToolWindow +AlwaysOnTop +hwndImage%newIndex%Window
-      Gui, Image%newIndex%:Add, Picture, x0 y0 w110 h60, %filepath%
-      Gui, Image%newIndex%:Show, w110 h60 x%xPos% y%yPosNotes% NA, Image%newIndex%
+      Gui, Image%newIndex%:Add, Picture, x0 y0 w%images_width% h%images_height%, %filepath%
+      Gui, Image%newIndex%:Show, w%images_width% h%images_height% x%xPos% y%yPosNotes% NA, Image%newIndex%
       id := Image%newIndex%Window
       WinSet, Transparent, %opacity%, ahk_id %id%
       Gui, Image%newIndex%:Cancel

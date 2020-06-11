@@ -55,7 +55,9 @@ SearchLog() {
         {
           tempFileName = %A_LoopFileName%
           StringTrimRight, tempFileName, tempFileName, 4
-          gemFiles.Push(tempFileName)
+          If (tempFileName != "meta") {
+            gemFiles.Push(tempFileName)
+          }
         }
         For index, someLevel in gemFiles
         {

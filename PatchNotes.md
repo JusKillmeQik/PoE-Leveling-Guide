@@ -16,6 +16,7 @@
 * Images were moved to one place to take up less space
 * Script was split into multiple files to make it easier to update
 * Script now checks Autohotkey version
+* Script now correctly accounts for DPI differences in large res screens
 
 ### Delirium League
 
