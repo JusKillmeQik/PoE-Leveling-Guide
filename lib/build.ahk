@@ -204,26 +204,29 @@ LoadGemFile(fileName) {
     IniRead, gemName, %INIGem%, %someControl%, gem
     IniRead, groupName, %INIGem%, %someControl%, group
     ;Replace Siosa with Lilly after he unlocks
-    If (groupName = "Siosa" and gemLevel > 31){
+    If (groupName = "Siosa" and gemLevel > 31) {
       groupName := "Lilly"
     }
-    groupIndex := GroupIndex(groupName)
-    For j, someGem in groupList[groupIndex] { ;See if the gem is in the group
-      If (someGem = gemName and j>2){
-        groupIndex := j
-        break
-      } Else {
-        groupIndex := 0
-      }
-    }
-    If (groupIndex = 0){ ;If the group doesn't exist, check the inventory
-      groupName := "Inventory"
+    If (groupName != "All") {
       groupIndex := GroupIndex(groupName)
-      groupName := "All" ;If the gem isn't in Inventory set it to all
-      For j, someGem in groupList[groupIndex] { ;See if the gem is in the Inventory
-        If (someGem = gemName and j>2){
-          groupName := "Inventory"
+      gemExists := 0
+      For j, someGem in groupList[groupIndex] { ;See if the gem is in the group
+        If (someGem = gemName and j>2) {
+          gemExists := 1
           break
+        } Else {
+          gemExists := 0
+        }
+      }
+      If (gemExists = 0) { ;If the group doesn't exist, check the inventory
+        groupName := "Inventory"
+        groupIndex := GroupIndex(groupName)
+        groupName := "All" ;If the gem isn't in Inventory set it to all
+        For j, someGem in groupList[groupIndex] { ;See if the gem is in the Inventory
+          If (someGem = gemName and j>2) {
+            groupName := "Inventory"
+            break
+          }
         }
       }
     }
@@ -242,10 +245,12 @@ ReadGemFile(fileLevel) {
   ;*** Create INI if not exist
   INIGem=%A_scriptdir%\builds\%overlayFolder%\gems\%fileLevel%.ini
   INIMeta=%A_scriptdir%\builds\%overlayFolder%\gems\meta.ini
+  newFileCreated := 0
   ifnotexist,%INIGem%
   {
     SaveGemFile(fileLevel)
     ;This allows the IniReads later to work
+    newFileCreated := 1
   }
   IniRead, charClass, %INIMeta%, Build, class
   ;If there is no class in the file, pick one
@@ -259,32 +264,35 @@ ReadGemFile(fileLevel) {
   }
   GuiControl,,charName, %charName%
   ;Use the group for the current character class and level
-  LoadGroup(gemLevel, charClass)
+  LoadGroup(fileLevel, charClass)
   For k, someControl in controlList {
     IniRead, gemName, %INIGem%, %someControl%, gem
     IniRead, groupName, %INIGem%, %someControl%, group
     originalGroupName := groupName
     ;Replace Siosa with Lilly after he unlocks
-    If (groupName = "Siosa" and gemLevel > 31){
+    If (groupName = "Siosa" and fileLevel > 31) {
       groupName := "Lilly"
     }
-    groupIndex := GroupIndex(groupName)
-    For j, someGem in groupList[groupIndex] { ;See if the gem is in the group
-      If (someGem = gemName and j>2){
-        groupIndex := j ;any variable works here, just make sure the gem exists
-        break
-      } Else {
-        groupIndex := 0
-      }
-    }
-    If (groupIndex = 0){ ;If the gem doesn't exist in the group, check the inventory
-      groupName := "Inventory"
+    If (groupName != "All") {
       groupIndex := GroupIndex(groupName)
-      groupName := "All" ;If the gem isn't in Inventory set it to all
-      For j, someGem in groupList[groupIndex] { ;See if the gem is in the Inventory
-        If (someGem = gemName and j>2){
-          groupName := "Inventory"
+      gemExists := 0
+      For j, someGem in groupList[groupIndex] { ;See if the gem is in the group
+        If (someGem = gemName and j>2) {
+          gemExists := 1
           break
+        } Else {
+          gemExists := 0
+        }
+      }
+      If (gemExists = 0) { ;If the gem doesn't exist in the group, check the inventory
+        groupName := "Inventory"
+        groupIndex := GroupIndex(groupName)
+        groupName := "All" ;If the gem isn't in Inventory set it to all
+        For j, someGem in groupList[groupIndex] { ;See if the gem is in the Inventory
+          If (someGem = gemName and j>2) {
+            groupName := "Inventory"
+            break
+          }
         }
       }
     }
@@ -299,13 +307,14 @@ ReadGemFile(fileLevel) {
       IniRead, %someControl%note, %INIGem%, %someControl%, note
     }
 
-    ;This might upset some people, but for now its a safety feature
-    For k, someGem in gemList {
-      If (someGem.name = gemName) {
-        If ( someGem.lvl > gemLevel + 2 ) { ;If the gem cannot be purchased yet, show its level instead of cost
-          %someControl%note := someGem.lvl
+    If (newFileCreated) {
+      For k, someGem in gemList {
+        If (someGem.name = gemName) {
+          If ( someGem.lvl > fileLevel + 2 ) { ;If the gem cannot be purchased yet, show its level instead of cost
+            %someControl%note := someGem.lvl
+          }
+          break
         }
-        break
       }
     }
 
@@ -374,23 +383,23 @@ LoadGroup(loadLevel, loadChar) {
       For j, someFilter in someGem.gemTags {
         filterExists := 0
         For k, existingFilter in filterList {
-          If (existingFilter = someFilter){
+          If (existingFilter = someFilter) {
             filterExists := 1
             break
           }
         }
-        If (filterExists = 0){
+        If (filterExists = 0) {
           filterList.Push(someFilter)
         }
       }
     }
 
     addGem1 := 0 ;only add gems that match the filter
-    If (gemFilter1 = "None"){
+    If (gemFilter1 = "None") {
       addGem1 := 1
     } Else {
       For k, someFilter in someGem.gemTags {
-        If (someFilter = gemFilter1){
+        If (someFilter = gemFilter1) {
           addGem1 := 1
           break
         }
@@ -398,11 +407,11 @@ LoadGroup(loadLevel, loadChar) {
     }
 
     addGem2 := 0 ;only add gems that match the filter
-    If (gemFilter2 = "None"){
+    If (gemFilter2 = "None") {
       addGem2 := 1
     } Else {
       For k, someFilter in someGem.gemTags {
-        If (someFilter = gemFilter2){
+        If (someFilter = gemFilter2) {
           addGem2 := 1
           break
         }
@@ -434,7 +443,7 @@ LoadGroup(loadLevel, loadChar) {
 
       ;Some vendors don't sell gems even though they are rewards, WTF?!
       addVendor := 1
-      If (SubStr(thisGroup, 1 , 1) = "!"){
+      If (SubStr(thisGroup, 1 , 1) = "!") {
         addVendor :=0
         StringTrimLeft, thisGroup, thisGroup, 1
       }
@@ -448,12 +457,12 @@ LoadGroup(loadLevel, loadChar) {
         }
       }
 
-      If (thisGroup = ""){
+      If (thisGroup = "") {
         thisGroup := "Drop-Only"
       } Else If (someGem.level < loadLevel) { ;Add to Inventory
         If (thisGroup = "Siosa") {
           ;Siosa gems need to stick around until after Lilly is unlocked
-          If (loadLevel > 34){ ;At 38 everything that is purchasable is done through Lilly
+          If (loadLevel > 34) { ;At 38 everything that is purchasable is done through Lilly
             thisGroup := "Lilly"
           }
         } Else If (thisGroup = "Lilly") {
@@ -478,7 +487,7 @@ LoadGroup(loadLevel, loadChar) {
             groupList[groupList.length()].Push(someGem.name)
           }
         } Else If (thisGroup = "Siosa" or thisGroup = "Lilly") { ;Also push to Inventory
-          If (someGem.level < loadLevel){
+          If (someGem.level < loadLevel) {
             groupIndex := GroupIndex("Inventory")
             If (groupIndex) { ;Inventory exists (common)
               groupList[groupIndex].Push(someGem.name)
@@ -492,7 +501,7 @@ LoadGroup(loadLevel, loadChar) {
         }
       } Else { ;Doesn't exist (rare)
         groupList[groupList.length()+1] := []
-        If (thisGroup = "Drop-Only"){
+        If (thisGroup = "Drop-Only") {
           groupList[groupList.length()].Push("Drop-Only")
           groupList[groupList.length()].Push("Trade")
           groupList[groupList.length()].Push(someGem.name)
@@ -519,7 +528,7 @@ LoadGroup(loadLevel, loadChar) {
           groupList[groupList.length()].Push(thisGroup)
           groupList[groupList.length()].Push(someGem.name)
           ;Also push to Inventory
-          If (someGem.level < loadLevel){
+          If (someGem.level < loadLevel) {
             groupIndex := GroupIndex("Inventory")
             If (groupIndex) { ;Inventory exists (common)
               groupList[groupIndex].Push(someGem.name)
