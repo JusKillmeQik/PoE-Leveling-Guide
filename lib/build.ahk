@@ -13,12 +13,12 @@ optionHeight := 21
 global gemLevel := "02"
 global charClass := "Duelist"
 global charName := ""
-global gemFilter1 := "None"
-global gemFilter2 := "None"
+global gemFilter1 := " None"
+global gemFilter2 := " None"
 global controlList := ["MH1", "MH2", "MH3", "MH4", "MH5", "MH6", "", "BA1", "BA2", "BA3", "BA4", "BA5", "BA6", "", "OH1", "OH2", "OH3", "", "HT1", "HT2", "HT3", "HT4", "", "GL1", "GL2", "GL3", "GL4", "", "BT1", "BT2", "BT3", "BT4", "", "RG1", "", "RG2"]
 global levelList := ["02", "04", "08", "12", "16", "24", "28", "31", "34", "38", "55", "72", "90"]
 global classList := ["Duelist", "Marauder", "Ranger", "Scion", "Shadow", "Templar", "Witch"]
-global filterList := ["None"]
+global filterList := [" None"]
 
 global gemList := Object()
 
@@ -395,7 +395,7 @@ LoadGroup(loadLevel, loadChar) {
     }
 
     addGem1 := 0 ;only add gems that match the filter
-    If (gemFilter1 = "None") {
+    If (gemFilter1 = " None") {
       addGem1 := 1
     } Else {
       For k, someFilter in someGem.gemTags {
@@ -407,7 +407,7 @@ LoadGroup(loadLevel, loadChar) {
     }
 
     addGem2 := 0 ;only add gems that match the filter
-    If (gemFilter2 = "None") {
+    If (gemFilter2 = " None") {
       addGem2 := 1
     } Else {
       For k, someFilter in someGem.gemTags {
