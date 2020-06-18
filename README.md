@@ -1,6 +1,10 @@
 # PoE Leveling Guide 3.0 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y4PJCG5N4DMTN&source=url)
 
-[![Click to Watch](previews/Overview_for_Path_of_Exile_Leveling_Guide_Overlay.gif)](https://youtu.be/4ttGGXBfxxQ)
+### Video Overview (click to open YouTube):
+
+[![Click to Watch](previews/Overview_for_Path_of_Exile_Leveling_Guide_Overlay.gif)](https://youtu.be/4ttGGXBfxxQ "Click to Watch")
+
+### Preview Images:
 
 ![Cavern of Wrath](previews/LevelingGuidePreview1.png?raw=true "Leveling Guide in The Cavern of Wrath")
 
@@ -107,6 +111,8 @@ Any of the hotkeys can also be disabled by deleting their value in the settings 
 If you find any bugs please feel free to log an issue on GitHub or send me a message on Reddit u/JusKillmeQik. All of this is based off of a post by u/Poland144 who borrowed code from many other people to make this happen. I completely re-wrote all of the functions and cleaned up the code to make it more readable and removed some unnecessary bloat. I also added in more of Engineering Eternity's notes to the overlay for beginners. The script automatically reads in up to 6 images, so feel free to delete or add images you want in the overlay. Just make sure they are 110 pixels wide by 60 pixels tall. It also took quite a bit to add the automation, but I think I got all of the bugs worked out. I'm hoping the community uses the source or uploads pull requests to make it even better. If you'd like to donate to my efforts there is a link at the top of this page.
 
 *Cheers!*
+
+[![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y4PJCG5N4DMTN&source=url)
 
 Credits:  
 Rebslack - provided Abbreviated as an alternative guide  
