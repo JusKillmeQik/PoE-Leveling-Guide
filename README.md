@@ -1,5 +1,7 @@
 # PoE Leveling Guide 3.0 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y4PJCG5N4DMTN&source=url)
 
+[![Click to Watch](previews/Overview_for_Path_of_Exile_Leveling_Guide_Overlay.gif)](https://youtu.be/4ttGGXBfxxQ)
+
 ![Cavern of Wrath](previews/LevelingGuidePreview1.png?raw=true "Leveling Guide in The Cavern of Wrath")
 
 ![Coast](previews/LevelingGuidePreview2.png?raw=true "Leveling Guide in The Coast Act 6 with all gem links")
