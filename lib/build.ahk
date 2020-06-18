@@ -422,7 +422,7 @@ LoadGroup(loadLevel, loadChar) {
       groupList[1].Push(someGem.name) ; Push every gem to All
     }
 
-    If (someGem.level <= loadLevel and addGem1 and addGem2) {
+    If (someGem.level <= loadLevel) {
 
       ;This is a small hack
       If (loadChar = "Duelist") {
@@ -475,27 +475,37 @@ LoadGroup(loadLevel, loadChar) {
       groupIndex := GroupIndex(thisGroup)
 
       If (groupIndex) { ;Already exists (common)
-        groupList[groupIndex].Push(someGem.name)
+        If (addGem1 and addGem2) {
+          groupList[groupIndex].Push(someGem.name)
+        }
         If InStr(thisGroup, A_Space) and addVendor { ;For quests also push to the vendor
           groupIndex := GroupIndex(someGem.vendor)
           If (groupIndex) { ;Vendor exists (common)
-            groupList[groupIndex].Push(someGem.name)
+            If (addGem1 and addGem2) {
+              groupList[groupIndex].Push(someGem.name)
+            }
           } Else { ;Make Vendor (once)
             groupList[groupList.length()+1] := []
             groupList[groupList.length()].Push(someGem.vendor)
             groupList[groupList.length()].Push(someGem.vendor)
-            groupList[groupList.length()].Push(someGem.name)
+            If (addGem1 and addGem2) {
+              groupList[groupList.length()].Push(someGem.name)
+            }
           }
-        } Else If (thisGroup = "Siosa" or thisGroup = "Lilly") { ;Also push to Inventory
+        } Else If ((thisGroup = "Siosa" and loadLevel >= 26) or (thisGroup = "Lilly" and loadLevel >= 38)) { ;Also push to Inventory
           If (someGem.level < loadLevel) {
             groupIndex := GroupIndex("Inventory")
             If (groupIndex) { ;Inventory exists (common)
-              groupList[groupIndex].Push(someGem.name)
+              If (addGem1 and addGem2) {
+                groupList[groupIndex].Push(someGem.name)
+              }
             } Else { ;Make Inventory (once)
               groupList[groupList.length()+1] := []
               groupList[groupList.length()].Push("Inventory")
               groupList[groupList.length()].Push("")
-              groupList[groupList.length()].Push(someGem.name)
+              If (addGem1 and addGem2) {
+                groupList[groupList.length()].Push(someGem.name)
+              }
             }
           }
         }
@@ -504,49 +514,69 @@ LoadGroup(loadLevel, loadChar) {
         If (thisGroup = "Drop-Only") {
           groupList[groupList.length()].Push("Drop-Only")
           groupList[groupList.length()].Push("Trade")
-          groupList[groupList.length()].Push(someGem.name)
+          If (addGem1 and addGem2) {
+            groupList[groupList.length()].Push(someGem.name)
+          }
         } Else If InStr(thisGroup, A_Space) { 
           ;Make quest first (once)
           groupList[groupList.length()].Push(thisGroup)
           groupList[groupList.length()].Push(someGem.quest)
-          groupList[groupList.length()].Push(someGem.name)
+          If (addGem1 and addGem2) {
+            groupList[groupList.length()].Push(someGem.name)
+          }
           If (addVendor) {
             ;For quests also push to vendor
             groupIndex := GroupIndex(someGem.vendor)
             If (groupIndex) { ;Vendor exists (common)
-              groupList[groupIndex].Push(someGem.name)
+              If (addGem1 and addGem2) {
+                groupList[groupIndex].Push(someGem.name)
+              }
             } Else { ;Make Vendor (once)
               groupList[groupList.length()+1] := []
               groupList[groupList.length()].Push(someGem.vendor)
               groupList[groupList.length()].Push(someGem.vendor)
-              groupList[groupList.length()].Push(someGem.name)
+              If (addGem1 and addGem2) {
+                groupList[groupList.length()].Push(someGem.name)
+              }
             }
           }
         } Else If (thisGroup = "Siosa" or thisGroup = "Lilly") {
           ;Push to group first (once)
           groupList[groupList.length()].Push(thisGroup)
           groupList[groupList.length()].Push(thisGroup)
-          groupList[groupList.length()].Push(someGem.name)
-          ;Also push to Inventory
-          If (someGem.level < loadLevel) {
-            groupIndex := GroupIndex("Inventory")
-            If (groupIndex) { ;Inventory exists (common)
-              groupList[groupIndex].Push(someGem.name)
-            } Else { ;Make Inventory (once)
-              groupList[groupList.length()+1] := []
-              groupList[groupList.length()].Push("Inventory")
-              groupList[groupList.length()].Push("")
-              groupList[groupList.length()].Push(someGem.name)
+          If (addGem1 and addGem2) {
+            groupList[groupList.length()].Push(someGem.name)
+          }
+          If ((thisGroup = "Siosa" and loadLevel >= 26) or (thisGroup = "Lilly" and loadLevel >= 38)) {
+            ;Also push to Inventory
+            If (someGem.level < loadLevel) {
+              groupIndex := GroupIndex("Inventory")
+              If (groupIndex) { ;Inventory exists (common)
+                If (addGem1 and addGem2) {
+                  groupList[groupIndex].Push(someGem.name)
+                }
+              } Else { ;Make Inventory (once)
+                groupList[groupList.length()+1] := []
+                groupList[groupList.length()].Push("Inventory")
+                groupList[groupList.length()].Push("")
+                If (addGem1 and addGem2) {
+                  groupList[groupList.length()].Push(someGem.name)
+                }
+              }
             }
           }
         } Else If (thisGroup = "Inventory") {
           groupList[groupList.length()].Push("Inventory")
           groupList[groupList.length()].Push("")
-          groupList[groupList.length()].Push(someGem.name)
+          If (addGem1 and addGem2) {
+            groupList[groupList.length()].Push(someGem.name)
+          }
         } Else { ;Just a Vendor
           groupList[groupList.length()].Push(thisGroup)
           groupList[groupList.length()].Push(thisGroup)
-          groupList[groupList.length()].Push(someGem.name)
+          If (addGem1 and addGem2) {
+            groupList[groupList.length()].Push(someGem.name)
+          }
         }
       }
     }
