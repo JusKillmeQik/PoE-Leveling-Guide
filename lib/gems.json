@@ -8573,8 +8573,8 @@
     "iconPath": "https://web.poecdn.com/image/Art/2DItems/Gems/Support/UnleashSupport.png?scale=1"
   },
   {
-    "level": 38,
-    "required_lvl": 38,
+    "level": 31,
+    "required_lvl": 31,
     "name": "Urgent Orders",
     "Witch": "Lilly",
     "Shadow": "Lilly",
