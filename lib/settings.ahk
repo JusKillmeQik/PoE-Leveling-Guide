@@ -25,6 +25,7 @@ LaunchSettings() {
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Persist Text
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Hide Act Guide
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Exp or Penalty
+  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Vulkan Fix
 
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+15, Zone Notes Width
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Act Guide Width
@@ -43,6 +44,7 @@ LaunchSettings() {
   Gui, Settings:Add, DropDownList, vpersistText w%optionWidth% h%dropDownHeight% y+5, % GetTrueOrFalse(persistText)
   Gui, Settings:Add, DropDownList, vhideGuide w%optionWidth% h%dropDownHeight% y+5, % GetTrueOrFalse(hideGuide)
   Gui, Settings:Add, DropDownList, vexpOrPen w%optionWidth% h%dropDownHeight% y+5, % GetExpOrPen(expOrPen)
+  Gui, Settings:Add, DropDownList, vvulkanFix w%optionWidth% h%dropDownHeight% y+5, % GetTrueOrFalse(vulkanFix)
 
   Gui, Settings:Add, Edit, vmaxNotesWidth w%optionWidth% h%optionHeight% y+15, %maxNotesWidth%
   Gui, Settings:Add, Edit, vmaxGuideWidth w%optionWidth% h%optionHeight% y+5, %maxGuideWidth%
@@ -284,7 +286,18 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, By default the percent of Experience you are gaining is shown "Exp". `nIf you prefer to see the percentage of a penalty you are recieving you can switch this to "Penalty".
     }
-  } Else If (control = "static13") { ;Tree Side
+  } Else If (control = "static10") { ;Vulkan Fix
+    If (oldControl = control){
+      toolTime .= 1
+    } Else {
+      oldControl := control
+      toolTime = 0
+      Tooltip
+    }
+    If (toolTime > toolTimeout) {
+      ToolTip, To fix Vulkan not showing the overlay set `nthe mode in PoE to Windowed and set this to True. `nThe tool will auto resize PoE for you correctly`nwhen you launch the Leveling Guide `nso make sure to reload once PoE is open.
+    }
+  } Else If (control = "static14") { ;Tree Side
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -295,7 +308,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, Do you want the Skill Tree so cover your Life "Left" or Inventory "Right" when shown.
     }
-  } Else If (control = "static14") { ;Tree Name
+  } Else If (control = "static15") { ;Tree Name
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -306,7 +319,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, This is the name of the image that will be shown for the skill tree. `nSome people prefer to save the image as a png or give it a different name entirely. `nThis file must be in each Act Folder of your Build or it will not appear.
     }
-  } Else If (control = "static25") { ;Notes X Offset
+  } Else If (control = "static26") { ;Notes X Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -317,7 +330,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How much space to leave on the right side of the screen for the overlay. `n1 = All the way to right (covers the map/info). `nThis is a good setting if you're going to hide the notes anyway. `n.855 = As far right as you can go without covering the Mini-Map. `nGreat setting if you don't use the overlay map. `n.78 = Default setting and as far right as you can go without covering anything.
     }
-  } Else If (control = "static26") { ;Notes Y Offset
+  } Else If (control = "static27") { ;Notes Y Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -328,7 +341,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far down to place the overlay. `n0 = At the top of the screen (Default). `n1 = At the top of a second monitor below your primary. `n-1 = at the top of a second monitor above your primary. `n You can adjust this to place the overlay anywhere you would like on your screen.
     }
-  } Else If (control = "static27") { ;Level X Offset
+  } Else If (control = "static28") { ;Level X Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -339,7 +352,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far to the right of the screen to put the Experience tracker. `n.287 = As far to the left as you can go without covering the flasks. `n.589 = As far to the right as you can go without covering the skill bar on my resolution and font size. `nThis is the default and a great option for 1080 screen resolutions and size 9 Consolas. `nExperiment with other numbers if you want to move the Experience tracker around.
     }
-  } Else If (control = "static28") { ;Level Y Offset
+  } Else If (control = "static29") { ;Level Y Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -350,7 +363,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far down the screen to put the Experience tracker. `n.955 = As low as you can go without covering the experience bar on my resolution and font size. `nThis is the default and a great option for 1080 screen resolutions and size 9 Consolas. `nExperiment with other numbers if you want to move the Experience tracker around.
     }
-  } Else If (control = "static29") { ;Gems X Offset
+  } Else If (control = "static30") { ;Gems X Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -361,7 +374,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far to the right to put the Gem Setup. `n.005 = Is the default and places the setup on the left side of the primary screen. `n1.005 = This should put the setup on the left side of a secondary monitor that is to the right of the primary. `n-.995 = This should put the setup on the left side of a secondary monitor that is to the left of the primary. `n None of this has been tested so please experiement with good values and let me know what to put here.
     }
-  } Else If (control = "static30") { ;Gems Y Offset
+  } Else If (control = "static31") { ;Gems Y Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -372,7 +385,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far down you want the Gem Setup. `n0 = All the way at top of the screen. `nIt will cover your buffs and debuffs. `n.180 = Just below your buffs and debuffs. `nThis is the default and a great option for normal screen resolutions.
     }
-  } Else If (control = "static36") { ;Colors
+  } Else If (control = "static37") { ;Colors
     If (oldControl = control){
       toolTime .= 1
     } Else {
