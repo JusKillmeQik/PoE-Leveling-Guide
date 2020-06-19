@@ -1,5 +1,7 @@
 # PoE Leveling Guide 3.0 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y4PJCG5N4DMTN&source=url)
 
+>WARNING: Vulkan Support has been added and enabled by default, but requires you to put the game in Windowed mode to work. The Overlay will automatically set the game back to Windowed Fullscreen for you when you reload the tool. Hopefully GGG fixes their renderer so it works without this hack.
+
 ### Video Overview (click to open YouTube):
 
 [![Click to Watch](previews/Overview_for_Path_of_Exile_Leveling_Guide_Overlay.gif)](https://youtu.be/4ttGGXBfxxQ "Click to Watch")
@@ -21,8 +23,6 @@
 ### Requirements
 
 >WARNING: This update is not compatible with previous versions, you will need to put this project in its own folder and import any custom changes you made in previous versions
-
->WARNING: This version does not currently work with GGG's vulkan beta renderer. Please use DirectX until they fix this issue.
 
 You will need AutoHotkey to run this script, with a minimum version of 1.1.30.00 https://www.autohotkey.com/
 
