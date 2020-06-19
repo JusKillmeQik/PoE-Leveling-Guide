@@ -134,7 +134,7 @@ LaunchSettings() {
   Gui, Settings:Add, Button, gSaveAndClose w%nameWidth% x565 y428, &Save
 
   Gui, Settings:Show, w685 h461 NA
-  WinSet, AlwaysOnTop, 0, ahk_id %SettingsWindow% ;Turn off always on top, I only set it to bring it to the front in the first place
+  WinSet, AlwaysOnTop, Off, ahk_id %SettingsWindow% ;Turn off always on top, I only set it to bring it to the front in the first place
 
   toolTime := 0
   SetTimer, ToolTip, 1000

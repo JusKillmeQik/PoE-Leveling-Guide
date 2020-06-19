@@ -182,7 +182,7 @@ LaunchBuild() {
   }
 
   Gui, Build:Show, w%buildWidth% h475 NA
-  WinSet, AlwaysOnTop, 0, ahk_id %BuildWindow%
+  WinSet, AlwaysOnTop, Off, ahk_id %BuildWindow%
   WinActivate, ahk_id %BuildWindow%
 
 }
