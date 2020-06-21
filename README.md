@@ -1,6 +1,6 @@
 # PoE Leveling Guide 3.0 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y4PJCG5N4DMTN&source=url)
 
->WARNING: Vulkan Support has been added and enabled by default, but requires you to put the game in Windowed mode to work. The Overlay will automatically set the game back to Windowed Fullscreen for you when you reload the tool. Hopefully GGG fixes their renderer so it works without this hack.
+>WARNING: Vulkan is still in Beta. The tool now works with Vulkan but may cause PoE to close when launched. Make sure to start any overlays you want to use before starting PoE.
 
 ### Video Overview (click to open YouTube):
 
