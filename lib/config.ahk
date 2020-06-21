@@ -23,7 +23,6 @@ global displayTimeout := 5
 global persistText := "False"
 global hideGuide := "False"
 global expOrPen := "Exp"
-global vulkanFix := "True"
 
 global backgroundColor := "black"
 global redColor := "FF4040"
@@ -117,7 +116,6 @@ IniRead, displayTimeout, %ININame%, Options, displayTimeout, %displayTimeout%
 IniRead, persistText, %ININame%, Options, persistText, %persistText%
 IniRead, hideGuide, %ININame%, Options, hideGuide, %hideGuide%
 IniRead, expOrPen, %ININame%, Options, expOrPen, %expOrPen%
-IniRead, vulkanFix, %ININame%, Options, vulkanFix, %vulkanFix%
 
 If (startHidden = "True"){
   LG_toggle := 1
@@ -172,7 +170,6 @@ WriteAll() {
   IniWrite, %persistText%, %ININame%, Options, persistText
   IniWrite, %hideGuide%, %ININame%, Options, hideGuide
   IniWrite, %expOrPen%, %ININame%, Options, expOrPen
-  IniWrite, %vulkanFix%, %ININame%, Options, vulkanFix
 
   IniWrite, %backgroundColor%, %ININame%, Color, backgroundColor
   IniWrite, %redColor%, %ININame%, Color, redColor

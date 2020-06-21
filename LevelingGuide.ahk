@@ -220,43 +220,6 @@ ShowGuiTimer:
           }
         }
         onStartup := 0
-        If (vulkanFix = "True") {
-          WinGet, PoEWindowHwnd, ID, ahk_group PoEWindowGrp
-          ;Forceborderless for Vulkan Support
-          WinGet, S, Style,% (i := "_" PoEWindowHwnd) ? "ahk_id " PoEWindowHwnd : ""
-          If (S & +0xC00000) {
-            A := {}
-            SysGet, n, MonitorCount
-            Loop, % A.MCount := n {
-              SysGet, Mon, Monitor, % i := A_Index
-              for k, v in ["Left", "Right", "Top", "Bottom"]
-                A["Monitor", i, v] := Mon%v%
-            }
-            WinGet, IsMaxed, MinMax,  % "ahk_id " PoEWindowHwnd
-            if (A[i, "Maxed"] := IsMaxed = 1 ? true : false)
-              WinRestore, % "ahk_id " PoEWindowHwnd
-            WinGetPos, X, Y, W, H, % "ahk_id " PoEWindowHwnd
-            for k, v in ["X", "Y", "W", "H"]
-              A[i, v] := %v%
-            Loop, % A.MCount {
-              if (X >= A.Monitor[A_Index].Left
-              &&  X <  A.Monitor[A_Index].Right
-              &&  Y >= A.Monitor[A_Index].Top
-              &&  Y <  A.Monitor[A_Index].Bottom) {
-                WinSet, Style, -0xC00000, % "ahk_id " PoEWindowHwnd    ; Remove borders
-                WinSet, Style, -0x40000, % "ahk_id " PoEWindowHwnd    ; Including the resize border
-                ; The following lines are the x,y,w,h of the maximized window
-                ; ie. to offset the window 10 pixels up: A.Monitor[A_Index].Top - 10
-                WinMove, % "ahk_id " PoEWindowHwnd,
-                , A.Monitor[A_Index].Left-1                               ; X position
-                , A.Monitor[A_Index].Top-1                                ; Y position
-                , A.Monitor[A_Index].Right+1 - A.Monitor[A_Index].Left    ; Width
-                , A.Monitor[A_Index].Bottom+1 - A.Monitor[A_Index].Top    ; Height
-                break
-              }
-            }
-          }
-        }
       }
       WinGet, PoEWindowHwnd, ID, ahk_group PoEWindowGrp
       break
