@@ -166,8 +166,7 @@
       "Active",
       "Duration",
       "Warcry",
-      "AoE",
-      "New Gems"
+      "AoE"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-06-18/AncestralCry.png"
   },
@@ -328,8 +327,8 @@
     "gemTags": [
       "Spell",
       "Duration",
-      "Guard",
       "Lightning",
+      "Guard",
       "Active"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-03-12/ArcaneCloak.png"
@@ -375,8 +374,7 @@
       "Active",
       "Spell",
       "Duration",
-      "Brand",
-      "New Gems"
+      "Brand"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-06-18/ArcanistBrand.png"
   },
@@ -503,22 +501,22 @@
     "level": 24,
     "required_lvl": 24,
     "name": "Assassin's Mark",
-    "Witch": "Clarissa",
+    "Witch": "Siosa",
     "Shadow": "Lost in Love",
-    "Ranger": "Clarissa",
-    "Duelist": "Siosa",
+    "Ranger": "Lost in Love",
+    "Duelist": "Clarissa",
     "Marauder": "Siosa",
     "Templar": "Siosa",
-    "Scion": "Siosa",
+    "Scion": "Clarissa",
     "quest": "Maramoa",
     "vendor": "Clarissa",
     "cost": "Alt",
     "color": "blue",
     "gemTags": [
       "Spell",
-      "Curse",
-      "AoE",
       "Duration",
+      "Curse",
+      "Mark",
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/AssassinsMark.png?scale=1&w=1&h=1"
@@ -843,29 +841,6 @@
   {
     "level": 72,
     "required_lvl": 72,
-    "name": "Awakened Curse On Hit",
-    "Witch": "",
-    "Shadow": "",
-    "Ranger": "",
-    "Duelist": "",
-    "Marauder": "",
-    "Templar": "",
-    "Scion": "",
-    "quest": "",
-    "vendor": "",
-    "cost": "",
-    "color": "blue",
-    "gemTags": [
-      "Curse",
-      "Trigger",
-      "Support",
-      "Awakened"
-    ],
-    "iconPath": "https://web.poecdn.com/public/news/2019-12-12/AwakenedCurseOnHitSupport.png"
-  },
-  {
-    "level": 72,
-    "required_lvl": 72,
     "name": "Awakened Deadly Ailments",
     "Witch": "",
     "Shadow": "",
@@ -1014,6 +989,29 @@
       "Awakened"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2019-12-12/AwakenedGreaterMultipleProjectilesSupport.png"
+  },
+  {
+    "level": 72,
+    "required_lvl": 72,
+    "name": "Awakened Hextouch",
+    "Witch": "",
+    "Shadow": "",
+    "Ranger": "",
+    "Duelist": "",
+    "Marauder": "",
+    "Templar": "",
+    "Scion": "",
+    "quest": "",
+    "vendor": "",
+    "cost": "",
+    "color": "blue",
+    "gemTags": [
+      "Hex",
+      "Trigger",
+      "Support",
+      "Awakened"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2019-12-12/AwakenedCurseOnHitSupport.png"
   },
   {
     "level": 72,
@@ -1377,7 +1375,7 @@
       "Trigger",
       "Duration",
       "Spell",
-      "Curse",
+      "Hex",
       "AoE",
       "Active"
     ],
@@ -1657,6 +1655,31 @@
       "Support"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2019-09-04/BlastchainMineSupport.png"
+  },
+  {
+    "level": 12,
+    "required_lvl": 12,
+    "name": "Blazing Salvo",
+    "Witch": "The Siren's Cadence",
+    "Shadow": "Nessa",
+    "Ranger": "Siosa",
+    "Duelist": "Siosa",
+    "Marauder": "Siosa",
+    "Templar": "The Siren's Cadence",
+    "Scion": "Nessa",
+    "quest": "Nessa",
+    "vendor": "Nessa",
+    "cost": "Trans",
+    "color": "blue",
+    "gemTags": [
+      "Spell",
+      "AoE",
+      "Fire",
+      "Projectile",
+      "Active",
+      "New Gems"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorBlazingSalvo.png"
   },
   {
     "level": 2,
@@ -2337,11 +2360,11 @@
     "name": "Clarity",
     "Witch": "The Caged Brute",
     "Shadow": "The Caged Brute",
-    "Ranger": "Siosa",
-    "Duelist": "Siosa",
-    "Marauder": "Siosa",
+    "Ranger": "Nessa",
+    "Duelist": "Nessa",
+    "Marauder": "Nessa",
     "Templar": "The Caged Brute",
-    "Scion": "Siosa",
+    "Scion": "Nessa",
     "quest": "Tarkleigh",
     "vendor": "Nessa",
     "cost": "Trans",
@@ -2571,6 +2594,7 @@
     "gemTags": [
       "Spell",
       "Curse",
+      "Hex",
       "Lightning",
       "AoE",
       "Duration",
@@ -2696,6 +2720,30 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Convocation.png?scale=1&w=1&h=1"
   },
   {
+    "level": 28,
+    "required_lvl": 28,
+    "name": "Crackling Lance",
+    "Witch": "Sever the Right Hand",
+    "Shadow": "Clarissa",
+    "Ranger": "Siosa",
+    "Duelist": "Siosa",
+    "Marauder": "Siosa",
+    "Templar": "Clarissa",
+    "Scion": "Clarissa",
+    "quest": "Maramoa",
+    "vendor": "Clarissa",
+    "cost": "Chance",
+    "color": "blue",
+    "gemTags": [
+      "Spell",
+      "AoE",
+      "Lightning",
+      "Active",
+      "New Gems"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorCracklingLance.png"
+  },
+  {
     "level": 12,
     "required_lvl": 12,
     "name": "Creeping Frost",
@@ -2766,28 +2814,6 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Support/CullingStrike.png?scale=1&w=1&h=1"
   },
   {
-    "level": 38,
-    "required_lvl": 38,
-    "name": "Curse On Hit",
-    "Witch": "Petarus",
-    "Shadow": "Petarus",
-    "Ranger": "Petarus",
-    "Duelist": "Petarus",
-    "Marauder": "Petarus",
-    "Templar": "Petarus",
-    "Scion": "Petarus",
-    "quest": "",
-    "vendor": "Petarus",
-    "cost": "Alch",
-    "color": "blue",
-    "gemTags": [
-      "Curse",
-      "Trigger",
-      "Support"
-    ],
-    "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Support/CurseOnHit.png?scale=1&w=1&h=1"
-  },
-  {
     "level": 28,
     "required_lvl": 28,
     "name": "Cyclone",
@@ -2854,6 +2880,7 @@
       "Minion",
       "Chaos",
       "AoE",
+      "Nova",
       "Chaining",
       "Active"
     ],
@@ -2902,29 +2929,6 @@
       "Support"
     ],
     "iconPath": "https://web.poecdn.com/image/Art/2DItems/Gems/Support/DeadlyAilments.png?scale=1"
-  },
-  {
-    "level": 16,
-    "required_lvl": 18,
-    "name": "Deathmark",
-    "Witch": "Sharp and Cruel",
-    "Shadow": "Siosa",
-    "Ranger": "Siosa",
-    "Duelist": "Siosa",
-    "Marauder": "Siosa",
-    "Templar": "Yeena",
-    "Scion": "Yeena",
-    "quest": "Silk",
-    "vendor": "Yeena",
-    "cost": "Alt",
-    "color": "blue",
-    "gemTags": [
-      "Support",
-      "Spell",
-      "Duration",
-      "Minion"
-    ],
-    "iconPath": "https://web.poecdn.com/public/news/2019-09-04/DeathmarkSupport.png"
   },
   {
     "level": 38,
@@ -3001,9 +3005,9 @@
     "Witch": "Lost in Love",
     "Shadow": "Lost in Love",
     "Ranger": "Lost in Love",
-    "Duelist": "Clarissa",
+    "Duelist": "Siosa",
     "Marauder": "Siosa",
-    "Templar": "Clarissa",
+    "Templar": "Siosa",
     "Scion": "Clarissa",
     "quest": "Maramoa",
     "vendor": "Clarissa",
@@ -3012,6 +3016,7 @@
     "gemTags": [
       "Spell",
       "Curse",
+      "Hex",
       "Chaos",
       "AoE",
       "Duration",
@@ -3129,6 +3134,7 @@
       "Cold",
       "Lightning",
       "AoE",
+      "Nova",
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Discharge.png?scale=1&w=1&h=1"
@@ -3319,8 +3325,7 @@
       "AoE",
       "Duration",
       "Melee",
-      "Active",
-      "New Gems"
+      "Active"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-06-18/Earthshatter.png"
   },
@@ -3438,6 +3443,27 @@
   {
     "level": 2,
     "required_lvl": 1,
+    "name": "Elemental Penetration",
+    "Witch": "",
+    "Shadow": "",
+    "Ranger": "",
+    "Duelist": "",
+    "Marauder": "",
+    "Templar": "",
+    "Scion": "",
+    "quest": "",
+    "vendor": "",
+    "cost": "",
+    "color": "blue",
+    "gemTags": [
+      "Support",
+      "New Gems"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorElementalPenetrationSupport.png"
+  },
+  {
+    "level": 2,
+    "required_lvl": 1,
     "name": "Elemental Proliferation",
     "Witch": "Mercy Mission",
     "Shadow": "Mercy Mission",
@@ -3463,22 +3489,23 @@
     "level": 24,
     "required_lvl": 24,
     "name": "Elemental Weakness",
-    "Witch": "Clarissa",
-    "Shadow": "Clarissa",
+    "Witch": "Lost in Love",
+    "Shadow": "Lost in Love",
     "Ranger": "Siosa",
     "Duelist": "Siosa",
     "Marauder": "Siosa",
-    "Templar": "Clarissa",
-    "Scion": "Clarissa",
-    "quest": "",
+    "Templar": "Lost in Love",
+    "Scion": "Lost in Love",
+    "quest": "Lost in Love",
     "vendor": "Clarissa",
     "cost": "Alt",
     "color": "blue",
     "gemTags": [
       "Spell",
-      "Curse",
       "AoE",
       "Duration",
+      "Curse",
+      "Hex",
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/ElementalWeakness.png?scale=1&w=1&h=1"
@@ -3572,22 +3599,23 @@
     "level": 24,
     "required_lvl": 24,
     "name": "Enfeeble",
-    "Witch": "Siosa",
-    "Shadow": "Siosa",
+    "Witch": "Lost in Love",
+    "Shadow": "Lost in Love",
     "Ranger": "Siosa",
     "Duelist": "Siosa",
     "Marauder": "Siosa",
-    "Templar": "Siosa",
-    "Scion": "Siosa",
-    "quest": "",
-    "vendor": "Siosa",
+    "Templar": "Lost in Love",
+    "Scion": "Clarissa",
+    "quest": "Maramoa",
+    "vendor": "Clarissa",
     "cost": "Alt",
     "color": "blue",
     "gemTags": [
       "Spell",
-      "Curse",
       "AoE",
       "Duration",
+      "Curse",
+      "Hex",
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Enfeeble.png?scale=1&w=1&h=1"
@@ -3909,19 +3937,19 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Fireball.png?scale=1&w=1&h=1"
   },
   {
-    "level": 12,
-    "required_lvl": 12,
+    "level": 28,
+    "required_lvl": 28,
     "name": "Firestorm",
-    "Witch": "The Siren's Cadence",
-    "Shadow": "Siosa",
+    "Witch": "Sever the Right Hand",
+    "Shadow": "Clarissa",
     "Ranger": "Siosa",
     "Duelist": "Siosa",
-    "Marauder": "Nessa",
-    "Templar": "The Siren's Cadence",
-    "Scion": "Siosa",
-    "quest": "Nessa",
-    "vendor": "Nessa",
-    "cost": "Trans",
+    "Marauder": "Siosa",
+    "Templar": "Sever the Right Hand",
+    "Scion": "Clarissa",
+    "quest": "Maramoa",
+    "vendor": "Clarissa",
+    "cost": "Chance",
     "color": "blue",
     "gemTags": [
       "Spell",
@@ -3952,8 +3980,7 @@
       "Attack",
       "Melee",
       "AoE",
-      "Support",
-      "New Gems"
+      "Support"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-06-18/FistofWarSupport.png"
   },
@@ -4005,6 +4032,31 @@
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Flamewhip.png?scale=1&w=1&h=1"
+  },
+  {
+    "level": 4,
+    "required_lvl": 4,
+    "name": "Flame Wall",
+    "Witch": "Breaking Some Eggs",
+    "Shadow": "Nessa",
+    "Ranger": "Siosa",
+    "Duelist": "Siosa",
+    "Marauder": "Siosa",
+    "Templar": "Breaking Some Eggs",
+    "Scion": "Nessa",
+    "quest": "Tarkleigh",
+    "vendor": "Nessa",
+    "cost": "Wisdom",
+    "color": "blue",
+    "gemTags": [
+      "Spell",
+      "AoE",
+      "Duration",
+      "Fire",
+      "Active",
+      "New Gems"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorFlameWall.png"
   },
   {
     "level": 28,
@@ -4072,10 +4124,11 @@
     "color": "blue",
     "gemTags": [
       "Spell",
-      "Curse",
-      "Fire",
       "AoE",
       "Duration",
+      "Fire",
+      "Curse",
+      "Hex",
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Flammability.png?scale=1&w=1&h=1"
@@ -4288,6 +4341,31 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/FrostBomb.png?scale=1&w=1&h=1"
   },
   {
+    "level": 34,
+    "required_lvl": 34,
+    "name": "Frost Shield",
+    "Witch": "Breaking the Seal",
+    "Shadow": "Breaking the Seal",
+    "Ranger": "Lilly",
+    "Duelist": "Lilly",
+    "Marauder": "Lilly",
+    "Templar": "Breaking the Seal",
+    "Scion": "Breaking the Seal",
+    "quest": "Oyun",
+    "vendor": "Petarus",
+    "cost": "Chance",
+    "color": "blue",
+    "gemTags": [
+      "Spell",
+      "AoE",
+      "Duration",
+      "Cold",
+      "Active",
+      "New Gems"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorFrostShield.png"
+  },
+  {
     "level": 4,
     "required_lvl": 4,
     "name": "Frost Wall",
@@ -4316,7 +4394,7 @@
     "name": "Frostbite",
     "Witch": "Lost in Love",
     "Shadow": "Lost in Love",
-    "Ranger": "Siosa",
+    "Ranger": "Clarissa",
     "Duelist": "Siosa",
     "Marauder": "Siosa",
     "Templar": "Lost in Love",
@@ -4327,10 +4405,11 @@
     "color": "blue",
     "gemTags": [
       "Spell",
-      "Curse",
-      "Cold",
       "AoE",
       "Duration",
+      "Cold",
+      "Curse",
+      "Hex",
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/FrostBite.png?scale=1&w=1&h=1"
@@ -4430,8 +4509,7 @@
       "AoE",
       "Duration",
       "Active",
-      "Support",
-      "New Gems"
+      "Support"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-06-18/GeneralsCry.png"
   },
@@ -4466,7 +4544,7 @@
     "Duelist": "Siosa",
     "Marauder": "Siosa",
     "Templar": "Clarissa",
-    "Scion": "Siosa",
+    "Scion": "Clarissa",
     "quest": "Maramoa",
     "vendor": "Clarissa",
     "cost": "Chance",
@@ -4475,6 +4553,7 @@
       "Spell",
       "Cold",
       "AoE",
+      "Physical",
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Upheaval.png?scale=1&w=1&h=1"
@@ -4784,6 +4863,53 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/HeraldofThunder.png?scale=1&w=1&h=1"
   },
   {
+    "level": 28,
+    "required_lvl": 28,
+    "name": "Hexblast",
+    "Witch": "Sever the Right Hand",
+    "Shadow": "Sever the Right Hand",
+    "Ranger": "Siosa",
+    "Duelist": "Siosa",
+    "Marauder": "Siosa",
+    "Templar": "Clarissa",
+    "Scion": "Sever the Right Hand",
+    "quest": "Maramoa",
+    "vendor": "Clarissa",
+    "cost": "Chance",
+    "color": "blue",
+    "gemTags": [
+      "Spell",
+      "AoE",
+      "Chaos",
+      "Hex",
+      "Active",
+      "New Gems"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorHexblast.png"
+  },
+  {
+    "level": 38,
+    "required_lvl": 38,
+    "name": "Hextouch",
+    "Witch": "Petarus",
+    "Shadow": "Petarus",
+    "Ranger": "Petarus",
+    "Duelist": "Petarus",
+    "Marauder": "Petarus",
+    "Templar": "Petarus",
+    "Scion": "Petarus",
+    "quest": "",
+    "vendor": "Petarus",
+    "cost": "Alch",
+    "color": "blue",
+    "gemTags": [
+      "Hex",
+      "Trigger",
+      "Support"
+    ],
+    "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Support/CurseOnHit.png?scale=1&w=1&h=1"
+  },
+  {
     "level": 31,
     "required_lvl": 31,
     "name": "High-Impact Mine",
@@ -4916,6 +5042,7 @@
       "Spell",
       "Cold",
       "AoE",
+      "Nova",
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/IceNova.png?scale=1&w=1&h=1"
@@ -5080,8 +5207,8 @@
     "gemTags": [
       "Spell",
       "Duration",
-      "Active",
-      "Guard"
+      "Guard",
+      "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/ImmortalCall.png?scale=1&w=1&h=1"
   },
@@ -5101,11 +5228,36 @@
     "cost": "Chance",
     "color": "green",
     "gemTags": [
-      "Support",
       "Attack",
-      "Physical"
+      "Physical",
+      "Support"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2019-06-06/ImpaleSupport.png"
+  },
+  {
+    "level": 31,
+    "required_lvl": 31,
+    "name": "Impending Doom",
+    "Witch": "A Fixture of Fate",
+    "Shadow": "A Fixture of Fate",
+    "Ranger": "Lilly",
+    "Duelist": "Lilly",
+    "Marauder": "Lilly",
+    "Templar": "Siosa",
+    "Scion": "A Fixture of Fate",
+    "quest": "Siosa",
+    "vendor": "Siosa",
+    "cost": "Chance",
+    "color": "blue",
+    "gemTags": [
+      "Spell",
+      "Hex",
+      "AoE",
+      "Chaos",
+      "Support",
+      "New Gems"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorImpendingDoomSupport.png"
   },
   {
     "level": 12,
@@ -5393,8 +5545,7 @@
       "AoE",
       "Duration",
       "Physical",
-      "Active",
-      "New Gems"
+      "Active"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-06-18/IntimidatingCry.png"
   },
@@ -5556,7 +5707,7 @@
     "Shadow": "Siosa",
     "Ranger": "Clarissa",
     "Duelist": "Sever the Right Hand",
-    "Marauder": "Clarissa",
+    "Marauder": "Siosa",
     "Templar": "Siosa",
     "Scion": "Clarissa",
     "quest": "Maramoa",
@@ -5566,6 +5717,7 @@
     "gemTags": [
       "Attack",
       "Projectile",
+      "Physical",
       "Active"
     ],
     "iconPath": "https://web.poecdn.com/image/Art/2DItems/Gems/LancingSteel.png?scale=1"
@@ -6175,8 +6327,8 @@
       "Fire",
       "AoE",
       "Duration",
-      "Active",
-      "Guard"
+      "Guard",
+      "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/MoltenShell.png?scale=1&w=1&h=1"
   },
@@ -6358,8 +6510,7 @@
       "Lightning",
       "Brand",
       "Duration",
-      "Active",
-      "New Gems"
+      "Active"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-06-18/PenanceBrand.png"
   },
@@ -6433,6 +6584,7 @@
       "Spell",
       "Duration",
       "Movement",
+      "Physical",
       "Active",
       "Travel"
     ],
@@ -6481,6 +6633,29 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Support/Pierce.png?scale=1&w=1&h=1"
   },
   {
+    "level": 31,
+    "required_lvl": 31,
+    "name": "Pinpoint",
+    "Witch": "A Fixture of Fate",
+    "Shadow": "A Fixture of Fate",
+    "Ranger": "Lilly",
+    "Duelist": "Lilly",
+    "Marauder": "Lilly",
+    "Templar": "Siosa",
+    "Scion": "Siosa",
+    "quest": "Siosa",
+    "vendor": "Siosa",
+    "cost": "Chance",
+    "color": "blue",
+    "gemTags": [
+      "Spell",
+      "Projectile",
+      "Support",
+      "New Gems"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorPinpointSupport.png"
+  },
+  {
     "level": 24,
     "required_lvl": 24,
     "name": "Plague Bearer",
@@ -6513,7 +6688,7 @@
     "Duelist": "Lost in Love",
     "Marauder": "Siosa",
     "Templar": "Siosa",
-    "Scion": "Siosa",
+    "Scion": "Clarissa",
     "quest": "Maramoa",
     "vendor": "Clarissa",
     "cost": "Alt",
@@ -6521,7 +6696,7 @@
     "gemTags": [
       "Spell",
       "Curse",
-      "AoE",
+      "Mark",
       "Duration",
       "Active"
     ],
@@ -6637,12 +6812,12 @@
     "level": 8,
     "required_lvl": 10,
     "name": "Precision",
-    "Witch": "Siosa",
+    "Witch": "Nessa",
     "Shadow": "Nessa",
     "Ranger": "The Caged Brute",
     "Duelist": "The Caged Brute",
     "Marauder": "Nessa",
-    "Templar": "Siosa",
+    "Templar": "Nessa",
     "Scion": "Nessa",
     "quest": "Tarkleigh",
     "vendor": "Nessa",
@@ -6655,6 +6830,29 @@
       "AoE"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2019-06-06/Precision.png"
+  },
+  {
+    "level": 16,
+    "required_lvl": 18,
+    "name": "Predator",
+    "Witch": "Sharp and Cruel",
+    "Shadow": "Siosa",
+    "Ranger": "Siosa",
+    "Duelist": "Siosa",
+    "Marauder": "Siosa",
+    "Templar": "Yeena",
+    "Scion": "Yeena",
+    "quest": "Silk",
+    "vendor": "Yeena",
+    "cost": "Alt",
+    "color": "blue",
+    "gemTags": [
+      "Spell",
+      "Minion",
+      "Duration",
+      "Support"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2019-09-04/DeathmarkSupport.png"
   },
   {
     "level": 24,
@@ -6679,30 +6877,6 @@
       "Physical"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2019-06-06/Pride.png"
-  },
-  {
-    "level": 24,
-    "required_lvl": 24,
-    "name": "Projectile Weakness",
-    "Witch": "Siosa",
-    "Shadow": "Clarissa",
-    "Ranger": "Lost in Love",
-    "Duelist": "Clarissa",
-    "Marauder": "Siosa",
-    "Templar": "Siosa",
-    "Scion": "Siosa",
-    "quest": "Maramoa",
-    "vendor": "Clarissa",
-    "cost": "Alt",
-    "color": "green",
-    "gemTags": [
-      "Spell",
-      "Curse",
-      "AoE",
-      "Duration",
-      "Active"
-    ],
-    "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/ProjectileWeakness.png?scale=1&w=1&h=1"
   },
   {
     "level": 31,
@@ -6755,13 +6929,13 @@
     "level": 24,
     "required_lvl": 24,
     "name": "Punishment",
-    "Witch": "Clarissa",
+    "Witch": "Siosa",
     "Shadow": "Siosa",
     "Ranger": "Siosa",
-    "Duelist": "Lost in Love",
+    "Duelist": "Clarissa",
     "Marauder": "Lost in Love",
-    "Templar": "Clarissa",
-    "Scion": "Clarissa",
+    "Templar": "Lost in Love",
+    "Scion": "Lost in Love",
     "quest": "Maramoa",
     "vendor": "Clarissa",
     "cost": "Alt",
@@ -6769,8 +6943,10 @@
     "gemTags": [
       "Spell",
       "Curse",
+      "Hex",
       "AoE",
       "Duration",
+      "Physical",
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Punishment.png?scale=1&w=1&h=1"
@@ -6915,6 +7091,7 @@
       "Spell",
       "Mine",
       "AoE",
+      "Nova",
       "Aura",
       "Projectile",
       "Fire"
@@ -7284,8 +7461,7 @@
       "Active",
       "Duration",
       "Warcry",
-      "AoE",
-      "New Gems"
+      "AoE"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-06-18/SeismicCry.png"
   },
@@ -7321,7 +7497,7 @@
     "Shadow": "Siosa",
     "Ranger": "Nessa",
     "Duelist": "The Siren's Cadence",
-    "Marauder": "Nessa",
+    "Marauder": "Siosa",
     "Templar": "Siosa",
     "Scion": "Nessa",
     "quest": "Nessa",
@@ -7332,6 +7508,7 @@
       "Attack",
       "AoE",
       "Projectile",
+      "Physical",
       "Active"
     ],
     "iconPath": "https://web.poecdn.com/image/Art/2DItems/Gems/ShatteringSteel.png?scale=1"
@@ -7380,6 +7557,7 @@
       "Spell",
       "Lightning",
       "AoE",
+      "Nova",
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/ShockNova.png?scale=1&w=1&h=1"
@@ -7426,6 +7604,7 @@
       "Spell",
       "Totem",
       "AoE",
+      "Nova",
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/ShockwaveTotem.png?scale=1&w=1&h=1"
@@ -7478,6 +7657,31 @@
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/CrossBowTotemGem.png?scale=1&w=1&h=1"
+  },
+  {
+    "level": 34,
+    "required_lvl": 34,
+    "name": "Sigil of Power",
+    "Witch": "Breaking the Seal",
+    "Shadow": "Breaking the Seal",
+    "Ranger": "Lilly",
+    "Duelist": "Lilly",
+    "Marauder": "Lilly",
+    "Templar": "Breaking the Seal",
+    "Scion": "Petarus",
+    "quest": "Oyun",
+    "vendor": "Petarus",
+    "cost": "Chance",
+    "color": "blue",
+    "gemTags": [
+      "Spell",
+      "AoE",
+      "Duration",
+      "Lightning",
+      "Active",
+      "New Gems"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorSigilofPower.png"
   },
   {
     "level": 8,
@@ -7576,6 +7780,30 @@
       "Travel"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/SmokeBomb.png?scale=1&w=1&h=1"
+  },
+  {
+    "level": 24,
+    "required_lvl": 24,
+    "name": "Sniper's Mark",
+    "Witch": "Siosa",
+    "Shadow": "Clarissa",
+    "Ranger": "Lost in Love",
+    "Duelist": "Lost in Love",
+    "Marauder": "Siosa",
+    "Templar": "Siosa",
+    "Scion": "Clarissa",
+    "quest": "Maramoa",
+    "vendor": "Clarissa",
+    "cost": "Alt",
+    "color": "green",
+    "gemTags": [
+      "Spell",
+      "Duration",
+      "Curse",
+      "Mark",
+      "Active"
+    ],
+    "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/ProjectileWeakness.png?scale=1&w=1&h=1"
   },
   {
     "level": 28,
@@ -7802,6 +8030,31 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/SplitArrow.png?scale=1&w=1&h=1"
   },
   {
+    "level": 2,
+    "required_lvl": 1,
+    "name": "Splitting Steel",
+    "Witch": "Siosa",
+    "Shadow": "Siosa",
+    "Ranger": "Nessa",
+    "Duelist": "Enemy at the Gate",
+    "Marauder": "Siosa",
+    "Templar": "Siosa",
+    "Scion": "Enemy at the Gate",
+    "quest": "Tarkleigh",
+    "vendor": "Nessa",
+    "cost": "Wisdom",
+    "color": "green",
+    "gemTags": [
+      "Attack",
+      "Projectile",
+      "AoE",
+      "Physical",
+      "Active",
+      "New Gems"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorSplittingSteel.png"
+  },
+  {
     "level": 12,
     "required_lvl": 12,
     "name": "Static Strike",
@@ -7844,10 +8097,10 @@
     "cost": "Wisdom",
     "color": "red",
     "gemTags": [
-      "Active",
-      "Guard",
       "Spell",
-      "Duration"
+      "Duration",
+      "Guard",
+      "Active"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2019-06-06/Steelskin.png"
   },
@@ -7971,6 +8224,7 @@
       "Mine",
       "Lightning",
       "AoE",
+      "Nova",
       "Aura"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2019-09-04/StormblastMine.png"
@@ -8339,8 +8593,7 @@
     "color": "blue",
     "gemTags": [
       "Brand",
-      "Support",
-      "New Gems"
+      "Support"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-06-18/SwiftbrandSupport.png"
   },
@@ -8397,22 +8650,23 @@
     "level": 24,
     "required_lvl": 24,
     "name": "Temporal Chains",
-    "Witch": "Siosa",
-    "Shadow": "Clarissa",
+    "Witch": "Lost in Love",
+    "Shadow": "Lost in Love",
     "Ranger": "Clarissa",
-    "Duelist": "Clarissa",
+    "Duelist": "Siosa",
     "Marauder": "Siosa",
     "Templar": "Siosa",
-    "Scion": "Clarissa",
-    "quest": "",
+    "Scion": "Lost in Love",
+    "quest": "Maramoa",
     "vendor": "Clarissa",
     "cost": "Alt",
     "color": "green",
     "gemTags": [
       "Spell",
-      "Curse",
       "AoE",
       "Duration",
+      "Curse",
+      "Hex",
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/TemporalChains.png?scale=1&w=1&h=1"
@@ -8589,8 +8843,7 @@
     "color": "red",
     "gemTags": [
       "Warcry",
-      "Support",
-      "New Gems"
+      "Support"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-06-18/UrgentOrdersSupport.png"
   },
@@ -8662,6 +8915,7 @@
     "gemTags": [
       "Spell",
       "AoE",
+      "Nova",
       "Duration",
       "Vaal",
       "Active"
@@ -8687,6 +8941,7 @@
       "Spell",
       "Chaos",
       "AoE",
+      "Nova",
       "Channelling",
       "Duration",
       "Vaal",
@@ -9087,6 +9342,7 @@
       "Spell",
       "Cold",
       "AoE",
+      "Nova",
       "Vaal",
       "Active"
     ],
@@ -9627,19 +9883,19 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/ViperStrike.png?scale=1&w=1&h=1"
   },
   {
-    "level": 24,
-    "required_lvl": 24,
+    "level": 8,
+    "required_lvl": 8,
     "name": "Vitality",
-    "Witch": "Siosa",
-    "Shadow": "Siosa",
-    "Ranger": "Siosa",
-    "Duelist": "Clarissa",
-    "Marauder": "Clarissa",
-    "Templar": "Lost in Love",
-    "Scion": "Siosa",
-    "quest": "Maramoa",
-    "vendor": "Clarissa",
-    "cost": "Alt",
+    "Witch": "Nessa",
+    "Shadow": "Nessa",
+    "Ranger": "Nessa",
+    "Duelist": "The Caged Brute",
+    "Marauder": "The Caged Brute",
+    "Templar": "The Caged Brute",
+    "Scion": "Nessa",
+    "quest": "Tarkleigh",
+    "vendor": "Nessa",
+    "cost": "Trans",
     "color": "red",
     "gemTags": [
       "Spell",
@@ -9669,6 +9925,32 @@
       "Support"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Support/VoidManipulation.png?scale=1&w=1&h=1"
+  },
+  {
+    "level": 34,
+    "required_lvl": 34,
+    "name": "Void Sphere",
+    "Witch": "Breaking the Seal",
+    "Shadow": "Breaking the Seal",
+    "Ranger": "Lilly",
+    "Duelist": "Lilly",
+    "Marauder": "Lilly",
+    "Templar": "Breaking the Seal",
+    "Scion": "Breaking the Seal",
+    "quest": "Oyun",
+    "vendor": "Petarus",
+    "cost": "Chance",
+    "color": "blue",
+    "gemTags": [
+      "Spell",
+      "AoE",
+      "Duration",
+      "Physical",
+      "Chaos",
+      "Active",
+      "New Gems"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorVoidSphere.png"
   },
   {
     "level": 12,
@@ -9744,11 +10026,11 @@
     "name": "Vulnerability",
     "Witch": "Siosa",
     "Shadow": "Siosa",
-    "Ranger": "Clarissa",
-    "Duelist": "Lost in Love",
+    "Ranger": "Siosa",
+    "Duelist": "Clarissa",
     "Marauder": "Lost in Love",
-    "Templar": "Siosa",
-    "Scion": "Clarissa",
+    "Templar": "Lost in Love",
+    "Scion": "Lost in Love",
     "quest": "Maramoa",
     "vendor": "Clarissa",
     "cost": "Alt",
@@ -9756,6 +10038,8 @@
     "gemTags": [
       "Spell",
       "Curse",
+      "Hex",
+      "Physical",
       "AoE",
       "Duration",
       "Active"
@@ -9792,11 +10076,11 @@
     "name": "Warlord's Mark",
     "Witch": "Siosa",
     "Shadow": "Siosa",
-    "Ranger": "Siosa",
+    "Ranger": "Clarissa",
     "Duelist": "Lost in Love",
     "Marauder": "Lost in Love",
-    "Templar": "Lost in Love",
-    "Scion": "Siosa",
+    "Templar": "Siosa",
+    "Scion": "Clarissa",
     "quest": "Maramoa",
     "vendor": "Clarissa",
     "cost": "Alt",
@@ -9804,7 +10088,7 @@
     "gemTags": [
       "Spell",
       "Curse",
-      "AoE",
+      "Mark",
       "Duration",
       "Active"
     ],
@@ -9935,8 +10219,7 @@
       "AoE",
       "Duration",
       "Active",
-      "Brand",
-      "New Gems"
+      "Brand"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-06-18/WintertideBrand.png"
   },

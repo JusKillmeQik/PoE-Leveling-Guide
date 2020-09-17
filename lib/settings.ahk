@@ -1,5 +1,6 @@
 ﻿global nameWidth := 110
 global optionWidth := 70
+global offsetWidth := 40
 global optionHeight := 21
 global dropDownHeight := 100
 global toolTimeout := 3
@@ -65,19 +66,22 @@ LaunchSettings() {
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Hide Gem Setup
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Show Betrayal Help
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Show Incursion Help
+  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Press On Death
 
   ;Third Column Offset
-  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% x230 y269, Offsets
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x230 y295, Offsets
 
-  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% x230 y299, Notes X Offset
-  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Notes Y Offset
-  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Level X Offset
-  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Level Y Offset
-  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Gems X Offset
-  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Gems Y Offset
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x230 y325, Notes X
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Level X
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Gems X
+
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x345 y325, Notes Y
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Level Y
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Gems Y
+
 
   ;Fourth Column Hotkey Key
-  Gui, Settings:Add, Hotkey, vKeySettings w%nameWidth% h%optionHeight% x+5 y36, %KeySettings%
+  Gui, Settings:Add, Hotkey, vKeySettings w%nameWidth% h%optionHeight% x345 y36, %KeySettings%
   Gui, Settings:Add, Hotkey, vKeyHideLayout w%nameWidth% h%optionHeight% y+5, %KeyHideLayout%
   Gui, Settings:Add, Hotkey, vKeyHideZones w%nameWidth% h%optionHeight% y+5, %KeyHideZones%
   Gui, Settings:Add, Hotkey, vKeyHideExp w%nameWidth% h%optionHeight% y+5, %KeyHideExp%
@@ -85,14 +89,16 @@ LaunchSettings() {
   Gui, Settings:Add, Hotkey, vKeyHideGems w%nameWidth% h%optionHeight% y+5, %KeyHideGems%
   Gui, Settings:Add, Hotkey, vKeyShowSyndicate w%nameWidth% h%optionHeight% y+5, %KeyShowSyndicate%
   Gui, Settings:Add, Hotkey, vKeyShowTemple w%nameWidth% h%optionHeight% y+5, %KeyShowTemple%
+  Gui, Settings:Add, Edit, vKeyOnDeath w%nameWidth% h%optionHeight% y+5, %KeyOnDeath%
 
   ;Fourth Column Offset
-  Gui, Settings:Add, Edit, vguideXoffset w%optionWidth% h%optionHeight% x345 y295, %guideXoffset%
-  Gui, Settings:Add, Edit, vguideYoffset w%optionWidth% h%optionHeight% y+5, %guideYoffset%
-  Gui, Settings:Add, Edit, vlevelXoffset w%optionWidth% h%optionHeight% y+5, %levelXoffset%
-  Gui, Settings:Add, Edit, vlevelYoffset w%optionWidth% h%optionHeight% y+5, %levelYoffset%
-  Gui, Settings:Add, Edit, vgemsXoffset w%optionWidth% h%optionHeight% y+5, %gemsXoffset%
-  Gui, Settings:Add, Edit, vgemsYoffset w%optionWidth% h%optionHeight% y+5, %gemsYoffset%
+  Gui, Settings:Add, Edit, vguideXoffset w%offsetWidth% h%optionHeight% x287 y321, %guideXoffset%
+  Gui, Settings:Add, Edit, vlevelXoffset w%offsetWidth% h%optionHeight% y+5, %levelXoffset%
+  Gui, Settings:Add, Edit, vgemsXoffset w%offsetWidth% h%optionHeight% y+5, %gemsXoffset%
+
+  Gui, Settings:Add, Edit, vguideYoffset w%offsetWidth% h%optionHeight% x402 y321, %guideYoffset%
+  Gui, Settings:Add, Edit, vlevelYoffset w%offsetWidth% h%optionHeight% y+5, %levelYoffset%
+  Gui, Settings:Add, Edit, vgemsYoffset w%offsetWidth% h%optionHeight% y+5, %gemsYoffset%
 
 
   ;Build
@@ -306,7 +312,18 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, This is the name of the image that will be shown for the skill tree. `nSome people prefer to save the image as a png or give it a different name entirely. `nThis file must be in each Act Folder of your Build or it will not appear.
     }
-  } Else If (control = "static25") { ;Notes X Offset
+  } Else If (control = "static24") { ;Press on Death
+    If (oldControl = control){
+      toolTime .= 1
+    } Else {
+      oldControl := control
+      toolTime = 0
+      Tooltip
+    }
+    If (toolTime > toolTimeout) {
+      ToolTip, You must use AutoHotKey Syntax here. `nThis is useful for triggering recording software to save after you die. `nCan be used to rage quit too :-)
+    }
+  } Else If (control = "static26") { ;Notes X Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -317,7 +334,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How much space to leave on the right side of the screen for the overlay. `n1 = All the way to right (covers the map/info). `nThis is a good setting if you're going to hide the notes anyway. `n.855 = As far right as you can go without covering the Mini-Map. `nGreat setting if you don't use the overlay map. `n.78 = Default setting and as far right as you can go without covering anything.
     }
-  } Else If (control = "static26") { ;Notes Y Offset
+  } Else If (control = "static29") { ;Notes Y Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -339,7 +356,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far to the right of the screen to put the Experience tracker. `n.287 = As far to the left as you can go without covering the flasks. `n.589 = As far to the right as you can go without covering the skill bar on my resolution and font size. `nThis is the default and a great option for 1080 screen resolutions and size 9 Consolas. `nExperiment with other numbers if you want to move the Experience tracker around.
     }
-  } Else If (control = "static28") { ;Level Y Offset
+  } Else If (control = "static30") { ;Level Y Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -350,7 +367,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far down the screen to put the Experience tracker. `n.955 = As low as you can go without covering the experience bar on my resolution and font size. `nThis is the default and a great option for 1080 screen resolutions and size 9 Consolas. `nExperiment with other numbers if you want to move the Experience tracker around.
     }
-  } Else If (control = "static29") { ;Gems X Offset
+  } Else If (control = "static28") { ;Gems X Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -361,7 +378,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far to the right to put the Gem Setup. `n.005 = Is the default and places the setup on the left side of the primary screen. `n1.005 = This should put the setup on the left side of a secondary monitor that is to the right of the primary. `n-.995 = This should put the setup on the left side of a secondary monitor that is to the left of the primary. `n None of this has been tested so please experiement with good values and let me know what to put here.
     }
-  } Else If (control = "static30") { ;Gems Y Offset
+  } Else If (control = "static31") { ;Gems Y Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -372,7 +389,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far down you want the Gem Setup. `n0 = All the way at top of the screen. `nIt will cover your buffs and debuffs. `n.180 = Just below your buffs and debuffs. `nThis is the default and a great option for normal screen resolutions.
     }
-  } Else If (control = "static36") { ;Colors
+  } Else If (control = "static37") { ;Colors
     If (oldControl = control){
       toolTime .= 1
     } Else {

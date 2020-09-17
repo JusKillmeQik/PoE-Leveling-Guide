@@ -39,6 +39,8 @@ global KeyHideGems := "!g"
 global KeyShowSyndicate := "F5"
 global KeyShowTemple := "F6"
 
+global KeyOnDeath := "+^s"
+
 global KeySettings := "F10"
 
 global tree_toggle := 0
@@ -51,6 +53,13 @@ global LG_toggle := 0
 global activeCount := 0
 global active_toggle := 1
 
+;State
+global numPart := 1
+global CurrentPart = "Part I"
+global CurrentAct = "Act I"
+global CurrentZone = "01 Twilight Strand"
+global CurrentLevel = "01"
+global CurrentGem = "02"
 
 ;*** Create INI if not exist
 ININame=%A_scriptdir%\config.ini
@@ -143,6 +152,25 @@ IniRead, KeyHideTree, %ININame%, ToggleKey, KeyHideTree, %KeyHideTree%
 IniRead, KeyHideGems, %ININame%, ToggleKey, KeyHideGems, %KeyHideGems%
 IniRead, KeyShowSyndicate, %ININame%, ToggleKey, KeyShowSyndicate, %KeyShowSyndicate%
 IniRead, KeyShowTemple, %ININame%, ToggleKey, KeyShowTemple, %KeyShowTemple%
+IniRead, KeyOnDeath, %ININame%, ToggleKey, KeyOnDeath, %KeyOnDeath%
+
+INIMeta=%A_scriptdir%\builds\%overlayFolder%\gems\meta.ini
+IniRead, numPart, %INIMeta%, State, numPart, %numPart%
+IniRead, CurrentPart, %INIMeta%, State, CurrentPart, %CurrentPart%
+IniRead, CurrentAct, %INIMeta%, State, CurrentAct, %CurrentAct%
+IniRead, CurrentZone, %INIMeta%, State, CurrentZone, %CurrentZone%
+IniRead, CurrentLevel, %INIMeta%, State, CurrentLevel, %CurrentLevel%
+IniRead, CurrentGem, %INIMeta%, State, CurrentGem, %CurrentGem%
+
+SaveState() {
+  global
+  IniWrite, %numPart%, %INIMeta%, State, numPart
+  IniWrite, %CurrentPart%, %INIMeta%, State, CurrentPart
+  IniWrite, %CurrentAct%, %INIMeta%, State, CurrentAct
+  IniWrite, %CurrentZone%, %INIMeta%, State, CurrentZone
+  IniWrite, %CurrentLevel%, %INIMeta%, State, CurrentLevel
+  IniWrite, %CurrentGem%, %INIMeta%, State, CurrentGem
+}
 
 WriteAll() {
   global
@@ -185,4 +213,5 @@ WriteAll() {
   IniWrite, %KeyHideGems%, %ININame%, ToggleKey, KeyHideGems
   IniWrite, %KeyShowSyndicate%, %ININame%, ToggleKey, KeyShowSyndicate
   IniWrite, %KeyShowTemple%, %ININame%, ToggleKey, KeyShowTemple
+  IniWrite, %KeyOnDeath%, %ININame%, ToggleKey, KeyOnDeath
 }

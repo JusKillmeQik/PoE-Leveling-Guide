@@ -35,7 +35,7 @@
   Gui, Level:Color, %backgroundColor%
   Gui, Level:Font, s%points%, %font%
   Gui, Level:Add, Edit, x0 y0 h%control_height% w%level_width% r1 GlevelSelectUI, Level
-  Gui, Level:Add, UpDown, x%controlSpace% vCurrentLevel GlevelSelectUI Range1-100, 1
+  Gui, Level:Add, UpDown, x%controlSpace% vCurrentLevel GlevelSelectUI Range1-100, %CurrentLevel%
   Gui, Level:Show, h%exp_height% w%level_width% x%xPosLevel% y%yPosLevel% NA, Level
 
   ;The names of the images have to be created now so that ShowAllWindows doesn't make empty ones that show up in the Alt Tab bar
@@ -188,6 +188,8 @@ partSelectUI() {
   }
   trigger := true
   WinActivate, ahk_id %PoEWindowHwnd%
+
+  SaveState()
 }
 
 
@@ -207,6 +209,7 @@ actSelectUI() {
     UpdateImages()
   }
   WinActivate, ahk_id %PoEWindowHwnd%
+  SaveState()
 }
 
 
@@ -222,6 +225,7 @@ zoneSelectUI() {
     UpdateImages()
   }
   WinActivate, ahk_id %PoEWindowHwnd%
+  SaveState()
 }
 
 
@@ -230,6 +234,7 @@ levelSelectUI() {
   global
   Gui, Level:Submit, NoHide
   SetExp()
+  SaveState()
 }
 
 
@@ -239,6 +244,7 @@ gemSelectUI() {
   Gui, Gems:Submit, NoHide
   SetGems()
   WinActivate, ahk_id %PoEWindowHwnd%
+  SaveState()
 }
 
 

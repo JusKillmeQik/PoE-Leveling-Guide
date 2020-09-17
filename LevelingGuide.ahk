@@ -67,14 +67,6 @@ WinGet, PoEWindowHwnd, ID, ahk_group PoEWindowGrp
 global old_log := ""
 global trigger := false
 
-global numPart := 1
-global CurrentPart = "Part I"
-global CurrentAct = "Act I"
-global CurrentZone = "01 Twilight Strand"
-global CurrentLevel = "01"
-
-global CurrentGem = "02"
-
 global onStartup := 1
 
 #Include, %A_ScriptDir%\lib\draw.ahk

@@ -61,8 +61,8 @@ SearchLog() {
         }
         For index, someLevel in gemFiles
         {
-          If (someLevel = newLevel) {
-            GuiControl,Gems:,CurrentGem, % "|" test := GetDelimitedPartListString(gemFiles, newLevel)
+          If ((someLevel = newLevel) || (someLevel = newLevel+1)) {
+            GuiControl,Gems:,CurrentGem, % "|" test := GetDelimitedPartListString(gemFiles, someLevel)
             Sleep, 100
             Gui, Gems:Submit, NoHide
             If (gems_toggle) {
@@ -71,8 +71,18 @@ SearchLog() {
             break
           }
         }
+        SaveState()
+      }
+      beenSlain := "has been slain"
+      IfInString, log, %beenSlain%
+      {
+        Sleep, 100
+        Send, %KeyOnDeath%
       }
     }
+
+
+
     travel := "You have entered"
     IfInString, log, %travel%
     {

@@ -1,6 +1,21 @@
 # Leveling Guide - Patch Notes
 
-### 3.11 League
+### Heist League
+
+* Current state of level and zone are saved based on build
+** Restarting the tool will not reset state
+** Changing builds will go to the state for that build
+* Added On-Death key
+** Useful for taking a screen shot or saving a video steam after dying
+** Could also be used to rage quite
+
+#### Minor improvements
+
+* Gem setups now appear one level before becoming available to make planning easier
+* Discord Channel was created to answer questions and share builds
+* Vulkan now works better
+
+### Harvest League
 
 * Added settings menu
 ** All settings can now be modified graphically or with INI file
