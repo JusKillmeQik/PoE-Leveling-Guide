@@ -3,25 +3,25 @@
 ### Heist League
 
 * Current state of level and zone are saved based on build
-** Restarting the tool will not reset state
-** Changing builds will go to the state for that build
+  * Restarting the tool will not reset state
+  * Changing builds will go to the state for that build
 * Added On-Death key
-** Useful for taking a screen shot or saving a video steam after dying
-** Could also be used to rage quite
+  * Useful for taking a screen shot or saving a video steam after dying
+  * Could also be used to rage quite
 
 #### Minor improvements
 
 * Gem setups now appear one level before becoming available to make planning easier
-* Discord Channel was created to answer questions and share builds
+* [Discord](https://discord.gg/fzHj3BT) Channel was created to answer questions and share builds
 * Vulkan now works better
 
 ### Harvest League
 
 * Added settings menu
-** All settings can now be modified graphically or with INI file
+  * All settings can now be modified graphically or with INI file
 * Added a build planner
-** All of your gems can be set up for each major level milestone
-** Builds are stored in different folders so you can switch between different builds
+  * All of your gems can be set up for each major level milestone
+  * Builds are stored in different folders so you can switch between different builds
 * Colors are now configurable
 * All hotkeys are now configurable
 * Syndicate and Incursion cheatsheets are available
@@ -36,9 +36,9 @@
 ### Delirium League
 
 * Added the ability to color notes and guides
-** Only supports Red / Green / Blue for now
+  * Only supports Red / Green / Blue for now
 * Added user contributed "ShortNotes" folder
-** Contains step by step instructions to make it to maps
+  * Contains step by step instructions to make it to maps
 * Added the ability to show experience penalty instead of gain
 
 #### Minor improvements
@@ -50,11 +50,11 @@
 ### Metamorph League
 
 * Added the ability to track your desired gem links while leveling (Alt+g)
-** Automatically updates with your level
+  * Automatically updates with your level
 * Added the ability to set the folder you want to read your notes from
-** This allows you to have multiple different builds in different folders and just select the folder in the config file
+  * This allows you to have multiple different builds in different folders and just select the folder in the config file
 * Removed Map names since they can be different teirs in Metamorph, now you just select a tier for level information
-** Still no support for Map notes, but I'm not sure if I will leave maps in next league, it depends on how Conquerer's feels
+  * Still no support for Map notes, but I'm not sure if I will leave maps in next league, it depends on how Conquerer's feels
 
 ### Blight League
 

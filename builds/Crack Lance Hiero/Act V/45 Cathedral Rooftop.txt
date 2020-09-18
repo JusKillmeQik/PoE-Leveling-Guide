@@ -1,0 +1,2 @@
+Run top left and kill Kitava! Consider running your first Labyrinth here
+R,RECOMMEND fire resist, 1,500+ EHP, physical mitigation (Fortify/Endurance/Armour)

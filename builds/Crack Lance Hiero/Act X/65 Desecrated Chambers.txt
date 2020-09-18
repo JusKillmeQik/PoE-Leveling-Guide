@@ -1,0 +1,2 @@
+Right hand wall-follow until you come to four pillars, then go straight and up
+R,CRAFT - Life/Mana
