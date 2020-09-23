@@ -66,6 +66,7 @@ LaunchSettings() {
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Hide Gem Setup
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Show Betrayal Help
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Show Incursion Help
+  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Show Heist Help
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Press On Death
 
   ;Third Column Offset
@@ -89,6 +90,7 @@ LaunchSettings() {
   Gui, Settings:Add, Hotkey, vKeyHideGems w%nameWidth% h%optionHeight% y+5, %KeyHideGems%
   Gui, Settings:Add, Hotkey, vKeyShowSyndicate w%nameWidth% h%optionHeight% y+5, %KeyShowSyndicate%
   Gui, Settings:Add, Hotkey, vKeyShowTemple w%nameWidth% h%optionHeight% y+5, %KeyShowTemple%
+  Gui, Settings:Add, Hotkey, vKeyShowHeist w%nameWidth% h%optionHeight% y+5, %KeyShowHeist%
   Gui, Settings:Add, Edit, vKeyOnDeath w%nameWidth% h%optionHeight% y+5, %KeyOnDeath%
 
   ;Fourth Column Offset
