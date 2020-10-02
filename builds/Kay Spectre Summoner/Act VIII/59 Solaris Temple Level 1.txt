@@ -1,0 +1,1 @@
+Go down and left, then up and left. The Waypoint is always on the path

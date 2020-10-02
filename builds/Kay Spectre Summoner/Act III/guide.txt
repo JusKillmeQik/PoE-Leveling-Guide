@@ -1,0 +1,13 @@
+Lost in Love:         Aura GEM
+G,Crematorium:          Trial
+B,Victario's Secrets:   Passive
+G,Catacombs:            Trial
+The Ribbon Spool:     Amulet
+Sever the Right Hand: GEM
+B,Piety's Pets:         Passive
+Fixture of Fate:      GEM
+Siosa:                GEMS
+G,Imperial Gardens:     Trial
+
+R,Tip: 
+- Raise Specter: 2x Carnage Chieftan (Act 2: Old Fields)

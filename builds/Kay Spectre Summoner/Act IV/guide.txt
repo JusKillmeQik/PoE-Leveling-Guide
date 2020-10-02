@@ -1,0 +1,12 @@
+Breaking the Seal:  Golem GEM
+B,Indomitable Spirit: Passive
+Eternal Nightmare:  GEM
+
+R,Tips: 
+- Craft +1 minion gem helmet
+-- buy or find: 4-link helmet
+-- sell: Orb of Alteration + Flask of Animation + B,magic helmet
+- Craft Anti-Bleed flask
+-- Menagerie -> Staunching mod for flask
+- Check Fire Res before entering Kaom's Dream
+- Link Stone Golem with Summon Skeleton if possible
