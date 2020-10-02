@@ -38,6 +38,7 @@ global KeyHideGems := "!g"
 
 global KeyShowSyndicate := "F5"
 global KeyShowTemple := "F6"
+global KeyShowHeist := "F7"
 
 global KeyOnDeath := "+^s"
 
@@ -152,6 +153,7 @@ IniRead, KeyHideTree, %ININame%, ToggleKey, KeyHideTree, %KeyHideTree%
 IniRead, KeyHideGems, %ININame%, ToggleKey, KeyHideGems, %KeyHideGems%
 IniRead, KeyShowSyndicate, %ININame%, ToggleKey, KeyShowSyndicate, %KeyShowSyndicate%
 IniRead, KeyShowTemple, %ININame%, ToggleKey, KeyShowTemple, %KeyShowTemple%
+IniRead, KeyShowHeist, %ININame%, ToggleKey, KeyShowHeist, %KeyShowHeist%
 IniRead, KeyOnDeath, %ININame%, ToggleKey, KeyOnDeath, %KeyOnDeath%
 
 INIMeta=%A_scriptdir%\builds\%overlayFolder%\gems\meta.ini
@@ -213,5 +215,6 @@ WriteAll() {
   IniWrite, %KeyHideGems%, %ININame%, ToggleKey, KeyHideGems
   IniWrite, %KeyShowSyndicate%, %ININame%, ToggleKey, KeyShowSyndicate
   IniWrite, %KeyShowTemple%, %ININame%, ToggleKey, KeyShowTemple
+  IniWrite, %KeyShowHeist%, %ININame%, ToggleKey, KeyShowHeist
   IniWrite, %KeyOnDeath%, %ININame%, ToggleKey, KeyOnDeath
 }

@@ -135,3 +135,19 @@ ToggleTemple() {
     Gui, Temple:Show, NoActivate, Incursion
   }
 }
+
+If (KeyShowHeist != "") {
+  Hotkey % KeyShowHeist, ToggleHeist
+}
+
+ToggleHeist() {
+  Gui, Heist:+AlwaysOnTop +ToolWindow +Resize +hwndHeist
+  heist_active := WinExist("Heist")
+  If (heist_active){
+    Gui, Heist:Hide
+  } Else {
+    image_file := "" A_ScriptDir "\images\cheatsheets\Heist.png" ""
+    Gui, Heist:Add, Picture, , %image_file%
+    Gui, Heist:Show, NoActivate, Heist
+  }
+}
