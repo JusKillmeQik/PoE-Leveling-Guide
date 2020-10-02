@@ -70,13 +70,13 @@ LaunchSettings() {
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Press On Death
 
   ;Third Column Offset
-  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x230 y295, Offsets
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x230 y310, Offsets
 
-  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x230 y325, Notes X
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x230 y340, Notes X
   Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Level X
   Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Gems X
 
-  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x345 y325, Notes Y
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x345 y340, Notes Y
   Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Level Y
   Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Gems Y
 
@@ -94,11 +94,11 @@ LaunchSettings() {
   Gui, Settings:Add, Edit, vKeyOnDeath w%nameWidth% h%optionHeight% y+5, %KeyOnDeath%
 
   ;Fourth Column Offset
-  Gui, Settings:Add, Edit, vguideXoffset w%offsetWidth% h%optionHeight% x287 y321, %guideXoffset%
+  Gui, Settings:Add, Edit, vguideXoffset w%offsetWidth% h%optionHeight% x287 y336, %guideXoffset%
   Gui, Settings:Add, Edit, vlevelXoffset w%offsetWidth% h%optionHeight% y+5, %levelXoffset%
   Gui, Settings:Add, Edit, vgemsXoffset w%offsetWidth% h%optionHeight% y+5, %gemsXoffset%
 
-  Gui, Settings:Add, Edit, vguideYoffset w%offsetWidth% h%optionHeight% x402 y321, %guideYoffset%
+  Gui, Settings:Add, Edit, vguideYoffset w%offsetWidth% h%optionHeight% x402 y336, %guideYoffset%
   Gui, Settings:Add, Edit, vlevelYoffset w%offsetWidth% h%optionHeight% y+5, %levelYoffset%
   Gui, Settings:Add, Edit, vgemsYoffset w%offsetWidth% h%optionHeight% y+5, %gemsYoffset%
 
@@ -314,7 +314,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, This is the name of the image that will be shown for the skill tree. `nSome people prefer to save the image as a png or give it a different name entirely. `nThis file must be in each Act Folder of your Build or it will not appear.
     }
-  } Else If (control = "static24") { ;Press on Death
+  } Else If (control = "static25") { ;Press on Death
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -325,7 +325,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, You must use AutoHotKey Syntax here. `nThis is useful for triggering recording software to save after you die. `nCan be used to rage quit too :-)
     }
-  } Else If (control = "static26") { ;Notes X Offset
+  } Else If (control = "static27") { ;Notes X Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -336,7 +336,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How much space to leave on the right side of the screen for the overlay. `n1 = All the way to right (covers the map/info). `nThis is a good setting if you're going to hide the notes anyway. `n.855 = As far right as you can go without covering the Mini-Map. `nGreat setting if you don't use the overlay map. `n.78 = Default setting and as far right as you can go without covering anything.
     }
-  } Else If (control = "static29") { ;Notes Y Offset
+  } Else If (control = "static30") { ;Notes Y Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -347,7 +347,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far down to place the overlay. `n0 = At the top of the screen (Default). `n1 = At the top of a second monitor below your primary. `n-1 = at the top of a second monitor above your primary. `n You can adjust this to place the overlay anywhere you would like on your screen.
     }
-  } Else If (control = "static27") { ;Level X Offset
+  } Else If (control = "static28") { ;Level X Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -358,7 +358,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far to the right of the screen to put the Experience tracker. `n.287 = As far to the left as you can go without covering the flasks. `n.589 = As far to the right as you can go without covering the skill bar on my resolution and font size. `nThis is the default and a great option for 1080 screen resolutions and size 9 Consolas. `nExperiment with other numbers if you want to move the Experience tracker around.
     }
-  } Else If (control = "static30") { ;Level Y Offset
+  } Else If (control = "static31") { ;Level Y Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -369,7 +369,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far down the screen to put the Experience tracker. `n.955 = As low as you can go without covering the experience bar on my resolution and font size. `nThis is the default and a great option for 1080 screen resolutions and size 9 Consolas. `nExperiment with other numbers if you want to move the Experience tracker around.
     }
-  } Else If (control = "static28") { ;Gems X Offset
+  } Else If (control = "static29") { ;Gems X Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -380,7 +380,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far to the right to put the Gem Setup. `n.005 = Is the default and places the setup on the left side of the primary screen. `n1.005 = This should put the setup on the left side of a secondary monitor that is to the right of the primary. `n-.995 = This should put the setup on the left side of a secondary monitor that is to the left of the primary. `n None of this has been tested so please experiement with good values and let me know what to put here.
     }
-  } Else If (control = "static31") { ;Gems Y Offset
+  } Else If (control = "static32") { ;Gems Y Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
