@@ -120,8 +120,8 @@ All of this is based off of a post by u/Poland144 who borrowed code from many ot
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y4PJCG5N4DMTN&source=url)
 
 Credits:  
-kylewill0725 - Added Heist Cheatsheet
-Brody and BrayFlex -  Added the first community Build Guides
+kylewill0725 - Added Heist Cheatsheet  
+Brody and BrayFlex -  Added the first community Build Guides  
 Rebslack - provided Abbreviated as an alternative guide  
 josemaia - pointed out minimum autohotkey level  
 dsnvwlmnt - many logged issues and testing  
