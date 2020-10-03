@@ -1,0 +1,3 @@
+Going left generally has a high chance of success
+G,TRIAL - Furnace Traps
+R,CRAFT - Fire damage

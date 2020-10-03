@@ -4,14 +4,24 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ;Check version and download if OK
-version_array := StrSplit(A_AhkVersion, ".")
-If (version_array[1] != 1 or version_array[2] != 1){
-  MsgBox, 1,, Your version of AutoHotkey is: %A_AhkVersion%, Please download the latest version of Autohotkey 1.1
+requiredVer := "1.1.30.03", unicodeOrAnsi := A_IsUnicode?"Unicode":"ANSI", 32or64bits := A_PtrSize=4?"32bits":"64bits"
+if (!A_IsUnicode) {
+  MsgBox, 1,, "This application isn't compatible with ANSI versions of AutoHotKey.`nYou are using v" A_AhkVersion " " unicodeOrAnsi " " 32or64bit ".`nPlease download the latest version of Autohotkey 1.1"
   IfMsgBox, OK
     Run, https://www.autohotkey.com/download/ahk-install.exe
   ExitApp
-} Else If (version_array[3] < 30) {
-  MsgBox, 1,, Your version of AutoHotkey is: %A_AhkVersion%, Please download the latest version of Autohotkey
+}
+if (A_AhkVersion < "1.1") ; Smaller than 1.1.00.00
+|| (A_AhkVersion < "1.1.00.00")
+|| (A_AhkVersion < requiredVer) { ; Smaller than required
+  MsgBox, 1,, "This application requires AutoHotKey v" requiredVer " or higher.`nYou are using v" A_AhkVersion " " unicodeOrAnsi " " 32or64bit ".`nPlease download the latest version of Autohotkey 1.1"
+  IfMsgBox, OK
+    Run, https://www.autohotkey.com/download/ahk-install.exe
+  ExitApp
+}
+if (A_AhkVersion >= "2.0")
+|| (A_AhkVersion >= "2.0.00.00") { ; Higher or equal to 2.0.00.00
+  MsgBox, 1,, "This application isn't compatible with AutoHotKey v2.`nYou are using v" A_AhkVersion " " unicodeOrAnsi " " 32or64bit ".`nPlease download the latest version of Autohotkey 1.1"
   IfMsgBox, OK
     Run, https://www.autohotkey.com/download/ahk-install.exe
   ExitApp

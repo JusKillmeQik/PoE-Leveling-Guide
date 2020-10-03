@@ -181,6 +181,12 @@ LaunchBuild() {
     Gui, Build:Add, Edit, vRG%A_Index%note gUpdateEdit w%noteWidth% h%optionHeight% x+5, % RG%A_Index%note
   }
 
+  For k, someControl in controlList {
+    gemName := %someControl%gem
+    GuiControl,,%someControl%gem, % "|" test := GetGemList(%someControl%group, %someControl%gem)
+    GuiControl,Text,%someControl%gem, %gemName%
+  }
+
   Gui, Build:Show, w%buildWidth% h475 NA
   WinSet, AlwaysOnTop, Off, ahk_id %BuildWindow%
   WinActivate, ahk_id %BuildWindow%
@@ -245,6 +251,7 @@ ReadGemFile(fileLevel) {
   ;*** Create INI if not exist
   INIGem=%A_scriptdir%\builds\%overlayFolder%\gems\%fileLevel%.ini
   INIMeta=%A_scriptdir%\builds\%overlayFolder%\gems\meta.ini
+  INIClass=%A_scriptdir%\builds\%overlayFolder%\gems\class.ini
   newFileCreated := 0
   ifnotexist,%INIGem%
   {
@@ -252,7 +259,7 @@ ReadGemFile(fileLevel) {
     ;This allows the IniReads later to work
     newFileCreated := 1
   }
-  IniRead, charClass, %INIMeta%, Build, class
+  IniRead, charClass, %INIClass%, Build, class
   ;If there is no class in the file, pick one
   If (charClass = "ERROR" or charClass = "") {
     charClass := "Duelist"
@@ -334,7 +341,8 @@ SaveGemFile(fileLevel) {
   }
   INIGem=%A_scriptdir%\builds\%overlayFolder%\gems\%fileLevel%.ini
   INIMeta=%A_scriptdir%\builds\%overlayFolder%\gems\meta.ini
-  IniWrite, %charClass%, %INIMeta%, Build, class
+  INIClass=%A_scriptdir%\builds\%overlayFolder%\gems\class.ini
+  IniWrite, %charClass%, %INIClass%, Build, class
   IniWrite, %charName%, %INIMeta%, Build, name
   For k, someControl in controlList {
     If (someControl != "") {
@@ -783,8 +791,8 @@ UpdateControl() {
     Gui, Build:Submit, NoHide ;this gets the newly selected gem level
 
     ;incase nothing else changed, save the build class change
-    INIMeta=%A_scriptdir%\builds\%overlayFolder%\gems\meta.ini
-    IniWrite, %charClass%, %INIMeta%, Build, class
+    INIClass=%A_scriptdir%\builds\%overlayFolder%\gems\class.ini
+    IniWrite, %charClass%, %INIClass%, Build, class
 
     ReadGemFile(gemLevel)
 

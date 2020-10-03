@@ -1,0 +1,4 @@
+Open the sarcophagus for Crypt level 2
+Manually switch to Crypt 2 layout
+G,TRIAL - Spinning blades
+R,CRAFT - Damage over time

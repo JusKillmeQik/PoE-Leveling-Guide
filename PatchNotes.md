@@ -14,6 +14,7 @@
 * Gem setups now appear one level before becoming available to make planning easier
 * [Discord](https://discord.gg/fzHj3BT) Channel was created to answer questions and share builds
 * Vulkan now works better
+* Added community builds
 
 ### Harvest League
 

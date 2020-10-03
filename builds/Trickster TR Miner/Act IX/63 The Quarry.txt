@@ -1,0 +1,4 @@
+Activate Waypoint at center, do Shrine of the Winds (2), then The Refinery (1)
+G,CRAFT - Physical damage
+R,RECOMMEND physical mitigation
+3,000+ EHP and Movement skills

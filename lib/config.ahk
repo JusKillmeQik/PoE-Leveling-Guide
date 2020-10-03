@@ -128,14 +128,8 @@ IniRead, expOrPen, %ININame%, Options, expOrPen, %expOrPen%
 
 If (startHidden = "True"){
   LG_toggle := 1
-  zone_toggle := 0
-  level_toggle := 0
-  gems_toggle := 0
 } Else If (startHidden = "False"){
   LG_toggle := 0
-  zone_toggle := 1
-  level_toggle := 1
-  gems_toggle := 1
 }
 
 IniRead, backgroundColor, %ININame%, Color, backgroundColor, %backgroundColor%
@@ -161,6 +155,9 @@ IniRead, CurrentAct, %INIMeta%, State, CurrentAct, %CurrentAct%
 IniRead, CurrentZone, %INIMeta%, State, CurrentZone, %CurrentZone%
 IniRead, CurrentLevel, %INIMeta%, State, CurrentLevel, %CurrentLevel%
 IniRead, CurrentGem, %INIMeta%, State, CurrentGem, %CurrentGem%
+IniRead, zone_toggle, %INIMeta%, State, zone_toggle, %zone_toggle%
+IniRead, level_toggle, %INIMeta%, State, level_toggle, %level_toggle%
+IniRead, gems_toggle, %INIMeta%, State, gems_toggle, %gems_toggle%
 
 SaveState() {
   global
@@ -170,6 +167,9 @@ SaveState() {
   IniWrite, %CurrentZone%, %INIMeta%, State, CurrentZone
   IniWrite, %CurrentLevel%, %INIMeta%, State, CurrentLevel
   IniWrite, %CurrentGem%, %INIMeta%, State, CurrentGem
+  IniWrite, %zone_toggle%, %INIMeta%, State, zone_toggle
+  IniWrite, %level_toggle%, %INIMeta%, State, level_toggle
+  IniWrite, %gems_toggle%, %INIMeta%, State, gems_toggle
 }
 
 WriteAll() {

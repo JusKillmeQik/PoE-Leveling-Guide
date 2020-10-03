@@ -46,6 +46,7 @@ ToggleZones() {
     }
     zone_toggle := 0
   }
+  SaveState()
 }
 
 If (KeyHideExp != "") {
@@ -65,6 +66,7 @@ ToggleExp() {
     Gui, Exp:Cancel
     level_toggle := 0
   }
+  SaveState()
 }
 
 If (KeyHideTree != "") {
@@ -102,6 +104,7 @@ ToggleGems() {
     Gui, Links:Cancel
     gems_toggle := 0
   }
+  SaveState()
 }
 
 If (KeyShowSyndicate != "") {
