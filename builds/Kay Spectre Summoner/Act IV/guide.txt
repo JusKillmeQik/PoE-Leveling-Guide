@@ -1,6 +1,4 @@
-Breaking the Seal:  Golem GEM
 B,Indomitable Spirit: Passive
-Eternal Nightmare:  GEM
 
 R,Tips: 
 - Craft +1 minion gem helmet
