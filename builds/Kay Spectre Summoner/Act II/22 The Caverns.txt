@@ -1,0 +1,2 @@
+Pretty much guessing where the exit spawned
+R,CRAFT - Movement speed

@@ -1,0 +1,4 @@
+Follow the halls, going over bridges, for 4 minizones
+R,CRAFT - Spell damage
+B,RECOMMEND lightning resist
+with physical mitigation

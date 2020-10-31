@@ -1,0 +1,10 @@
+G,Crematorium:          Trial
+B,Victario's Secrets:   Passive
+G,Catacombs:            Trial
+The Ribbon Spool:     Amulet
+B,Piety's Pets:         Passive
+Siosa:                GEMS
+G,Imperial Gardens:     Trial
+
+R,Tip: 
+- Raise Specter: 2x Carnage Chieftan (Act 2: Old Fields)
