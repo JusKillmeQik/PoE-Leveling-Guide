@@ -1,0 +1,11 @@
+G,Quests and Rewards:
+Breaking the Seal:  -------> Stone Golem
+Eternal Nightmare:  -------> Minefield
+
+R,Expected End Level: ~38 (38+8 points).
+
+G,Goals:
+1. 4-link with Minefield.
+2. Staunching Flask - not required, but vefy useful.
+3. Resistances -> before fighting Kaom you should try to cap your fire resistance.
+4. If you're about 1k HP, take Ascendancy -> Your first node should be Born in the Shadows for the Blind.

@@ -1,0 +1,3 @@
+Circle to the center of the zone. 
+The hallway next to the Waypoint always leads to the next zone.
+-> Go to Chamber level 2.

@@ -1,0 +1,22 @@
+G, Quests and Rewards:
+Enemy at the Gate:   ----> Stromblast Mine
+Mercy Mission:       ----> Swift Assemble
+Breaking Some Eggs:  ----> Orb Of Storm + FrostBlink
+Lower Prison:        ----> Added Lightning DMG
+Caged Brute:         ----> Flame Dash
+
+R,Expected End Level: ~11 (11+3 points).
+
+G,Goals:
+1. (if possible) MS boots
+2. (if possible) Crafted Wand
+3. B-B-B Link = Flame Dash + Arcane Surge + FrostBomb
+4. B-B-G Link = Orb Of Storm + On Slaught + Added lightning
+5. B-G-G Link = Stormblast Mine + Swift Assembly + Lesser Poison
+   no B-G-G   = B-G for Stormblast Mine + Swift Assembly
+6. G - Smoke Mine
+7. (if possible) 2x Essences
+8. (if possible) 2x Transmutation for Arc and Blastchain buy
+9. (if possible) 1x Alteration Orb
+
+G,Trials: The Lower Prison.

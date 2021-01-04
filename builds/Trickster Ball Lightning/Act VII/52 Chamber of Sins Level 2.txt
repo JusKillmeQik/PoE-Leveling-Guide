@@ -1,0 +1,11 @@
+Go to the top right side until you find the narrow long hallway,
+Move to the end 
+Then go right up 
+Then right down. 
+There is a layout that goes to the bottom left instead, if you encounter a dead end when going to the top right, do a right hand wall-follow. 
+
+Click the wall to reveal exit.
+-> Go to the Den.
+_________
+G,TRIAL - Sawblades (left side)
+R,CRAFT - Mana regen
