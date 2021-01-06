@@ -1,0 +1,10 @@
+R,Expected End Level: ~31 (31+7 points).
+_______________
+G,Goals:
+1. 4-Link after 25 lvl
+2. Pick up 2x two-stone rings (fire and lightning)
+3. Bench craft resists on your rings
+_______________
+G,Trials: The Crematorium
+          The Catacombs
+          The Imperial Gardens.

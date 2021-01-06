@@ -1,0 +1,9 @@
+R,Expected End Level: ~11 (11+3 points).
+_______________
+G,Goals:
+0. 2x 3-link (G-G-G and G-G-R)
+1. MS boots
+2. 3x transmutes
+3. Short Bow
+_______________
+G,Trials: The Lower Prison.

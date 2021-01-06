@@ -1,0 +1,4 @@
+Follow road.
+When road has finished -> near should be an enter to Crypt.
+_______________
+G, Trials - Proceed to Crypt for trial. 

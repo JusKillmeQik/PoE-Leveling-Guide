@@ -1,0 +1,12 @@
+Follow the halls, going over bridges, for 4 minizones.
+Proceed 4 zones.
+-> Go up to Prison Rooftop.
+Kill boss.
+-> Go left to the Warden's Chamber.
+Pick recepy.
+-> Logout.
+Take rewards (4-link).
+-> TP To Prisoner's Gate.
+_______________
+R,CRAFT - Spell damage
+B,RECOMMEND lightning resist

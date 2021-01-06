@@ -1,0 +1,7 @@
+Go up left for Trial.
+Go to the right up path
+Activate Waypoint.
+-> Proceed to the Quarry.
+_______________
+G,TRIAL - Blade sentries
+R,CRAFT - All attributes

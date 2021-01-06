@@ -1,0 +1,12 @@
+Activate Waypoint.
+Go right.
+Kill Hector and pickup quest item.
+Go further up.
+-> Go the High Gardens (1).
+---------------
+After Yughul, go right for Trial.
+Go down.
+-> Proceed to Lunaris Concourse.
+_______________
+G,TRIAL - Furnace traps
+R,CRAFT - Flask duration

@@ -1,0 +1,11 @@
+R,Expected End Level: ~21 (21+5 points).
+_______________
+G,Goals:
+1. + Skitterboots and Blood Rage.
+2. + 2x Vicious Proj.
+3. MS boots <- craft if needed
+4. Bandits kiled.
+G,5. Hideout can be accessed.
+_______________
+G,Trials: The Crypt level 1.
+          The Chamber of Sins Level 2.

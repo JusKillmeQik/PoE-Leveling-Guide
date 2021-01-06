@@ -1,0 +1,9 @@
+Go up and left, and spiral counter clockwise
+-> Go to Sanctum of Innocence
+---------------
+Walk to Waypoint
+Walk to Bannon
+-> Go to Torched Courts. 
+_______________
+R,CRAFT - Movement speed
+B,RECOMMEND lightning/fire resist

@@ -1,0 +1,6 @@
+Left or right wall follow, based on bottom or top being the dead end at the entrance.
+Kill boss.
+-> Logout.
+-> TP to the Vestiri Desrt.
+_______________
+R,RECOMMEND physical mitigation
