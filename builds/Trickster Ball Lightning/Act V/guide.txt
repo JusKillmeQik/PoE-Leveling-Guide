@@ -1,6 +1,3 @@
-G,Important Quests:
-Justicar Casticus -------> Silver Flask
-
 R,Expected End Level: ~43 (43+10 points).
 
 G,Goals:

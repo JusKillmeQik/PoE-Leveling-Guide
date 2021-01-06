@@ -1,5 +1,6 @@
+G,You will be lvl 2 after killing the boss.
 The side without a cliff is the shortest.
-If you need Arcane Surge lvl 1! (not 2+) -> You should be still lvl 2 after killing the boss.
+Buy Arcane Surge and do not up it!
 Kill boss.
 -> Logout.
 _______________________________________________

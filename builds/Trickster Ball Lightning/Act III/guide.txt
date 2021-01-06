@@ -1,7 +1,3 @@
-G,Important Quests and Rewards:
-Lost in Love:         	-----> Conductivity
-Sever the Right Hand: 	-----> Ball Lightning
-
 R,Expected End Level: ~31 (31+7 points).
 
 G,Goals:

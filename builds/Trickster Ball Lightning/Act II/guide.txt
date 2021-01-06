@@ -1,26 +1,9 @@
-G,Quests and Rewards
-The Great White Beast: -----> Quicksilver
-Intruders in Black:    -----> Skitterbots
-Sharp and Cruel:       -----> Elemental Focus OR
-			      Trap and Mine Damage
-Bandits:               -----> Kill All
-
 R,Expected End Level: ~21 (21+5 points).
 
 G,Goals:
 1) Replace B-G-G with B-B-B/B-B-G
-   for Arc + Blastchain Mine + Elemental Focus (B) /
-                             + Trap and Mine Damage (G)
 2) Craft 2x Wand = Magic wand + Alteration + Rare Topaz ring
-3) Have gems:
-      BBB(Arc, Blastchain Mine, Elemental Focus) 
-   or BBG(Arc, Blastchain Mine, Trap and Mine Damage)
-      ------------------------------------------------
-      BBB(Arcane Surge, Wave of Conviction, Flame Dash)
-      ------------------------------------------------
-      BBG(OOS, Onslaught, Added Lightning)
-      ------------------------------------------------
-      B, B, G (skitterbots, herald of thunder, smoke mine)
+3) Have all gems from left panel.
 
 G,Trials: The Crypt level 1.
           The Chamber of Sins Level 2.

@@ -1,8 +1,3 @@
-G, Quests and Rewards:
-A Million Faces:   -------> Passive
-Queen of Despair:  -------> Passive
-Kishara's Star:    -------> Passive
-
 R,Expected End Level: ~53 (53+16 points).
 
 G, Goals:

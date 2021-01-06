@@ -1,8 +1,3 @@
-G, Quests and Rewards:
-Love is Dead:         -----> Passive
-Gemling Legion:       -----> Passive
-Reflection of Terror: -----> Passive
-
 R,Expected End Level: ~58 (58+19 points).
 
 G, Goals:

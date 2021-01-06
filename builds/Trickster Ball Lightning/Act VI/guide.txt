@@ -1,7 +1,3 @@
-G,Important Quest with Rewards:
-Fallen from Grace:  -----> 2x Respec
-Lilly:              -----> GEMS
-
 R,Expected End Level: ~48 (48+13 points).
 
 G,Goals:
