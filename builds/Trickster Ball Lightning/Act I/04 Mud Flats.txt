@@ -1,0 +1,3 @@
+Little rivers connect the three items.
+Pick up 3 items.
+-> Go to Submerged.

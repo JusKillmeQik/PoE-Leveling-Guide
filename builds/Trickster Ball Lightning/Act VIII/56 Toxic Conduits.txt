@@ -1,0 +1,5 @@
+Watch the black paint on the floor as you enter the zone to see in which direction it points you.
+Move through zone.
+-> Go to Doedre's Cesspool
+________
+R,Danger damage from floor.

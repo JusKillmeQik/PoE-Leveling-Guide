@@ -1,0 +1,2 @@
+Build is based on Asmodeus'es BL Miner video guide.
+You can find it here: https://www.youtube.com/playlist?list=PLgyvLREC2f-5ARJID2B8n_2fQGgNdX47O 

@@ -1,0 +1,4 @@
+Pretty much guessing where the exit spawned.
+-> Go to the Ancient Pyramid.
+_______
+R,CRAFT - Movement speed

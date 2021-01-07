@@ -1,0 +1,7 @@
+Go left when the left path spawns, otherwise loop around right side
+Kill Weawer.
+-> Logout.
+Take reward.
+-> Go to Act 1.
+Take Reward.
+-> Go to Crossroads.

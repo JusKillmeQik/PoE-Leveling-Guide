@@ -1,0 +1,2 @@
+Loop around counter clockwise.
+-> Go to Ruinned Square.

@@ -1,0 +1,16 @@
+Activate Waypoint at center.
+Go right side.
+-> Proceed to Refinery. 
+----------
+Go left side (probably left up).
+-> Proceed to Shrine of the Winds
+Kill the boss.
+-> Logout.
+Rewards.
+-> TP to the Quarry.
+Talk to Sina and unlock a next zone.
+-> Proceed to the Belly of the Beast.
+__________
+G,CRAFT - Physical damage
+R,RECOMMEND physical mitigation
+3,000+ EHP and Movement skills
