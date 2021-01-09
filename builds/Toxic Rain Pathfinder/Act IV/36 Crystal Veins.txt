@@ -1,6 +1,11 @@
 Loop around bottom right to go to the top left exit.
 Find Dially.
--> Town to sell items and look for reward, 4-link and nice armor.
+-> Go to Town.
+Sell items and look for reward, 4-link and nice armor.
+Bench Craft resistance or rings.
+Go to Lab 1.
+Ascend as Pathfinder and take Nature's Reprisal.
+-> TP to Crystal Veins.
 ---------------
 if you have good fire resistance
 -> Go To Kaom
@@ -10,7 +15,8 @@ if you don't
 Probably here you want to make Lab 1.
 ---------------
 R, IMPORTANT- Staunching Life flask
-If you can, beast craft (Einar) the Staunching on flask.
+-> Go to Einar Area
+Beast craft the Staunching on flask.
 -> Go to Belly of the Beast
 _______________
 R,CRAFT - Resistance

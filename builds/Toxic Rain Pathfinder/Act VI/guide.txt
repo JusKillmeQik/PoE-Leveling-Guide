@@ -1,9 +1,7 @@
 R,Expected End Level: ~48 (48+13 points).
 _______________
 G,Goals:
-1. Update skill setups after Lilly's quest
-2. Detonate mine on your left click
-   use smoke mine for the MS boost + Dash
-3. At least cap cold res before Crab boss.
+- At least cap cold res before Crab boss.
 _______________
-G, Trials: The Prison.
+G,Trials:
+- The Prison.

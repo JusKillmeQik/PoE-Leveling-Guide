@@ -1,6 +1,4 @@
-Kill the Deep Dweller for Quicksilver Flask.
+Kill the Deep Dweller
 -> Logout.
-Take flask as reward.
+Take reward.
 -> TP to the Leadge.
-_______________
-R, Craft wand if have enough resources

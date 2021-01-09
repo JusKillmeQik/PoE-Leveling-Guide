@@ -10,5 +10,5 @@ Skip the boss.
 Go to Fairgraves.
 Kill him.
 -> Logout.
-R, Nice time to up your cold resistance.
+Up your cold resistance (2x Sapphire ring).
 -> TP To Marveil's Cavern.

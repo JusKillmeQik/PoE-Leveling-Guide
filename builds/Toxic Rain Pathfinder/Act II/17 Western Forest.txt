@@ -1,5 +1,5 @@
 Follow the road.
-<TP> Activate Waypoint.
+Activate Waypoint.
 Alira is on the side of the Waypoint where the road has a broken section.
 Go and Kill her.
 ---------------
