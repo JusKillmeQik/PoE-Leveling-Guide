@@ -1,7 +1,9 @@
+Follow the road.
+Activate Waypoint.
+Go up left for a Trial.
 Activate Last Trial.
 -> Logout.
 -> TP to Impale Garden (faster then going back).
-Follow the road until the Waypoint.
 We are skipping library since we don't need it now.
 From Waypoint go to the right and then up.
 -> Proceed to Sceptre of God.
