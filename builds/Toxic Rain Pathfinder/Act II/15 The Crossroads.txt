@@ -5,9 +5,8 @@ Kill bear, Logout.
 -> Go to Crossroads.
 Go left, find CHamber of Sins.
 ---------------
-Go Up.
--> Proceed to Broken Bridge.
----------------
-G, If need Trials:
 Go Right.
 -> Proceed to Ruins.
+---------------
+Go Up.
+-> Proceed to Broken Bridge.
