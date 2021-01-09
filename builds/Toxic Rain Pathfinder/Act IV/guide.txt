@@ -1,8 +1,8 @@
 R,Expected End Level: ~38 (38+8 points).
 _______________
 G,Goals:
-1. 4-link
-2. Resistances -> before Kaom try to cap fire.
-3. Ascendancy -> Nature's Reprisal
-4. Staunching Life Flask
-5. + Stone Golem + Withering Touch (very optional)
+- 4-link
+- Resistances -> before Kaom try to cap fire.
+- Ascendancy -> Nature's Reprisal
+- Staunching Life Flask
+- + Stone Golem + Withering Touch (very optional)
