@@ -6,6 +6,7 @@ global noteWidth := 50
 global charWidth := colorWidth + npcWidth + noteWidth + (10)
 global lineWidth := groupWidth + gemWidth + colorWidth + npcWidth + noteWidth + (40)
 global buildWidth := lineWidth * 3
+global buildHeight := 23 * 26 ;lines times line height with spacing
 global listHeight := 200
 ;This variable is in the settings.ahk
 optionHeight := 21
@@ -15,7 +16,7 @@ global charClass := "Duelist"
 global charName := ""
 global gemFilter1 := " None"
 global gemFilter2 := " None"
-global controlList := ["MH1", "MH2", "MH3", "MH4", "MH5", "MH6", "", "BA1", "BA2", "BA3", "BA4", "BA5", "BA6", "", "OH1", "OH2", "OH3", "", "HT1", "HT2", "HT3", "HT4", "", "GL1", "GL2", "GL3", "GL4", "", "BT1", "BT2", "BT3", "BT4", "", "RG1", "", "RG2"]
+global controlList := ["MH1", "MH2", "MH3", "MH4", "MH5", "MH6", "MH7", "MH8", "", "BA1", "BA2", "BA3", "BA4", "BA5", "BA6", "BA7", "BA8", "", "OH1", "OH2", "OH3", "OH4", "OH5", "OH6", "", "HT1", "HT2", "HT3", "HT4", "HT5", "HT6", "", "GL1", "GL2", "GL3", "GL4", "GL5", "GL6", "", "BT1", "BT2", "BT3", "BT4", "BT5", "BT6", "", "RG1", "", "RG2"]
 global levelList := ["02", "04", "08", "12", "16", "24", "28", "31", "34", "38", "55", "72", "90"]
 global classList := ["Duelist", "Marauder", "Ranger", "Scion", "Shadow", "Templar", "Witch"]
 global filterList := [" None"]
@@ -43,7 +44,7 @@ LaunchBuild() {
   Gui, Build:Add, Text, w%npcWidth% h%optionHeight% x+5, NPC
   Gui, Build:Add, Text, w%noteWidth% h%optionHeight% x+5, Note
 
-  Loop, 6 {
+  Loop, 8 {
     Gui, Build:Add, DropDownList, vMH%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x10 y+5, % GetGroupList(MH%A_Index%group)
     Gui, Build:Add, ComboBox, vMH%A_Index%gem gUpdateElements w%gemWidth% h%listHeight% x+5, % GetGemList(MH%A_Index%group, MH%A_Index%gem)
     Gui, Build:Add, Edit, vMH%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % MH%A_Index%color
@@ -60,7 +61,7 @@ LaunchBuild() {
   Gui, Build:Add, Text, w%npcWidth% h%optionHeight% x+5, NPC
   Gui, Build:Add, Text, w%noteWidth% h%optionHeight% x+5, Note
 
-  Loop, 6 {
+  Loop, 8 {
     Gui, Build:Add, DropDownList, vBA%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x10 y+5, % GetGroupList(BA%A_Index%group)
     Gui, Build:Add, ComboBox, vBA%A_Index%gem gUpdateElements w%gemWidth% h%listHeight% x+5, % GetGemList(BA%A_Index%group, BA%A_Index%gem)
     Gui, Build:Add, Edit, vBA%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % BA%A_Index%color
@@ -80,7 +81,7 @@ LaunchBuild() {
   Gui, Build:Add, Text, w%npcWidth% h%optionHeight% x+5, NPC
   Gui, Build:Add, Text, w%noteWidth% h%optionHeight% x+5, Note
 
-  Loop, 3 {
+  Loop, 6 {
     Gui, Build:Add, DropDownList, vOH%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x%columnTwoX% y+5, % GetGroupList(OH%A_Index%group)
     Gui, Build:Add, ComboBox, vOH%A_Index%gem gUpdateElements w%gemWidth% h%listHeight% x+5, % GetGemList(OH%A_Index%group, OH%A_Index%gem)
     Gui, Build:Add, Edit, vOH%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % OH%A_Index%color
@@ -97,7 +98,7 @@ LaunchBuild() {
   Gui, Build:Add, Text, w%npcWidth% h%optionHeight% x+5, NPC
   Gui, Build:Add, Text, w%noteWidth% h%optionHeight% x+5, Note
 
-  Loop, 4 {
+  Loop, 6 {
     Gui, Build:Add, DropDownList, vHT%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x%columnTwoX% y+5, % GetGroupList(HT%A_Index%group)
     Gui, Build:Add, ComboBox, vHT%A_Index%gem gUpdateElements w%gemWidth% h%listHeight% x+5, % GetGemList(HT%A_Index%group, HT%A_Index%gem)
     Gui, Build:Add, Edit, vHT%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % HT%A_Index%color
@@ -106,7 +107,7 @@ LaunchBuild() {
   }
 
   ;Controls
-  Gui, Build:Add, Text, w%groupWidth% h%optionHeight% x%columnTwoX% y+30, Controls
+  Gui, Build:Add, Text, w%groupWidth% h%optionHeight% x%columnTwoX% y+20, Controls
 
   Gui, Build:Add, Text, w%charWidth% h%optionHeight% x%columnTwoX% y+5, Filter Gems by Tag:
   Gui, Build:Add, Text, w%groupWidth% h%optionHeight% x+5, Class
@@ -139,7 +140,7 @@ LaunchBuild() {
   Gui, Build:Add, Text, w%npcWidth% h%optionHeight% x+5, NPC
   Gui, Build:Add, Text, w%noteWidth% h%optionHeight% x+5, Note
 
-  Loop, 4 {
+  Loop, 6 {
     Gui, Build:Add, DropDownList, vGL%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x%columnThreeX% y+5, % GetGroupList(GL%A_Index%group)
     Gui, Build:Add, ComboBox, vGL%A_Index%gem gUpdateElements w%gemWidth% h%listHeight% x+5, % GetGemList(GL%A_Index%group, GL%A_Index%gem)
     Gui, Build:Add, Edit, vGL%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % GL%A_Index%color
@@ -156,7 +157,7 @@ LaunchBuild() {
   Gui, Build:Add, Text, w%npcWidth% h%optionHeight% x+5, NPC
   Gui, Build:Add, Text, w%noteWidth% h%optionHeight% x+5, Note
 
-  Loop, 4 {
+  Loop, 6 {
     Gui, Build:Add, DropDownList, vBT%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x%columnThreeX% y+5, % GetGroupList(BT%A_Index%group)
     Gui, Build:Add, ComboBox, vBT%A_Index%gem gUpdateElements w%gemWidth% h%listHeight% x+5, % GetGemList(BT%A_Index%group, BT%A_Index%gem)
     Gui, Build:Add, Edit, vBT%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % BT%A_Index%color
@@ -187,7 +188,7 @@ LaunchBuild() {
     GuiControl,Text,%someControl%gem, %gemName%
   }
 
-  Gui, Build:Show, w%buildWidth% h475 NA
+  Gui, Build:Show, w%buildWidth% h%buildHeight% NA
   WinSet, AlwaysOnTop, Off, ahk_id %BuildWindow%
   WinActivate, ahk_id %BuildWindow%
 
@@ -209,6 +210,10 @@ LoadGemFile(fileName) {
   For k, someControl in controlList {
     IniRead, gemName, %INIGem%, %someControl%, gem
     IniRead, groupName, %INIGem%, %someControl%, group
+    ;If a gem is missing, just leave it blank
+    If (gemName = "ERROR") {
+      gemName := ""
+    }
     ;Replace Siosa with Lilly after he unlocks
     If (groupName = "Siosa" and gemLevel > 31) {
       groupName := "Lilly"
@@ -239,8 +244,17 @@ LoadGemFile(fileName) {
     %someControl%group := groupName
     %someControl%gem := gemName
     IniRead, %someControl%color, %INIGem%, %someControl%, color
+    If (%someControl%color = "ERROR") {
+      %someControl%color := ""
+    }
     IniRead, %someControl%npc, %INIGem%, %someControl%, npc
+    If (%someControl%npc = "ERROR") {
+      %someControl%npc := ""
+    }
     IniRead, %someControl%note, %INIGem%, %someControl%, note
+    If (%someControl%note = "ERROR") {
+      %someControl%note := ""
+    }
   }
 }
 
@@ -276,6 +290,10 @@ ReadGemFile(fileLevel) {
     IniRead, gemName, %INIGem%, %someControl%, gem
     IniRead, groupName, %INIGem%, %someControl%, group
     originalGroupName := groupName
+    ;If a gem is missing, just leave it blank
+    If (gemName = "ERROR") {
+      gemName := ""
+    }
     ;Replace Siosa with Lilly after he unlocks
     If (groupName = "Siosa" and fileLevel > 31) {
       groupName := "Lilly"
@@ -306,12 +324,21 @@ ReadGemFile(fileLevel) {
     %someControl%group := groupName
     %someControl%gem := gemName
     IniRead, %someControl%color, %INIGem%, %someControl%, color
+    If (%someControl%color = "ERROR") {
+      %someControl%color := ""
+    }
     If (groupName = "Inventory" and originalGroupName != "Inventory") { ;clear meta data for gems moved to inventory
       %someControl%npc := ""
       %someControl%note := ""
     } Else {
       IniRead, %someControl%npc, %INIGem%, %someControl%, npc
+      If (%someControl%npc = "ERROR") {
+        %someControl%npc := ""
+      }
       IniRead, %someControl%note, %INIGem%, %someControl%, note
+      If (%someControl%note = "ERROR") {
+        %someControl%note := ""
+      }
     }
 
     If (newFileCreated) {
