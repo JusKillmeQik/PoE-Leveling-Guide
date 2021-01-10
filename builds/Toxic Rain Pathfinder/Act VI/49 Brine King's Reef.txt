@@ -1,3 +1,7 @@
 Follow the left hand shoreline to the Brine King's arena
+Kill the boss.
+-> Logout.
+Talk with vendors.
+-> Go to Act 7 with TP.
 _______________
 R,RECOMMEND lightning/cold resist

@@ -2,9 +2,5 @@ Follow the shoreline until you reach the beacons.
 Move columns.
 Burn the flag.
 -> Go to the King reef.
-Kill the boss.
--> Logout.
-Talk with vendors.
--> Go to Act 7 with TP.
 _______________
 R,CRAFT - Life/Mana
