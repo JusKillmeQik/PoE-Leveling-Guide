@@ -1,0 +1,10 @@
+Find the path that doesn�t have a dead end, this leads you all the way to the exit.
+-> Proceed to Cauldron via Loosf Grant.
+Kill Doedre.
+Activate Waypoint.
+-> Go right to the The Quay.
+---------------
+Go left.
+-> Proceed to the The Grand Promenade.
+_______________
+R,CRAFT - Resistance

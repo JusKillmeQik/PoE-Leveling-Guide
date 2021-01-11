@@ -1,0 +1,10 @@
+Explore the zone and find the fireflies.
+Find a cave.
+-> Go to the Den of Despair.
+Kill Gruthkul.
+---------------
+-> Go back to Thicket.
+Collect rest fireflies.
+-> Go to the Northern Forest.
+_______________
+R,CRAFT - Fire damage

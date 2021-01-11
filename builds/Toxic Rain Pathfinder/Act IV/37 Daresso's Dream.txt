@@ -1,0 +1,4 @@
+Move towards the top right some dead ends.
+Kill boss.
+-> Logout.
+-> Go to Crystal Veins.

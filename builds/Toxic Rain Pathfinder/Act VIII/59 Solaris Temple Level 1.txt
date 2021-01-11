@@ -1,0 +1,4 @@
+Go down and left
+Then up and left. 
+The Waypoint is always on the path.
+-> Go to Solaris level 2.

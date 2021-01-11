@@ -1,0 +1,8 @@
+Go left and clear zone
+It opens Lilly's GEM shop.
+-> Logout.
+Buy all needed gems:
+1. Malevolence
+2. Flesh and Stone
+3. Second Wind
+4. Swift Affliction
