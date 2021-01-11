@@ -1,9 +1,9 @@
 Follow the carpet but can have dead ends.
 Take Waypoint.
 Talk to Dialla.
-Check your stats and figure out what you neeed more.
+Check your stats and figure out what you need more.
 (probably Strength for TR)
 Get an X amulet.
--> TP to Surwes Waypoint.
+-> TP to Sewers Waypoint.
 _______________
 R,CRAFT - Cold damage

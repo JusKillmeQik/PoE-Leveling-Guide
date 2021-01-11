@@ -1,6 +1,6 @@
 Trial is right then up.
 Boss is diagonally right and then down and left.
-Kill Fidelis
+Kill Fidelitas
 -> Logout.
 Get and buy Blood Rage and Skitterbots.
 ---------------

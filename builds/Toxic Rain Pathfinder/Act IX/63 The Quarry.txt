@@ -8,7 +8,7 @@ Kill the boss.
 -> Logout.
 Rewards.
 -> TP to the Quarry.
-Talk to Sina and unlock a next zone.
+Talk to Sin and unlock the next zone
 -> Proceed to the Belly of the Beast.
 _______________
 G,CRAFT - Physical damage

@@ -8,9 +8,11 @@ Common tips for FAST leveling:
 - Always make spells "attack without moving"
 - Try to be 1-3 lvl below the zone level
 --- do not try to kill all mobs in a zone
-- Untill ~Blood Aqueduct (Act 8) don't pay attantion to drop from mobs
+- Untill ~Blood Aqueduct (Act 8) don't pay attention to drops from mobs
 --- except rings/currency/items with needed links
 --- keep in mind which links/currency you will need later
+- Prepare a lootfilter for you!
+--- https://www.filterblade.xyz/ is a nice place for that
 - Don't use body armor, it slows your character a bit
 ________________
 Follow the coast up and right

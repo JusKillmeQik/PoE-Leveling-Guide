@@ -3,7 +3,7 @@ Follow the road and find Waypoint.
 Kill bear, Logout.
 ---------------
 -> Go to Crossroads.
-Go left, find CHamber of Sins.
+Go left, find Chamber of Sins.
 ---------------
 Go Right.
 -> Proceed to Ruins.
