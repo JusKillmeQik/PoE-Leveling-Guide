@@ -1,0 +1,8 @@
+Follow the right hand side 
+Kill Tukohama.
+Exit on left side.
+Go up.
+-> Proceed to the Ridge.
+_______________
+G,CRAFT - Defences
+R,RECOMMEND fire resist

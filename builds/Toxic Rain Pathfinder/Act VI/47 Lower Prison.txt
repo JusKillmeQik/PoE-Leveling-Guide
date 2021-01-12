@@ -1,0 +1,6 @@
+You usually want to go down or left towards the exit.
+Take Waypoint.
+-> Go to Shavronne's Tower.
+_______________
+G,TRIAL - Spike traps
+R,CRAFT - Double resistance

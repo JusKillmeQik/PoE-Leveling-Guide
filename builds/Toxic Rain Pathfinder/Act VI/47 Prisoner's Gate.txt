@@ -1,0 +1,6 @@
+Go down the side of the road that has the cliff.
+Fight the Abberath.
+Follow the road into the next area.
+-> Go to the Western Forest.
+_______________
+R,RECOMMEND fire resist

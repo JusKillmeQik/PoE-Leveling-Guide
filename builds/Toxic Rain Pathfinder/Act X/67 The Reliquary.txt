@@ -1,0 +1,3 @@
+The Quest item is always on the edge or a corner,
+it�s mostly the right side. 
+Use move skill to cross gaps

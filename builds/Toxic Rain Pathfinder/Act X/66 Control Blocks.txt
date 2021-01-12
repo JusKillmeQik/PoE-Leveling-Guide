@@ -1,0 +1,6 @@
+Right hand wall-follow. 
+Use movement skills to jump through fences
+-> Go to Arena.
+Kill the Boss.
+-> Logout.
+-> TP to Ravaged Square.
