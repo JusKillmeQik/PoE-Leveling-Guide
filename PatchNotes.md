@@ -1,5 +1,15 @@
 # Leveling Guide - Patch Notes
 
+### Ritual League
+
+* Added extra slots to the build editor for notes or gem choices
+  * This should allow more flexibility while planning as well
+  * This should also allow some people to have weapon swap gems as well
+* Added a community made Ball Lightning Miner and Toxix Rain build
+  * This was done pre-nerf so play any of the builds at your own risk
+* Added new gems to the build editor
+  * Updated old gems based on Patch Notes
+
 ### Heist League
 
 * Current state of level and zone are saved based on build

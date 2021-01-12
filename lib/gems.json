@@ -1676,8 +1676,7 @@
       "AoE",
       "Fire",
       "Projectile",
-      "Active",
-      "New Gems"
+      "Active"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorBlazingSalvo.png"
   },
@@ -2738,8 +2737,7 @@
       "Spell",
       "AoE",
       "Lightning",
-      "Active",
-      "New Gems"
+      "Active"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorCracklingLance.png"
   },
@@ -3330,19 +3328,19 @@
     "iconPath": "https://web.poecdn.com/public/news/2020-06-18/Earthshatter.png"
   },
   {
-    "level": 31,
-    "required_lvl": 31,
+    "level": 8,
+    "required_lvl": 8,
     "name": "Efficacy",
-    "Witch": "A Fixture of Fate",
-    "Shadow": "Siosa",
-    "Ranger": "Lilly",
-    "Duelist": "Lilly",
-    "Marauder": "Lilly",
-    "Templar": "Siosa",
-    "Scion": "A Fixture of Fate",
-    "quest": "Siosa",
-    "vendor": "Siosa",
-    "cost": "Chance",
+    "Witch": "The Caged Brute",
+    "Shadow": "Nessa",
+    "Ranger": "Siosa",
+    "Duelist": "Siosa",
+    "Marauder": "Siosa",
+    "Templar": "Nessa",
+    "Scion": "Nessa",
+    "quest": "Tarkleigh",
+    "vendor": "Nessa",
+    "cost": "Trans",
     "color": "blue",
     "gemTags": [
       "Duration",
@@ -3456,8 +3454,7 @@
     "cost": "",
     "color": "blue",
     "gemTags": [
-      "Support",
-      "New Gems"
+      "Support"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorElementalPenetrationSupport.png"
   },
@@ -4053,8 +4050,7 @@
       "AoE",
       "Duration",
       "Fire",
-      "Active",
-      "New Gems"
+      "Active"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorFlameWall.png"
   },
@@ -4336,6 +4332,7 @@
       "Cold",
       "AoE",
       "Duration",
+      "Orb",
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/FrostBomb.png?scale=1&w=1&h=1"
@@ -4360,8 +4357,7 @@
       "AoE",
       "Duration",
       "Cold",
-      "Active",
-      "New Gems"
+      "Active"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorFrostShield.png"
   },
@@ -4882,8 +4878,7 @@
       "AoE",
       "Chaos",
       "Hex",
-      "Active",
-      "New Gems"
+      "Active"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorHexblast.png"
   },
@@ -4955,6 +4950,34 @@
       "Active"
     ],
     "iconPath": "https://web.poecdn.com/image/Art/2DItems/Gems/FlameTotem.png?scale=1"
+  },
+  {
+    "level": 34,
+    "required_lvl": 34,
+    "name": "Hydrosphere",
+    "Witch": "Breaking the Seal",
+    "Shadow": "Breaking the Seal",
+    "Ranger": "Lilly",
+    "Duelist": "Lilly",
+    "Marauder": "Lilly",
+    "Templar": "Breaking the Seal",
+    "Scion": "Petarus",
+    "quest": "Oyun",
+    "vendor": "Petarus",
+    "cost": "Chance",
+    "color": "blue",
+    "gemTags": [
+      "Spell",
+      "AoE",
+      "Duration",
+      "Cold",
+      "Orb",
+      "Lightning",
+      "Physical",
+      "New Gems",
+      "Active"
+    ],
+    "iconPath": "https://web.poecdn.com/protected/image/echoes/items/Hydrosphere.png?key=I_7oZFEYQ3Dudya6rRg28w"
   },
   {
     "level": 31,
@@ -5254,8 +5277,7 @@
       "Hex",
       "AoE",
       "Chaos",
-      "Support",
-      "New Gems"
+      "Support"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorImpendingDoomSupport.png"
   },
@@ -6023,7 +6045,7 @@
   {
     "level": 2,
     "required_lvl": 1,
-    "name": "Magma Orb",
+    "name": "Rolling Magma",
     "Witch": "Enemy at the Gate",
     "Shadow": "Nessa",
     "Ranger": "Siosa",
@@ -6484,6 +6506,7 @@
       "AoE",
       "Chaining",
       "Duration",
+      "Orb",
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/StormCloudGem.png?scale=1&w=1&h=1"
@@ -6650,8 +6673,7 @@
     "gemTags": [
       "Spell",
       "Projectile",
-      "Support",
-      "New Gems"
+      "Support"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorPinpointSupport.png"
   },
@@ -7679,7 +7701,6 @@
       "Duration",
       "Lightning",
       "Active",
-      "New Gems"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorSigilofPower.png"
   },
@@ -8050,7 +8071,6 @@
       "AoE",
       "Physical",
       "Active",
-      "New Gems"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorSplittingSteel.png"
   },
@@ -8762,6 +8782,27 @@
       "Support"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Support/TrapAndMineDamage.png?scale=1&w=1&h=1"
+  },
+  {
+    "level": 16,
+    "required_lvl": 18,
+    "name": "Trinity",
+    "Witch": "Sharp and Cruel",
+    "Shadow": "Siosa",
+    "Ranger": "Sharp and Cruel",
+    "Duelist": "Sharp and Cruel",
+    "Marauder": "Siosa",
+    "Templar": "Yeena",
+    "Scion": "Yeena",
+    "quest": "Silk",
+    "vendor": "Yeena",
+    "cost": "Alt",
+    "color": "blue",
+    "gemTags": [
+      "New Gems",
+      "Support"
+    ],
+    "iconPath": "https://web.poecdn.com/protected/image/echoes/items/TrinitySupport.png?key=olxW4UsnblEXVX97PS6_MA"
   },
   {
     "level": 8,
@@ -9947,8 +9988,8 @@
       "Duration",
       "Physical",
       "Chaos",
-      "Active",
-      "New Gems"
+      "Orb",
+      "Active"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorVoidSphere.png"
   },
@@ -10194,6 +10235,7 @@
       "Projectile",
       "Channelling",
       "Duration",
+      "Orb",
       "Active"
     ],
     "iconPath": "https://web.poecdn.com/image/Art/2DItems/Gems/FrostFury.png?scale=1"
