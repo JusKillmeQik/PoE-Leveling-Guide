@@ -6043,31 +6043,6 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/LightningWarp.png?scale=1&w=1&h=1"
   },
   {
-    "level": 2,
-    "required_lvl": 1,
-    "name": "Rolling Magma",
-    "Witch": "Enemy at the Gate",
-    "Shadow": "Nessa",
-    "Ranger": "Siosa",
-    "Duelist": "Siosa",
-    "Marauder": "Siosa",
-    "Templar": "Enemy at the Gate",
-    "Scion": "Nessa",
-    "quest": "Tarkleigh",
-    "vendor": "Nessa",
-    "cost": "Wisdom",
-    "color": "blue",
-    "gemTags": [
-      "Spell",
-      "Fire",
-      "AoE",
-      "Projectile",
-      "Chaining",
-      "Active"
-    ],
-    "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/FireMortar.png?scale=1&w=1&h=1"
-  },
-  {
     "level": 8,
     "required_lvl": 8,
     "name": "Maim",
@@ -7353,6 +7328,31 @@
   {
     "level": 2,
     "required_lvl": 1,
+    "name": "Rolling Magma",
+    "Witch": "Enemy at the Gate",
+    "Shadow": "Nessa",
+    "Ranger": "Siosa",
+    "Duelist": "Siosa",
+    "Marauder": "Siosa",
+    "Templar": "Enemy at the Gate",
+    "Scion": "Nessa",
+    "quest": "Tarkleigh",
+    "vendor": "Nessa",
+    "cost": "Wisdom",
+    "color": "blue",
+    "gemTags": [
+      "Spell",
+      "Fire",
+      "AoE",
+      "Projectile",
+      "Chaining",
+      "Active"
+    ],
+    "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/FireMortar.png?scale=1&w=1&h=1"
+  },
+  {
+    "level": 2,
+    "required_lvl": 1,
     "name": "Ruthless",
     "Witch": "Siosa",
     "Shadow": "Siosa",
@@ -7700,7 +7700,7 @@
       "AoE",
       "Duration",
       "Lightning",
-      "Active",
+      "Active"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorSigilofPower.png"
   },
@@ -8070,7 +8070,7 @@
       "Projectile",
       "AoE",
       "Physical",
-      "Active",
+      "Active"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorSplittingSteel.png"
   },
