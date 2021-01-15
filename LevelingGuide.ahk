@@ -170,7 +170,7 @@ ShowGuiTimer:
     } Else {
       client := GetProcessPath( "PathOfExile_KG.exe" )
       StringTrimRight, client, client, 18
-      client .= "logs\Client.txt"
+      client .= "logs\KakaoClient.txt"
     }
 
     Process, Exist, PathOfExile_x64.exe
@@ -197,7 +197,7 @@ ShowGuiTimer:
     } Else {
       client := GetProcessPath( "PathOfExile_x64_KG.exe" )
       StringTrimRight, client, client, 22
-      client .= "logs\Client.txt"
+      client .= "logs\KakaoClient.txt"
     }
 
     If (closed = 6){
