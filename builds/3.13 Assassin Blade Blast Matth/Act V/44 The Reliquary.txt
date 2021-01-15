@@ -1,0 +1,2 @@
+Find multiple quest items in corners of the zone
+R,CRAFT - Accuracy

@@ -1,0 +1,3 @@
+Long zone with multiple levels. Go diagonally to exits
+R,CRAFT - Accuracy
+B,RECOMMEND lightning resist

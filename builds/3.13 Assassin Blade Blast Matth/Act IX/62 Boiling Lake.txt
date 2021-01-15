@@ -1,0 +1,3 @@
+Go to the top right of zone, If you spot petrified men you are close
+B,After killing the Basilisk, log out and teleport to the Waypoint in The Foothills and go to the top left corner of the zone
+R,CRAFT - Spell damage
