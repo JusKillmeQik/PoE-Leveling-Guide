@@ -173,6 +173,15 @@ ShowGuiTimer:
       client .= "logs\KakaoClient.txt"
     }
 
+    Process, Exist, PathOfExile_EGS.exe
+    If(!errorlevel) {
+      closed++
+    } Else {
+      client := GetProcessPath( "PathOfExile_EGS.exe" )
+      StringTrimRight, client, client, 19
+      client .= "logs\Client.txt"
+    }
+
     Process, Exist, PathOfExile_x64.exe
     If(!errorlevel) {
       closed++
@@ -200,7 +209,16 @@ ShowGuiTimer:
       client .= "logs\KakaoClient.txt"
     }
 
-    If (closed = 6){
+    Process, Exist, PathOfExile_x64EGS.exe
+    If(!errorlevel) {
+      closed++
+    } Else {
+      client := GetProcessPath( "PathOfExile_x64EGS.exe" )
+      StringTrimRight, client, client, 22
+      client .= "logs\Client.txt"
+    }
+
+    If (closed = 8){
       GoSub, HideAllWindows
       ;Sleep 10 seconds, no need to keep checking this
       Sleep 10000
