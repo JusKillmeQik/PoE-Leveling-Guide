@@ -1,0 +1,12 @@
+` Clear the Twilight Strand to unlock Lilly as Skillgem Vendor
+` Get to Mud Flats and kill the Dishonored Queen
+` Enter Karui Fortress, kill Tukohama and get Skillpoint in town
+` Use Soul of Tukohama
+G,` Finish Trial of Ascendancy in Prison and kill Shavronne
+` Enter Prisoner's Gate, kill Abberath and get Skillpoint in town
+` Get Riverways Waypoint
+` Enter Wetlands, kill Puppet Mistress and get Skillpoint in town
+` Light the Beacon and kill the Brine King
+` Use Soul of the Brine King
+
+Exp Farming Zone: The Southern Forest

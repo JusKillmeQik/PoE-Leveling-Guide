@@ -1,0 +1,3 @@
+Explore the zone and find the fireflies, Gruthkul is here
+R,CRAFT - Fire damage
+RECOMMEND physical mitigation

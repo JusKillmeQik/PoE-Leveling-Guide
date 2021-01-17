@@ -1,0 +1,18 @@
+` Once in town, enter the Old Fields first
+B,` Start looking out for 2x Topaz Rings or use the recipe: Iron Ring + Green Skill Gem
+` Look for the Den, kill Great White Beast and get second Quicksilver in town
+` Continue to Crossroads and get Waypoint
+G,` Enter Chamber of Sins, complete Trial of Ascendancy on Level 2 and kill Fidelitas
+` Keep Wave of Conviction at Level 1, we need it at that level later
+` Go back to Crossroads, enter Broken Bridge and kill Kraityn
+` Back to Crossroads once more, enter Fellshrine Ruins and Crypt
+G,` Complete Trial of Ascendancy in Crypt
+` Back to town, enter Riverways and get the Waypoint
+` Go to Western Forest, get Waypoint, kill Alira and Captain Arteri
+` Look for Weaver's Chambers and kill Weaver
+` Go back to Lioneye's Watch and get Skillpoint
+` Go back to Riverways and follow the small dirt path to Wetlands
+` Kill Oak, get Wetlands Waypoint and get two Skillpoints in town
+` Make your way to the Ancient Pyramid, equip Topaz Rings and kill Vaal Oversoul
+
+Exp Farming Zone: The Northern Forest

@@ -1,0 +1,12 @@
+Once you've spec into Golem Commander, enable Summon Chaos Golem
+` Go left on Cathedral Rooftop and kill Plaguewing
+` Now go right, enter the Ravaged Square and go south
+` Enter the Control Blocks, get Waypoint, kill Vilenta and get Skillpoint in town
+` Optionally find the Teardrop in Reliquary
+` Go back to Ravaged Square and get its Waypoint in the upper part
+G,` Enter Ossuary and complete Trial of Ascendancy
+` Get to Desecrated Chamber through Torched Courts and kill Avarius
+` Enter the Canals and make your way to the final bossfight
+G,` Finish third Labyrinth and get Elemancer
+
+Exp Farming Zone: The Desecrated Chambers

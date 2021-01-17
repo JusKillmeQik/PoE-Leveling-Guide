@@ -1,0 +1,12 @@
+Start looking out for 4-linked intelligence-based gear.
+
+` Enter the Dried Lake, kill Voll and enter the Mines
+` Free Deshret's Spirit in Mines Level 2, progress to Crystal Veins and get Waypoint
+` Get skillpoint in town
+G,` Go back to Sarn Encampment, enter the Labyrinth and get its Waypoint
+G,` After finishing the Labyrinth, ascend to Elementalist and get Mastermind of Discord
+` Go back to Crystal Veins, enter Kaom's Dream and kill Kaom
+` Now enter Daresso's Dream and kill Daresso
+` Kill Piety in Belly of the Beast, and finally Malachai in the Harvest
+
+Exp Farming Zone: The Dried Lake

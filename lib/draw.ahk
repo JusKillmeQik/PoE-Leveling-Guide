@@ -6,7 +6,7 @@
 	{
     tempFileName = %A_LoopFileName%
     StringTrimRight, tempFileName, tempFileName, 4
-    If (tempFileName != "meta") {
+    If (tempFileName != "meta" and tempFileName != "class") {
       gemFiles.Push(tempFileName)
     }
 	}

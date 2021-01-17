@@ -1,0 +1,3 @@
+Follow the left hand shoreline to the Brine King's arena
+B,RECOMMEND lightning resist
+G,and cold resist with physical mitigation

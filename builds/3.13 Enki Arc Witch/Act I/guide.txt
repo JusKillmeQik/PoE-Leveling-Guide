@@ -1,0 +1,19 @@
+` Kill Hillock
+` Get the Coast Waypoint, kill Hailrake on Tidal Island and get Quicksilver Flask in town
+` Finish your quest in Mud Flats and Enter Submerged Passage
+` Get the Waypoint, look for Flooded Depths and kill the Dweller of the Deep
+` Set Orb of Storms to "attack without moving" (left-click icon in skillbar)
+` Make your way to Lower Prison, get Waypoint and then go back to town
+` Check vendors for any item with 3-linked blue sockets if needed for above
+B,` Craft two wands with this recipe: Magic-rarity Wand + Topaz Ring + Orb of Alteration
+` If needed, the recipe for Topaz Rings is: Iron Ring + Green Skill Gem
+` Start looking out for 2x Sapphire Rings or use the Recipe: Iron Ring + Blue Skill Gem
+G,` Complete Trial of Ascendancy in Lower Prison
+` Kill Brutus and make sure to activate Clarity and Vitality
+` Progress to Ship Graveyard and get the Waypoint
+` Look for Ship Graveyard Cave, get Allflame then get Cavern of Wrath Waypoint
+` Travel to Ship Graveyard Waypoint and kill Fairgraves
+` Go to town to get Skillpoint and Arc, set it to "attack without moving"
+` Equip Sapphire Rings and kill Merveil
+
+Exp Farming Zone: The Ledge
