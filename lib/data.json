@@ -2,7 +2,7 @@
 	"zones" : [
 		{	"default" : "01 Twilight Strand",
 			"act" : "Act I",
-			"part" : "Part I",
+			"part" : "Part 1",
 			"list" : [
 				"01 Twilight Strand",
 				"02 The Coast",
@@ -23,7 +23,7 @@
 		},
 		{	"default" : "13 Southern Forest",
 			"act" : "Act II",
-			"part" : "Part I",
+			"part" : "Part 1",
 			"list" : [
 				"13 Southern Forest",
 				"14 Old Fields",
@@ -47,7 +47,7 @@
 		},
 		{	"default" : "23 City of Sarn",
 			"act" : "Act III",
-			"part" : "Part I",
+			"part" : "Part 1",
 			"list" : [
 				"23 City of Sarn",
 				"24 The Slums",
@@ -71,7 +71,7 @@
 		},
 		{	"default" : "33 The Aqueduct",
 			"act" : "Act IV",
-			"part" : "Part I",
+			"part" : "Part 1",
 			"list" : [
 				"33 The Aqueduct",
 				"34 Dried Lake",
@@ -90,7 +90,7 @@
 		},
 		{	"default" : "41 Slave Pens",
 			"act" : "Act V",
-			"part" : "Part I",
+			"part" : "Part 1",
 			"list" : [
 				"41 Slave Pens",
 				"41 Control Blocks",
@@ -106,7 +106,7 @@
 		},
 		{	"default" : "45 Twilight Strand",
 			"act" : "Act VI",
-			"part" : "Part II",
+			"part" : "Part 2",
 			"list" : [
 				"45 Twilight Strand",
 				"45 The Coast",
@@ -128,7 +128,7 @@
 		},
 		{	"default" : "50 Broken Bridge",
 			"act" : "Act VII",
-			"part" : "Part II",
+			"part" : "Part 2",
 			"list" : [
 				"50 Broken Bridge",
 				"51 The Crossroads",
@@ -149,7 +149,7 @@
 		},
 		{	"default" : "55 Sarn Ramparts",
 			"act" : "Act VIII",
-			"part" : "Part II",
+			"part" : "Part 2",
 			"list" : [
 				"55 Sarn Ramparts",
 				"56 Toxic Conduits",
@@ -171,7 +171,7 @@
 		},
 		{	"default" : "61 Blood Aqueduct",
 			"act" : "Act IX",
-			"part" : "Part II",
+			"part" : "Part 2",
 			"list" : [
 				"61 Blood Aqueduct",
 				"61 The Descent",
@@ -188,7 +188,7 @@
 		},
 		{	"default" : "64 Cathedral Rooftop",
 			"act" : "Act X",
-			"part" : "Part II",
+			"part" : "Part 2",
 			"list" : [
 				"64 Cathedral Rooftop",
 				"64 Ravaged Square",
@@ -355,8 +355,8 @@
 		"Tier 17"
 	],
 	"parts" : [
-		"Part I",
-		"Part II",
+		"Part 1",
+		"Part 2",
 		"Maps"
 	]
 }

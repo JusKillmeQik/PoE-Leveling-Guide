@@ -32,6 +32,7 @@ global whiteColor := "white"
 
 global KeyHideLayout := "!F1"
 global KeyHideZones := "!F2"
+global KeyCycleZones := "^PgDn"
 global KeyHideExp := "!F3"
 global KeyHideTree := "!f"
 global KeyHideGems := "!g"
@@ -56,7 +57,7 @@ global active_toggle := 1
 
 ;State
 global numPart := 1
-global CurrentPart = "Part I"
+global CurrentPart = "Part 1"
 global CurrentAct = "Act I"
 global CurrentZone = "01 Twilight Strand"
 global CurrentLevel = "01"
@@ -142,6 +143,7 @@ IniRead, whiteColor, %ININame%, Color, whiteColor, %whiteColor%
 IniRead, KeySettings, %ININame%, ToggleKey, KeySettings, %KeySettings%
 IniRead, KeyHideLayout, %ININame%, ToggleKey, KeyHideLayout, %KeyHideLayout%
 IniRead, KeyHideZones, %ININame%, ToggleKey, KeyHideZones, %KeyHideZones%
+IniRead, KeyCycleZones, %ININame%, ToggleKey, KeyCycleZones, %KeyCycleZones%
 IniRead, KeyHideExp, %ININame%, ToggleKey, KeyHideExp, %KeyHideExp%
 IniRead, KeyHideTree, %ININame%, ToggleKey, KeyHideTree, %KeyHideTree%
 IniRead, KeyHideGems, %ININame%, ToggleKey, KeyHideGems, %KeyHideGems%
@@ -153,6 +155,15 @@ IniRead, KeyOnDeath, %ININame%, ToggleKey, KeyOnDeath, %KeyOnDeath%
 INIMeta=%A_scriptdir%\builds\%overlayFolder%\gems\meta.ini
 IniRead, numPart, %INIMeta%, State, numPart, %numPart%
 IniRead, CurrentPart, %INIMeta%, State, CurrentPart, %CurrentPart%
+
+;Backwards compatibility
+If (CurrentPart = "Part I") {
+  CurrentPart := "Part 1"
+}
+If (CurrentPart = "Part II") {
+  CurrentPart := "Part 2"
+}
+
 IniRead, CurrentAct, %INIMeta%, State, CurrentAct, %CurrentAct%
 IniRead, CurrentZone, %INIMeta%, State, CurrentZone, %CurrentZone%
 IniRead, CurrentLevel, %INIMeta%, State, CurrentLevel, %CurrentLevel%
@@ -210,6 +221,7 @@ WriteAll() {
   IniWrite, %KeySettings%, %ININame%, ToggleKey, KeySettings
   IniWrite, %KeyHideLayout%, %ININame%, ToggleKey, KeyHideLayout
   IniWrite, %KeyHideZones%, %ININame%, ToggleKey, KeyHideZones
+  IniWrite, %KeyCycleZones%, %ININame%, ToggleKey, KeyCycleZones
   IniWrite, %KeyHideExp%, %ININame%, ToggleKey, KeyHideExp
   IniWrite, %KeyHideTree%, %ININame%, ToggleKey, KeyHideTree
   IniWrite, %KeyHideGems%, %ININame%, ToggleKey, KeyHideGems

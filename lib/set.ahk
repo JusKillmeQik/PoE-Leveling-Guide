@@ -237,7 +237,19 @@ SetGems()
 
   numLines := 0
 
-  ReadGemFile(CurrentGem)
+  fileName := CurrentGem
+  Loop %A_ScriptDir%\builds\%overlayFolder%\gems\*.ini
+	{
+    tempFileName = %A_LoopFileName%
+    StringTrimRight, tempFileName, tempFileName, 4
+    If ( InStr(tempFileName,CurrentGem) ) {
+      fileName := tempFileName
+      break
+    }
+	}
+
+  fileName=%A_scriptdir%\builds\%overlayFolder%\gems\%fileName%.ini
+  LoadGemFile(fileName)
 
   For k, someControl in controlList {
     numLines++

@@ -26,6 +26,38 @@
   Return newAct
 }
 
+RotateZone(direction, zones, act, current) {
+    newZone := ""
+    indexShift := direction = "next" ? 1 : -1
+    first := ""
+    last := ""
+    
+    For key, zone in zones {
+        If (zone.act = act) {
+            Loop, % zone["list"].Length()
+            {
+                If (A_Index = 1) {
+                    first := zone.list[A_Index]
+                }
+                If (A_Index = zone.list.MaxIndex()) {                
+                    last := zone.list[A_Index]
+                }
+                
+                If (zone.list[A_Index] = current) {
+                    newZone := zone.list[A_Index + indexShift] 
+                }
+            }
+            break
+        } 
+	}
+    
+    If (not StrLen(newZone)) {
+        newZone := direction = "next" ? first : last
+    }
+    
+    Return newZone
+}
+
 SearchLog() {
   global
   log := Tail(1, client)
@@ -61,7 +93,8 @@ SearchLog() {
         }
         For index, someLevel in gemFiles
         {
-          If ((someLevel = newLevel) || (someLevel = newLevel+1)) {
+          If ( InStr(someLevel,newLevel) || InStr(someLevel,newLevel+1) ) {
+          ;If ((someLevel = newLevel) || (someLevel = newLevel+1)) {
             GuiControl,Gems:,CurrentGem, % "|" test := GetDelimitedPartListString(gemFiles, someLevel)
             Sleep, 100
             Gui, Gems:Submit, NoHide
@@ -95,7 +128,7 @@ SearchLog() {
         act5LastZone := "45 Cathedral Rooftop"
         If (CurrentZone = act5LastZone) {
           numPart := 2
-          CurrentPart := "Part II"
+          CurrentPart := "Part 2"
           GuiControl, Controls:Choose, CurrentPart, % "|" CurrentPart
         }
       }

@@ -49,6 +49,20 @@ ToggleZones() {
   SaveState()
 }
 
+If (KeyCycleZones != "") {
+  Hotkey % KeyCycleZones, CycleZones
+}
+
+CycleZones() {
+  global
+  Gui, Controls:Submit, NoHide
+  newZone := RotateZone("next", data.zones, CurrentAct, CurrentZone)
+  GuiControl, Controls:Choose, CurrentZone, % "|" newZone
+
+  UpdateImages()
+return
+}
+
 If (KeyHideExp != "") {
   Hotkey % KeyHideExp, ToggleExp
 }

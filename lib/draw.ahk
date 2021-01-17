@@ -10,9 +10,9 @@
       gemFiles.Push(tempFileName)
     }
 	}
-  If (gemFiles.length() = 0){ ;If the file didnt exist it just got created, probably empty
-    gemFiles := ["02"]
-  }
+  ;If (gemFiles.length() = 0){ ;If the file didnt exist it just got created, probably empty
+  ;  gemFiles := ["02"]
+  ;}
 
   Gui, Controls:+E0x20 +E0x80 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndControls
   Gui, Controls:Color, %backgroundColor%
@@ -114,7 +114,8 @@ GetDelimitedPartListString(data, part) {
   dList := ""
   For key, partItem in data {
     dList .= partItem . "|"
-    If (partItem = part) {
+    If ( InStr(partItem,part) ) {
+    ;If (partItem = part) {
       dList .= "|"
     }
   }
@@ -160,10 +161,10 @@ partSelectUI() {
   global
   Gui, Controls:Submit, NoHide
 
-  If (CurrentPart = "Part I") {
+  If (CurrentPart = "Part 1") {
     CurrentAct := "Act I"
     numPart := 1
-  } Else If (CurrentPart = "Part II") {
+  } Else If (CurrentPart = "Part 2") {
     CurrentAct := "Act VI"
     numPart := 2
   } Else {

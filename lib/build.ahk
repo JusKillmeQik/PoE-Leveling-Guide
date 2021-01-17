@@ -262,8 +262,18 @@ LoadGemFile(fileName) {
 ReadGemFile(fileLevel) {
   global
   ;Read fileLevel.INI
+  fileName := fileLevel
+  Loop %A_ScriptDir%\builds\%overlayFolder%\gems\*.ini
+	{
+    tempFileName = %A_LoopFileName%
+    StringTrimRight, tempFileName, tempFileName, 4
+    If ( InStr(tempFileName,fileLevel) ) {
+      fileName := tempFileName
+      break
+    }
+	}
   ;*** Create INI if not exist
-  INIGem=%A_scriptdir%\builds\%overlayFolder%\gems\%fileLevel%.ini
+  INIGem=%A_scriptdir%\builds\%overlayFolder%\gems\%fileName%.ini
   INIMeta=%A_scriptdir%\builds\%overlayFolder%\gems\meta.ini
   INIClass=%A_scriptdir%\builds\%overlayFolder%\gems\class.ini
   newFileCreated := 0
@@ -366,7 +376,19 @@ SaveGemFile(fileLevel) {
     ;Doesn't exist, make the folder
     FileCreateDir, %folderName%
   }
-  INIGem=%A_scriptdir%\builds\%overlayFolder%\gems\%fileLevel%.ini
+
+  fileName := fileLevel
+  Loop %A_ScriptDir%\builds\%overlayFolder%\gems\*.ini
+	{
+    tempFileName = %A_LoopFileName%
+    StringTrimRight, tempFileName, tempFileName, 4
+    If ( InStr(tempFileName,fileLevel) ) {
+      fileName := tempFileName
+      break
+    }
+	}
+
+  INIGem=%A_scriptdir%\builds\%overlayFolder%\gems\%fileName%.ini
   INIMeta=%A_scriptdir%\builds\%overlayFolder%\gems\meta.ini
   INIClass=%A_scriptdir%\builds\%overlayFolder%\gems\class.ini
   IniWrite, %charClass%, %INIClass%, Build, class
