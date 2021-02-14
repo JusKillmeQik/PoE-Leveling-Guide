@@ -1,0 +1,9 @@
+R,Expected End Level: ~58 (58+19 points)
+_______________
+B,Goals:
+  Blast through!
+  Here you should be close to 2k HP
+  Ascendancy -> Nature's Boon
+_______________
+G,Trial:
++ The Bath House

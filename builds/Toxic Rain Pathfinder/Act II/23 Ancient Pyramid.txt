@@ -1,7 +1,0 @@
-1st exit is on right or left side from enter point.
-Rest exits are usually diagonal from entrance.
-R,RECOMMEND lightning resist
-Kill the boss.
--> Go to the Act 3.
-_______________
-R,CRAFT - Spell damage

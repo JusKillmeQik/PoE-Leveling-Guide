@@ -1,6 +1,0 @@
-Kill Voll on one of the three spawns.
--> Logout.
-Break The Mines door blocker.
--> Go to Mines.
-_______________
-R,CRAFT - Attack/Cast speed

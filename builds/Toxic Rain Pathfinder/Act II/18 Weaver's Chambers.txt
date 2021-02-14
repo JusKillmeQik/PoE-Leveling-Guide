@@ -1,9 +1,0 @@
-Go left when the left path spawns, otherwise loop around right side
-Kill Weawer.
--> Logout.
-Take reward.
--> Go to Act 1.
-Take Reward.
-Take 2x Vicious proj and place.
-Take a look for 2x rings if 19lvl.
--> Go to Crossroads.

@@ -3,30 +3,6 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-;Check version and download if OK
-requiredVer := "1.1.30.03", unicodeOrAnsi := A_IsUnicode?"Unicode":"ANSI", 32or64bits := A_PtrSize=4?"32bits":"64bits"
-if (!A_IsUnicode) {
-  MsgBox, 1,, "This application isn't compatible with ANSI versions of AutoHotKey.`nYou are using v" A_AhkVersion " " unicodeOrAnsi " " 32or64bit ".`nPlease download the latest version of Autohotkey 1.1"
-  IfMsgBox, OK
-    Run, https://www.autohotkey.com/download/ahk-install.exe
-  ExitApp
-}
-if (A_AhkVersion < "1.1") ; Smaller than 1.1.00.00
-|| (A_AhkVersion < "1.1.00.00")
-|| (A_AhkVersion < requiredVer) { ; Smaller than required
-  MsgBox, 1,, "This application requires AutoHotKey v" requiredVer " or higher.`nYou are using v" A_AhkVersion " " unicodeOrAnsi " " 32or64bit ".`nPlease download the latest version of Autohotkey 1.1"
-  IfMsgBox, OK
-    Run, https://www.autohotkey.com/download/ahk-install.exe
-  ExitApp
-}
-if (A_AhkVersion >= "2.0")
-|| (A_AhkVersion >= "2.0.00.00") { ; Higher or equal to 2.0.00.00
-  MsgBox, 1,, "This application isn't compatible with AutoHotKey v2.`nYou are using v" A_AhkVersion " " unicodeOrAnsi " " 32or64bit ".`nPlease download the latest version of Autohotkey 1.1"
-  IfMsgBox, OK
-    Run, https://www.autohotkey.com/download/ahk-install.exe
-  ExitApp
-}
-
 #Include, %A_ScriptDir%\lib\JSON.ahk
 #Include, %A_ScriptDir%\lib\Gdip.ahk
 
@@ -73,6 +49,78 @@ Try {
 #Include, %A_ScriptDir%\lib\settings.ahk
 #Include, %A_ScriptDir%\lib\sizing.ahk
 
+global gem_data := {}
+Try {
+    FileRead, JSONFile, %A_ScriptDir%\lib\gems.json
+    gem_data := JSON.Load(JSONFile)
+    If (not gem_data.Length()) {
+        MsgBox, 16, , Error reading gem data! `n`nExiting script.
+        ExitApp
+    }
+} Catch e {
+    MsgBox, 16, , % e "`n`nNo Gem data in \lib\gems.json"
+    ExitApp
+}
+
+global gemList := Object()
+global filterList := [" None"]
+downloadApproved := "None"
+progressWidth := gem_data.length()
+
+For key, someGem in gem_data {
+  gemList[gemList.length()+1] := Object()
+  gemList[gemList.length()].name := someGem.name
+  tempColor := someGem.color
+  gemList[gemList.length()].color := %tempColor%Color ;Use the settings color
+  gemList[gemList.length()].cost := someGem.cost
+  gemList[gemList.length()].vendor := someGem.vendor
+  gemList[gemList.length()].lvl := someGem.required_lvl
+  gemList[gemList.length()].url := "" "\images\gems\" someGem.name ".png"  ""
+  
+  image_file := "" A_ScriptDir "\images\gems\" someGem.name ".png"  ""
+  If (!FileExist(image_file)) {
+    If (downloadApproved = "True") {
+      icon_url := someGem.iconPath
+      UrlDownloadToFile, %icon_url%, %image_file%
+      progressPercent := 100 * (A_Index/progressWidth)
+      Progress, %progressPercent%
+    } Else If (downloadApproved = "False") {
+      ;do nothing
+    } Else {
+      MsgBox, 3,, You are missing some gem image files,`nwould you like to download them?`n`nTHIS COULD TAKE A FEW MINUTES!
+      IfMsgBox Yes
+      {
+        downloadApproved := "True"
+        icon_url := someGem.iconPath
+        UrlDownloadToFile, %icon_url%, %image_file%
+        Progress, b w%progressWidth%, Please don't stop the download until complete, Downloading Gem Images
+        progressPercent := 100 * (A_Index/progressWidth)
+        Progress, %progressPercent%
+      } Else IfMsgBox No
+      {
+        downloadApproved := "False"
+      } Else {
+        ExitApp
+      }
+    }
+  }
+
+  ;Only populate tags the first time too
+  For j, someFilter in someGem.gemTags {
+    filterExists := 0
+    For k, existingFilter in filterList {
+      If (existingFilter = someFilter) {
+        filterExists := 1
+        break
+      }
+    }
+    If (filterExists = 0) {
+      filterList.Push(someFilter)
+    }
+  }
+}
+Progress, Off
+
 global PoEWindowHwnd := ""
 WinGet, PoEWindowHwnd, ID, ahk_group PoEWindowGrp
 
@@ -81,27 +129,35 @@ global trigger := false
 
 global onStartup := 1
 
+#Include, %A_ScriptDir%\lib\maps.ahk
 #Include, %A_ScriptDir%\lib\draw.ahk
 DrawZone()
 DrawTree()
 DrawExp()
 
 #Include, %A_ScriptDir%\lib\set.ahk
-SetNotes()
-SetGuide()
+If (numPart != 3) {
+  SetGuide()
+  SetNotes()
+} Else {
+  SetMapGuide()
+  SetMapNotes()
+}
 SetGems()
+SetExp()
 
 #Include, %A_ScriptDir%\lib\hotkeys.ahk
 
 Gosub, HideAllWindows
 ToggleLevelingGuide()
 
+global conqFound := 0
+#Include, %A_ScriptDir%\lib\search.ahk
+
 SetTimer, ShowGuiTimer, 200, -100
 Return
 
 ;========== Subs and Functions =======
-
-#Include, %A_ScriptDir%\lib\search.ahk
 
 ShowGuiTimer:
   poe_active := WinActive("ahk_id" PoEWindowHwnd)
@@ -258,11 +314,17 @@ ShowAllWindows:
     Gui, Controls:Show, NoActivate
   }
   controls_active := WinActive("ahk_id" Controls)
-  If (LG_toggle and !controls_active and (active_toggle or persistText = "True") and numPart != 3) {
-    Gui, Notes:Show, NoActivate
+  If (LG_toggle and !controls_active and (active_toggle or persistText = "True")) {
     Gui, Guide:Show, NoActivate
+    If (numPart = 3) {
+      Gui, Atlas:Show, NoActivate
+    } Else {
+      Gui, Atlas:Cancel
+    }
+    Gui, Notes:Show, NoActivate
   } Else If (!controls_active) {
     Gui, Notes:Cancel
+    Gui, Atlas:Cancel
     Gui, Guide:Cancel
   }
 
@@ -281,12 +343,19 @@ ShowAllWindows:
     Gui, Tree:Show, NoActivate
   } Else If (level_toggle) {
     Gui, Level:Show, NoActivate
-    SetExp()
+    Gui, Exp:Show, NoActivate
+    ;SetExp()
   }
 
   If (gems_toggle) {
     Gui, Gems:Show, NoActivate
     Gui, Links:Show, NoActivate
+
+    For k, someControl in controlList {
+      If (%someControl%image){
+        Gui, Image%someControl%:Show, NoActivate
+      }
+    }
   }
 return
 
@@ -299,7 +368,12 @@ HideAllWindows:
       Gui, Image%A_Index%:Cancel
   }
 
+  For k, someControl in controlList {
+    Gui, Image%someControl%:Cancel
+  }
+
   Gui, Notes:Cancel
+  Gui, Atlas:Cancel
   Gui, Guide:Cancel
 
   Gui, Tree:Cancel

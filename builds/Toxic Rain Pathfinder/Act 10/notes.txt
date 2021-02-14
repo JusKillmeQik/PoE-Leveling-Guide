@@ -1,0 +1,78 @@
+zone:Cathedral Rooftop
+Starting now you can find a Lvl 64 Thicket Bow
+Take couple of them and try to make +2 bow skills bow using Alt orbs
+_______________
+Go up to save Bannon
+Free him and talk in Town
+> Go back to Rooftop
+Go down right
+> Proceed to the Ravaged Square
+
+zone:Ravaged Square
+B,Leave a portal on start
+Go right up by wall
+Skip the first opening, take the second and cross the bridge (red part)
+Left hand wall-follow to the Waypoint
+> TP to Town
+> Go back to your portal
+Go down
+> Proceed to Control Blocks
+---------------
+Move right don't cross the bridge
+> Proceed to Torched Courts
+---------------
+After killing Avarius
+> Go to the Ossuary
+--------------- 
+Talk with Innocence
+> Proceed to the Canals
+
+zone:Control Blocks
+Right hand wall-follow
+Use movement skills to jump through fences
+> Go to Arena
+< Kill the Boss and Logout
+> TP to Ravaged Square
+
+zone:The Ossuary
+Left hand wall follow to find the quest item and trial
+The trial entrance is in the opening in the wall, the quest item is close to that opening, but you move away from the wall to find it
+< Logout
+G,Complete third Labyrinth and take Master Alchemist
+> TP to the Ravaged Square
+_______________
+G,TRIAL - Dart traps
+G,CRAFT - Chaos damage
+
+zone:Torched Courts
+Left hand wall-follow (up)
+> Go to Desecrated Chambers
+
+zone:Desecrated Chambers
+Good place to farm some levels if needed
+______________
+Left hand wall-follow until you come to four pillars
+Go straight and up
+> Proceed to Sanctum Of Innnocence
+< Kill the boss and Logout
+> TP to Ravaged Square
+_______________
+G,CRAFT - Life/Mana
+
+zone:The Reliquary
+The Quest item is always on the edge or a corner,
+it's mostly the right side
+Use move skill to cross gaps
+
+zone:The Canals
+Move top left
+Follow the road and cross bridges when you see them
+> Go to the Feeding Trough
+
+zone:Feeding Trough
+Move top left, there shouldn't be any diversions,
+Kill Kitava!
+Enjoy maps :)
+_______________
+G,CRAFT - Defenses 
+R,RECOMMEND 3,700+ EHP, fire resist, good physical mitigations, fast movement skill

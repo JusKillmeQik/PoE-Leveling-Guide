@@ -1,6 +1,0 @@
-Loop around clockwise.
-Pick up a sign.
--> Logout.
-->TP to the Ruined Square.
-_______________
-R,CRAFT - Physical damage

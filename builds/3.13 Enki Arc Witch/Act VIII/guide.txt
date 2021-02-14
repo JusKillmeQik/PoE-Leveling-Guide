@@ -9,6 +9,6 @@ G,` Get Bath House Waypoint and finish Trial of Ascendancy
 ` Enter High Gardens, kill Yugul and get Skillpoint in town
 ` Back to Bath House, get to Lunaris Concourse and get Waypoint
 ` Enter Lunaris Temple and get Moon Orb
-` Back to Lunaris Concourse, enter Harbour Bridge and kill Solaris & Lunaris
+` Back to Lunaris Concourse, enter Harbour Bridge and kill Solaris and Lunaris
 
 Exp Farming Zone: The Harbour Bridge

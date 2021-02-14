@@ -1,0 +1,7 @@
+R,Expected End Level: ~48 (48+13 points)
+_______________
+B,Goals:
+  At least cap cold res before Crab boss
+_______________
+G,Trials:
++ The Prison

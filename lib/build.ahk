@@ -3,8 +3,9 @@ global gemWidth := 100
 global colorWidth := 45
 global npcWidth := 55
 global noteWidth := 50
+global showWidth := 30
 global charWidth := colorWidth + npcWidth + noteWidth + (10)
-global lineWidth := groupWidth + gemWidth + colorWidth + npcWidth + noteWidth + (40)
+global lineWidth := groupWidth + gemWidth + colorWidth + npcWidth + noteWidth + showWidth + (40)
 global buildWidth := lineWidth * 3
 global buildHeight := 23 * 26 ;lines times line height with spacing
 global listHeight := 200
@@ -17,11 +18,8 @@ global charName := ""
 global gemFilter1 := " None"
 global gemFilter2 := " None"
 global controlList := ["MH1", "MH2", "MH3", "MH4", "MH5", "MH6", "MH7", "MH8", "", "BA1", "BA2", "BA3", "BA4", "BA5", "BA6", "BA7", "BA8", "", "OH1", "OH2", "OH3", "OH4", "OH5", "OH6", "", "HT1", "HT2", "HT3", "HT4", "HT5", "HT6", "", "GL1", "GL2", "GL3", "GL4", "GL5", "GL6", "", "BT1", "BT2", "BT3", "BT4", "BT5", "BT6", "", "RG1", "", "RG2"]
-global levelList := ["02", "04", "08", "12", "16", "24", "28", "31", "34", "38", "55", "72", "90"]
+global levelList := ["02", "04", "08", "12", "16", "24", "28", "31", "34", "38", "42", "66", "72", "90"]
 global classList := ["Duelist", "Marauder", "Ranger", "Scion", "Shadow", "Templar", "Witch"]
-global filterList := [" None"]
-
-global gemList := Object()
 
 global unsaved := 0
 
@@ -42,7 +40,8 @@ LaunchBuild() {
   Gui, Build:Add, Text, w%gemWidth% h%optionHeight% x+5, Gem
   Gui, Build:Add, Text, w%colorWidth% h%optionHeight% x+5, Color
   Gui, Build:Add, Text, w%npcWidth% h%optionHeight% x+5, NPC
-  Gui, Build:Add, Text, w%noteWidth% h%optionHeight% x+5, Note
+  Gui, Build:Add, Text, w%colorWidth% h%optionHeight% x+5, Note
+  Gui, Build:Add, Text, w%gemWidth% h%optionHeight% x+1, Image
 
   Loop, 8 {
     Gui, Build:Add, DropDownList, vMH%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x10 y+5, % GetGroupList(MH%A_Index%group)
@@ -50,6 +49,8 @@ LaunchBuild() {
     Gui, Build:Add, Edit, vMH%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % MH%A_Index%color
     Gui, Build:Add, Edit, vMH%A_Index%npc gUpdateEdit w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(MH%A_Index%group)][2]
     Gui, Build:Add, Edit, vMH%A_Index%note gUpdateEdit w%noteWidth% h%optionHeight% x+5, % MH%A_Index%note
+    isChecked := MH%A_Index%image
+    Gui, Build:Add, CheckBox, vMH%A_Index%image gUpdateImage w%showWidth% h%optionHeight% x+5 Checked%isChecked%, 
   }
 
   ;Body Armour
@@ -59,7 +60,8 @@ LaunchBuild() {
   Gui, Build:Add, Text, w%gemWidth% h%optionHeight% x+5, Gem
   Gui, Build:Add, Text, w%colorWidth% h%optionHeight% x+5, Color
   Gui, Build:Add, Text, w%npcWidth% h%optionHeight% x+5, NPC
-  Gui, Build:Add, Text, w%noteWidth% h%optionHeight% x+5, Note
+  Gui, Build:Add, Text, w%colorWidth% h%optionHeight% x+5, Note
+  Gui, Build:Add, Text, w%gemWidth% h%optionHeight% x+1, Image
 
   Loop, 8 {
     Gui, Build:Add, DropDownList, vBA%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x10 y+5, % GetGroupList(BA%A_Index%group)
@@ -67,6 +69,8 @@ LaunchBuild() {
     Gui, Build:Add, Edit, vBA%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % BA%A_Index%color
     Gui, Build:Add, Edit, vBA%A_Index%npc gUpdateEdit w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(BA%A_Index%group)][2]
     Gui, Build:Add, Edit, vBA%A_Index%note gUpdateEdit w%noteWidth% h%optionHeight% x+5, % BA%A_Index%note
+    isChecked := BA%A_Index%image
+    Gui, Build:Add, CheckBox, vBA%A_Index%image gUpdateImage w%showWidth% h%optionHeight% x+5 Checked%isChecked%, 
   }
 
   ;Spacing
@@ -79,7 +83,8 @@ LaunchBuild() {
   Gui, Build:Add, Text, w%gemWidth% h%optionHeight% x+5, Gem
   Gui, Build:Add, Text, w%colorWidth% h%optionHeight% x+5, Color
   Gui, Build:Add, Text, w%npcWidth% h%optionHeight% x+5, NPC
-  Gui, Build:Add, Text, w%noteWidth% h%optionHeight% x+5, Note
+  Gui, Build:Add, Text, w%colorWidth% h%optionHeight% x+5, Note
+  Gui, Build:Add, Text, w%gemWidth% h%optionHeight% x+1, Image
 
   Loop, 6 {
     Gui, Build:Add, DropDownList, vOH%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x%columnTwoX% y+5, % GetGroupList(OH%A_Index%group)
@@ -87,6 +92,8 @@ LaunchBuild() {
     Gui, Build:Add, Edit, vOH%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % OH%A_Index%color
     Gui, Build:Add, Edit, vOH%A_Index%npc gUpdateEdit w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(OH%A_Index%group)][2]
     Gui, Build:Add, Edit, vOH%A_Index%note gUpdateEdit w%noteWidth% h%optionHeight% x+5, % OH%A_Index%note
+    isChecked := OH%A_Index%image
+    Gui, Build:Add, CheckBox, vOH%A_Index%image gUpdateImage w%showWidth% h%optionHeight% x+5 Checked%isChecked%, 
   }
 
   ;Helmet
@@ -96,7 +103,8 @@ LaunchBuild() {
   Gui, Build:Add, Text, w%gemWidth% h%optionHeight% x+5, Gem
   Gui, Build:Add, Text, w%colorWidth% h%optionHeight% x+5, Color
   Gui, Build:Add, Text, w%npcWidth% h%optionHeight% x+5, NPC
-  Gui, Build:Add, Text, w%noteWidth% h%optionHeight% x+5, Note
+  Gui, Build:Add, Text, w%colorWidth% h%optionHeight% x+5, Note
+  Gui, Build:Add, Text, w%gemWidth% h%optionHeight% x+1, Image
 
   Loop, 6 {
     Gui, Build:Add, DropDownList, vHT%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x%columnTwoX% y+5, % GetGroupList(HT%A_Index%group)
@@ -104,6 +112,8 @@ LaunchBuild() {
     Gui, Build:Add, Edit, vHT%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % HT%A_Index%color
     Gui, Build:Add, Edit, vHT%A_Index%npc gUpdateEdit w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(HT%A_Index%group)][2]
     Gui, Build:Add, Edit, vHT%A_Index%note gUpdateEdit w%noteWidth% h%optionHeight% x+5, % HT%A_Index%note
+    isChecked := HT%A_Index%image
+    Gui, Build:Add, CheckBox, vHT%A_Index%image gUpdateImage w%showWidth% h%optionHeight% x+5 Checked%isChecked%, 
   }
 
   ;Controls
@@ -138,7 +148,8 @@ LaunchBuild() {
   Gui, Build:Add, Text, w%gemWidth% h%optionHeight% x+5, Gem
   Gui, Build:Add, Text, w%colorWidth% h%optionHeight% x+5, Color
   Gui, Build:Add, Text, w%npcWidth% h%optionHeight% x+5, NPC
-  Gui, Build:Add, Text, w%noteWidth% h%optionHeight% x+5, Note
+  Gui, Build:Add, Text, w%colorWidth% h%optionHeight% x+5, Note
+  Gui, Build:Add, Text, w%gemWidth% h%optionHeight% x+1, Image
 
   Loop, 6 {
     Gui, Build:Add, DropDownList, vGL%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x%columnThreeX% y+5, % GetGroupList(GL%A_Index%group)
@@ -146,6 +157,8 @@ LaunchBuild() {
     Gui, Build:Add, Edit, vGL%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % GL%A_Index%color
     Gui, Build:Add, Edit, vGL%A_Index%npc gUpdateEdit w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(GL%A_Index%group)][2]
     Gui, Build:Add, Edit, vGL%A_Index%note gUpdateEdit w%noteWidth% h%optionHeight% x+5, % GL%A_Index%note
+    isChecked := GL%A_Index%image
+    Gui, Build:Add, CheckBox, vGL%A_Index%image gUpdateImage w%showWidth% h%optionHeight% x+5 Checked%isChecked%, 
   }
 
   ;Boots
@@ -155,7 +168,8 @@ LaunchBuild() {
   Gui, Build:Add, Text, w%gemWidth% h%optionHeight% x+5, Gem
   Gui, Build:Add, Text, w%colorWidth% h%optionHeight% x+5, Color
   Gui, Build:Add, Text, w%npcWidth% h%optionHeight% x+5, NPC
-  Gui, Build:Add, Text, w%noteWidth% h%optionHeight% x+5, Note
+  Gui, Build:Add, Text, w%colorWidth% h%optionHeight% x+5, Note
+  Gui, Build:Add, Text, w%gemWidth% h%optionHeight% x+1, Image
 
   Loop, 6 {
     Gui, Build:Add, DropDownList, vBT%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x%columnThreeX% y+5, % GetGroupList(BT%A_Index%group)
@@ -163,6 +177,8 @@ LaunchBuild() {
     Gui, Build:Add, Edit, vBT%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % BT%A_Index%color
     Gui, Build:Add, Edit, vBT%A_Index%npc gUpdateEdit w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(BT%A_Index%group)][2]
     Gui, Build:Add, Edit, vBT%A_Index%note gUpdateEdit w%noteWidth% h%optionHeight% x+5, % BT%A_Index%note
+    isChecked := BT%A_Index%image
+    Gui, Build:Add, CheckBox, vBT%A_Index%image gUpdateImage w%showWidth% h%optionHeight% x+5 Checked%isChecked%, 
   }
 
   ;Rings
@@ -172,7 +188,8 @@ LaunchBuild() {
   Gui, Build:Add, Text, w%gemWidth% h%optionHeight% x+5, Gem
   Gui, Build:Add, Text, w%colorWidth% h%optionHeight% x+5, Color
   Gui, Build:Add, Text, w%npcWidth% h%optionHeight% x+5, NPC
-  Gui, Build:Add, Text, w%noteWidth% h%optionHeight% x+5, Note
+  Gui, Build:Add, Text, w%colorWidth% h%optionHeight% x+5, Note
+  Gui, Build:Add, Text, w%gemWidth% h%optionHeight% x+1, Image
 
   Loop, 2 {
     Gui, Build:Add, DropDownList, vRG%A_Index%group gUpdateGroup w%groupWidth% h%listHeight% x%columnThreeX% y+5, % GetGroupList(RG%A_Index%group)
@@ -180,6 +197,8 @@ LaunchBuild() {
     Gui, Build:Add, Edit, vRG%A_Index%color gUpdateEdit w%colorWidth% h%optionHeight% x+5, % RG%A_Index%color
     Gui, Build:Add, Edit, vRG%A_Index%npc gUpdateEdit w%npcWidth% h%optionHeight% x+5, % groupList[GroupIndex(RG%A_Index%group)][2]
     Gui, Build:Add, Edit, vRG%A_Index%note gUpdateEdit w%noteWidth% h%optionHeight% x+5, % RG%A_Index%note
+    isChecked := RG%A_Index%image
+    Gui, Build:Add, CheckBox, vRG%A_Index%image gUpdateImage w%showWidth% h%optionHeight% x+5 Checked%isChecked%, 
   }
 
   For k, someControl in controlList {
@@ -254,6 +273,14 @@ LoadGemFile(fileName) {
     IniRead, %someControl%note, %INIGem%, %someControl%, note
     If (%someControl%note = "ERROR") {
       %someControl%note := ""
+    }
+    IniRead, %someControl%image, %INIGem%, %someControl%, image
+    If (%someControl%image = "ERROR") {
+      %someControl%image := 0
+    }
+    IniRead, %someControl%url, %INIGem%, %someControl%, url
+    If (%someControl%url = "ERROR") {
+      %someControl%url := ""
     }
   }
 }
@@ -337,6 +364,14 @@ ReadGemFile(fileLevel) {
     If (%someControl%color = "ERROR") {
       %someControl%color := ""
     }
+    IniRead, %someControl%image, %INIGem%, %someControl%, image
+    If (%someControl%image = "ERROR") {
+      %someControl%image := 0
+    }
+    IniRead, %someControl%url, %INIGem%, %someControl%, url
+    If (%someControl%url = "ERROR") {
+      %someControl%url := ""
+    }
     If (groupName = "Inventory" and originalGroupName != "Inventory") { ;clear meta data for gems moved to inventory
       %someControl%npc := ""
       %someControl%note := ""
@@ -400,56 +435,57 @@ SaveGemFile(fileLevel) {
       IniWrite, % %someControl%color, %INIGem%, %someControl%, color
       IniWrite, % %someControl%npc, %INIGem%, %someControl%, npc
       IniWrite, % %someControl%note, %INIGem%, %someControl%, note
+      IniWrite, % %someControl%image, %INIGem%, %someControl%, image
+      IniWrite, % %someControl%url, %INIGem%, %someControl%, url
     }
   }
 }
 
 LoadGroup(loadLevel, loadChar) {
   global
-  gem_data := {}
-  Try {
-      FileRead, JSONFile, %A_ScriptDir%\lib\gems.json
-      gem_data := JSON.Load(JSONFile)
-      If (not gem_data.Length()) {
-          MsgBox, 16, , Error reading gem data! `n`nExiting script.
-          ExitApp
-      }
-  } Catch e {
-      MsgBox, 16, , % e "`n`nNo Gem data in \lib\gems.json"
-      ;ExitApp
-  }
+  ; gem_data := {}
+  ; Try {
+  ;     FileRead, JSONFile, %A_ScriptDir%\lib\gems.json
+  ;     gem_data := JSON.Load(JSONFile)
+  ;     If (not gem_data.Length()) {
+  ;         MsgBox, 16, , Error reading gem data! `n`nExiting script.
+  ;         ExitApp
+  ;     }
+  ; } Catch e {
+  ;     MsgBox, 16, , % e "`n`nNo Gem data in \lib\gems.json"
+  ;     ;ExitApp
+  ; }
 
   groupList := Object()
   groupList[1] := [] ;One All group for free form editing
   groupList[1].Push("All")
   groupList[1].Push("")
 
-  ;gemList := Object()
   For key, someGem in gem_data {
     
-    If (gemList.length() < key) { ; Only populate gemList the first time
-      gemList[gemList.length()+1] := Object()
-      gemList[gemList.length()].name := someGem.name
-      tempColor := someGem.color
-      gemList[gemList.length()].color := %tempColor%Color ;Use the settings color
-      gemList[gemList.length()].cost := someGem.cost
-      gemList[gemList.length()].vendor := someGem.vendor
-      gemList[gemList.length()].lvl := someGem.required_lvl
+    ; If (gemList.length() < key) { ; Only populate gemList the first time
+    ;   gemList[gemList.length()+1] := Object()
+    ;   gemList[gemList.length()].name := someGem.name
+    ;   tempColor := someGem.color
+    ;   gemList[gemList.length()].color := %tempColor%Color ;Use the settings color
+    ;   gemList[gemList.length()].cost := someGem.cost
+    ;   gemList[gemList.length()].vendor := someGem.vendor
+    ;   gemList[gemList.length()].lvl := someGem.required_lvl
 
-      ;Only populate tags the first time too
-      For j, someFilter in someGem.gemTags {
-        filterExists := 0
-        For k, existingFilter in filterList {
-          If (existingFilter = someFilter) {
-            filterExists := 1
-            break
-          }
-        }
-        If (filterExists = 0) {
-          filterList.Push(someFilter)
-        }
-      }
-    }
+    ;   ;Only populate tags the first time too
+    ;   For j, someFilter in someGem.gemTags {
+    ;     filterExists := 0
+    ;     For k, existingFilter in filterList {
+    ;       If (existingFilter = someFilter) {
+    ;         filterExists := 1
+    ;         break
+    ;       }
+    ;     }
+    ;     If (filterExists = 0) {
+    ;       filterList.Push(someFilter)
+    ;     }
+    ;   }
+    ; }
 
     addGem1 := 0 ;only add gems that match the filter
     If (gemFilter1 = " None") {
@@ -748,6 +784,7 @@ LoadBuild() {
     GuiControl,,%someControl%color, % %someControl%color
     GuiControl,,%someControl%note, % %someControl%note
     GuiControl,,%someControl%npc, % %someControl%npc
+    GuiControl,,%someControl%image, % %someControl%image
   }
 
   unsaved := 1
@@ -856,6 +893,7 @@ UpdateControl() {
       GuiControl,,%someControl%color, % %someControl%color
       GuiControl,,%someControl%note, % %someControl%note
       GuiControl,,%someControl%npc, % %someControl%npc
+      GuiControl,,%someControl%image, % %someControl%image
 
     }
 
@@ -883,6 +921,28 @@ UpdateGroup() {
   UpdateElements()
 }
 
+UpdateImage() {
+  global
+  element := SubStr(A_GuiControl, 1 , 3)
+  Gui, Build:Submit, NoHide
+  gemFound := 0
+  If ( %element%image ){
+    For k, someGem in gemList {
+      If (someGem.name = %element%gem) {
+        %element%url := someGem.url
+        gemFound := 1
+        break
+      }
+    }
+  } Else {
+    %element%url := ""
+  }
+  If (!gemFound){
+    %element%url := ""
+    GuiControl,,%element%image,0
+  }
+}
+
 UpdateElements() {
   global
   element := SubStr(A_GuiControl, 1 , 3)
@@ -892,10 +952,12 @@ UpdateElements() {
     colorUpdate := ""
     noteUpdate := ""
     npcUpdate := groupList[GroupIndex(%element%group)][2]
+    imageUpdate := 0
   } Else {
     colorUpdate := %element%color
     noteUpdate := %element%note
     npcUpdate := %element%npc
+    imageUpdate := %element%image
   }
   
   For k, someGem in gemList {
@@ -914,12 +976,15 @@ UpdateElements() {
       If (thisGroup = "All") {
         npcUpdate := someGem.vendor
       }
+      imageUpdate := 1
+      %element%url := someGem.url
       break
     }
   }
   GuiControl,,%element%color,%colorUpdate%
   GuiControl,,%element%note,%noteUpdate%
   GuiControl,,%element%npc,%npcUpdate%
+  GuiControl,,%element%image,%imageUpdate%
 
   unsaved := 1
 }

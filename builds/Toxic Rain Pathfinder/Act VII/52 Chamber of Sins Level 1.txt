@@ -1,9 +1,0 @@
-Loop around to the center, then activate the Waypoint.
-Use your map from the Crypt in the map device
--> Go through the portals
----------------
-After killing Maligaro
-Go through the hall behind the Waypoint to find the exit.
--> Go To Chamber Level 2.
-_______________
-R,CRAFT - Lightning damage

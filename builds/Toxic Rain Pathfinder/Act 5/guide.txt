@@ -1,0 +1,6 @@
+R,Expected End Level: ~43 (43+10 points)
+_______________
+B,Goals:
+  Get Acrobatics passives
+  Silver Flask as Quest reward
+  105% elem res

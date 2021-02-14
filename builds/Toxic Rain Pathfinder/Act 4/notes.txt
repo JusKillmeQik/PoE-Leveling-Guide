@@ -1,0 +1,100 @@
+zone:The Aqueduct
+Go upstream and cross over bridges when the path ends
+If you're less than lvl 31 - do this zone a couple times
+> Go to Highgate
+> Go left to the Dried Lake
+
+zone:Dried Lake
+Kill Voll on one of the three spawns
+< Logout
+Break The Mines door seal
+> Go to Mines
+_______________
+G,CRAFT - Attack/Cast speed
+
+zone:Mines Level 1
+Exit is usually in top left corner
+> Go to Mines lvl 2
+
+zone:Mines Level 2
+Varied layout and many dead ends
+You should look for the spirit and kill her
+> Go to Crystal Veins
+
+zone:Crystal Veins
+Loop around bottom right to go to the top left exit
+Find Dialla
+> Go to Town
++ Check for 4-link and good armor
+Bench Craft resistance and rings
+G,Ascend as Pathfinder and take Nature's Reprisal
+> TP back to Crystal Veins
+---------------
+> Go To Kaom (fire)
+> Go to Daresso (cold)
+---------------
+R,IMPORTANT - Staunching Life flask
+> Go to Einhar Area
+Beast craft "of Staunching" on flask
+> Go to Belly of the Beast
+_______________
+G,CRAFT - Resistance
+
+zone:Daresso's Dream
+Move towards the top right, some dead ends
+> Go to Grand Arena
+
+zone:Kaom's Dream
+Follow passages and bridges
+> Go to Kaom's Stronghold
+
+zone:Grand Arena
+If you have not done Kaom's Dream yet, take waypoint to Crystal Veins and do that first
+Move down left from Waypoint, then follow path
+< Kill Daresso and Logout
+> TP To Crystal Veins
+_______________
+B,RECOMMEND cold resist
+
+zone:Kaom's Stronghold
+If you have not done Daresso's Dream yet, take waypoint to Crystal Veins and do that first
+Follow stairs and bridges
+_______________
+R,RECOMMEND fire resist
+
+zone:Belly of the Beast Level 1
+Aim for top left, many dead ends
+R,Watch out for bleeding
+> Go to level 2
+
+zone:Belly of the Beast Level 2
+Aim for top left, many dead ends
+Kill the boss
+> Proceed to The Harvest
+_______________
+G,CRAFT - Chaos damage
+
+zone:The Harvest
+Always one boss on right side, two left
+---------------
+Talk with Piety
+> Proceed to the Black Core
+< Kill boss and Logout
++ Pick up Stone Golem and Withering Touch
+Go to the top right side
+> Proceed to the Ascent
+_______________
+Maligaro does physical so keep moving
+G,Stay in green aura against Doedre
+Y,Shavronne deals lightning
+R,Malachi deals fire damage
+
+zone:The Ascent
+G,TIP: dirty roads lead to exits
+Go up and left
+Сross the bridge
+Go up and right
+small passage to the exit
+> Go to Act 5
+_______________
+G,CRAFT - Attributes

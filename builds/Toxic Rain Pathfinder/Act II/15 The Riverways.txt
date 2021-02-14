@@ -1,8 +1,0 @@
-Follow the road and use mobility skills to jump over bridges.
-Activate Waypoint.
----------------
-Western Forest is next on the road.
--> Go to Western Forest.
----------------
-Wetlands is always on the opposite side of the road near the Waypoint.
--> Go to Wastelands.

@@ -1,6 +1,0 @@
-Move down left from Waypoint, then follow path
-Kill the boss.
--> Logout.
--> TP To Crystal Veins.
-_______________
-G,RECOMMEND cold resist

@@ -5,4 +5,4 @@ B,Kitava's Torments:   Passive
 R,Tips: 
 - Raise Spectre: 2x Slave Driver (Act 5: Control Blocks)
 - Complete lab, ascend to Necro
-- Link Ele Focus & Ctrl Destro to Stone Golum 
+- Link Ele Focus and Ctrl Destro to Stone Golum 

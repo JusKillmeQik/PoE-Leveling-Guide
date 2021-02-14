@@ -16,12 +16,18 @@ ToggleLevelingGuide()
     activeCount := 0
     active_toggle := 1
     Gui, Controls:Show, NA
-    Gui, Notes:Show, NA
     Gui, Guide:Show, NA
+    If (numPart = 3) {
+      Gui, Atlas:Show, NoActivate
+    } Else {
+      Gui, Atlas:Cancel
+    }
+    Gui, Notes:Show, NA
     GoSub, ShowAllWindows
   } else {
     Gui, Controls:Cancel
     Gui, Notes:Cancel
+    Gui, Atlas:Cancel
     Gui, Guide:Cancel
     LG_toggle = 0
   }
@@ -110,12 +116,20 @@ ToggleGems() {
   {
     Gui, Gems:Show, NA
     Gui, Links:Show, NA
+    For k, someControl in controlList {
+      If (%someControl%image){
+        Gui, Image%someControl%:Show, NoActivate
+      }
+    }
     gems_toggle := 1
   }
   else
   {
     Gui, Gems:Cancel
     Gui, Links:Cancel
+    For k, someControl in controlList {
+      Gui, Image%someControl%:Cancel
+    }
     gems_toggle := 0
   }
   SaveState()

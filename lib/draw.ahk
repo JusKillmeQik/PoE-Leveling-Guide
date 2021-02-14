@@ -5,11 +5,16 @@
 	Loop %A_ScriptDir%\builds\%overlayFolder%\gems\*.ini
 	{
     tempFileName = %A_LoopFileName%
-    StringTrimRight, tempFileName, tempFileName, 4
-    If (tempFileName != "meta" and tempFileName != "class") {
+    If (tempFileName != "meta.ini" and tempFileName != "class.ini") {
+      W := MeasureTextWidth(tempFileName, "s" . points . "  w" . boldness, font)
+      If ( W > gems_width ) {
+        gems_width := W
+      }
+      StringTrimRight, tempFileName, tempFileName, 4
       gemFiles.Push(tempFileName)
     }
 	}
+  gems_width := gems_width + 10
   ;If (gemFiles.length() = 0){ ;If the file didnt exist it just got created, probably empty
   ;  gemFiles := ["02"]
   ;}
@@ -17,11 +22,12 @@
   Gui, Controls:+E0x20 +E0x80 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndControls
   Gui, Controls:Color, %backgroundColor%
   Gui, Controls:Font, s%points%, %font%
-  Gui, Controls:Add, DropDownList, VCurrentZone GzoneSelectUI x0 y0 w%notes_width% h300 , % GetDelimitedZoneListString(data.zones, CurrentAct)
+  Gui, Controls:Add, DropDownList, VCurrentZone GzoneSelectUI x0 y0 w%act_width% h300 , % GetDelimitedZoneListString(data.zones, CurrentAct)
   Gui, Controls:Add, DropDownList, VCurrentAct GactSelectUI x+%controlSpace% y0 w%nav_width% h200 , % GetDelimitedActListString(data.zones, CurrentAct, CurrentPart)
-  Gui, Controls:Add, DropDownList, VCurrentPart GpartSelectUI x+%controlSpace% y0 w%nav_width% h200 , % GetDelimitedPartListString(data.parts, CurrentPart)
-  xPos := xPosLayoutParent + (maxImages * (images_width+controlSpace))
-  control_width := (nav_width*2) + notes_width + (controlSpace*2)
+  Gui, Controls:Add, DropDownList, VCurrentPart GpartSelectUI x+%controlSpace% y0 w%part_width% h200 , % GetDelimitedPartListString(data.parts, CurrentPart)
+  ;xPos := xPosLayoutParent + (maxImages * (images_width+controlSpace))
+  control_width := nav_width + part_width + act_width + (controlSpace*2)
+  xPos := Round( (A_ScreenWidth * guideXoffset) - control_width )
   yPos := controlSpace + (A_ScreenHeight * guideYoffset)
   Gui, Controls:Show, h%control_height% w%control_width% x%xPos% y%yPos% NA, Controls
 
@@ -36,7 +42,7 @@
   Gui, Level:Font, s%points%, %font%
   Gui, Level:Add, Edit, x0 y0 h%control_height% w%level_width% r1 GlevelSelectUI, Level
   Gui, Level:Add, UpDown, x%controlSpace% vCurrentLevel GlevelSelectUI Range1-100, %CurrentLevel%
-  Gui, Level:Show, h%exp_height% w%level_width% x%xPosLevel% y%yPosLevel% NA, Level
+  Gui, Level:Show, h%control_height% w%level_width% x%xPosLevel% y%yPosLevel% NA, Level
 
   ;The names of the images have to be created now so that ShowAllWindows doesn't make empty ones that show up in the Alt Tab bar
   Loop, % maxImages {
@@ -96,7 +102,7 @@ DrawExp(){
   global
 
   Gui, Exp:+E0x20 +E0x80 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndExp
-  Gui, Exp:font, cFFFFFF s%points% w%level_width%, %font%
+  Gui, Exp:font, cFFFFFF s%points% w%boldness%, %font%
   Gui, Exp:Color, %backgroundColor%
   WinSet, Transparent, %opacity%
 
@@ -105,7 +111,7 @@ DrawExp(){
   CurrentExp = ""
   Gui, Exp:Add, Text, vCurrentExp x3 y3, % calcExp
 
-  Gui, Exp:Show, x%xPosExp% y%yPosExp% w%exp_width% h%exp_height% NA, Gui Exp
+  Gui, Exp:Show, x%xPosExp% y%yPosExp% w%exp_width% h%control_height% NA, Gui Exp
 }
 
 
@@ -126,12 +132,27 @@ GetDelimitedPartListString(data, part) {
 
 GetDelimitedActListString(data, act, part) {
   dList := ""
-  For key, zoneGroup in data {
-    If (zoneGroup.part = part) {
-      dList .= zoneGroup.act . "|"
+  If (numPart != 3) {
+    For key, zoneGroup in data {
+      If (zoneGroup.part = part) {
+        dList .= zoneGroup.act . "|"
+      }
+      If (zoneGroup.act = act) {
+        dList .= "|"
+      }
     }
-    If (zoneGroup.act = act) {
-      dList .= "|"
+  } Else {
+    currentWatchstones := SubStr(act, 1, 2)
+    Loop, 33
+    {
+        watchstoneNumber := A_Index - 1
+        If (watchstoneNumber < 10) {
+          watchstoneNumber := "0" . watchstoneNumber
+        }
+        dList .= watchstoneNumber . " Watchstones|"
+        If (watchstoneNumber = currentWatchstones) {
+          dList .= "|"
+        }
     }
   }
   Return dList
@@ -141,15 +162,24 @@ GetDelimitedActListString(data, act, part) {
 
 GetDelimitedZoneListString(data, act) {
   dList := ""
-  For key, zoneGroup in data {
-    If (zoneGroup.act = act) {
-      For k, val in zoneGroup.list {
-        dList .= val . "|"
-        If (val = CurrentZone) {
-          dList .= "|"
+  If (numPart != 3) {
+    For key, zoneGroup in data {
+      If (zoneGroup.act = act) {
+        For k, val in zoneGroup.list {
+          dList .= val . "|"
+          If (val = CurrentZone) {
+            dList .= "|"
+          }
         }
+        break
       }
-      break
+    }
+  } Else {
+    For key, value in Maps {
+      dList .= key . "|"
+      If (key = CurrentZone) {
+        dList .= "|"
+      }
     }
   }
   Return dList
@@ -162,31 +192,44 @@ partSelectUI() {
   Gui, Controls:Submit, NoHide
 
   If (CurrentPart = "Part 1") {
-    CurrentAct := "Act I"
+    CurrentAct := "Act 1"
     numPart := 1
   } Else If (CurrentPart = "Part 2") {
-    CurrentAct := "Act VI"
+    CurrentAct := "Act 6"
     numPart := 2
   } Else {
-    CurrentAct := "Tier 1"
+    INIStones=%A_scriptdir%\watchstones.ini
+    IniRead, CurrentAct, %INIStones%, Watchstones, collected, "00 Watchstones"
+    ;CurrentAct := "00 Watchstones"
+    CurrentZone := "Academy Map"
     numPart := 3
-    Gui, Notes:Cancel
-    Gui, Guide:Cancel
+    ; Gui, Notes:Cancel
+    ; Gui, Guide:Cancel
   }
 
   GuiControl,,CurrentAct, % "|" test := GetDelimitedActListString(data.zones, CurrentAct, CurrentPart)
   Sleep 100
 
-  CurrentZone := GetDefaultZone(data.zones, CurrentAct)
+  If (numPart != 3) {
+    CurrentZone := GetDefaultZone(data.zones, CurrentAct)
+  }
   GuiControl,,CurrentZone, % "|" test := GetDelimitedZoneListString(data.zones, CurrentAct)
   Sleep 100
   If (numPart != 3) {
-    SetNotes()
     SetGuide()
+    SetNotes()
+    If (zone_toggle = 1) {
+      UpdateImages()
+    }
+  } Else {
+    SetMapGuide()
+    SetMapNotes()
+    If (zone_toggle = 1) {
+      UpdateMapImages()
+    }
   }
-  If (zone_toggle = 1) {
-    UpdateImages()
-  }
+  SetExp()
+
   trigger := true
   WinActivate, ahk_id %PoEWindowHwnd%
 
@@ -199,16 +242,38 @@ actSelectUI() {
   global
   Gui, Controls:Submit, NoHide
 
-  CurrentZone := GetDefaultZone(data.zones, CurrentAct)
-  GuiControl,,CurrentZone, % "|" test := GetDelimitedZoneListString(data.zones, CurrentAct)
-  Sleep 100
-  If (numPart != 3) {
-    SetNotes()
+  If (numPart != 3){
+    CurrentZone := GetDefaultZone(data.zones, CurrentAct)
+    GuiControl,,CurrentZone, % "|" test := GetDelimitedZoneListString(data.zones, CurrentAct)
+    Sleep 100
     SetGuide()
+    SetNotes()
+    If (zone_toggle = 1) {
+      UpdateImages()
+    }
+  } Else {
+    ;Save watchstone and conq info
+    INIStones=%A_scriptdir%\watchstones.ini
+    IniWrite, %CurrentAct%, %INIStones%, Watchstones, collected
+    For key, value in Conquerors {
+      output := value.Region
+      IniWrite, %output%, %INIStones%, %key%, region
+      output := value.Appearances
+      IniWrite, %output%, %INIStones%, %key%, appearances
+    }
+
+    INIAtlas=%A_scriptdir%\maps\atlas.ini
+    For key, value in Regions {
+      IniRead, numStones, %INIAtlas%, %CurrentAct%, %key%, 0
+      value.SocketedStones := numStones
+    }
+    SetMapGuide()
+    SetMapNotes()
+    If (zone_toggle = 1) {
+      UpdateMapImages()
+    }
   }
-  If (zone_toggle = 1) {
-    UpdateImages()
-  }
+  SetExp()
   WinActivate, ahk_id %PoEWindowHwnd%
   SaveState()
 }
@@ -221,10 +286,16 @@ zoneSelectUI() {
   Sleep 100
   If (numPart != 3) {
     SetNotes()
+    If (zone_toggle = 1) {
+      UpdateImages()
+    }
+  } Else {
+    SetMapNotes()
+    If (zone_toggle = 1) {
+      UpdateMapImages()
+    }
   }
-  If (zone_toggle = 1) {
-    UpdateImages()
-  }
+  SetExp()
   WinActivate, ahk_id %PoEWindowHwnd%
   SaveState()
 }
@@ -266,19 +337,36 @@ UpdateImages()
   emptySpaces := 0
   Loop, % maxImages {
 	  imageIndex := (maxImages - A_Index) + 1
-    filepath := "" A_ScriptDir "\images\" CurrentAct "\" CurrentZone "_Seed_" imageIndex ".jpg" ""
+    StringTrimLeft, ImageName, CurrentZone, 3
+    ;MsgBox, % ImageName
+    filepath := "" A_ScriptDir "\images\" CurrentAct "\" ImageName "_Seed_" imageIndex ".jpg" ""
 
 	  newIndex := A_index - emptySpaces
 	  ;This shouldn't happen anymore but if this method gets called twice quickly newIndex goes below 0
 	  If (newIndex < 1) {
 	    newIndex := 1
 	  }
+    Gui, Image%newIndex%:Destroy ;I'm not sure this will work
     
     If (FileExist(filepath)) {
-      xPos := xPosLayoutParent + ((maxImages - (newIndex + 0)) * (images_width+controlSpace))
+      ;xPos := xPosLayoutParent + ((maxImages - (newIndex + 0)) * (images_width+controlSpace))
       Gui, Image%newIndex%:+E0x20 +E0x80 -DPIScale -resize -SysMenu -Caption +ToolWindow +AlwaysOnTop +hwndImage%newIndex%Window
       Gui, Image%newIndex%:Add, Picture, x0 y0 w%images_width% h%images_height%, %filepath%
-      Gui, Image%newIndex%:Show, w%images_width% h%images_height% x%xPos% y%yPosNotes% NA, Image%newIndex%
+      If (xPosImages = 0) {
+        If (hideNotes != "True") {
+          xPos := xPosNotes - (newIndex * (images_width+controlSpace))
+        } Else {
+          If (hideGuide != "True"){
+            xPos := xPosGuide - (newIndex * (images_width+controlSpace))
+          } Else {
+            xPos := Round( (A_ScreenWidth * guideXoffset)) - (newIndex * (images_width+controlSpace))
+          }
+        }
+        yPosImages := yPosNotes
+      } Else {
+        xPos := xPosImages
+      }
+      Gui, Image%newIndex%:Show, w%images_width% h%images_height% x%xPos% y%yPosImages% NA, Image%newIndex%
       id := Image%newIndex%Window
       WinSet, Transparent, %opacity%, ahk_id %id%
       Gui, Image%newIndex%:Cancel
