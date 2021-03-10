@@ -1,4 +1,5 @@
-Fallen from Grace: 2x Respec
+﻿Fallen from Grace: 2x Respec
+Lilly:             GEMS
 B,Father of War:     Passive
 G,Prison:            Trial
 B,Cloven One:        Passive

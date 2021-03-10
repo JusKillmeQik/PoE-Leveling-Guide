@@ -1,4 +1,4 @@
-﻿zone:Twilight Strand
+zone:Twilight Strand
 Follow the coast up and right
 Kill Hillock
 
@@ -50,5 +50,5 @@ zone:Cavern of Wrath
 At Waypoint port back to The Ship Graveyard to find the Cave and hand in Allflame. Then logout to get Passive from Bestel
 
 zone:Cavern of Anger
-Often bottom right. You can follow the spirits. If you see piles of gold you're close to Merveil
+Often bottom right. You can follow the spirits. If you see piles of gold you’re close to Merveil
 B,RECOMMEND high cold resist

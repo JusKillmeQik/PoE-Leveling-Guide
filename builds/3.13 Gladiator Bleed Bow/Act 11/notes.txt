@@ -1,4 +1,4 @@
-﻿zone:The Templar Laboratory
+zone:The Templar Laboratory
 Top right is the Laboratory
 Find the map device and wait to talk to Kirac
 Then go back to Oriath and go bottom right for the Fallen Courts

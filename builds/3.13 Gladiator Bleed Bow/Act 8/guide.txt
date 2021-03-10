@@ -1,4 +1,4 @@
-﻿B,Love is Dead:         Passive
+B,Love is Dead:         Passive
 B,Gemling Legion:       Passive
 Wings of Vastiri:     Efficiency
 G,Bath House:           Trial

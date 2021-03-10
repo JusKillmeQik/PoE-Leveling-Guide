@@ -1,4 +1,4 @@
-﻿zone:The Aqueduct
+zone:The Aqueduct
 Go upstream and cross over bridges whenever the path ends
 
 zone:Dried Lake

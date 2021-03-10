@@ -1,4 +1,4 @@
-﻿zone:City of Sarn
+zone:City of Sarn
 Don't forget to talk to Clarissa
 
 zone:The Slums

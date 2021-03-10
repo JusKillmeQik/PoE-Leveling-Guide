@@ -1,4 +1,4 @@
-﻿zone:Sarn Ramparts
+zone:Sarn Ramparts
 Left hand wall-follow to the stairs, go up the stairs and follow the wall to the end
 
 zone:Toxic Conduits

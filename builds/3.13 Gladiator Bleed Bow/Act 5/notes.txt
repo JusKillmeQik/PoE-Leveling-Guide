@@ -1,4 +1,4 @@
-﻿zone:Slave Pens
+zone:Slave Pens
 Go all the way down, then left
 
 zone:Control Blocks
