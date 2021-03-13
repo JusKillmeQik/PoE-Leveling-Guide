@@ -1,0 +1,12 @@
+R,Expected End Level: ~11 (11+3 points)
+
+G,Goals:
+1. MS boots
+2. Crafted Wand
+3. B-B-B + B-B-G  + B-G-G/B-G
+4. G - Smoke Mine
+5. 2x Essences
+6. 2x Transmutation
+7. 1x Alteration Orb
+
+G,Trials: The Lower Prison

@@ -1,0 +1,113 @@
+zone:Twilight Strand
+Go left and clear zone
+It opens Lilly's GEM shop
+> Logout
++ Get Gems
+
+zone:The Coast
+Go to the right side of the zone and go to the top right corner
+Activate Waypoint
+> Go to Mud Flats
+
+zone:Tidal Island
+This zone should be skipped to save time
+
+zone:Mud Flats
+Kill the Dishonoured Queen (1) on the right side
+Pick up the key from Queen
+Open the gate to the next zone (2) on the left side
+> Go to Karui Fortress
+
+zone:Karui Fortress
+Follow the right hand side
+Kill Tukohama
+Exit on left side and go up
+> Proceed to the Ridge
+_______________
+G,CRAFT - Defences
+R,RECOMMEND fire resist
+with 1,500+ EHP
+
+zone:The Ridge
+Follow the path until you can go right,
+then follow that until you have a path up left
+> Go to the Lower Prison
+
+zone:Lower Prison
+You usually want to go down or left towards the exit
+Get the Waypoint
+> Go to Shavronne's Tower
+_______________
+G,TRIAL - Spike traps
+G,CRAFT - Double resistance
+
+zone:Shavronne's Tower
+Follow the halls, going over bridges, for 4 minizones
+> Go up to Prison Rooftop
+Kill boss
+> Go left to the Warden's Chamber
+Pickup recipe
+< Logout.
++ Take rewards (4-link)
+> TP To Prisoner's Gate
+_______________
+G,CRAFT - Spell damage
+Y,RECOMMEND lightning resist
+with physical mitigation
+
+zone:Prisoner's Gate
+Go down the side of the road that has the cliff
+Fight the Abberath
+Follow the road into the next area
+> Go to the Western Forest
+_______________
+R,RECOMMEND fire resist
+
+zone:The Riverways
+Pick up Waypoint
+Follow the path up at the Waypoint
+> Go to Wetlands
+---------------
+Follow the road and when you reach the encampment go down and right
+> Go to Southern Forest
+
+zone:The Wetlands
+Stick to the left hand side to find the entrance to the Spawning Ground
+Kill the boss
+< Logout
+B,Perfect time to cap cold resist
+> TP to Riverways
+_______________
+G,RECOMMEND current life flasks, avoid chaos degens
+
+zone:Western Forest
+Follow the road to the Riverways
+> Go to Riverways
+_______________
+G,CRAFT - Attributes (in Alira's camp)
+
+zone:Southern Forest
+Follow the right and a bit up to The Cavern of Anger
+> Go to Cavern of Anger
+
+zone:Cavern of Anger
+B,Dont forget the black flag upon entering this zone
+Go down then up, then go right, the exit can be up or down
+> Go to the Beacon
+
+zone:The Beacon
+Follow the shoreline until you reach the beacons
+Move the two columns
+Burn the flag
+> Go to the Brine King's Reef
+_______________
+G,CRAFT - Life/Mana
+
+zone:Brine King's Reef
+Follow the left hand shoreline to the Brine King's arena
+< Kill the boss and Logout
+Talk with vendors
+> Go to Act 7 from Waypoint
+_______________
+Y,RECOMMEND lightning resist
+B,and cold resist

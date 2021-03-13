@@ -1,6 +1,0 @@
-Pick up Waypoint.
-Follow the path up at the Waypoint.
--> Go to Wetlands.
-------------------
-Follow the road and when you reach the encampment go down and right.
--> Go to Southern Forest.

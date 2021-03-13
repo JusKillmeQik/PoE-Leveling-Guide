@@ -1,0 +1,7 @@
+R,Expected End Level: ~58 (58+19 points)
+
+G, Goals:
+1. Blast through!
+2. Here you should be close to 2k HP
+
+G,Trial: The Bath House

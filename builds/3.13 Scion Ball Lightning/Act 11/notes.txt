@@ -1,0 +1,15 @@
+﻿zone:The Templar Laboratory
++ Find Map Device
++ Talk to Kirac
+> Oriath
+> The Fallen Courts
+
+zone:The Fallen Courts
++ Pick up the Key
+> Oriath
+> The Haunted Reliquary
+
+zone:The Haunted Reliquary
++ Open the Vault
+> Hideout
++ Talk to Kirac

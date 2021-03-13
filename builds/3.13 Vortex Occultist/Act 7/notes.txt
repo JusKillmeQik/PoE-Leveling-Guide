@@ -1,0 +1,76 @@
+﻿zone:Broken Bridge
+> The Broken Bridge
+> The Crossroads
+
+zone:The Crossroads
++ Get WP
+> The Fellshrine Ruins
+~~~~
+> The Chamber of Sins Level 1
+
+zone:Fellshrine Ruins
+> The Crypt
+
+zone:The Crypt
++ Open the Sarcophagus
++ Find the Map
+> The Crossroads
+
+zone:The Crypt 2
++ Find the Map
+> The Crossroads
+
+zone:Chamber of Sins Level 1
++ Get WP
++ Activate Map Device
+> Maligaro's Sanctum
+~~~~
++ Talk to Silk and take Keys
+> The Chamber of Sins Level 2
+
+zone:Maligaro's Sanctum
+> Maligaro's Workshop
++ Kill Maligaro and take Black Venom
+> The Chamber of Sins Level 1
+
+zone:Chamber of Sins Level 2
++ Complete lab
+~~~~
+> The Den
+
+zone:The Den
+> The Ashen Fields
+
+zone:Ashen Fields
+> The Fortress Encampment
++ Kill Greust
+> The Northern Forest
+
+zone:Northern Forest
++ Get WP
+> The Dread Thicket
+
+zone:Dread Thicket
++ Find all Fireflies
+> The Den Despair
++ Kill Gruthkul
+< "Queen of Despair" (Eramir)
+< "The Master of Million Faces" (Eramir)
+> The Northern Forest
+> The Causeway
+
+zone:The Causeway
++ Open Kishara's Lockbox and take Kishara's Star
+> The Vaal City
+
+zone:Vaal City
++ Get WP
+< "Kishara's Star" (Weylam)
++ Give Fireflies to Yeena
+> The Temple of Decay Level 1
+
+zone:Temple of Decay
+> The Temple of Decay Level 2
+> Arakaali's Web
++ Kill Arakaali
+> The Sarn Ramparts

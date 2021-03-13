@@ -1,8 +1,0 @@
-The Great White Beast: Quicksilver
-G,Crypt:                 Trial
-Through Sacred Ground: JEWEL
-G,Chamber of Sins 2:     Trial
-Intruders in Black:    Herald GEM
-Sharp and Cruel:       GEM
-Bandits:               CHOICE
-B,Way Forward (Bestel):  Passive

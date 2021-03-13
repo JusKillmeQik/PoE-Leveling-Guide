@@ -55,7 +55,12 @@
 DrawTree() {
   global
 
-  image_file := "" A_ScriptDir "\builds\" overlayFolder "\" CurrentAct "\" treeName ""
+  If (numPart != 3) {
+    image_file := "" A_ScriptDir "\builds\" overlayFolder "\" CurrentAct "\" treeName ""
+  } Else {
+    image_file := "" A_ScriptDir "\builds\" overlayFolder "\Act 11\" treeName ""
+  }
+
   If (FileExist(image_file))
   {
     GDIPToken := Gdip_Startup()
@@ -74,6 +79,11 @@ DrawTree() {
         treeW := Round( A_ScreenWidth / 2 )
         treeRatio := treeW / original_treeW
         treeH := original_treeH * treeRatio
+        If (treeH > Round( A_ScreenHeight * 4 / 5 )){
+          treeH := Round( A_ScreenHeight * 4 / 5 )
+          treeRatio := treeH / original_treeH
+          treeW := original_treeW * treeRatio
+        }
       } else {
         treeH := Round( A_ScreenHeight * 4 / 5 )
         treeRatio := treeH / original_treeH

@@ -1,9 +1,0 @@
-Look for staircases and go up these
-When you reach the larger area, look for vases on the opposite wall and pick the side where there is only one.
-
-Kill the boss.
--> Logout. 
--> TP to to Lunaris Concourse.
-_________
-R,CRAFT - Minions
-G,RECOMMEND cold resist

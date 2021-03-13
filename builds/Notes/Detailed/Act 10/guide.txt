@@ -1,4 +1,4 @@
-R,Expected End Level: ~65 (65+24 points)
+﻿R,Expected End Level: ~65 (65+24 points)
 _______________
 B,Goals:
   Cap your resistances

@@ -9,6 +9,7 @@
   * If you have custom notes for each zone they can be added to a specific guide, or globally now
 * Added gem icons to the gem setup so you can see what to pick up from quests/
   * The size of the icon is based on the font size and line spacing
+* Added Ascendancies for the Aspirants' Trial
 * Added the Kirac Quest line to guide
 * Added a Guide for quickly collecting all 32 Watchstones
 * Added information for tracking the Conquerors and Watchstones on the Atlas

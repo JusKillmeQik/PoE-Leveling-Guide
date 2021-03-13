@@ -234,10 +234,10 @@ LoadGemFile(fileName) {
       gemName := ""
     }
     ;Replace Siosa with Lilly after he unlocks
-    If (groupName = "Siosa" and gemLevel > 31) {
+    If (groupName = "Siosa" and gemLevel > 38) {
       groupName := "Lilly"
     }
-    If (groupName != "All") {
+    If (groupName != "All" and groupName != "Siosa" and groupName != "Lilly") {
       groupIndex := GroupIndex(groupName)
       gemExists := 0
       For j, someGem in groupList[groupIndex] { ;See if the gem is in the group
@@ -275,7 +275,7 @@ LoadGemFile(fileName) {
       %someControl%note := ""
     }
     IniRead, %someControl%image, %INIGem%, %someControl%, image
-    If (%someControl%image = "ERROR") {
+    If (%someControl%image != 1) {
       %someControl%image := 0
     }
     IniRead, %someControl%url, %INIGem%, %someControl%, url
@@ -332,10 +332,10 @@ ReadGemFile(fileLevel) {
       gemName := ""
     }
     ;Replace Siosa with Lilly after he unlocks
-    If (groupName = "Siosa" and fileLevel > 31) {
+    If (groupName = "Siosa" and fileLevel > 38) {
       groupName := "Lilly"
     }
-    If (groupName != "All") {
+    If (groupName != "All" and groupName != "Siosa" and groupName != "Lilly") {
       groupIndex := GroupIndex(groupName)
       gemExists := 0
       For j, someGem in groupList[groupIndex] { ;See if the gem is in the group
@@ -365,7 +365,7 @@ ReadGemFile(fileLevel) {
       %someControl%color := ""
     }
     IniRead, %someControl%image, %INIGem%, %someControl%, image
-    If (%someControl%image = "ERROR") {
+    If (%someControl%image != 1) {
       %someControl%image := 0
     }
     IniRead, %someControl%url, %INIGem%, %someControl%, url
@@ -443,18 +443,6 @@ SaveGemFile(fileLevel) {
 
 LoadGroup(loadLevel, loadChar) {
   global
-  ; gem_data := {}
-  ; Try {
-  ;     FileRead, JSONFile, %A_ScriptDir%\lib\gems.json
-  ;     gem_data := JSON.Load(JSONFile)
-  ;     If (not gem_data.Length()) {
-  ;         MsgBox, 16, , Error reading gem data! `n`nExiting script.
-  ;         ExitApp
-  ;     }
-  ; } Catch e {
-  ;     MsgBox, 16, , % e "`n`nNo Gem data in \lib\gems.json"
-  ;     ;ExitApp
-  ; }
 
   groupList := Object()
   groupList[1] := [] ;One All group for free form editing
@@ -462,30 +450,6 @@ LoadGroup(loadLevel, loadChar) {
   groupList[1].Push("")
 
   For key, someGem in gem_data {
-    
-    ; If (gemList.length() < key) { ; Only populate gemList the first time
-    ;   gemList[gemList.length()+1] := Object()
-    ;   gemList[gemList.length()].name := someGem.name
-    ;   tempColor := someGem.color
-    ;   gemList[gemList.length()].color := %tempColor%Color ;Use the settings color
-    ;   gemList[gemList.length()].cost := someGem.cost
-    ;   gemList[gemList.length()].vendor := someGem.vendor
-    ;   gemList[gemList.length()].lvl := someGem.required_lvl
-
-    ;   ;Only populate tags the first time too
-    ;   For j, someFilter in someGem.gemTags {
-    ;     filterExists := 0
-    ;     For k, existingFilter in filterList {
-    ;       If (existingFilter = someFilter) {
-    ;         filterExists := 1
-    ;         break
-    ;       }
-    ;     }
-    ;     If (filterExists = 0) {
-    ;       filterList.Push(someFilter)
-    ;     }
-    ;   }
-    ; }
 
     addGem1 := 0 ;only add gems that match the filter
     If (gemFilter1 = " None") {
@@ -541,10 +505,11 @@ LoadGroup(loadLevel, loadChar) {
         StringTrimLeft, thisGroup, thisGroup, 1
       }
 
+      thisLevel := someGem.level
       ;Mercy Mission has gems at different levels so put them all in one
       ;without breaking vendors
       If (thisGroup = "Mercy Mission") { 
-        someGem.level := 4
+        thisLevel := 4
         If (loadLevel = 2) { ;Don't show Mercy Mission for level 2
           continue
         }
@@ -552,15 +517,15 @@ LoadGroup(loadLevel, loadChar) {
 
       If (thisGroup = "") {
         thisGroup := "Drop-Only"
-      } Else If (someGem.level < loadLevel) { ;Add to Inventory
+      } Else If (thisLevel < loadLevel) { ;Add to Inventory
         If (thisGroup = "Siosa") {
           ;Siosa gems need to stick around until after Lilly is unlocked
-          If (loadLevel > 34) { ;At 38 everything that is purchasable is done through Lilly
+          If (loadLevel > 38) { ;At 38 everything that is purchasable is done through Lilly
             thisGroup := "Lilly"
           }
         } Else If (thisGroup = "Lilly") {
           ;Lilly gems are only available from her no matter the level
-        } Else {
+        } Else If (loadLevel > 4) {
           thisGroup := "Inventory" ;All other lower gems should be considered purchased
         }
       }
@@ -586,7 +551,7 @@ LoadGroup(loadLevel, loadChar) {
             }
           }
         } Else If ((thisGroup = "Siosa" and loadLevel >= 26) or (thisGroup = "Lilly" and loadLevel >= 38)) { ;Also push to Inventory
-          If (someGem.level < loadLevel) {
+          If (thisLevel < loadLevel) {
             groupIndex := GroupIndex("Inventory")
             If (groupIndex) { ;Inventory exists (common)
               If (addGem1 and addGem2) {
@@ -642,7 +607,7 @@ LoadGroup(loadLevel, loadChar) {
           }
           If ((thisGroup = "Siosa" and loadLevel >= 26) or (thisGroup = "Lilly" and loadLevel >= 38)) {
             ;Also push to Inventory
-            If (someGem.level < loadLevel) {
+            If (thisLevel < loadLevel) {
               groupIndex := GroupIndex("Inventory")
               If (groupIndex) { ;Inventory exists (common)
                 If (addGem1 and addGem2) {
@@ -941,6 +906,8 @@ UpdateImage() {
     %element%url := ""
     GuiControl,,%element%image,0
   }
+
+  unsaved := 1
 }
 
 UpdateElements() {
@@ -976,7 +943,11 @@ UpdateElements() {
       If (thisGroup = "All") {
         npcUpdate := someGem.vendor
       }
-      imageUpdate := 1
+      If (thisGroup = "Inventory") {
+        imageUpdate := 0
+      } Else {
+        imageUpdate := 1
+      }
       %element%url := someGem.url
       break
     }

@@ -1,0 +1,88 @@
+﻿zone:Twilight Strand
+> The Twilight Strand
++ Clear the strand
+< "Fallen from Grace" (Lilly)
+> The Coast
+
+zone:The Coast
++ Get WP
+> The Mud Flats
+
+zone:Tidal Island
+This zone should be skipped to save time
+
+zone:Mud Flats
++ Kill The Dishonoured Queen and take the Eye of Conquest
+> The Karui Fortress
+
+zone:Karui Fortress
+> Tukohama's Keep
++ Kill Tukohama
++ Talk to Sin
+> The Karui Fortress
+> The Ridge
+
+zone:The Ridge
++ Get WP
+- Logout
+< "The Father of War" (Tarkleigh)
+> The Ridge
+> The Lower Prison
+
+zone:Lower Prison
++ Get WP
++ Complete lab
+> Shavronne's Tower
+
+zone:Shavronne's Tower
+> Prison Rooftop
++ Kill Shavronne and Brutus
+> The Warden's Chambers
+> The Prisoner's Gate
+
+zone:Prisoner's Gate
++ Get WP
+> Valley of the Fire Drinker
++ Start fight with Abberath
+> The Cloven Pass
+> Valley of the Fire Drinker
++ Kill Abberath
+< "The Cloven One" (Bestel)
+> The Western Forest
+
+zone:The Riverways
++ Get WP
+> The Wetlands
+
+zone:The Wetlands
+> The Spawning Ground
++ Kill The Puppet Mistress
+< "The Puppet Mistress" (Tarkleigh)
+> The Southern Forest
+
+zone:Western Forest
++ Get WP
+> The Riverways
+
+zone:Southern Forest
++ Get WP
+> The Cavern of Anger
+
+zone:Cavern of Anger
++ Open the chest and take The Black Flag
+> Passage
+> The Beacon
+
+zone:The Beacon
++ Escort the 2 pillars
++ Click on Ignition Switch
++ Click on The Beacon
++ Talk to Weylam
+> Sail to The Brine King's Reef
+
+zone:Brine King's Reef
++ Get WP
+> The Brine King's Throne
++ Kill The Brine King
++ Talk to Weylam
+> Sail to Act 7

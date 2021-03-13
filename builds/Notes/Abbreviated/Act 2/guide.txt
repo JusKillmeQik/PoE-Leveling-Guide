@@ -1,0 +1,6 @@
+﻿The Great White Beast: Quicksilver
+G,Crypt:                 Trial
+Through Sacred Ground: JEWEL
+G,Chamber of Sins 2:     Trial
+Bandits:               CHOICE
+B,Way Forward (Bestel):  Passive

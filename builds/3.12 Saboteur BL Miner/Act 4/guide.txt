@@ -1,0 +1,7 @@
+R,Expected End Level: ~38 (38+8 points)
+
+G,Goals:
+1. 4-link with Minefield
+2. Staunching Flask - not required, but vefy useful
+3. Resistances -> before Kaom cap your fire resistance
+4. Ascendancy -> Born in the Shadows for the Blind

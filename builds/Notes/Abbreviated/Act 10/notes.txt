@@ -1,0 +1,55 @@
+﻿zone:Cathedral Rooftop
+> The Cathedral Rooftop
+> Cathedral Apex (left)
++ Kill Kitava's Cultists
+> The Cathedral Rooftop
+> The Ravaged Square
+
+zone:Ravaged Square
++ Get WP (north)
+> The Torched Courts (north east)
+~~~~
+> The Ossuary
+~~~~
++ Talk to Innocence
+> The Canals
+
+zone:Control Blocks
+> Arena
++ Kill Vilenta
+< "Vilenta's Vengeance" (Lani)
+> Town
+> Ravaged Square
+
+zone:The Ossuary
+> The Bone Pits
++ Complete lab
+> Town
+> Ravaged Square
+> The Control Blocks (south)
+
+zone:Torched Courts
+> The Desecrated Chambers
+
+zone:Desecrated Chambers
++ Get WP
+> Sanctum of Innocence
++ Kill Avarius
+> Town
+< "Safe Passage" (Lani) and "Death and Rebirth" (Bannon)
+> Ravaged Square
+
+zone:The Reliquary
++ Find the Teardrop
+< "Map to Tsoatha"
+
+zone:The Canals
+> The Feeding Trough
+
+zone:Feeding Trough
++ Talk to Sin
+> Altar of Hunger
++ Kill Kitava
+< "An End to Hunger" (Lani)
+~~~~
+GG - Campaign done!

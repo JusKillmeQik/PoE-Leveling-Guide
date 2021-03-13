@@ -1,4 +1,4 @@
-R,Expected End Level: ~53 (53+16 points)
+﻿R,Expected End Level: ~53 (53+16 points)
 _______________
 B,Goals:
   Basalt Flask as reward

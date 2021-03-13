@@ -1,0 +1,51 @@
+zone:The Aqueduct
+Go upstream and cross over bridges whenever the path ends
+
+zone:Dried Lake
+Kill Voll on one of the three spawns
+G,CRAFT - Attack/Cast speed
+
+zone:Mines Level 1
+Exit is usually in top left corner
+
+zone:Mines Level 2
+Varied layout and many dead ends, you should look for the spirit and leave a portal if you find the exit to come back later and find her
+
+zone:Crystal Veins
+Loop around bottom right to go to the top left exit
+B,Waypoint to Highgate if you need the spirit
+G,CRAFT - Resistance
+
+zone:Daresso's Dream
+Move towards the top right, some dead ends
+
+zone:Kaom's Dream
+Follow passages and bridges
+
+zone:Grand Arena
+If you have not done Kaom's Dream yet, take waypoint to Crystal Veins and do that first
+Move down and left from Waypoint, then follow the path
+G,RECOMMEND cold resist
+
+zone:Kaom's Stronghold
+If you have not done Daresso's Dream yet, take waypoint to Crystal Veins and do that first
+Follow stairs and bridges
+R,RECOMMEND fire resist
+
+zone:Belly of the Beast Level 1
+Aim for top left, many dead ends
+
+zone:Belly of the Beast Level 2
+Aim for top left, many dead ends
+G,CRAFT - Chaos damage
+
+zone:The Harvest
+Always one boss on right side, two on the left
+G,Stay in green aura against Doedre
+Maligaro does physical so keep moving
+B,Shavronne deals lightning
+R,Malachi deals fire damage
+
+zone:The Ascent
+Go up and right, cross the bridge and follow the road to a small passage to the exit
+G,CRAFT - Attributes

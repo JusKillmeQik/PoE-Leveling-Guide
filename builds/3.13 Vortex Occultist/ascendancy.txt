@@ -1,0 +1,5 @@
+﻿zone:Aspirants' Plaza
+1. Void Beacon
+2. Vile Bastion
+3. Frigid Wake
+4. Profane Bloom

@@ -1,0 +1,71 @@
+﻿zone:Blood Aqueduct
+> Highgate
+> The Descent
+
+zone:The Descent
+> Supply Hoist
+> Supply Hoist
+> The Vastiri Desert
+
+zone:Vastiri Desert
++ Get WP
++ Find Storm-Weathered Chest, Kill Mumies and take The Storm Blade
+> The Oasis (place TP outside and go back to town)
+< "The Storm Blade" (Petarus and Vanja)
++ Talk to Sin
++ Talk to Petarus and Vanja
+> Use TP
+> The Oasis
+
+zone:The Oasis
+> The Sand Pit
++ Damage Shakari
+> The Swallowing Sands
++ Kill Shakari
+< "Queen of the Sands" (Irasha)
+> The Foothills
+
+zone:The Foothills
++ Kill Boulderback
+< "Fastis Fortuna" (Petarus and Vanja)
+> The Boiling Lake
+~~~~
+> The Tunnel
+
+zone:Boiling Lake
++ Kill The Basilisk and take Basilisk Acid
+> Town
+> The Foothills
+
+zone:The Tunnel
++ Get WP
++ Complete lab
+> The Quarry
+
+zone:The Quarry
++ Get WP
+> Shrine of the Winds
++ Kill Garukhan
+< "The Ruler of Highgate" (Tasuni/Irasha)
+> The Refinery
+~~~~
++ Talk to Sin
+> The Belly of the Beast
+
+zone:The Refinery
++ Kill General Adus, open Theurgic Precipitate Machine and take Trarthan Powder
+> Town
+> The Quarry
+
+zone:Belly of the Beast
+> The Rotting Core
+
+zone:Rotting Core
+> The Black Heart
++ Talk to Sin
+> Enter the 3 areas and kill the spirit in these areas respectively
++ Talk to Sin
+> The Black Heart
++ Kill The Depraved Trinity
++ Talk to Lilly
+> Sail back to Oriath

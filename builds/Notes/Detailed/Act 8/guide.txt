@@ -1,4 +1,4 @@
-R,Expected End Level: ~58 (58+19 points)
+﻿R,Expected End Level: ~58 (58+19 points)
 _______________
 B,Goals:
   Blast through!

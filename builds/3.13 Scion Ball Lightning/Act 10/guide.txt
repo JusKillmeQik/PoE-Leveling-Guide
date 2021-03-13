@@ -1,0 +1,5 @@
+﻿G,Ossuary:             Trial
+B,Vilenta's Vengeance: Passive
+B,An End to Hunger:    2x Passive
+
+Craft Foreboding Eternal Mana Flask

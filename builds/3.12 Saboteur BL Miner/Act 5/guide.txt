@@ -1,0 +1,6 @@
+R,Expected End Level: ~43 (43+10 points)
+
+G,Goals:
+1. Silver Flask
+2. Get rid of OOS
+3. 105% ele res goal

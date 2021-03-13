@@ -404,6 +404,7 @@ setMapGuide()
 
 UpdateMapImages() {
   ;For now just clear all the images
+  zone_toggle := 0
   Loop, % maxImages {
       Gui, Image%A_Index%:Cancel
     }

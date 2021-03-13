@@ -1,4 +1,4 @@
-zone:City of Sarn
+﻿zone:City of Sarn
 Don't forget to talk to Clarissa
 > Sarn a bit up and left from Clarissa
 > Go right to Slums without talking to NPCs

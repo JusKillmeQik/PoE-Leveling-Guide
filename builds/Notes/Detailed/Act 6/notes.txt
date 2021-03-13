@@ -1,4 +1,4 @@
-zone:Twilight Strand
+﻿zone:Twilight Strand
 Go left and clear zone
 It opens Lilly's GEM shop
 > Logout

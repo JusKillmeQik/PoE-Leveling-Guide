@@ -158,6 +158,15 @@ SearchLog() {
         }
       }
 
+      newPartTest := "Aspirants' Plaza"
+      IfInString, log, %newPartTest%
+      {
+        CurrentZone := "00 Aspirants' Plaza"
+        ; GuiControl, Controls:Choose, CurrentZone, % "|" CurrentZone
+        SetNotes()
+        return
+      }
+
       newAct := CurrentAct
       If (numPart != 3) {
         ;loop through all of the acts in the current part

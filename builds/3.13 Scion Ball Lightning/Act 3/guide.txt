@@ -1,0 +1,8 @@
+﻿G,Crematorium:          Trial
+B,Victario's Secrets:   Passive
+G,Catacombs:            Trial
+B,Piety's Pets:         Passive
+G,Imperial Gardens:     Trial
+
+Clarrisa sells Chance orbs (8 Alts)
+Vendor: Magic Wand + Alt + Rare Topaz Ring

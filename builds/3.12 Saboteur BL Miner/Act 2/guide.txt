@@ -1,0 +1,9 @@
+R,Expected End Level: ~21 (21+5 points)
+
+G,Goals:
+1) Replace B-G-G with B-B-B/B-B-G
+2) Craft 2x Wand = Magic wand + Alteration + Rare Topaz ring
+3) Have all gems from left panel
+
+G,Trials: The Crypt level 1
+        The Chamber of Sins Level 2

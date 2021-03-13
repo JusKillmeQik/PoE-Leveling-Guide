@@ -1,4 +1,4 @@
-R,Expected End Level: ~31 (31+7 points)
+﻿R,Expected End Level: ~31 (31+7 points)
 _______________
 B,Goals:
   4-Link after lvl 25

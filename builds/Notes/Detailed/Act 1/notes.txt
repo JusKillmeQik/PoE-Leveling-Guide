@@ -1,4 +1,4 @@
-zone:Twilight Strand
+﻿zone:Twilight Strand
 Make sure you have an appropriate loot filter
 > https://www.filterblade.xyz/
 ________________
@@ -111,6 +111,6 @@ Right time to get 2x Sapphire rings
 zone:Cavern of Anger
 Often bottom right
 You can follow the spirits
-If you see piles of gold you’re close to Merveil
+If you see piles of gold you're close to Merveil
 Kill the boss
 > Go to the next Act

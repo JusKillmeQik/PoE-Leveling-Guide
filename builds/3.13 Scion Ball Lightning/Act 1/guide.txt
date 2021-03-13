@@ -1,0 +1,7 @@
+﻿Mercy Mission:       Quicksilver
+B,Dweller of the Deep: Passive
+G,Lower Prison:        Trial
+B,Marooned Mariner:    Passive
+B,Way Forward:         Passive
+
+Vendor: Magic Wand + Alt + Normal Topaz Ring

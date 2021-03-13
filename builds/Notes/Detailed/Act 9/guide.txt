@@ -1,4 +1,4 @@
-R,Expected End Level: ~62 (62+21 points)
+﻿R,Expected End Level: ~62 (62+21 points)
 _______________
 B,Goals:
   Start collecting chaos recipes

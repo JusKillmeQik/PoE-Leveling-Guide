@@ -1,5 +1,0 @@
-Aim for top left, many dead ends.
-Kill the boss.
--> Proceed to the Harvest.
-_________
-R,CRAFT - Chaos damage

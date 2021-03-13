@@ -1,6 +1,0 @@
-Exits are usually diagonal from entrance.
-Kill the boss.
--> Go to the Act 3.
-__________
-R,CRAFT - Spell damage
-B,RECOMMEND lightning resist

@@ -1,4 +1,4 @@
-zone:Southern Forest
+﻿zone:Southern Forest
 Follow the right wall
 > Go to the Forest Ench
 > Go to Old Fields

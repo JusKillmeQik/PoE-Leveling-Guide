@@ -10,6 +10,9 @@
 
     notes_width := 0
     filepath := "" A_ScriptDir "\builds\" overlayFolder "\" CurrentAct "\notes.txt" ""
+    If (CurrentZone = "00 Aspirants' Plaza"){
+      filepath := "" A_ScriptDir "\builds\" overlayFolder "\ascendancy.txt" ""
+    }
     If (!FileExist(filepath)){
       filepath := "" A_ScriptDir "\builds\Notes\" notesFolder "\" CurrentAct "\notes.txt" ""
     }
@@ -103,6 +106,9 @@
 
     If (numLines = 0) {
       shortpath := "" "Add """ ZoneName """ to notes.txt in`n\builds\" overlayFolder "\" CurrentAct "\" ""
+      If (CurrentZone = "Aspirants' Plaza"){
+        shortpath := "" "Add ascendancy.txt in`n\builds\" overlayFolder "\" ""
+      }
       W := MeasureTextWidth(shortpath, "s" . points . "  w" . boldness, font)
       notes_width := W
       Gui, Notes:Add, Text, xm ym, % shortpath
@@ -122,114 +128,6 @@
     Gui, Notes:Cancel
   }
 }
-
-setNotesOld()
-{
-  Gui, Notes:Destroy
-  If (hideNotes != "True") {
-    Gui, Notes:+E0x20 +E0x80 -DPIScale -Caption +LastFound +ToolWindow +AlwaysOnTop +hwndNotesWindow
-    Gui, Notes:font, c%whiteColor% s%points% w%boldness%, %font%
-    Gui, Notes:Color, %backgroundColor%
-    WinSet, Transparent, %opacity%
-    Gui, Notes:Margin, %textMargin%, %textMargin%
-
-    notes_width := 0
-    filepath := "" A_ScriptDir "\builds\" overlayFolder "\" CurrentAct "\" CurrentZone ".txt" ""
-
-    numLines := 0
-    Loop, read, %filepath%
-    {
-      val := A_LoopReadLine
-
-      colorTest := SubStr(val, 1, 2)
-      If (colorTest = "R,") {
-        Gui, Notes:font, c%redColor%
-        StringTrimLeft, val, val, 2
-      } Else If (colorTest = "< ") {
-        Gui, Notes:font, c%redColor%
-      } Else If (colorTest = "G,") {
-        Gui, Notes:font, c%greenColor%
-        StringTrimLeft, val, val, 2
-      } Else If (colorTest = "+ ") {
-        Gui, Notes:font, c%greenColor%
-      } Else If (colorTest = "B,") {
-        Gui, Notes:font, c%blueColor%
-        StringTrimLeft, val, val, 2
-      } Else If (colorTest = "> ") {
-        Gui, Notes:font, c%blueColor%
-      } Else If (colorTest = "Y,") {
-        Gui, Guide:Font, c%yellowColor%
-        StringTrimLeft, val, val, 2
-      } Else If (colorTest = "- ") {
-        Gui, Guide:Font, c%yellowColor%
-      } Else If (colorTest = "W,") {
-        Gui, Notes:font, c%whiteColor%
-        StringTrimLeft, val, val, 2
-      } Else {
-        Gui, Notes:font, c%whiteColor%
-      }
-
-      ;Wrap notes longer than maxNotesWidth
-      while true
-      {
-        StringLen, stringLength, val
-        If (stringLength > maxNotesWidth) {
-          StringGetPos, lastCharPos, val, %A_Space%, R1, stringLength-maxNotesWidth
-          If (lastCharPos = -1) {
-            lastCharPos := maxNotesWidth-1
-          }
-
-          StringLeft, beginString, val, lastCharPos+1
-          StringTrimLeft, val, val, lastCharPos+1
-
-          ;expand width if too small to fit all characters
-          W := MeasureTextWidth(beginString, "s" . points . "  w" . boldness, font)
-          If ( W > notes_width ){
-            notes_width := W
-          }
-
-          yPosNoteLine := (numLines * Ceil(pixels*lineSpacing)) + textMargin
-          Gui, Notes:Add, Text, xm y%yPosNoteLine%, % beginString
-
-          numLines++
-        } Else {
-          ;expand width if too small to fit all characters
-          W := MeasureTextWidth(val, "s" . points . "  w" . boldness, font)
-          If ( W > notes_width ){
-            notes_width := W
-          }
-
-          yPosNoteLine := (numLines * Ceil(pixels*lineSpacing)) + textMargin
-          Gui, Notes:Add, Text, xm y%yPosNoteLine%, % val
-
-          numLines++
-          break
-        }
-      }
-    }
-
-    If (numLines = 0) {
-      shortpath := "" "Add " CurrentZone " to notes.txt in`n\builds\" overlayFolder "\" CurrentAct "\" ""
-      W := MeasureTextWidth(shortpath, "s" . points . "  w" . boldness, font)
-      notes_width := W
-      Gui, Notes:Add, Text, xm ym, % shortpath
-      numLines := 2
-    }
-
-    notes_height := (numLines * Ceil(pixels*lineSpacing)) + (2 * textMargin)
-
-    notes_width := notes_width + (2 * textMargin)
-
-    If (hideGuide != "True") {
-      xPosNotes := Round( (A_ScreenWidth * guideXoffset) - guide_width - controlSpace - notes_width )
-    } Else {
-      xPosNotes := Round( (A_ScreenWidth * guideXoffset) - notes_width )
-    }
-    Gui, Notes:Show, x%xPosNotes% y%yPosNotes% w%notes_width% h%notes_height% NA, Gui Notes
-    Gui, Notes:Cancel
-  }
-}
-
 
 setGuide()
 {

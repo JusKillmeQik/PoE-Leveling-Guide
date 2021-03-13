@@ -1,4 +1,4 @@
-zone:Slave Pens
+﻿zone:Slave Pens
 Go all the way down and right
 Then left to Kill the boss
 > Proceed to Town

@@ -1,4 +1,0 @@
-Go up and right, cross the bridge and follow the road to a small passage to the exit.
--> Go to Act 5.
-_________
-R,CRAFT - Attributes

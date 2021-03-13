@@ -1,2 +1,0 @@
-Pick up the bust before the Waypoint, after it is another, Up and right is the last bust, then exit
-R,CRAFT - Physical damage

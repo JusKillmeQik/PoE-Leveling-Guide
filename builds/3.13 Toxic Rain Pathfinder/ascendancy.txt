@@ -1,0 +1,5 @@
+﻿zone:Aspirants' Plaza
+1. Nature's Reprisal
+2. Nature's Boon
+3. Master Alchemist
+4. Nature's Adrenaline

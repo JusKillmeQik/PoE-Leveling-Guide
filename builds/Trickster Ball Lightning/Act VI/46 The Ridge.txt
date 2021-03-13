@@ -1,3 +1,0 @@
-Follow the path until you can go right, 
-then follow that until you have a path up left.
--> Go to the Lower Prison.

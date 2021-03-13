@@ -1,0 +1,7 @@
+﻿B,Love is Dead:         Passive
+B,Gemling Legion:       Passive
+Wings of Vastiri:     Efficiency
+G,Bath House:           Trial
+B,Reflection of Terror: Passive
+
+Craft lightning damage on gear after Lunaris Level 2

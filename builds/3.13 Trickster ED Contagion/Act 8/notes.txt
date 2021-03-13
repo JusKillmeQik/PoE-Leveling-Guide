@@ -1,0 +1,63 @@
+﻿zone:Sarn Ramparts
+Left hand wall-follow to the stairs, go up the stairs and follow the wall to the end
+
+zone:Toxic Conduits
+Watch the black paint on the floor as you enter the zone to see in which direction it points you
+
+zone:Doedre's Cesspool
+Find the path that doesn't have a dead end, this leads you all the way to the exit. After beating Doedre The Grand Promenade is on the left, The Quay on the right
+G,CRAFT - Resistance
+
+zone:Grand Promenade
+Wall-follow the right side
+
+zone:Bath House
+The exit (1) is always on the right side. Save Yugul (2) for later
+G,TRIAL - Furnace traps
+G,CRAFT - Flask duration
+
+zone:High Gardens
+Be careful when killing Porcupines
+Follow path to the end to kill Yugul
+B,RECOMMEND cold resist
+
+zone:Lunaris Concourse
+Go up and right for Waypoint then up and left for entrance to Lunaris Temple first
+Go down and right to the Harbour Bridge after beating both temples
+
+zone:Lunaris Temple Level 1
+Follow the carpets until end activate the Waypoint
+
+zone:Lunaris Temple Level 2
+Look for staircases and go up these, when you reach the larger area, look for vases on the opposite wall and pick the side where there is only one
+B,Log out after Boss and Waypoint to Doedre's Cesspool
+G,CRAFT - Minions
+B,RECOMMEND cold resist
+
+zone:The Quay
+Pick up the quest item at (1) to use in the arena (2) then leave the arena and find the exit at (3)
+Stick to the bottom edge of the map and you should find everything
+
+zone:Grain Gate
+This zone has many buildings, only enter and leave buildings through openings that have a guard's corpse next to it; they lead the way
+B,Kill the gemlings
+
+zone:Imperial Fields
+Follow the road until the end continue going that direction
+
+zone:Solaris Concourse
+Follow the carpets to the Harbour Bridge
+
+zone:Solaris Temple Level 1
+Go down and left, then up and left. The Waypoint is always on the path
+
+zone:Solaris Temple Level 2
+Follow the carpets. Log out after Boss. Waypiont to Lunaris Concourse
+G,CRAFT - Traps and mines
+R,RECOMMEND fire resist
+
+zone:Harbour Bridge
+Farm here before Boss if you are under leveled
+Go up and to the middle to the arena with Solaris and Lunaris
+R,RECOMMEND fire resist
+B,and cold resist

@@ -1,4 +1,4 @@
-zone:Cathedral Rooftop
+﻿zone:Cathedral Rooftop
 Go up to save Bannon
 Free him and talk in Town
 > Go back to Rooftop

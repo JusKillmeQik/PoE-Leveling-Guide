@@ -1,4 +1,4 @@
-zone:The Aqueduct
+﻿zone:The Aqueduct
 Go upstream and cross over bridges when the path ends
 If you're less than lvl 31 - do this zone a couple times
 > Go to Highgate
