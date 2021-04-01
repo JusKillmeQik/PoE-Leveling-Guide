@@ -1,0 +1,13 @@
+﻿zone:The Templar Laboratory
+Laboratory sağ üstte.
+Map device'ı bul ve Kirac le konuşana kadar bekle.
+Sonra Oriath'a geri dönüp aşağı sağdan Fallen Courts'a geç.
+
+zone:The Fallen Courts
+Duvara solunu vererek takip et Dominus' office'i bul.
+Keyi al ve Oriath'a geri dönüp sol alttan the Haunted Reliquary'e gir.
+
+zone:The Haunted Reliquary
+Keyi iki taraftada kullanıp kapının kilidini aç.
+Herşeyi öldürüp Kirac ile hideoutunda konuş.
+Hideout'un yoksa town'da Helena ile konuşup sahip olabilirsin.

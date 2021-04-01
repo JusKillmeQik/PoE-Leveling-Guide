@@ -1,0 +1,95 @@
+﻿zone:City of Sarn
+Sol üstte ilerle Clarissa ile konuşmayı unutma.
+Yeni town'a git. Sağ üstten The Slums'a gir.
+
+zone:The Slums
+The Sewers girişini bul, yakınındaki merdivenlerden aşağı doğru ilerle The Crematorium'a gir.
+Tekrar gelişinde, The Sewers'ı açıp içeri gir.
+
+zone:The Crematorium
+Genelde sol tarafın doğru yol olma şansı daha yüksek.
+Trial’ı tamamla ve Piety'i öldürüp görev itemını al.
+Town'a dönüp sewers'ın anahtarlarını al. The Slums'a git tekrar.
+G,TRIAL - Furnace Traps
+G,CRAFT - Fire damage
+
+zone:The Sewers
+Yukarı sağa ilerle.  Yolun ortasında Stash var açıp görev itemini al.
+Waypoint'in sağında ve yukarıda sonuncu bulunuyor. (Toplam 3 görev itemı - passive ödülü)
+Yolun sonundan The Marketplace'e geç.
+B,Waypoint'i açmayı unutma.
+G,CRAFT - Physical damage
+Tekrar geldiğimde; Yukarı doğru ilerle blocklanmış kapıya tıklayıp aç.
+Açılan yoldan devam et The Ebony Barracks'a geç.
+
+zone:The Marketplace
+Genelde yol yukarı sağ doğrudur. Heykelleri geçtikten sonra waypoint'i al.
+B,Görev itemını skiple.
+İlk olarak trial için The Catacombs'a gir. 
+Geri döndüğünde, sağa doğru devam et The Battlefront'a gir.
+
+zone:The Catacombs
+Trialdan ve craftı aldıktan sonra The Marketplace'e geri dön.
+G,TRIAL - Blade sentries
+G,CRAFT - Ele Damage w/ Attack
+
+zone:The Battlefront
+Yukarı git sonra sola dön ve waypointi al. 
+Waypointi aldıktan sonra aşağıda Captain Aurelianus'u öldür ve görev itemını al.
+Yukarı ve sola devam et The Docks a gir.
+Geri döndüğünde; Yukarı sola devam et. The Solaris Temple 1'e gir.
+
+zone:The Docks
+Genelde soldan gidiliyor. 
+Sulphite görev itemini aldıktan sonra portal ile town'a geri dön.(passive ödülü)
+Towndan The Battlefront'a geri ışınlan.
+
+zone:Solaris Temple Level 1
+Kırmızı halıyı takip et wp al. The Solaris Temple 2 ye gir.
+
+zone:Solaris Temple Level 2
+Kırmızı halıyı takip et wp al. 
+Lady Dialla ile konuş ödülü al. The Sewers waypoint'e ışınlan.
+G,CRAFT - Cold damage
+
+zone:Ebony Barracks
+Yukarı doğru devam edip kırmızı halının ordaki General Gravicius'u öldür.
+Öldürdükten sonra yukarı doğru devam et Lunaris Temple 1'e gir.
+B,Waypoint'i açmayı unutma!
+Tekrar döndüğünde; Kırmızı çadırdan sağa doğru ilerle. Imperial Gardens'a gir.
+
+zone:Lunaris Temple Level 1
+Halıyı takip et. Wp açmayı unutma yolun sonunda.
+Lunaris Temple Level 2'ye geç.
+
+zone:Lunaris Temple Level 2
+Merdivenlerden yukarı çık büyük alana ulaşınca yolun iki tarafında araçlar var.
+1 Araç olan tarafı seç devam et. Boss alanına gir. Piety'i öldür.
+Görev itemini al ve town'a dön. Town'dan The Ebony Barracks'a ışınlan.
+G,CRAFT - Lightning damage
+Y,Boss için lightning resist önerilir.
+
+zone:Imperial Gardens
+Yolu takip et wp görünce al. 
+Kuzeyde Library var(Gem Dükkanı)(İsteğe bağlı)
+Wpden aşağıya doğru yolu takip et. Kapıyı aç The Sceptre of God'a gir.
+G,TRIAL - Dart Traps
+G,CRAFT - All attributes
+
+zone:The Library
+Siosa tüm güncel gemler için görev vericek.
+Bölgenin ortasında, waypointin yanında.
+
+zone:The Archives
+The golden page görev itemlarını topla bölgede.
+< 4ünü topladıktan sonra logout at.
+> The Library'e teleport ol. Gem alıcaksan currency'nin yanında olması lazım.
+
+zone:Sceptre of God
+Merdivenlerden yukarıya doğru çık. Son katta wp var. Upper Sceptre of God'a geç.
+
+zone:Upper Sceptre of God
+Merdivenlerden yukarı çık. Boss odasına geç.
+Act final bossu Dominus’u öldür.
+B,boss için cold resist önerilir!
+Y,ve lightning resist

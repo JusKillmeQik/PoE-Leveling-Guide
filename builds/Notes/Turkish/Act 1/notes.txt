@@ -1,0 +1,62 @@
+﻿zone:Twilight Strand
+Sahili yukarı sağa takip et
+Hillock'u öldür.
+
+zone:The Coast
+Sağ tarafına yapışarak duvarı takip et.
+B,İlk olarak Mud Flasts'a git; Hailrake'ı kolaylaştırmak için.
+
+zone:Tidal Island
+Yamaç olmayan taraf en kısa yoldur.
+
+zone:Mud Flats
+3 görev itemını topla, sağ üstte nehirdeki yolu aç. Açılan bölgeye geç
+B,Submerged Waypoint'ini aldıktan sonra Quicksilver Flask questi için Tidal Island'a git.
+
+zone:Fetid Pool
+Daire şeklinde ilerle herşeyi öldür.
+Yan görev yapmamak büyük zaman kazandırır. Skiple burayı.
+
+zone:Submerged Passage
+Köprüyü bul ve portal yerleştir. 
+Köprüyü geç The Ledge'e gir.
+
+zone:Flooded Depths
+Deep Dweller (Bestel) 'i öldürdükten sonra logout at.
+B,The Ledge'e geri dön.
+
+zone:The Ledge
+Merkezdeki waypointe gelince city’e dön.  Cityde yerleştirdiğimiz portal ile geri dön Flooded Depths'i bul.
+B,Waypoint'in yanındaki küçük totemler çıkış yolunu gösterir.
+
+zone:The Climb
+Sağ üstte git Navaliyi serbest bırak.(The Faun'u öldür.)
+B,The Lower Prison a gir.
+
+zone:Lower Prison
+Trial bulunuyor şimdi yap veya daha sonra waypoint ile dönüp yapabilirsin.
+Çıkış için ilk olarak sağ tarafı dene.
+G,TRIAL - Spike traps
+B,The Upper Prison a geç.
+
+zone:Upper Prison
+İlk olarak sol tarafı dene The Warden’s Quarters a gir.
+Yerdeki kanları takip ederek Brutus’u bul ve öldür.
+B,Prisoner's Gate waypointi aldıktan sonra logout at.
+
+zone:Prisoner's Gate
+Yolun çıkıntıya sahip tarafını ara, genellikle sağ tarafta. 
+B,The Ship Graveyard a kadar git ve içeri gir.
+
+zone:Ship Graveyard
+Waypointi bul ilk sonra Fairgraves'i ara. Cave’i ilk bulursan içeri gir AllFlame itemını al. 
+Diğer türlü Cavern of Wrath'a ilerle Waypoint'ini al geri dön.
+Geri döndüğünde Fairgraves her zaman waypoint yakınındadır. Öldür ve logout at. (passive ödülü)
+
+zone:Cavern of Wrath
+Waypointten The Ship Graveyard'e geri dön ve cave'i bul allflame itemını al. Sonra logout atıp Bestelden passive point al.
+B,Düz ilerle The Cavern of Anger e gir.
+
+zone:Cavern of Anger
+Yol genelde sağ aşağı doğru. Ruhları takip edebilirsin. Altın yığınları görürsen bossa yaklaştın. 
+B,Merveil i öldür.Yüksek cold resist önerilir.

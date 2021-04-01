@@ -1,0 +1,62 @@
+﻿zone:The Aqueduct
+Yolu takip et Town'a gir.
+Town'nın aşağısından The Dried Lake'e geç.
+
+zone:Dried Lake
+Voll 3 spawn yerinin birinde spawn oluyor.
+Vollu öldürdükten görev itemini al sonra portal ile town'a dön.
+Town'nın yukarısındaki mines girişini aç. The Mines 1'e gir.
+G,CRAFT - Attack/Cast speed
+
+zone:Mines Level 1
+Yukarı solda The Mines 2'ye gir.
+
+zone:Mines Level 2
+Deshret’s Spirit'ı özgür bırak, haritada ünlemle gözüküyor. (Passive point ödüllü)
+The Crystal Veins girişini daha erken bulursan dışarı çıkmadan portal bırak.
+The Crystal Veins'e geç.
+
+zone:Crystal Veins
+Waypointe kadar gel. 
+B,Deshret’s Spirit'ı yapmadıysan onu dönüp yapabilirsin waypoint ile.
+İki yoldan birini seç. Daha sonra diğerini yap.
+G,CRAFT - Resistance
+
+zone:Daresso's Dream
+Yukarı sağa ilerle. The Grand Arena'ya geç.
+
+zone:Kaom's Dream
+Sonuna kadar git Kaom’s Stronghold'a gir.
+
+zone:Grand Arena
+Wpden aşağı sonra sola git. 3 bossun olduğu odayı bul.
+Öldürdükten sonra The Ring of Blades'e geç Daressoyu öldür.
+Görev itemini lootla. Town'a geri dön. The Crystal Veins wpye ışınlan.
+G,Boss için cold resist önerilir!
+
+zone:Kaom's Stronghold
+Caldera of The King'e gir. Kaom'u öldür. Görev itemini lootla.
+Portalla citye dön. The Crystal Veins wpye ışınlan tekrar. Dialla ile konuş.
+Belly of the Beast 1'i aç içeri gir.
+R,Boss için fire resist onerilir!
+
+zone:Belly of the Beast Level 1
+Yukarı solda çıkış.
+
+zone:Belly of the Beast Level 2
+Yukarı solda çıkış.
+Piety ı bul öldür.(Beam'e dikkat etrafında dolaşarak dodgela)
+Öldürdükten sonra konuş ve The Harvest yolunu aç içeri gir.
+G,CRAFT - Chaos damage
+
+zone:The Harvest
+Sabit layout. İlk olarak yukarı git wpyi aç görevi al.
+Sonra sağda 1 boss, solda 2 boss bulunuyor.
+Üç bossu öldürüp görev itemlerini al. Portal ile town'a dön. Sonra The Harvest wpsine ışınlan.
+Görevi teslim edip The Black Core’a gir. Actın final bossu Malachai'yi öldür.
+Portalla town'a geri dön. Üst taraftan The Ascent'e gir.
+
+zone:The Ascent
+Yukarı sonra sağa git. Köprüyü geç dar yolu takip et. Tepede Resenator bulunuyor.
+Aktif et Act 5 yolunu aç.
+G,CRAFT - Attributes

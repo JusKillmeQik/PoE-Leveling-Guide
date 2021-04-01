@@ -1,0 +1,56 @@
+﻿zone:Blood Aqueduct
+Level ve Humility kartı farmlamak için güzel bir map.
+Highgate main citye gidip; Yukarı sağdan The Descent'e geç.
+
+zone:The Descent
+Supply Hoistlerdan geçip. The Vastiri Desert'a gir.
+
+zone:Vastiri Desert
+Sağa doğru ilerle wp yi bul aç.
+Wpden sağa doğru git kum fırtınasını bul görev açılınca portal ile citye dön görev itemini al.The Oasis'e gir.
+İkinci gelişinde; Yukarı doğru giderek The Foothills'e gir.
+G,CRAFT - Attack/Cast speed
+
+zone:The Oasis
+Boss odasını bul. Shakari yi öldür(Pantheon)
+Öldürdükten sonra The Vastiri Desert wpsine dönmek için town'a geç. 
+R,RECOMMEND physical mitigation
+
+zone:The Foothills
+Yukarı sola giderek wpyi bul. Wpnin yanından The Boiling Lake'e gir.
+B,Waypoint açmayı unutma
+İkinci gelişinde; Sol yukarıya gidip The Tunnel'a gir.
+
+zone:Boiling Lake
+Bölgenin yukarısına git taştan heykellerin olduğu yerde bossu öldür görev itemini al.
+B,The Foothills wpsine gitmek için city'e dön. 
+G,CRAFT - Spell damage
+
+zone:The Tunnel
+Trial var tamamla. Yol üzerinde. Wpyi aldıktan sonra The Quarry'e gir.
+G,TRIAL - Blade sentries
+G,CRAFT - All attributes
+
+zone:The Quarry
+İlerle ortada wpyi aç. 
+İlk olarak sol aşağıya ilerle (2)Shrine of The Winds'a gir. Garukhan'ı öldür(Pantheon)(passive)
+Sonrasında; Sağ yukarıya doğru ilerle. The Refinery'e gir.
+Son gelişinde; Görev mobu ile konuşup The Belly of the Beast girişini aç ve gir.
+G,CRAFT - Physical damage
+R,RECOMMEND physical mitigation 3,000+ EHP and Movement skills
+
+zone:The Refinery
+Bölgenin yukarısında General Adus'u bul ve öldür.
+Bossu öldürdükten sonra açılan kapıdan görev itemini al.
+The Quarry wpsine dönmek için portal ile town'a dön.
+Y,RECOMMEND lightning resist
+
+zone:Belly of the Beast
+Sıradaki bölge The Rotting Core'a geç.
+
+zone:Rotting Core
+The Black Heart'i bulup içeri gir.
+Konuşup 3 portalı aç. 3 portaldanda girip bosslarını kes ve geri dön.
+Son olarak Sin ile konuşup ortadaki The Black Heart'i aç.
+Bosstan sonra Lilly ile konuşup Act 10 a geç.
+Y,RECOMMEND 3,200+ EHP, physical mitigations, lightning resist, fast movement skill
