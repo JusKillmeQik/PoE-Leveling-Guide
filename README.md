@@ -1,6 +1,5 @@
-# PoE Leveling Guide 3.0 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y4PJCG5N4DMTN&source=url)
+# PoE Leveling Guide 4.0 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y4PJCG5N4DMTN&source=url)
 
->WARNING: Vulkan is still in Beta. The tool now works with Vulkan but may cause PoE to close when launched. Make sure to start any overlays you want to use before starting PoE.
 
 ### Video Overview (click to open YouTube):
 
@@ -10,7 +9,7 @@
 
 ![Cavern of Wrath](previews/LevelingGuidePreview1.png?raw=true "Leveling Guide in The Cavern of Wrath")
 
-![Coast](previews/LevelingGuidePreview2.png?raw=true "Leveling Guide in The Coast Act 6 with all gem links")
+![Coast](previews/LevelingGuidePreview2.png?raw=true "Leveling Guide in The Coast Act 6")
 
 ![Ravaged Square](previews/LevelingGuidePreview3.png?raw=true "Leveling Guide in The Ravaged Square Part 2")
 
@@ -24,7 +23,7 @@
 
 >WARNING: This update is not compatible with previous versions, you will need to put this project in its own folder and import any custom changes you made in previous versions
 
-You will need AutoHotkey to run this script, with a minimum version of 1.1.30.00 https://www.autohotkey.com/
+You will need AutoHotkey to run this script, https://www.autohotkey.com/
 
 Make sure to run it with PoE in windowed fullscreen or windowed mode. It is highly recommended to turn off text scaling for high resolution monitors.
 
@@ -42,22 +41,23 @@ Based on the zone you're in, notes and diagrams from this document will be shown
 
 Be sure to familiarize yourself with the above document before using this tool.
 
-Based on the act you're in, your own notes on gems, quests and socket colors can be shown in the notes section. Each zone in the Overlays folder has a text file named after it, where you can edit the zone specific information you would like available. Each Act has a guide.txt file that you can also edit for information you would like available during the whole Act. Some placeholder notes are there for an example. You can add your own [Quest Rewards](https://pathofexile.gamepedia.com/Quest_Rewards) so you save time while leveling.
+Based on the act you're in, your own notes on gems, quests and socket colors can be shown in the notes section. In the Build folder for each Act is a notes.txt file with all of the zones for that Act where you can edit the zone specific information you would like available. Each Act has a guide.txt file that you can also edit for information you would like available during the whole Act. Some placeholder notes are there for an example. You can add your own [Quest Rewards](https://pathofexile.gamepedia.com/Quest_Rewards) so you save time while leveling.
 
-The text on any line in the guide or notes files can now be changed to different colors. Just start the line with one of the 2 character codes in the table below. I have added color to the Acts in the "Default" build as an example. The "Abbreviated" build is colored differently to show an example as well. You can change which guide to use in the settings menu or config.ini file by setting the "overlayFolder" value. This can be very helpful for setting up your own guides as well so you can switch between gems and trees for different characters.
+The text on any line in the guide or notes files can now be changed to different colors. Just start the line with one of the 2 character codes in the table below. I have added color to the Acts in the "Default" notes as an example. You can change which guide to use in the settings menu or config.ini file by setting the "overlayFolder" value. This can be very helpful for setting up your own guides as well so you can switch between gems and trees for different characters.
 
 | 2 character code | color generated |
 |:----------------:|:---------------:|
 |   "< " or "R,"   |       Red       |
 |   "+ " or "G,"   |      Green      |
 |   "> " or "B,"   |       Blue      |
+|   "- " or "Y,"   |      Yellow     |
 |  "W," or nothing |      White      |
 
-The config.ini file, which is generated on first run to avoid overwritten changes you make in future updates, can be used to change any of the many settings. You can also use the settings menu from the tray or press F10 by default. I recommend using the defaults, but almost anything can be customized with this tool.
+The config.ini file, which is generated on first run to avoid overwritten changes you make in future updates, can be used to change any of the many settings. You can also use the settings menu from the sytemt tray or by pressing F10 in PoE by default. I recommend using the defaults, but almost anything can be customized with this tool.
 
 ### Gem Setup
 
-As you level it can be hard to remember which gems to choose for rewards and which to buy. The original intention was that the Act guide would be used for this information. However it still became difficult sometimes to remember what links to look for and where to socket the new gems. You can add your desired gem setup to the build using build editor, or by modifying the ini files in the gems folder of your build. The first entry must be level 2, but after that you can either set up every reward level or just the ones you make major changes at. The best part is you can color the text to make it easier to visualize the links you need. The npc that gives you the gem is listed in [brakets] or the npc that sells you the gem is listed with a price in (paranthesis). This will auto update as you level, but does not show up automatically. It must be viewed/hidden with the hotkey (**Alt+G**). As always an example is included with the provided builds.
+As you level it can be hard to remember which gems to choose for rewards and which to buy. The original intention was that the Act guide would be used for this information. However it still became difficult sometimes to remember what links to look for and where to socket the new gems. You can add your desired gem setup to the build using build editor, or by modifying the ini files in the gems folder of your build. The first entry must be level 2, but after that you can either set up every reward level or just the ones you make major changes at. The best part is you can color the text to make it easier to visualize the links you need. The npc that gives you the gem is listed in [brackets] or the npc that sells you the gem is listed with a price in (parentheses). This will auto update as you level, but does not show up automatically. It must be viewed/hidden with the hotkey (**Alt+G**). As always an example is included with the provided builds.
 
 ### Passive Tree
 
@@ -82,7 +82,7 @@ The guide shows your level and percent experience gain in the current zone at th
 ##### Display/Hide the whole Leveling Guide overlay
 **Alt+F1** (May need to change default NVidia screenshot bindings)
 
-This guide auto hides after a few seconds (this can be increased or removed in settings). Changing zones will show the guide again. Using **Alt+F1** while it is hidden will show it again, but if you use **Alt+F1** while it is shown it will stay off until manually called back.
+This guide auto hides after a few seconds (this "Display Timeout" can be increased or removed in settings). Changing zones will show the guide again. Using **Alt+F1** while it is hidden will show it again, but if you use **Alt+F1** while it is shown it will stay off until manually called back.
 
 ##### Display/Hide the zone layout images
 **Alt+F2**
@@ -104,6 +104,12 @@ This guide auto hides after a few seconds (this can be increased or removed in s
 ##### Show Alva Temple Cheatsheet
 **F6**
 
+##### Show Hiest Cheatsheet
+**F7**
+
+##### Manually toggle Zone
+**Control+PgDown**
+
 Any of the hotkeys can also be disabled by deleting their value in the settings menu.
 
 ### Discord
@@ -113,7 +119,7 @@ If you find any bugs please feel free to log an issue on GitHub or send me a mes
 We also now have a Discord channel where you can ask questions or share builds: https://discord.gg/fzHj3BT
 
 
-All of this is based off of a post by u/Poland144 who borrowed code from many other people to make this happen. I completely re-wrote all of the functions and cleaned up the code to make it more readable and removed some unnecessary bloat. I also added in more of Engineering Eternity's notes to the overlay for beginners. The script automatically reads in up to 6 images, so feel free to delete or add images you want in the overlay. Just make sure they are 110 pixels wide by 60 pixels tall. It also took quite a bit to add the automation, but I think I got all of the bugs worked out. I'm hoping the community uses the source or uploads pull requests to make it even better. If you'd like to donate to my efforts there is a link at the top of this page.
+This tool is based off of a lot of effort from the community. I did most of the coding, but all of the information came from others way smarter than me. I'm hoping the community uses the source or uploads pull requests to make it even better. If you'd like to donate to my efforts there is a link at the top of this page.
 
 *Cheers!*
 
@@ -123,8 +129,7 @@ Credits:
 VermiLLIon - Added multiple amazing build guides  
 kylewill0725 - Added Heist Cheatsheet  
 Brody and BrayFlex -  Added the first community Build Guides  
-Rebslack - provided Abbreviated as an alternative guide  
-josemaia - pointed out minimum autohotkey level  
+Rebslack - provided Abbreviated as alternative notes  
 dsnvwlmnt - many logged issues and testing  
 rioreiser - original script framework  
 Eruyome87 - updates to the library scripts  

@@ -1,0 +1,71 @@
+﻿zone:Twilight Strand
+Görev isteği bağlıdır. Lilly'nin gem dükkanını açar.
+
+zone:The Coast
+Bölgenin sağ tarafına doğru git. Sağ üstten Mud Flats'a gir.
+
+zone:Tidal Island
+Zaman kazanmak için bu bölgeyi skiple.
+
+zone:Mud Flats
+Yukarı veya sağa doğru git. Bossu öldür ve anahtarı al.
+Bu anahtar ile sol tarafta The Karui Fortress'ı aç. İçeriye gir.
+
+zone:Karui Fortress
+Sağ taraftan git boss odasına gir. Tukohama yı öldür. (Pantheon)
+Yukarı devam et The Ridge'e gir.
+G,CRAFT - Defences
+R,RECOMMEND fire resist with 1,500+ EHP
+
+zone:The Ridge
+Sağ düz devam et yol sonunda yukarı sola dön. The Lower Prison'a gir
+
+zone:Lower Prison
+Trial tamamladıktan sonra Shavronne’s Tower'a geç.
+G,TRIAL - Spike traps
+G,CRAFT - Double resistance
+
+zone:Shavronne's Tower
+4 mini zone bulunuyor merdivenler ile diğerlerine geç. 
+En son Prison Rooftop'a çık. Boss'u öldür(pantheon) 
+Açılan bölgelerden Prisoner’s Gate'a kadar ilerle.
+G,CRAFT - Spell damage
+Y,RECOMMEND lightning resist with physical mitigation
+
+zone:Prisoner's Gate
+Aşağıya doğru ilerleyip Valley of The Fire Drinker boss odasına gir. Aberrath'ı öldür. (Pantheon)
+Yolu takip et The Western Forest'e geç.
+R,RECOMMEND fire resist
+
+zone:The Riverways
+Waypointi bulana kadar yolu takip et.
+Wp'nin yukarısından The Wetlands'e gir.
+B, Tekrar gelişinde; wpden devam edip The Southern Forest'a geç.
+
+zone:The Wetlands
+Yukarı solda Spawning Ground'a gir. Ryslatha yı öldür(Pantheon)
+Town'dan The Riverways wpsine geri dön.
+G,RECOMMEND current life flasks, avoid chaos degens
+
+zone:Western Forest
+Yolu takip et The Riverways'e gir.
+G,CRAFT - Attributes
+
+zone:Southern Forest
+Sağda duvarı takip ederek aşağıya in wp açıp The Cavern of Anger'a gir.
+
+zone:Cavern of Anger
+B,Girişte Flag Chesti aç ve görev itemini al.
+Passage a gir. 2 layout. Ya sağa doğru git yada aşağı doğru git.
+The Beacon'a gir.
+
+zone:The Beacon
+Kısayolu takip et beaconlara ulaşana kadar.
+Weylam ile konuşup yeni bölgeye geç.
+G,CRAFT - Life/Mana
+
+zone:Brine King's Reef
+Yolu takip et boss alanına gir.Tsoagoth'u öldür(Pantheon)
+Weylam ile konuşup Act 7 ye geç.
+Y,RECOMMEND lightning resist
+B,and cold resist with physical mitigation

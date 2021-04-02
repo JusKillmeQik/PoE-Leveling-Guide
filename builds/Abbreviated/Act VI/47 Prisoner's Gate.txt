@@ -1,8 +1,0 @@
-+ Get WP
-> Valley of the Fire Drinker
-+ Start fight with Abberath
-> The Cloven Pass
-> Valley of the Fire Drinker
-+ Kill Abberath
-< "The Cloven One" (Bestel)
-> The Western Forest

@@ -1,5 +1,0 @@
-Wall-follow the left/up side for The Dread Thicket.
--> Go to the Dread Thicket.
------------
-Wall-follow the right side for The Causeway.
--> Go to the Causeway.

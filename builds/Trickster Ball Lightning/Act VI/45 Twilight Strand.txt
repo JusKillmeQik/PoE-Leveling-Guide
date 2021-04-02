@@ -1,7 +1,0 @@
-Go left and clear zone
-It opens Lilly's GEM shop.
--> Logout.
-Buy all needed gems:
-1. High-Impact Mine supp
-2. Inspiration
-3. Slower Projectile

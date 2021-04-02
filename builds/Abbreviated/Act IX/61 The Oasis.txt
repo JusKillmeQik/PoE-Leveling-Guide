@@ -1,6 +1,0 @@
-> The Sand Pit
-+ Damage Shakari
-> The Swallowing Sands
-+ Kill Shakari
-< "Queen of the Sands" (Irasha)
-> The Foothills

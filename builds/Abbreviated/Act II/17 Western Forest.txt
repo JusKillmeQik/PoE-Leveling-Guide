@@ -1,7 +1,0 @@
-+ Get WP
-+ Kill Blackguards and open the Blocked Pass (SW)
-> Town Act 1
-< "The Way Forward" (Bestel)
-> Western Forest
-+ Kill Alira
-> Weaver's Chambers

@@ -1,6 +1,0 @@
-Find multiple quest items in corners of the zone
-Go back to Waypoint.
--> TP to Town.
--> Go to your portal.
-__________________
-R,CRAFT - Accuracy

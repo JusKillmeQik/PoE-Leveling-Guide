@@ -1,2 +1,0 @@
-+ Find 3 eggs (use rivers to find next egg)
-> The Submerged Passage

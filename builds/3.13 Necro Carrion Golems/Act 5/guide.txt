@@ -1,0 +1,7 @@
+﻿B,Service to Science:  Passive
+Justicar Casticus:   Silver Flask
+B,Kitava's Torments:   Passive
+
+R,Tips: 
+ Raise Spectre: 2x Slave Driver (Act 5: Control Blocks)
+ Complete Lab: Necro - Commander of Darkness

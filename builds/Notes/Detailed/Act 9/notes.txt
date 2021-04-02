@@ -1,0 +1,100 @@
+﻿zone:Blood Aqueduct
+Go to the top left
+Cross the bridges on dead ends
+> Proceed to Highgate
+Go right and
+> Proceed to the Descent
+_______________
+G, Nice time to farm exp if you're not 60
+If you're fast enough here at league start,
+makes sense to farm a bit more of this zone
+
+zone:The Descent
+Go up right to the supply hoist
+Then down left to another hoist
+Then up right to The Vastiri Desert
+> Go to Vastiri Desert
+
+zone:Vastiri Desert
+Go right to the Waypoint
+< Find the Chest with Mummies
+Go right to (2) for The Oasis
+Then get the quest item in town
+> Enter Oasis
+---------------
+Then top (1) for the Foothills
+> Proceed to the Foothills
+_______________
+G,CRAFT - Attack/Cast speed
+
+zone:The Oasis
+Left or right wall follow, based on bottom or top being the dead end at the entrance
+< Kill boss and Logout
+> TP to the Vastiri Desert
+_______________
+R,RECOMMEND physical mitigation
+
+zone:The Foothills
+Go top right first
+B,Don't forget to touch the Waypoint
+> Go right to The Boiling Lake (1)
+---------------
+Find big Centaur (up from waypoint)
+Kill him and pick up a quest item
+Go up to (2) for The Tunnel
+> Proceed to The Tunnel
+
+zone:Boiling Lake
+Go to the top right of zone
+If you spot petrified men you are close
+< Kill the boss and Logout
+> TP to The Foothills
+Go to the top left corner of the zone
+_______________
+G,CRAFT - Spell damage
+
+zone:The Tunnel
+Go up and left for Trial
+Then go to the right and up the path
+Activate Waypoint
+> Proceed to the Quarry
+_______________
+G,TRIAL - Blade sentries
+G,CRAFT - All attributes
+
+zone:The Quarry
+Activate Waypoint at center
+Go right side
+> Proceed to Refinery
+---------------
+Go left side (probably left up)
+> Proceed to Shrine of the Winds
+< Kill the boss and Logout
+Get Rewards
+> TP to the Quarry
+Talk to Sin and unlock the next zone
+> Proceed to the Belly of the Beast
+_______________
+G,CRAFT - Physical damage
+R,RECOMMEND physical mitigation
+3,000+ EHP and Movement skills
+
+zone:The Refinery
+Follow the cart tracks to the building top left for Boss
+< Kill the Boss and Logout
+> TP to The Quarry
+_______________
+Y,RECOMMEND lightning resist
+
+zone:Belly of the Beast
+Head top left in this zone and the next
+> Proceed to Rotting Core
+
+zone:Rotting Core
+Kill Doedre, Maligaro, and Shavronne again
+Enter the Black Heart
+Kill the Depraved Trinity
+> Go to Act 10
+_______________
+Y,RECOMMEND lightning resist
+3,200+ EHP and fast movement skill

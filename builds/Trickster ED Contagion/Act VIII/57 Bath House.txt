@@ -1,3 +1,0 @@
-The exit (1) is always on the right side. Save Yugul (2) for later
-G,TRIAL - Furnace traps
-R,CRAFT - Flask duration

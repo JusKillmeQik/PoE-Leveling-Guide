@@ -1,0 +1,115 @@
+﻿zone:Broken Bridge
+Find the locket for an extra Utility flask
+Follow the road to the left to the exit
+> Go to the Crossroads
+
+zone:The Crossroads
+B,Don’t forget the Waypoint
+Go right down from Waypoint to (1) The Fellshrine Ruins
+> Proceed to Fellshrine Ruins
+---------------
+Go left from Waypoint to (2) The Chamber of Sins
+> Proceed to The Chamber of Sins
+
+zone:Fellshrine Ruins
+Follow the road
+Go down right until the end 
+Then go up right
+> Go to the Crypt
+
+zone:The Crypt
+Open the sarcophagus for Crypt level 2
+Manually switch to Crypt 2 layout
+> Go to the Crypt 2
+_______________
+G,TRIAL - Spinning blades
+G,CRAFT - Damage over time
+
+zone:The Crypt 2
+Find the map
+< Logout
+> TP to The Crossroads
+
+zone:Chamber of Sins Level 1
+Loop around to the center, then activate the Waypoint
+Use your map from the Crypt in the map device
+> Go through the portals
+---------------
+After killing Maligaro
+Go through the hall behind the Waypoint to find the exit
+> Go To Chamber Level 2
+_______________
+G,CRAFT - Lightning damage
+
+zone:Maligaro's Sanctum
+Follow the edges of the zone, and cross the bridges you encounter until you find the arena (Maligaro's Workshop)
+B,Use a portal scroll before the fight 
+Kill the boss
+> Go back to portal out to Silk
+_______________
+Y,RECOMMEND lightning resist
+
+zone:Chamber of Sins Level 2
+Go to the top right side until you find the narrow long hallway
+If you encounter a dead end when going to the top right, do a right hand wall-follow instead
+Loop clockwise around the final room
+Click the wall to reveal the exit
+> Go to the Den
+_______________
+G,TRIAL - Sawblades (left side)
+G,CRAFT - Mana regen
+
+zone:The Den
+Go to the top left or right to find the exit
+> Go to The Ashen Fields
+
+zone:Ashen Fields
+Follow the road down to the left
+Kill Greust
+> Go to the Northern Forest
+_______________
+R,RECOMMEND Bleed removal
+
+zone:Northern Forest
+Wall-follow the left/up side for The Dread Thicket
+> Go to the Dread Thicket
+---------------
+Wall-follow the right side for The Causeway
+> Go to the Causeway
+
+zone:Dread Thicket
+Explore the zone and find the fireflies
+Find a cave
+> Go to the Den of Despair
+Kill Gruthkul
+---------------
+> Go back to Thicket
+Finish collecting fireflies
+> Go to the Northern Forest
+_______________
+G,CRAFT - Fire damage
+
+zone:The Causeway
+Go top right to the exit
+Loot Kishara's star at exit
+> Go to Vaal City
+_______________
+G,CRAFT - Cold damage
+
+zone:Vaal City
+Find and follow the thick walls to guide you to the exit
+Activate Waypoint
+> Go to Town
+Take all rewards
+> Go back to Vaal City
+> Proceed to the Temple of Decay
+
+zone:Temple of Decay
+Long zone with multiple levels
+Go diagonally to exits
+> Go to Level 2
+Kill boss
+> Go to act 8
+_______________
+G,CRAFT - Accuracy
+Y,RECOMMEND lightning resist

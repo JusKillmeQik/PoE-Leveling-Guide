@@ -1,6 +1,0 @@
-R, Skip Fairgraves.
-Left side first.
-Usually left side, Sulphite is down some stairs.
-Pick up Sulphite.
--> Logout.
--> Go to Battlefronts again.

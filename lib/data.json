@@ -1,7 +1,7 @@
 {
 	"zones" : [
 		{	"default" : "01 Twilight Strand",
-			"act" : "Act I",
+			"act" : "Act 1",
 			"part" : "Part 1",
 			"list" : [
 				"01 Twilight Strand",
@@ -22,7 +22,7 @@
 			]
 		},
 		{	"default" : "13 Southern Forest",
-			"act" : "Act II",
+			"act" : "Act 2",
 			"part" : "Part 1",
 			"list" : [
 				"13 Southern Forest",
@@ -46,7 +46,7 @@
 			]
 		},
 		{	"default" : "23 City of Sarn",
-			"act" : "Act III",
+			"act" : "Act 3",
 			"part" : "Part 1",
 			"list" : [
 				"23 City of Sarn",
@@ -70,7 +70,7 @@
 			]
 		},
 		{	"default" : "33 The Aqueduct",
-			"act" : "Act IV",
+			"act" : "Act 4",
 			"part" : "Part 1",
 			"list" : [
 				"33 The Aqueduct",
@@ -89,7 +89,7 @@
 			]
 		},
 		{	"default" : "41 Slave Pens",
-			"act" : "Act V",
+			"act" : "Act 5",
 			"part" : "Part 1",
 			"list" : [
 				"41 Slave Pens",
@@ -105,7 +105,7 @@
 			]
 		},
 		{	"default" : "45 Twilight Strand",
-			"act" : "Act VI",
+			"act" : "Act 6",
 			"part" : "Part 2",
 			"list" : [
 				"45 Twilight Strand",
@@ -127,7 +127,7 @@
 			]
 		},
 		{	"default" : "50 Broken Bridge",
-			"act" : "Act VII",
+			"act" : "Act 7",
 			"part" : "Part 2",
 			"list" : [
 				"50 Broken Bridge",
@@ -148,7 +148,7 @@
 			]
 		},
 		{	"default" : "55 Sarn Ramparts",
-			"act" : "Act VIII",
+			"act" : "Act 8",
 			"part" : "Part 2",
 			"list" : [
 				"55 Sarn Ramparts",
@@ -170,7 +170,7 @@
 			]
 		},
 		{	"default" : "61 Blood Aqueduct",
-			"act" : "Act IX",
+			"act" : "Act 9",
 			"part" : "Part 2",
 			"list" : [
 				"61 Blood Aqueduct",
@@ -187,7 +187,7 @@
 			]
 		},
 		{	"default" : "64 Cathedral Rooftop",
-			"act" : "Act X",
+			"act" : "Act 10",
 			"part" : "Part 2",
 			"list" : [
 				"64 Cathedral Rooftop",
@@ -201,158 +201,30 @@
 				"67 Feeding Trough"
 			]
 		},
-		{	"default" : "68 Map",
-			"act" : "Tier 1",
-			"part" : "Maps",
+		{	"default" : "68 The Templar Laboratory",
+			"act" : "Act 11",
+			"part" : "Part 2",
 			"list" : [
-				"68 Map"
-			]
-		},
-		{	"default" : "69 Map",
-			"act" : "Tier 2",
-			"part" : "Maps",
-			"list" : [
-				"69 Map"
-			]
-		},
-		{	"default" : "70 Map",
-			"act" : "Tier 3",
-			"part" : "Maps",
-			"list" : [
-				"70 Map"
-			]
-		},
-		{	"default" : "71 Map",
-			"act" : "Tier 4",
-			"part" : "Maps",
-			"list" : [
-				"71 Map"
-			]
-		},
-		{	"default" : "72 Map",
-			"act" : "Tier 5",
-			"part" : "Maps",
-			"list" : [
-				"72 Map"
-			]
-		},
-		{	"default" : "73 Map",
-			"act" : "Tier 6",
-			"part" : "Maps",
-			"list" : [
-				"73 Map"
-			]
-		},
-		{	"default" : "74 Map",
-			"act" : "Tier 7",
-			"part" : "Maps",
-			"list" : [
-				"74 Map"
-			]
-		},
-		{	"default" : "75 Map",
-			"act" : "Tier 8",
-			"part" : "Maps",
-			"list" : [
-				"75 Map"
-			]
-		},
-		{	"default" : "76 Map",
-			"act" : "Tier 9",
-			"part" : "Maps",
-			"list" : [
-				"76 Map"
-			]
-		},
-		{	"default" : "77 Map",
-			"act" : "Tier 10",
-			"part" : "Maps",
-			"list" : [
-				"77 Map"
-			]
-		},
-		{	"default" : "78 Map",
-			"act" : "Tier 11",
-			"part" : "Maps",
-			"list" : [
-				"78 Map"
-			]
-		},
-		{	"default" : "79 Map",
-			"act" : "Tier 12",
-			"part" : "Maps",
-			"list" : [
-				"79 Map"
-			]
-		},
-		{	"default" : "80 Map",
-			"act" : "Tier 13",
-			"part" : "Maps",
-			"list" : [
-				"80 Map"
-			]
-		},
-		{	"default" : "81 Map",
-			"act" : "Tier 14",
-			"part" : "Maps",
-			"list" : [
-				"81 Map"
-			]
-		},
-		{	"default" : "82 Map",
-			"act" : "Tier 15",
-			"part" : "Maps",
-			"list" : [
-				"82 Map"
-			]
-		},
-		{	"default" : "83 Map",
-			"act" : "Tier 16",
-			"part" : "Maps",
-			"list" : [
-				"83 Map"
-			]
-		},
-		{	"default" : "84 Map",
-			"act" : "Tier 17",
-			"part" : "Maps",
-			"list" : [
-				"84 Map"
+				"68 The Templar Laboratory",
+				"68 The Fallen Courts",
+				"68 The Haunted Reliquary"
 			]
 		}
 	],
 	"p1acts" : [
-		"Act I",
-		"Act II",
-		"Act III",
-		"Act IV",
-		"Act V"
+		"Act 1",
+		"Act 2",
+		"Act 3",
+		"Act 4",
+		"Act 5"
 	],
 	"p2acts" : [
-		"Act VI",
-		"Act VII",
-		"Act VIII",
-		"Act IX",
-		"Act X"
-	],
-	"maps" : [
-		"Tier 1",
-		"Tier 2",
-		"Tier 3",
-		"Tier 4",
-		"Tier 5",
-		"Tier 6",
-		"Tier 7",
-		"Tier 8",
-		"Tier 9",
-		"Tier 10",
-		"Tier 11",
-		"Tier 12",
-		"Tier 13",
-		"Tier 14",
-		"Tier 15",
-		"Tier 16",
-		"Tier 17"
+		"Act 6",
+		"Act 7",
+		"Act 8",
+		"Act 9",
+		"Act 10",
+		"Act 11"
 	],
 	"parts" : [
 		"Part 1",

@@ -1,6 +1,0 @@
-Go up and right for Waypoint.
-Move up and left for entrance to Lunaris Temple first.
--> Proceed to Lunaris Temple.
----------------
-Go down and right
--> Proceed to the harbour Bridge.

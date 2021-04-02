@@ -1,0 +1,72 @@
+﻿zone:Broken Bridge
+Çıkışa kadar yolu takip et. The Crossroads'a gir.
+
+zone:The Crossroads
+B,Waypoint almayı unutma.
+Sola doğru git wpden aşağıya git. (1)The Fellshrine Ruins'a gir.
+Tekrar gelişinde; Wpden yukarıya doğru çık. (2)The Chamber of Sins 1'e gir.
+
+zone:Fellshrine Ruins
+Yolu takip edip aşağı sağa git. Sonrasında sağ üstte çık. The Crypt 1'e gir.
+
+zone:The Crypt
+Trial tamamla. Daha sonra merdivenler ile The Crypt 2'ye geç.
+Addonu manual olarak Crypt 2'ye çevir.
+G,TRIAL - Spinning blades
+G,CRAFT - Damage over time
+
+zone:The Crypt 2
+Görev itemini bulduktan sonra The Crossroads'a dönmek için logout at.
+
+zone:Chamber of Sins Level 1
+Bölgenin ortasında wpyi bul. Map device'a mapi yerleştir.
+Maligaro’s Sanctum'a gir.
+Geri döndüğünde; Görevi teslim et. Wpnin yakın olduğu yoldan devam et. 
+Chamber of Sins 2'ye gir.
+G,CRAFT - Lightning damage
+
+zone:Maligaro's Sanctum
+Köşeleri takip ederek ilerle köprüyü geçtikten sonra boss alanına gir(Maligaro's Workshop)
+Bossu öldürdürüp görev itemını aldıktan sonra portal ile geri dön.
+B,Boss fighttan önce portal aç.
+Y,RECOMMEND lightning resist
+
+zone:Chamber of Sins Level 2
+Trial tamamla. Sağ üstte git yolun karşısından geri gel Secret Passage'i aç. The Den'e gir.
+G,TRIAL - Sawblades (left side)
+G,CRAFT - Mana regen
+
+zone:The Den
+Düz layout. The Ashen Fields'a geç.
+
+zone:Ashen Fields
+Sol yolu takip et wp yakın. The Fortress Encampment boss alanına gir.
+Greustu öldür. Açılan kapıdan The Northern Forest'a geç.
+R,RECOMMEND physical mitigation, bleed removal
+
+zone:Northern Forest
+İlk olarak yukarı sol köşeyi takip ederek (1)The Dread Thicke'a gir.
+İkinci gelişinde; Bu sefer sağ üstte çık. (2)The Causeway'e gir.
+
+zone:Dread Thicket
+Bölgedeki tüm Firefly ları topla.
+Bölgede Den of Despair boss alanına gir. Gruthkul'u öldür.(passive)
+The Northern Forest wpsine dönmek için logout at.
+G,CRAFT - Fire damage
+RECOMMEND physical mitigation
+
+zone:The Causeway
+Yukarı sağa git. Bölgeden çıkmadan önce Kishara’s Lockbox'ı lootla.
+The Vaal City'e geç.
+G,CRAFT - Cold damage
+
+zone:Vaal City
+Kalın duvarları takip et. Wpyi aç Yeena ile konuş yeni bölgeyi aç.
+The Temple of Decay'a gir.
+
+zone:Temple of Decay
+Oldukça uzun layout merdivenler ile boss alanına kadar ulaş.
+Act final bossu Arakaali yi öldür.(Pantheon)
+Act 8'e geç
+G,CRAFT - Accuracy
+Y,RECOMMEND lightning resist

@@ -1,0 +1,140 @@
+﻿zone:City of Sarn
+Don't forget to talk to Clarissa
+> Sarn a bit up and left from Clarissa
+> Go right to Slums without talking to NPCs
+
+zone:The Slums
+Find the grates to the sewers, then take the stairs down, follow until stairs up, then straight line to The Crematorium
+> Go to Crematorium
+---------------
+After you  have the keys
+> Go to The Sewers
+
+zone:The Crematorium
+Going left generally has a high chance of success
+Y,Lightining resistance vs Piety is recommended
+< Kill her and Logout
+---------------
++ Check Clarissa for 2x +16 res rings and make it rare with essences
+Pick up the Keys to the Sewers
+---------------
+> Go back to Slums
+_______________
+G,TRIAL - Furnace Traps
+G,CRAFT - Fire damage
+
+zone:The Sewers
+Pick up the first bust before the Waypoint
+B,Don't forget the Waypoint
+After it is another
+Right and down there is a last bust
+Up and left is the exit
+> Go to Marketplace
+---------------
+Burn the Immortal Shit
+> Proceed to Ebony Barracks
+_______________
+G,CRAFT - Physical damage
+
+zone:The Marketplace
+Usually up and right
+Go through the statue hall, get the Waypoint near The Catacombs
+Skip the quest item it's bad
+> Go to The Catacombs
+---------------
+Then right hand wall follow to find the exit
+> Go to The Battlefront
+_______________
+G,TRIAL in Catacombs - Blade Sentries
+
+zone:The Catacombs
+_______________
+G,TRIAL - Blade sentries
+G,CRAFT - Ele Damage w/ Attack
+
+zone:The Battlefront
+Go up and a bit left to Waypoint.
+Pick up a Spool a bit left from Waypoint.
+> Go to The Docs
+---------------
+Move right and up looking for Solaris temple
+Lvl 26 is good at this point
+> Go to Solaris Temple
+
+zone:The Docks
+Skip Fairgraves
+Left side first
+Find the Sulphite which is down some stairs
+< Logout
+> Go to Battlefronts again
+
+zone:Solaris Temple Level 1
+Follow the carpet until the exit
+> Proceed to Solaris level 2
+
+zone:Solaris Temple Level 2
+Follow the carpet but it can have dead ends
+Talk to Dialla
+Check your stats and figure out what amulet you need more
+> TP to Sewers Waypoint
+_______________
+G,CRAFT - Cold damage
+
+zone:Ebony Barracks
+Go up for Lunaris temple
+B,Don't forget the Waypoint
+Kill Gravicius
+> Proceed to Lunaris Temple
+---------------
+After Lunaris temple
+Go right and a bit up
+> Go to Imperial Gardens
+
+zone:Lunaris Temple Level 1
+Follow the carpet, don’t forget the Waypoint
+
+zone:Lunaris Temple Level 2
+Layout differs a lot, if you see stairs, go up these 
+Find more stairs, until a larger area
+There will be carts on both sides, pick the side where there is only one
+< Kill boss and Logout
++ Look for 4-link at vendor
+> Go to Ebony Barracks
+_______________
+Y,RECOMMEND lightning resist
+G,CRAFT - Lightning damage
+
+zone:Imperial Gardens
+Follow the road
+B,Activate Waypoint
+Go up left for a Trial
+< Logout
+> TP to Imperial Gardens (faster then walking back)
+We are skipping library since we don't need it now
+From Waypoint go to the right and then up
+> Proceed to Sceptre of God
+_______________
+G,TRIAL - Dart Traps
+G,CRAFT - All attributes
+
+zone:The Library
+Siosa will give you a quest here for all current gems
+He is in the middle of the zone, near the Waypoint
+
+zone:The Archives
+The golden pages are randomly spread across the whole zone
+< Logout after you have all 4
+> TP back to the The Library with currency in your inventory
+
+zone:Sceptre of God
+Exits spawn in a random corner, can often be found by travelling diagonally
+> Go to Upper Sceptre of God
+
+zone:Upper Sceptre of God
+Exits spawn in a random corner
+Go up diagonally until you spot barricades at exit
+Kill the boss
+> Proceed to Act 4
+_______________
+B,RECOMMEND cold resist
+Y,and lightning resist

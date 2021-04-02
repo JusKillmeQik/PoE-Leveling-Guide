@@ -1,0 +1,95 @@
+watchstones:0
+`Start by doing all of your T1 maps, starting with Valdo's Rest and moving counter-clockwise to Glennach Cairns, Alch all of your maps
+`Then focus on getting all of your Glennach Cairns maps done to get to New Vastir, always prioritizing higher tier maps
+`If you run out of Glennach Cairns maps move clockwise around the middle regions doing the highest tier maps you have first
+`Any time you get a Glennach Cairns map or New Vastir map, make sure to run it until you've done 3 maps in New Vastir, then talk to Kirac and kill the Conqueror in New Vastir for your first watchstone!
+
+watchstones:1
+`If you killed a Conqueror in a region other than New Vastir, that's fine but don't socket a watchstone in Glennach Cairns until New Vastir is done
+`Then focus on getting all of your Tirn's End maps done to get to Haewark Hamlet, always prioritizing higher tier maps
+`If you run out of Tirn's End maps move clockwise around the middle regions doing the highest tier maps you have first
+`Any time you get a Tirn's End map or Haewark Hamlet map, make sure to run it until you've done 3 maps in Haewark Hamlet, then talk to Kirac and kill the Conqueror in Haewark Hamlet for your second watchstone!
+
+watchstones:2
+`Do not socket your second watchstone yet, you can store it on the side of your atlas
+`Now focus on getting all of your Lex Proxima maps done to get to Lex Ejoris, always prioritizing higher tier maps
+`If you run out of Lex Proxima maps you can use Horizon Orbs to turn your high tier maps into Lex Ejoris and Lira Arthain maps
+`Any time you get a Lex Proxima map or Lex Ejoris map, make sure to run it until you've done 3 maps in Lex Ejoris, then talk to Kirac and kill the Conqueror in Lex Ejoris for your thrid watchstone!
+
+watchstones:3
+`Now socket your second and third watchstone in Tirn's End
+`Next focus on getting more of your Lex Proxima maps done to get to Lira Arthain, always prioritizing higher tier maps
+`If you run out of Lex Proxima maps do Valdo's Rest maps towards Lira Arthain
+`Any time you get a Lira Arthain map, make sure to run it until you've done 3 maps, then talk to Kirac and kill the Conqueror in Lira Arthain for your fourth watchstone!
+
+watchstones:4
+`Now that you've completed the outter regions, you are going to leap frog within the inner regions starting at Glennach Cairns
+`With 1 stone socketed in Glennach Cairns you will kill all 4 conquerers, doing the highest tier maps you have and building a pool of Tirn's End maps
+`Do not run any maps in Tirn's End, but you can run maps in other regions if you run out of Glennach Cairns maps, make sure you are Alching to sustain maps
+
+watchstones:6
+`Now that you have 6 watchstones place the 3 in storage into Lex Proxima
+`Continue running maps in Glennach Cairns until you have killed all 4 conquerors
+`Do not run any maps in Tirn's End, but you can run maps in other regions if you run out of Glennach Cairns maps, make sure you are Alching to sustain maps
+
+watchstones:8
+`Once all of the conquerors have been killed in Glennach Cairns unsocket the stone there to stop maps from dropping in that region
+`Start running maps in Tirn's End with 2 stones socketed in that region, doing the highest tier maps you have
+`Do not run any maps in Lex Proxima, but you can run maps in other regions if you run out of Tirn's End maps, make sure you are Alching and Vaaling now to sustain maps
+
+watchstones:9
+`You now have enough watchtones to socket 4 in Valdo's Rest
+`Continue running maps in Tirn's End until you have killed all 4 conquerors
+`Do not run any maps in Lex Proxima, but you can run maps in other regions if you run out of Tirn's End maps, make sure you are Alching and Vaaling now to sustain maps
+
+watchstones:12
+`Once all of the conquerors have been killed in Tirn's End unsocket the stones there to stop maps from dropping in that region
+`Start running maps in Lex Proxima with 3 stones socketed in that region, doing the highest tier maps you have
+`Do not run any maps in Valdo's Rest, but you can run maps in other regions if you run out of Lex Proxima maps, make sure you are Chiseling and Alching and Vaaling now to sustain maps
+
+watchstones:16
+`Once all of the conquerors have been killed in Lex Proxima unsocket the stones there to stop maps from dropping in that region
+`Start running maps in Valdo's Rest with 4 stones socketed in that region, doing the highest tier maps you have
+`Do not run any maps in Lira Arthain, but you can run maps in other regions if you run out of Valdo's Rest maps, make sure you are Chiseling and Alching and Vaaling as well as using sextants on the watchstones now to sustain maps
+
+watchstones:17
+`Once you have killed the first conqueror in Valdo's Rest, fill out the atlas to get a higher awakener level
+`4 stones go in Valdo's Rest and your next region Lira Arthain, 2 stones go in the other middle regions and 1 stone goes in the other outer regions
+`Continue running maps in Valdo's Rest doing the highest tier maps you have
+`Do not run any maps in Lira Arthain, but you can run maps in other regions if you run out of Valdo's Rest maps, make sure you are Chiseling and Alching and Vaaling as well as using sextants on the watchstones now to sustain maps
+
+watchstones:20
+`Once all of the conquerors have been killed in Valdo's Rest unsocket 2 stones there to stop maps from dropping in that region
+`Socket 4 stones in the next region you will run Lex Ejoris, 2 stones go in all of the other regions
+`Start running maps in Lira Arthain with 4 stones socketed in that region, doing the highest tier maps you have
+`Do not run any maps in Lex Ejoris, but you can run maps in other regions if you run out of Lira Arthain maps, make sure you are Chiseling and Alching and Vaaling as well as using sextants on the watchstones now to sustain maps
+
+watchstones:22
+`Once you have killed 2 more conquerors in Lira Arthain, for 3 total killed here, unsocket 2 stones there to stop maps from dropping in that region
+`Socket those 2 stones in the next region you will run so Haewark Hamlet now has 4 stones, 2 stones stay in all of the other regions
+`Start running maps in Lex Ejoris with 4 stones socketed in that region, doing the highest tier maps you have
+`Do not run any maps in Haewark Hamlet, but you can run maps in other regions if you run out of Lex Ejoris maps, make sure you are Chiseling and Alching and Vaaling as well as using sextants on the watchstones now to sustain maps
+
+watchstones:24
+`Once you have killed 2 more conquerors in Lex Ejoris, for 3 total killed here, unsocket 2 stones there to stop maps from dropping in that region
+`Socket those 2 stones in the next region you will run so New Vastir now has 4 stones, 2 stones stay in all of the other regions
+`Start running maps in Haewark Hamlet with 4 stones socketed in that region, doing the highest tier maps you have
+`Do not run any maps in New Vastir, but you can run maps in other regions if you run out of Haewark Hamlet maps, make sure you are Chiseling and Alching and Vaaling as well as using sextants on the watchstones now to sustain maps
+`At this point you technically have enough stones to farm any single map you want at awakener level 6, if you just want to target farm a T16 put 4 stones in that region and less than 4 in every other region and start going for the atlas completion bonus
+
+watchstones:26
+`Once you have killed 2 more conquerors in Haewark Hamlet, leave the stones as they are and start running maps in New Vastir
+`New Vastir should already have 4 stones socketed in that region, continue doing the highest tier maps you have
+`Do not run any maps in Haewark Hamlet, but you can run maps in other regions if you run out of New Vastir maps, make sure you are Chiseling and Alching and Vaaling as well as using sextants on the watchstones now to sustain maps
+`At this point you technically have enough stones to farm any single map you want at awakener level 6, if you just want to target farm a T16 put 4 stones in that region and less than 4 in every other region and start going for the atlas completion bonus
+
+watchstones:28
+`At this point you have killed all of the conquerors in the outer regions 3 times, so each conqueror will appear once more in each outter region
+`Socket 4 stones in each of the outter regions and 3 stones in the inner regions
+`You can run any region you want, but you should focus on completing maps you have not done rather than chasing conquerors to improve your sustain
+`You should have enough of a map pool now to continue running outter regions and finish off the last conquerors
+
+watchstones:32
+`Congratulations, you got all the watchstones!
+`The conquerors will spawn anywhere with 4 stones now, so you can farm them and Sirus at awakener level 8 freely
+`By now you should be trying to replace all of them with Ivory/Chromium/Platinum/Titanium stones to improve your farming

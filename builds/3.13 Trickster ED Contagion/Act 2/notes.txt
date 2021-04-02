@@ -1,0 +1,65 @@
+﻿zone:Southern Forest
+Follow the right wall
+
+zone:Old Fields
+Follow the road
+Leave a portal at The Den
+
+zone:The Den
+Kill Great White Beast and Logout
+
+zone:The Crossroads
+Follow the road to the waypoint
+Go back to town and portal to The Den for Quicksilver Flask
+Then continue north for the Chamber of Sins
+When you return go east to kill Kraityn
+Finally go south through the Fellshrine Ruins to the trial in The Crypt
+
+zone:Chamber of Sins Level 1
+Circle to the center of the zone. The hallway next to the Waypoint always leads to the next zone
+
+zone:Chamber of Sins Level 2
+Boss is down and right, trial is top left
+G,TRIAL - Sawblades
+
+zone:Broken Bridge
+Follow the road to the right
+
+zone:Fellshrine Ruins
+Follow the road to The Crypt
+
+zone:The Crypt
+G,TRIAL - Spinning blades
+
+zone:The Riverways
+Follow the road and use mobility skills to jump over bridges, activate Waypoint then continue on the road to Western Forest
+When you return, the entrance to the Wetlands is always on the opposite side of the road near the Waypoint
+
+zone:Western Forest
+Alira is on the side of the Waypoint where the road has a broken section. The Weaver's Chambers can be found on the opposite side of the road from Alira, with webbed trees. Follow the road for The Way Forward quest
+
+zone:Weaver's Chambers
+Go left when the left path spawns, otherwise loop around right side
+Kill Weaver for the reward and logout, then claim The Way Forward skillpoint back in Act 1
+
+zone:The Wetlands
+Kill Oak in center, then go to the left side until the Waypoint is visible with the passage near it
+
+zone:Vaal Ruins
+Try to determine the main direction then zig and zag accordingly through the ruins
+
+zone:Northern Forest
+Go to the top right by following the shoreline
+Do not go in the Dread Thicket
+
+zone:Dread Thicket
+This zone should be skipped to save time
+
+zone:The Caverns
+Pretty much guessing where the exit spawned
+G,CRAFT - Movement speed
+
+zone:Ancient Pyramid
+Exits are usually diagonal from entrance
+G,CRAFT - Spell damage
+Y,RECOMMEND lightning resist

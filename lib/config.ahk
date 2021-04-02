@@ -1,11 +1,14 @@
-﻿global overlayFolder := "Default"
+﻿global overlayFolder := "3.13 Gladiator Bleed Bow"
+global notesFolder := "Default"
 
 global points := 9
 global font := "Consolas"
-global spacingHeight := 1.15
-global spacingWidth := 3
+global lineSpacing := 1.2
+global gemSpacing := 2
+global boldness := 0
+global imageSizeMultiplier := .5
 global maxNotesWidth := 40
-global maxGuideWidth := 40
+global maxGuideWidth := 60
 global maxLinksWidth := 40
 
 global guideXoffset := .78
@@ -14,6 +17,8 @@ global levelXoffset := .589
 global levelYoffset := .955
 global gemsXoffset := .005
 global gemsYoffset := .180
+global imagesXoffset := 0
+global imagesYoffset := 0
 
 global treeSide := "Right"
 global treeName := "tree.jpg"
@@ -22,12 +27,14 @@ global startHidden := "False"
 global displayTimeout := 5
 global persistText := "False"
 global hideGuide := "False"
+global hideNotes := "False"
 global expOrPen := "Exp"
 
 global backgroundColor := "black"
 global redColor := "FF4040"
 global greenColor := "2ECC40"
 global blueColor := "0080FF"
+global yellowColor := "F0E130"
 global whiteColor := "white"
 
 global KeyHideLayout := "!F1"
@@ -41,7 +48,7 @@ global KeyShowSyndicate := "F5"
 global KeyShowTemple := "F6"
 global KeyShowHeist := "F7"
 
-global KeyOnDeath := "+^s"
+global KeyOnDeath := ""
 
 global KeySettings := "F10"
 
@@ -58,7 +65,7 @@ global active_toggle := 1
 ;State
 global numPart := 1
 global CurrentPart = "Part 1"
-global CurrentAct = "Act I"
+global CurrentAct = "Act 1"
 global CurrentZone = "01 Twilight Strand"
 global CurrentLevel = "01"
 global CurrentGem = "02"
@@ -74,39 +81,14 @@ ifnotexist,%ININame%
 ;IniRead, OutputVar, Filename, Section, Key , Default
 
 IniRead, overlayFolder, %ININame%, Build, overlayFolder, %overlayFolder%
+IniRead, notesFolder, %ININame%, Build, notesFolder, %notesFolder%
 
 IniRead, points, %ININame%, Size, points, %points%
 IniRead, font, %ININame%, Size, font, %font%
-
-;Fonts are stupid and different sizes, these adjustments should make most text fit
-If (font = "Arial") {
-  spacingHeight := 1.25
-  spacingWidth := 2.5
-} Else If (font = "Corbel") {
-  spacingHeight := 1.15
-  spacingWidth := 0
-} Else If (font = "Comic Sans MS") {
-  spacingHeight := 1.4
-  spacingWidth := 2.5
-} Else If (font = "Consolas") {
-  spacingHeight := 1.15
-  spacingWidth := 3
-} Else If (font = "Georgia") {
-  spacingHeight := 1.25
-  spacingWidth := 2
-} Else If (font = "Segoe UI") {
-  spacingHeight := 1.25
-  spacingWidth := 1
-} Else If (font = "Times New Roman") {
-  spacingHeight := 1.25
-  spacingWidth := 1
-} Else If (font = "Verdana") {
-  spacingHeight := 1.15
-  spacingWidth := 3
-} Else {
-  spacingHeight := 1.15
-  spacingWidth := 3
-}
+IniRead, boldness, %ININame%, Size, boldness, %boldness%
+IniRead, imageSizeMultiplier, %ININame%, Size, imageSizeMultiplier, %imageSizeMultiplier%
+IniRead, lineSpacing, %ININame%, Size, lineSpacing, %lineSpacing%
+IniRead, gemSpacing, %ININame%, Size, gemSpacing, %gemSpacing%
 
 IniRead, maxNotesWidth, %ININame%, Size, maxNotesWidth, %maxNotesWidth%
 IniRead, maxGuideWidth, %ININame%, Size, maxGuideWidth, %maxGuideWidth%
@@ -118,6 +100,8 @@ IniRead, levelXoffset, %ININame%, Offset, levelXoffset, %levelXoffset%
 IniRead, levelYoffset, %ININame%, Offset, levelYoffset, %levelYoffset%
 IniRead, gemsXoffset, %ININame%, Offset, gemsXoffset, %gemsXoffset%
 IniRead, gemsYoffset, %ININame%, Offset, gemsYoffset, %gemsYoffset%
+IniRead, imagesXoffset, %ININame%, Offset, imagesXoffset, %imagesXoffset%
+IniRead, imagesYoffset, %ININame%, Offset, imagesYoffset, %imagesYoffset%
 
 IniRead, treeSide, %ININame%, Options, treeSide, %treeSide%
 IniRead, treeName, %ININame%, Options, treeName, %treeName%
@@ -126,6 +110,7 @@ IniRead, startHidden, %ININame%, Options, startHidden, %startHidden%
 IniRead, displayTimeout, %ININame%, Options, displayTimeout, %displayTimeout%
 IniRead, persistText, %ININame%, Options, persistText, %persistText%
 IniRead, hideGuide, %ININame%, Options, hideGuide, %hideGuide%
+IniRead, hideNotes, %ININame%, Options, hideNotes, %hideNotes%
 IniRead, expOrPen, %ININame%, Options, expOrPen, %expOrPen%
 
 If (startHidden = "True"){
@@ -138,6 +123,7 @@ IniRead, backgroundColor, %ININame%, Color, backgroundColor, %backgroundColor%
 IniRead, redColor, %ININame%, Color, redColor, %redColor%
 IniRead, greenColor, %ININame%, Color, greenColor, %greenColor%
 IniRead, blueColor, %ININame%, Color, blueColor, %blueColor%
+IniRead, yellowColor, %ININame%, Color, yellowColor, %yellowColor%
 IniRead, whiteColor, %ININame%, Color, whiteColor, %whiteColor%
 
 IniRead, KeySettings, %ININame%, ToggleKey, KeySettings, %KeySettings%
@@ -165,6 +151,39 @@ If (CurrentPart = "Part II") {
 }
 
 IniRead, CurrentAct, %INIMeta%, State, CurrentAct, %CurrentAct%
+
+;Backwards compatibility
+If (CurrentAct = "Act I") {
+  CurrentAct := "Act 1"
+}
+If (CurrentAct = "Act II") {
+  CurrentAct := "Act 2"
+}
+If (CurrentAct = "Act III") {
+  CurrentAct := "Act 3"
+}
+If (CurrentAct = "Act IV") {
+  CurrentAct := "Act 4"
+}
+If (CurrentAct = "Act V") {
+  CurrentAct := "Act 5"
+}
+If (CurrentAct = "Act VI") {
+  CurrentAct := "Act 6"
+}
+If (CurrentAct = "Act VII") {
+  CurrentAct := "Act 7"
+}
+If (CurrentAct = "Act VIII") {
+  CurrentAct := "Act 8"
+}
+If (CurrentAct = "Act IX") {
+  CurrentAct := "Act 9"
+}
+If (CurrentAct = "Act X") {
+  CurrentAct := "Act 10"
+}
+
 IniRead, CurrentZone, %INIMeta%, State, CurrentZone, %CurrentZone%
 IniRead, CurrentLevel, %INIMeta%, State, CurrentLevel, %CurrentLevel%
 IniRead, CurrentGem, %INIMeta%, State, CurrentGem, %CurrentGem%
@@ -189,9 +208,14 @@ WriteAll() {
   global
 	;IniWrite, Value, Filename, Section, Key
   IniWrite, %overlayFolder%, %ININame%, Build, overlayFolder
+  IniWrite, %notesFolder%, %ININame%, Build, notesFolder
 
   IniWrite, %points%, %ININame%, Size, points
   IniWrite, %font%, %ININame%, Size, font
+  IniWrite, %boldness%, %ININame%, Size, boldness
+  IniWrite, %imageSizeMultiplier%, %ININame%, Size, imageSizeMultiplier
+  IniWrite, %lineSpacing%, %ININame%, Size, lineSpacing
+  IniWrite, %gemSpacing%, %ININame%, Size, gemSpacing
   IniWrite, %maxNotesWidth%, %ININame%, Size, maxNotesWidth
   IniWrite, %maxGuideWidth%, %ININame%, Size, maxGuideWidth
   IniWrite, %maxLinksWidth%, %ININame%, Size, maxLinksWidth
@@ -202,6 +226,8 @@ WriteAll() {
   IniWrite, %levelYoffset%, %ININame%, Offset, levelYoffset
   IniWrite, %gemsXoffset%, %ININame%, Offset, gemsXoffset
   IniWrite, %gemsYoffset%, %ININame%, Offset, gemsYoffset
+  IniWrite, %imagesXoffset%, %ININame%, Offset, imagesXoffset
+  IniWrite, %imagesYoffset%, %ININame%, Offset, imagesoffset
 
   IniWrite, %treeSide%, %ININame%, Options, treeSide
   IniWrite, %treeName%, %ININame%, Options, treeName
@@ -210,12 +236,14 @@ WriteAll() {
   IniWrite, %displayTimeout%, %ININame%, Options, displayTimeout
   IniWrite, %persistText%, %ININame%, Options, persistText
   IniWrite, %hideGuide%, %ININame%, Options, hideGuide
+  IniWrite, %hideNotes%, %ININame%, Options, hideNotes
   IniWrite, %expOrPen%, %ININame%, Options, expOrPen
 
   IniWrite, %backgroundColor%, %ININame%, Color, backgroundColor
   IniWrite, %redColor%, %ININame%, Color, redColor
   IniWrite, %greenColor%, %ININame%, Color, greenColor
   IniWrite, %blueColor%, %ININame%, Color, blueColor
+  IniWrite, %yellowColor%, %ININame%, Color, yellowColor
   IniWrite, %whiteColor%, %ININame%, Color, whiteColor
   
   IniWrite, %KeySettings%, %ININame%, ToggleKey, KeySettings

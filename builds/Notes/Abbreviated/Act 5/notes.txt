@@ -1,0 +1,53 @@
+﻿zone:Slave Pens
++ Get WP
++ Kill Overseer Crow
+> Overseer's Tower
+< "Return to Oriath" (Lani)
+> The Control Blocks
+
+zone:Control Blocks
++ Find Miasmeter (experimental supplies)
+< "In Service to Science" (Vilenta)
++ Kill Justicar Casticus and take Eyes of Zeal
+> Oriath Square
+
+zone:Oriath Square
++ Get WP
+< "The Key to Freedom" (Lani)
+> Templar Courts Entrance
+
+zone:Templar Courts
+> The Chamber of Innocence
+
+zone:Chamber of Innocence
++ Get WP
+> The Sanctum of Innocence
++ Kill High Templar Avarius
+> The Chamber of Innocence
+> The Torched Courts
+
+zone:Torched Courts
+> The Ruined Square
+
+zone:Ruined Square
++ Get WP
+> The Reliquary
+~~~~
+> The Cathedral Rooftop
+
+zone:The Ossuary
++ Find Sign of Purity
+> The Ruined Square
+
+zone:The Reliquary
++ Find Kitava's Torments
+< "Kitava's Torments" (Lani)
+> The Ruined Square
+< "Death to Purity" (Lani)
+~~~~
+> The Ossuary
+
+zone:Cathedral Rooftop
+> The Cathedral Apex
++ Kill Kitava
+> Sail to Wraeclast

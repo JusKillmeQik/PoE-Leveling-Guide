@@ -1,0 +1,9 @@
+﻿B,Indomitable Spirit: Passive
+
+R,Tips: 
+ Craft +1 minion gem helmet
+   buy or find: 4-link helmet
+   sell: Orb of Alteration + Flask of Animation + Magic helmet
+ Craft Anti-Bleed flask
+   Menagerie -> Staunching mod for flask
+ Check Fire Res before entering Kaom's Dream

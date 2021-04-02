@@ -1,7 +1,0 @@
-Pick up the first bust before the Waypoint.
-After it is another.
-Right and Down there is a last bust.
-Up and right is exit.
--> Go to Marketplace.
-___________________________
-R,CRAFT - Physical damage

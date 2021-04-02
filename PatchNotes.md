@@ -1,5 +1,36 @@
 # Leveling Guide - Patch Notes
 
+### Ultimatum League
+
+* Combined all of the Act notes into a single file per Act
+  * This is a breaking change for old builds, but should make new builds easier to create
+* Added a Default notes section so most build guides don't need to add zone notes
+  * Most guides should just add a guide.txt for each act
+  * If you have custom notes for each zone they can be added to a specific guide, or globally now
+* Added gem icons to the gem setup so you can see what to pick up from quests/
+  * The size of the icon is based on the font size and line spacing
+* Added Ascendancies for the Aspirants' Trial
+* Added the Kirac Quest line to guide
+* Added a Guide for quickly collecting all 32 Watchstones
+* Added information for tracking the Conquerors and Watchstones on the Atlas
+* Added zone information for each Map
+  * Region, Layout Rating, Tileset, Boss Rating, Boss Names
+* Added the color yellow to notes
+* Updated the default levels for gems to more closely match when builds change
+* Added the ability to include text in the gem file names so you can tell what quest they are for
+  * i.e. "08 The Caged Brute.ini"
+
+#### Minor improvements
+
+* Added line spacing to gems and notes section
+* Added boldness to the font settings
+* Height and Width of all text is now based on exact spacing to take up less screen area
+* Control+PgDown can now be pressed to manually change zones when the tool cannot detect the change
+* Zone images can now be moved away from the Notes, but will stick to it by default
+* Zone images are now larger for higher resolution screens
+* Notes can now be turned off
+* Updated settings to include all of the new features
+
 ### Ritual League
 
 * Added extra slots to the build editor for notes or gem choices

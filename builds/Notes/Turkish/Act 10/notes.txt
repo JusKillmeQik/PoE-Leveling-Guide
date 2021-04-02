@@ -1,0 +1,41 @@
+﻿zone:Cathedral Rooftop
+Direk sola dön Cathedral Apex e gir. Bannon'ı kurtar kitava şuan burda değil.
+Towna gidip geri dön sağ aşağıdan devam et bu sefer. The Ravaged Square'e gir.
+
+zone:Ravaged Square
+Birçok bölgeye geçiş var.İlk olarak wpye ilerle ve al. Wpden aşağı sağa ilerle Torched Courts'a gir.
+2.gelişinde; Sol aşağıda bulunan The Control Blocks'a gir.
+3.gelişinde; The Ossuary a girip Trialı tamamla.
+B,Kitava'dan önce labı yapabilirsin.
+4.gelişinde; wpnin sağından The Canals'a gir.
+
+zone:Control Blocks
+Sağ duvarı takip ederek boss odasını bul.Vilenta'yı öldür.(passive)
+The Ravaged Square wpsine ışınlanmak için town'a dön. 
+
+zone:The Ossuary
+Sol duvarı takip edip quest itemını ve trial'ı bulabilirsin.
+B,Bu bölgeden sonra labı tamamla. Kitavadan sonra zor olabilir.
+G,TRIAL - Dart traps
+G,CRAFT - Chaos damage
+
+zone:Torched Courts
+Sol taraftan duvarı takip ederek, The Desecrated Chambers'a gir.
+
+zone:Desecrated Chambers
+Aşağıya ilerle wp yi al girişe yakın. İlerle boss odası Sanctum of Innocence'ı bul.
+Avarius'u öldürdükten sonra; The Ravaged Square wp ye ışınlanmak için town'a git.
+G,CRAFT - Life/Mana
+
+zone:The Reliquary
+(Skiple burayı)
+Görev itemı genellikle köşelerde bulunur.
+
+zone:The Canals
+Yukarı sola ilerle; yolu ve köprüyü görünce takip et. The Feeding Trough'a gir.
+
+zone:Feeding Trough
+Linear, Sonunda Sin ile konuş Altar of Hunger açılıcak.
+Son Kitava dövüşü tamamla.
+G,CRAFT - Defenses
+R,RECOMMEND 3,700+ EHP, fire resist, Good physical mitigations, fast movement skill

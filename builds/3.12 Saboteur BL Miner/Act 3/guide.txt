@@ -1,0 +1,12 @@
+R,Expected End Level: ~31 (31+7 points)
+
+G,Goals:
+1. 4-Link
+2. Leveling Conductivity in off-hand weapon
+3. Pick up 2 two-stone rings and bench craft resists on your wands
+4. If found an additional 3/4 Blue link:
+   Ball lightning + Blastchain Mine + Elemental focus
+
+G,Trials: The Crematorium
+        The Catacombs
+        The Imperial Gardens

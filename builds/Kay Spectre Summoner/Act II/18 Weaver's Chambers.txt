@@ -1,1 +1,0 @@
-Go left when the left path spawns, otherwise loop around right side

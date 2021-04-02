@@ -1,0 +1,125 @@
+zone:Southern Forest
+Follow the right wall
+> Go to the Forest Ench
+> Go to Old Fields
+
+zone:Old Fields
+Follow the road
+Y,If you don't have second Quicksilver Flask - find the Cave and leave portal there
+> Go to Crossroads
+
+zone:The Den
+< Kill Great White Beast and Logout
+
+zone:The Crossroads
+Follow the road and find Waypoint
+> TP to the town and go to portal into The Den
+< Kill bear, Logout
+---------------
+> Go to Crossroads
+Go north, find Chamber of Sins
+---------------
+Go east
+> Proceed to Broken Bridge
+---------------
+Go south
+> Proceed to Ruins
+
+zone:Chamber of Sins Level 1
+Circle to the center of the zone
+The hallway next to the Waypoint always leads to the next zone
+> Go to Chamber level 2
+
+zone:Chamber of Sins Level 2
+Trial is right then up
+Boss is diagonally right and then down and left
+< Kill Fidelitas and Logout
++ Get Gems
+---------------
+> Go to Crossroads
+_______________
+G,TRIAL - Sawblades
+
+zone:Broken Bridge
+Follow the road to the right
+< Kill Kraityn and Logout
+> Go to Crossroads
+
+zone:Fellshrine Ruins
+Follow the road to The Crypt
+
+zone:The Crypt
+Find and complete Trial
+< Logout
+> Go to Riverways (left)
+_______________
+G,TRIAL - Spinning blades
+
+zone:The Riverways
+Follow the road and use mobility skills to jump over bridges
+B,Activate Waypoint
+---------------
+Western Forest is next on the road
+> Go to Western Forest
+---------------
+Wetlands is always on the opposite side of the road near the Waypoint
+> Go to Wetlands
+
+zone:Western Forest
+Follow the road
+B,Activate Waypoint
+Alira is on the side of the Waypoint where the road has a broken section
+R,Kill Alira
+---------------
+Follow the road for The Way Forward quest
+Kill boss, open the way back
+---------------
+The Weaver's Chambers can be found on the opposite side of the road from Alira, with webbed trees
+> Go to Weaver's Chambers
+
+zone:Weaver's Chambers
+Go left when the left path spawns, otherwise loop around right side
+< Kill Weaver and Logout
++ Get Gems
++ 16% Two-Stone Rings
+> Go to Act 1
++ Passive from Bestel
+> Go to Riverways
+
+zone:The Wetlands
+Go to the left and up until the Waypoint is visible with the passage near it
+< Kill Oak in center and Logout
++ 2 Passives and quest item from Eramir
+> Waypoint to The Wetlands
+> Go to Vaal Ruins
+
+zone:Vaal Ruins
+Try to determine the direction then zig and zag accordingly through the ruins
+> Go to Northern Forest
+
+zone:Northern Forest
+Go to the top right by following the shoreline
+> Go to The Caverns
+R,! Do Not go into the Dread Thinket
+
+zone:Dread Thicket
+This zone should be skipped to save time
+
+zone:The Caverns
+Pretty much guessing where the exit spawned
+B,Activate Waypoint
+If you still don't have MS boots
+> TP to Hideout and craft MS boots
+otherwise
+> Go to the Ancient Pyramid
+_______________
+G,CRAFT - Movement speed
+
+zone:Ancient Pyramid
+1st exit is on right or left side from center point
+Other exits are diagonal from their entrance
+Y,RECOMMEND lightning resist
+Kill the boss
+> Go to Act 3
+_______________
+G,CRAFT - Spell damage

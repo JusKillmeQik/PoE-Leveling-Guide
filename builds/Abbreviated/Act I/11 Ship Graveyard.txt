@@ -1,9 +1,0 @@
-+ Get WP
-> Ship Graveyard Cave
-+ Get Allflame
-> Ship Graveyard
-> Cavern of Wrath
-+ Kill Fairgraves
-- Logout
-< "The Marooned Mariner" (Bestel)
-> Cavern of Wrath

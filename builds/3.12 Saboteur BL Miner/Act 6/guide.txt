@@ -1,0 +1,10 @@
+R,Expected End Level: ~48 (48+13 points)
+
+G,Goals:
+1. Upgrade Arc support gems
+2. Setup a BL skill gems
+3. Improve Resistances
+
+G, Trials: The Prison
+
+

@@ -1,0 +1,6 @@
+﻿Storm Blade:        Linked Weapon
+B,Queen of the Sands: Passive
+G,Tunnel:             Trial
+B,Ruler of Highgate:  Passive
+
+Craft Foreboding Eternal Mana Flask

@@ -1,0 +1,5 @@
+﻿zone:Aspirants' Plaza
+1. Mistwalker
+2. Unstable Infusion
+3. Deadly Infusion
+4. Opportunistic

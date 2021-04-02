@@ -1,0 +1,11 @@
+` Find the Storm Blade in Vastiri Desert and look for a blocked entrance
+` Go to town, talk to Sin and then to Petarus and Vanja
+` Go back to the blocked entrance, kill Shakari and get Skillpoint in town
+` Get Foothills Waypoint, enter Boiling Lake and get Basilisk Acid
+G,` Enter the Tunnel and finish Trial of Ascendancy
+` Get Quarry Waypoint, enter Refinery and get Trarthan Powder
+` Go back to Quarry, kill Garukhan and get Sekhema Feather
+` Go to town and give the feather to either Tasuni or Irasha to get Skillpoint
+` Enter Belly of the Beast and kill the Depraved Trinity
+
+Exp Farming Zone: The Blood Aqueduct

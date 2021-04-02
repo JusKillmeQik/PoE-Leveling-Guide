@@ -1,8 +1,0 @@
-G,TIP: dirty roads leading to exits.
-Go up and right
-Сross the bridge
-Go up and right
-small passage to the exit.
--> Go to Act 5.
-_______________
-R,CRAFT - Attributes

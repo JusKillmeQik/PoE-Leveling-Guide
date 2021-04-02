@@ -1,0 +1,116 @@
+zone:Twilight Strand
+Make sure you have an appropriate loot filter
+> https://www.filterblade.xyz/
+________________
+Follow the coast up and right
+Kill Hillock
+> Go to Lioneye's Watch
+---------------
+Check vendors for linked weapons
+Check vendors for + movement speed boots
+---------------
+> Go to The Coast
+
+zone:The Coast
+Stick to the right side following the wall
+Activate Waypoint
+> Go to Mud Flats first
+---------------
+Entrance to Tidal Island is close to Waypoint
+> Go to Tidal Island for Hailrake
+
+zone:Tidal Island
+The side without a cliff is the shortest
+< Kill the Boss and Logout
++ Get Quicksilver and all gems needed for lvl 4
+> TP to Submerged Passage
+
+zone:Mud Flats
+Little rivers connect the 3 items
+Pick up all 3 items
+> Go to Submerged
+
+zone:Fetid Pool
+Go in a circle and kill everything
+This quest is optional and should be skipped to save time
+
+zone:Submerged Passage
+Find Waypoint
+> TP to The Coast and go to Tidal Island for Quicksilver Flask quest
+---------------
+Find the bridge and place a portal
+We will be back for Deep Dweller boss later
+> Go to The Ledge
+---------------
+Search below the bridge for the entrance to the Flooded Depths
+> Go to Flooded Depths and kill the big crab
+
+zone:Flooded Depths
+Kill the Deep Dweller
+< Logout
++ Take reward from Tarkleigh
+> TP to the Lower Prison
+
+zone:The Ledge
+Little totems at the Waypoint point to the exit
+> Go to The Climb
+
+zone:The Climb
+Always be going up
+Free Navali when you find her
+> Proceed to the Prison
+
+zone:Lower Prison
+> Go to town at the Waypoint
+> Take the portal you left to find the Flooded Depths
+---------------
+There is a trial in this zone that you can do later thanks to the Waypoint
+Try right first for the exit
+> Go to Upper Prison
+_______________
+G,TRIAL:  Spike traps
+
+zone:Upper Prison
+Try left first.
+< Kill Brutus and Logout
++ Pick up Gems
+> TP to the Prisoner's Gate
+
+zone:Prisoner's Gate
+Look for the side of the road that has the ledge down, usually on the right side
+> Go to Ship Graveyard.
+
+zone:Ship Graveyard
+Look for Waypoint first
+If you find The Cave get the All Flame now
+Otherwise continue directly to Cavern of Wrath Waypoint
+---------------
+At Cave:
+Find Allflame and skip boss 
+< Logout if you already have Cavern of Wrath, otherwise find it
+> TP to Ship Graveyard
+Kill Fairgraves
+< Logout
+Up your cold resistance (2x Sapphire ring)
++ Passive from Bestel
+> TP To Cavern of Wrath
+
+
+zone:Cavern of Wrath
+If you didn't find Allflame yet
+> At Waypoint port back to The Ship Graveyard to find the Cave
+---------------
+After Allflame but before going to Merveil
+> TP to town
++ Get Gems
+Right time to get 2x Sapphire rings
+> Go to Cavern of Wrath
+---------------
+> Go to Cavern of Anger
+
+zone:Cavern of Anger
+Often bottom right
+You can follow the spirits
+If you see piles of gold you're close to Merveil
+Kill the boss
+> Go to the next Act

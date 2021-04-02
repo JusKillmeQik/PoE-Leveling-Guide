@@ -1,8 +1,0 @@
-Long zone with multiple levels.
-Go diagonally to exits.
--> Go to Level 2.
-Kill boss there.
--> Go to act 8.
-_______________
-R,CRAFT - Accuracy
-B,RECOMMEND lightning resist

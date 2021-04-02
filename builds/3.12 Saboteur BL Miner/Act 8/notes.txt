@@ -1,0 +1,121 @@
+zone:Sarn Ramparts
+Left hand wall-follow to the stairs
+Go up the stairs
+Follow the wall to the end
+> Go to Sarn
+Go to the left side 
+> Proceed to Toxic Conduits
+
+zone:Toxic Conduits
+Watch the black paint on the floor as you enter the zone to see in which direction it points you
+Move through zone
+> Go to Doedre's Cesspool
+_______________
+G,Danger: damage from the floor
+
+zone:Doedre's Cesspool
+Find the path that doesn't have a dead end, this leads you all the way to the exit
+> Proceed to Cauldron via Loose Grate
+Kill Doedre
+Activate Waypoint
+> Go left to The Grand Promenade
+---------------
+Go right
+> Proceed to The Quay
+_______________
+G,CRAFT - Resistance
+
+zone:Grand Promenade
+Wall-follow the right side
+> Go to the Bath House
+
+zone:Bath House
+Activate Waypoint and Go right
+Kill Hector and pickup quest item
+> Go up to the High Gardens
+---------------
+After Yughul, go to opposite side for Trial
+Go down and right
+> Proceed to Lunaris Concourse
+_______________
+G,TRIAL - Furnace traps
+G,CRAFT - Flask duration
+
+zone:High Gardens
+Be careful when killing Porcupines
+Follow path to the end to kill Yugul
+_______________
+B,RECOMMEND cold resist
+
+zone:Lunaris Concourse
+Go up and right for Waypoint
+Move up and left for entrance to Lunaris Temple first
+> Proceed to Lunaris Temple
+---------------
+Go down and right
+> Proceed to the Harbour Bridge
+
+zone:Lunaris Temple Level 1
+Follow the carpets until end
+Activate the Waypoint
+> Go to Level 2
+
+zone:Lunaris Temple Level 2
+Look for staircases and go up these
+When you reach the larger area
+Look for vases on the opposite wall and pick the side where there is only one
+< Kill the boss and Logout
+G,Complete second Labyrinth and take Pyromaniac
+> TP to Doedre's Cesspool
+_______________
+G,CRAFT - Minions
+B,RECOMMEND cold resist
+
+zone:The Quay
+Go to the bottom left
+Pick up the quest item at (1) 
+Go to the bottom right
+> Go to Resurrection Site
+Kill boss
+> Leave the arena
+Go up right sticking along bottom edge
+> Go to Grain Gate
+
+zone:Grain Gate
+This zone has many buildings
+Only enter and leave buildings through openings that have a guard's corpse next to it; they lead the way
+R,Kill the gemlings legion (near book)
+> Go to Imperial Fields
+
+zone:Imperial Fields
+Follow the road until the end 
+Continue going that direction
+> Go to Solaris Temple
+
+zone:Solaris Concourse
+Follow the carpets to the Harbour Bridge
+
+zone:Solaris Temple Level 1
+Go down and left
+Then up and left
+The Waypoint is always on the path
+> Go to Solaris level 2
+
+zone:Solaris Temple Level 2
+Y,Here is when Chaos recipe starts
+Follow the carpets
+< Kill the boss and Logout
+> Waypiont to Lunaris Concourse
+_______________
+G,CRAFT - Traps and mines
+R,RECOMMEND fire resist
+
+zone:Harbour Bridge
+Y,At this point, make sure you are doing the Chaos recipe
+Go up and to the middle to the arena
+> Proceed to arena
+Kill the bosses
+> Go to Act 9
+_______________
+R,RECOMMEND fire resist
+B,and cold resist

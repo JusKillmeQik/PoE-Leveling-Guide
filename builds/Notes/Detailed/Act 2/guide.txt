@@ -1,0 +1,11 @@
+﻿R,Expected End Level: ~21 (21+5 points)
+_______________
+B,Goals:
+  MS boots <- craft if needed
+    3x Augmentation orb needed
+  Bandits killed
+  Hideout can be accessed
+_______________
+G,Trials: 
++ The Crypt level 1
++ The Chamber of Sins Level 2

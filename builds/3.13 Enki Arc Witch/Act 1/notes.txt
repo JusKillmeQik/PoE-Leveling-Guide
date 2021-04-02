@@ -1,0 +1,56 @@
+zone:Twilight Strand
+Kill the Zombie, pick up Fireball and switch left-click to move-only
+Follow the coast up and right
+Get Arcane Surge from Large Chest and kill Hillock
+Check vendors for Boots with Movement Speed and a second Wand
+
+zone:The Coast
+Stick to the right side following the wall
+B,Go to Mud Flats first for easier Hailrake
+
+zone:Tidal Island
+The side without a cliff is the shortest
+
+zone:Mud Flats
+Little rivers connect the three items
+B,At level 4 go to Tidal Island for Quicksilver Flask quest after Submerged Waypoint
+
+zone:Fetid Pool
+Go in a circle and kill everything
+This quest is optional and should be skipped to save time
+
+zone:Submerged Passage
+Find the bridge and place a portal
+Then continue across the bridge to The Ledge
+
+zone:Flooded Depths
+Logout after killing the Deep Dweller (Tarkleigh)
+
+zone:The Ledge
+Little totems at the Waypoint point to the exit
+
+zone:The Climb
+Always be going up, free Navali when you find her
+
+zone:Lower Prison
+Go to town at the Waypoint and take the portal you left to find the Flooded Depths
+Try right first for the exit. There is a trial in this zone that you can do later thanks to the Waypoint
+G,TRIAL - Spike traps
+
+zone:Upper Prison
+Try left first.
+B,Log out after you kill Brutus then Waypoint to Prisoner's Gate
+
+zone:Prisoner's Gate
+Look for the side of the road that has the ledge down, usually on the right side
+
+zone:Ship Graveyard
+Look for Waypoint first then head to the exit. If you find The Cave get the All Flame now. Otherwise continue directly to Cavern of Wrath Waypoint
+When you return Fairgraves will always be near the waypoint, simply log out after killing him to go to town and get a passive from Bestel
+
+zone:Cavern of Wrath
+At Waypoint port back to The Ship Graveyard to find the Cave and hand in Allflame. Then logout to get Passive from Bestel
+
+zone:Cavern of Anger
+Often bottom right. You can follow the spirits. If you see piles of gold you're close to Merveil
+B,RECOMMEND high cold resist

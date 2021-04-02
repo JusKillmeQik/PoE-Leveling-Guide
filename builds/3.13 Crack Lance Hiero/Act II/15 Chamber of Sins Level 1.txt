@@ -1,1 +1,0 @@
-Circle to the center of the zone. The hallway next to the Waypoint always leads to the next zone

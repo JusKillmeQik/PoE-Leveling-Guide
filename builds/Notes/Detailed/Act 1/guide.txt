@@ -1,0 +1,19 @@
+﻿Common tips for FAST leveling:
+> Try not to TP to Town at all (saves time and scrolls)
+this guide will tell you when it is really needed
+< Each time you're in town, take rewards and check what vendors sells
+While in Act1, check vendors for boots with + speed
+type "nn" in filter to find them
+in Act 2 if still don't have them, just bench craft it
+> Always make spells "attack without moving"
+do not try to kill all mobs in a zone
+Don't use body armor, it slows your character a bit
+
+R,Expected End Level: ~11 (11+3 points).
+_______________
+B,Goals:
+  MS boots
+  3x transmutes
+_______________
+G,Trials:
++ The Lower Prison

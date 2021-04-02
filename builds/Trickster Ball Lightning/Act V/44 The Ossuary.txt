@@ -1,5 +1,0 @@
-Loop around clockwise.
-Pick up a sign.
--> Logout.
-____________
-R,CRAFT - Physical damage

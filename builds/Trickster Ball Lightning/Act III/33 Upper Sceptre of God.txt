@@ -1,7 +1,0 @@
-Exits spawn in a random corner.
-Go up diagonally until you spot barricades at exit.
-Kill the boss.
--> Proceed to Act 4.
-____________________
-G,RECOMMEND cold
-G,and lightning resist

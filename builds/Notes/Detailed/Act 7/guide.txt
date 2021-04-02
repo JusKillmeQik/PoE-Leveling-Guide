@@ -1,0 +1,9 @@
+﻿R,Expected End Level: ~53 (53+16 points)
+_______________
+B,Goals:
+  Basalt Flask as reward
+  Blast through!
+_______________
+G,Trials: 
++ The Crypt
++ The Chamber of Sins Level 2

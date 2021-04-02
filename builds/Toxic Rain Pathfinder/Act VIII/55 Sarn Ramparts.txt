@@ -1,6 +1,0 @@
-Left hand wall-follow to the stairs
-Go up the stairs
-Follow the wall to the end.
--> Go to Sarn.
-Move left side 
--> Proceed to Toxic Conduits.

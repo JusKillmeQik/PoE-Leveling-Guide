@@ -1,0 +1,74 @@
+zone:Slave Pens
+Go all the way down and right
+Then left to Kill the boss
+> Proceed to Town
+> Go to Control Blocks
+
+zone:Control Blocks
+Go top left for the Miasmeter, then up and right
+Kill boss for his "eyes"
++ Get Silver Flask as reward
+Use it for speed boost often
+> Go to Oriath's Square
+
+zone:Oriath Square
+Go top right until you cross the bridge, then down
+> Go to Templar Courts
+
+zone:Templar Courts
+Loop around clockwise
+> Go to the Chamber of Innocence
+
+zone:Chamber of Innocence
+Perfect zone to level up if needed
+Go up and left, and spiral counter clockwise
+> Go to Sanctum of Innocence
+---------------
+Check Waypoint
+Talk to Bannon
+> Go to Torched Courts
+_______________
+G,CRAFT - Movement speed
+Y,RECOMMEND lightning resist
+R,and fire resist
+
+zone:Torched Courts
+Loop around counter clockwise
+> Go to Ruinned Square
+
+zone:Ruined Square
+Proceed to Waypoint
+> Go into Ossuary
+---------------
+Proceed to middle of the map
+B,Leave portal near big fountain.
+> Go down to Reliquary
+---------------
+Move up from portal
+> Go to Cathedral Rooftop
+
+zone:The Ossuary
+Loop around clockwise
+Pick up a sign
+< Logout
+> TP to the Ruined Square
+_______________
+G,CRAFT - Physical damage
+
+zone:The Reliquary
+Start from down left
+Find multiple quest items in corners of the zone
+Go back to Waypoint
+> Waypoint to Town
+> Go to your portal
+_______________
+G,CRAFT - Accuracy
+
+zone:Cathedral Rooftop
+Consider running your first Labyrinth here if you still have not
+R,Before Kitava you can put 2-3 passives to extra life
+After fight, respec then into Charisma
+Run top left and kill Kitava!
+_______________
+R,RECOMMEND fire resist
+with 1,500+ EHP

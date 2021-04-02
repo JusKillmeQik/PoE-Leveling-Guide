@@ -1,0 +1,72 @@
+﻿zone:Southern Forest
+Sağ duvarı takip et.
+
+zone:Old Fields
+Yolu takip et.
+B,Skiplemek istemiyorsan The Den'e portal bırakabilirsin.(Quicksilver Flask)
+
+zone:The Den
+B,SKIPLE Quicksilver Flask ihtiyacın yoksa.
+Great White Beast'i öldür. Logout at.
+
+zone:The Crossroads
+Yolu takip et waypointe kadar.
+B,SKIP önerilir. Quicksilver Flask için Town'a dön ve The Den'e portalına dön.
+Sonrasında kuzeye doğru git Chamber of Sins'e gir.
+Döndüğünde doğuya git ve Broken Bridge'e gir.
+Son olarak güneye git ve Fellshrine Ruins'e gir. 
+
+zone:Chamber of Sins Level 1
+Bölgenin ortasına daire çizin. Wpnin diğer tarafından ilerle. Chamber of Sins 2 ye gir.
+
+zone:Chamber of Sins Level 2
+Sol üstte Trial var.
+Aşağı sağda Boss var öldür görev itemini al. Logout at.
+G,TRIAL - Testereler
+
+zone:Broken Bridge
+Sağa doğru yolu takip et. Kraityn'i öldür. Logout at.
+
+zone:Fellshrine Ruins
+Yolu takip et ve The Crypt'e gir.
+
+zone:The Crypt
+G,TRIAL - Spinning blades.
+B,Logout at sonrasında towndan The Riverways'e geç
+
+zone:The Riverways
+Yolu takip et kırıp köprüden karşıya atla. Yolu aşağı doğru takip et wpyi aç. Yolu takip et Western Forest'a geç.
+Tekrar geri döndüğünde, yukarıya doğru git ve The Wetlands'e gir.
+
+zone:Western Forest
+Yolu takip et wpyi aç. Yolu takip et yolun wp olan tarafında kırık yol bul Alira orada.
+Yola geri dön yolun solunu takip etmeye devam et. Blackguards'ı öldür görev itemını al ve duvara yerleştir.
+Geri dön aliranın ters yönünde ilerde Weaver’s Chambers'a gir.
+
+zone:Weaver's Chambers
+Sol yol ortaya çıktığında sola gidin, aksi takdirde sağ tarafta döngü yapın.
+The Weaver'ı kes görev itemını al.
+Logout at. Act 1'e dönüp skillpoint ödülünü al. Sonrasında The Riverways'e ışınlan.
+
+zone:The Wetlands
+Merkezde Oak'ı öldür. Sonrasında sola doğru devam et waypointi bulana kadar. Waypointin yanından Tree Roots'a tıkla The Vaal Ruins'i aç.
+
+zone:Vaal Ruins
+Zigzag yaparak ilerle. The Northern Forest'a gir.
+
+zone:Northern Forest
+Sağ üstte ilerle. The Caverns'e gir.
+G,Dread Thicket'a GIRME!.
+
+zone:Dread Thicket
+Zaman kazanmak için bu bölgeyi skiple.
+
+zone:The Caverns
+Wpye kadar linear. Ancient Pyramid'e geç.
+G,CRAFT - Movement speed
+
+zone:Ancient Pyramid
+Çıkış genelde girişin çaprazındadır.
+Merdivenler ile sona kadar ilerle. Vaal OverSoul'u öldür. Act sonu.
+G,CRAFT - Spell damage
+Y,boss için lightning resist önerilir.
