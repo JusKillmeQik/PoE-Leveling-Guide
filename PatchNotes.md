@@ -1,6 +1,6 @@
 # Leveling Guide - Patch Notes
 
-### Alpha Branch
+### Ultimatum League
 
 * Combined all of the Act notes into a single file per Act
   * This is a breaking change for old builds, but should make new builds easier to create

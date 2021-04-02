@@ -9,7 +9,7 @@
 
 ![Cavern of Wrath](previews/LevelingGuidePreview1.png?raw=true "Leveling Guide in The Cavern of Wrath")
 
-![Coast](previews/LevelingGuidePreview2.png?raw=true "Leveling Guide in The Coast Act 6 with all gem links")
+![Coast](previews/LevelingGuidePreview2.png?raw=true "Leveling Guide in The Coast Act 6")
 
 ![Ravaged Square](previews/LevelingGuidePreview3.png?raw=true "Leveling Guide in The Ravaged Square Part 2")
 
@@ -129,8 +129,7 @@ Credits:
 VermiLLIon - Added multiple amazing build guides  
 kylewill0725 - Added Heist Cheatsheet  
 Brody and BrayFlex -  Added the first community Build Guides  
-Rebslack - provided Abbreviated as an alternative guide  
-josemaia - pointed out minimum autohotkey level  
+Rebslack - provided Abbreviated as alternative notes  
 dsnvwlmnt - many logged issues and testing  
 rioreiser - original script framework  
 Eruyome87 - updates to the library scripts  
