@@ -54,10 +54,10 @@
       } Else If (colorTest = "> ") {
         Gui, Notes:font, c%blueColor%
       } Else If (colorTest = "Y,") {
-        Gui, Guide:Font, c%yellowColor%
+        Gui, Notes:Font, c%yellowColor%
         StringTrimLeft, val, val, 2
       } Else If (colorTest = "- ") {
-        Gui, Guide:Font, c%yellowColor%
+        Gui, Notes:Font, c%yellowColor%
       } Else If (colorTest = "W,") {
         Gui, Notes:font, c%whiteColor%
         StringTrimLeft, val, val, 2

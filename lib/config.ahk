@@ -3,12 +3,12 @@ global notesFolder := "Default"
 
 global points := 9
 global font := "Consolas"
-global lineSpacing := 1.5
+global lineSpacing := 1.2
 global gemSpacing := 2
 global boldness := 0
 global imageSizeMultiplier := .5
 global maxNotesWidth := 40
-global maxGuideWidth := 40
+global maxGuideWidth := 60
 global maxLinksWidth := 40
 
 global guideXoffset := .78
