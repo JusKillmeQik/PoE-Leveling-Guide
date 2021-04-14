@@ -124,7 +124,7 @@ This tool is based off of a lot of effort from the community. I did most of the 
 *Cheers!*
 
 ### Support me by getting some MTX on my Nexus store:
-[![Qik Nexus Store](previews/Nexus.png?raw=true "Buy some MTX to support GGG and me)](https://www.nexus.gg/juskillmeqik/microtransactions)
+[![Qik Nexus Store](previews/Nexus.png?raw=true "Buy some MTX to support GGG and me")](https://www.nexus.gg/juskillmeqik/microtransactions)
 
 
 ### Or directly on PayPal:
