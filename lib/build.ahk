@@ -525,6 +525,8 @@ LoadGroup(loadLevel, loadChar) {
           }
         } Else If (thisGroup = "Lilly") {
           ;Lilly gems are only available from her no matter the level
+        } Else if (thisGroup = "Enemy at the Gate") {
+          thisGroup := "Inventory" ;Enemy at the Gate is a level 2 Quest so we need to hide it at level 4
         } Else If (loadLevel > 4) {
           thisGroup := "Inventory" ;All other lower gems should be considered purchased
         }

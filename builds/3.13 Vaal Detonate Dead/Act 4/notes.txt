@@ -1,0 +1,69 @@
+﻿zone:The Aqueduct
+> Highgate
+> The Dried Lake
+
+zone:Dried Lake
++ Kill Voll
+> Town
++ Open the Mines
+> The Mines Level 1
+
+zone:Mines Level 1
+> The Mines Level 2
+
+zone:Mines Level 2
++ Release Deshret's Spirit
+< "An Indomitable Spirit" (Tasuni)
+> The Crystal Veins
+
+zone:Crystal Veins
++ Get WP
+< "Breaking the Seal" (Oyun)
+> Crystal Veins
+> Daresso's Dream
+~~~~
+> Kaom's Dream
+~~~~
++ Talk to Dialla
+> The Belly of the Beast Level 1
+
+zone:Daresso's Dream
+> The Grand Arena
+> The Ring of Blades
++ Kill Daresso and take The Eye of Desire
+> The Crystal Veins
+
+zone:Kaom's Dream
+> Kaom's Stronghold
+> Caldera of the King
++ Kill Kaom and take The Eye of Fury
+> The Crystal Veins
+
+zone:Grand Arena
+If you have not done Kaom's Dream yet, take waypoint to Crystal Veins and do that first
+
+zone:Kaom's Stronghold
+If you have not done Daresso's Dream yet, take waypoint to Crystal Veins and do that first
+
+zone:Belly of the Beast Level 1
+> The Belly of the Beast Level 2
+
+zone:Belly of the Beast Level 2
+> The Bowels of the Beast
++ Kill Piety
+> The Harvest
+
+zone:The Harvest
++ Get WP
+< "The King of Desire" and "The King of Fury" (Dialla)
+~~~~
+> Kill Malachai's 3 Guardians
+> The Black Core
++ Kill Malachai
+< "The Eternal Nightmare" (Tasuni)
+~~~~
+> Highgate
+> The Ascent
+
+zone:The Ascent
+> Oriath Portal

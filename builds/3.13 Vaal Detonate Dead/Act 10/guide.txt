@@ -1,0 +1,4 @@
+﻿G,Ossuary:             Trial
+B,Vilenta's Vengeance: Passive
+B,An End to Hunger:    2x Passive
+Get an Instant (Seething/Bubbling) Divine Life Flask

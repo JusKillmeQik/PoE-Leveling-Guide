@@ -105,6 +105,7 @@ ToggleTree() {
     Gui, Tree:Cancel
     tree_toggle := 0
   }
+  Send %KeyHideTree%
 }
 
 If (KeyHideGems != "") {

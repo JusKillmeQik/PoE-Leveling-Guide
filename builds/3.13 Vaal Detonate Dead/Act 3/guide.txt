@@ -1,0 +1,5 @@
+﻿G,Crematorium:          Trial
+B,Victario's Secrets:   Passive
+G,Catacombs:            Trial
+B,Piety's Pets:         Passive
+G,Imperial Gardens:     Trial

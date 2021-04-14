@@ -1,0 +1,88 @@
+﻿zone:Southern Forest
+> Forest Encampment (hug right wall)
+> The Old Fields
+
+zone:Old Fields
+> The Crossroads (Follow the road)
+
+zone:The Den
++ Kill the white bear
+< "The Great White Beast"
+
+zone:The Crossroads
++ Get WP
+> The Broken Bridge (NE)
+> The Felshrine Ruins (SE)
+> The Chamber of Sins Level 1 (NW)
+
+zone:Chamber of Sins Level 1
++ Get WP
+> The Chamber of Sins Level 2
+
+zone:Chamber of Sins Level 2
++ Complete lab
++ Kill Fidelitas (take Baleful Gem)
++ Take to Helena
+- Logout
+< "Intruders in Black" (Greust)
+> The Riverways
+
+zone:Broken Bridge
++ Kill Kraityn
+> Crossroads
+
+zone:Fellshrine Ruins
+> The Crypt
+
+zone:The Crypt
++ Get WP
++ Complete Trial
+> Crossroads
+
+zone:The Riverways
++ Get WP
+> The Western Forest (SW)
+~~~~
+> The Wetlands (NW)
+
+zone:Western Forest
++ Get WP
++ Kill Blackguards and open the Blocked Pass (SW)
+> Town Act 1
+< "The Way Forward" (Bestel)
+> Western Forest
++ Kill Alira
+> Weaver's Chambers
+
+zone:Weaver's Chambers
+> Weaver's Nest
++ Kill The Weaver and take Maligaro's Spike
+< "Sharp and Cruel" (Silk)
+> The Riverways
+
+zone:The Wetlands
++ Kill Oak
++ Get WP
+< "Deal with the Bandits" (Eramir)
+> The Wetlands
+> The Vaal Ruins (poison the tree roots)
+
+zone:Vaal Ruins
++ Break the Seal
+> The Northern Forest
+
+zone:Northern Forest
++ Get WP
+> The Caverns (top right, follow shoreline)
+
+zone:Dread Thicket
+This zone should be skipped to save time
+
+zone:The Caverns
++ Get WP
+> The Ancient Pyramid
+
+zone:Ancient Pyramid
+> Pyramid Apex
++ Kill Vaal Oversoul
+> The City of Sarn
