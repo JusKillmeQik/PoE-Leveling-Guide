@@ -3,4 +3,4 @@ G,Crypt:                 Trial
 G,Chamber of Sins 2:     Trial
 Bandits:               CHOICE
 B,Way Forward (Bestel):  Passive
-Vendor: Blue Wand + Rare Sapphire + Alt
+(2x)Vendor: Blue Wand + Rare Sapphire + Alt
