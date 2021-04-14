@@ -449,6 +449,27 @@
     "iconPath": "https://web.poecdn.com/image/Art/2DItems/Gems/ArmageddonBrand.png?scale=1"
   },
   {
+    "level": 31,
+    "required_lvl": 31,
+    "name": "Arrogance",
+    "Witch": "Siosa",
+    "Shadow": "Siosa",
+    "Ranger": "Siosa",
+    "Duelist": "A Fixture of Fate",
+    "Marauder": "A Fixture of Fate",
+    "Templar": "A Fixture of Fate",
+    "Scion": "A Fixture of Fate",
+    "quest": "Siosa",
+    "vendor": "Siosa",
+    "cost": "Chance",
+    "color": "red",
+    "gemTags": [
+      "New Gems",
+      "Support"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2021-04-14/ArroganceSupport.png"
+  },
+  {
     "level": 8,
     "required_lvl": 8,
     "name": "Arrow Nova",
@@ -1773,26 +1794,6 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Support/BreakBlock.png?scale=1&w=1&h=1"
   },
   {
-    "level": 31,
-    "required_lvl": 31,
-    "name": "Blood Magic",
-    "Witch": "Siosa",
-    "Shadow": "Siosa",
-    "Ranger": "Siosa",
-    "Duelist": "A Fixture of Fate",
-    "Marauder": "A Fixture of Fate",
-    "Templar": "Siosa",
-    "Scion": "Siosa",
-    "quest": "Siosa",
-    "vendor": "Siosa",
-    "cost": "Chance",
-    "color": "red",
-    "gemTags": [
-      "Support"
-    ],
-    "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Support/BloodMagic.png?scale=1&w=1&h=1"
-  },
-  {
     "level": 16,
     "required_lvl": 16,
     "name": "Blood Rage",
@@ -1856,6 +1857,29 @@
       "Support"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Support/Bloodlust.png?scale=1&w=1&h=1"
+  },
+  {
+    "level": 31,
+    "required_lvl": 31,
+    "name": "Bloodthirst",
+    "Witch": "Siosa",
+    "Shadow": "Siosa",
+    "Ranger": "Siosa",
+    "Duelist": "A Fixture of Fate",
+    "Marauder": "A Fixture of Fate",
+    "Templar": "Siosa",
+    "Scion": "A Fixture of Fate",
+    "quest": "Siosa",
+    "vendor": "Siosa",
+    "cost": "Chance",
+    "color": "red",
+    "gemTags": [
+      "Attack",
+      "Physical",
+      "New Gems",
+      "Support"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2021-04-14/BloodthirstSupport.png"
   },
   {
     "level": 8,
@@ -1964,6 +1988,7 @@
     "cost": "Alch",
     "color": "red",
     "gemTags": [
+      "Physical",
       "Support"
     ],
     "iconPath": "https://web.poecdn.com/image/Art/2DItems/Gems/Support/Brutality.png?scale=1"
@@ -2719,6 +2744,30 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Convocation.png?scale=1&w=1&h=1"
   },
   {
+    "level": 16,
+    "required_lvl": 16,
+    "name": "Corrupting Fever",
+    "Witch": "Siosa",
+    "Shadow": "Siosa",
+    "Ranger": "Siosa",
+    "Duelist": "Intruders in Black",
+    "Marauder": "Intruders in Black",
+    "Templar": "Yeena",
+    "Scion": "Intruders in Black",
+    "quest": "Greust",
+    "vendor": "Yeena",
+    "cost": "Alt",
+    "color": "red",
+    "gemTags": [
+      "Spell",
+      "Duration",
+      "Physical",
+      "New Gems",
+      "Active"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2021-04-14/CorruptingFever.png"
+  },
+  {
     "level": 28,
     "required_lvl": 28,
     "name": "Crackling Lance",
@@ -2790,6 +2839,27 @@
       "Active"
     ],
     "iconPath": "https://web.poecdn.com/image/Art/2DItems/Gems/CorpseEruption.png?scale=1"
+  },
+  {
+    "level": 16,
+    "required_lvl": 18,
+    "name": "Cruelty",
+    "Witch": "Sharp and Cruel",
+    "Shadow": "Yeena",
+    "Ranger": "Yeena",
+    "Duelist": "Yeena",
+    "Marauder": "Sharp and Cruel",
+    "Templar": "Sharp and Cruel",
+    "Scion": "Sharp and Cruel",
+    "quest": "Silk",
+    "vendor": "Yeena",
+    "cost": "Alt",
+    "color": "red",
+    "gemTags": [
+      "New Gems",
+      "Support"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2021-04-14/CrueltySupport.png"
   },
   {
     "level": 16,
@@ -3335,7 +3405,7 @@
     "Shadow": "Nessa",
     "Ranger": "Siosa",
     "Duelist": "Siosa",
-    "Marauder": "Siosa",
+    "Marauder": "Nessa",
     "Templar": "Nessa",
     "Scion": "Nessa",
     "quest": "Tarkleigh",
@@ -3777,6 +3847,31 @@
       "Active"
     ],
     "iconPath": "https://web.poecdn.com/image/Art/2DItems/Gems/ShrapnelTrap.png?scale=1"
+  },
+  {
+    "level": 12,
+    "required_lvl": 12,
+    "name": "Exsanguinate",
+    "Witch": "Nessa",
+    "Shadow": "Siosa",
+    "Ranger": "Siosa",
+    "Duelist": "Siosa",
+    "Marauder": "Nessa",
+    "Templar": "Nessa",
+    "Scion": "The Siren's Cadence",
+    "quest": "Nessa",
+    "vendor": "Nessa",
+    "cost": "Trans",
+    "color": "red",
+    "gemTags": [
+      "Spell",
+      "Chaining",
+      "Physical",
+      "Duration",
+      "New Gems",
+      "Active"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2021-04-14/Exsanguinate.png"
   },
   {
     "level": 16,
@@ -4974,7 +5069,6 @@
       "Orb",
       "Lightning",
       "Physical",
-      "New Gems",
       "Active"
     ],
     "iconPath": "https://web.poecdn.com/protected/image/echoes/items/Hydrosphere.png?key=I_7oZFEYQ3Dudya6rRg28w"
@@ -5874,6 +5968,28 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Support/LifeLeech.png?scale=1&w=1&h=1"
   },
   {
+    "level": 8,
+    "required_lvl": 8,
+    "name": "Lifetap",
+    "Witch": "Nessa",
+    "Shadow": "Nessa",
+    "Ranger": "Nessa",
+    "Duelist": "The Caged Brute",
+    "Marauder": "The Caged Brute",
+    "Templar": "The Caged Brute",
+    "Scion": "The Caged Brute",
+    "quest": "Tarkleigh",
+    "vendor": "Nessa",
+    "cost": "Trans",
+    "color": "red",
+    "gemTags": [
+      "Duration",
+      "New Gems",
+      "Support"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2021-04-14/LifetapSupport.png"
+  },
+  {
     "level": 12,
     "required_lvl": 12,
     "name": "Lightning Arrow",
@@ -6564,6 +6680,28 @@
     "iconPath": "https://web.poecdn.com/public/news/2019-09-04/PestilentStrike.png"
   },
   {
+    "level": 24,
+    "required_lvl": 24,
+    "name": "Petrified Blood",
+    "Witch": "Siosa",
+    "Shadow": "Siosa",
+    "Ranger": "Siosa",
+    "Duelist": "Lost in Love",
+    "Marauder": "Lost in Love",
+    "Templar": "Clarissa",
+    "Scion": "Lost in Love",
+    "quest": "Maramoa",
+    "vendor": "Clarissa",
+    "cost": "Alt",
+    "color": "red",
+    "gemTags": [
+      "Spell",
+      "New Gems",
+      "Active"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2021-04-14/PetrifiedBlood.png"
+  },
+  {
     "level": 34,
     "required_lvl": 34,
     "name": "Phase Run",
@@ -7207,6 +7345,31 @@
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/InspiringCry.png?scale=1&w=1&h=1"
+  },
+  {
+    "level": 28,
+    "required_lvl": 28,
+    "name": "Reap",
+    "Witch": "Clarissa",
+    "Shadow": "Siosa",
+    "Ranger": "Siosa",
+    "Duelist": "Siosa",
+    "Marauder": "Clarissa",
+    "Templar": "Clarissa",
+    "Scion": "Sever the Right Hand",
+    "quest": "Maramoa",
+    "vendor": "Clarissa",
+    "cost": "Chance",
+    "color": "red",
+    "gemTags": [
+      "Spell",
+      "Physical",
+      "AoE",
+      "Duration",
+      "New Gems",
+      "Active"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2021-04-14/Reap.png"
   },
   {
     "level": 12,
@@ -8799,7 +8962,6 @@
     "cost": "Alt",
     "color": "blue",
     "gemTags": [
-      "New Gems",
       "Support"
     ],
     "iconPath": "https://web.poecdn.com/protected/image/echoes/items/TrinitySupport.png?key=olxW4UsnblEXVX97PS6_MA"

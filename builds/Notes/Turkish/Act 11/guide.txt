@@ -1,4 +1,4 @@
-﻿After Kitava, in Oriath
+﻿Kitavayı öldürdükten sonra Oriath'ta
+Resistlerini caple.
+Sağ üstte Templar Laboratory'i keşfet Kirac görevlerine başlamak için.
 G,CRAFT - Movement Speed
-Cap your Resistances
-Explore Templar Laboratory top right to start the Kirac Questline

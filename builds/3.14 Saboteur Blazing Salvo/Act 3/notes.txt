@@ -1,0 +1,100 @@
+﻿zone:City of Sarn
++ Kill the Guards and talk to Clarissa
+> The Sarn Encampment
+> The Slum
+
+zone:The Slums
+> The Crematorium
+~~~~
++ Find Sewer Crating
+> The Slum Sewer
+
+zone:The Crematorium
++ Get WP
++ Complete trial
++ Kill Piety and take Tolman's Bracelet
+- Logout
+< "Lost in Love" (Clarissa)
+> The Slum
+
+zone:The Sewers
++ Find 1 Platinum Bust
++ Get WP
++ Find 2 more Platinum Busts
+> The Marketplace
+~~~~
++ Use Infernal Talc on Undying Passage
+> The Ebony Barracks
+
+zone:The Marketplace
++ Get WP
+> The Catacombs
+~~~~
+> The Battlefront
+
+zone:The Catacombs
++ Complete lab
+> Marketplace
+
+zone:The Battlefront
++ Get WP
++ Kill Captain Aurelianus, open Blackguard Chest and take Ribbon Spool
+> The Solaris Temple Level 1+
+~~~~
+> The Docks
+
+zone:The Docks
++ Open Supply Container and take Thaumetic Sulphate
+< "Victario's Secrets" (Hargan)
+> The Solaris Temple Level 2
+
+zone:Solaris Temple Level 1
+> The Solaris Temple Level 2
+
+zone:Solaris Temple Level 2
++ Get WP
+> The Battlefront
+~~~~
++ Talk to Lady Dialla
+> The Sewers
+
+zone:Ebony Barracks
++ Get WP
+> The Lunaris Temple Level 1
+~~~~
+> The Imperial Gardens
+
+zone:Lunaris Temple Level 1
++ Get WP
+> The Lunaris Temple Level 2
+
+zone:Lunaris Temple Level 2
++ Kill Piety
+< "Piety's Pets" (Grigor)
+> The Ebony Barracks
+
+zone:Imperial Gardens
++ Get WP
+> The Library
+~~~~
++ Complete lab
+> The Sceptre of God
+
+zone:The Library
++ Get WP
+> The Archive (loose candle)
+~~~~
+< "A Fixture of Fate" (Siosa)
+> Imperial Gardens
+
+zone:The Archives
++ Find 4 Golden Pages
+> The Archive
+
+zone:Sceptre of God
++ Get WP
+> The Upper Sceptre of God
+
+zone:Upper Sceptre of God
++ Kill Dominus
+> The Aqueduct

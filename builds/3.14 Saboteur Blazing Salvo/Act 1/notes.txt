@@ -1,0 +1,84 @@
+﻿zone:Twilight Strand
++ Kill Hillock
+> Lioneye's Watch
+< "Enemy at the Gate" (Tarkleigh)
+> The Coast
+
+zone:The Coast
++ Get WP
+> The Mud Flats
+> Tidal Island
+
+zone:Tidal Island
++ Kill Hailrake
+- Logout
+< "Mercy Mission" (Nessa)
+> Submerged Passage
+
+zone:Mud Flats
++ Find 3 eggs (use rivers to find next egg)
+> The Submerged Passage
+
+zone:Fetid Pool
++ Kill everything
+< "A Dirty Job"
+
+zone:Submerged Passage
++ Get WP
+> The Coast
+> The Flooded Depths
++ Kill The Dweller of the Deep
+< "The Dweller of the Deep" (Tarkleigh)
+> The Ledge
+
+zone:Flooded Depths
++ Kill The Dweller of the Deep
+- Logout
+< "The Dweller of the Deep" (Tarkleigh)
+> Submerged Passage
+
+zone:The Ledge
++ Get WP
+> The Climb
+
+zone:The Climb
++ Get WP
+> Lower Prison
+
+zone:Lower Prison
++ Get WP
++ Complete lab
+> The Upper Prison
+
+zone:Upper Prison
+> The Warden's Quarters
+> The Warden's Chambers
++ Kill Brutus
+- Logout
+< "The Caged Brute" (Tarkleigh)
+> Prisoners Gate
+
+zone:Prisoner's Gate
+> The Ship Graveyard
+
+zone:Ship Graveyard
++ Get WP
+> Ship Graveyard Cave
++ Get Allflame
+> Ship Graveyard
+> Cavern of Wrath
++ Kill Fairgraves
+- Logout
+< "The Marooned Mariner" (Bestel)
+> Cavern of Wrath
+
+zone:Cavern of Wrath
++ Get WP
+> TP to Ship Graveyard
+> The Cavern of Anger
+
+zone:Cavern of Anger
+> Merveil's Lair
++ Kill Mervel
+> The Southern Forest
+> The Forest Encampment

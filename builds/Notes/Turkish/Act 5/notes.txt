@@ -1,47 +1,64 @@
 ﻿zone:Slave Pens
-Tüm yolu aşağı in sonra sola dön. Overseer Krow’ü öldür.
-Öldürdükten sonra merdiven açılıcak Overseer’s Tower'a gir.
-Görevleri al The Control Blocks'a gir.
+Tüm yolu aşağı in sonra sola dön.
++ Overseer Krow’ü öldür.
+> Overseer's Tower
+< "Return to Oriath" (Lani)
+> The Control Blocks
 
 zone:Control Blocks
-Yukarı sola git. Justicar Casticus u öldür. Görev itemını aldıktan sonra yukarı sağdan devam et.
-Oriath Square'e gir.
+Yukarı sola git.
++ Experimental supplies'ı bul. Miasmeter' i lootla.
+Sağa git bossu bul.
++ Justicar Casticus'u öldür. Görev itemını al.
+Sağa devam et.
+> Oriath Square
 
 zone:Oriath Square
-Direk girişte wpyi aç. Wpden citye dönüp görev teslim edip geri dön.
-Yukarı sağdan ilerle The Templar Courts'a gir.
++ Wpyi al.
+Yukarı sağ sonra aşağı ilerle.
+> Templar Courts Entrance
 
 zone:Templar Courts
-Girişte portalı aldıktan sonra saat yönünde git mapte Chamber of Innocence'e gir.
+Saat yönünde bölgede daire çiz.
+> The Chamber of Innocence
 
 zone:Chamber of Innocence
-Yukarı sola git. Saat yönün tersine spiral şeklinde git. 
-High Templar Avarius’u öldür.
-Wpnin yukarısından The Torched Courts’a gir.
+Yukarı sola git. Saat yönün tersine spiral şeklinde git.
+> The Sanctum of Innocence
++ High Templar Avarius’u öldür.
+> The Chamber of Innocence
+Wpnin yukarısına ilerle.
+> The Torched Courts
 G,CRAFT - Movement speed
-Y,Boss için lightning resist önerilir.
-R,and fire resist with 1,200+ EHP
 
 zone:Torched Courts
-Saat yönünün tersine ilerle The Ruined Square'a gir.
+Saat yönününün tersine bölgede daire çiz.
+> The Ruined Square
 
 zone:Ruined Square
-3 bölgeye geçiş var ilk olarak yukarı solda wpyi aç.
-Wpnin yanından The Ossuary'a gir.
-2. gelişinde; Sol en aşağıya ilerle The Reliquary'e gir.
-3. gelişinde; Sol üstten Cathedral Rooftop'a gir.
+3 bölgeye geçiş var. İlk olarak yukarı solda wpyi aç.
+> The Ossuary (wpnin üst taradında)
+2. gelişinde;
+> The Reliquary (Sol en aşağıda)
+3. gelişinde; 
+> The Cathedral Rooftop (Sol üst)
 
 zone:The Ossuary
 Saat yönünde layout var.
-Görevi aldıktan sonra portal ile geri gön ödülleri al ve The Ruined Square wp ye geri dön.
++ Görev itemını bul ve al.
+- Logout.
+> Ruined Square (wp ile)
 G,CRAFT - Physical damage
 
 zone:The Reliquary
-3 köşeden görev itemı topla. (passive point)
-Portal ile town'a dön sonra The Ruined Square wp ye geri dön.
+3 köşeden görev itemı topla.
+- Logout.
+> Ruined Square (wp ile)
 G,CRAFT - Accuracy
 
 zone:Cathedral Rooftop
 Kitava'yı öldürmeden Lab yapabilirsin.
-Sol üst tarafa ilerle.  Kitava'yı öldür.
-R,RECOMMEND fire resist with 1,500+ EHP and physical mitigation (Fortify/Endurance/Armour)
+Sol üst tarafa ilerle.
+> The Cathedral Apex
++ Kitava'yı öldür (act sonu)
+> Sail to Wraeclast

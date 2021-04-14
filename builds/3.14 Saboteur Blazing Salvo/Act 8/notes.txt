@@ -1,0 +1,81 @@
+﻿zone:Sarn Ramparts
+> The Sarn Encampment
+> The Toxic Conduits
+
+zone:Toxic Conduits
+> Doedre's Cesspool
+~~~~
+> The Quay (right)
+
+zone:Doedre's Cesspool
++ Open Loose Crate
+> The Cauldron
++ Kill Doedre the Vile
+> Sewer Outlet
++ Get WP
+> The Grand Promenade (left)
+
+zone:Grand Promenade
+> The Bath House
+
+zone:Bath House
++ Get WP
++ Complete lab
+> The High Gardens
+
+zone:High Gardens
+> The High Gardens
+> The Pool of Terror
++ Kill Yugul
+< "Reflection of Terror" (Hargan)
+> The Lunaris Concourse
+
+zone:Lunaris Concourse
++ Get WP
+> The Lunaris Temple Level 1
+~~~~
+> The Harbour Bridge (down the stairs)
+
+zone:Lunaris Temple Level 1
++ Get WP
+> The Lunaris Temple Level 2
+
+zone:Lunaris Temple Level 2
++ Kill Dusk and take Moon Orb
+< "Essence of the Hag" (Hargan)
+- Logout
+> The Toxic Conduits
+
+zone:The Quay
++ Open Sealed Casket and take Ankh of Eternity
+> Resurrection Site
++ Kill Tolman
+< "Love is Dead" (Clarissa)
+> The Grain Gate
+
+zone:Grain Gate
++ Get WP
++ Kill Gemling Legionnaires
+< "The Gemling Legion" (Maramoa)
+> The Imperial Fields
+
+zone:Imperial Fields
++ Get WP
+> The Solaris Temple Level 1
+
+zone:Solaris Concourse
+> The Harbour Bridge
+
+zone:Solaris Temple Level 1
++ Get WP
+> The Solaris Temple Level 2
+
+zone:Solaris Temple Level 2
++ Kill Dawn andd take Sun Orb
+> Town
+> Lunaris Concourse
+
+zone:Harbour Bridge
+> The Sky Shrine
++ Kill Solaris and Lunaris
+> The Blood Aqueduct

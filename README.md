@@ -41,7 +41,7 @@ Based on the zone you're in, notes and diagrams from this document will be shown
 
 Be sure to familiarize yourself with the above document before using this tool.
 
-Based on the act you're in, your own notes on gems, quests and socket colors can be shown in the notes section. In the Build folder for each Act is a notes.txt file with all of the zones for that Act where you can edit the zone specific information you would like available. Each Act has a guide.txt file that you can also edit for information you would like available during the whole Act. Some placeholder notes are there for an example. You can add your own [Quest Rewards](https://pathofexile.gamepedia.com/Quest_Rewards) so you save time while leveling.
+Based on the act you're in, your own notes on gems, quests and socket colors can be shown in the notes section. In the Build folder for each Act is a notes.txt file with all of the zones for that Act where you can edit the zone specific information you would like available. Each Act has a guide.txt file that you can also edit for information you would like available during the whole Act. Some placeholder notes are there for an example. You can add your own [Quest Rewards](https://poedb.tw/us/QuestRewards) so you save time while leveling.
 
 The text on any line in the guide or notes files can now be changed to different colors. Just start the line with one of the 2 character codes in the table below. I have added color to the Acts in the "Default" notes as an example. You can change which guide to use in the settings menu or config.ini file by setting the "overlayFolder" value. This can be very helpful for setting up your own guides as well so you can switch between gems and trees for different characters.
 
@@ -123,9 +123,15 @@ This tool is based off of a lot of effort from the community. I did most of the 
 
 *Cheers!*
 
+### Support me by getting some MTX on my Nexus store:
+[![Qik Nexus Store](previews/Nexus.png?raw=true "Buy some MTX to support GGG and me")](https://www.nexus.gg/juskillmeqik/microtransactions)
+
+
+### Or directly on PayPal:
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y4PJCG5N4DMTN&source=url)
 
-Credits:  
+## Credits:  
+Oflu - Added Turkish notes  
 VermiLLIon - Added multiple amazing build guides  
 kylewill0725 - Added Heist Cheatsheet  
 Brody and BrayFlex -  Added the first community Build Guides  

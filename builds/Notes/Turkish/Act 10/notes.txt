@@ -1,30 +1,49 @@
 ﻿zone:Cathedral Rooftop
-Direk sola dön Cathedral Apex e gir. Bannon'ı kurtar kitava şuan burda değil.
-Towna gidip geri dön sağ aşağıdan devam et bu sefer. The Ravaged Square'e gir.
+> The Cathedral Rooftop
+> Cathedral Apex (solda)
++ Bannon'ı kurtar kitava şuan burda değil.
+- Logout
+> The Cathedral Rooftop
+Sağ aşağıdan devam et.
+> The Ravaged Square
 
 zone:Ravaged Square
-Birçok bölgeye geçiş var.İlk olarak wpye ilerle ve al. Wpden aşağı sağa ilerle Torched Courts'a gir.
-2.gelişinde; Sol aşağıda bulunan The Control Blocks'a gir.
-3.gelişinde; The Ossuary a girip Trialı tamamla.
-B,Kitava'dan önce labı yapabilirsin.
-4.gelişinde; wpnin sağından The Canals'a gir.
+Birçok bölgeye geçiş var.
++ İlk olarak sağa doğru wpye ilerle ve al. 
+> Torched Courts(1) (wpnin aşağı sağında)
+2.gelişinde; 
+> The Control Blocks(2) (bölgenin sol aşağısında)
+3.gelişinde;
+> The Ossuary (wpnin üstü)
+4.gelişinde; 
+R,Kitava'dan önce labı yapabilirsin.
+> The Canals (wpnin sağından)
 
 zone:Control Blocks
-Sağ duvarı takip ederek boss odasını bul.Vilenta'yı öldür.(passive)
-The Ravaged Square wpsine ışınlanmak için town'a dön. 
+> Arena (boss odası)
++ Vilenta'yı öldür(passive)
+- Logout.
+> The Ravaged Square (wp ile)
 
 zone:The Ossuary
-Sol duvarı takip edip quest itemını ve trial'ı bulabilirsin.
-B,Bu bölgeden sonra labı tamamla. Kitavadan sonra zor olabilir.
+> The Bone Pits
++ Trial tamamla.
+- Logout
+> The Ravaged Square(wp ile)
 G,TRIAL - Dart traps
 G,CRAFT - Chaos damage
 
 zone:Torched Courts
-Sol taraftan duvarı takip ederek, The Desecrated Chambers'a gir.
+Saat yönünün tersi şeklinde daire çizerek ilerle.
+> The Desecrated Chambers
 
 zone:Desecrated Chambers
-Aşağıya ilerle wp yi al girişe yakın. İlerle boss odası Sanctum of Innocence'ı bul.
-Avarius'u öldürdükten sonra; The Ravaged Square wp ye ışınlanmak için town'a git.
++ Wp yi al.
+Devam et.
+> Sanctum of Innocence (boss odası)
++ Avarius'u öldür.
+- Logout.
+> The Ravaged Square (wp ile)
 G,CRAFT - Life/Mana
 
 zone:The Reliquary
@@ -32,10 +51,14 @@ zone:The Reliquary
 Görev itemı genellikle köşelerde bulunur.
 
 zone:The Canals
-Yukarı sola ilerle; yolu ve köprüyü görünce takip et. The Feeding Trough'a gir.
+Yukarı sola ilerle.
+Yolu ve köprüyü görünce takip et. 
+> The Feeding Trough
 
 zone:Feeding Trough
-Linear, Sonunda Sin ile konuş Altar of Hunger açılıcak.
-Son Kitava dövüşü tamamla.
+Linear, sonuna kadar ilerle
++ Sin ile konuş.
+> Altar of Hunger
++ Kitava'yı öldür.
 G,CRAFT - Defenses
-R,RECOMMEND 3,700+ EHP, fire resist, Good physical mitigations, fast movement skill
+(Campain bitti. Yazar: @ForeverOflu )

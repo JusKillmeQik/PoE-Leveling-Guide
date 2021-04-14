@@ -1,73 +1,98 @@
 ﻿zone:Sarn Ramparts
-Yolun sonuna kadar git. Merdivenler ile yukarı çık. The Sarn Encampment'e geç.
-Towndan The Toxic Conduits'a geç.
+Yolun sonuna kadar git. Merdivenler ile yukarı çık.
+> The Sarn Encampment
+> The Toxic Conduits
 
 zone:Toxic Conduits
-Yerdeki siyah mürekkep izlerinin olduğu yoldan ilerle. Doedre’s Cesspool'a gir.
+Yerdeki siyah mürekkep izlerinin olduğu yoldan ilerle.
+> Doedre's Cesspool
 
 zone:Doedre's Cesspool
-Loose Grate(Boss alanı)nı bulup içeri gir.Doedre'yi öldür. Toxic Conduits'a geç.
-Boss öldürdükten sonra wpyi al 2 bölgeye geçiş var.
-İlk olarak soldan devam et. The Grand Promenade'e gir.
-İkinci gelişinde; Wpden sağa doğru git. The Quay e gir.
+> The Cauldron (Loose Crate'i aç)
++ Doedre the Vile'i öldür.
++ Wpyi al 2 bölgeye geçiş var.
+> The Grand Promenade (wpnin solundan)
+2. gelişinde;
+> The Quay (wpnin sağından)
 G,CRAFT - Resistance
 
 zone:Grand Promenade
-Sağ duvarı takip et. The Bath House'a geç.
+Sağ duvarı takip et. 
+> The Bath House
 
 zone:Bath House
-Wp yi aldıktan sonra aşağı , sağa sonra yukarı çık.
-Bölgenin ortasında Hector bossu var.Öldürdükten sonra yanındaki chestten görev itemini al.
-Trial tamamladıktan sonra bölgenin üst tarafından The High Gardens'a gir.
-İkinci gelişince; çıkış her zaman sağ taraftadır.The Lunaris Concourse'a gir.
-G,TRIAL - Furnace traps
++ Wpyi al.
+Aşağı , sağa sonra yukarı çık.
++ Hector'u öldür. Chestten itemı al (bölgenin ortasında)
++ Trial tamamla (yukarı sağ veya sol)
+> The High Gardens (yukarı sağ veya sol)
+2. gelişinde;
+Sağ alta ilerle.
+> The Lunaris Concourse
 G,CRAFT - Flask duration
 
 zone:High Gardens
-Bu bölgede boss alanını bul ve Yugul'u öldür(Pantheon)
-The Bath House wpsine dönmek için town'a dön.
-B,RECOMMEND cold resist
+> The Pool of Terror (boss alanı)
++ Yugul'u öldür(pantheon)
+- Logout.
+> Bath House (wp ile)
 
 zone:Lunaris Concourse
-Merdivenlerden yukarıya doğru çık wp al. Yukarıya doğru devam et The Lunaris Temple 1'e gir.
-İkinci gelişinde; Aşağı sağdan ilerle. The Harbour Bridge'e gir.
+Merdivenlerden yukarıya doğru çık.
++ Wp yi al. 
+Yukarıya doğru devam et
+> The Lunaris Temple Level 1
+2. gelişinde; 
+Wpden aşağıya in.
+> The Harbour Bridge
 
 zone:Lunaris Temple Level 1
-Halıları takip et wpyi aktif et. The Lunaris Temple 2 ye geç.
+Halıları takip et.
+> The Lunaris Temple Level 2
 
 zone:Lunaris Temple Level 2
-Merdivenlerden yukarı çık. Yolun tek araba olan tarafından ilerle. Boss alanına ulaş. Dusk'u öldür.
-B,Moon orbu al portalla citye dön. Toxic Conduits wpsine ışınlan.
+Merdivenlerden yukarı çık. 
++ Yolun tek araba olan tarafından ilerle. 
+Boss alanına ulaş. 
++ Dusk'u öldür. Moon Orbu al.
+- Logout
+> The Toxic Conduits (wp ile)
 G,CRAFT - Minions
-B,RECOMMEND cold resist
 
 zone:The Quay
-Sol altta git görev itemını(1) al. Bunu görev itemi (2) nolu bölgede kullanıcaz(Resurrection Site)
-Boss alanına gir. Zombies'i öldür.
-Geri dön sağ aşağıda The Grain Gate'e(3) gir.
+Bölgenin solundan aşağı ilerle.
++ Görev itemını bul.(1)
+Sol alta ilerle.
+> Resurrection Site (2)(item gerekli)
++ Zombies'i öldür.
+Geri dön sağ üstte ilerle.
+> The Grain Gate (3)
 
 zone:Grain Gate
-Gemling Legionnaireyi bul ve öldür.(Passive point)
-The Imperial Fields'a geç.
++ Gemling Legionnaireyi bul ve öldür.(passive)
+> The Imperial Fields
 
 zone:Imperial Fields
-Yolu takip et wpyi aldıktan sonra yolu takip etmeye devam et. Solaris Temple 1'e gir.
+Yolu takip et wpyi aldıktan sonra yolu takip etmeye devam et. 
+> The Solaris Temple Level 1
 
 zone:Solaris Concourse
 Halıları takip edip. Harbour Bridge'e gir.
 
 zone:Solaris Temple Level 1
-Aşağı->Sol->Yukarı->Sol şeklinde ilerle. wp aldıktan sonra devam et. Solaris Temple 2'e geç.
+Sola sonra yukarı ilerle.
++ Wpyi al wp tarafından devam et. 
+> The Solaris Temple Level 2
 
 zone:Solaris Temple Level 2
-Halıları takip et. Boss alanını bul. Dawn'ı öldür. Sun Orbu al.
-The Lunaris Concourse wpsine dönmek için logout at.
+Halıları takip et. Boss alanını bul.
++ Dawn'ı öldür. Sun Orbu al.
+- Logout.
+> The Lunaris Concourse (wp ile)
 G,CRAFT - Traps and mines
-R,RECOMMEND fire resist
 
 zone:Harbour Bridge
-Düşük levelsen bosstan önce burayı farmlayabilirsin.
-Yukarı git ortadaki arenayı bul. Lunaris & Solaris i öldür(Pantheon)
-The Blood Aqueduct'tan Act 9 a geç.
-R,RECOMMEND fire resist
-B,and cold resist
+Bölgenin ortasında boss arenası var.
+> The Sky Shrine
++ Solaris ve Lunaris'i öldür(pantheon)
+> The Blood Aqueduct (act sonu)

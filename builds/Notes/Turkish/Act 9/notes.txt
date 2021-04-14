@@ -1,56 +1,83 @@
 ﻿zone:Blood Aqueduct
-Level ve Humility kartı farmlamak için güzel bir map.
-Highgate main citye gidip; Yukarı sağdan The Descent'e geç.
+> Highgate
+> The Descent (yukarı sağ)
 
 zone:The Descent
-Supply Hoistlerdan geçip. The Vastiri Desert'a gir.
+> Supply Hoist
+> Supply Hoist
+> The Vastiri Desert
 
 zone:Vastiri Desert
-Sağa doğru ilerle wp yi bul aç.
-Wpden sağa doğru git kum fırtınasını bul görev açılınca portal ile citye dön görev itemini al.The Oasis'e gir.
-İkinci gelişinde; Yukarı doğru giderek The Foothills'e gir.
+Sağa doğru ilerle 
++ Wp yi aç.(bölgenin ortasında)
+Wpden sağa doğru git kum fırtınasını bul. 
++ Portal ile dönüp Sin den görev itemini al.
+> Vastiri Desert (portal ile geri dön)
+> The Oasis
+2. gelişinde;
+Yukarı doğru git.
+> The Foothills
 G,CRAFT - Attack/Cast speed
 
 zone:The Oasis
-Boss odasını bul. Shakari yi öldür(Pantheon)
-Öldürdükten sonra The Vastiri Desert wpsine dönmek için town'a geç. 
-R,RECOMMEND physical mitigation
+> The Sand Pit (boss odası)
++ Shakari'yi öldür(Pantheon)
+- Logout.
+> The Vastiri Desert (wp ile)
 
 zone:The Foothills
-Yukarı sola giderek wpyi bul. Wpnin yanından The Boiling Lake'e gir.
-B,Waypoint açmayı unutma
-İkinci gelişinde; Sol yukarıya gidip The Tunnel'a gir.
+Yukarı sağa ilerle.
++ Wpyi aç.
+> The Boiling Lake (wpnin sağında)
+2. gelişinde; 
+Sol yukarıya ilerle.
+> The Tunnel
 
 zone:Boiling Lake
-Bölgenin yukarısına git taştan heykellerin olduğu yerde bossu öldür görev itemini al.
-B,The Foothills wpsine gitmek için city'e dön. 
+Bölgenin yukarısına git.
+Taştan heykellerin olduğu yerde boss.
++ The Basilisk'i öldür. Görev itemını al.
+- Logout.
+> The Foothills
 G,CRAFT - Spell damage
 
 zone:The Tunnel
-Trial var tamamla. Yol üzerinde. Wpyi aldıktan sonra The Quarry'e gir.
-G,TRIAL - Blade sentries
++ Trial tamamla(yol üzerinde)
++ Wp yi al.
+> The Quarry (yukarıda)
 G,CRAFT - All attributes
 
 zone:The Quarry
-İlerle ortada wpyi aç. 
-İlk olarak sol aşağıya ilerle (2)Shrine of The Winds'a gir. Garukhan'ı öldür(Pantheon)(passive)
-Sonrasında; Sağ yukarıya doğru ilerle. The Refinery'e gir.
-Son gelişinde; Görev mobu ile konuşup The Belly of the Beast girişini aç ve gir.
++ Wpyi aç (bölgenin ortasında) 
+Sol aşağıya ilerle.
+> Shrine of The Winds(2)
++ Garukhan'ı öldür(Pantheon)(passive)
+- Logout.
+> The Quarry(wp ile)
+Sağ yukarıya doğru ilerle.
+> The Refinery
+Son gelişinde;
+Sinle konuşup wp yanındaki girişi aç.
+> The Belly of the Beast
 G,CRAFT - Physical damage
-R,RECOMMEND physical mitigation 3,000+ EHP and Movement skills
 
 zone:The Refinery
-Bölgenin yukarısında General Adus'u bul ve öldür.
-Bossu öldürdükten sonra açılan kapıdan görev itemini al.
-The Quarry wpsine dönmek için portal ile town'a dön.
-Y,RECOMMEND lightning resist
+Sağ üste ilerle(yerdeki yolları takip edebilirsin.)
++ General Adus'u öldür.
++ Açılan kapıdan görev itemini al.
+- Logout.
+> The Quarry (wp ile)
 
 zone:Belly of the Beast
-Sıradaki bölge The Rotting Core'a geç.
+> The Rotting Core
 
 zone:Rotting Core
-The Black Heart'i bulup içeri gir.
-Konuşup 3 portalı aç. 3 portaldanda girip bosslarını kes ve geri dön.
-Son olarak Sin ile konuşup ortadaki The Black Heart'i aç.
-Bosstan sonra Lilly ile konuşup Act 10 a geç.
-Y,RECOMMEND 3,200+ EHP, physical mitigations, lightning resist, fast movement skill
+Yukarı sola ilerle.
+> The Black Heart
++ 3 portaldanda girip bosslarını kes ve geri dön.
+Son olarak Sin ile konuşup ortayı aç.
+> The Black Heart
++ The Depraved Trinity'i öldür.
++ Lilly ile konuş
+> Sail back to Oriath (act sonu)
+> Cathedral Rooftop
