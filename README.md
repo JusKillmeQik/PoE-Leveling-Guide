@@ -99,13 +99,13 @@ This guide auto hides after a few seconds (this "Display Timeout" can be increas
 **Alt+F**
 
 ##### Show Syndicate Betrayal Cheatsheet
-**F5**
-
-##### Show Alva Temple Cheatsheet
 **F6**
 
-##### Show Hiest Cheatsheet
+##### Show Alva Temple Cheatsheet
 **F7**
+
+##### Show Hiest Cheatsheet
+**F8**
 
 ##### Manually toggle Zone
 **Control+PgDown**
