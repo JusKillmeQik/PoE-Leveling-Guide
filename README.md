@@ -99,13 +99,13 @@ This guide auto hides after a few seconds (this "Display Timeout" can be increas
 **Alt+F**
 
 ##### Show Syndicate Betrayal Cheatsheet
-**F5**
-
-##### Show Alva Temple Cheatsheet
 **F6**
 
-##### Show Hiest Cheatsheet
+##### Show Alva Temple Cheatsheet
 **F7**
+
+##### Show Hiest Cheatsheet
+**F8**
 
 ##### Manually toggle Zone
 **Control+PgDown**
@@ -132,6 +132,8 @@ This tool is based off of a lot of effort from the community. I did most of the 
 
 ## Credits:  
 Oflu - Added Turkish notes  
+Cry0nics - Updated Vortex  
+Kraken - Added RF Inquisitor  
 VermiLLIon - Added multiple amazing build guides  
 kylewill0725 - Added Heist Cheatsheet  
 Brody and BrayFlex -  Added the first community Build Guides  

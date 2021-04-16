@@ -44,9 +44,9 @@ global KeyHideExp := "!F3"
 global KeyHideTree := "!f"
 global KeyHideGems := "!g"
 
-global KeyShowSyndicate := "F5"
-global KeyShowTemple := "F6"
-global KeyShowHeist := "F7"
+global KeyShowSyndicate := "F6"
+global KeyShowTemple := "F7"
+global KeyShowHeist := "F8"
 
 global KeyOnDeath := ""
 
