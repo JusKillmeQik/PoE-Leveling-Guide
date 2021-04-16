@@ -1,0 +1,63 @@
+﻿zone:Broken Bridge
+Find the locket for an extra Utility flask
+Follow the road to the left to the exit
+
+zone:The Crossroads
+B,Don’t forget the Waypoint
+Go to (1)The Fellshrine Ruins first (2)The Chamber of Sins second
+
+zone:Fellshrine Ruins
+Follow the road, go down right until the end then go up right
+
+zone:The Crypt
+Open the sarcophagus for Crypt level 2
+Manually switch to Crypt 2 layout
+G,TRIAL - Spinning blades
+G,CRAFT - Damage over time
+
+zone:The Crypt 2
+When you find the map, log out and Waypoint to The Crossroads
+R,The layouts for 1 and 2 are connected, if you have the second layout in The Crypt 1, use the second image in The Crypt 2.
+
+zone:Chamber of Sins Level 1
+Loop around to the center, then activate the Waypoint
+B,Use your map from the Crypt in the map device and go through the portals
+After killing Maligaro, you return here and go through the hall behind the Waypoint to find the exit
+G,CRAFT - Lightning damage
+
+zone:Maligaro's Sanctum
+Follow the edges of the zone, and cross the bridges you encounter until you find the arena (Maligaro's Workshop)
+B,Use a portal scroll before the fight and then to port out to Silk
+Y,RECOMMEND lightning resist
+
+zone:Chamber of Sins Level 2
+Go to the top right side until you find the narrow long hallway, move to the end then go right up then right down. There is a layout that goes to the bottom left instead, if you encounter a dead end when going to the top right, do a right hand wall-follow. Click the wall to reveal exit
+G,TRIAL - Sawblades (left side)
+G,CRAFT - Mana regen
+
+zone:The Den
+Fairly simple, go to the top left or right to find the exit to The Ashen Fields
+
+zone:Ashen Fields
+Follow the road to the left
+R,RECOMMEND physical mitigation, bleed removal
+
+zone:Northern Forest
+Wall-follow the left side for The Dread Thicket. Wall-follow the right side for The Causeway
+
+zone:Dread Thicket
+Explore the zone and find the fireflies, Gruthkul is here
+G,CRAFT - Fire damage
+RECOMMEND physical mitigation
+
+zone:The Causeway
+Go top right to the exit. Loot Kishara's star at exit
+G,CRAFT - Cold damage
+
+zone:Vaal City
+Find and follow the thick walls to guide you to the exit
+
+zone:Temple of Decay
+Long zone with multiple levels. Go diagonally to exits
+G,CRAFT - Accuracy
+Y,RECOMMEND lightning resist

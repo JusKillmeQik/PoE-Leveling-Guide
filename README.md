@@ -132,6 +132,8 @@ This tool is based off of a lot of effort from the community. I did most of the 
 
 ## Credits:  
 Oflu - Added Turkish notes  
+Cry0nics - Updated Vortex  
+Kraken - Added RF Inquisitor  
 VermiLLIon - Added multiple amazing build guides  
 kylewill0725 - Added Heist Cheatsheet  
 Brody and BrayFlex -  Added the first community Build Guides  
