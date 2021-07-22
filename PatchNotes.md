@@ -1,5 +1,11 @@
 # Leveling Guide - Patch Notes
 
+### Expedition League
+
+* Add the 19 new gems
+  * Updated old gems
+* Minor bug fixes and changes to defaults
+
 ### Ultimatum League
 
 * Combined all of the Act notes into a single file per Act

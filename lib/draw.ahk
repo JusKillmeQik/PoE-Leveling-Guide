@@ -374,7 +374,7 @@ UpdateImages()
         }
         yPosImages := yPosNotes
       } Else {
-        xPos := xPosImages
+        xPos := xPosImages - (newIndex * (images_width+controlSpace))
       }
       Gui, Image%newIndex%:Show, w%images_width% h%images_height% x%xPos% y%yPosImages% NA, Image%newIndex%
       id := Image%newIndex%Window

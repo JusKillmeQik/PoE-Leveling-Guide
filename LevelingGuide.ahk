@@ -166,14 +166,19 @@ ShowGuiTimer:
   gems_active := WinActive("ahk_id" . Gems)
 
   If (activeCount <= displayTimeout) {
+    If (activeCount = 0) {
+      activeTime := A_Now
+    }
     active_toggle := 1
     If (!controls_active) {
-      activeCount++
+      activeCount := A_Now - activeTime
+      If (activeCount = 0) {
+        activeCount := 1
+      }
     }
-  } Else if (activeCount = displayTimeout + 1) {
+  } Else if (activeCount > displayTimeout and active_toggle) {
     GoSub, HideAllWindows
     active_toggle := 0
-    activeCount++
   }
 
   If (controls_active or displayTimeout=0) {
@@ -240,6 +245,15 @@ ShowGuiTimer:
       client .= "logs\Client.txt"
     }
 
+    Process, Exist, PathOfExileEGS.exe
+    If(!errorlevel) {
+      closed++
+    } Else {
+      client := GetProcessPath( "PathOfExileEGS.exe" )
+      StringTrimRight, client, client, 18
+      client .= "logs\Client.txt"
+    }
+
     Process, Exist, PathOfExile_x64.exe
     If(!errorlevel) {
       closed++
@@ -276,7 +290,16 @@ ShowGuiTimer:
       client .= "logs\Client.txt"
     }
 
-    If (closed = 8){
+    Process, Exist, PathOfExilex64EGS.exe
+    If(!errorlevel) {
+      closed++
+    } Else {
+      client := GetProcessPath( "PathOfExilex64EGS.exe" )
+      StringTrimRight, client, client, 21
+      client .= "logs\Client.txt"
+    }
+
+    If (closed = 10){
       GoSub, HideAllWindows
       ;Sleep 10 seconds, no need to keep checking this
       Sleep 10000
