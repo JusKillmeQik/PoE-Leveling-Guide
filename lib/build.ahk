@@ -865,7 +865,7 @@ UpdateControl() {
     }
 
     ;Have to sleep otherwise the GuiControls finishing above this reset the unsaved value
-    Sleep 100
+    Sleep 10
     ;Don't set this to unsaved since we just saved when reading the new gem file
     unsaved := 0
   } Else {
