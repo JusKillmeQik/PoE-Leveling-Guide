@@ -1,4 +1,4 @@
-﻿setNotes()
+﻿SetNotes()
 {
   Gui, Notes:Destroy
   If (hideNotes != "True") {
@@ -120,7 +120,11 @@
     notes_width := notes_width + (2 * textMargin)
 
     If (hideGuide != "True") {
-      xPosNotes := Round( (A_ScreenWidth * guideXoffset) - guide_width - controlSpace - notes_width )
+      If (numPart != 3) {
+        xPosNotes := Round( (A_ScreenWidth * guideXoffset) - guide_width - controlSpace - notes_width )
+      } else {
+        xPosNotes := Round( (A_ScreenWidth * guideXoffset) - guide_width - controlSpace - atlas_width - controlSpace - notes_width )
+      }
     } Else {
       xPosNotes := Round( (A_ScreenWidth * guideXoffset) - notes_width )
     }
@@ -129,7 +133,7 @@
   }
 }
 
-setGuide()
+SetGuide()
 {
   Gui, Guide:Destroy
   If (hideGuide != "True") {
@@ -236,10 +240,13 @@ setGuide()
 SetExp()
 {
   safeZone := Floor(3 + (CurrentLevel/16) )
-  If (numPart != 3){
-    monsterLevel := SubStr(CurrentZone, 1, 2)
-  } Else {
-    monsterLevel := Maps[CurrentZone].Tier[Regions[Maps[CurrentZone].Region].SocketedStones + 1] + 67
+  ;if the monster level looks invalid, calculate it the old way
+  If (monsterLevel = -1) {
+    If (numPart != 3){
+      monsterLevel := SubStr(CurrentZone, 1, 2)
+    } Else {
+      monsterLevel := Maps[CurrentZone].Tier[Regions[Maps[CurrentZone].Region].SocketedStones + 1] + 67
+    }
   }
   
 

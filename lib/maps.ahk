@@ -56,7 +56,7 @@ ifnotexist,%watchones%
 
 ;MsgBox, % Maps["Necropolis Map"].Tier[Regions[Maps["Necropolis Map"].Region].SocketedStones + 1] + 67
 
-setMapNotes()
+SetMapNotes()
 {
  Gui, Notes:Destroy
   If (hideNotes != "True") {
@@ -207,7 +207,7 @@ setMapNotes()
 }
 
 
-setMapGuide()
+SetMapGuide()
 {
  Gui, Guide:Destroy
  Gui, Atlas:Destroy

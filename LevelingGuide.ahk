@@ -144,6 +144,8 @@ If (numPart != 3) {
   SetMapNotes()
 }
 SetGems()
+
+global monsterLevel := "01"
 SetExp()
 
 #Include, %A_ScriptDir%\lib\hotkeys.ahk
