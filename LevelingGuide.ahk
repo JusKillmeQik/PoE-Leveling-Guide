@@ -16,6 +16,24 @@ Menu, Tray, Add
 Menu, Tray, Add, Reload, PLGReload
 Menu, Tray, Add, Close, PLGClose
 
+;UrlDownloadToFile, https://raw.githubusercontent.com/JusKillmeQik/PoE-Leveling-Guide/master/filelist.txt, %A_ScriptDir%\filelist.txt
+progressWidth := 200
+Loop, read, %A_ScriptDir%\filelist.txt
+{
+  If (A_Index = 1){
+    progressWidth := A_LoopReadLine
+    if progressWidth is not integer
+      break
+    Progress, b w200, Please don't stop the download until complete, Updating Script
+  } Else {
+    UrlDownloadToFile, https://raw.githubusercontent.com/JusKillmeQik/PoE-Leveling-Guide/master/%A_LoopReadLine%, %A_ScriptDir%\%A_LoopReadLine%
+    progressPercent := 100 * (A_Index/progressWidth)
+    Progress, %progressPercent%
+  }
+}
+
+ExitApp
+
 ; Icons
 Menu, Tray, Icon, %A_ScriptDir%\icons\lvlG.ico
 Menu, Tray, Icon, Settings, %A_ScriptDir%\icons\gear.ico
