@@ -120,8 +120,19 @@ SearchLog() {
     } ;end level up logic
 
     travel := "You have entered"
-    IfInString, log, %travel%
+    IfInString, newLogLines, %travel%
     {
+      If autoToggleZoneImages 
+      {
+        zone_toggle := 1
+        places_disabled_zones :=  ["Hideout","Rogue Harbour", "Oriath", "Lioneye's Watch", "The Forest Encampment", "The Sarn Encampment", "Highgate", "Overseer's Tower", "The Bridge Encampment", "Oriath Docks"]
+        For _, zone in places_disabled_zones
+          IfInString, newLogLines, %zone% 
+          {
+            zone_toggle := 0
+            break
+          }
+      }
       activeCount := 0
       active_toggle := 1
 

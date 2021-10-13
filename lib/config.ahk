@@ -22,6 +22,7 @@ global imagesYoffset := 0
 
 global treeSide := "Right"
 global treeName := "tree.jpg"
+global autoToggleZoneImages := "False"
 global opacity := 180
 global startHidden := "False"
 global displayTimeout := 0
@@ -105,6 +106,8 @@ IniRead, imagesYoffset, %ININame%, Offset, imagesYoffset, %imagesYoffset%
 
 IniRead, treeSide, %ININame%, Options, treeSide, %treeSide%
 IniRead, treeName, %ININame%, Options, treeName, %treeName%
+IniRead, autoToggleZoneImages, %ININame%, Options, autoToggleZoneImages, %autoToggleZoneImages%
+
 IniRead, opacity, %ININame%, Options, opacity, %opacity%
 IniRead, startHidden, %ININame%, Options, startHidden, %startHidden%
 IniRead, displayTimeout, %ININame%, Options, displayTimeout, %displayTimeout%
@@ -231,6 +234,7 @@ WriteAll() {
 
   IniWrite, %treeSide%, %ININame%, Options, treeSide
   IniWrite, %treeName%, %ININame%, Options, treeName
+  IniWrite, %autoToggleZoneImages%, %ININame%, Options, autoToggleZoneImages
   IniWrite, %opacity%, %ININame%, Options, opacity
   IniWrite, %startHidden%, %ININame%, Options, startHidden
   IniWrite, %displayTimeout%, %ININame%, Options, displayTimeout
