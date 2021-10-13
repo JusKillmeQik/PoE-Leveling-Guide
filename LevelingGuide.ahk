@@ -159,6 +159,13 @@ Return
 
 ;========== Subs and Functions =======
 
+InitLogFile(filepath){
+    global client_txt_file := FileOpen(filepath,"r")
+    client_txt_file.Seek(0,2) ;skip file pointer to end (Origin = 2 -> end of file, distance 0 => end)
+    global log := client_txt_file.Read() ; should be empty now and redundant
+}
+
+
 ShowGuiTimer:
   poe_active := WinActive("ahk_id" PoEWindowHwnd)
   controls_active := WinActive("ahk_id" . Controls) ; Wow that dot is important!
@@ -308,6 +315,9 @@ ShowGuiTimer:
       active_toggle := 1
     } Else {
       If (onStartup) {
+        ;save client variable to compare in the future if the client.exe changed and thus the client.txt needs to be reread
+        old_client_txt_path := client
+        InitLogFile(client)
         ;Delete Client.txt on startup so we don't have to read a HUGE file!
         FileGetSize, clientSize, %client%, K  ; Retrieve the size in Kbytes.
         If(clientSize > 100000){
@@ -321,6 +331,11 @@ ShowGuiTimer:
           }
         }
         onStartup := 0
+      }
+      ;after startup check if new client_txt_path is different from old_client_txt_path (changed launcher)
+      if ((old_client_txt_path != client) and (closed != 8)){
+        old_client_txt_path := client
+        InitLogFile(client)
       }
       WinGet, PoEWindowHwnd, ID, ahk_group PoEWindowGrp
       break
@@ -404,21 +419,6 @@ HideAllWindows:
   Gui, Links:Cancel
 return
 
-Tail(k,file) {  ; Return the last k lines of file
-  Loop Read, %file%
-  {
-    i := Mod(A_Index,k)
-    L%i% = %A_LoopReadLine%
-  }
-  L := L%i%
-  Loop % k-1
-  {
-    IfLess i,1, SetEnv i,%k%
-    i--      ; Mod does not work here
-    L := L%i% "`n" L
-  }
-  Return L
-}
 
 GetProcessPath(exe) {
   for process in ComObjGet("winmgmts:").ExecQuery("Select * from Win32_Process where name ='" exe "'")

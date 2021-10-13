@@ -60,30 +60,27 @@ RotateZone(direction, zones, act, current) {
 
 SearchLog() {
   global
-  log := Tail(1, client)
-  ;Only bother checking if the log has changed or someone manually changed Part
-  If (log != oldLog or trigger) {
-    oldLog := log
+  ;Only bother checking if the newLogLines has changed or someone manually changed Part
+  newLogLines := client_txt_file.Read()
+  If (newLogLines or trigger) {
     trigger := false
-    DND := "DND mode is now ON"
-    IfInString, log, %DND%
-    {
-      log := Tail(2, client)
-    }
     levelUp := charName ;check character name is present first
-    IfInString, log, %levelUp%
+    IfInString, newLogLines, %levelUp%
     {
       levelUp := "is now level"
-      IfInString, log, %levelUp%
+
+      IfInString, newLogLines, %levelUp%
       {
-        levelPos := InStr(log, levelUp, false)
-        newLevel := SubStr(log, levelPos+13, 2)
+        levelPos := InStr(newLogLines, levelUp, false)
+        newLevel := SubStr(newLogLines, levelPos+13, 2)
         nextLevel := newLevel + 1
         ;So levels stay in order
-        If (newLevel < 10){
+        If (newLevel < 10)
+        {
           newLevel := "0" . newLevel
         }
-        If (nextLevel < 10){
+        If (nextLevel < 10)
+        {
           nextLevel := "0" . nextLevel
         }
         GuiControl,Level:,CurrentLevel, %newLevel%
@@ -93,18 +90,20 @@ SearchLog() {
         {
           tempFileName = %A_LoopFileName%
           StringTrimRight, tempFileName, tempFileName, 4
-          If (tempFileName != "meta" and tempFileName != "class") {
+          If (tempFileName != "meta" and tempFileName != "class") 
+          {
             gemFiles.Push(tempFileName)
           }
         }
         For index, someLevel in gemFiles
         {
-          If ( InStr(someLevel,newLevel) || InStr(someLevel,nextLevel) ) {
-          ;If ((someLevel = newLevel) || (someLevel = newLevel+1)) {
+          If ( InStr(someLevel,newLevel) || InStr(someLevel,nextLevel) ) 
+          {
             GuiControl,Gems:,CurrentGem, % "|" test := GetDelimitedPartListString(gemFiles, someLevel)
             Sleep, 100
             Gui, Gems:Submit, NoHide
-            If (gems_toggle) {
+            If (gems_toggle) 
+            {
               SetGems()
             }
             break
@@ -113,12 +112,12 @@ SearchLog() {
         SaveState()
       }
       beenSlain := "has been slain"
-      IfInString, log, %beenSlain%
+      IfInString, newLogLines, %beenSlain%
       {
         Sleep, 5000
         Send, %KeyOnDeath%
       }
-    }
+    } ;end level up logic
 
     travel := "You have entered"
     IfInString, log, %travel%
@@ -127,10 +126,11 @@ SearchLog() {
       active_toggle := 1
 
       newPartTest := "Lioneye's Watch"
-      IfInString, log, %newPartTest%
+      IfInString, newLogLines, %newPartTest%
       {
         act5LastZone := "45 Cathedral Rooftop"
-        If (CurrentZone = act5LastZone) {
+        If (CurrentZone = act5LastZone)
+        {
           numPart := 2
           CurrentPart := "Part 2"
           GuiControl, Controls:Choose, CurrentPart, % "|" CurrentPart
@@ -138,20 +138,22 @@ SearchLog() {
       }
 
       newPartTest := "Oriath"
-      IfInString, log, %newPartTest%
+      IfInString, newLogLines, %newPartTest%
       {
         act10LastZone := "67 Feeding Trough"
-        If (CurrentZone = act10LastZone) {
+        If (CurrentZone = act10LastZone) 
+        {
           GuiControl, Controls:Choose, CurrentAct, % "|Act 11"
           GuiControl, Controls:Choose, CurrentZone, % "|68 The Templar Laboratory"
         }
       }
 
       newPartTest := "Hideout"
-      IfInString, log, %newPartTest%
+      IfInString, newLogLines, %newPartTest%
       {
         act11LastZone := "68 The Haunted Reliquary"
-        If (CurrentZone = act11LastZone) {
+        If (CurrentZone = act11LastZone) 
+        {
           numPart := 3
           CurrentPart := "Maps"
           GuiControl, Controls:Choose, CurrentPart, % "|" CurrentPart
@@ -159,7 +161,7 @@ SearchLog() {
       }
 
       newPartTest := "Aspirants' Plaza"
-      IfInString, log, %newPartTest%
+      IfInString, newLogLines, %newPartTest%
       {
         CurrentZone := "00 Aspirants' Plaza"
         ; GuiControl, Controls:Choose, CurrentZone, % "|" CurrentZone
@@ -168,16 +170,22 @@ SearchLog() {
       }
 
       newAct := CurrentAct
-      If (numPart != 3) {
+      If (numPart != 3) 
+      {
         ;loop through all of the acts in the current part
-        Loop, 6 {
-          For key, zoneGroup in data.zones {
-            If (zoneGroup.act = newAct) {
-              For k, newZone in zoneGroup.list {
+        Loop, 6 
+        {
+          For key, zoneGroup in data.zones 
+          {
+            If (zoneGroup.act = newAct) 
+            {
+              For k, newZone in zoneGroup.list 
+              {
                 StringTrimLeft, zoneSearch, newZone, 3
-                IfInString, log, %zoneSearch%
+                IfInString, newLogLines, %zoneSearch%
                 {
-                  If (newAct != CurrentAct) {
+                  If (newAct != CurrentAct) 
+                  {
                     GuiControl, Controls:Choose, CurrentAct, % "|" newAct
                     CurrentAct := newAct
                     Sleep 100
@@ -189,9 +197,11 @@ SearchLog() {
                   break 3
                 }
               }
-              If (numPart = 1){
+              If (numPart = 1)
+              {
                 actData := data.p1acts
-              } Else If (numPart = 2) {
+              } Else If (numPart = 2) 
+              {
                 actData := data.p2acts
               }
               newAct := RotateAct("next", actData, newAct)
@@ -199,11 +209,13 @@ SearchLog() {
             }
           }
         }
-      } Else {
+      } Else 
+      {
         ;loop through all of the Maps
-        For key, value in Maps {
+        For key, value in Maps 
+        {
           zoneSearch := "entered " . key . "."
-          IfInString, log, %zoneSearch%
+          IfInString, newLogLines, %zoneSearch%
           {
             conqFound := 0
             GuiControl, Controls:Choose, CurrentZone, % "|" key
@@ -214,19 +226,22 @@ SearchLog() {
           }
         }
       }
-    }
+    } ;end travel logic
 
     ;Conquerer Logic goes here!
-    If (!conqFound) {
+    If (!conqFound) 
+    {
       conqueror := "Veritania, the Redeemer"
-      IfInString, log, %conqueror%
+      IfInString, newLogLines, %conqueror%
       {
         conqFound := 1
         Conquerors["Veritania"].Region := Maps[CurrentZone].Region
         Conquerors["Veritania"].Appearances := Conquerors["Veritania"].Appearances + 1
-        If (Conquerors["Veritania"].Appearances = 5) {
+        If (Conquerors["Veritania"].Appearances = 5) 
+        {
           Conquerors["Veritania"].Appearances = 4
-        } Else If (Conquerors["Veritania"].Appearances = 4) {
+        } Else If (Conquerors["Veritania"].Appearances = 4) 
+        {
           ;Conquerors["Veritania"].Region := ""
           ;Conquerors["Veritania"].Appearances := 0
           numWatchstones := SubStr(CurrentAct, 1, 2)
@@ -239,14 +254,16 @@ SearchLog() {
       }
 
       conqueror := "Drox, the Warlord"
-      IfInString, log, %conqueror%
+      IfInString, newLogLines, %conqueror%
       {
         conqFound := 1
         Conquerors["Drox"].Region := Maps[CurrentZone].Region
         Conquerors["Drox"].Appearances := Conquerors["Drox"].Appearances + 1
-        If (Conquerors["Drox"].Appearances = 5) {
+        If (Conquerors["Drox"].Appearances = 5) 
+        {
           Conquerors["Drox"].Appearances = 4
-        } Else If (Conquerors["Drox"].Appearances = 4) {
+        } Else If (Conquerors["Drox"].Appearances = 4) 
+        {
           ;Conquerors["Drox"].Region := ""
           ;Conquerors["Drox"].Appearances := 0
           numWatchstones := SubStr(CurrentAct, 1, 2)
@@ -259,47 +276,54 @@ SearchLog() {
       }
 
       conqueror := "Baran, the Crusader"
-      IfInString, log, %conqueror%
+      IfInString, newLogLines, %conqueror%
       {
         conqFound := 1
         Conquerors["Baran"].Region := Maps[CurrentZone].Region
         Conquerors["Baran"].Appearances := Conquerors["Baran"].Appearances + 1
-        If (Conquerors["Baran"].Appearances = 5) {
+        If (Conquerors["Baran"].Appearances = 5) 
+        {
           Conquerors["Baran"].Appearances = 4
-        } Else If (Conquerors["Baran"].Appearances = 4) {
+        } Else If (Conquerors["Baran"].Appearances = 4) 
+        {
           ;Conquerors["Baran"].Region := ""
           ;Conquerors["Baran"].Appearances := 0
           numWatchstones := SubStr(CurrentAct, 1, 2)
           numWatchstones++
           GuiControl, Controls:Choose, CurrentAct, % "|" numWatchstones + 1
-        } Else {
+        } Else 
+        {
           GuiControl, Controls:Choose, CurrentAct, % "|" CurrentAct
         }
         ClearConquerors("Baran")
       }
 
       conqueror := "Al-Hezmin, the Hunter"
-      IfInString, log, %conqueror%
+      IfInString, newLogLines, %conqueror%
       {
         conqFound := 1
         Conquerors["Al-Hezmin"].Region := Maps[CurrentZone].Region
         Conquerors["Al-Hezmin"].Appearances := Conquerors["Al-Hezmin"].Appearances + 1
-        If (Conquerors["Al-Hezmin"].Appearances = 5) {
+        If (Conquerors["Al-Hezmin"].Appearances = 5) 
+        {
           Conquerors["Al-Hezmin"].Appearances = 4
-        } Else If (Conquerors["Al-Hezmin"].Appearances = 4) {
+        } Else If (Conquerors["Al-Hezmin"].Appearances = 4) 
+        {
           ;Conquerors["Al-Hezmin"].Region := ""
           ;Conquerors["Al-Hezmin"].Appearances := 0
           numWatchstones := SubStr(CurrentAct, 1, 2)
           numWatchstones++
           GuiControl, Controls:Choose, CurrentAct, % "|" numWatchstones + 1
-        } Else {
+        } Else 
+        {
           GuiControl, Controls:Choose, CurrentAct, % "|" CurrentAct
         }
         ClearConquerors("Al-Hezmin")
       }
-    }
+    } ;end conqueror logic
 
-    If (level_toggle) {
+    If (level_toggle) 
+    {
       SetExp()
     }
   }
