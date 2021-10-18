@@ -19,7 +19,7 @@ Loop, read, %mappath%
   Maps[map_array[1]].Region := map_array[7]
 
   Regions[map_array[7]] := {}
-  Regions[map_array[7]].SocketedStones := 0
+  ;Regions[map_array[7]].SocketedStones := 0
 
   Maps[map_array[1]].Tier := [ map_array[2] . ".0", map_array[3] . ".0", map_array[4] . ".0", map_array[5] . ".0", map_array[6] . ".0" ]
 
@@ -30,24 +30,24 @@ Loop, read, %mappath%
 
 }
 
-watchones := "" A_ScriptDir "\watchstones.ini" ""
+watchstones := "" A_ScriptDir "\watchstones.ini" ""
 For key, value in Conquerors {
-  IniRead, output, %watchones%, %key%, region
+  IniRead, output, %watchstones%, %key%, region
   value.Region := output
-  IniRead, output, %watchones%, %key%, appearances
+  IniRead, output, %watchstones%, %key%, appearances
   value.Appearances := output
 }
 If (numPart = 3) {
-  IniRead, output, %watchones%, Watchstones, collected
+  IniRead, output, %watchstones%, Watchstones, collected
   GuiControl, Controls:Choose, CurrentAct, % "|" output
 }
-ifnotexist,%watchones%
+ifnotexist,%watchstones%
 {
   For key, value in Conquerors {
-    IniWrite, "", %watchones%, %key%, region
-    IniWrite, 0, %watchones%, %key%, appearances
+    IniWrite, "", %watchstones%, %key%, region
+    IniWrite, 0, %watchstones%, %key%, appearances
   }
-  IniWrite, 00 Watchstones, %watchones%, Watchstones, collected
+  IniWrite, 00 Watchstones, %watchstones%, Watchstones, collected
 }
 
 ;MsgBox, % Conquerors["Al-Hezmin"].Appearances
@@ -375,7 +375,7 @@ SetMapGuide()
 
     For region, stones in Regions {
       Gui, Atlas:Font, c%whiteColor%
-      atlasText := region . " [" . stones.SocketedStones . "] "
+      atlasText := region ; . " [" . stones.SocketedStones . "] "
       For key, value in Conquerors {
         If (value.Region = region){
           atlasText := atlasText . "(" . value.Appearances . ")"

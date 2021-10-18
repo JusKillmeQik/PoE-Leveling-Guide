@@ -210,7 +210,6 @@ partSelectUI() {
   } Else {
     INIStones=%A_scriptdir%\watchstones.ini
     IniRead, CurrentAct, %INIStones%, Watchstones, collected, "00 Watchstones"
-    ;CurrentAct := "00 Watchstones"
     CurrentZone := "Academy Map"
     numPart := 3
     ; Gui, Notes:Cancel
@@ -272,11 +271,11 @@ actSelectUI() {
       IniWrite, %output%, %INIStones%, %key%, appearances
     }
 
-    INIAtlas=%A_scriptdir%\maps\atlas.ini
-    For key, value in Regions {
-      IniRead, numStones, %INIAtlas%, %CurrentAct%, %key%, 0
-      value.SocketedStones := numStones
-    }
+    ; INIAtlas=%A_scriptdir%\maps\atlas.ini
+    ; For key, value in Regions {
+    ;   IniRead, numStones, %INIAtlas%, %CurrentAct%, %key%, 0
+    ;   value.SocketedStones := numStones
+    ; }
     SetMapGuide()
     SetMapNotes()
     If (zone_toggle = 1) {

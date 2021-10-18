@@ -3,6 +3,45 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+requiredVer := "1.1.30.03", unicodeOrAnsi := A_IsUnicode?"Unicode":"ANSI", 32or64bits := A_PtrSize=4?"32bits":"64bits"
+If (!A_IsUnicode) {
+  Run,% "https://www.autohotkey.com/"
+  MsgBox,4096+48,"PoE Leveling Guide - Wrong AutoHotKey Version"
+  , "/!\ PLEASE READ CAREFULLY /!\"
+  . "`n"
+  . "`n" "This application isn't compatible with ANSI versions of AutoHotKey."
+  . "`n" "You are using v" A_AhkVersion " " unicodeOrAnsi " " 32or64bits
+  . "`n" "Please download and install AutoHotKey Unicode 32/64"
+  . "`n"
+  ExitApp
+}
+If (A_AhkVersion < "1.1") ; Smaller than 1.1.00.00
+|| (A_AhkVersion < "1.1.00.00")
+|| (A_AhkVersion < requiredVer) { ; Smaller than required
+  Run,% "https://www.autohotkey.com/"
+  MsgBox,4096+48, "PoE Leveling Guide - AutoHotKey Version Too Low"
+  , "/!\ PLEASE READ CAREFULLY /!\"
+  . "`n"
+  . "`n" "This application requires AutoHotKey v" requiredVer " or higher."
+  . "`n" "You are using v" A_AhkVersion " " unicodeOrAnsi " " 32or64bits
+  . "`n" "AutoHotKey website has been opened, please update to the latest version."
+  . "`n"
+  ExitApp
+}
+If (A_AhkVersion >= "2.0")
+|| (A_AhkVersion >= "2.0.00.00") { ; Higher or equal to 2.0.00.00
+  Run,% "https://www.autohotkey.com/"
+  MsgBox,4096+48, "PoE Leveling Guide - Wrong AutoHotKey Version"
+  , "/!\ PLEASE READ CAREFULLY /!\"
+  . "`n"
+  . "`n" "This application isn't compatible with AutoHotKey v2."
+  . "`n" "You are using v" A_AhkVersion " " unicodeOrAnsi " " 32or64bits
+  . "`n" "AutoHotKey v" requiredVer " or higher is required."
+  . "`n" "AutoHotKey website has been opened, please download the latest v1 version."
+  . "`n"
+  ExitApp
+}
+
 #Include, %A_ScriptDir%\lib\JSON.ahk
 #Include, %A_ScriptDir%\lib\Gdip.ahk
 
@@ -15,24 +54,6 @@ Menu, Tray, Add, Edit Build, LaunchBuild
 Menu, Tray, Add
 Menu, Tray, Add, Reload, PLGReload
 Menu, Tray, Add, Close, PLGClose
-
-;UrlDownloadToFile, https://raw.githubusercontent.com/JusKillmeQik/PoE-Leveling-Guide/master/filelist.txt, %A_ScriptDir%\filelist.txt
-progressWidth := 200
-Loop, read, %A_ScriptDir%\filelist.txt
-{
-  If (A_Index = 1){
-    progressWidth := A_LoopReadLine
-    if progressWidth is not integer
-      break
-    Progress, b w200, Please don't stop the download until complete, Updating Script
-  } Else {
-    UrlDownloadToFile, https://raw.githubusercontent.com/JusKillmeQik/PoE-Leveling-Guide/master/%A_LoopReadLine%, %A_ScriptDir%\%A_LoopReadLine%
-    progressPercent := 100 * (A_Index/progressWidth)
-    Progress, %progressPercent%
-  }
-}
-
-ExitApp
 
 ; Icons
 Menu, Tray, Icon, %A_ScriptDir%\icons\lvlG.ico
@@ -67,6 +88,54 @@ Try {
 #Include, %A_ScriptDir%\lib\settings.ahk
 #Include, %A_ScriptDir%\lib\sizing.ahk
 
+If (skipUpdates = "False") {
+  versionFile = %A_ScriptDir%\filelist.txt
+  If (!FileExist(versionFile)) {
+    updatePLG := "True"
+    UrlDownloadToFile, https://raw.githubusercontent.com/JusKillmeQik/PoE-Leveling-Guide/master/filelist.txt, %A_ScriptDir%\filelist.txt
+  } Else {
+    FileReadLine, oldVersion, %A_ScriptDir%\filelist.txt, 1
+    UrlDownloadToFile, https://raw.githubusercontent.com/JusKillmeQik/PoE-Leveling-Guide/master/filelist.txt, %A_ScriptDir%\filelist.txt
+    FileReadLine, newVersion, %A_ScriptDir%\filelist.txt, 1
+    If (oldVersion != newVersion) {
+      updatePLG := "True"
+    } Else {
+      updatePLG := "False"
+    }
+    If (newVersion = "404: Not Found") {
+      updatePLG := "False"
+    }
+  }
+  If (updatePLG = "True") {
+    MsgBox, 3,, % "You are running version " oldVersion " of the PoE Leveling Guide,`nversion " newVersion " is available, would you like to download it?`n`nTHIS COULD TAKE A FEW MINUTES!"
+    IfMsgBox Yes
+    {
+      progressWidth := 200
+      Loop, read, %A_ScriptDir%\filelist.txt
+      {
+        If (A_Index = 1){
+          ;Do nothing
+        } Else If (A_Index = 2){
+          progressWidth := A_LoopReadLine
+          If progressWidth is not integer
+            Break
+          Progress, b w200, Please don't stop the download until complete, Updating Script
+        } Else {
+          UrlDownloadToFile, https://raw.githubusercontent.com/JusKillmeQik/PoE-Leveling-Guide/master/%A_LoopReadLine%, %A_ScriptDir%\%A_LoopReadLine%
+          progressPercent := 100 * (A_Index/progressWidth)
+          Progress, %progressPercent%
+        }
+      }
+    } Else IfMsgBox No
+    {
+      ;Do nothing
+    } Else {
+      ExitApp
+    }
+  }
+
+}
+
 global gem_data := {}
 Try {
     FileRead, JSONFile, %A_ScriptDir%\lib\gems.json
@@ -82,7 +151,11 @@ Try {
 
 global gemList := Object()
 global filterList := [" None"]
-downloadApproved := "None"
+If (skipGemImages = "False") {
+  downloadApproved := "None"
+} Else {
+  downloadApproved := "False"
+}
 progressWidth := gem_data.length()
 
 For key, someGem in gem_data {
@@ -96,9 +169,9 @@ For key, someGem in gem_data {
   gemList[gemList.length()].url := "" "\images\gems\" someGem.name ".png"  ""
   
   image_file := "" A_ScriptDir "\images\gems\" someGem.name ".png"  ""
-  If (!FileExist(image_file)) {
+  icon_url := someGem.iconPath
+  If (!FileExist(image_file) and icon_url!="") {
     If (downloadApproved = "True") {
-      icon_url := someGem.iconPath
       UrlDownloadToFile, %icon_url%, %image_file%
       progressPercent := 100 * (A_Index/progressWidth)
       Progress, %progressPercent%
@@ -109,7 +182,6 @@ For key, someGem in gem_data {
       IfMsgBox Yes
       {
         downloadApproved := "True"
-        icon_url := someGem.iconPath
         UrlDownloadToFile, %icon_url%, %image_file%
         Progress, b w%progressWidth%, Please don't stop the download until complete, Downloading Gem Images
         progressPercent := 100 * (A_Index/progressWidth)

@@ -245,7 +245,8 @@ SetExp()
     If (numPart != 3){
       monsterLevel := SubStr(CurrentZone, 1, 2)
     } Else {
-      monsterLevel := Maps[CurrentZone].Tier[Regions[Maps[CurrentZone].Region].SocketedStones + 1] + 67
+      monsterLevel := Maps[CurrentZone].Tier[5] + 67 ;default to max if unknown until a new watchstone strategy evolves
+      ;monsterLevel := Maps[CurrentZone].Tier[Regions[Maps[CurrentZone].Region].SocketedStones + 1] + 67
     }
   }
   
