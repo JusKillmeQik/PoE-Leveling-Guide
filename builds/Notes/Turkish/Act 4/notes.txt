@@ -79,4 +79,4 @@ zone:The Ascent
 Yukarı sonra sağa git.
 + Resanator'ü aktif et.(act sonu)
 > Oriath Portal
-G,CRAFT - Attributes
+G,CRAFT - Ailment, Stun and Curse Mitigation

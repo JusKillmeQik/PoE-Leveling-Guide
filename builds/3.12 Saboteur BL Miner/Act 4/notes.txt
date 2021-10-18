@@ -97,4 +97,4 @@ Go up and right
 small passage to the exit
 > Go to Act 5
 _______________
-G,CRAFT - Attributes
+G,CRAFT - Ailment, Stun and Curse Mitigation
