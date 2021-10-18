@@ -145,6 +145,7 @@ LaunchSettings() {
 
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+25, Tree Side ;Static50
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Tree File Name ;Static51
+  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Autotoggle Zones ;Static52
 
   Gui, Settings:Add, Edit, vbackgroundColor w%nameWidth% h%optionHeight% x565 y186, %backgroundColor%
   Gui, Settings:Add, Edit, vredColor w%nameWidth% h%optionHeight% y+5, %redColor%
@@ -159,6 +160,7 @@ LaunchSettings() {
 
   Gui, Settings:Add, DropDownList, vtreeSide w%optionWidth% h%dropDownHeight% y+25 x575, % GetRightOrLeft(treeSide)
   Gui, Settings:Add, Edit, vtreeName w%optionWidth% h%optionHeight% y+5, %treeName%
+  Gui, Settings:Add, DropDownList, vautoToggleZoneImages w%optionWidth% h%dropDownHeight% y+5, % GetTrueOrFalse(autoToggleZoneImages)
 
   ;Cancel Button
   Gui, Settings:Add, Button, gCancelAndClose w%nameWidth% x565 y438, &Cancel
@@ -375,6 +377,17 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, This is the multiplier for the full resolution of `nthe zone layout images. A good default value is .5
     }
+  } Else If (control = "static52") { ;Autotoggle Zone images
+    If (oldControl = control){
+          toolTime .= 1
+        } Else {
+          oldControl := control
+          toolTime = 0
+          Tooltip
+        }
+        If (toolTime > toolTimeout) {
+          ToolTip, If enabled will automatically toggle the zone images Disabling them in towns hideouts and enabling them in all other
+        }
   } Else If (control = "static30") { ;Notes X Offset
     If (oldControl = control){
       toolTime .= 1
