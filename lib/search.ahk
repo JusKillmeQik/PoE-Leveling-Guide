@@ -60,16 +60,16 @@ RotateZone(direction, zones, act, current) {
 
 SearchLog() {
   global
-  log := Tail(1, client)
+  log := Tail(7, client) ;Only need to check 4 or 5 with DND but I don't know what else GGG will add so I'm looking at more
   ;Only bother checking if the log has changed or someone manually changed Part
   If (log != oldLog or trigger) {
     oldLog := log
     trigger := false
-    DND := "DND mode is now ON"
-    IfInString, log, %DND%
-    {
-      log := Tail(2, client)
-    }
+    ; DND := "DND mode is now ON"
+    ; IfInString, log, %DND%
+    ; {
+    ;   log := Tail(5, client) ;need to look further back for Generating level line
+    ; }
     levelUp := charName ;check character name is present first
     IfInString, log, %levelUp%
     {
@@ -121,10 +121,18 @@ SearchLog() {
     }
 
     travel := "You have entered"
-    IfInString, log, %travel%
+    generated := "Generating level"
+    ;IfInString, log, %travel%
+    If ( InStr(log,travel) || InStr(log,generated) )
     {
       activeCount := 0
       active_toggle := 1
+
+      levelPos := InStr(log, generated, false)
+      monsterLevel := SubStr(log, levelPos+17, 2)
+      If ( levelPos = 0 ) {
+        monsterLevel := -1
+      }
 
       newPartTest := "Lioneye's Watch"
       IfInString, log, %newPartTest%

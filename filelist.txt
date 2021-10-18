@@ -1,0 +1,965 @@
+4.0.4
+965
+.gitignore
+LevelingGuide.ahk
+License.md
+PatchNotes.md
+README.md
+builds/3.12 Saboteur BL Miner/Act 1/guide.txt
+builds/3.12 Saboteur BL Miner/Act 1/notes.txt
+builds/3.12 Saboteur BL Miner/Act 1/tree.jpg
+builds/3.12 Saboteur BL Miner/Act 10/guide.txt
+builds/3.12 Saboteur BL Miner/Act 10/notes.txt
+builds/3.12 Saboteur BL Miner/Act 10/tree.jpg
+builds/3.12 Saboteur BL Miner/Act 11/guide.txt
+builds/3.12 Saboteur BL Miner/Act 11/notes.txt
+builds/3.12 Saboteur BL Miner/Act 11/tree.jpg
+builds/3.12 Saboteur BL Miner/Act 2/guide.txt
+builds/3.12 Saboteur BL Miner/Act 2/notes.txt
+builds/3.12 Saboteur BL Miner/Act 2/tree.jpg
+builds/3.12 Saboteur BL Miner/Act 3/guide.txt
+builds/3.12 Saboteur BL Miner/Act 3/notes.txt
+builds/3.12 Saboteur BL Miner/Act 3/tree.jpg
+builds/3.12 Saboteur BL Miner/Act 4/guide.txt
+builds/3.12 Saboteur BL Miner/Act 4/notes.txt
+builds/3.12 Saboteur BL Miner/Act 4/tree.jpg
+builds/3.12 Saboteur BL Miner/Act 5/guide.txt
+builds/3.12 Saboteur BL Miner/Act 5/notes.txt
+builds/3.12 Saboteur BL Miner/Act 5/tree.jpg
+builds/3.12 Saboteur BL Miner/Act 6/guide.txt
+builds/3.12 Saboteur BL Miner/Act 6/notes.txt
+builds/3.12 Saboteur BL Miner/Act 6/tree.jpg
+builds/3.12 Saboteur BL Miner/Act 7/guide.txt
+builds/3.12 Saboteur BL Miner/Act 7/notes.txt
+builds/3.12 Saboteur BL Miner/Act 7/tree.jpg
+builds/3.12 Saboteur BL Miner/Act 8/guide.txt
+builds/3.12 Saboteur BL Miner/Act 8/notes.txt
+builds/3.12 Saboteur BL Miner/Act 8/tree.jpg
+builds/3.12 Saboteur BL Miner/Act 9/guide.txt
+builds/3.12 Saboteur BL Miner/Act 9/notes.txt
+builds/3.12 Saboteur BL Miner/Act 9/tree.jpg
+builds/3.12 Saboteur BL Miner/ascendancy.txt
+builds/3.12 Saboteur BL Miner/build_info.txt
+builds/3.12 Saboteur BL Miner/gems/02.ini
+builds/3.12 Saboteur BL Miner/gems/04.ini
+builds/3.12 Saboteur BL Miner/gems/08.ini
+builds/3.12 Saboteur BL Miner/gems/16.ini
+builds/3.12 Saboteur BL Miner/gems/24.ini
+builds/3.12 Saboteur BL Miner/gems/28.ini
+builds/3.12 Saboteur BL Miner/gems/38.ini
+builds/3.12 Saboteur BL Miner/gems/42.ini
+builds/3.12 Saboteur BL Miner/gems/72.ini
+builds/3.12 Saboteur BL Miner/gems/class.ini
+builds/3.12 Trickster TR Miner/Act 1/guide.txt
+builds/3.12 Trickster TR Miner/Act 1/notes.txt
+builds/3.12 Trickster TR Miner/Act 1/tree.jpg
+builds/3.12 Trickster TR Miner/Act 10/guide.txt
+builds/3.12 Trickster TR Miner/Act 10/notes.txt
+builds/3.12 Trickster TR Miner/Act 10/tree.jpg
+builds/3.12 Trickster TR Miner/Act 11/guide.txt
+builds/3.12 Trickster TR Miner/Act 11/notes.txt
+builds/3.12 Trickster TR Miner/Act 11/tree.jpg
+builds/3.12 Trickster TR Miner/Act 2/guide.txt
+builds/3.12 Trickster TR Miner/Act 2/notes.txt
+builds/3.12 Trickster TR Miner/Act 2/tree.jpg
+builds/3.12 Trickster TR Miner/Act 3/guide.txt
+builds/3.12 Trickster TR Miner/Act 3/notes.txt
+builds/3.12 Trickster TR Miner/Act 3/tree.jpg
+builds/3.12 Trickster TR Miner/Act 4/guide.txt
+builds/3.12 Trickster TR Miner/Act 4/notes.txt
+builds/3.12 Trickster TR Miner/Act 4/tree.jpg
+builds/3.12 Trickster TR Miner/Act 5/guide.txt
+builds/3.12 Trickster TR Miner/Act 5/notes.txt
+builds/3.12 Trickster TR Miner/Act 5/tree.jpg
+builds/3.12 Trickster TR Miner/Act 6/guide.txt
+builds/3.12 Trickster TR Miner/Act 6/notes.txt
+builds/3.12 Trickster TR Miner/Act 6/tree.jpg
+builds/3.12 Trickster TR Miner/Act 7/guide.txt
+builds/3.12 Trickster TR Miner/Act 7/notes.txt
+builds/3.12 Trickster TR Miner/Act 7/tree.jpg
+builds/3.12 Trickster TR Miner/Act 8/guide.txt
+builds/3.12 Trickster TR Miner/Act 8/notes.txt
+builds/3.12 Trickster TR Miner/Act 8/tree.jpg
+builds/3.12 Trickster TR Miner/Act 9/guide.txt
+builds/3.12 Trickster TR Miner/Act 9/notes.txt
+builds/3.12 Trickster TR Miner/Act 9/tree.jpg
+builds/3.12 Trickster TR Miner/ascendancy.txt
+builds/3.12 Trickster TR Miner/build_info.txt
+builds/3.12 Trickster TR Miner/gems/02.ini
+builds/3.12 Trickster TR Miner/gems/04.ini
+builds/3.12 Trickster TR Miner/gems/08.ini
+builds/3.12 Trickster TR Miner/gems/12.ini
+builds/3.12 Trickster TR Miner/gems/16.ini
+builds/3.12 Trickster TR Miner/gems/24.ini
+builds/3.12 Trickster TR Miner/gems/28.ini
+builds/3.12 Trickster TR Miner/gems/31.ini
+builds/3.12 Trickster TR Miner/gems/34.ini
+builds/3.12 Trickster TR Miner/gems/38.ini
+builds/3.12 Trickster TR Miner/gems/42.ini
+builds/3.12 Trickster TR Miner/gems/72.ini
+builds/3.12 Trickster TR Miner/gems/class.ini
+builds/3.13 Assassin Blade Blast Matth/Act 1/tree.jpg
+builds/3.13 Assassin Blade Blast Matth/Act 10/tree.jpg
+builds/3.13 Assassin Blade Blast Matth/Act 11/tree.jpg
+builds/3.13 Assassin Blade Blast Matth/Act 2/tree.jpg
+builds/3.13 Assassin Blade Blast Matth/Act 3/tree.jpg
+builds/3.13 Assassin Blade Blast Matth/Act 4/tree.jpg
+builds/3.13 Assassin Blade Blast Matth/Act 5/tree.jpg
+builds/3.13 Assassin Blade Blast Matth/Act 6/tree.jpg
+builds/3.13 Assassin Blade Blast Matth/Act 7/tree.jpg
+builds/3.13 Assassin Blade Blast Matth/Act 8/tree.jpg
+builds/3.13 Assassin Blade Blast Matth/Act 9/tree.jpg
+builds/3.13 Assassin Blade Blast Matth/ascendancy.txt
+builds/3.13 Assassin Blade Blast Matth/build_info.txt
+builds/3.13 Assassin Blade Blast Matth/gems/02.ini
+builds/3.13 Assassin Blade Blast Matth/gems/04.ini
+builds/3.13 Assassin Blade Blast Matth/gems/08.ini
+builds/3.13 Assassin Blade Blast Matth/gems/12.ini
+builds/3.13 Assassin Blade Blast Matth/gems/16.ini
+builds/3.13 Assassin Blade Blast Matth/gems/24.ini
+builds/3.13 Assassin Blade Blast Matth/gems/28.ini
+builds/3.13 Assassin Blade Blast Matth/gems/31.ini
+builds/3.13 Assassin Blade Blast Matth/gems/34.ini
+builds/3.13 Assassin Blade Blast Matth/gems/38.ini
+builds/3.13 Assassin Blade Blast Matth/gems/42.ini
+builds/3.13 Assassin Blade Blast Matth/gems/class.ini
+builds/3.13 Crack Lance Hiero/Act 1/tree.jpg
+builds/3.13 Crack Lance Hiero/Act 10/tree.jpg
+builds/3.13 Crack Lance Hiero/Act 11/tree.jpg
+builds/3.13 Crack Lance Hiero/Act 2/tree.jpg
+builds/3.13 Crack Lance Hiero/Act 3/tree.jpg
+builds/3.13 Crack Lance Hiero/Act 4/tree.jpg
+builds/3.13 Crack Lance Hiero/Act 5/tree.jpg
+builds/3.13 Crack Lance Hiero/Act 6/tree.jpg
+builds/3.13 Crack Lance Hiero/Act 7/tree.jpg
+builds/3.13 Crack Lance Hiero/Act 8/tree.jpg
+builds/3.13 Crack Lance Hiero/Act 9/tree.jpg
+builds/3.13 Crack Lance Hiero/ascendancy.txt
+builds/3.13 Crack Lance Hiero/build_info.txt
+builds/3.13 Crack Lance Hiero/gems/02.ini
+builds/3.13 Crack Lance Hiero/gems/04.ini
+builds/3.13 Crack Lance Hiero/gems/08.ini
+builds/3.13 Crack Lance Hiero/gems/12.ini
+builds/3.13 Crack Lance Hiero/gems/16.ini
+builds/3.13 Crack Lance Hiero/gems/24.ini
+builds/3.13 Crack Lance Hiero/gems/28.ini
+builds/3.13 Crack Lance Hiero/gems/31.ini
+builds/3.13 Crack Lance Hiero/gems/34.ini
+builds/3.13 Crack Lance Hiero/gems/38.ini
+builds/3.13 Crack Lance Hiero/gems/42.ini
+builds/3.13 Crack Lance Hiero/gems/class.ini
+builds/3.13 EQ Jugg/Act 1/tree.jpg
+builds/3.13 EQ Jugg/Act 10/tree.jpg
+builds/3.13 EQ Jugg/Act 11/tree.jpg
+builds/3.13 EQ Jugg/Act 2/tree.jpg
+builds/3.13 EQ Jugg/Act 3/tree.jpg
+builds/3.13 EQ Jugg/Act 4/tree.jpg
+builds/3.13 EQ Jugg/Act 5/tree.jpg
+builds/3.13 EQ Jugg/Act 6/tree.jpg
+builds/3.13 EQ Jugg/Act 7/tree.jpg
+builds/3.13 EQ Jugg/Act 8/tree.jpg
+builds/3.13 EQ Jugg/Act 9/tree.jpg
+builds/3.13 EQ Jugg/ascendancy.txt
+builds/3.13 EQ Jugg/build_info.txt
+builds/3.13 EQ Jugg/gems/02.ini
+builds/3.13 EQ Jugg/gems/04.ini
+builds/3.13 EQ Jugg/gems/08.ini
+builds/3.13 EQ Jugg/gems/12.ini
+builds/3.13 EQ Jugg/gems/16.ini
+builds/3.13 EQ Jugg/gems/24.ini
+builds/3.13 EQ Jugg/gems/28.ini
+builds/3.13 EQ Jugg/gems/31.ini
+builds/3.13 EQ Jugg/gems/34.ini
+builds/3.13 EQ Jugg/gems/38.ini
+builds/3.13 EQ Jugg/gems/42.ini
+builds/3.13 EQ Jugg/gems/class.ini
+builds/3.13 Enki Arc Witch/Act 1/guide.txt
+builds/3.13 Enki Arc Witch/Act 1/notes.txt
+builds/3.13 Enki Arc Witch/Act 1/tree.jpg
+builds/3.13 Enki Arc Witch/Act 10/guide.txt
+builds/3.13 Enki Arc Witch/Act 10/notes.txt
+builds/3.13 Enki Arc Witch/Act 10/tree.jpg
+builds/3.13 Enki Arc Witch/Act 11/guide.txt
+builds/3.13 Enki Arc Witch/Act 11/notes.txt
+builds/3.13 Enki Arc Witch/Act 11/tree.jpg
+builds/3.13 Enki Arc Witch/Act 2/guide.txt
+builds/3.13 Enki Arc Witch/Act 2/notes.txt
+builds/3.13 Enki Arc Witch/Act 2/tree.jpg
+builds/3.13 Enki Arc Witch/Act 3/guide.txt
+builds/3.13 Enki Arc Witch/Act 3/notes.txt
+builds/3.13 Enki Arc Witch/Act 3/tree.jpg
+builds/3.13 Enki Arc Witch/Act 4/guide.txt
+builds/3.13 Enki Arc Witch/Act 4/notes.txt
+builds/3.13 Enki Arc Witch/Act 4/tree.jpg
+builds/3.13 Enki Arc Witch/Act 5/guide.txt
+builds/3.13 Enki Arc Witch/Act 5/notes.txt
+builds/3.13 Enki Arc Witch/Act 5/tree.jpg
+builds/3.13 Enki Arc Witch/Act 6/guide.txt
+builds/3.13 Enki Arc Witch/Act 6/notes.txt
+builds/3.13 Enki Arc Witch/Act 6/tree.jpg
+builds/3.13 Enki Arc Witch/Act 7/guide.txt
+builds/3.13 Enki Arc Witch/Act 7/notes.txt
+builds/3.13 Enki Arc Witch/Act 7/tree.jpg
+builds/3.13 Enki Arc Witch/Act 8/guide.txt
+builds/3.13 Enki Arc Witch/Act 8/notes.txt
+builds/3.13 Enki Arc Witch/Act 8/tree.jpg
+builds/3.13 Enki Arc Witch/Act 9/guide.txt
+builds/3.13 Enki Arc Witch/Act 9/notes.txt
+builds/3.13 Enki Arc Witch/Act 9/tree.jpg
+builds/3.13 Enki Arc Witch/ascendancy.txt
+builds/3.13 Enki Arc Witch/build_info.txt
+builds/3.13 Enki Arc Witch/gems/02.ini
+builds/3.13 Enki Arc Witch/gems/04.ini
+builds/3.13 Enki Arc Witch/gems/08.ini
+builds/3.13 Enki Arc Witch/gems/12.ini
+builds/3.13 Enki Arc Witch/gems/16.ini
+builds/3.13 Enki Arc Witch/gems/24.ini
+builds/3.13 Enki Arc Witch/gems/31.ini
+builds/3.13 Enki Arc Witch/gems/34.ini
+builds/3.13 Enki Arc Witch/gems/38.ini
+builds/3.13 Enki Arc Witch/gems/42.ini
+builds/3.13 Enki Arc Witch/gems/72.ini
+builds/3.13 Enki Arc Witch/gems/90.ini
+builds/3.13 Enki Arc Witch/gems/class.ini
+builds/3.13 Gladiator Bleed Bow/Act 1/tree.jpg
+builds/3.13 Gladiator Bleed Bow/Act 10/tree.jpg
+builds/3.13 Gladiator Bleed Bow/Act 11/tree.jpg
+builds/3.13 Gladiator Bleed Bow/Act 2/tree.jpg
+builds/3.13 Gladiator Bleed Bow/Act 3/tree.jpg
+builds/3.13 Gladiator Bleed Bow/Act 4/tree.jpg
+builds/3.13 Gladiator Bleed Bow/Act 5/tree.jpg
+builds/3.13 Gladiator Bleed Bow/Act 6/tree.jpg
+builds/3.13 Gladiator Bleed Bow/Act 7/tree.jpg
+builds/3.13 Gladiator Bleed Bow/Act 8/tree.jpg
+builds/3.13 Gladiator Bleed Bow/Act 9/tree.jpg
+builds/3.13 Gladiator Bleed Bow/ascendancy.txt
+builds/3.13 Gladiator Bleed Bow/build_info.txt
+builds/3.13 Gladiator Bleed Bow/gems/02.ini
+builds/3.13 Gladiator Bleed Bow/gems/04.ini
+builds/3.13 Gladiator Bleed Bow/gems/08.ini
+builds/3.13 Gladiator Bleed Bow/gems/12.ini
+builds/3.13 Gladiator Bleed Bow/gems/16.ini
+builds/3.13 Gladiator Bleed Bow/gems/24.ini
+builds/3.13 Gladiator Bleed Bow/gems/31.ini
+builds/3.13 Gladiator Bleed Bow/gems/34.ini
+builds/3.13 Gladiator Bleed Bow/gems/38.ini
+builds/3.13 Gladiator Bleed Bow/gems/42.ini
+builds/3.13 Gladiator Bleed Bow/gems/72.ini
+builds/3.13 Gladiator Bleed Bow/gems/class.ini
+builds/3.13 Necro Carrion Golems/Act 1/guide.txt
+builds/3.13 Necro Carrion Golems/Act 1/notes.txt
+builds/3.13 Necro Carrion Golems/Act 1/tree.jpg
+builds/3.13 Necro Carrion Golems/Act 10/guide.txt
+builds/3.13 Necro Carrion Golems/Act 10/notes.txt
+builds/3.13 Necro Carrion Golems/Act 10/tree.jpg
+builds/3.13 Necro Carrion Golems/Act 11/guide.txt
+builds/3.13 Necro Carrion Golems/Act 11/notes.txt
+builds/3.13 Necro Carrion Golems/Act 11/tree.jpg
+builds/3.13 Necro Carrion Golems/Act 2/guide.txt
+builds/3.13 Necro Carrion Golems/Act 2/notes.txt
+builds/3.13 Necro Carrion Golems/Act 2/tree.jpg
+builds/3.13 Necro Carrion Golems/Act 3/guide.txt
+builds/3.13 Necro Carrion Golems/Act 3/notes.txt
+builds/3.13 Necro Carrion Golems/Act 3/tree.jpg
+builds/3.13 Necro Carrion Golems/Act 4/guide.txt
+builds/3.13 Necro Carrion Golems/Act 4/notes.txt
+builds/3.13 Necro Carrion Golems/Act 4/tree.jpg
+builds/3.13 Necro Carrion Golems/Act 5/guide.txt
+builds/3.13 Necro Carrion Golems/Act 5/notes.txt
+builds/3.13 Necro Carrion Golems/Act 5/tree.jpg
+builds/3.13 Necro Carrion Golems/Act 6/guide.txt
+builds/3.13 Necro Carrion Golems/Act 6/notes.txt
+builds/3.13 Necro Carrion Golems/Act 6/tree.jpg
+builds/3.13 Necro Carrion Golems/Act 7/guide.txt
+builds/3.13 Necro Carrion Golems/Act 7/notes.txt
+builds/3.13 Necro Carrion Golems/Act 7/tree.jpg
+builds/3.13 Necro Carrion Golems/Act 8/guide.txt
+builds/3.13 Necro Carrion Golems/Act 8/notes.txt
+builds/3.13 Necro Carrion Golems/Act 8/tree.jpg
+builds/3.13 Necro Carrion Golems/Act 9/guide.txt
+builds/3.13 Necro Carrion Golems/Act 9/notes.txt
+builds/3.13 Necro Carrion Golems/Act 9/tree.jpg
+builds/3.13 Necro Carrion Golems/ascendancy.txt
+builds/3.13 Necro Carrion Golems/build_info.txt
+builds/3.13 Necro Carrion Golems/gems/02.ini
+builds/3.13 Necro Carrion Golems/gems/04.ini
+builds/3.13 Necro Carrion Golems/gems/08.ini
+builds/3.13 Necro Carrion Golems/gems/12.ini
+builds/3.13 Necro Carrion Golems/gems/16.ini
+builds/3.13 Necro Carrion Golems/gems/24.ini
+builds/3.13 Necro Carrion Golems/gems/28.ini
+builds/3.13 Necro Carrion Golems/gems/31.ini
+builds/3.13 Necro Carrion Golems/gems/34.ini
+builds/3.13 Necro Carrion Golems/gems/38.ini
+builds/3.13 Necro Carrion Golems/gems/42.ini
+builds/3.13 Necro Carrion Golems/gems/66.ini
+builds/3.13 Necro Carrion Golems/gems/72.ini
+builds/3.13 Necro Carrion Golems/gems/class.ini
+builds/3.13 Scion Ball Lightning/Act 1/guide.txt
+builds/3.13 Scion Ball Lightning/Act 1/notes.txt
+builds/3.13 Scion Ball Lightning/Act 1/tree.jpg
+builds/3.13 Scion Ball Lightning/Act 10/guide.txt
+builds/3.13 Scion Ball Lightning/Act 10/notes.txt
+builds/3.13 Scion Ball Lightning/Act 10/tree.jpg
+builds/3.13 Scion Ball Lightning/Act 11/guide.txt
+builds/3.13 Scion Ball Lightning/Act 11/notes.txt
+builds/3.13 Scion Ball Lightning/Act 11/tree.jpg
+builds/3.13 Scion Ball Lightning/Act 2/guide.txt
+builds/3.13 Scion Ball Lightning/Act 2/notes.txt
+builds/3.13 Scion Ball Lightning/Act 2/tree.jpg
+builds/3.13 Scion Ball Lightning/Act 3/guide.txt
+builds/3.13 Scion Ball Lightning/Act 3/notes.txt
+builds/3.13 Scion Ball Lightning/Act 3/tree.jpg
+builds/3.13 Scion Ball Lightning/Act 4/guide.txt
+builds/3.13 Scion Ball Lightning/Act 4/notes.txt
+builds/3.13 Scion Ball Lightning/Act 4/tree.jpg
+builds/3.13 Scion Ball Lightning/Act 5/guide.txt
+builds/3.13 Scion Ball Lightning/Act 5/notes.txt
+builds/3.13 Scion Ball Lightning/Act 5/tree.jpg
+builds/3.13 Scion Ball Lightning/Act 6/guide.txt
+builds/3.13 Scion Ball Lightning/Act 6/notes.txt
+builds/3.13 Scion Ball Lightning/Act 6/tree.jpg
+builds/3.13 Scion Ball Lightning/Act 7/guide.txt
+builds/3.13 Scion Ball Lightning/Act 7/notes.txt
+builds/3.13 Scion Ball Lightning/Act 7/tree.jpg
+builds/3.13 Scion Ball Lightning/Act 8/guide.txt
+builds/3.13 Scion Ball Lightning/Act 8/notes.txt
+builds/3.13 Scion Ball Lightning/Act 8/tree.jpg
+builds/3.13 Scion Ball Lightning/Act 9/guide.txt
+builds/3.13 Scion Ball Lightning/Act 9/notes.txt
+builds/3.13 Scion Ball Lightning/Act 9/tree.jpg
+builds/3.13 Scion Ball Lightning/ascendancy.txt
+builds/3.13 Scion Ball Lightning/build_info.txt
+builds/3.13 Scion Ball Lightning/gems/02.ini
+builds/3.13 Scion Ball Lightning/gems/04.ini
+builds/3.13 Scion Ball Lightning/gems/08.ini
+builds/3.13 Scion Ball Lightning/gems/16.ini
+builds/3.13 Scion Ball Lightning/gems/24.ini
+builds/3.13 Scion Ball Lightning/gems/31.ini
+builds/3.13 Scion Ball Lightning/gems/34.ini
+builds/3.13 Scion Ball Lightning/gems/38.ini
+builds/3.13 Scion Ball Lightning/gems/72.ini
+builds/3.13 Scion Ball Lightning/gems/class.ini
+builds/3.13 Toxic Rain Pathfinder/Act 1/guide.txt
+builds/3.13 Toxic Rain Pathfinder/Act 1/notes.txt
+builds/3.13 Toxic Rain Pathfinder/Act 1/tree.jpg
+builds/3.13 Toxic Rain Pathfinder/Act 10/guide.txt
+builds/3.13 Toxic Rain Pathfinder/Act 10/notes.txt
+builds/3.13 Toxic Rain Pathfinder/Act 10/tree.jpg
+builds/3.13 Toxic Rain Pathfinder/Act 11/guide.txt
+builds/3.13 Toxic Rain Pathfinder/Act 11/notes.txt
+builds/3.13 Toxic Rain Pathfinder/Act 11/tree.jpg
+builds/3.13 Toxic Rain Pathfinder/Act 2/guide.txt
+builds/3.13 Toxic Rain Pathfinder/Act 2/notes.txt
+builds/3.13 Toxic Rain Pathfinder/Act 2/tree.jpg
+builds/3.13 Toxic Rain Pathfinder/Act 3/guide.txt
+builds/3.13 Toxic Rain Pathfinder/Act 3/notes.txt
+builds/3.13 Toxic Rain Pathfinder/Act 3/tree.jpg
+builds/3.13 Toxic Rain Pathfinder/Act 4/guide.txt
+builds/3.13 Toxic Rain Pathfinder/Act 4/notes.txt
+builds/3.13 Toxic Rain Pathfinder/Act 4/tree.jpg
+builds/3.13 Toxic Rain Pathfinder/Act 5/guide.txt
+builds/3.13 Toxic Rain Pathfinder/Act 5/notes.txt
+builds/3.13 Toxic Rain Pathfinder/Act 5/tree.jpg
+builds/3.13 Toxic Rain Pathfinder/Act 6/guide.txt
+builds/3.13 Toxic Rain Pathfinder/Act 6/notes.txt
+builds/3.13 Toxic Rain Pathfinder/Act 6/tree.jpg
+builds/3.13 Toxic Rain Pathfinder/Act 7/guide.txt
+builds/3.13 Toxic Rain Pathfinder/Act 7/notes.txt
+builds/3.13 Toxic Rain Pathfinder/Act 7/tree.jpg
+builds/3.13 Toxic Rain Pathfinder/Act 8/guide.txt
+builds/3.13 Toxic Rain Pathfinder/Act 8/notes.txt
+builds/3.13 Toxic Rain Pathfinder/Act 8/tree.jpg
+builds/3.13 Toxic Rain Pathfinder/Act 9/guide.txt
+builds/3.13 Toxic Rain Pathfinder/Act 9/notes.txt
+builds/3.13 Toxic Rain Pathfinder/Act 9/tree.jpg
+builds/3.13 Toxic Rain Pathfinder/ascendancy.txt
+builds/3.13 Toxic Rain Pathfinder/build_info.txt
+builds/3.13 Toxic Rain Pathfinder/gems/02.ini
+builds/3.13 Toxic Rain Pathfinder/gems/04.ini
+builds/3.13 Toxic Rain Pathfinder/gems/08.ini
+builds/3.13 Toxic Rain Pathfinder/gems/12.ini
+builds/3.13 Toxic Rain Pathfinder/gems/16.ini
+builds/3.13 Toxic Rain Pathfinder/gems/24.ini
+builds/3.13 Toxic Rain Pathfinder/gems/28.ini
+builds/3.13 Toxic Rain Pathfinder/gems/31.ini
+builds/3.13 Toxic Rain Pathfinder/gems/38.ini
+builds/3.13 Toxic Rain Pathfinder/gems/42.ini
+builds/3.13 Toxic Rain Pathfinder/gems/66.ini
+builds/3.13 Toxic Rain Pathfinder/gems/72.ini
+builds/3.13 Toxic Rain Pathfinder/gems/90.ini
+builds/3.13 Toxic Rain Pathfinder/gems/class.ini
+builds/3.13 Trickster ED Contagion/Act 1/guide.txt
+builds/3.13 Trickster ED Contagion/Act 1/notes.txt
+builds/3.13 Trickster ED Contagion/Act 1/tree.jpg
+builds/3.13 Trickster ED Contagion/Act 10/guide.txt
+builds/3.13 Trickster ED Contagion/Act 10/notes.txt
+builds/3.13 Trickster ED Contagion/Act 10/tree.jpg
+builds/3.13 Trickster ED Contagion/Act 11/guide.txt
+builds/3.13 Trickster ED Contagion/Act 11/notes.txt
+builds/3.13 Trickster ED Contagion/Act 11/tree.jpg
+builds/3.13 Trickster ED Contagion/Act 2/guide.txt
+builds/3.13 Trickster ED Contagion/Act 2/notes.txt
+builds/3.13 Trickster ED Contagion/Act 2/tree.jpg
+builds/3.13 Trickster ED Contagion/Act 3/guide.txt
+builds/3.13 Trickster ED Contagion/Act 3/notes.txt
+builds/3.13 Trickster ED Contagion/Act 3/tree.jpg
+builds/3.13 Trickster ED Contagion/Act 4/guide.txt
+builds/3.13 Trickster ED Contagion/Act 4/notes.txt
+builds/3.13 Trickster ED Contagion/Act 4/tree.jpg
+builds/3.13 Trickster ED Contagion/Act 5/guide.txt
+builds/3.13 Trickster ED Contagion/Act 5/notes.txt
+builds/3.13 Trickster ED Contagion/Act 5/tree.jpg
+builds/3.13 Trickster ED Contagion/Act 6/guide.txt
+builds/3.13 Trickster ED Contagion/Act 6/notes.txt
+builds/3.13 Trickster ED Contagion/Act 6/tree.jpg
+builds/3.13 Trickster ED Contagion/Act 7/guide.txt
+builds/3.13 Trickster ED Contagion/Act 7/notes.txt
+builds/3.13 Trickster ED Contagion/Act 7/tree.jpg
+builds/3.13 Trickster ED Contagion/Act 8/guide.txt
+builds/3.13 Trickster ED Contagion/Act 8/notes.txt
+builds/3.13 Trickster ED Contagion/Act 8/tree.jpg
+builds/3.13 Trickster ED Contagion/Act 9/guide.txt
+builds/3.13 Trickster ED Contagion/Act 9/notes.txt
+builds/3.13 Trickster ED Contagion/Act 9/tree.jpg
+builds/3.13 Trickster ED Contagion/ascendancy.txt
+builds/3.13 Trickster ED Contagion/build_info.txt
+builds/3.13 Trickster ED Contagion/gems/02.ini
+builds/3.13 Trickster ED Contagion/gems/04.ini
+builds/3.13 Trickster ED Contagion/gems/08.ini
+builds/3.13 Trickster ED Contagion/gems/12.ini
+builds/3.13 Trickster ED Contagion/gems/16.ini
+builds/3.13 Trickster ED Contagion/gems/24.ini
+builds/3.13 Trickster ED Contagion/gems/31.ini
+builds/3.13 Trickster ED Contagion/gems/38.ini
+builds/3.13 Trickster ED Contagion/gems/42.ini
+builds/3.13 Trickster ED Contagion/gems/66.ini
+builds/3.13 Trickster ED Contagion/gems/class.ini
+builds/3.13 Vaal Detonate Dead/Act 1/guide.txt
+builds/3.13 Vaal Detonate Dead/Act 1/notes.txt
+builds/3.13 Vaal Detonate Dead/Act 1/tree.jpg
+builds/3.13 Vaal Detonate Dead/Act 10/guide.txt
+builds/3.13 Vaal Detonate Dead/Act 10/notes.txt
+builds/3.13 Vaal Detonate Dead/Act 10/tree.jpg
+builds/3.13 Vaal Detonate Dead/Act 11/guide.txt
+builds/3.13 Vaal Detonate Dead/Act 11/notes.txt
+builds/3.13 Vaal Detonate Dead/Act 11/tree.jpg
+builds/3.13 Vaal Detonate Dead/Act 2/guide.txt
+builds/3.13 Vaal Detonate Dead/Act 2/notes.txt
+builds/3.13 Vaal Detonate Dead/Act 2/tree.jpg
+builds/3.13 Vaal Detonate Dead/Act 3/guide.txt
+builds/3.13 Vaal Detonate Dead/Act 3/notes.txt
+builds/3.13 Vaal Detonate Dead/Act 3/tree.jpg
+builds/3.13 Vaal Detonate Dead/Act 4/guide.txt
+builds/3.13 Vaal Detonate Dead/Act 4/notes.txt
+builds/3.13 Vaal Detonate Dead/Act 4/tree.jpg
+builds/3.13 Vaal Detonate Dead/Act 5/guide.txt
+builds/3.13 Vaal Detonate Dead/Act 5/notes.txt
+builds/3.13 Vaal Detonate Dead/Act 5/tree.jpg
+builds/3.13 Vaal Detonate Dead/Act 6/guide.txt
+builds/3.13 Vaal Detonate Dead/Act 6/notes.txt
+builds/3.13 Vaal Detonate Dead/Act 6/tree.jpg
+builds/3.13 Vaal Detonate Dead/Act 7/guide.txt
+builds/3.13 Vaal Detonate Dead/Act 7/notes.txt
+builds/3.13 Vaal Detonate Dead/Act 7/tree.jpg
+builds/3.13 Vaal Detonate Dead/Act 8/guide.txt
+builds/3.13 Vaal Detonate Dead/Act 8/notes.txt
+builds/3.13 Vaal Detonate Dead/Act 8/tree.jpg
+builds/3.13 Vaal Detonate Dead/Act 9/guide.txt
+builds/3.13 Vaal Detonate Dead/Act 9/notes.txt
+builds/3.13 Vaal Detonate Dead/Act 9/tree.jpg
+builds/3.13 Vaal Detonate Dead/ascendancy.txt
+builds/3.13 Vaal Detonate Dead/build_info.txt
+builds/3.13 Vaal Detonate Dead/gems/02.ini
+builds/3.13 Vaal Detonate Dead/gems/04.ini
+builds/3.13 Vaal Detonate Dead/gems/08.ini
+builds/3.13 Vaal Detonate Dead/gems/16.ini
+builds/3.13 Vaal Detonate Dead/gems/24.ini
+builds/3.13 Vaal Detonate Dead/gems/28.ini
+builds/3.13 Vaal Detonate Dead/gems/38.ini
+builds/3.13 Vaal Detonate Dead/gems/66.ini
+builds/3.13 Vaal Detonate Dead/gems/class.ini
+builds/3.14 Pohx RF Inquisitor/Act 1/guide.txt
+builds/3.14 Pohx RF Inquisitor/Act 1/notes.txt
+builds/3.14 Pohx RF Inquisitor/Act 1/tree.jpg
+builds/3.14 Pohx RF Inquisitor/Act 10/guide.txt
+builds/3.14 Pohx RF Inquisitor/Act 10/notes.txt
+builds/3.14 Pohx RF Inquisitor/Act 10/tree.jpg
+builds/3.14 Pohx RF Inquisitor/Act 11/guide.txt
+builds/3.14 Pohx RF Inquisitor/Act 11/notes.txt
+builds/3.14 Pohx RF Inquisitor/Act 11/tree.jpg
+builds/3.14 Pohx RF Inquisitor/Act 2/guide.txt
+builds/3.14 Pohx RF Inquisitor/Act 2/notes.txt
+builds/3.14 Pohx RF Inquisitor/Act 2/tree.jpg
+builds/3.14 Pohx RF Inquisitor/Act 3/guide.txt
+builds/3.14 Pohx RF Inquisitor/Act 3/notes.txt
+builds/3.14 Pohx RF Inquisitor/Act 3/tree.jpg
+builds/3.14 Pohx RF Inquisitor/Act 4/guide.txt
+builds/3.14 Pohx RF Inquisitor/Act 4/notes.txt
+builds/3.14 Pohx RF Inquisitor/Act 4/tree.jpg
+builds/3.14 Pohx RF Inquisitor/Act 5/guide.txt
+builds/3.14 Pohx RF Inquisitor/Act 5/notes.txt
+builds/3.14 Pohx RF Inquisitor/Act 5/tree.jpg
+builds/3.14 Pohx RF Inquisitor/Act 6/guide.txt
+builds/3.14 Pohx RF Inquisitor/Act 6/notes.txt
+builds/3.14 Pohx RF Inquisitor/Act 6/tree.jpg
+builds/3.14 Pohx RF Inquisitor/Act 7/guide.txt
+builds/3.14 Pohx RF Inquisitor/Act 7/notes.txt
+builds/3.14 Pohx RF Inquisitor/Act 7/tree.jpg
+builds/3.14 Pohx RF Inquisitor/Act 8/guide.txt
+builds/3.14 Pohx RF Inquisitor/Act 8/notes.txt
+builds/3.14 Pohx RF Inquisitor/Act 8/tree.jpg
+builds/3.14 Pohx RF Inquisitor/Act 9/guide.txt
+builds/3.14 Pohx RF Inquisitor/Act 9/notes.txt
+builds/3.14 Pohx RF Inquisitor/Act 9/tree.jpg
+builds/3.14 Pohx RF Inquisitor/ascendancy.txt
+builds/3.14 Pohx RF Inquisitor/build_info.txt
+builds/3.14 Pohx RF Inquisitor/gems/02.ini
+builds/3.14 Pohx RF Inquisitor/gems/04.ini
+builds/3.14 Pohx RF Inquisitor/gems/08.ini
+builds/3.14 Pohx RF Inquisitor/gems/12.ini
+builds/3.14 Pohx RF Inquisitor/gems/16.ini
+builds/3.14 Pohx RF Inquisitor/gems/24.ini
+builds/3.14 Pohx RF Inquisitor/gems/31.ini
+builds/3.14 Pohx RF Inquisitor/gems/34.ini
+builds/3.14 Pohx RF Inquisitor/gems/38.ini
+builds/3.14 Pohx RF Inquisitor/gems/42.ini
+builds/3.14 Pohx RF Inquisitor/gems/66.ini
+builds/3.14 Pohx RF Inquisitor/gems/class.ini
+builds/3.14 Saboteur Blazing Salvo/Act 1/guide.txt
+builds/3.14 Saboteur Blazing Salvo/Act 1/notes.txt
+builds/3.14 Saboteur Blazing Salvo/Act 1/tree.jpg
+builds/3.14 Saboteur Blazing Salvo/Act 10/guide.txt
+builds/3.14 Saboteur Blazing Salvo/Act 10/notes.txt
+builds/3.14 Saboteur Blazing Salvo/Act 10/tree.jpg
+builds/3.14 Saboteur Blazing Salvo/Act 11/guide.txt
+builds/3.14 Saboteur Blazing Salvo/Act 11/notes.txt
+builds/3.14 Saboteur Blazing Salvo/Act 11/tree.jpg
+builds/3.14 Saboteur Blazing Salvo/Act 2/guide.txt
+builds/3.14 Saboteur Blazing Salvo/Act 2/notes.txt
+builds/3.14 Saboteur Blazing Salvo/Act 2/tree.jpg
+builds/3.14 Saboteur Blazing Salvo/Act 3/guide.txt
+builds/3.14 Saboteur Blazing Salvo/Act 3/notes.txt
+builds/3.14 Saboteur Blazing Salvo/Act 3/tree.jpg
+builds/3.14 Saboteur Blazing Salvo/Act 4/guide.txt
+builds/3.14 Saboteur Blazing Salvo/Act 4/notes.txt
+builds/3.14 Saboteur Blazing Salvo/Act 4/tree.jpg
+builds/3.14 Saboteur Blazing Salvo/Act 5/guide.txt
+builds/3.14 Saboteur Blazing Salvo/Act 5/notes.txt
+builds/3.14 Saboteur Blazing Salvo/Act 5/tree.jpg
+builds/3.14 Saboteur Blazing Salvo/Act 6/guide.txt
+builds/3.14 Saboteur Blazing Salvo/Act 6/notes.txt
+builds/3.14 Saboteur Blazing Salvo/Act 6/tree.jpg
+builds/3.14 Saboteur Blazing Salvo/Act 7/guide.txt
+builds/3.14 Saboteur Blazing Salvo/Act 7/notes.txt
+builds/3.14 Saboteur Blazing Salvo/Act 7/tree.jpg
+builds/3.14 Saboteur Blazing Salvo/Act 8/guide.txt
+builds/3.14 Saboteur Blazing Salvo/Act 8/notes.txt
+builds/3.14 Saboteur Blazing Salvo/Act 8/tree.jpg
+builds/3.14 Saboteur Blazing Salvo/Act 9/guide.txt
+builds/3.14 Saboteur Blazing Salvo/Act 9/notes.txt
+builds/3.14 Saboteur Blazing Salvo/Act 9/tree.jpg
+builds/3.14 Saboteur Blazing Salvo/ascendancy.txt
+builds/3.14 Saboteur Blazing Salvo/build_info.txt
+builds/3.14 Saboteur Blazing Salvo/gems/02.ini
+builds/3.14 Saboteur Blazing Salvo/gems/04.ini
+builds/3.14 Saboteur Blazing Salvo/gems/08.ini
+builds/3.14 Saboteur Blazing Salvo/gems/16.ini
+builds/3.14 Saboteur Blazing Salvo/gems/24.ini
+builds/3.14 Saboteur Blazing Salvo/gems/34.ini
+builds/3.14 Saboteur Blazing Salvo/gems/42.ini
+builds/3.14 Saboteur Blazing Salvo/gems/66.ini
+builds/3.14 Saboteur Blazing Salvo/gems/class.ini
+builds/3.14 Slayer Vaal Ground Slam/Act 1/guide.txt
+builds/3.14 Slayer Vaal Ground Slam/Act 1/tree.jpg
+builds/3.14 Slayer Vaal Ground Slam/Act 10/tree.jpg
+builds/3.14 Slayer Vaal Ground Slam/Act 11/tree.jpg
+builds/3.14 Slayer Vaal Ground Slam/Act 2/tree.jpg
+builds/3.14 Slayer Vaal Ground Slam/Act 3/tree.jpg
+builds/3.14 Slayer Vaal Ground Slam/Act 4/tree.jpg
+builds/3.14 Slayer Vaal Ground Slam/Act 5/guide.txt
+builds/3.14 Slayer Vaal Ground Slam/Act 5/tree.jpg
+builds/3.14 Slayer Vaal Ground Slam/Act 6/tree.jpg
+builds/3.14 Slayer Vaal Ground Slam/Act 7/tree.jpg
+builds/3.14 Slayer Vaal Ground Slam/Act 8/tree.jpg
+builds/3.14 Slayer Vaal Ground Slam/Act 9/tree.jpg
+builds/3.14 Slayer Vaal Ground Slam/ascendancy.txt
+builds/3.14 Slayer Vaal Ground Slam/build_info.txt
+builds/3.14 Slayer Vaal Ground Slam/gems/02.ini
+builds/3.14 Slayer Vaal Ground Slam/gems/04.ini
+builds/3.14 Slayer Vaal Ground Slam/gems/08.ini
+builds/3.14 Slayer Vaal Ground Slam/gems/12.ini
+builds/3.14 Slayer Vaal Ground Slam/gems/16.ini
+builds/3.14 Slayer Vaal Ground Slam/gems/24.ini
+builds/3.14 Slayer Vaal Ground Slam/gems/31.ini
+builds/3.14 Slayer Vaal Ground Slam/gems/38.ini
+builds/3.14 Slayer Vaal Ground Slam/gems/42.ini
+builds/3.14 Slayer Vaal Ground Slam/gems/class.ini
+builds/3.14 Steel Champion/Act 1/guide.txt
+builds/3.14 Steel Champion/Act 1/tree.jpg
+builds/3.14 Steel Champion/Act 10/tree.jpg
+builds/3.14 Steel Champion/Act 11/tree.jpg
+builds/3.14 Steel Champion/Act 2/tree.jpg
+builds/3.14 Steel Champion/Act 3/tree.jpg
+builds/3.14 Steel Champion/Act 4/tree.jpg
+builds/3.14 Steel Champion/Act 5/tree.jpg
+builds/3.14 Steel Champion/Act 6/tree.jpg
+builds/3.14 Steel Champion/Act 7/tree.jpg
+builds/3.14 Steel Champion/Act 8/tree.jpg
+builds/3.14 Steel Champion/Act 9/tree.jpg
+builds/3.14 Steel Champion/ascendancy.txt
+builds/3.14 Steel Champion/build_info.txt
+builds/3.14 Steel Champion/gems/02.ini
+builds/3.14 Steel Champion/gems/04.ini
+builds/3.14 Steel Champion/gems/08.ini
+builds/3.14 Steel Champion/gems/12.ini
+builds/3.14 Steel Champion/gems/16.ini
+builds/3.14 Steel Champion/gems/24.ini
+builds/3.14 Steel Champion/gems/28.ini
+builds/3.14 Steel Champion/gems/31.ini
+builds/3.14 Steel Champion/gems/38.ini
+builds/3.14 Steel Champion/gems/42.ini
+builds/3.14 Steel Champion/gems/66.ini
+builds/3.14 Steel Champion/gems/class.ini
+builds/3.14 Vortex Occultist/Act 1/guide.txt
+builds/3.14 Vortex Occultist/Act 1/tree.jpg
+builds/3.14 Vortex Occultist/Act 10/tree.jpg
+builds/3.14 Vortex Occultist/Act 11/tree.jpg
+builds/3.14 Vortex Occultist/Act 2/guide.txt
+builds/3.14 Vortex Occultist/Act 2/tree.jpg
+builds/3.14 Vortex Occultist/Act 3/tree.jpg
+builds/3.14 Vortex Occultist/Act 4/tree.jpg
+builds/3.14 Vortex Occultist/Act 5/tree.jpg
+builds/3.14 Vortex Occultist/Act 6/tree.jpg
+builds/3.14 Vortex Occultist/Act 7/tree.jpg
+builds/3.14 Vortex Occultist/Act 8/tree.jpg
+builds/3.14 Vortex Occultist/Act 9/tree.jpg
+builds/3.14 Vortex Occultist/ascendancy.txt
+builds/3.14 Vortex Occultist/build_info.txt
+builds/3.14 Vortex Occultist/gems/02.ini
+builds/3.14 Vortex Occultist/gems/04.ini
+builds/3.14 Vortex Occultist/gems/08.ini
+builds/3.14 Vortex Occultist/gems/12.ini
+builds/3.14 Vortex Occultist/gems/16.ini
+builds/3.14 Vortex Occultist/gems/24.ini
+builds/3.14 Vortex Occultist/gems/31.ini
+builds/3.14 Vortex Occultist/gems/38.ini
+builds/3.14 Vortex Occultist/gems/42.ini
+builds/3.14 Vortex Occultist/gems/66.ini
+builds/3.14 Vortex Occultist/gems/72.ini
+builds/3.14 Vortex Occultist/gems/90.ini
+builds/3.14 Vortex Occultist/gems/class.ini
+builds/Notes/Abbreviated/Act 1/guide.txt
+builds/Notes/Abbreviated/Act 1/notes.txt
+builds/Notes/Abbreviated/Act 10/guide.txt
+builds/Notes/Abbreviated/Act 10/notes.txt
+builds/Notes/Abbreviated/Act 11/guide.txt
+builds/Notes/Abbreviated/Act 11/notes.txt
+builds/Notes/Abbreviated/Act 2/guide.txt
+builds/Notes/Abbreviated/Act 2/notes.txt
+builds/Notes/Abbreviated/Act 3/guide.txt
+builds/Notes/Abbreviated/Act 3/notes.txt
+builds/Notes/Abbreviated/Act 4/guide.txt
+builds/Notes/Abbreviated/Act 4/notes.txt
+builds/Notes/Abbreviated/Act 5/guide.txt
+builds/Notes/Abbreviated/Act 5/notes.txt
+builds/Notes/Abbreviated/Act 6/guide.txt
+builds/Notes/Abbreviated/Act 6/notes.txt
+builds/Notes/Abbreviated/Act 7/guide.txt
+builds/Notes/Abbreviated/Act 7/notes.txt
+builds/Notes/Abbreviated/Act 8/guide.txt
+builds/Notes/Abbreviated/Act 8/notes.txt
+builds/Notes/Abbreviated/Act 9/guide.txt
+builds/Notes/Abbreviated/Act 9/notes.txt
+builds/Notes/Default/Act 1/guide.txt
+builds/Notes/Default/Act 1/notes.txt
+builds/Notes/Default/Act 10/guide.txt
+builds/Notes/Default/Act 10/notes.txt
+builds/Notes/Default/Act 11/guide.txt
+builds/Notes/Default/Act 11/notes.txt
+builds/Notes/Default/Act 2/guide.txt
+builds/Notes/Default/Act 2/notes.txt
+builds/Notes/Default/Act 3/guide.txt
+builds/Notes/Default/Act 3/notes.txt
+builds/Notes/Default/Act 4/guide.txt
+builds/Notes/Default/Act 4/notes.txt
+builds/Notes/Default/Act 5/guide.txt
+builds/Notes/Default/Act 5/notes.txt
+builds/Notes/Default/Act 6/guide.txt
+builds/Notes/Default/Act 6/notes.txt
+builds/Notes/Default/Act 7/guide.txt
+builds/Notes/Default/Act 7/notes.txt
+builds/Notes/Default/Act 8/guide.txt
+builds/Notes/Default/Act 8/notes.txt
+builds/Notes/Default/Act 9/guide.txt
+builds/Notes/Default/Act 9/notes.txt
+builds/Notes/Detailed/Act 1/guide.txt
+builds/Notes/Detailed/Act 1/notes.txt
+builds/Notes/Detailed/Act 10/guide.txt
+builds/Notes/Detailed/Act 10/notes.txt
+builds/Notes/Detailed/Act 11/guide.txt
+builds/Notes/Detailed/Act 11/notes.txt
+builds/Notes/Detailed/Act 2/guide.txt
+builds/Notes/Detailed/Act 2/notes.txt
+builds/Notes/Detailed/Act 3/guide.txt
+builds/Notes/Detailed/Act 3/notes.txt
+builds/Notes/Detailed/Act 4/guide.txt
+builds/Notes/Detailed/Act 4/notes.txt
+builds/Notes/Detailed/Act 5/guide.txt
+builds/Notes/Detailed/Act 5/notes.txt
+builds/Notes/Detailed/Act 6/guide.txt
+builds/Notes/Detailed/Act 6/notes.txt
+builds/Notes/Detailed/Act 7/guide.txt
+builds/Notes/Detailed/Act 7/notes.txt
+builds/Notes/Detailed/Act 8/guide.txt
+builds/Notes/Detailed/Act 8/notes.txt
+builds/Notes/Detailed/Act 9/guide.txt
+builds/Notes/Detailed/Act 9/notes.txt
+builds/Notes/Turkish/Act 1/guide.txt
+builds/Notes/Turkish/Act 1/notes.txt
+builds/Notes/Turkish/Act 10/guide.txt
+builds/Notes/Turkish/Act 10/notes.txt
+builds/Notes/Turkish/Act 11/guide.txt
+builds/Notes/Turkish/Act 11/notes.txt
+builds/Notes/Turkish/Act 2/guide.txt
+builds/Notes/Turkish/Act 2/notes.txt
+builds/Notes/Turkish/Act 3/guide.txt
+builds/Notes/Turkish/Act 3/notes.txt
+builds/Notes/Turkish/Act 4/guide.txt
+builds/Notes/Turkish/Act 4/notes.txt
+builds/Notes/Turkish/Act 5/guide.txt
+builds/Notes/Turkish/Act 5/notes.txt
+builds/Notes/Turkish/Act 6/guide.txt
+builds/Notes/Turkish/Act 6/notes.txt
+builds/Notes/Turkish/Act 7/guide.txt
+builds/Notes/Turkish/Act 7/notes.txt
+builds/Notes/Turkish/Act 8/guide.txt
+builds/Notes/Turkish/Act 8/notes.txt
+builds/Notes/Turkish/Act 9/guide.txt
+builds/Notes/Turkish/Act 9/notes.txt
+icons/gear.ico
+icons/lvlG.ico
+icons/refresh.ico
+icons/x.ico
+images/Act 1/Cavern of Anger_Seed_1.jpg
+images/Act 1/Cavern of Anger_Seed_2.jpg
+images/Act 1/Cavern of Wrath_Seed_1.jpg
+images/Act 1/Cavern of Wrath_Seed_2.jpg
+images/Act 1/Cavern of Wrath_Seed_3.jpg
+images/Act 1/Flooded Depths_Seed_1.jpg
+images/Act 1/Flooded Depths_Seed_2.jpg
+images/Act 1/Flooded Depths_Seed_3.jpg
+images/Act 1/Lower Prison_Seed_1.jpg
+images/Act 1/Lower Prison_Seed_2.jpg
+images/Act 1/Lower Prison_Seed_3.jpg
+images/Act 1/Lower Prison_Seed_4.jpg
+images/Act 1/Mud Flats_Seed_1.jpg
+images/Act 1/Mud Flats_Seed_2.jpg
+images/Act 1/Prisoner's Gate_Seed_1.jpg
+images/Act 1/Prisoner's Gate_Seed_2.jpg
+images/Act 1/Prisoner's Gate_Seed_3.jpg
+images/Act 1/Prisoner's Gate_Seed_4.jpg
+images/Act 1/Ship Graveyard_Seed_1.jpg
+images/Act 1/Ship Graveyard_Seed_2.jpg
+images/Act 1/Ship Graveyard_Seed_3.jpg
+images/Act 1/Ship Graveyard_Seed_4.jpg
+images/Act 1/Submerged Passage_Seed_1.jpg
+images/Act 1/Submerged Passage_Seed_2.jpg
+images/Act 1/Submerged Passage_Seed_3.jpg
+images/Act 1/The Climb_Seed_1.jpg
+images/Act 1/The Climb_Seed_2.jpg
+images/Act 1/The Coast_Seed_1.jpg
+images/Act 1/The Coast_Seed_2.jpg
+images/Act 1/The Coast_Seed_3.jpg
+images/Act 1/Upper Prison_Seed_1.jpg
+images/Act 1/Upper Prison_Seed_2.jpg
+images/Act 1/Upper Prison_Seed_3.jpg
+images/Act 1/Upper Prison_Seed_4.jpg
+images/Act 1/Upper Prison_Seed_5.jpg
+images/Act 10/Desecrated Chambers_Seed_1.jpg
+images/Act 10/Ravaged Square_Seed_1.jpg
+images/Act 10/Torched Courts_Seed_1.jpg
+images/Act 2/Chamber of Sins Level 1_Seed_1.jpg
+images/Act 2/Chamber of Sins Level 1_Seed_2.jpg
+images/Act 2/Chamber of Sins Level 1_Seed_3.jpg
+images/Act 2/Chamber of Sins Level 2_Seed_1.jpg
+images/Act 2/The Caverns_Seed_1.jpg
+images/Act 2/The Caverns_Seed_2.jpg
+images/Act 2/The Caverns_Seed_3.jpg
+images/Act 2/The Caverns_Seed_4.jpg
+images/Act 2/Vaal Ruins_Seed_1.jpg
+images/Act 2/Vaal Ruins_Seed_2.jpg
+images/Act 2/Vaal Ruins_Seed_3.jpg
+images/Act 2/Weaver's Chambers_Seed_1.jpg
+images/Act 2/Weaver's Chambers_Seed_2.jpg
+images/Act 2/Weaver's Chambers_Seed_3.jpg
+images/Act 2/Wetlands_Seed_1.jpg
+images/Act 2/Wetlands_Seed_2.jpg
+images/Act 2/Wetlands_Seed_3.jpg
+images/Act 3/Ebony Barracks_Seed_1.jpg
+images/Act 3/Ebony Barracks_Seed_2.jpg
+images/Act 3/Imperial Gardens_Seed_1.jpg
+images/Act 3/Lunaris Temple Level 1_Seed_1.jpg
+images/Act 3/Lunaris Temple Level 1_Seed_2.jpg
+images/Act 3/Lunaris Temple Level 2_Seed_1.jpg
+images/Act 3/Lunaris Temple Level 2_Seed_2.jpg
+images/Act 3/Solaris Temple Level 1_Seed_1.jpg
+images/Act 3/Solaris Temple Level 1_Seed_2.jpg
+images/Act 3/Solaris Temple Level 1_Seed_3.jpg
+images/Act 3/Solaris Temple Level 2_Seed_1.jpg
+images/Act 3/Solaris Temple Level 2_Seed_2.jpg
+images/Act 3/Solaris Temple Level 2_Seed_3.jpg
+images/Act 3/The Battlefront_Seed_1.jpg
+images/Act 3/The Battlefront_Seed_2.jpg
+images/Act 3/The Crematorium_Seed_1.jpg
+images/Act 3/The Crematorium_Seed_2.jpg
+images/Act 3/The Crematorium_Seed_3.jpg
+images/Act 3/The Crematorium_Seed_4.jpg
+images/Act 3/The Crematorium_Seed_5.jpg
+images/Act 3/The Docks_Seed_1.jpg
+images/Act 3/The Docks_Seed_2.jpg
+images/Act 3/The Docks_Seed_3.jpg
+images/Act 3/The Docks_Seed_4.jpg
+images/Act 3/The Marketplace_Seed_1.jpg
+images/Act 3/The Marketplace_Seed_2.jpg
+images/Act 3/The Marketplace_Seed_3.jpg
+images/Act 3/The Marketplace_Seed_4.jpg
+images/Act 3/The Marketplace_Seed_5.jpg
+images/Act 3/The Sewers_Seed_1.jpg
+images/Act 3/The Slums_Seed_1.jpg
+images/Act 3/The Slums_Seed_2.jpg
+images/Act 3/The Slums_Seed_3.jpg
+images/Act 3/The Slums_Seed_4.jpg
+images/Act 4/Belly of the Beast Level 1_Seed_1.jpg
+images/Act 4/Belly of the Beast Level 1_Seed_2.jpg
+images/Act 4/Belly of the Beast Level 1_Seed_3.jpg
+images/Act 4/Belly of the Beast Level 1_Seed_4.jpg
+images/Act 4/Belly of the Beast Level 2_Seed_1.jpg
+images/Act 4/Belly of the Beast Level 2_Seed_2.jpg
+images/Act 4/Belly of the Beast Level 2_Seed_3.jpg
+images/Act 4/Crystal Veins_Seed_1.jpg
+images/Act 4/Crystal Veins_Seed_2.jpg
+images/Act 4/Crystal Veins_Seed_3.jpg
+images/Act 4/Dried Lake_Seed_1.jpg
+images/Act 4/Dried Lake_Seed_2.jpg
+images/Act 4/Dried Lake_Seed_3.jpg
+images/Act 4/Kaom's Dream_Seed_1.jpg
+images/Act 4/Kaom's Stronghold_Seed_1.jpg
+images/Act 4/Mines Level 1_Seed_1.jpg
+images/Act 4/Mines Level 1_Seed_2.jpg
+images/Act 4/Mines Level 2_Seed_1.jpg
+images/Act 4/Mines Level 2_Seed_2.jpg
+images/Act 4/Mines Level 2_Seed_3.jpg
+images/Act 4/Mines Level 2_Seed_4.jpg
+images/Act 4/The Ascent_Seed_1.jpg
+images/Act 4/The Harvest_Seed_1.jpg
+images/Act 5/Chamber of Innocence_Seed_1.jpg
+images/Act 5/Control Blocks_Seed_1.jpg
+images/Act 5/Oriath Square_Seed_1.jpg
+images/Act 5/Ruined Square_Seed_1.jpg
+images/Act 5/Slave Pens_Seed_1.jpg
+images/Act 5/Slave Pens_Seed_2.jpg
+images/Act 5/Templar Courts_Seed_1.jpg
+images/Act 5/The Ossuary_Seed_1.jpg
+images/Act 5/The Reliquary_Seed_1.jpg
+images/Act 5/Torched Courts_Seed_1.jpg
+images/Act 6/Brine King's Reef_Seed_1.jpg
+images/Act 6/Brine King's Reef_Seed_2.jpg
+images/Act 6/Cavern of Anger_Seed_1.jpg
+images/Act 6/Cavern of Anger_Seed_2.jpg
+images/Act 6/Karui Fortress_Seed_1.jpg
+images/Act 6/Lower Prison_Seed_1.jpg
+images/Act 6/Lower Prison_Seed_2.jpg
+images/Act 6/Lower Prison_Seed_3.jpg
+images/Act 6/Lower Prison_Seed_4.jpg
+images/Act 6/Mud Flats_Seed_1.jpg
+images/Act 6/Mud Flats_Seed_2.jpg
+images/Act 6/Prisoner's Gate_Seed_1.jpg
+images/Act 6/Prisoner's Gate_Seed_2.jpg
+images/Act 6/Prisoner's Gate_Seed_3.jpg
+images/Act 6/The Coast_Seed_1.jpg
+images/Act 6/The Coast_Seed_2.jpg
+images/Act 6/The Coast_Seed_3.jpg
+images/Act 6/The Coast_Seed_4.jpg
+images/Act 6/The Ridge_Seed_1.jpg
+images/Act 6/The Ridge_Seed_2.jpg
+images/Act 6/The Riverways_Seed_1.jpg
+images/Act 7/Chamber of Sins Level 1_Seed_1.jpg
+images/Act 7/Chamber of Sins Level 1_Seed_2.jpg
+images/Act 7/Chamber of Sins Level 1_Seed_3.jpg
+images/Act 7/Chamber of Sins Level 2_Seed_1.jpg
+images/Act 7/The Crossroads_Seed_1.jpg
+images/Act 7/The Crypt 2_Seed_1.jpg
+images/Act 7/The Crypt 2_Seed_2.jpg
+images/Act 7/The Crypt 2_Seed_3.jpg
+images/Act 7/The Crypt_Seed_1.jpg
+images/Act 7/The Crypt_Seed_2.jpg
+images/Act 7/The Crypt_Seed_3.jpg
+images/Act 7/The Den_Seed_1.jpg
+images/Act 7/The Den_Seed_2.jpg
+images/Act 7/The Den_Seed_3.jpg
+images/Act 7/The Den_Seed_4.jpg
+images/Act 7/Vaal City_Seed_1.jpg
+images/Act 8/Bath House_Seed_1.jpg
+images/Act 8/Bath House_Seed_2.jpg
+images/Act 8/Doedre's Cesspool_Seed_1.jpg
+images/Act 8/Doedre's Cesspool_Seed_2.jpg
+images/Act 8/Doedre's Cesspool_Seed_3.jpg
+images/Act 8/Grain Gate_Seed_1.jpg
+images/Act 8/Grain Gate_Seed_2.jpg
+images/Act 8/Lunaris Concourse_Seed_1.jpg
+images/Act 8/Lunaris Concourse_Seed_2.jpg
+images/Act 8/Lunaris Temple Level 1_Seed_1.jpg
+images/Act 8/Lunaris Temple Level 1_Seed_2.jpg
+images/Act 8/Lunaris Temple Level 1_Seed_3.jpg
+images/Act 8/Lunaris Temple Level 2_Seed_1.jpg
+images/Act 8/Lunaris Temple Level 2_Seed_2.jpg
+images/Act 8/Solaris Temple Level 1_Seed_1.jpg
+images/Act 8/Solaris Temple Level 1_Seed_2.jpg
+images/Act 8/Solaris Temple Level 2_Seed_1.jpg
+images/Act 8/Solaris Temple Level 2_Seed_2.jpg
+images/Act 8/The Quay_Seed_1.jpg
+images/Act 8/The Quay_Seed_2.jpg
+images/Act 8/Toxic Conduits_Seed_1.jpg
+images/Act 8/Toxic Conduits_Seed_2.jpg
+images/Act 9/Belly of the Beast_Seed_1.jpg
+images/Act 9/Belly of the Beast_Seed_2.jpg
+images/Act 9/Belly of the Beast_Seed_3.jpg
+images/Act 9/The Descent_Seed_1.jpg
+images/Act 9/The Foothills_Seed_1.jpg
+images/Act 9/The Oasis_Seed_1.jpg
+images/Act 9/The Oasis_Seed_2.jpg
+images/Act 9/The Quarry_Seed_1.jpg
+images/Act 9/The Refinery_Seed_1.jpg
+images/Act 9/The Tunnel_Seed_1.jpg
+images/Act 9/The Tunnel_Seed_2.jpg
+images/Act 9/The Tunnel_Seed_3.jpg
+images/Act 9/Vastiri Desert_Seed_1.jpg
+images/cheatsheets/Betrayal.png
+images/cheatsheets/Heist.png
+images/cheatsheets/Incursion.png
+images/gems/readme.txt
+lib/Gdip.ahk
+lib/JSON.ahk
+lib/build.ahk
+lib/config.ahk
+lib/data.json
+lib/draw.ahk
+lib/gems.json
+lib/hotkeys.ahk
+lib/maps.ahk
+lib/search.ahk
+lib/set.ahk
+lib/settings.ahk
+lib/sizing.ahk
+maps/atlas.ini
+maps/guide.txt
+maps/maps.csv
+previews/LevelingGuidePreview1.png
+previews/LevelingGuidePreview2.png
+previews/LevelingGuidePreview3.png
+previews/LevelingGuidePreview4.png
+previews/LevelingGuidePreview5.png
+previews/LevelingGuidePreview6.png
+previews/Nexus.png
+previews/Overview_for_Path_of_Exile_Leveling_Guide_Overlay.gif
