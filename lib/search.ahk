@@ -120,7 +120,8 @@ SearchLog() {
     } ;end level up logic
 
     travel := "You have entered"
-    IfInString, newLogLines, %travel%
+    generated := "Generating level"
+    If ( InStr(newLogLines,travel) || InStr(newLogLines,generated) )
     {
       If autoToggleZoneImages 
       {
@@ -135,6 +136,12 @@ SearchLog() {
       }
       activeCount := 0
       active_toggle := 1
+
+      levelPos := InStr(log, generated, false)
+      monsterLevel := SubStr(log, levelPos+17, 2)
+      If ( levelPos = 0 ) {
+        monsterLevel := -1
+      }
 
       newPartTest := "Lioneye's Watch"
       IfInString, newLogLines, %newPartTest%

@@ -251,13 +251,26 @@ LoadGemFile(fileName) {
       If (gemExists = 0) { ;If the group doesn't exist, check the inventory
         groupName := "Inventory"
         groupIndex := GroupIndex(groupName)
-        groupName := "All" ;If the gem isn't in Inventory set it to all
         For j, someGem in groupList[groupIndex] { ;See if the gem is in the Inventory
           If (someGem = gemName and j>2) {
-            groupName := "Inventory"
+            gemExists := 1
             break
           }
         }
+      }
+      If (gemExists = 0) { ;If it's not in Inventory, check Drop-Only
+        groupName := "Drop-Only"
+        groupIndex := GroupIndex(groupName)
+        For j, someGem in groupList[groupIndex] { ;See if the gem is in Drop-Only
+          If (someGem = gemName and j>2) {
+            groupName := "Inventory" ;If someone moved it out of Drop-Only, default it to Inventory even though it doesn't exist there to keep notes cleaner
+            gemExists := 1
+            break
+          }
+        }
+      }
+      If (gemExists = 0) {
+        groupName := "All" ;If the gem still isn't in any category it's probably from the future, set it to All
       }
     }
     %someControl%group := groupName
@@ -346,16 +359,29 @@ ReadGemFile(fileLevel) {
           gemExists := 0
         }
       }
-      If (gemExists = 0) { ;If the gem doesn't exist in the group, check the inventory
+      If (gemExists = 0) { ;If the group doesn't exist, check the inventory
         groupName := "Inventory"
         groupIndex := GroupIndex(groupName)
-        groupName := "All" ;If the gem isn't in Inventory set it to all
         For j, someGem in groupList[groupIndex] { ;See if the gem is in the Inventory
           If (someGem = gemName and j>2) {
-            groupName := "Inventory"
+            gemExists := 1
             break
           }
         }
+      }
+      If (gemExists = 0) { ;If it's not in Inventory, check Drop-Only
+        groupName := "Drop-Only"
+        groupIndex := GroupIndex(groupName)
+        For j, someGem in groupList[groupIndex] { ;See if the gem is in Drop-Only
+          If (someGem = gemName and j>2) {
+            groupName := "Inventory" ;If someone moved it out of Drop-Only, default it to Inventory even though it doesn't exist there to keep notes cleaner
+            gemExists := 1
+            break
+          }
+        }
+      }
+      If (gemExists = 0) {
+        groupName := "All" ;If the gem still isn't in any category it's probably from the future, set it to All
       }
     }
     %someControl%group := groupName
@@ -364,10 +390,6 @@ ReadGemFile(fileLevel) {
     If (%someControl%color = "ERROR") {
       %someControl%color := ""
     }
-    IniRead, %someControl%image, %INIGem%, %someControl%, image
-    If (%someControl%image != 1) {
-      %someControl%image := 0
-    }
     IniRead, %someControl%url, %INIGem%, %someControl%, url
     If (%someControl%url = "ERROR") {
       %someControl%url := ""
@@ -375,6 +397,7 @@ ReadGemFile(fileLevel) {
     If (groupName = "Inventory" and originalGroupName != "Inventory") { ;clear meta data for gems moved to inventory
       %someControl%npc := ""
       %someControl%note := ""
+      %someControl%image := 0
     } Else {
       IniRead, %someControl%npc, %INIGem%, %someControl%, npc
       If (%someControl%npc = "ERROR") {
@@ -383,6 +406,10 @@ ReadGemFile(fileLevel) {
       IniRead, %someControl%note, %INIGem%, %someControl%, note
       If (%someControl%note = "ERROR") {
         %someControl%note := ""
+      }
+      IniRead, %someControl%image, %INIGem%, %someControl%, image
+      If (%someControl%image != 1) {
+        %someControl%image := 0
       }
     }
 
@@ -525,7 +552,7 @@ LoadGroup(loadLevel, loadChar) {
           }
         } Else If (thisGroup = "Lilly") {
           ;Lilly gems are only available from her no matter the level
-        } Else if (thisGroup = "Enemy at the Gate") {
+        } Else if (thisGroup = "Enemy at the Gate" or thisGroup = "Mule") {
           thisGroup := "Inventory" ;Enemy at the Gate is a level 2 Quest so we need to hide it at level 4
         } Else If (loadLevel > 4) {
           thisGroup := "Inventory" ;All other lower gems should be considered purchased
@@ -552,7 +579,7 @@ LoadGroup(loadLevel, loadChar) {
               groupList[groupList.length()].Push(someGem.name)
             }
           }
-        } Else If ((thisGroup = "Siosa" and loadLevel >= 26) or (thisGroup = "Lilly" and loadLevel >= 38)) { ;Also push to Inventory
+        } Else If ((thisGroup = "Siosa" and loadLevel >= 26) or (thisGroup = "Lilly" and loadLevel >= 38) or ((thisGroup = "Nessa" or thisGroup = "Mule") and loadLevel = 4)) { ;Also push to Inventory
           If (thisLevel < loadLevel) {
             groupIndex := GroupIndex("Inventory")
             If (groupIndex) { ;Inventory exists (common)
@@ -600,14 +627,14 @@ LoadGroup(loadLevel, loadChar) {
               }
             }
           }
-        } Else If (thisGroup = "Siosa" or thisGroup = "Lilly") {
+        } Else If (thisGroup = "Siosa" or thisGroup = "Lilly" or thisGroup = "Nessa" or thisGroup = "Mule") {
           ;Push to group first (once)
           groupList[groupList.length()].Push(thisGroup)
           groupList[groupList.length()].Push(thisGroup)
           If (addGem1 and addGem2) {
             groupList[groupList.length()].Push(someGem.name)
           }
-          If ((thisGroup = "Siosa" and loadLevel >= 26) or (thisGroup = "Lilly" and loadLevel >= 38)) {
+          If ((thisGroup = "Siosa" and loadLevel >= 26) or (thisGroup = "Lilly" and loadLevel >= 38) or ((thisGroup = "Nessa" or thisGroup = "Mule") and loadLevel = 4)) {
             ;Also push to Inventory
             If (thisLevel < loadLevel) {
               groupIndex := GroupIndex("Inventory")
@@ -933,7 +960,7 @@ UpdateElements() {
     thisGroup := %element%group
     If (someGem.name = %element%gem) {
       colorUpdate := someGem.color
-      If ( InStr(thisGroup, A_Space) or thisGroup = "Inventory" or thisGroup = "Drop-Only") { ;I want cost for All since Inventory should be used for no cost Gems
+      If ( InStr(thisGroup, A_Space) or thisGroup = "Inventory" or thisGroup = "Drop-Only" or thisGroup = "Mule") { ;I want cost for All since Inventory should be used for no cost Gems
         ;It's a quest reward or already purchased or Drop-Only so leave out cost
         noteUpdate := ""
       } Else {

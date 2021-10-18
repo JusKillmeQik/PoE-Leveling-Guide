@@ -15,7 +15,6 @@
     "cost": "Trans",
     "color": "red",
     "gemTags": [
-      "New Gems",
       "Spell",
       "Minion",
       "Duration",
@@ -168,7 +167,7 @@
     "cost": "Chance",
     "color": "green",
     "gemTags": [
-      "New Gems",
+      "Critical",
       "Spell",
       "Movement",
       "Duration",
@@ -587,6 +586,7 @@
     "cost": "Alt",
     "color": "blue",
     "gemTags": [
+      "Critical",
       "Spell",
       "Duration",
       "Curse",
@@ -814,6 +814,7 @@
     "cost": "",
     "color": "green",
     "gemTags": [
+      "Critical",
       "Spell",
       "Trigger",
       "Support",
@@ -906,6 +907,7 @@
     "cost": "",
     "color": "blue",
     "gemTags": [
+      "Critical",
       "Spell",
       "Support",
       "Awakened"
@@ -1517,7 +1519,7 @@
     "cost": "Chance",
     "color": "red",
     "gemTags": [
-      "New Gems",
+      "Critical",
       "Warcry",
       "AoE",
       "Duration",
@@ -1565,7 +1567,6 @@
     "cost": "Alch",
     "color": "red",
     "gemTags": [
-      "New Gems",
       "Melee",
       "Attack",
       "Strike",
@@ -1658,7 +1659,6 @@
     "cost": "Trans",
     "color": "green",
     "gemTags": [
-      "New Gems",
       "Trap",
       "Attack",
       "AoE",
@@ -1682,6 +1682,7 @@
     "cost": "Trans",
     "color": "green",
     "gemTags": [
+      "Critical",
       "Spell",
       "AoE",
       "Duration",
@@ -1705,6 +1706,7 @@
     "cost": "Chance",
     "color": "green",
     "gemTags": [
+      "Critical",
       "Spell",
       "AoE",
       "Active"
@@ -2090,7 +2092,6 @@
     "cost": "Chance",
     "color": "red",
     "gemTags": [
-      "New Gems",
       "Attack",
       "Melee",
       "Strike",
@@ -2190,30 +2191,6 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Support/IncreasedBurnDuration.png?scale=1&w=1&h=1"
   },
   {
-    "level": 34,
-    "required_lvl": 34,
-    "name": "Carrion Golem",
-    "Witch": "Breaking the Seal",
-    "Shadow": "Petarus",
-    "Ranger": "Petarus",
-    "Duelist": "Lilly",
-    "Marauder": "Lilly",
-    "Templar": "Breaking the Seal",
-    "Scion": "Breaking the Seal",
-    "quest": "Oyun",
-    "vendor": "Petarus",
-    "cost": "Chance",
-    "color": "blue",
-    "gemTags": [
-      "Active",
-      "Physical",
-      "Minion",
-      "Spell",
-      "Golem"
-    ],
-    "iconPath": "https://web.poecdn.com/public/news/2019-09-04/SummonCarrionGolem.png"
-  },
-  {
     "level": 38,
     "required_lvl": 38,
     "name": "Cast On Critical Strike",
@@ -2229,6 +2206,7 @@
     "cost": "Alch",
     "color": "green",
     "gemTags": [
+      "Critical",
       "Spell",
       "Trigger",
       "Support"
@@ -2524,6 +2502,7 @@
     "cost": "Chance",
     "color": "blue",
     "gemTags": [
+      "Critical",
       "Support",
       "Mine"
     ],
@@ -2545,6 +2524,7 @@
     "cost": "Chance",
     "color": "green",
     "gemTags": [
+      "Critical",
       "Trap",
       "Support"
     ],
@@ -2656,6 +2636,7 @@
     "cost": "Wisdom",
     "color": "green",
     "gemTags": [
+      "Critical",
       "Active",
       "Chaos",
       "Attack",
@@ -2864,6 +2845,7 @@
     "cost": "Alt",
     "color": "blue",
     "gemTags": [
+      "Critical",
       "Spell",
       "Support"
     ],
@@ -3027,6 +3009,7 @@
     "cost": "Chance",
     "color": "green",
     "gemTags": [
+      "Critical",
       "Chaos",
       "Support"
     ],
@@ -3249,7 +3232,6 @@
     "cost": "Alt",
     "color": "red",
     "gemTags": [
-      "New Gems",
       "AoE",
       "Spell",
       "Duration",
@@ -3308,6 +3290,31 @@
       "Active"
     ],
     "iconPath": "https://web.poecdn.com/image/Art/2DItems/Gems/Despair.png?scale=1"
+  },
+  {
+    "level": 34,
+    "required_lvl": 34,
+    "name": "Destructive Link",
+    "Witch": "Petarus",
+    "Shadow": "Petarus",
+    "Ranger": "Lilly",
+    "Duelist": "Lilly",
+    "Marauder": "Lilly",
+    "Templar": "Lilly",
+    "Scion": "Petarus",
+    "quest": "",
+    "vendor": "Petarus",
+    "cost": "Chance",
+    "color": "blue",
+    "gemTags": [
+      "New Gems",
+      "Critical",
+      "Spell",
+      "Duration",
+      "Link",
+      "Active"
+    ],
+    "iconPath": ""
   },
   {
     "level": 24,
@@ -3557,6 +3564,7 @@
     "cost": "Wisdom",
     "color": "green",
     "gemTags": [
+      "Critical",
       "Attack",
       "Melee",
       "Strike",
@@ -3580,7 +3588,6 @@
     "cost": "Trans",
     "color": "red",
     "gemTags": [
-      "New Gems",
       "Attack",
       "Melee",
       "Slam",
@@ -3887,6 +3894,50 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/EnduringCry.png?scale=1&w=1&h=1"
   },
   {
+    "level": 24,
+    "required_lvl": 24,
+    "name": "Energy Blade",
+    "Witch": "Lost in Love",
+    "Shadow": "Clarissa",
+    "Ranger": "Siosa",
+    "Duelist": "Siosa",
+    "Marauder": "Siosa",
+    "Templar": "Clarissa",
+    "Scion": "Clarissa",
+    "quest": "Maramoa",
+    "vendor": "Clarissa",
+    "cost": "Alt",
+    "color": "blue",
+    "gemTags": [
+      "New Gems",
+      "Active"
+    ],
+    "iconPath": ""
+  },
+  {
+    "level": 24,
+    "required_lvl": 24,
+    "name": "Energy Blade",
+    "Witch": "Lost in Love",
+    "Shadow": "Clarissa",
+    "Ranger": "Siosa",
+    "Duelist": "Siosa",
+    "Marauder": "Siosa",
+    "Templar": "Clarissa",
+    "Scion": "Clarissa",
+    "quest": "Maramoa",
+    "vendor": "Clarissa",
+    "cost": "Alt",
+    "color": "blue",
+    "gemTags": [
+      "New Gems",
+      "Spell",
+      "Lightning",
+      "Active"
+    ],
+    "iconPath": "https://web.poecdn.com/protected/image/scourge/items/EnergyBlade.png?key=wD_hF0tew4WWs0AqZjhgDg"
+  },
+  {
     "level": 31,
     "required_lvl": 31,
     "name": "Energy Leech",
@@ -4084,7 +4135,6 @@
     "cost": "Trans",
     "color": "green",
     "gemTags": [
-      "New Gems",
       "Attack",
       "AoE",
       "Fire",
@@ -4159,7 +4209,6 @@
     "cost": "Trans",
     "color": "blue",
     "gemTags": [
-      "New Gems",
       "Spell",
       "Projectile",
       "Cold",
@@ -4397,6 +4446,31 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/FlameDash.png?scale=1&w=1&h=1"
   },
   {
+    "level": 34,
+    "required_lvl": 34,
+    "name": "Flame Link",
+    "Witch": "Lilly",
+    "Shadow": "Lilly",
+    "Ranger": "Lilly",
+    "Duelist": "Petarus",
+    "Marauder": "Petarus",
+    "Templar": "Petarus",
+    "Scion": "Breaking the Seal",
+    "quest": "Oyun",
+    "vendor": "Petarus",
+    "cost": "Chance",
+    "color": "red",
+    "gemTags": [
+      "New Gems",
+      "Spell",
+      "Duration",
+      "Link",
+      "Fire",
+      "Active"
+    ],
+    "iconPath": ""
+  },
+  {
     "level": 12,
     "required_lvl": 12,
     "name": "Flame Surge",
@@ -4603,7 +4677,6 @@
     "cost": "Chance",
     "color": "green",
     "gemTags": [
-      "New Gems",
       "Totem",
       "Support"
     ],
@@ -4625,7 +4698,6 @@
     "cost": "Alt",
     "color": "blue",
     "gemTags": [
-      "New Gems",
       "Spell",
       "AoE",
       "Chaos",
@@ -4789,6 +4861,7 @@
     "cost": "Chance",
     "color": "blue",
     "gemTags": [
+      "Critical",
       "Spell",
       "AoE",
       "Duration",
@@ -5392,7 +5465,7 @@
     "required_lvl": 34,
     "name": "Hydrosphere",
     "Witch": "Breaking the Seal",
-    "Shadow": "Breaking the Seal",
+    "Shadow": "Lilly",
     "Ranger": "Lilly",
     "Duelist": "Lilly",
     "Marauder": "Lilly",
@@ -5547,6 +5620,7 @@
     "cost": "Trans",
     "color": "blue",
     "gemTags": [
+      "Critical",
       "Spell",
       "Cold",
       "Projectile",
@@ -5594,6 +5668,7 @@
     "cost": "Trans",
     "color": "blue",
     "gemTags": [
+      "Critical",
       "Active",
       "Spell",
       "Mine",
@@ -5712,6 +5787,7 @@
       "Hex",
       "AoE",
       "Chaos",
+      "Trigger",
       "Support"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-09-17/SuperiorImpendingDoomSupport.png"
@@ -5777,6 +5853,7 @@
     "cost": "Alt",
     "color": "blue",
     "gemTags": [
+      "Critical",
       "Support"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Support/IncreasedCriticalDamage.png?scale=1&w=1&h=1"
@@ -5797,6 +5874,7 @@
     "cost": "Trans",
     "color": "blue",
     "gemTags": [
+      "Critical",
       "Support"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Support/IncreasedCriticalStrikes.png?scale=1&w=1&h=1"
@@ -5956,6 +6034,7 @@
     "cost": "Chance",
     "color": "red",
     "gemTags": [
+      "Critical",
       "Support"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2019-09-04/InspirationSupport.png"
@@ -6005,6 +6084,32 @@
       "Active"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-06-18/IntimidatingCry.png"
+  },
+  {
+    "level": 34,
+    "required_lvl": 34,
+    "name": "Intuitive Link",
+    "Witch": "Lilly",
+    "Shadow": "Petarus",
+    "Ranger": "Petarus",
+    "Duelist": "Petarus",
+    "Marauder": "Lilly",
+    "Templar": "Lilly",
+    "Scion": "Breaking the Seal",
+    "quest": "Oyun",
+    "vendor": "Petarus",
+    "cost": "Chance",
+    "color": "green",
+    "gemTags": [
+      "New Gems",
+      "Spell",
+      "Trigger",
+      "Duration",
+      "Link",
+      "Support",
+      "Active"
+    ],
+    "iconPath": "https://web.poecdn.com/protected/image/scourge/items/IntuitiveLink.png?key=k8bX8CaNnaJAfi6OetNISg"
   },
   {
     "level": 16,
@@ -6370,6 +6475,7 @@
     "cost": "Chance",
     "color": "blue",
     "gemTags": [
+      "Critical",
       "Spell",
       "Trap",
       "Lightning",
@@ -6443,6 +6549,7 @@
     "cost": "Trans",
     "color": "blue",
     "gemTags": [
+      "Critical",
       "Spell",
       "Trap",
       "Lightning",
@@ -6557,7 +6664,6 @@
     "cost": "Trans",
     "color": "blue",
     "gemTags": [
-      "New Gems",
       "Spell",
       "AoE",
       "Lightning",
@@ -6895,6 +7001,7 @@
     "cost": "Alt",
     "color": "green",
     "gemTags": [
+      "Critical",
       "Support",
       "Attack"
     ],
@@ -6904,7 +7011,7 @@
     "level": 2,
     "required_lvl": 1,
     "name": "Onslaught",
-    "Witch": "Siosa",
+    "Witch": "Mule",
     "Shadow": "Mercy Mission",
     "Ranger": "Mercy Mission",
     "Duelist": "Mercy Mission",
@@ -7203,6 +7310,31 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Support/PointBlank.png?scale=1&w=1&h=1"
   },
   {
+    "level": 12,
+    "required_lvl": 12,
+    "name": "Poisonous Concoction",
+    "Witch": "Siosa",
+    "Shadow": "Nessa",
+    "Ranger": "The Siren's Cadence",
+    "Duelist": "Nessa",
+    "Marauder": "Siosa",
+    "Templar": "Siosa",
+    "Scion": "Nessa",
+    "quest": "Nessa",
+    "vendor": "Nessa",
+    "cost": "Trans",
+    "color": "green",
+    "gemTags": [
+      "New Gems",
+      "Attack",
+      "AoE",
+      "Chaos",
+      "Projectile",
+      "Active"
+    ],
+    "iconPath": "https://web.poecdn.com/protected/image/scourge/items/PoisonousConcoction.png?key=1vJsSMKxys6BrSlBMjULMg"
+  },
+  {
     "level": 8,
     "required_lvl": 10,
     "name": "Portal",
@@ -7239,6 +7371,7 @@
     "cost": "Alt",
     "color": "blue",
     "gemTags": [
+      "Critical",
       "Support"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Support/PowerCharges.png?scale=1&w=1&h=1"
@@ -7259,6 +7392,7 @@
     "cost": "Trans",
     "color": "blue",
     "gemTags": [
+      "Critical",
       "Attack",
       "Projectile",
       "Active"
@@ -7281,6 +7415,7 @@
     "cost": "Trans",
     "color": "green",
     "gemTags": [
+      "Critical",
       "Active",
       "Spell",
       "Aura",
@@ -7334,6 +7469,30 @@
       "Physical"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2019-06-06/Pride.png"
+  },
+  {
+    "level": 34,
+    "required_lvl": 34,
+    "name": "Protective Link",
+    "Witch": "Lilly",
+    "Shadow": "Lilly",
+    "Ranger": "Lilly",
+    "Duelist": "Lilly",
+    "Marauder": "Petarus",
+    "Templar": "Petarus",
+    "Scion": "Petarus",
+    "quest": "",
+    "vendor": "Petarus",
+    "cost": "Chance",
+    "color": "red",
+    "gemTags": [
+      "New Gems",
+      "Spell",
+      "Duration",
+      "Link",
+      "Active"
+    ],
+    "iconPath": "https://web.poecdn.com/protected/image/scourge/items/ProtectiveLink.png?key=MG_BJQ5EL4Bk2lvX3fFVsQ"
   },
   {
     "level": 31,
@@ -7593,7 +7752,6 @@
     "cost": "Chance",
     "color": "red",
     "gemTags": [
-      "New Gems",
       "Attack",
       "AoE",
       "Duration",
@@ -8086,7 +8244,6 @@
     "cost": "Wisdom",
     "color": "red",
     "gemTags": [
-      "New Gems",
       "Attack",
       "AoE",
       "Melee",
@@ -8219,7 +8376,7 @@
     "required_lvl": 34,
     "name": "Sigil of Power",
     "Witch": "Breaking the Seal",
-    "Shadow": "Breaking the Seal",
+    "Shadow": "Lilly",
     "Ranger": "Lilly",
     "Duelist": "Lilly",
     "Marauder": "Lilly",
@@ -8362,6 +8519,30 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/ProjectileWeakness.png?scale=1&w=1&h=1"
   },
   {
+    "level": 34,
+    "required_lvl": 34,
+    "name": "Soul Link",
+    "Witch": "Petarus",
+    "Shadow": "Petarus",
+    "Ranger": "Lilly",
+    "Duelist": "Lilly",
+    "Marauder": "Lilly",
+    "Templar": "Petarus",
+    "Scion": "Breaking the Seal",
+    "quest": "Oyun",
+    "vendor": "Petarus",
+    "cost": "Chance",
+    "color": "blue",
+    "gemTags": [
+      "New Gems",
+      "Spell",
+      "Duration",
+      "Link",
+      "Active"
+    ],
+    "iconPath": "https://web.poecdn.com/protected/image/scourge/items/SoulLink.png?key=rHpkGnnC4MFNIL51NFpBUA"
+  },
+  {
     "level": 28,
     "required_lvl": 28,
     "name": "Soulrend",
@@ -8426,7 +8607,6 @@
     "cost": "Trans",
     "color": "green",
     "gemTags": [
-      "New Gems",
       "Attack",
       "Projectile",
       "Active"
@@ -8559,6 +8739,7 @@
     "color": "blue",
     "gemTags": [
       "Spell",
+      "Active",
       "Support"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2020-03-12/Spellslinger.png"
@@ -8773,7 +8954,6 @@
     "cost": "Trans",
     "color": "green",
     "gemTags": [
-      "New Gems",
       "Attack",
       "AoE",
       "Lightning",
@@ -8854,6 +9034,30 @@
       "Support"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Support/Stun.png?scale=1&w=1&h=1"
+  },
+  {
+    "level": 34,
+    "required_lvl": 34,
+    "name": "Summon Carrion Golem",
+    "Witch": "Breaking the Seal",
+    "Shadow": "Petarus",
+    "Ranger": "Petarus",
+    "Duelist": "Lilly",
+    "Marauder": "Lilly",
+    "Templar": "Breaking the Seal",
+    "Scion": "Lilly",
+    "quest": "Oyun",
+    "vendor": "Petarus",
+    "cost": "Chance",
+    "color": "blue",
+    "gemTags": [
+      "Active",
+      "Physical",
+      "Minion",
+      "Spell",
+      "Golem"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2019-09-04/SummonCarrionGolem.png"
   },
   {
     "level": 34,
@@ -8941,6 +9145,7 @@
     "cost": "Chance",
     "color": "green",
     "gemTags": [
+      "Critical",
       "Spell",
       "Minion",
       "Golem",
@@ -9034,7 +9239,6 @@
     "cost": "Trans",
     "color": "blue",
     "gemTags": [
-      "New Gems",
       "Physical",
       "Minion",
       "Spell",
@@ -9302,6 +9506,54 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/TemporalChains.png?scale=1&w=1&h=1"
   },
   {
+    "level": 34,
+    "required_lvl": 34,
+    "name": "Temporal Rift",
+    "Witch": "Petarus",
+    "Shadow": "Breaking the Seal",
+    "Ranger": "Petarus",
+    "Duelist": "Lilly",
+    "Marauder": "Lilly",
+    "Templar": "Lilly",
+    "Scion": "Petarus",
+    "quest": "Oyun",
+    "vendor": "Petarus",
+    "cost": "Chance",
+    "color": "green",
+    "gemTags": [
+      "New Gems",
+      "Spell",
+      "Active"
+    ],
+    "iconPath": "https://web.poecdn.com/protected/image/scourge/items/TemporalRift.png?key=9K-UuMpp-B2k2EOv2og-2g"
+  },
+  {
+    "level": 34,
+    "required_lvl": 34,
+    "name": "Tornado",
+    "Witch": "Lilly",
+    "Shadow": "Breaking the Seal",
+    "Ranger": "Breaking the Seal",
+    "Duelist": "Lilly",
+    "Marauder": "Lilly",
+    "Templar": "Lilly",
+    "Scion": "Petarus",
+    "quest": "Oyun",
+    "vendor": "Petarus",
+    "cost": "Chance",
+    "color": "green",
+    "gemTags": [
+      "New Gems",
+      "Spell",
+      "Duration",
+      "Physical",
+      "AoE",
+      "Orb",
+      "Active"
+    ],
+    "iconPath": "https://web.poecdn.com/protected/image/scourge/items/Tornado.png?key=xegNukhNB-_3xQiMBklbRg"
+  },
+  {
     "level": 28,
     "required_lvl": 28,
     "name": "Tornado Shot",
@@ -9563,6 +9815,7 @@
     "cost": "",
     "color": "green",
     "gemTags": [
+      "Critical",
       "Spell",
       "AoE",
       "Nova",
@@ -10141,6 +10394,7 @@
     "cost": "",
     "color": "blue",
     "gemTags": [
+      "Critical",
       "Spell",
       "Trap",
       "Lightning",
@@ -10219,6 +10473,7 @@
     "cost": "",
     "color": "blue",
     "gemTags": [
+      "Critical",
       "Attack",
       "Projectile",
       "Vaal",
@@ -10396,6 +10651,30 @@
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/VaalGems/VaalSummonSkeletons.png?scale=1&w=1&h=1"
+  },
+  {
+    "level": 34,
+    "required_lvl": 34,
+    "name": "Vampiric Link",
+    "Witch": "Lilly",
+    "Shadow": "Lilly",
+    "Ranger": "Petarus",
+    "Duelist": "Petarus",
+    "Marauder": "Lilly",
+    "Templar": "Lilly",
+    "Scion": "Petarus",
+    "quest": "",
+    "vendor": "Petarus",
+    "cost": "Chance",
+    "color": "green",
+    "gemTags": [
+      "New Gems",
+      "Spell",
+      "Duration",
+      "Link",
+      "Active"
+    ],
+    "iconPath": ""
   },
   {
     "level": 24,
@@ -10662,7 +10941,6 @@
     "cost": "Trans",
     "color": "blue",
     "gemTags": [
-      "New Gems",
       "Spell",
       "AoE",
       "Chaos",
@@ -11017,6 +11295,7 @@
     "cost": "Alt",
     "color": "blue",
     "gemTags": [
+      "Critical",
       "Spell",
       "Aura",
       "AoE",
