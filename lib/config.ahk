@@ -50,6 +50,8 @@ global KeyShowTemple := "F7"
 global KeyShowHeist := "F8"
 
 global KeyOnDeath := ""
+global skipUpdates := "False"
+global skipGemImages := "False"
 
 global KeySettings := "F10"
 
@@ -140,6 +142,9 @@ IniRead, KeyShowSyndicate, %ININame%, ToggleKey, KeyShowSyndicate, %KeyShowSyndi
 IniRead, KeyShowTemple, %ININame%, ToggleKey, KeyShowTemple, %KeyShowTemple%
 IniRead, KeyShowHeist, %ININame%, ToggleKey, KeyShowHeist, %KeyShowHeist%
 IniRead, KeyOnDeath, %ININame%, ToggleKey, KeyOnDeath, %KeyOnDeath%
+
+IniRead, skipUpdates, %ININame%, Skip, skipUpdates, %skipUpdates%
+IniRead, skipGemImages, %ININame%, Skip, skipGemImages, %skipGemImages%
 
 INIMeta=%A_scriptdir%\builds\%overlayFolder%\gems\meta.ini
 IniRead, numPart, %INIMeta%, State, numPart, %numPart%
@@ -261,4 +266,7 @@ WriteAll() {
   IniWrite, %KeyShowTemple%, %ININame%, ToggleKey, KeyShowTemple
   IniWrite, %KeyShowHeist%, %ININame%, ToggleKey, KeyShowHeist
   IniWrite, %KeyOnDeath%, %ININame%, ToggleKey, KeyOnDeath
+
+  IniWrite, %skipUpdates%, %ININame%, Skip, skipUpdates
+  IniWrite, %skipGemImages%, %ININame%, Skip, skipGemImages
 }

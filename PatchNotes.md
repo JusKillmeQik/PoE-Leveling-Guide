@@ -1,8 +1,20 @@
 # Leveling Guide - Patch Notes
 
+### Scourge League
+
+* Added the ability to update the script when it detects a new version
+* Added the 10 new gems
+  * Updated old gems
+* Updated the atlas strategy based on less regions
+
+#### Minor improvements
+
+* Updated crafting locations
+* Added options to not download images or updates
+
 ### Expedition League
 
-* Add the 19 new gems
+* Added the 19 new gems
   * Updated old gems
 * Minor bug fixes and changes to defaults
 
