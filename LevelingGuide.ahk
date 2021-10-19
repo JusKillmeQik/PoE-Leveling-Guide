@@ -92,10 +92,11 @@ If (skipUpdates = "False") {
   versionFile = %A_ScriptDir%\filelist.txt
   If (!FileExist(versionFile)) {
     updatePLG := "True"
-    UrlDownloadToFile, https://raw.githubusercontent.com/JusKillmeQik/PoE-Leveling-Guide/master/filelist.txt, %A_ScriptDir%\filelist.txt
+    oldVersion := "4.0.3"
+    UrlDownloadToFile, https://raw.githubusercontent.com/JusKillmeQik/PoE-Leveling-Guide/main/filelist.txt, %A_ScriptDir%\filelist.txt
   } Else {
     FileReadLine, oldVersion, %A_ScriptDir%\filelist.txt, 1
-    UrlDownloadToFile, https://raw.githubusercontent.com/JusKillmeQik/PoE-Leveling-Guide/master/filelist.txt, %A_ScriptDir%\filelist.txt
+    UrlDownloadToFile, https://raw.githubusercontent.com/JusKillmeQik/PoE-Leveling-Guide/main/filelist.txt, %A_ScriptDir%\filelist.txt
     FileReadLine, newVersion, %A_ScriptDir%\filelist.txt, 1
     If (oldVersion != newVersion) {
       updatePLG := "True"
@@ -130,13 +131,13 @@ If (skipUpdates = "False") {
           If ( InStr(A_LoopReadLine,ignoreBuilds) || InStr(A_LoopReadLine,ignoreSeeds) ){
             If (!FileExist(updateFile)) { ; Only download builds and seed images if they don't already exist
               FileCreateDir, %downloadDirName%
-              UrlDownloadToFile, https://raw.githubusercontent.com/JusKillmeQik/PoE-Leveling-Guide/master/%A_LoopReadLine%, %updateFile%
+              UrlDownloadToFile, https://raw.githubusercontent.com/JusKillmeQik/PoE-Leveling-Guide/main/%A_LoopReadLine%, %updateFile%
             }
           } Else {
             If (!FileExist(updateFile)) { ; If the file doesn't exist make sure to create the directory
               FileCreateDir, %downloadDirName%
             }
-            UrlDownloadToFile, https://raw.githubusercontent.com/JusKillmeQik/PoE-Leveling-Guide/master/%A_LoopReadLine%, %updateFile%
+            UrlDownloadToFile, https://raw.githubusercontent.com/JusKillmeQik/PoE-Leveling-Guide/main/%A_LoopReadLine%, %updateFile%
           }
           progressPercent := 100 * (A_Index/progressWidth)
           Progress, %progressPercent%
