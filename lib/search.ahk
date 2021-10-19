@@ -62,8 +62,11 @@ SearchLog() {
   global
   ;Only bother checking if the newLogLines has changed or someone manually changed Part
   newLogLines := client_txt_file.Read()
-  If (newLogLines or trigger) {
-    trigger := false
+  If (trigger) {
+    trigger := 0
+    newLogLines := LastLogLines
+  }
+  If (newLogLines) {
     levelUp := charName ;check character name is present first
     IfInString, newLogLines, %levelUp%
     {
@@ -119,9 +122,10 @@ SearchLog() {
       }
     } ;end level up logic
 
-    travel := "You have entered"
+    travel := "You have entered" ; deprecated by the following line but leaving in for a league to make sure it doesn't break for people
+    travel := "Generating level" ;  (Delete this line if zones are not auto updating) Generating level now shows more detail than you have entered
     generated := "Generating level"
-    If ( InStr(newLogLines,travel) || InStr(newLogLines,generated) )
+    If ( InStr(newLogLines,travel) || InStr(newLogLines,generated) ) ;remove the travel search if no one complains
     {
       If autoToggleZoneImages 
       {
@@ -208,6 +212,7 @@ SearchLog() {
                     CurrentAct := newAct
                     Sleep 100
                   }
+                  LastLogLines := StrReplace(newLogLines, "`r`n")
                   GuiControl, Controls:Choose, CurrentZone, % "|" newZone
                   CurrentZone := newZone
                   Sleep 100

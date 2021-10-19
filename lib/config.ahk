@@ -22,7 +22,6 @@ global imagesYoffset := 0
 
 global treeSide := "Right"
 global treeName := "tree.jpg"
-global autoToggleZoneImages := "False"
 global opacity := 180
 global startHidden := "False"
 global displayTimeout := 0
@@ -30,6 +29,7 @@ global persistText := "False"
 global hideGuide := "False"
 global hideNotes := "False"
 global expOrPen := "Exp"
+global autoToggleZoneImages := "True"
 
 global backgroundColor := "black"
 global redColor := "FF4040"
@@ -70,8 +70,10 @@ global numPart := 1
 global CurrentPart = "Part 1"
 global CurrentAct = "Act 1"
 global CurrentZone = "01 Twilight Strand"
+global LastLogLines = "Generating level 1 area ""Twilight Strand"""
 global CurrentLevel = "01"
 global CurrentGem = "02"
+global trigger := 0
 
 ;*** Create INI if not exist
 ININame=%A_scriptdir%\config.ini
@@ -198,6 +200,7 @@ IniRead, CurrentGem, %INIMeta%, State, CurrentGem, %CurrentGem%
 IniRead, zone_toggle, %INIMeta%, State, zone_toggle, %zone_toggle%
 IniRead, level_toggle, %INIMeta%, State, level_toggle, %level_toggle%
 IniRead, gems_toggle, %INIMeta%, State, gems_toggle, %gems_toggle%
+IniRead, LastLogLines, %INIMeta%, State, LastLogLines, %LastLogLines%
 
 SaveState() {
   global
@@ -210,6 +213,7 @@ SaveState() {
   IniWrite, %zone_toggle%, %INIMeta%, State, zone_toggle
   IniWrite, %level_toggle%, %INIMeta%, State, level_toggle
   IniWrite, %gems_toggle%, %INIMeta%, State, gems_toggle
+  IniWrite, %LastLogLines%, %INIMeta%, State, LastLogLines
 }
 
 WriteAll() {

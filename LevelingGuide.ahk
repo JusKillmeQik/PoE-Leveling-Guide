@@ -111,6 +111,8 @@ If (skipUpdates = "False") {
     IfMsgBox Yes
     {
       progressWidth := 200
+      ignoreBuilds := "builds/"
+      ignoreSeeds := "Seed_"
       Loop, read, %A_ScriptDir%\filelist.txt
       {
         If (A_Index = 1){
@@ -121,7 +123,21 @@ If (skipUpdates = "False") {
             Break
           Progress, b w200, Please don't stop the download until complete, Updating Script
         } Else {
-          UrlDownloadToFile, https://raw.githubusercontent.com/JusKillmeQik/PoE-Leveling-Guide/master/%A_LoopReadLine%, %A_ScriptDir%\%A_LoopReadLine%
+          flippedSlashes := StrReplace(A_LoopReadLine, "/", "\")
+          updateFile = %A_ScriptDir%\%flippedSlashes%
+          lastSlashPos := InStr(updateFile,"\",0,0)
+          downloadDirName := SubStr(updateFile,1,lastSlashPos-1)
+          If ( InStr(A_LoopReadLine,ignoreBuilds) || InStr(A_LoopReadLine,ignoreSeeds) ){
+            If (!FileExist(updateFile)) { ; Only download builds and seed images if they don't already exist
+              FileCreateDir, %downloadDirName%
+              UrlDownloadToFile, https://raw.githubusercontent.com/JusKillmeQik/PoE-Leveling-Guide/master/%A_LoopReadLine%, %updateFile%
+            }
+          } Else {
+            If (!FileExist(updateFile)) { ; If the file doesn't exist make sure to create the directory
+              FileCreateDir, %downloadDirName%
+            }
+            UrlDownloadToFile, https://raw.githubusercontent.com/JusKillmeQik/PoE-Leveling-Guide/master/%A_LoopReadLine%, %updateFile%
+          }
           progressPercent := 100 * (A_Index/progressWidth)
           Progress, %progressPercent%
         }
@@ -133,7 +149,7 @@ If (skipUpdates = "False") {
       ExitApp
     }
   }
-
+  Progress, Off
 }
 
 global gem_data := {}
@@ -213,9 +229,6 @@ Progress, Off
 
 global PoEWindowHwnd := ""
 WinGet, PoEWindowHwnd, ID, ahk_group PoEWindowGrp
-
-global old_log := ""
-global trigger := false
 
 global onStartup := 1
 

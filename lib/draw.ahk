@@ -239,7 +239,7 @@ partSelectUI() {
   }
   SetExp()
 
-  trigger := true
+  trigger := 1
   WinActivate, ahk_id %PoEWindowHwnd%
 
   SaveState()
