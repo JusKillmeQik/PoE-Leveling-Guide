@@ -3314,7 +3314,7 @@
       "Link",
       "Active"
     ],
-    "iconPath": ""
+    "iconPath": "https://web.poecdn.com/public/news/2021-10-21/gem/DestructiveLink.png"
   },
   {
     "level": 24,
@@ -3910,9 +3910,11 @@
     "color": "blue",
     "gemTags": [
       "New Gems",
+      "Spell",
+      "Lightning",
       "Active"
     ],
-    "iconPath": ""
+    "iconPath": "https://web.poecdn.com/public/news/2021-10-21/gem/EnergyBlade.png"
   },
   {
     "level": 24,
@@ -4468,7 +4470,7 @@
       "Fire",
       "Active"
     ],
-    "iconPath": ""
+    "iconPath": "https://web.poecdn.com/public/news/2021-10-21/gem/FlameLink.png"
   },
   {
     "level": 12,
@@ -10674,7 +10676,7 @@
       "Link",
       "Active"
     ],
-    "iconPath": ""
+    "iconPath": "https://web.poecdn.com/public/news/2021-10-21/gem/VampiricLink.png"
   },
   {
     "level": 24,
