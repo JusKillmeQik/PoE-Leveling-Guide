@@ -128,7 +128,7 @@ SearchLog() {
     generated := "Generating level"
     If ( InStr(newLogLines,travel) || InStr(newLogLines,generated) ) ;remove the travel search if no one complains
     {
-      If autoToggleZoneImages 
+      If ( autoToggleZoneImages = "True" )
       {
         zone_toggle := 1
         places_disabled_zones :=  ["Hideout","Rogue Harbour", "Oriath", "Lioneye's Watch", "The Forest Encampment", "The Sarn Encampment", "Highgate", "Overseer's Tower", "The Bridge Encampment", "Oriath Docks"]

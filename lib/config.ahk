@@ -29,7 +29,7 @@ global persistText := "False"
 global hideGuide := "False"
 global hideNotes := "False"
 global expOrPen := "Exp"
-global autoToggleZoneImages := "True"
+global autoToggleZoneImages := "False"
 
 global backgroundColor := "black"
 global redColor := "FF4040"
