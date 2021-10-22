@@ -62,11 +62,11 @@ As you level it can be hard to remember which gems to choose for rewards and whi
 ### Passive Tree
 
 A full passive tree can now be shown when you are picking where to place your points. This requires some work, but I will outline the steps here.  
-1) Download PoESkillTree: https://github.com/PoESkillTree/PoESkillTree/releases  
-2) Make or Import your tree. Path of Building (and other tools) can export just the skill tree in the form "https://www.pathofexile.com/passive-skill-tree/v/#=="  
-3) Go to Tools, Take Screenshot of Skilled Nodes...  
-4) Export the image as *tree.jpg*  
-5) Place the file in an Act folder of your Build
+1) Zoom in on the part of your tree you want to capture in PoB  
+2) Take a screencut with Shift+Windows+S  
+3) Open Paint and paste with Control+V  
+4) Use white text to write the names of masteries or jewels in your tree  
+5) Save the image as *tree.jpg* in an Act folder of your Build
 6) Repeat for each Act you want a different tree, if an Act has no tree it will use the last one
 
 Any image can go there, including a screen shot of poe.ninja's heatmap or any other picture you want to look at while building your tree. The steps above are simply what I used to get a clean looking tree. If you don't want a tree to show up, simply delete or rename that *tree.jpg* file. The name of the file can be changed in the settigs if you want to use a png instead, but tree.jpg is the default from PoESkillTree so that's what this tool uses.
