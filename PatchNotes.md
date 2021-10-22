@@ -11,6 +11,7 @@
 
 * Updated crafting locations
 * Added options to not download images or updates
+* Fixed a bug with auto updating levels
 
 ### Expedition League
 
