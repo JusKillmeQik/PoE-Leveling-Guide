@@ -124,7 +124,7 @@ SearchLog() {
     } ;end level up logic
 
     travel := "You have entered" ; deprecated by the following line but leaving in for a league to make sure it doesn't break for people
-    travel := "Generating level" ;  (Delete this line if zones are not auto updating) Generating level now shows more detail than you have entered
+    ;travel := "Generating level" ;  (Delete this line if zones are not auto updating) Generating level now shows more detail than you have entered
     generated := "Generating level"
     If ( InStr(newLogLines,travel) || InStr(newLogLines,generated) ) ;remove the travel search if no one complains
     {
