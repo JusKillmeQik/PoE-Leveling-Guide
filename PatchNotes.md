@@ -1,5 +1,15 @@
 # Leveling Guide - Patch Notes
 
+### Archnemesis League
+
+* Removed Map functionality until the new end game is understood
+* Added the 3 new gems
+  * Updated old gems
+
+#### Minor improvements
+
+* Fixed a bug with monster level in zones after the acts
+
 ### Scourge League
 
 * Added the ability to update the script when it detects a new version
