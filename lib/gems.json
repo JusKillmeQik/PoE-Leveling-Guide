@@ -588,7 +588,6 @@
     "gemTags": [
       "Critical",
       "Spell",
-      "Duration",
       "Curse",
       "Mark",
       "Active"
@@ -3307,7 +3306,6 @@
     "cost": "Chance",
     "color": "blue",
     "gemTags": [
-      "New Gems",
       "Critical",
       "Spell",
       "Duration",
@@ -3453,6 +3451,30 @@
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Discipline.png?scale=1&w=1&h=1"
+  },
+  {
+    "level": 31,
+    "required_lvl": 31,
+    "name": "Divine Blessing",
+    "Witch": "Siosa",
+    "Shadow": "Siosa",
+    "Ranger": "Siosa",
+    "Duelist": "Siosa",
+    "Marauder": "Siosa",
+    "Templar": "A Fixture of Fate",
+    "Scion": "Siosa",
+    "quest": "Siosa",
+    "vendor": "Siosa",
+    "cost": "Chance",
+    "color": "red",
+    "gemTags": [
+      "Aura",
+      "Duration",
+      "Blessing",
+      "New Gems",
+      "Support"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2022-01-31/gems/DivineBlessingSupport.png"
   },
   {
     "level": 28,
@@ -3909,35 +3931,11 @@
     "cost": "Alt",
     "color": "blue",
     "gemTags": [
-      "New Gems",
       "Spell",
       "Lightning",
       "Active"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2021-10-21/gem/EnergyBlade.png"
-  },
-  {
-    "level": 24,
-    "required_lvl": 24,
-    "name": "Energy Blade",
-    "Witch": "Lost in Love",
-    "Shadow": "Clarissa",
-    "Ranger": "Siosa",
-    "Duelist": "Siosa",
-    "Marauder": "Siosa",
-    "Templar": "Clarissa",
-    "Scion": "Clarissa",
-    "quest": "Maramoa",
-    "vendor": "Clarissa",
-    "cost": "Alt",
-    "color": "blue",
-    "gemTags": [
-      "New Gems",
-      "Spell",
-      "Lightning",
-      "Active"
-    ],
-    "iconPath": "https://web.poecdn.com/protected/image/scourge/items/EnergyBlade.png?key=wD_hF0tew4WWs0AqZjhgDg"
   },
   {
     "level": 31,
@@ -4072,6 +4070,28 @@
       "AoE"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/SiphonGem.png?scale=1&w=1&h=1"
+  },
+  {
+    "level": 38,
+    "required_lvl": 38,
+    "name": "Eternal Blessing",
+    "Witch": "Petarus",
+    "Shadow": "Petarus",
+    "Ranger": "Petarus",
+    "Duelist": "Petarus",
+    "Marauder": "The Eternal Nightmare",
+    "Templar": "Petarus",
+    "Scion": "Petarus",
+    "quest": "Dialla",
+    "vendor": "Petarus",
+    "cost": "Alch",
+    "color": "red",
+    "gemTags": [
+      "Aura",
+      "Blessing",
+      "Support"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2022-01-31/gems/EternalBlessingSupport.png"
   },
   {
     "level": 2,
@@ -4463,7 +4483,6 @@
     "cost": "Chance",
     "color": "red",
     "gemTags": [
-      "New Gems",
       "Spell",
       "Duration",
       "Link",
@@ -6103,7 +6122,6 @@
     "cost": "Chance",
     "color": "green",
     "gemTags": [
-      "New Gems",
       "Spell",
       "Trigger",
       "Duration",
@@ -6675,6 +6693,28 @@
     "iconPath": "https://web.poecdn.com/protected/image/expedition/items/Manabond.png?key=mLAJVsYhwNnMI8zCtCggyQ"
   },
   {
+    "level": 38,
+    "required_lvl": 38,
+    "name": "Mark on Hit",
+    "Witch": "Petarus",
+    "Shadow": "Petarus",
+    "Ranger": "Petarus",
+    "Duelist": "Petarus",
+    "Marauder": "Petarus",
+    "Templar": "Petarus",
+    "Scion": "Petarus",
+    "quest": "",
+    "vendor": "Petarus",
+    "cost": "Alch",
+    "color": "green",
+    "gemTags": [
+      "Mark",
+      "Trigger",
+      "Support"
+    ],
+    "iconPath": "https://web.poecdn.com/public/news/2022-01-31/gems/MarkOnHitSupport.png"
+  },
+  {
     "level": 31,
     "required_lvl": 31,
     "name": "Meat Shield",
@@ -7049,7 +7089,6 @@
       "Lightning",
       "AoE",
       "Chaining",
-      "Duration",
       "Orb",
       "Active"
     ],
@@ -7284,7 +7323,6 @@
       "Spell",
       "Curse",
       "Mark",
-      "Duration",
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/PoachersMark.png?scale=1&w=1&h=1"
@@ -7327,7 +7365,6 @@
     "cost": "Trans",
     "color": "green",
     "gemTags": [
-      "New Gems",
       "Attack",
       "AoE",
       "Chaos",
@@ -7488,7 +7525,6 @@
     "cost": "Chance",
     "color": "red",
     "gemTags": [
-      "New Gems",
       "Spell",
       "Duration",
       "Link",
@@ -8513,7 +8549,6 @@
     "color": "green",
     "gemTags": [
       "Spell",
-      "Duration",
       "Curse",
       "Mark",
       "Active"
@@ -8536,7 +8571,6 @@
     "cost": "Chance",
     "color": "blue",
     "gemTags": [
-      "New Gems",
       "Spell",
       "Duration",
       "Link",
@@ -9523,7 +9557,6 @@
     "cost": "Chance",
     "color": "green",
     "gemTags": [
-      "New Gems",
       "Spell",
       "Active"
     ],
@@ -9545,7 +9578,6 @@
     "cost": "Chance",
     "color": "green",
     "gemTags": [
-      "New Gems",
       "Spell",
       "Duration",
       "Physical",
@@ -10670,7 +10702,6 @@
     "cost": "Chance",
     "color": "green",
     "gemTags": [
-      "New Gems",
       "Spell",
       "Duration",
       "Link",
@@ -11046,7 +11077,6 @@
       "Spell",
       "Curse",
       "Mark",
-      "Duration",
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/WarlordsMark.png?scale=1&w=1&h=1"

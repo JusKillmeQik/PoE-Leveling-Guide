@@ -200,15 +200,6 @@
 				"66 The Canals",
 				"67 Feeding Trough"
 			]
-		},
-		{	"default" : "68 The Templar Laboratory",
-			"act" : "Act 11",
-			"part" : "Part 2",
-			"list" : [
-				"68 The Templar Laboratory",
-				"68 The Fallen Courts",
-				"68 The Haunted Reliquary"
-			]
 		}
 	],
 	"p1acts" : [
@@ -223,12 +214,10 @@
 		"Act 7",
 		"Act 8",
 		"Act 9",
-		"Act 10",
-		"Act 11"
+		"Act 10"
 	],
 	"parts" : [
 		"Part 1",
-		"Part 2",
-		"Maps"
+		"Part 2"
 	]
 }

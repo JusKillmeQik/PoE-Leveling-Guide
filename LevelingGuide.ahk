@@ -86,6 +86,7 @@ Try {
     ExitApp
 }
 
+global monsterLevel := "01"
 #Include, %A_ScriptDir%\lib\config.ahk
 #Include, %A_ScriptDir%\lib\settings.ahk
 #Include, %A_ScriptDir%\lib\sizing.ahk
@@ -235,7 +236,7 @@ WinGet, PoEWindowHwnd, ID, ahk_group PoEWindowGrp
 
 global onStartup := 1
 
-#Include, %A_ScriptDir%\lib\maps.ahk
+;#Include, %A_ScriptDir%\lib\maps.ahk
 #Include, %A_ScriptDir%\lib\draw.ahk
 DrawZone()
 DrawTree()
@@ -246,12 +247,11 @@ If (numPart != 3) {
   SetGuide()
   SetNotes()
 } Else {
-  SetMapGuide()
-  SetMapNotes()
+  ;SetMapGuide()
+  ;SetMapNotes()
 }
 SetGems()
 
-global monsterLevel := "01"
 SetExp()
 
 #Include, %A_ScriptDir%\lib\hotkeys.ahk

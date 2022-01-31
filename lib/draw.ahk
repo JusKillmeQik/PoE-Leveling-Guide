@@ -231,10 +231,10 @@ partSelectUI() {
       UpdateImages()
     }
   } Else {
-    SetMapGuide()
-    SetMapNotes()
+    ;SetMapGuide()
+    ;SetMapNotes()
     If (zone_toggle = 1) {
-      UpdateMapImages()
+      ;UpdateMapImages()
     }
   }
   SetExp()
@@ -260,7 +260,7 @@ actSelectUI() {
     If (zone_toggle = 1) {
       UpdateImages()
     }
-  } Else {
+  } Else { ;This shouldn't happen for this version until we re-enable maps
     ;Save watchstone and conq info
     INIStones=%A_scriptdir%\watchstones.ini
     IniWrite, %CurrentAct%, %INIStones%, Watchstones, collected
@@ -276,10 +276,10 @@ actSelectUI() {
     ;   IniRead, numStones, %INIAtlas%, %CurrentAct%, %key%, 0
     ;   value.SocketedStones := numStones
     ; }
-    SetMapGuide()
-    SetMapNotes()
+    ;SetMapGuide()
+    ;SetMapNotes()
     If (zone_toggle = 1) {
-      UpdateMapImages()
+      ;UpdateMapImages()
     }
   }
   SetExp()
@@ -299,9 +299,9 @@ zoneSelectUI() {
       UpdateImages()
     }
   } Else {
-    SetMapNotes()
+    ;SetMapNotes()
     If (zone_toggle = 1) {
-      UpdateMapImages()
+      ;UpdateMapImages()
     }
   }
   SetExp()

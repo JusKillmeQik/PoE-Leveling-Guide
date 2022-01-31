@@ -29,7 +29,7 @@ global persistText := "False"
 global hideGuide := "False"
 global hideNotes := "False"
 global expOrPen := "Exp"
-global autoToggleZoneImages := "False"
+global autoToggleZoneImages := "True"
 
 global backgroundColor := "black"
 global redColor := "FF4040"
@@ -195,6 +195,7 @@ If (CurrentAct = "Act X") {
 }
 
 IniRead, CurrentZone, %INIMeta%, State, CurrentZone, %CurrentZone%
+monsterLevel := SubStr(CurrentZone, 1, 2)
 IniRead, CurrentLevel, %INIMeta%, State, CurrentLevel, %CurrentLevel%
 IniRead, CurrentGem, %INIMeta%, State, CurrentGem, %CurrentGem%
 IniRead, zone_toggle, %INIMeta%, State, zone_toggle, %zone_toggle%

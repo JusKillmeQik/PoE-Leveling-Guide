@@ -142,10 +142,20 @@ SearchLog() {
       activeCount := 0
       active_toggle := 1
 
-      levelPos := InStr(log, generated, false)
-      monsterLevel := SubStr(log, levelPos+17, 2)
-      If ( levelPos = 0 ) {
-        monsterLevel := -1
+      If(InStr(newLogLines,generated)){
+        generatedHappened := 1
+        levelPos := InStr(newLogLines, generated, false)
+        lastMonsterLevel := monsterLevel
+        monsterLevel := SubStr(newLogLines, levelPos+17, 2)
+      } Else {
+        If(generatedHappened != 1){
+          monsterLevel := -1
+        }
+        generatedHappened := 0
+        If(InStr(newLogLines,"Hideout")) ;reset exp if traveling to hideout
+        {
+          monsterLevel := lastMonsterLevel
+        }
       }
 
       newPartTest := "Lioneye's Watch"
@@ -160,28 +170,29 @@ SearchLog() {
         }
       }
 
-      newPartTest := "Oriath"
-      IfInString, newLogLines, %newPartTest%
-      {
-        act10LastZone := "67 Feeding Trough"
-        If (CurrentZone = act10LastZone) 
-        {
-          GuiControl, Controls:Choose, CurrentAct, % "|Act 11"
-          GuiControl, Controls:Choose, CurrentZone, % "|68 The Templar Laboratory"
-        }
-      }
+      ;Update this once we know the new Kirac Questline
+      ; newPartTest := "Oriath"
+      ; IfInString, newLogLines, %newPartTest%
+      ; {
+      ;   act10LastZone := "67 Feeding Trough"
+      ;   If (CurrentZone = act10LastZone)
+      ;   {
+      ;     GuiControl, Controls:Choose, CurrentAct, % "|Act 11"
+      ;     GuiControl, Controls:Choose, CurrentZone, % "|68 The Templar Laboratory"
+      ;   }
+      ; }
 
-      newPartTest := "Hideout"
-      IfInString, newLogLines, %newPartTest%
-      {
-        act11LastZone := "68 The Haunted Reliquary"
-        If (CurrentZone = act11LastZone) 
-        {
-          numPart := 3
-          CurrentPart := "Maps"
-          GuiControl, Controls:Choose, CurrentPart, % "|" CurrentPart
-        }
-      }
+      ; newPartTest := "Hideout"
+      ; IfInString, newLogLines, %newPartTest%
+      ; {
+      ;   act11LastZone := "68 The Haunted Reliquary"
+      ;   If (CurrentZone = act11LastZone)
+      ;   {
+      ;     numPart := 3
+      ;     CurrentPart := "Maps"
+      ;     GuiControl, Controls:Choose, CurrentPart, % "|" CurrentPart
+      ;   }
+      ; }
 
       newPartTest := "Aspirants' Plaza"
       IfInString, newLogLines, %newPartTest%
@@ -233,7 +244,7 @@ SearchLog() {
             }
           }
         }
-      } Else 
+      } Else ;This can stay for now but maps will be disabled in this version for now
       {
         ;loop through all of the Maps
         For key, value in Maps 
@@ -253,98 +264,99 @@ SearchLog() {
     } ;end travel logic
 
     ;Conquerer Logic goes here!
-    If (!conqFound) 
-    {
-      conqueror := "Veritania, the Redeemer"
-      IfInString, newLogLines, %conqueror%
-      {
-        conqFound := 1
-        Conquerors["Veritania"].Region := Maps[CurrentZone].Region
-        Conquerors["Veritania"].Appearances := Conquerors["Veritania"].Appearances + 1
-        If (Conquerors["Veritania"].Appearances = 5) 
-        {
-          Conquerors["Veritania"].Appearances = 4
-        } Else If (Conquerors["Veritania"].Appearances = 4) 
-        {
-          ;Conquerors["Veritania"].Region := ""
-          ;Conquerors["Veritania"].Appearances := 0
-          numWatchstones := SubStr(CurrentAct, 1, 2)
-          numWatchstones++
-          GuiControl, Controls:Choose, CurrentAct, % "|" numWatchstones + 1
-        } Else {
-          GuiControl, Controls:Choose, CurrentAct, % "|" CurrentAct
-        }
-        ClearConquerors("Veritania")
-      }
+    ;Conquerers are no longer part of the main progression
+    ; If (!conqFound)
+    ; {
+    ;   conqueror := "Veritania, the Redeemer"
+    ;   IfInString, newLogLines, %conqueror%
+    ;   {
+    ;     conqFound := 1
+    ;     Conquerors["Veritania"].Region := Maps[CurrentZone].Region
+    ;     Conquerors["Veritania"].Appearances := Conquerors["Veritania"].Appearances + 1
+    ;     If (Conquerors["Veritania"].Appearances = 5)
+    ;     {
+    ;       Conquerors["Veritania"].Appearances = 4
+    ;     } Else If (Conquerors["Veritania"].Appearances = 4)
+    ;     {
+    ;       ;Conquerors["Veritania"].Region := ""
+    ;       ;Conquerors["Veritania"].Appearances := 0
+    ;       numWatchstones := SubStr(CurrentAct, 1, 2)
+    ;       numWatchstones++
+    ;       GuiControl, Controls:Choose, CurrentAct, % "|" numWatchstones + 1
+    ;     } Else {
+    ;       GuiControl, Controls:Choose, CurrentAct, % "|" CurrentAct
+    ;     }
+    ;     ClearConquerors("Veritania")
+    ;   }
 
-      conqueror := "Drox, the Warlord"
-      IfInString, newLogLines, %conqueror%
-      {
-        conqFound := 1
-        Conquerors["Drox"].Region := Maps[CurrentZone].Region
-        Conquerors["Drox"].Appearances := Conquerors["Drox"].Appearances + 1
-        If (Conquerors["Drox"].Appearances = 5) 
-        {
-          Conquerors["Drox"].Appearances = 4
-        } Else If (Conquerors["Drox"].Appearances = 4) 
-        {
-          ;Conquerors["Drox"].Region := ""
-          ;Conquerors["Drox"].Appearances := 0
-          numWatchstones := SubStr(CurrentAct, 1, 2)
-          numWatchstones++
-          GuiControl, Controls:Choose, CurrentAct, % "|" numWatchstones + 1
-        } Else {
-          GuiControl, Controls:Choose, CurrentAct, % "|" CurrentAct
-        }
-        ClearConquerors("Drox")
-      }
+    ;   conqueror := "Drox, the Warlord"
+    ;   IfInString, newLogLines, %conqueror%
+    ;   {
+    ;     conqFound := 1
+    ;     Conquerors["Drox"].Region := Maps[CurrentZone].Region
+    ;     Conquerors["Drox"].Appearances := Conquerors["Drox"].Appearances + 1
+    ;     If (Conquerors["Drox"].Appearances = 5)
+    ;     {
+    ;       Conquerors["Drox"].Appearances = 4
+    ;     } Else If (Conquerors["Drox"].Appearances = 4)
+    ;     {
+    ;       ;Conquerors["Drox"].Region := ""
+    ;       ;Conquerors["Drox"].Appearances := 0
+    ;       numWatchstones := SubStr(CurrentAct, 1, 2)
+    ;       numWatchstones++
+    ;       GuiControl, Controls:Choose, CurrentAct, % "|" numWatchstones + 1
+    ;     } Else {
+    ;       GuiControl, Controls:Choose, CurrentAct, % "|" CurrentAct
+    ;     }
+    ;     ClearConquerors("Drox")
+    ;   }
 
-      conqueror := "Baran, the Crusader"
-      IfInString, newLogLines, %conqueror%
-      {
-        conqFound := 1
-        Conquerors["Baran"].Region := Maps[CurrentZone].Region
-        Conquerors["Baran"].Appearances := Conquerors["Baran"].Appearances + 1
-        If (Conquerors["Baran"].Appearances = 5) 
-        {
-          Conquerors["Baran"].Appearances = 4
-        } Else If (Conquerors["Baran"].Appearances = 4) 
-        {
-          ;Conquerors["Baran"].Region := ""
-          ;Conquerors["Baran"].Appearances := 0
-          numWatchstones := SubStr(CurrentAct, 1, 2)
-          numWatchstones++
-          GuiControl, Controls:Choose, CurrentAct, % "|" numWatchstones + 1
-        } Else 
-        {
-          GuiControl, Controls:Choose, CurrentAct, % "|" CurrentAct
-        }
-        ClearConquerors("Baran")
-      }
+    ;   conqueror := "Baran, the Crusader"
+    ;   IfInString, newLogLines, %conqueror%
+    ;   {
+    ;     conqFound := 1
+    ;     Conquerors["Baran"].Region := Maps[CurrentZone].Region
+    ;     Conquerors["Baran"].Appearances := Conquerors["Baran"].Appearances + 1
+    ;     If (Conquerors["Baran"].Appearances = 5)
+    ;     {
+    ;       Conquerors["Baran"].Appearances = 4
+    ;     } Else If (Conquerors["Baran"].Appearances = 4)
+    ;     {
+    ;       ;Conquerors["Baran"].Region := ""
+    ;       ;Conquerors["Baran"].Appearances := 0
+    ;       numWatchstones := SubStr(CurrentAct, 1, 2)
+    ;       numWatchstones++
+    ;       GuiControl, Controls:Choose, CurrentAct, % "|" numWatchstones + 1
+    ;     } Else
+    ;     {
+    ;       GuiControl, Controls:Choose, CurrentAct, % "|" CurrentAct
+    ;     }
+    ;     ClearConquerors("Baran")
+    ;   }
 
-      conqueror := "Al-Hezmin, the Hunter"
-      IfInString, newLogLines, %conqueror%
-      {
-        conqFound := 1
-        Conquerors["Al-Hezmin"].Region := Maps[CurrentZone].Region
-        Conquerors["Al-Hezmin"].Appearances := Conquerors["Al-Hezmin"].Appearances + 1
-        If (Conquerors["Al-Hezmin"].Appearances = 5) 
-        {
-          Conquerors["Al-Hezmin"].Appearances = 4
-        } Else If (Conquerors["Al-Hezmin"].Appearances = 4) 
-        {
-          ;Conquerors["Al-Hezmin"].Region := ""
-          ;Conquerors["Al-Hezmin"].Appearances := 0
-          numWatchstones := SubStr(CurrentAct, 1, 2)
-          numWatchstones++
-          GuiControl, Controls:Choose, CurrentAct, % "|" numWatchstones + 1
-        } Else 
-        {
-          GuiControl, Controls:Choose, CurrentAct, % "|" CurrentAct
-        }
-        ClearConquerors("Al-Hezmin")
-      }
-    } ;end conqueror logic
+    ;   conqueror := "Al-Hezmin, the Hunter"
+    ;   IfInString, newLogLines, %conqueror%
+    ;   {
+    ;     conqFound := 1
+    ;     Conquerors["Al-Hezmin"].Region := Maps[CurrentZone].Region
+    ;     Conquerors["Al-Hezmin"].Appearances := Conquerors["Al-Hezmin"].Appearances + 1
+    ;     If (Conquerors["Al-Hezmin"].Appearances = 5)
+    ;     {
+    ;       Conquerors["Al-Hezmin"].Appearances = 4
+    ;     } Else If (Conquerors["Al-Hezmin"].Appearances = 4)
+    ;     {
+    ;       ;Conquerors["Al-Hezmin"].Region := ""
+    ;       ;Conquerors["Al-Hezmin"].Appearances := 0
+    ;       numWatchstones := SubStr(CurrentAct, 1, 2)
+    ;       numWatchstones++
+    ;       GuiControl, Controls:Choose, CurrentAct, % "|" numWatchstones + 1
+    ;     } Else
+    ;     {
+    ;       GuiControl, Controls:Choose, CurrentAct, % "|" CurrentAct
+    ;     }
+    ;     ClearConquerors("Al-Hezmin")
+    ;   }
+    ; } ;end conqueror logic
 
     If (level_toggle) 
     {
@@ -353,13 +365,13 @@ SearchLog() {
   }
 }
 
-ClearConquerors(currentConqueror) {
-  For key, value in Conquerors {
-    ;If we get a new Conqueror and an old one finished, clear it
-    If ( key!=currentConqueror and value.Appearances>=4){
-      value.Appearances := 0
-      value.Region := ""
-      GuiControl, Controls:Choose, CurrentAct, % "|" CurrentAct
-    }
-  }
-}
+; ClearConquerors(currentConqueror) {
+;   For key, value in Conquerors {
+;     ;If we get a new Conqueror and an old one finished, clear it
+;     If ( key!=currentConqueror and value.Appearances>=4){
+;       value.Appearances := 0
+;       value.Region := ""
+;       GuiControl, Controls:Choose, CurrentAct, % "|" CurrentAct
+;     }
+;   }
+; }
