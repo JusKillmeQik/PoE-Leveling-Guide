@@ -16,17 +16,17 @@ Loop, read, %mappath%
   map_array := StrSplit(A_LoopReadLine, ",", """")
   Maps[map_array[1]] := {}
   ;Maps[A_Index].Name := map_array[1]
-  Maps[map_array[1]].Region := map_array[7]
+  Maps[map_array[1]].Region := map_array[8]
 
-  Regions[map_array[7]] := {}
-  ;Regions[map_array[7]].SocketedStones := 0
+  Regions[map_array[8]] := {}
+  ;Regions[map_array[8]].SocketedStones := 0
 
   Maps[map_array[1]].Tier := [ map_array[2] . ".0", map_array[3] . ".0", map_array[4] . ".0", map_array[5] . ".0", map_array[6] . ".0" ]
 
-  Maps[map_array[1]].LayoutRating := map_array[8]
-  Maps[map_array[1]].Tileset := map_array[10]
-  Maps[map_array[1]].BossRating := map_array[9]
-  Maps[map_array[1]].Boss := map_array[11]
+  ;Maps[map_array[1]].LayoutRating := map_array[8]
+  ;Maps[map_array[1]].Tileset := map_array[10]
+  ;Maps[map_array[1]].BossRating := map_array[9]
+  Maps[map_array[1]].Boss := map_array[7]
 
 }
 
@@ -90,64 +90,64 @@ SetMapNotes()
     numLines++
 
 
-    ;Layout Rating
-    val := "Layout Rating: " . Maps[CurrentZone].LayoutRating
+    ; ;Layout Rating
+    ; val := "Layout Rating: " . Maps[CurrentZone].LayoutRating
 
-    If (Maps[CurrentZone].LayoutRating = "A") {
-      Gui, Notes:font, c%greenColor%
-    } Else If (Maps[CurrentZone].LayoutRating = "B") {
-      Gui, Notes:font, c%blueColor%
-    } Else If (Maps[CurrentZone].LayoutRating = "C") {
-      Gui, Notes:font, c%redColor%
-    } Else {
-      Gui, Notes:font, c%whiteColor%
-    }
+    ; If (Maps[CurrentZone].LayoutRating = "A") {
+    ;   Gui, Notes:font, c%greenColor%
+    ; } Else If (Maps[CurrentZone].LayoutRating = "B") {
+    ;   Gui, Notes:font, c%blueColor%
+    ; } Else If (Maps[CurrentZone].LayoutRating = "C") {
+    ;   Gui, Notes:font, c%redColor%
+    ; } Else {
+    ;   Gui, Notes:font, c%whiteColor%
+    ; }
 
-    W := MeasureTextWidth(val, "s" . points . "  w" . boldness, font)
-    If ( W > notes_width ){
-      notes_width := W
-    }
+    ; W := MeasureTextWidth(val, "s" . points . "  w" . boldness, font)
+    ; If ( W > notes_width ){
+    ;   notes_width := W
+    ; }
 
-    yPosNoteLine := (numLines * Ceil(pixels*lineSpacing)) + textMargin
-    Gui, Notes:Add, Text, xm y%yPosNoteLine%, % val
-    numLines++
-
-
-    ;Tileset
-    val := "Tileset: " . Maps[CurrentZone].Tileset
-    Gui, Notes:font, c%whiteColor%
-
-    W := MeasureTextWidth(val, "s" . points . "  w" . boldness, font)
-    If ( W > notes_width ){
-      notes_width := W
-    }
-
-    yPosNoteLine := (numLines * Ceil(pixels*lineSpacing)) + textMargin
-    Gui, Notes:Add, Text, xm y%yPosNoteLine%, % val
-    numLines++
+    ; yPosNoteLine := (numLines * Ceil(pixels*lineSpacing)) + textMargin
+    ; Gui, Notes:Add, Text, xm y%yPosNoteLine%, % val
+    ; numLines++
 
 
-    ;Boss Rating
-    val := "Boss Rating: " . Maps[CurrentZone].BossRating
+    ; ;Tileset
+    ; val := "Tileset: " . Maps[CurrentZone].Tileset
+    ; Gui, Notes:font, c%whiteColor%
 
-    If (Maps[CurrentZone].BossRating = "1") {
-      Gui, Notes:font, c%greenColor%
-    } Else If (Maps[CurrentZone].BossRating = "2") {
-      Gui, Notes:font, c%blueColor%
-    } Else If (Maps[CurrentZone].BossRating = "3") {
-      Gui, Notes:font, c%yellowColor%
-    } Else {
-      Gui, Notes:font, c%redColor%
-    }
+    ; W := MeasureTextWidth(val, "s" . points . "  w" . boldness, font)
+    ; If ( W > notes_width ){
+    ;   notes_width := W
+    ; }
 
-    W := MeasureTextWidth(val, "s" . points . "  w" . boldness, font)
-    If ( W > notes_width ){
-      notes_width := W
-    }
+    ; yPosNoteLine := (numLines * Ceil(pixels*lineSpacing)) + textMargin
+    ; Gui, Notes:Add, Text, xm y%yPosNoteLine%, % val
+    ; numLines++
 
-    yPosNoteLine := (numLines * Ceil(pixels*lineSpacing)) + textMargin
-    Gui, Notes:Add, Text, xm y%yPosNoteLine%, % val
-    numLines++
+
+    ; ;Boss Rating
+    ; val := "Boss Rating: " . Maps[CurrentZone].BossRating
+
+    ; If (Maps[CurrentZone].BossRating = "1") {
+    ;   Gui, Notes:font, c%greenColor%
+    ; } Else If (Maps[CurrentZone].BossRating = "2") {
+    ;   Gui, Notes:font, c%blueColor%
+    ; } Else If (Maps[CurrentZone].BossRating = "3") {
+    ;   Gui, Notes:font, c%yellowColor%
+    ; } Else {
+    ;   Gui, Notes:font, c%redColor%
+    ; }
+
+    ; W := MeasureTextWidth(val, "s" . points . "  w" . boldness, font)
+    ; If ( W > notes_width ){
+    ;   notes_width := W
+    ; }
+
+    ; yPosNoteLine := (numLines * Ceil(pixels*lineSpacing)) + textMargin
+    ; Gui, Notes:Add, Text, xm y%yPosNoteLine%, % val
+    ; numLines++
 
 
     ;Boss

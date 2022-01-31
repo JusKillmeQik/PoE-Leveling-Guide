@@ -153,7 +153,7 @@ GetDelimitedActListString(data, act, part) {
     }
   } Else {
     currentWatchstones := SubStr(act, 1, 2)
-    Loop, 33
+    Loop, 17 ; because there are 16 stones now, this used to be 33 when there were 32 stones
     {
         watchstoneNumber := A_Index - 1
         If (watchstoneNumber < 10) {
