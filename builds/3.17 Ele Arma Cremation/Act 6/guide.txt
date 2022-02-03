@@ -1,0 +1,12 @@
+﻿Fallen from Grace: 2x Respec
+Lilly:             GEMS
+B,Father of War:     Passive
+G,Prison:            Trial
+B,Cloven One:        Passive
+B,Puppet Mistress:   Passive
+
+R,Tips: 
+ After Lilly quest buy as many Explosive Arrows as you can afford
+ Level them in offhand until level 20
+ Vendor these with a GCP for 20% quality and re-level to 20
+ Vaal at 20/20 for level 21 gem worth lots of money in 3.17

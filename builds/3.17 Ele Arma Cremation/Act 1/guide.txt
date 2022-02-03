@@ -1,0 +1,12 @@
+﻿B,Dweller of the Deep: Passive
+G,Lower Prison:        Trial / Support GEM
+B,Marooned Mariner:    Passive
+B,Way Forward:         Passive
+
+R, Tips:
+ Make a wand with added fire damage (level 8)
+   sell: normal ruby ring + alteration + magic wand
+ Use 2x sapphire ring for Merveil fight (act 1 final boss)
+   buy or find: iron ring x2
+   sell: fireball + iron ring
+   sell: freezing pulse + iron ring

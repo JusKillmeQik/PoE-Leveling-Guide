@@ -1,0 +1,11 @@
+﻿The Great White Beast: Quicksilver
+G,Crypt:                 Trial
+G,Chamber of Sins 2:     Trial
+Bandits:               Kill All
+B,Way Forward (Bestel):  Passive
+
+R,Tip:
+ Make two wands with more added fire damage (level 20)
+   sell: iron ring + cheap red gems from Nessa for ruby ring
+   Use Essences to make ruby rings rare
+   sell: rare ruby ring + alteration + magic wand
