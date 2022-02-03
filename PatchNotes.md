@@ -2,6 +2,7 @@
 
 ### Archnemesis League
 
+* Added an Atlas Passive Tree (default Alt+a to view)
 * Removed Map functionality until the new end game is understood
 * Added the 3 new gems
   * Updated old gems

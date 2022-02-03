@@ -485,7 +485,7 @@ ShowAllWindows:
     }
   }
 
-  If (tree_toggle) {
+  If (tree_toggle or atlas_toggle) {
     Gui, Tree:Show, NoActivate
   } Else If (level_toggle) {
     Gui, Level:Show, NoActivate

@@ -50,7 +50,55 @@
   }
 }
 
+DrawAtlas() {
+  global
 
+  image_file := "" A_ScriptDir "\images\atlas.png" ""
+
+  If (FileExist(image_file))
+  {
+    GDIPToken := Gdip_Startup()
+
+    pBM := Gdip_CreateBitmapFromFile( image_file )
+    original_treeW:= Gdip_GetImageWidth( pBM )
+    original_treeH:= Gdip_GetImageHeight( pBM )
+
+    Gdip_DisposeImage( pBM )
+    Gdip_Shutdown( GDIPToken )
+
+    ;Only build the tree if the file is a valid size picture
+    If (original_treeW and original_treeH)
+    {
+      If (original_treeW > original_treeH) {
+        treeW := Round( A_ScreenWidth / 2 )
+        treeRatio := treeW / original_treeW
+        treeH := original_treeH * treeRatio
+        If (treeH > Round( A_ScreenHeight * 4 / 5 )){
+          treeH := Round( A_ScreenHeight * 4 / 5 )
+          treeRatio := treeH / original_treeH
+          treeW := original_treeW * treeRatio
+        }
+      } else {
+        treeH := Round( A_ScreenHeight * 4 / 5 )
+        treeRatio := treeH / original_treeH
+        treeW := original_treeW * treeRatio
+      }
+
+	    If (treeSide = "Right") {
+		    xTree := A_ScreenWidth - treeW
+	    } else {
+		    xTree := 0
+	    }
+	    yTree := A_ScreenHeight - treeH
+
+	    Gui, Tree:+E0x20 +E0x80 -Caption +ToolWindow +LastFound +AlwaysOnTop -Resize -DPIScale +hwndTreeWindow
+	    Gui, Tree:Add, Picture, x0 y0 w%treeW% h%treeH%, %image_file%
+
+	    Gui, Tree:Show, x%xTree% y%yTree% w%treeW% h%treeH% NA, Gui Tree
+	    WinSet, Transparent, 240, ahk_id %TreeWindow%
+	  }
+  }
+}
 
 DrawTree() {
   global

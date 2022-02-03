@@ -949,6 +949,7 @@ UpdateElements() {
     noteUpdate := ""
     npcUpdate := groupList[GroupIndex(%element%group)][2]
     imageUpdate := 0
+    %element%url := ""
   } Else {
     colorUpdate := %element%color
     noteUpdate := %element%note

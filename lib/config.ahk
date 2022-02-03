@@ -43,6 +43,7 @@ global KeyHideZones := "!F2"
 global KeyCycleZones := "^PgDn"
 global KeyHideExp := "!F3"
 global KeyHideTree := "!f"
+global KeyHideAtlas := "!a"
 global KeyHideGems := "!g"
 
 global KeyShowSyndicate := "F6"
@@ -56,6 +57,7 @@ global skipGemImages := "False"
 global KeySettings := "F10"
 
 global tree_toggle := 0
+global atlas_toggle := 0
 
 global zone_toggle := 1
 global level_toggle := 1
@@ -139,6 +141,7 @@ IniRead, KeyHideZones, %ININame%, ToggleKey, KeyHideZones, %KeyHideZones%
 IniRead, KeyCycleZones, %ININame%, ToggleKey, KeyCycleZones, %KeyCycleZones%
 IniRead, KeyHideExp, %ININame%, ToggleKey, KeyHideExp, %KeyHideExp%
 IniRead, KeyHideTree, %ININame%, ToggleKey, KeyHideTree, %KeyHideTree%
+IniRead, KeyHideAtlas, %ININame%, ToggleKey, KeyHideAtlas, %KeyHideAtlas%
 IniRead, KeyHideGems, %ININame%, ToggleKey, KeyHideGems, %KeyHideGems%
 IniRead, KeyShowSyndicate, %ININame%, ToggleKey, KeyShowSyndicate, %KeyShowSyndicate%
 IniRead, KeyShowTemple, %ININame%, ToggleKey, KeyShowTemple, %KeyShowTemple%
@@ -266,6 +269,7 @@ WriteAll() {
   IniWrite, %KeyCycleZones%, %ININame%, ToggleKey, KeyCycleZones
   IniWrite, %KeyHideExp%, %ININame%, ToggleKey, KeyHideExp
   IniWrite, %KeyHideTree%, %ININame%, ToggleKey, KeyHideTree
+  IniWrite, %KeyHideAtlas%, %ININame%, ToggleKey, KeyHideAtlas
   IniWrite, %KeyHideGems%, %ININame%, ToggleKey, KeyHideGems
   IniWrite, %KeyShowSyndicate%, %ININame%, ToggleKey, KeyShowSyndicate
   IniWrite, %KeyShowTemple%, %ININame%, ToggleKey, KeyShowTemple

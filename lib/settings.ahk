@@ -71,24 +71,25 @@ LaunchSettings() {
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Hide Zone Images ;Static22
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Hide Level Tracker ;Static23
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Show Skill Tree ;Static24
-  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Hide Gem Setup ;Static25
-  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Show Betrayal Help ;Static26
-  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Show Incursion Help ;Static27
-  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Show Heist Help ;Static28
-  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Manually Cycle Zone ;Static29
+  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Show Atlas Tree ;Static25
+  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Hide Gem Setup ;Static26
+  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Show Betrayal Help ;Static27
+  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Show Incursion Help ;Static28
+  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Show Heist Help ;Static29
+  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Manually Cycle Zone ;Static30
 
   ;Third Column Offset
-  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x230 y320, Offsets ;Static30
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x230 y320, Offsets ;Static31
 
-  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x230 y350, Notes X ;Static31
-  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Pics X ;Static32
-  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Level X ;Static33
-  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Gems X ;Static34
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x230 y350, Notes X ;Static32
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Pics X ;Static33
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Level X ;Static34
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Gems X ;Static35
 
-  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x345 y350, Notes Y ;Static35
-  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Pics Y ;Static36
-  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Level Y ;Static37
-  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Gems Y ;Static38
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x345 y350, Notes Y ;Static36
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Pics Y ;Static37
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Level Y ;Static38
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Gems Y ;Static39
 
 
   ;Fourth Column Hotkey Key
@@ -97,6 +98,7 @@ LaunchSettings() {
   Gui, Settings:Add, Hotkey, vKeyHideZones w%nameWidth% h%optionHeight% y+5, %KeyHideZones%
   Gui, Settings:Add, Hotkey, vKeyHideExp w%nameWidth% h%optionHeight% y+5, %KeyHideExp%
   Gui, Settings:Add, Hotkey, vKeyHideTree w%nameWidth% h%optionHeight% y+5, %KeyHideTree%
+  Gui, Settings:Add, Hotkey, vKeyHideAtlas w%nameWidth% h%optionHeight% y+5, %KeyHideAtlas%
   Gui, Settings:Add, Hotkey, vKeyHideGems w%nameWidth% h%optionHeight% y+5, %KeyHideGems%
   Gui, Settings:Add, Hotkey, vKeyShowSyndicate w%nameWidth% h%optionHeight% y+5, %KeyShowSyndicate%
   Gui, Settings:Add, Hotkey, vKeyShowTemple w%nameWidth% h%optionHeight% y+5, %KeyShowTemple%
@@ -116,13 +118,13 @@ LaunchSettings() {
 
 
   ;Build
-  Gui, Settings:Add, Text, w80 h%optionHeight% x490 y10, Build ;Static39
+  Gui, Settings:Add, Text, w80 h%optionHeight% x490 y10, Build ;Static40
 
   ;Fifth Column Build Options
-  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% x490 y40, Build Editor ;Static40
-  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Build Folder ;Static41
-  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Notes Folder ;Static42
-  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, New Build ;Static43
+  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% x490 y40, Build Editor ;Static41
+  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Build Folder ;Static42
+  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Notes Folder ;Static43
+  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, New Build ;Static44
 
   ;Sixth Column Build Edits
   Gui, Settings:Add, Button, gEditBuild w%nameWidth% h%optionHeight% x+5 y36, &Edit Build
@@ -136,17 +138,17 @@ LaunchSettings() {
 
 
   ;Colors
-  Gui, Settings:Add, Text, w80 h%optionHeight% x490 y161, Colors ;Static44
+  Gui, Settings:Add, Text, w80 h%optionHeight% x490 y161, Colors ;Static45
 
-  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+9, Background ;Static45
-  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Red        < ;Static46
-  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Green     + ;Static47
-  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Blue        > ;Static48
-  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Yellow     - ;Static49
-  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, White ;Static50
+  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+9, Background ;Static46
+  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Red        < ;Static47
+  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Green     + ;Static48
+  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Blue        > ;Static49
+  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Yellow     - ;Static50
+  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, White ;Static51
 
-  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+25, Tree Side ;Static51
-  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Tree File Name ;Static52
+  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+25, Tree Side ;Static52
+  Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Tree File Name ;Static53
 
   Gui, Settings:Add, Edit, vbackgroundColor w%nameWidth% h%optionHeight% x565 y186, %backgroundColor%
   Gui, Settings:Add, Edit, vredColor w%nameWidth% h%optionHeight% y+5, %redColor%
@@ -388,7 +390,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, This is the multiplier for the full resolution of `nthe zone layout images. A good default value is .5
     }
-  } Else If (control = "static31") { ;Notes X Offset
+  } Else If (control = "static32") { ;Notes X Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -399,7 +401,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How much space to leave on the right side of the screen for the overlay. `n1 = All the way to right (covers the map/info). `nThis is a good setting if you're going to hide the notes anyway. `n.855 = As far right as you can go without covering the Mini-Map. `nGreat setting if you don't use the overlay map. `n.78 = Default setting and as far right as you can go without covering anything.
     }
-  } Else If (control = "static35") { ;Notes Y Offset
+  } Else If (control = "static36") { ;Notes Y Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -410,7 +412,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far down to place the overlay. `n0 = At the top of the screen (Default). `n1 = At the top of a second monitor below your primary. `n-1 = at the top of a second monitor above your primary. `n You can adjust this to place the overlay anywhere you would like on your screen.
     }
-  } Else If (control = "static33") { ;Level X Offset
+  } Else If (control = "static34") { ;Level X Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -421,7 +423,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far to the right of the screen to put the Experience tracker. `n.287 = As far to the left as you can go without covering the flasks. `n.589 = As far to the right as you can go without covering the skill bar on my resolution and font size. `nThis is the default and a great option for 1080 screen resolutions and size 9 Consolas. `nExperiment with other numbers if you want to move the Experience tracker around.
     }
-  } Else If (control = "static37") { ;Level Y Offset
+  } Else If (control = "static38") { ;Level Y Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -432,7 +434,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far down the screen to put the Experience tracker. `n.955 = As low as you can go without covering the experience bar on my resolution and font size. `nThis is the default and a great option for 1080 screen resolutions and size 9 Consolas. `nExperiment with other numbers if you want to move the Experience tracker around.
     }
-  } Else If (control = "static34") { ;Gems X Offset
+  } Else If (control = "static35") { ;Gems X Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -443,7 +445,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far to the right to put the Gem Setup. `n.005 = Is the default and places the setup on the left side of the primary screen. `n1.005 = This should put the setup on the left side of a secondary monitor that is to the right of the primary. `n-.995 = This should put the setup on the left side of a secondary monitor that is to the left of the primary. `n None of this has been tested so please experiement with good values and let me know what to put here.
     }
-  } Else If (control = "static38") { ;Gems Y Offset
+  } Else If (control = "static39") { ;Gems Y Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -454,7 +456,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far down you want the Gem Setup. `n0 = All the way at top of the screen. `nIt will cover your buffs and debuffs. `n.180 = Just below your buffs and debuffs. `nThis is the default and a great option for normal screen resolutions.
     }
-  } Else If (control = "static32") { ;Pics X Offset
+  } Else If (control = "static33") { ;Pics X Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -465,7 +467,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far to the right to put the Layout Images. `n0 = Is the default and will lock the images to the Note's position. `nAny other value will freely move the images on the screen. `nThe positioning is based on the top right of the images so the offset `nprobably needs to be over .5 to be useful.
     }
-  } Else If (control = "static36") { ;Pics Y Offset
+  } Else If (control = "static37") { ;Pics Y Offset
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -476,7 +478,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, How far down you want the Layout Images. `n0 = All the way at top of the screen. `nIt will cover your buffs and debuffs. `n.180 = Just below your buffs and debuffs. `nThis value is only used if the X offset is not 0 and bound to the Notes.
     }
-  } Else If (control = "static44") { ;Colors
+  } Else If (control = "static45") { ;Colors
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -487,7 +489,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, For the colors you can put names such as "red" or "blue" or "green". `nHex values can also be used like "FF4040" or "2ECC40" or "0080FF".
     }
-  } Else If (control = "static51") { ;Tree Side
+  } Else If (control = "static52") { ;Tree Side
     If (oldControl = control){
       toolTime .= 1
     } Else {
@@ -498,7 +500,7 @@ ToolTip() {
     If (toolTime > toolTimeout) {
       ToolTip, Do you want the Skill Tree to cover your Life "Left" or Inventory "Right" when shown.
     }
-  } Else If (control = "static52") { ;Tree Name
+  } Else If (control = "static53") { ;Tree Name
     If (oldControl = control){
       toolTime .= 1
     } Else {

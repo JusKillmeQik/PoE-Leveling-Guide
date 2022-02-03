@@ -99,10 +99,33 @@ ToggleTree() {
     DrawTree()
     Gui, Tree:Show, NA
     tree_toggle := 1
+    atlas_toggle := 0
   }
   else
   {
     Gui, Tree:Cancel
+    tree_toggle := 0
+    atlas_toggle := 0
+  }
+  Send %KeyHideTree%
+}
+
+If (KeyHideAtlas != "") {
+  Hotkey % KeyHideAtlas, ToggleAtlas
+}
+
+ToggleAtlas() {
+  if (atlas_toggle = 0)
+  {
+    DrawAtlas()
+    Gui, Tree:Show, NA
+    atlas_toggle := 1
+    tree_toggle := 0
+  }
+  else
+  {
+    Gui, Tree:Cancel
+    atlas_toggle := 0
     tree_toggle := 0
   }
   Send %KeyHideTree%
