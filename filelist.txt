@@ -1,5 +1,5 @@
-4.1.7
-965
+4.1.8
+1113
 .gitignore
 LevelingGuide.ahk
 License.md
@@ -649,6 +649,152 @@ builds/3.14 Vortex Occultist/gems/66.ini
 builds/3.14 Vortex Occultist/gems/72.ini
 builds/3.14 Vortex Occultist/gems/90.ini
 builds/3.14 Vortex Occultist/gems/class.ini
+builds/3.16 Ele Stone Golems/Act 1/guide.txt
+builds/3.16 Ele Stone Golems/Act 1/notes.txt
+builds/3.16 Ele Stone Golems/Act 1/tree.jpg
+builds/3.16 Ele Stone Golems/Act 10/guide.txt
+builds/3.16 Ele Stone Golems/Act 10/notes.txt
+builds/3.16 Ele Stone Golems/Act 10/tree.jpg
+builds/3.16 Ele Stone Golems/Act 11/guide.txt
+builds/3.16 Ele Stone Golems/Act 11/notes.txt
+builds/3.16 Ele Stone Golems/Act 11/tree.jpg
+builds/3.16 Ele Stone Golems/Act 2/guide.txt
+builds/3.16 Ele Stone Golems/Act 2/notes.txt
+builds/3.16 Ele Stone Golems/Act 2/tree.jpg
+builds/3.16 Ele Stone Golems/Act 3/guide.txt
+builds/3.16 Ele Stone Golems/Act 3/notes.txt
+builds/3.16 Ele Stone Golems/Act 3/tree.jpg
+builds/3.16 Ele Stone Golems/Act 4/guide.txt
+builds/3.16 Ele Stone Golems/Act 4/notes.txt
+builds/3.16 Ele Stone Golems/Act 4/tree.jpg
+builds/3.16 Ele Stone Golems/Act 5/guide.txt
+builds/3.16 Ele Stone Golems/Act 5/notes.txt
+builds/3.16 Ele Stone Golems/Act 5/tree.jpg
+builds/3.16 Ele Stone Golems/Act 6/guide.txt
+builds/3.16 Ele Stone Golems/Act 6/notes.txt
+builds/3.16 Ele Stone Golems/Act 6/tree.jpg
+builds/3.16 Ele Stone Golems/Act 7/guide.txt
+builds/3.16 Ele Stone Golems/Act 7/notes.txt
+builds/3.16 Ele Stone Golems/Act 7/tree.jpg
+builds/3.16 Ele Stone Golems/Act 8/guide.txt
+builds/3.16 Ele Stone Golems/Act 8/notes.txt
+builds/3.16 Ele Stone Golems/Act 8/tree.jpg
+builds/3.16 Ele Stone Golems/Act 9/guide.txt
+builds/3.16 Ele Stone Golems/Act 9/notes.txt
+builds/3.16 Ele Stone Golems/Act 9/tree.jpg
+builds/3.16 Ele Stone Golems/ascendancy.txt
+builds/3.16 Ele Stone Golems/build_info.txt
+builds/3.16 Ele Stone Golems/gems/02.ini
+builds/3.16 Ele Stone Golems/gems/04.ini
+builds/3.16 Ele Stone Golems/gems/08.ini
+builds/3.16 Ele Stone Golems/gems/12.ini
+builds/3.16 Ele Stone Golems/gems/16.ini
+builds/3.16 Ele Stone Golems/gems/24.ini
+builds/3.16 Ele Stone Golems/gems/28.ini
+builds/3.16 Ele Stone Golems/gems/31.ini
+builds/3.16 Ele Stone Golems/gems/34.ini
+builds/3.16 Ele Stone Golems/gems/38.ini
+builds/3.16 Ele Stone Golems/gems/42.ini
+builds/3.16 Ele Stone Golems/gems/66.ini
+builds/3.16 Ele Stone Golems/gems/72.ini
+builds/3.16 Ele Stone Golems/gems/class.ini
+builds/3.16 TR Champion/Act 1/guide.txt
+builds/3.16 TR Champion/Act 1/tree.jpg
+builds/3.16 TR Champion/Act 10/tree.jpg
+builds/3.16 TR Champion/Act 11/tree.jpg
+builds/3.16 TR Champion/Act 2/tree.jpg
+builds/3.16 TR Champion/Act 3/tree.jpg
+builds/3.16 TR Champion/Act 4/tree.jpg
+builds/3.16 TR Champion/Act 5/tree.jpg
+builds/3.16 TR Champion/Act 6/tree.jpg
+builds/3.16 TR Champion/Act 7/tree.jpg
+builds/3.16 TR Champion/Act 8/tree.jpg
+builds/3.16 TR Champion/Act 9/tree.jpg
+builds/3.16 TR Champion/ascendancy.txt
+builds/3.16 TR Champion/build_info.txt
+builds/3.16 TR Champion/gems/02.ini
+builds/3.16 TR Champion/gems/04.ini
+builds/3.16 TR Champion/gems/08.ini
+builds/3.16 TR Champion/gems/12.ini
+builds/3.16 TR Champion/gems/16.ini
+builds/3.16 TR Champion/gems/24.ini
+builds/3.16 TR Champion/gems/31.ini
+builds/3.16 TR Champion/gems/38.ini
+builds/3.16 TR Champion/gems/42.ini
+builds/3.16 TR Champion/gems/66.ini
+builds/3.16 TR Champion/gems/class.ini
+builds/3.17 Ele Arma Cremation/Act 1/guide.txt
+builds/3.17 Ele Arma Cremation/Act 1/notes.txt
+builds/3.17 Ele Arma Cremation/Act 1/tree.jpg
+builds/3.17 Ele Arma Cremation/Act 10/guide.txt
+builds/3.17 Ele Arma Cremation/Act 10/notes.txt
+builds/3.17 Ele Arma Cremation/Act 10/tree.jpg
+builds/3.17 Ele Arma Cremation/Act 11/guide.txt
+builds/3.17 Ele Arma Cremation/Act 11/notes.txt
+builds/3.17 Ele Arma Cremation/Act 11/tree.jpg
+builds/3.17 Ele Arma Cremation/Act 2/guide.txt
+builds/3.17 Ele Arma Cremation/Act 2/notes.txt
+builds/3.17 Ele Arma Cremation/Act 2/tree.jpg
+builds/3.17 Ele Arma Cremation/Act 3/guide.txt
+builds/3.17 Ele Arma Cremation/Act 3/notes.txt
+builds/3.17 Ele Arma Cremation/Act 3/tree.jpg
+builds/3.17 Ele Arma Cremation/Act 4/guide.txt
+builds/3.17 Ele Arma Cremation/Act 4/notes.txt
+builds/3.17 Ele Arma Cremation/Act 4/tree.jpg
+builds/3.17 Ele Arma Cremation/Act 5/guide.txt
+builds/3.17 Ele Arma Cremation/Act 5/notes.txt
+builds/3.17 Ele Arma Cremation/Act 5/tree.jpg
+builds/3.17 Ele Arma Cremation/Act 6/guide.txt
+builds/3.17 Ele Arma Cremation/Act 6/notes.txt
+builds/3.17 Ele Arma Cremation/Act 6/tree.jpg
+builds/3.17 Ele Arma Cremation/Act 7/guide.txt
+builds/3.17 Ele Arma Cremation/Act 7/notes.txt
+builds/3.17 Ele Arma Cremation/Act 7/tree.jpg
+builds/3.17 Ele Arma Cremation/Act 8/guide.txt
+builds/3.17 Ele Arma Cremation/Act 8/notes.txt
+builds/3.17 Ele Arma Cremation/Act 8/tree.jpg
+builds/3.17 Ele Arma Cremation/Act 9/guide.txt
+builds/3.17 Ele Arma Cremation/Act 9/notes.txt
+builds/3.17 Ele Arma Cremation/Act 9/tree.jpg
+builds/3.17 Ele Arma Cremation/ascendancy.txt
+builds/3.17 Ele Arma Cremation/build_info.txt
+builds/3.17 Ele Arma Cremation/gems/02.ini
+builds/3.17 Ele Arma Cremation/gems/04.ini
+builds/3.17 Ele Arma Cremation/gems/08.ini
+builds/3.17 Ele Arma Cremation/gems/12.ini
+builds/3.17 Ele Arma Cremation/gems/16.ini
+builds/3.17 Ele Arma Cremation/gems/24.ini
+builds/3.17 Ele Arma Cremation/gems/28.ini
+builds/3.17 Ele Arma Cremation/gems/31.ini
+builds/3.17 Ele Arma Cremation/gems/34.ini
+builds/3.17 Ele Arma Cremation/gems/38.ini
+builds/3.17 Ele Arma Cremation/gems/42.ini
+builds/3.17 Ele Arma Cremation/gems/class.ini
+builds/3.17 Spectral Helix Champion/Act 1/tree.jpg
+builds/3.17 Spectral Helix Champion/Act 10/tree.jpg
+builds/3.17 Spectral Helix Champion/Act 11/tree.jpg
+builds/3.17 Spectral Helix Champion/Act 2/tree.jpg
+builds/3.17 Spectral Helix Champion/Act 3/tree.jpg
+builds/3.17 Spectral Helix Champion/Act 4/tree.jpg
+builds/3.17 Spectral Helix Champion/Act 5/tree.jpg
+builds/3.17 Spectral Helix Champion/Act 6/tree.jpg
+builds/3.17 Spectral Helix Champion/Act 7/tree.jpg
+builds/3.17 Spectral Helix Champion/Act 8/tree.jpg
+builds/3.17 Spectral Helix Champion/Act 9/tree.jpg
+builds/3.17 Spectral Helix Champion/ascendancy.txt
+builds/3.17 Spectral Helix Champion/build_info.txt
+builds/3.17 Spectral Helix Champion/gems/02.ini
+builds/3.17 Spectral Helix Champion/gems/04.ini
+builds/3.17 Spectral Helix Champion/gems/08.ini
+builds/3.17 Spectral Helix Champion/gems/12.ini
+builds/3.17 Spectral Helix Champion/gems/16.ini
+builds/3.17 Spectral Helix Champion/gems/24.ini
+builds/3.17 Spectral Helix Champion/gems/28.ini
+builds/3.17 Spectral Helix Champion/gems/31.ini
+builds/3.17 Spectral Helix Champion/gems/34.ini
+builds/3.17 Spectral Helix Champion/gems/38.ini
+builds/3.17 Spectral Helix Champion/gems/42.ini
+builds/3.17 Spectral Helix Champion/gems/class.ini
 builds/Notes/Abbreviated/Act 1/guide.txt
 builds/Notes/Abbreviated/Act 1/notes.txt
 builds/Notes/Abbreviated/Act 10/guide.txt
@@ -737,6 +883,7 @@ builds/Notes/Turkish/Act 8/guide.txt
 builds/Notes/Turkish/Act 8/notes.txt
 builds/Notes/Turkish/Act 9/guide.txt
 builds/Notes/Turkish/Act 9/notes.txt
+filelist.txt
 icons/gear.ico
 icons/lvlG.ico
 icons/refresh.ico
@@ -935,6 +1082,7 @@ images/Act 9/The Tunnel_Seed_1.jpg
 images/Act 9/The Tunnel_Seed_2.jpg
 images/Act 9/The Tunnel_Seed_3.jpg
 images/Act 9/Vastiri Desert_Seed_1.jpg
+images/atlas.png
 images/cheatsheets/Betrayal.png
 images/cheatsheets/Heist.png
 images/cheatsheets/Incursion.png
