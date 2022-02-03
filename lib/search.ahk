@@ -75,7 +75,7 @@ SearchLog() {
       IfInString, newLogLines, %levelUp%
       {
         levelPos := InStr(newLogLines, levelUp, false)
-        newLevel := SubStr(newLogLines, levelPos+13, 2)
+        newLevel := Trim(SubStr(newLogLines, levelPos+13, 2))
         newLevel += 0 ; force the string to be an int, clearing any space
         nextLevel := newLevel + 1
         ;So levels stay in order
