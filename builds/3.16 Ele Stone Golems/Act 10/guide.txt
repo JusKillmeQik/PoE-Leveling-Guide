@@ -1,6 +1,0 @@
-﻿G,Ossuary:             Trial
-B,Vilenta's Vengeance: Passive
-B,An End to Hunger:    2x Passive
-
-R,Tips: 
- Before Kitava complete Lab: Unnatural Strength

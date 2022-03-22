@@ -1,7 +1,0 @@
-G,Crematorium:          Trial
-B,Victario's Secrets:   Passive
-G,Catacombs:            Trial
-The Ribbon Spool:     Str Amulet
-B,Piety's Pets:         Passive
-Siosa:                GEM SHOP
-G,Imperial Gardens:     Trial

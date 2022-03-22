@@ -1,0 +1,80 @@
+﻿zone:Twilight Strand
+< 线性
+杀大壮(Hillock)
++ 进城，登出
+
+zone:The Coast
+< 线性，紧贴墙壁右侧
+开传送门
++ 前往炙热盐沼(The Mud Flats)
+
+zone:Mud Flats
+< 沿着小河
+拿三个雕文
++ 前往海潮地穴(The Submerged Passage)
+
+zone:Tidal Island
+< 没有悬崖的那一边最短
+> 4级
+拿医药箱
++ 登出
+
+zone:Fetid Pool
+> 跳过
+Go in a circle and kill everything
+This quest is optional and should be skipped to save time
+
+zone:Submerged Passage
+在桥附近留一个传送门(不进入)
++ 前往沉寂海崖(The Ledge)
+
+zone:The Ledge
+< 线性
+开传送门
++ 前往碎岩山坡(The Climb)
+
+zone:The Climb
+< 线性，总是往上走
+开传送门
++ 前往禁灵之狱下层(Lower Prison)
+
+zone:Lower Prison
+开传送点
++ 回城，传送水声之渊(The Flooded Depths)
+---------------
+完成试炼
+---------------
++ 前往禁灵之狱上层(The Upper Prison)
+
+zone:Flooded Depths
+干掉深渊巨蟹
++ 登出，回禁灵之狱下层(Lower Prison)
+
+zone:Upper Prison
+< 先向左边走
+8级
+杀大大壮
++ 登出
++ 传送到监狱大门(Prisoner's Gate)
+
+zone:Prisoner's Gate
+< 寻找路边有悬崖的一侧，通常在右侧。
++ 去魅影船墓(The Ship Graveyard)
+
+zone:Ship Graveyard
+开传送点
+进入魅影船墓洞穴(The Ship Graveyard Cave)找到任务道具不灭之火(Allflame)
++ 继续前往怨忿之窟(The Cavern of Wrath)
+---------------
+> 12级
+杀死费尔船长
++ 登出
+
+zone:Cavern of Wrath
+开传送点
++ 返回魅影船墓(The Ship Graveyard)，找费尔船长
++ 前往愤怒之窟(The Cavern of Anger)
+
+zone:Cavern of Anger
+杀海妖莫薇儿
++ 回城休整

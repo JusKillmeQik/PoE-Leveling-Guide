@@ -1,6 +1,0 @@
-﻿The Great White Beast: Quicksilver
-G,Crypt:                 Trial
-G,Chamber of Sins 2:     Trial
-Bandits:               CHOICE
-B,Way Forward (Bestel):  Passive
-(2x)Vendor: Blue Wand + Rare Sapphire + Alt

@@ -1,6 +1,6 @@
 ﻿global nameWidth := 110
 global optionWidth := 70
-global offsetWidth := 40
+global offsetWidth := 45
 global optionHeight := 21
 global dropDownHeight := 100
 global toolTimeout := 0
@@ -41,23 +41,23 @@ LaunchSettings() {
 
   ;Second Column Option Edits
   Gui, Settings:Add, Edit, vpoints w%optionWidth% h%optionHeight% x+5 y36, %points%
-  Gui, Settings:Add, ComboBox, vfont w%optionWidth% h%dropDownHeight% y+5, % GetFont(font)
-  Gui, Settings:Add, Edit, vboldness w%optionWidth% h%optionHeight% y+5, %boldness%
-  Gui, Settings:Add, Edit, vopacity w%optionWidth% h%optionHeight% y+5, %opacity%
-  Gui, Settings:Add, Edit, vdisplayTimeout w%optionWidth% h%optionHeight% y+5, %displayTimeout%
-  Gui, Settings:Add, DropDownList, vstartHidden w%optionWidth% h%dropDownHeight% y+5, % GetTrueOrFalse(startHidden)
-  Gui, Settings:Add, DropDownList, vpersistText w%optionWidth% h%dropDownHeight% y+5, % GetTrueOrFalse(persistText)
-  Gui, Settings:Add, DropDownList, vhideGuide w%optionWidth% h%dropDownHeight% y+5, % GetTrueOrFalse(hideGuide)
-  Gui, Settings:Add, DropDownList, vhideNotes w%optionWidth% h%dropDownHeight% y+5, % GetTrueOrFalse(hideNotes)
-  Gui, Settings:Add, DropDownList, vexpOrPen w%optionWidth% h%dropDownHeight% y+5, % GetExpOrPen(expOrPen)
-  Gui, Settings:Add, DropDownList, vautoToggleZoneImages w%optionWidth% h%dropDownHeight% y+5, % GetTrueOrFalse(autoToggleZoneImages)
+  Gui, Settings:Add, ComboBox, vfont w%optionWidth% h%dropDownHeight% y+7, % GetFont(font)
+  Gui, Settings:Add, Edit, vboldness w%optionWidth% h%optionHeight% y+6, %boldness%
+  Gui, Settings:Add, Edit, vopacity w%optionWidth% h%optionHeight% y+6, %opacity%
+  Gui, Settings:Add, Edit, vdisplayTimeout w%optionWidth% h%optionHeight% y+6, %displayTimeout%
+  Gui, Settings:Add, DropDownList, vstartHidden w%optionWidth% h%dropDownHeight% y+9, % GetTrueOrFalse(startHidden)
+  Gui, Settings:Add, DropDownList, vpersistText w%optionWidth% h%dropDownHeight% y+9, % GetTrueOrFalse(persistText)
+  Gui, Settings:Add, DropDownList, vhideGuide w%optionWidth% h%dropDownHeight% y+9, % GetTrueOrFalse(hideGuide)
+  Gui, Settings:Add, DropDownList, vhideNotes w%optionWidth% h%dropDownHeight% y+9, % GetTrueOrFalse(hideNotes)
+  Gui, Settings:Add, DropDownList, vexpOrPen w%optionWidth% h%dropDownHeight% y+9, % GetExpOrPen(expOrPen)
+  Gui, Settings:Add, DropDownList, vautoToggleZoneImages w%optionWidth% h%dropDownHeight% y+9, % GetTrueOrFalse(autoToggleZoneImages)
 
   Gui, Settings:Add, Edit, vmaxNotesWidth w%optionWidth% h%optionHeight% y+15, %maxNotesWidth%
-  Gui, Settings:Add, Edit, vmaxGuideWidth w%optionWidth% h%optionHeight% y+5, %maxGuideWidth%
-  Gui, Settings:Add, Edit, vlineSpacing w%optionWidth% h%optionHeight% y+5, %lineSpacing%
-  Gui, Settings:Add, Edit, vmaxLinksWidth w%optionWidth% h%optionHeight% y+5, %maxLinksWidth%
-  Gui, Settings:Add, Edit, vgemSpacing w%optionWidth% h%optionHeight% y+5, %gemSpacing%
-  Gui, Settings:Add, Edit, vimageSizeMultiplier w%optionWidth% h%optionHeight% y+5, %imageSizeMultiplier%
+  Gui, Settings:Add, Edit, vmaxGuideWidth w%optionWidth% h%optionHeight% y+6, %maxGuideWidth%
+  Gui, Settings:Add, Edit, vlineSpacing w%optionWidth% h%optionHeight% y+6, %lineSpacing%
+  Gui, Settings:Add, Edit, vmaxLinksWidth w%optionWidth% h%optionHeight% y+6, %maxLinksWidth%
+  Gui, Settings:Add, Edit, vgemSpacing w%optionWidth% h%optionHeight% y+6, %gemSpacing%
+  Gui, Settings:Add, Edit, vimageSizeMultiplier w%optionWidth% h%optionHeight% y+6, %imageSizeMultiplier%
   
 
 
@@ -79,14 +79,14 @@ LaunchSettings() {
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+5, Manually Cycle Zone ;Static30
 
   ;Third Column Offset
-  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x230 y320, Offsets ;Static31
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x230 y345, Offsets ;Static31
 
-  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x230 y350, Notes X ;Static32
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x230 y370, Notes X ;Static32
   Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Pics X ;Static33
   Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Level X ;Static34
   Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Gems X ;Static35
 
-  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x345 y350, Notes Y ;Static36
+  Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% x345 y370, Notes Y ;Static36
   Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Pics Y ;Static37
   Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Level Y ;Static38
   Gui, Settings:Add, Text, w%offsetWidth% h%optionHeight% y+5, Gems Y ;Static39
@@ -106,12 +106,12 @@ LaunchSettings() {
   Gui, Settings:Add, Hotkey, vKeyCycleZones w%nameWidth% h%optionHeight% y+5, %KeyCycleZones%
 
   ;Fourth Column Offset
-  Gui, Settings:Add, Edit, vguideXoffset w%offsetWidth% h%optionHeight% x287 y346, %guideXoffset%
+  Gui, Settings:Add, Edit, vguideXoffset w%offsetWidth% h%optionHeight% x287 y366, %guideXoffset%
   Gui, Settings:Add, Edit, vimagesXoffset w%offsetWidth% h%optionHeight% y+5, %imagesXoffset%
   Gui, Settings:Add, Edit, vlevelXoffset w%offsetWidth% h%optionHeight% y+5, %levelXoffset%
   Gui, Settings:Add, Edit, vgemsXoffset w%offsetWidth% h%optionHeight% y+5, %gemsXoffset%
 
-  Gui, Settings:Add, Edit, vguideYoffset w%offsetWidth% h%optionHeight% x402 y346, %guideYoffset%
+  Gui, Settings:Add, Edit, vguideYoffset w%offsetWidth% h%optionHeight% x402 y366, %guideYoffset%
   Gui, Settings:Add, Edit, vimagesYoffset w%offsetWidth% h%optionHeight% y+5, %imagesYoffset%
   Gui, Settings:Add, Edit, vlevelYoffset w%offsetWidth% h%optionHeight% y+5, %levelYoffset%
   Gui, Settings:Add, Edit, vgemsYoffset w%offsetWidth% h%optionHeight% y+5, %gemsYoffset%
@@ -141,10 +141,10 @@ LaunchSettings() {
   Gui, Settings:Add, Text, w80 h%optionHeight% x490 y161, Colors ;Static45
 
   Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+9, Background ;Static46
-  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Red        < ;Static47
-  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Green     + ;Static48
-  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Blue        > ;Static49
-  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Yellow     - ;Static50
+  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Red < ;Static47
+  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Green + ;Static48
+  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Blue > ;Static49
+  Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, Yellow - ;Static50
   Gui, Settings:Add, Text, w%optionWidth% h%optionHeight% y+5, White ;Static51
 
   Gui, Settings:Add, Text, w%nameWidth% h%optionHeight% y+25, Tree Side ;Static52

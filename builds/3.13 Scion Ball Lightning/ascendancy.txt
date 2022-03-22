@@ -1,5 +1,0 @@
-﻿zone:Aspirants' Plaza
-1. Ranger Passive Point
-2. Pathfinder
-3. Path of the Ranger
-4. Inquisitor
