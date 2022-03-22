@@ -8,16 +8,16 @@ zone:The Coast
 开传送门
 + 前往炙热盐沼(The Mud Flats)
 
-zone:Mud Flats
-< 沿着小河
-拿三个雕文
-+ 前往海潮地穴(The Submerged Passage)
-
 zone:Tidal Island
 < 没有悬崖的那一边最短
 > 4级
 拿医药箱
 + 登出
+
+zone:Mud Flats
+< 沿着小河
+拿三个雕文
++ 前往海潮地穴(The Submerged Passage)
 
 zone:Fetid Pool
 > 跳过
@@ -27,6 +27,10 @@ This quest is optional and should be skipped to save time
 zone:Submerged Passage
 在桥附近留一个传送门(不进入)
 + 前往沉寂海崖(The Ledge)
+
+zone:Flooded Depths
+干掉深渊巨蟹
++ 登出，回禁灵之狱下层(Lower Prison)
 
 zone:The Ledge
 < 线性
@@ -45,10 +49,6 @@ zone:Lower Prison
 完成试炼
 ---------------
 + 前往禁灵之狱上层(The Upper Prison)
-
-zone:Flooded Depths
-干掉深渊巨蟹
-+ 登出，回禁灵之狱下层(Lower Prison)
 
 zone:Upper Prison
 < 先向左边走
