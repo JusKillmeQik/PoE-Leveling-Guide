@@ -28,7 +28,7 @@ zone:The Ledge
 Little totems at the Waypoint point to the exit
 
 zone:The Climb
-Always be going up, free Navali when you find her
+Always be going up, skip Faun to save time
 
 zone:Lower Prison
 Go to town at the Waypoint and take the portal you left to find the Flooded Depths
