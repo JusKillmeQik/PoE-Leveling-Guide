@@ -152,6 +152,34 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/Support/TrapCooldownRecovery.png?scale=1&w=1&h=1"
   },
   {
+    "level": 24,
+    "required_lvl": 24,
+    "name": "Alchemist's Mark",
+    "Witch": "Siosa",
+    "Shadow": "Clarissa",
+    "Ranger": "Lost in Love",
+    "Duelist": "Siosa",
+    "Marauder": "Siosa",
+    "Templar": "Siosa",
+    "Scion": "Clarissa",
+    "quest": "Maramoa",
+    "vendor": "Clarissa",
+    "cost": "Alt",
+    "color": "green",
+    "gemTags": [
+      "Spell",
+      "Curse",
+      "Mark",
+      "AoE",
+      "Duration",
+      "Fire",
+      "Chaos",
+      "New Gems",
+      "Active"
+    ],
+    "iconPath": "https://web.poecdn.com/protected/image/kalandra/items/AlchemistsMark.png?key=ZRP8yy4m8-gEtYE_WJK_aw"
+  },
+  {
     "level": 34,
     "required_lvl": 34,
     "name": "Ambush",
@@ -3471,7 +3499,6 @@
       "Aura",
       "Duration",
       "Blessing",
-      "New Gems",
       "Support"
     ],
     "iconPath": "https://web.poecdn.com/public/news/2022-01-31/gems/DivineBlessingSupport.png"
@@ -5016,6 +5043,33 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/ShrapnelShot.png?scale=1&w=1&h=1"
   },
   {
+    "level": 16,
+    "required_lvl": 16,
+    "name": "Galvanic Field",
+    "Witch": "Intruders in Black",
+    "Shadow": "Yeena",
+    "Ranger": "Siosa",
+    "Duelist": "Siosa",
+    "Marauder": "Siosa",
+    "Templar": "Yeena",
+    "Scion": "Siosa",
+    "quest": "Greust",
+    "vendor": "Yeena",
+    "cost": "Alt",
+    "color": "blue",
+    "gemTags": [
+      "Spell",
+      "AoE",
+      "Duration",
+      "Lightning",
+      "Chaining",
+      "Orb",
+      "New Gems",
+      "Active"
+    ],
+    "iconPath": "https://web.poecdn.com/protected/image/kalandra/items/GalvanicField.png?key=1qqyVUtPkmMLqt3yrnea7A"
+  },
+  {
     "level": 24,
     "required_lvl": 24,
     "name": "General's Cry",
@@ -6459,6 +6513,30 @@
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/LightningArrow.png?scale=1&w=1&h=1"
   },
   {
+    "level": 28,
+    "required_lvl": 28,
+    "name": "Lightning Conduit",
+    "Witch": "Sever the Right Hand",
+    "Shadow": "Clarissa",
+    "Ranger": "Siosa",
+    "Duelist": "Siosa",
+    "Marauder": "Siosa",
+    "Templar": "Clarissa",
+    "Scion": "Siosa",
+    "quest": "Maramoa",
+    "vendor": "Clarissa",
+    "cost": "Chance",
+    "color": "blue",
+    "gemTags": [
+      "Lightning",
+      "Spell",
+      "AoE",
+      "New Gems",
+      "Active"
+    ],
+    "iconPath": "https://web.poecdn.com/protected/image/kalandra/items/LightningConduit.png?key=W-B57g_TO_mOMlHApzfT4g"
+  },
+  {
     "level": 31,
     "required_lvl": 31,
     "name": "Lightning Penetration",
@@ -7093,6 +7171,28 @@
       "Active"
     ],
     "iconPath": "http://webcdn.pathofexile.com/image/Art/2DItems/Gems/StormCloudGem.png?scale=1&w=1&h=1"
+  },
+  {
+    "level": 16,
+    "required_lvl": 18,
+    "name": "Overcharge",
+    "Witch": "Sharp and Cruel",
+    "Shadow": "Yeena",
+    "Ranger": "Yeena",
+    "Duelist": "Siosa",
+    "Marauder": "Siosa",
+    "Templar": "Yeena",
+    "Scion": "Siosa",
+    "quest": "Silk",
+    "vendor": "Yeena",
+    "cost": "Alt",
+    "color": "blue",
+    "gemTags": [
+      "Lightning",
+      "New Gems",
+      "Support"
+    ],
+    "iconPath": "https://web.poecdn.com/protected/image/kalandra/items/OverchargeSupport.png?key=IYvo_BDKPCCC7gOXXmMCbg"
   },
   {
     "level": 28,
