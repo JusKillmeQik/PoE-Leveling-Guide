@@ -57,7 +57,7 @@ Little totems at the Waypoint point to the exit
 
 zone:The Climb
 Always be going up
-Free Navali when you find her
+Skip Faun to save time
 > Proceed to the Prison
 
 zone:Lower Prison
