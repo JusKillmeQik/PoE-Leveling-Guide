@@ -21,7 +21,7 @@ zone:Mines Level 2
 zone:Crystal Veins
 Aşağı daha sonra sol üstte ilerle.
 + Wp yi al. (Towna gidip passive point alabilirsin.)
-G,CRAFT - Resistance
+G,CRAFT - Cold Damage
 > Daresso's Dream
 2. gelişinde;
 > Kaom's Dream
@@ -61,7 +61,7 @@ Yukarı solda çıkış.
 + Piety'i öldür.(Beam'e dikkat! Etrafında dön.)
 + Öldürkten sonra Piety ile konuş.
 > The Harvest
-G,CRAFT - Chaos damage
+G,CRAFT - Resistance
 
 zone:The Harvest
 + Wp yi al.

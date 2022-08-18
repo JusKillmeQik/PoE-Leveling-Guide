@@ -14,7 +14,7 @@ Varied layout and many dead ends, you should look for the spirit and leave a por
 zone:Crystal Veins
 Loop around bottom right to go to the top left exit
 B,Waypoint to Highgate if you need the spirit
-G,CRAFT - Resistance
+G,CRAFT - Cold Damage
 
 zone:Daresso's Dream
 Move towards the top right, some dead ends
@@ -37,7 +37,7 @@ Aim for top left, many dead ends
 
 zone:Belly of the Beast Level 2
 Aim for top left, many dead ends
-G,CRAFT - Chaos damage
+G,CRAFT - Resistance
 
 zone:The Harvest
 Always one boss on right side, two on the left

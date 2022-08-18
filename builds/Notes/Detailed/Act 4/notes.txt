@@ -38,7 +38,7 @@ R,IMPORTANT - Staunching Life flask
 Beast craft "of Staunching" on flask
 > Go to Belly of the Beast
 _______________
-G,CRAFT - Resistance
+G,CRAFT - Cold Damage
 
 zone:Daresso's Dream
 Move towards the top right, some dead ends
@@ -72,7 +72,7 @@ Aim for top left, many dead ends
 Kill the boss
 > Proceed to The Harvest
 _______________
-G,CRAFT - Chaos damage
+G,CRAFT - Resistance
 
 zone:The Harvest
 Always one boss on right side, two left

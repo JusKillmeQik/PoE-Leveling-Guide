@@ -21,7 +21,7 @@ Left hand wall-follow
 zone:Desecrated Chambers
 Right hand wall-follow until you come to four pillars, then go straight and up
 This is a great zone to farm EXP
-G,CRAFT - Life/Mana
+G,CRAFT - Accuracy
 
 zone:The Reliquary
 The Quest item is always on the edge or a corner, it's mostly the right side. Use move skill to cross gaps
@@ -31,5 +31,5 @@ Move top left. Follow the road and cross bridges when you see them
 
 zone:Feeding Trough
 Move top left, there shouldn't be any diversions, kill Kitava at the end to unlock maps!
-G,CRAFT - Defenses
+G,CRAFT - Life/Mana
 R,RECOMMEND 3,700+ EHP, fire resist, Good physical mitigations, fast movement skill

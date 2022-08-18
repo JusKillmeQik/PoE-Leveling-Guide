@@ -54,7 +54,7 @@ Go straight and up
 < Kill the boss and Logout
 > TP to Ravaged Square
 _______________
-G,CRAFT - Life/Mana
+G,CRAFT - Accuracy
 
 zone:The Reliquary
 The Quest item is always on the edge or a corner,
@@ -71,5 +71,5 @@ Move top left, there shouldn't be any diversions,
 Kill Kitava!
 Enjoy maps :)
 _______________
-G,CRAFT - Defenses 
+G,CRAFT - Life/Mana 
 R,RECOMMEND 3,700+ EHP, fire resist, good physical mitigations, fast movement skill
