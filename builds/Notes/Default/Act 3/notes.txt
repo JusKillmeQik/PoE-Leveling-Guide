@@ -7,7 +7,7 @@ Find the grates to the sewers, then take the nearby stairs down, follow until st
 zone:The Crematorium
 Going left generally has a high chance of success
 G,TRIAL - Furnace Traps
-G,CRAFT - Fire damage
+G,CRAFT - Defences
 
 zone:The Sewers
 Pick up the bust before the Waypoint, after it is another, up and right is the last bust, then exit
@@ -36,7 +36,7 @@ Follow the carpet until the exit
 
 zone:Solaris Temple Level 2
 Follow the carpet but it can have dead ends
-G,CRAFT - Cold damage
+G,CRAFT - Fire damage
 
 zone:Ebony Barracks
 First go up to the Lunaris Temple

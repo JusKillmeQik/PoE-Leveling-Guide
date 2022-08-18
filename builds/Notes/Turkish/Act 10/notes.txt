@@ -44,7 +44,7 @@ Devam et.
 + Avarius'u öldür.
 - Logout.
 > The Ravaged Square (wp ile)
-G,CRAFT - Life/Mana
+G,CRAFT - Accuracy
 
 zone:The Reliquary
 (Skiple burayı)
@@ -60,5 +60,5 @@ Linear, sonuna kadar ilerle
 + Sin ile konuş.
 > Altar of Hunger
 + Kitava'yı öldür.
-G,CRAFT - Defenses
+G,CRAFT - Life/Mana
 (Campain bitti. Yazar: @ForeverOflu )

@@ -18,7 +18,7 @@ Genelde sol tarafın doğru yol olma şansı daha yüksek.
 - Logout
 < Sewer anahtarını al.
 > The Slums
-G,CRAFT - Fire damage
+G,CRAFT - Defences
 
 zone:The Sewers
 + 1. Stashı bul (wp ye gelmeden)
@@ -68,7 +68,7 @@ zone:Solaris Temple Level 2
 Kırmızı halıyı takip et.
 + Lady Dialla ile konuş ödülü al.
 > The Sewers (bölgedeki wp ile)
-G,CRAFT - Cold damage
+G,CRAFT - Fire damage
 
 zone:Ebony Barracks
 + WP yi al.

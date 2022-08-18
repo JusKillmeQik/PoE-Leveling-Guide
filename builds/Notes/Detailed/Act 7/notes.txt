@@ -111,5 +111,5 @@ Go diagonally to exits
 Kill boss
 > Go to act 8
 _______________
-G,CRAFT - Accuracy
+G,CRAFT - Chaos Damage
 Y,RECOMMEND lightning resist

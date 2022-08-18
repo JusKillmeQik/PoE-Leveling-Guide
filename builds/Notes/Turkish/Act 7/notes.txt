@@ -94,4 +94,4 @@ Oldukça uzun layout merdivenler ile boss alanına kadar ulaş.
 > Arakaali's Web
 + Arakaali yi öldür.(pantheon)
 > The Sarn Ramparts (act sonu)
-G,CRAFT - Accuracy
+G,CRAFT - Chaos Damage

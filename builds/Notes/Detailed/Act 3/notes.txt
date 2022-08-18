@@ -21,7 +21,7 @@ Pick up the Keys to the Sewers
 > Go back to Slums
 _______________
 G,TRIAL - Furnace Traps
-G,CRAFT - Fire damage
+G,CRAFT - Defences
 
 zone:The Sewers
 Pick up the first bust before the Waypoint
@@ -78,7 +78,7 @@ Talk to Dialla
 Check your stats and figure out what amulet you need more
 > TP to Sewers Waypoint
 _______________
-G,CRAFT - Cold damage
+G,CRAFT - Fire damage
 
 zone:Ebony Barracks
 Go up for Lunaris temple
