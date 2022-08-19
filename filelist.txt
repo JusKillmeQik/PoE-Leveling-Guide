@@ -1,5 +1,5 @@
-4.1.9
-1113
+4.1.10
+1168
 .gitignore
 LevelingGuide.ahk
 License.md
@@ -795,6 +795,61 @@ builds/3.17 Spectral Helix Champion/gems/34.ini
 builds/3.17 Spectral Helix Champion/gems/38.ini
 builds/3.17 Spectral Helix Champion/gems/42.ini
 builds/3.17 Spectral Helix Champion/gems/class.ini
+builds/3.18 Rain of Arrows Raider/Act 1/tree.jpg
+builds/3.18 Rain of Arrows Raider/Act 10/tree.jpg
+builds/3.18 Rain of Arrows Raider/Act 11/tree.jpg
+builds/3.18 Rain of Arrows Raider/Act 2/tree.jpg
+builds/3.18 Rain of Arrows Raider/Act 3/tree.jpg
+builds/3.18 Rain of Arrows Raider/Act 4/tree.jpg
+builds/3.18 Rain of Arrows Raider/Act 5/tree.jpg
+builds/3.18 Rain of Arrows Raider/Act 6/tree.jpg
+builds/3.18 Rain of Arrows Raider/Act 7/tree.jpg
+builds/3.18 Rain of Arrows Raider/Act 8/tree.jpg
+builds/3.18 Rain of Arrows Raider/Act 9/tree.jpg
+builds/3.18 Rain of Arrows Raider/ascendancy.txt
+builds/3.18 Rain of Arrows Raider/build_info.txt
+builds/3.18 Rain of Arrows Raider/gems/02.ini
+builds/3.18 Rain of Arrows Raider/gems/04.ini
+builds/3.18 Rain of Arrows Raider/gems/08.ini
+builds/3.18 Rain of Arrows Raider/gems/12.ini
+builds/3.18 Rain of Arrows Raider/gems/16.ini
+builds/3.18 Rain of Arrows Raider/gems/24.ini
+builds/3.18 Rain of Arrows Raider/gems/28.ini
+builds/3.18 Rain of Arrows Raider/gems/31.ini
+builds/3.18 Rain of Arrows Raider/gems/34.ini
+builds/3.18 Rain of Arrows Raider/gems/38.ini
+builds/3.18 Rain of Arrows Raider/gems/42.ini
+builds/3.18 Rain of Arrows Raider/gems/class.ini
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/Act 1/guide.txt
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/Act 1/tree.png
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/Act 10/tree.png
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/Act 11/guide.txt
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/Act 11/tree.png
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/Act 2/tree.png
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/Act 3/tree.png
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/Act 4/tree.png
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/Act 5/tree.png
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/Act 6/tree.png
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/Act 7/guide.txt
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/Act 7/tree.png
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/Act 8/tree.png
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/Act 9/tree.png
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/ascendancy.txt
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/build_info.txt
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/gems/02.ini
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/gems/04.ini
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/gems/08.ini
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/gems/12.ini
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/gems/16.ini
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/gems/24.ini
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/gems/28.ini
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/gems/31.ini
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/gems/34.ini
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/gems/38.ini
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/gems/42.ini
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/gems/66.ini
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/gems/72.ini
+builds/3.19 Raider Spectral Helix to LS (FuzzyDuckzy)/gems/class.ini
 builds/Notes/Abbreviated/Act 1/guide.txt
 builds/Notes/Abbreviated/Act 1/notes.txt
 builds/Notes/Abbreviated/Act 10/guide.txt
