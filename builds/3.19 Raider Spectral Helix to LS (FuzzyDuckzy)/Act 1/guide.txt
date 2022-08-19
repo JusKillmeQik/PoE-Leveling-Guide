@@ -1,0 +1,8 @@
+﻿B,Dweller of the Deep: Passive
+G,Lower Prison:        Trial
+B,Marooned Mariner:    Passive
+B,Way Forward:         Passive
+Search: "nn" for MS boots
+Vendor: 2h + Blacksmith stone + magic/rare rustic belt
+Vendor: Iron Ring + Blue Gem
+Switch to claws - 2x T9+ Damage rolls
