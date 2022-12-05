@@ -1,0 +1,46 @@
+zone:Blood Aqueduct
+Go to the top left, cross the bridges on dead ends
+Farm Humility cards for Tabula for league starter
+This zone is great for EXP
+
+zone:The Descent
+Go up right to the supply hoist, then down left to another hoist then up right to The Vastiri Desert
+
+zone:Vastiri Desert
+Go right to the Waypoint, then top left (1) for the Foothills. If you want to kill Shakari, go right to (2) for the Oasis, then get the quest item in town and enter the zone
+G,CRAFT - Attack/Cast speed
+
+zone:The Oasis
+Left or right wall follow, based on bottom or top being the dead end at the entrance
+R,RECOMMEND physical mitigation
+
+zone:The Foothills
+B,Don't forget to touch the Waypoint
+Then go right to (1) to get the quest item in The Boiling Lake, then up to (2) for The Tunnel to continue the story
+
+zone:Boiling Lake
+Go to the top right of zone, If you spot petrified men you are close
+B,After killing the Basilisk, log out and teleport to the Waypoint in The Foothills and go to the top left corner of the zone
+G,CRAFT - Spell damage
+
+zone:The Tunnel
+Go up left, the right path leads past the Waypoint
+G,TRIAL - Blade sentries
+G,CRAFT - All attributes
+
+zone:The Quarry
+Activate Waypoint at center, do Shrine of the Winds (2), then The Refinery (1)
+G,CRAFT - Physical damage
+R,RECOMMEND physical mitigation
+3,000+ EHP and Movement skills
+
+zone:The Refinery
+Follow the cart tracks to the building top left for Boss. Log out to town and use Waypoint to The Quarry
+Y,RECOMMEND lightning resist
+
+zone:Belly of the Beast
+Head top left in this zone and the next
+
+zone:Rotting Core
+Kill Doedre, Maligaro, and Shavronne again. Then enter the Black Heart and kill the Depraved Trinity
+Y,RECOMMEND 3,200+ EHP, physical mitigations, lightning resist, fast movement skill

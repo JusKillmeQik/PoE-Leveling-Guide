@@ -1,0 +1,14 @@
+G,` Finish second Labyrinth and get Liege of the Primordial
+` Enable first two Golems which can be bound to your secondary skill bar (hold Ctrl)
+` Enter the Toxic Conduits and kill Doedre
+` Go for Quay first, find Ankh of Eternity, kill Tolman and get Skillpoint in town
+` Kill the Gemling Legionnaires in Grain Gate and get Skillpoint in town
+` Enter Solaris Temple and get Sun Orb
+` Go back to Doedre's Cesspool and go for the Grand Promenade now
+G,` Get Bath House Waypoint and finish Trial of Ascendancy
+` Enter High Gardens, kill Yugul and get Skillpoint in town
+` Back to Bath House, get to Lunaris Concourse and get Waypoint
+` Enter Lunaris Temple and get Moon Orb
+` Back to Lunaris Concourse, enter Harbour Bridge and kill Solaris and Lunaris
+
+Exp Farming Zone: The Harbour Bridge

@@ -1,0 +1,75 @@
+zone:City of Sarn
+Don't forget to talk to Clarissa
+
+zone:The Slums
+Find the grates to the sewers, then take the nearby stairs down, follow until stairs up, then straight line to The Crematorium
+
+zone:The Crematorium
+Going left generally has a high chance of success
+G,TRIAL - Furnace Traps
+G,CRAFT - Fire damage
+
+zone:The Sewers
+Pick up the bust before the Waypoint, after it is another, up and right is the last bust, then exit
+B,Do not forget the Waypoint
+G,CRAFT - Physical damage
+
+zone:The Marketplace
+Usually up and right, go through the statue hall, get the Waypoint near The Catacombs
+Skip the quest item
+When you return after the trial, right hand wall follow to find the exit
+
+zone:The Catacombs
+G,TRIAL - Blade sentries
+G,CRAFT - Ele Damage w/ Attack
+
+zone:The Battlefront
+Go up and left for the Spool and Thaumetic Sulphite before doing Solaris Temple
+When you return go right to the Solaris Temple
+
+zone:The Docks
+Usually left side, Sulphite is down some stairs
+This is a great zone to farm EXP
+
+zone:Solaris Temple Level 1
+Follow the carpet until the exit
+
+zone:Solaris Temple Level 2
+Follow the carpet but it can have dead ends
+G,CRAFT - Cold damage
+
+zone:Ebony Barracks
+First go up to the Lunaris Temple
+B,Don't forget the Waypoint
+When you return go right to the Imperial Gardens
+
+zone:Lunaris Temple Level 1
+Follow the carpet
+
+zone:Lunaris Temple Level 2
+Layout differs a lot, if you see stairs, go up these then find more stairs, until a larger area, there will be carts on both sides, pick the side where there is only one
+G,CRAFT - Lightning damage
+Y,RECOMMEND lightning resist
+
+zone:Imperial Gardens
+Follow the road until the end
+Library to the north has GEM shop
+G,TRIAL - Dart Traps
+G,CRAFT - All attributes
+
+zone:The Library
+Siosa will give you a quest here for all current gems
+He is in the middle of the zone, near the Waypoint
+
+zone:The Archives
+The golden pages are randomly spread across the whole zone
+< Logout after you have all 4
+> TP back to the The Library with currency in your inventory
+
+zone:Sceptre of God
+Exits spawn in a random corner, can often be found by travelling diagonally
+
+zone:Upper Sceptre of God
+Exits spawn in a random corner, Go up diagonally until you spot barricades at exit
+B,RECOMMEND cold resist
+Y,and lightning resist
