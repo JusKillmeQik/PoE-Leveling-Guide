@@ -1,5 +1,4 @@
-G,` Finish second Labyrinth and get Liege of the Primordial
-` Enable first two Golems which can be bound to your secondary skill bar (hold Ctrl)
+G,` Finish second Labyrinth and get Polymath
 ` Enter the Toxic Conduits and kill Doedre
 ` Go for Quay first, find Ankh of Eternity, kill Tolman and get Skillpoint in town
 ` Kill the Gemling Legionnaires in Grain Gate and get Skillpoint in town

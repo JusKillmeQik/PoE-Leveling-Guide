@@ -1,4 +1,3 @@
-Once you've spec into Golem Commander, enable Summon Chaos Golem
 ` Go left on Cathedral Rooftop and kill Plaguewing
 ` Now go right, enter the Ravaged Square and go south
 ` Enter the Control Blocks, get Waypoint, kill Vilenta and get Skillpoint in town
