@@ -1,5 +1,10 @@
 # Leveling Guide - Patch Notes
 
+### Crucible League
+* Continued to update gems from past leagues
+* Updated some builds and added community additions
+* No new functionality is planned
+
 ### Archnemesis League
 
 * Added an Atlas Passive Tree (default Alt+a to view)
