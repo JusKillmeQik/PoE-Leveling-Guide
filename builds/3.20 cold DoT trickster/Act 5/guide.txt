@@ -1,0 +1,14 @@
+Weapons with 30%+ Spell Damage scale better at this point, recipe if needed:
+B, Weapon + rare Chain Belt + Blacksmith's Whetstone.
+
+` Kill Overseer Krow and enter town
+` Find the Miasmeter in Control Blocks and kill Justicar Casticus
+` Get Silver Flask and Skillpoint in town
+` Replace a Mana Flask with Silver Flask and try to roll of Staunching on it
+` Make your way to Templar Courts and kill Avarius
+` Get Ruined Square Waypoint and finish the quest in Ossuary
+` Back in Ruined Square, kill Utula and finish the quest in Reliquary
+` Get Skillpoint and optionally Unique Jewels in town
+` Kill Kitava on Cathedral Rooftop
+
+Exp Farming Zone: The Chamber of Innocence

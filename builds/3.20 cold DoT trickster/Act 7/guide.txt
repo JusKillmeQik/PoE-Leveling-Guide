@@ -1,0 +1,14 @@
+` Find the Silver Locket in Broken Bridge and get Granite Flask in town
+` Replace your low item level Quicksilver Flask with Granite Flask
+` Enter Crossroads, get Waypoint then enter Crypt through Fellshrine Ruins
+G,` Finish Trial of Ascendancy and find Maligaro's Map
+` Go back to Crossroads and enter Chamber of Sins
+` Kill Maligaro in Maligaro's Sanctum
+G,` Finish Trial of Ascendancy in Chamber of Sins Level 2 and enter the Den
+` Make your way to Ashen Fields and kill Greust, then get Skillpoint in town
+` Get Northern Forest Waypoint and enter Dread Thicket
+` Collect all Fireflies and kill Gruthkul, then get Skillpoint in town
+` Find Kishara's Star in Causeway and get Skillpoint in town
+` Get the Vaal City Waypoint, enter Temple of Decay and kill Arakaali
+
+Exp Farming Zone: The Northern Forest

@@ -1,0 +1,20 @@
+B,Once you're Level 20, upgrade your wands with rare Topaz Rings recipe
+
+` Focus on having 75% Cold-, Fire- and Lightning Resistance from now on
+` Kill the Blackguards in City of Sarn and enter town
+G,` Go to Slums, enter Crematorium, finish Trial of Ascendancy and kill Piety
+` Get Sewer Key in town and go back to Slums
+` Enter Sewers, get Waypoint, find three busts and get Skillpoint in town
+G,` Get Marketplace Waypoint and finish Trial of Ascendancy in Catacombs
+` Enter Battlefront, get Waypoint and kill Captain Aurelianus
+` Go to Docks and get Thaumetic Sulphite
+` Back to Battlefront, enter Solaris Temple and talk to Lady Dialla
+` Destroy the Undying Blockade in Sewers
+` Enter Ebony Barracks, get Waypoint and kill General Gravicius
+` Enter Lunaris Temple, kill Piety and get Skillpoint in town
+G,` Get Imperial Gardens Waypoint and finish Trial of Ascendancy
+` Go to Library and finish Siosa's quest, buy unlocked gems
+` Archmage will eat through your mana, it's a good idea to use two mana flasks now
+` Enter the Sceptre of God and kill Dominus
+
+Exp Farming Zone: The Docks
