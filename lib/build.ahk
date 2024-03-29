@@ -478,33 +478,33 @@ LoadGroup(loadLevel, loadChar) {
 
   For key, someGem in gem_data {
 
-    addGem1 := 0 ;only add gems that match the filter
-    If (gemFilter1 = " None") {
-      addGem1 := 1
-    } Else {
-      For k, someFilter in someGem.gemTags {
-        If (someFilter = gemFilter1) {
-          addGem1 := 1
-          break
-        }
-      }
-    }
+    ; addGem1 := 0 ;only add gems that match the filter
+    ; If (gemFilter1 = " None") {
+    ;   addGem1 := 1
+    ; } Else {
+    ;   For k, someFilter in someGem.gemTags {
+    ;     If (someFilter = gemFilter1) {
+    ;       addGem1 := 1
+    ;       break
+    ;     }
+    ;   }
+    ; }
 
-    addGem2 := 0 ;only add gems that match the filter
-    If (gemFilter2 = " None") {
-      addGem2 := 1
-    } Else {
-      For k, someFilter in someGem.gemTags {
-        If (someFilter = gemFilter2) {
-          addGem2 := 1
-          break
-        }
-      }
-    }
+    ; addGem2 := 0 ;only add gems that match the filter
+    ; If (gemFilter2 = " None") {
+    ;   addGem2 := 1
+    ; } Else {
+    ;   For k, someFilter in someGem.gemTags {
+    ;     If (someFilter = gemFilter2) {
+    ;       addGem2 := 1
+    ;       break
+    ;     }
+    ;   }
+    ; }
 
-    If (addGem1 and addGem2) {
+    ; If (addGem1 and addGem2) {
       groupList[1].Push(someGem.name) ; Push every gem to All
-    }
+    ; }
 
     If (someGem.level <= loadLevel) {
 
@@ -849,12 +849,12 @@ GetLevels(controlLevel) {
 GetFilters(controlFilter) {
   global
   dList := ""
-  For k, someFilter in filterList {
-    dList .= someFilter . "|"
-    If (someFilter = controlFilter) {
-      dList .= "|"
-    }
-  }
+  ; For k, someFilter in filterList {
+  ;   dList .= someFilter . "|"
+  ;   If (someFilter = controlFilter) {
+  ;     dList .= "|"
+  ;   }
+  ; }
   Return dList
 }
 

@@ -216,18 +216,18 @@ For key, someGem in gem_data {
   }
 
   ;Only populate tags the first time too
-  For j, someFilter in someGem.gemTags {
-    filterExists := 0
-    For k, existingFilter in filterList {
-      If (existingFilter = someFilter) {
-        filterExists := 1
-        break
-      }
-    }
-    If (filterExists = 0) {
-      filterList.Push(someFilter)
-    }
-  }
+  ; For j, someFilter in someGem.gemTags {
+  ;   filterExists := 0
+  ;   For k, existingFilter in filterList {
+  ;     If (existingFilter = someFilter) {
+  ;       filterExists := 1
+  ;       break
+  ;     }
+  ;   }
+  ;   If (filterExists = 0) {
+  ;     filterList.Push(someFilter)
+  ;   }
+  ; }
 }
 Progress, Off
 

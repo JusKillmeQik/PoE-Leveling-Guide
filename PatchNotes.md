@@ -1,5 +1,10 @@
 # Leveling Guide - Patch Notes
 
+### Necropolis League
+* Updated gems from TotA/Affliction/Necropolis
+* Added a user submitted build guild
+* Minor performance improvements to the GUI
+
 ### Crucible League
 * Continued to update gems from past leagues
 * Updated some builds and added community additions

@@ -1,0 +1,13 @@
+﻿Enemy at the Gate:   Rolling Magma
+Mercy Mission:       Summon Phantasm Support
+Breaking Some Eggs:  Frostblink
+B,Dweller of the Deep: Passive
+G,Lower Prison:        Trial
+Caged Brute:         Combustion Support, Flame Dash
+B,Marooned Mariner:    Passive
+Siren's Cadence:     -
+B,Way Forward:         Passive
+MS Boots, Sapphire Rings (iron ring + blue gem)
+B-B-B, R-B-B
+Wand - Add light dmg to spells, cast speed,
+spell dmg, +1 to level of lightning skills

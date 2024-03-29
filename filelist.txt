@@ -1,5 +1,5 @@
-4.1.11
-1167
+4.1.12
+1217
 .gitignore
 LevelingGuide.ahk
 License.md
@@ -849,6 +849,56 @@ builds/3.21 Rain of Arrows Raider/gems/31.ini
 builds/3.21 Rain of Arrows Raider/gems/38.ini
 builds/3.21 Rain of Arrows Raider/gems/42.ini
 builds/3.21 Rain of Arrows Raider/gems/class.ini
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 1/guide.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 1/notes.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 1/tree.jpg
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 10/guide.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 10/notes.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 10/tree.jpg
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 11/guide.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 11/notes.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 11/tree.jpg
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 2/guide.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 2/notes.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 2/tree.jpg
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 3/guide.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 3/notes.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 3/tree.jpg
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 4/guide.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 4/notes.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 4/tree.jpg
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 5/guide.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 5/notes.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 5/tree.jpg
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 6/guide.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 6/notes.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 6/tree.jpg
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 7/guide.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 7/notes.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 7/tree.jpg
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 8/guide.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 8/notes.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 8/tree.jpg
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 9/guide.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 9/notes.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 9/tree.jpg
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/ascendancy.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/build_info.txt
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/02.ini
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/04.ini
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/08.ini
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/12.ini
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/16.ini
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/24.ini
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/28.ini
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/31.ini
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/34.ini
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/38.ini
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/42.ini
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/66.ini
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/72.ini
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/90.ini
+builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/class.ini
 builds/Notes/Abbreviated/Act 1/guide.txt
 builds/Notes/Abbreviated/Act 1/notes.txt
 builds/Notes/Abbreviated/Act 10/guide.txt
