@@ -1,0 +1,6 @@
+﻿B,Indomitable Spirit: Passive
+
+R,Tips: 
+ Craft Anti-Bleed flask
+   Menagerie -> Staunching mod for flask
+ Check Fire Res before entering Kaom's Dream

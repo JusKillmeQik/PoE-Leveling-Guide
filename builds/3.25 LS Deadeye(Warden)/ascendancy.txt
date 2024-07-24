@@ -1,0 +1,11 @@
+﻿zone:Aspirants' Plaza
+(Deadeye)
+1. Gathering Winds
+2. Ricochet
+3. Endless Munitions
+4. Focal Point
+Warden
+1. Mother's Teaching
+2. Oath of Spring
+3. Avatar of the Winds
+4. Oath of Winter

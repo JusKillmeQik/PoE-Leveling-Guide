@@ -1,0 +1,8 @@
+﻿G,Crypt:             Trial
+G,Chamber of Sins 2: Trial
+B,A Million Faces:   Passive
+B,Queen of Despair:  Passive
+B,Kishara's Star:    Passive
+
+R,Tip: 
+ Raise Specter: 2x Carnage Chieftains (Act 7: Ashen Fields)

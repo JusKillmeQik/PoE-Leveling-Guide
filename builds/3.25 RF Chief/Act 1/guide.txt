@@ -1,0 +1,13 @@
+﻿B,Dweller of the Deep: Passive
+G,Lower Prison:        Trial / Support GEM
+B,Marooned Mariner:    Passive
+B,Way Forward:         Passive
+
+R, Tips:
+ Start as a Witch and do Coast->Mudflats->Tidal Island
+  MULE the gems and gear to a Marauder after level 4
+ Regex for vendors
+   "o in|nne"
+ Use 2x sapphire ring for Merveil fight (act 1 final boss)
+   buy or find: iron ring x2
+   sell: iron ring + blue gem

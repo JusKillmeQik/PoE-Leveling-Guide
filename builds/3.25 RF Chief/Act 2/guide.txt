@@ -1,0 +1,9 @@
+﻿The Great White Beast: Quicksilver
+G,Crypt:                 Trial
+Through Sacred Ground: Passive
+G,Chamber of Sins 2:     Trial
+Bandits:               Help Oak
+B,Way Forward (Bestel):  Passive
+
+R,Tip:
+ You can put RF on without supports after Fire Mastery
