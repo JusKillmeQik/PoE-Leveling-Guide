@@ -1,0 +1,36 @@
+﻿zone:Slave Pens
+Go all the way down, then left
+
+zone:Control Blocks
+Go top left for the Miasmeter, then up and right
+
+zone:Oriath Square
+Go top right until you cross the bridge, then down
+
+zone:Templar Courts
+Loop around clockwise
+
+zone:Chamber of Innocence
+Go up and left, and spiral counter clockwise
+This is a great zone to farm EXP
+G,CRAFT - Movement speed
+Y,RECOMMEND lightning resist
+R,and fire resist with 1,200+ EHP
+
+zone:Torched Courts
+Loop around counter clockwise
+
+zone:Ruined Square
+One layout, multiple stops: zig-zag to (1)The Ossuary, go all the way down leaving a portal by the fountain to (2)The Reliquary, and then to the middle for the (3)Cathedral Rooftop
+
+zone:The Ossuary
+Loop around clockwise
+G,CRAFT - Physical damage
+
+zone:The Reliquary
+Find multiple quest items in corners of the zone
+G,CRAFT - Accuracy
+
+zone:Cathedral Rooftop
+Run top left and kill Kitava! Consider running your first Labyrinth before this fight
+R,RECOMMEND fire resist with 1,500+ EHP and physical mitigation (Fortify/Endurance/Armour)
