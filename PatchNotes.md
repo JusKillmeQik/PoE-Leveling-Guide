@@ -2,6 +2,7 @@
 
 ### Settlers League
 * Updated gems from Settlers of Kalguur
+* Added a new build
 
 #### Minor improvements
 
