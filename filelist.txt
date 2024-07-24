@@ -1,83 +1,163 @@
-4.1.13
-393
+4.1.14
+473
 .gitignore
 LevelingGuide.ahk
 License.md
 PatchNotes.md
 README.md
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 1/guide.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 1/notes.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 1/tree.jpg
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 10/guide.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 10/notes.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 10/tree.jpg
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 11/guide.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 11/notes.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 11/tree.jpg
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 2/guide.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 2/notes.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 2/tree.jpg
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 3/guide.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 3/notes.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 3/tree.jpg
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 4/guide.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 4/notes.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 4/tree.jpg
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 5/guide.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 5/notes.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 5/tree.jpg
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 6/guide.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 6/notes.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 6/tree.jpg
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 7/guide.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 7/notes.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 7/tree.jpg
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 8/guide.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 8/notes.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 8/tree.jpg
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 9/guide.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 9/notes.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/Act 9/tree.jpg
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/ascendancy.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/build_info.txt
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/02.ini
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/04.ini
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/08.ini
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/12.ini
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/16.ini
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/24.ini
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/28.ini
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/31.ini
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/34.ini
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/38.ini
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/42.ini
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/66.ini
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/72.ini
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/90.ini
-builds/3.24 Archmage Ball Lightning Hierophant - Palsteron/gems/class.ini
-builds/3.25 Ele WoC/Act 1/tree.jpg
-builds/3.25 Ele WoC/Act 10/tree.jpg
-builds/3.25 Ele WoC/Act 11/tree.jpg
-builds/3.25 Ele WoC/Act 2/tree.jpg
-builds/3.25 Ele WoC/Act 3/tree.jpg
-builds/3.25 Ele WoC/Act 4/tree.jpg
-builds/3.25 Ele WoC/Act 5/tree.jpg
-builds/3.25 Ele WoC/Act 6/tree.jpg
-builds/3.25 Ele WoC/Act 7/tree.jpg
-builds/3.25 Ele WoC/Act 8/tree.jpg
-builds/3.25 Ele WoC/Act 9/tree.jpg
-builds/3.25 Ele WoC/ascendancy.txt
-builds/3.25 Ele WoC/build_info.txt
-builds/3.25 Ele WoC/gems/02.ini
-builds/3.25 Ele WoC/gems/04.ini
-builds/3.25 Ele WoC/gems/08.ini
-builds/3.25 Ele WoC/gems/12.ini
-builds/3.25 Ele WoC/gems/16.ini
-builds/3.25 Ele WoC/gems/24.ini
-builds/3.25 Ele WoC/gems/28.ini
-builds/3.25 Ele WoC/gems/38.ini
-builds/3.25 Ele WoC/gems/66.ini
-builds/3.25 Ele WoC/gems/class.ini
+builds/3.25 Archmage BL Hiero/Act 1/guide.txt
+builds/3.25 Archmage BL Hiero/Act 1/notes.txt
+builds/3.25 Archmage BL Hiero/Act 1/tree.jpg
+builds/3.25 Archmage BL Hiero/Act 10/guide.txt
+builds/3.25 Archmage BL Hiero/Act 10/notes.txt
+builds/3.25 Archmage BL Hiero/Act 10/tree.jpg
+builds/3.25 Archmage BL Hiero/Act 11/guide.txt
+builds/3.25 Archmage BL Hiero/Act 11/notes.txt
+builds/3.25 Archmage BL Hiero/Act 11/tree.jpg
+builds/3.25 Archmage BL Hiero/Act 2/guide.txt
+builds/3.25 Archmage BL Hiero/Act 2/notes.txt
+builds/3.25 Archmage BL Hiero/Act 2/tree.jpg
+builds/3.25 Archmage BL Hiero/Act 3/guide.txt
+builds/3.25 Archmage BL Hiero/Act 3/notes.txt
+builds/3.25 Archmage BL Hiero/Act 3/tree.jpg
+builds/3.25 Archmage BL Hiero/Act 4/guide.txt
+builds/3.25 Archmage BL Hiero/Act 4/notes.txt
+builds/3.25 Archmage BL Hiero/Act 4/tree.jpg
+builds/3.25 Archmage BL Hiero/Act 5/guide.txt
+builds/3.25 Archmage BL Hiero/Act 5/notes.txt
+builds/3.25 Archmage BL Hiero/Act 5/tree.jpg
+builds/3.25 Archmage BL Hiero/Act 6/guide.txt
+builds/3.25 Archmage BL Hiero/Act 6/notes.txt
+builds/3.25 Archmage BL Hiero/Act 6/tree.jpg
+builds/3.25 Archmage BL Hiero/Act 7/guide.txt
+builds/3.25 Archmage BL Hiero/Act 7/notes.txt
+builds/3.25 Archmage BL Hiero/Act 7/tree.jpg
+builds/3.25 Archmage BL Hiero/Act 8/guide.txt
+builds/3.25 Archmage BL Hiero/Act 8/notes.txt
+builds/3.25 Archmage BL Hiero/Act 8/tree.jpg
+builds/3.25 Archmage BL Hiero/Act 9/guide.txt
+builds/3.25 Archmage BL Hiero/Act 9/notes.txt
+builds/3.25 Archmage BL Hiero/Act 9/tree.jpg
+builds/3.25 Archmage BL Hiero/ascendancy.txt
+builds/3.25 Archmage BL Hiero/build_info.txt
+builds/3.25 Archmage BL Hiero/gems/02.ini
+builds/3.25 Archmage BL Hiero/gems/04.ini
+builds/3.25 Archmage BL Hiero/gems/08.ini
+builds/3.25 Archmage BL Hiero/gems/12.ini
+builds/3.25 Archmage BL Hiero/gems/16.ini
+builds/3.25 Archmage BL Hiero/gems/24.ini
+builds/3.25 Archmage BL Hiero/gems/28.ini
+builds/3.25 Archmage BL Hiero/gems/31.ini
+builds/3.25 Archmage BL Hiero/gems/34.ini
+builds/3.25 Archmage BL Hiero/gems/38.ini
+builds/3.25 Archmage BL Hiero/gems/42.ini
+builds/3.25 Archmage BL Hiero/gems/66.ini
+builds/3.25 Archmage BL Hiero/gems/72.ini
+builds/3.25 Archmage BL Hiero/gems/90.ini
+builds/3.25 Archmage BL Hiero/gems/class.ini
+builds/3.25 HRoC Necro/Act 1/tree.jpg
+builds/3.25 HRoC Necro/Act 10/tree.jpg
+builds/3.25 HRoC Necro/Act 11/tree.jpg
+builds/3.25 HRoC Necro/Act 2/guide.txt
+builds/3.25 HRoC Necro/Act 2/tree.jpg
+builds/3.25 HRoC Necro/Act 3/guide.txt
+builds/3.25 HRoC Necro/Act 3/tree.jpg
+builds/3.25 HRoC Necro/Act 4/guide.txt
+builds/3.25 HRoC Necro/Act 4/tree.jpg
+builds/3.25 HRoC Necro/Act 5/tree.jpg
+builds/3.25 HRoC Necro/Act 6/tree.jpg
+builds/3.25 HRoC Necro/Act 7/guide.txt
+builds/3.25 HRoC Necro/Act 7/tree.jpg
+builds/3.25 HRoC Necro/Act 8/guide.txt
+builds/3.25 HRoC Necro/Act 8/tree.jpg
+builds/3.25 HRoC Necro/Act 9/tree.jpg
+builds/3.25 HRoC Necro/ascendancy.txt
+builds/3.25 HRoC Necro/build_info.txt
+builds/3.25 HRoC Necro/gems/02.ini
+builds/3.25 HRoC Necro/gems/04.ini
+builds/3.25 HRoC Necro/gems/08.ini
+builds/3.25 HRoC Necro/gems/16.ini
+builds/3.25 HRoC Necro/gems/24.ini
+builds/3.25 HRoC Necro/gems/38.ini
+builds/3.25 HRoC Necro/gems/42.ini
+builds/3.25 HRoC Necro/gems/66.ini
+builds/3.25 HRoC Necro/gems/72.ini
+builds/3.25 HRoC Necro/gems/class.ini
+builds/3.25 LS Deadeye(Warden)/Act 1/tree.jpg
+builds/3.25 LS Deadeye(Warden)/Act 10/tree.jpg
+builds/3.25 LS Deadeye(Warden)/Act 11/tree.jpg
+builds/3.25 LS Deadeye(Warden)/Act 2/tree.jpg
+builds/3.25 LS Deadeye(Warden)/Act 3/tree.jpg
+builds/3.25 LS Deadeye(Warden)/Act 4/tree.jpg
+builds/3.25 LS Deadeye(Warden)/Act 5/tree.jpg
+builds/3.25 LS Deadeye(Warden)/Act 6/tree.jpg
+builds/3.25 LS Deadeye(Warden)/Act 7/tree.jpg
+builds/3.25 LS Deadeye(Warden)/Act 8/tree.jpg
+builds/3.25 LS Deadeye(Warden)/Act 9/tree.jpg
+builds/3.25 LS Deadeye(Warden)/ascendancy.txt
+builds/3.25 LS Deadeye(Warden)/build_info.txt
+builds/3.25 LS Deadeye(Warden)/gems/02.ini
+builds/3.25 LS Deadeye(Warden)/gems/04.ini
+builds/3.25 LS Deadeye(Warden)/gems/08.ini
+builds/3.25 LS Deadeye(Warden)/gems/12.ini
+builds/3.25 LS Deadeye(Warden)/gems/16.ini
+builds/3.25 LS Deadeye(Warden)/gems/24.ini
+builds/3.25 LS Deadeye(Warden)/gems/42.ini
+builds/3.25 LS Deadeye(Warden)/gems/72.ini
+builds/3.25 LS Deadeye(Warden)/gems/90.ini
+builds/3.25 LS Deadeye(Warden)/gems/class.ini
+builds/3.25 RF Chief/Act 1/guide.txt
+builds/3.25 RF Chief/Act 1/tree.jpg
+builds/3.25 RF Chief/Act 10/tree.jpg
+builds/3.25 RF Chief/Act 11/tree.jpg
+builds/3.25 RF Chief/Act 2/guide.txt
+builds/3.25 RF Chief/Act 2/tree.jpg
+builds/3.25 RF Chief/Act 3/guide.txt
+builds/3.25 RF Chief/Act 3/tree.jpg
+builds/3.25 RF Chief/Act 4/guide.txt
+builds/3.25 RF Chief/Act 4/tree.jpg
+builds/3.25 RF Chief/Act 5/tree.jpg
+builds/3.25 RF Chief/Act 6/tree.jpg
+builds/3.25 RF Chief/Act 7/guide.txt
+builds/3.25 RF Chief/Act 7/tree.jpg
+builds/3.25 RF Chief/Act 8/guide.txt
+builds/3.25 RF Chief/Act 8/tree.jpg
+builds/3.25 RF Chief/Act 9/tree.jpg
+builds/3.25 RF Chief/ascendancy.txt
+builds/3.25 RF Chief/build_info.txt
+builds/3.25 RF Chief/gems/02.ini
+builds/3.25 RF Chief/gems/04.ini
+builds/3.25 RF Chief/gems/08.ini
+builds/3.25 RF Chief/gems/16.ini
+builds/3.25 RF Chief/gems/24.ini
+builds/3.25 RF Chief/gems/31.ini
+builds/3.25 RF Chief/gems/34.ini
+builds/3.25 RF Chief/gems/38.ini
+builds/3.25 RF Chief/gems/66.ini
+builds/3.25 RF Chief/gems/class.ini
+builds/3.25 WoC Ele/Act 1/tree.jpg
+builds/3.25 WoC Ele/Act 10/tree.jpg
+builds/3.25 WoC Ele/Act 11/tree.jpg
+builds/3.25 WoC Ele/Act 2/tree.jpg
+builds/3.25 WoC Ele/Act 3/tree.jpg
+builds/3.25 WoC Ele/Act 4/tree.jpg
+builds/3.25 WoC Ele/Act 5/tree.jpg
+builds/3.25 WoC Ele/Act 6/tree.jpg
+builds/3.25 WoC Ele/Act 7/tree.jpg
+builds/3.25 WoC Ele/Act 8/tree.jpg
+builds/3.25 WoC Ele/Act 9/tree.jpg
+builds/3.25 WoC Ele/ascendancy.txt
+builds/3.25 WoC Ele/build_info.txt
+builds/3.25 WoC Ele/gems/02.ini
+builds/3.25 WoC Ele/gems/04.ini
+builds/3.25 WoC Ele/gems/08.ini
+builds/3.25 WoC Ele/gems/12.ini
+builds/3.25 WoC Ele/gems/16.ini
+builds/3.25 WoC Ele/gems/24.ini
+builds/3.25 WoC Ele/gems/28.ini
+builds/3.25 WoC Ele/gems/38.ini
+builds/3.25 WoC Ele/gems/66.ini
+builds/3.25 WoC Ele/gems/class.ini
 builds/Notes/Abbreviated/Act 1/guide.txt
 builds/Notes/Abbreviated/Act 1/notes.txt
 builds/Notes/Abbreviated/Act 10/guide.txt

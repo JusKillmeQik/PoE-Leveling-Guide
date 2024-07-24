@@ -2,7 +2,8 @@
 
 ### Settlers League
 * Updated gems from Settlers of Kalguur
-* Added a new build
+* Added a few popular builds
+* Builds posted to the Discord will be added right before league launch
 
 #### Minor improvements
 
