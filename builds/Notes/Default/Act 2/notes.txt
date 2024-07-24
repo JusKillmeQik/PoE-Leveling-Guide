@@ -30,6 +30,8 @@ Follow the road to The Crypt
 
 zone:The Crypt
 G,TRIAL - Spinning blades
+Go to the end of the second floor to complete
+Through Sacred Ground quest for a passive point
 
 zone:The Riverways
 Follow the road and use mobility skills to jump over bridges, activate Waypoint then continue on the road to Western Forest

@@ -4,6 +4,7 @@ B,Goals:
   MS boots <- craft if needed
     3x Augmentation orb needed
   Bandits killed
+  Through Sacred Ground Passive
   Hideout can be accessed
 _______________
 G,Trials: 

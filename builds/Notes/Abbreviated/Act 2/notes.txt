@@ -37,6 +37,7 @@ zone:Fellshrine Ruins
 zone:The Crypt
 + Get WP
 + Complete Trial
++ Complete Through Sacred Ground
 > Crossroads
 
 zone:The Riverways

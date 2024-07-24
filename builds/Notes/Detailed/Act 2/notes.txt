@@ -50,6 +50,7 @@ Follow the road to The Crypt
 
 zone:The Crypt
 Find and complete Trial
+Complete Through Sacred Ground
 < Logout
 > Go to Riverways (left)
 _______________
