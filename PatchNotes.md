@@ -1,5 +1,16 @@
 # Leveling Guide - Patch Notes
 
+### Settlers League
+* Updated gems from Settlers of Kalguur
+
+#### Minor improvements
+
+* removed filters to speed up the build editor
+* fixed a bug with the build editor
+* Updated Act 2 notes to include the new Passive with Through Sacred Ground
+* Updated Betrayal Cheetsheet with correct rewards
+* Cleaned up outdated builds
+
 ### Necropolis League
 * Updated gems from TotA/Affliction/Necropolis
 * Added a user submitted build guild

@@ -1,8 +1,0 @@
-﻿Mercy Mission:       Quicksilver
-B,Dweller of the Deep: Passive
-G,Lower Prison:        Trial
-B,Marooned Mariner:    Passive
-B,Way Forward:         Passive
-
-Every Act upgrade your Sword base at vendor
-Sell with blue/rare rustic sash and Blacksmith's Whetstone for Increased Phys

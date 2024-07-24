@@ -1,5 +1,0 @@
-﻿zone:Aspirants' Plaza
-1. Vile Bastion
-2. Void Beacon
-3. Frigid Wake
-4. Profane Bloom (CI) / Malediction (LL)

@@ -1,8 +1,0 @@
-﻿Mercy Mission:       Quicksilver
-B,Dweller of the Deep: Passive
-G,Lower Prison:        Trial
-B,Marooned Mariner:    Passive
-B,Way Forward:         Passive
-Search: "nn" for MS boots
-Vendor: Iron Ring + Blue Gem
-Vendor: Blue Wand + White Sapphire + Alt

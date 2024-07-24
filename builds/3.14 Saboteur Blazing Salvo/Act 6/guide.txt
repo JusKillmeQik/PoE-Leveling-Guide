@@ -1,5 +1,0 @@
-﻿Fallen from Grace: 2x Respec
-B,Father of War:     Passive
-G,Prison:            Trial
-B,Cloven One:        Passive
-B,Puppet Mistress:   Passive
