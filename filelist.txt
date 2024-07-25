@@ -1,5 +1,5 @@
 4.1.15
-496
+518
 .gitignore
 LevelingGuide.ahk
 License.md
@@ -247,28 +247,6 @@ builds/Notes/Detailed/Act 8/guide.txt
 builds/Notes/Detailed/Act 8/notes.txt
 builds/Notes/Detailed/Act 9/guide.txt
 builds/Notes/Detailed/Act 9/notes.txt
-builds/Notes/Turkish/Act 1/guide.txt
-builds/Notes/Turkish/Act 1/notes.txt
-builds/Notes/Turkish/Act 10/guide.txt
-builds/Notes/Turkish/Act 10/notes.txt
-builds/Notes/Turkish/Act 11/guide.txt
-builds/Notes/Turkish/Act 11/notes.txt
-builds/Notes/Turkish/Act 2/guide.txt
-builds/Notes/Turkish/Act 2/notes.txt
-builds/Notes/Turkish/Act 3/guide.txt
-builds/Notes/Turkish/Act 3/notes.txt
-builds/Notes/Turkish/Act 4/guide.txt
-builds/Notes/Turkish/Act 4/notes.txt
-builds/Notes/Turkish/Act 5/guide.txt
-builds/Notes/Turkish/Act 5/notes.txt
-builds/Notes/Turkish/Act 6/guide.txt
-builds/Notes/Turkish/Act 6/notes.txt
-builds/Notes/Turkish/Act 7/guide.txt
-builds/Notes/Turkish/Act 7/notes.txt
-builds/Notes/Turkish/Act 8/guide.txt
-builds/Notes/Turkish/Act 8/notes.txt
-builds/Notes/Turkish/Act 9/guide.txt
-builds/Notes/Turkish/Act 9/notes.txt
 builds/Notes/Portuguese/Act 1/guide.txt
 builds/Notes/Portuguese/Act 1/notes.txt
 builds/Notes/Portuguese/Act 10/guide.txt
@@ -291,7 +269,28 @@ builds/Notes/Portuguese/Act 8/guide.txt
 builds/Notes/Portuguese/Act 8/notes.txt
 builds/Notes/Portuguese/Act 9/guide.txt
 builds/Notes/Portuguese/Act 9/notes.txt
-
+builds/Notes/Turkish/Act 1/guide.txt
+builds/Notes/Turkish/Act 1/notes.txt
+builds/Notes/Turkish/Act 10/guide.txt
+builds/Notes/Turkish/Act 10/notes.txt
+builds/Notes/Turkish/Act 11/guide.txt
+builds/Notes/Turkish/Act 11/notes.txt
+builds/Notes/Turkish/Act 2/guide.txt
+builds/Notes/Turkish/Act 2/notes.txt
+builds/Notes/Turkish/Act 3/guide.txt
+builds/Notes/Turkish/Act 3/notes.txt
+builds/Notes/Turkish/Act 4/guide.txt
+builds/Notes/Turkish/Act 4/notes.txt
+builds/Notes/Turkish/Act 5/guide.txt
+builds/Notes/Turkish/Act 5/notes.txt
+builds/Notes/Turkish/Act 6/guide.txt
+builds/Notes/Turkish/Act 6/notes.txt
+builds/Notes/Turkish/Act 7/guide.txt
+builds/Notes/Turkish/Act 7/notes.txt
+builds/Notes/Turkish/Act 8/guide.txt
+builds/Notes/Turkish/Act 8/notes.txt
+builds/Notes/Turkish/Act 9/guide.txt
+builds/Notes/Turkish/Act 9/notes.txt
 filelist.txt
 icons/gear.ico
 icons/lvlG.ico
