@@ -79,36 +79,36 @@ The guide shows your level and percent experience gain in the current zone at th
 
 >These can now all be changed in the settings menu if you'd like different bindings.
 
-##### Display/Hide the whole Leveling Guide overlay
-**Alt+F1** (May need to change default NVidia screenshot bindings)
+#### Display/Hide the whole Leveling Guide overlay
+>Alt+F1
 
 This guide auto hides after a few seconds (this "Display Timeout" can be increased or removed in settings). Changing zones will show the guide again. Using **Alt+F1** while it is hidden will show it again, but if you use **Alt+F1** while it is shown it will stay off until manually called back.
 
-##### Display/Hide the zone layout images
-**Alt+F2**
+#### Display/Hide the zone layout images
+>Alt+F2
 
->NOTE: Since they are outdated they may just get in the way for some people.
+NOTE: Since they are outdated they may just get in the way for some people.
 
-##### Display/Hide the experience overlay
-**Alt+F3**
+#### Display/Hide the experience overlay
+>Alt+E
 
-##### Display/Hide the Gem setup
-**Alt+G**
+#### Display/Hide the Gem setup
+>Alt+G
 
-##### Display/Hide the tree
-**Alt+F**
+#### Display/Hide the tree
+>Alt+F
 
-##### Show Syndicate Betrayal Cheatsheet
-**F6**
+#### Show Syndicate Betrayal Cheatsheet
+>F6
 
-##### Show Alva Temple Cheatsheet
-**F7**
+#### Show Alva Temple Cheatsheet
+>F7
 
-##### Show Hiest Cheatsheet
-**F8**
+#### Show Hiest Cheatsheet
+>F8
 
-##### Manually toggle Zone
-**Control+PgDown**
+#### Manually toggle Zone
+>Control+PgDown
 
 Any of the hotkeys can also be disabled by deleting their value in the settings menu.
 
