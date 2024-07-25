@@ -1,5 +1,5 @@
-4.1.14
-473
+4.1.15
+496
 .gitignore
 LevelingGuide.ahk
 License.md
@@ -135,6 +135,29 @@ builds/3.25 RF Chief/gems/34.ini
 builds/3.25 RF Chief/gems/38.ini
 builds/3.25 RF Chief/gems/66.ini
 builds/3.25 RF Chief/gems/class.ini
+builds/3.25 SST Glad/Act 1/tree.jpg
+builds/3.25 SST Glad/Act 10/tree.jpg
+builds/3.25 SST Glad/Act 11/tree.jpg
+builds/3.25 SST Glad/Act 2/tree.jpg
+builds/3.25 SST Glad/Act 3/tree.jpg
+builds/3.25 SST Glad/Act 4/tree.jpg
+builds/3.25 SST Glad/Act 5/tree.jpg
+builds/3.25 SST Glad/Act 6/tree.jpg
+builds/3.25 SST Glad/Act 7/tree.jpg
+builds/3.25 SST Glad/Act 8/tree.jpg
+builds/3.25 SST Glad/Act 9/tree.jpg
+builds/3.25 SST Glad/ascendancy.txt
+builds/3.25 SST Glad/build_info.txt
+builds/3.25 SST Glad/gems/02.ini
+builds/3.25 SST Glad/gems/04.ini
+builds/3.25 SST Glad/gems/08.ini
+builds/3.25 SST Glad/gems/12.ini
+builds/3.25 SST Glad/gems/16.ini
+builds/3.25 SST Glad/gems/24.ini
+builds/3.25 SST Glad/gems/28.ini
+builds/3.25 SST Glad/gems/38.ini
+builds/3.25 SST Glad/gems/66.ini
+builds/3.25 SST Glad/gems/class.ini
 builds/3.25 WoC Ele/Act 1/tree.jpg
 builds/3.25 WoC Ele/Act 10/tree.jpg
 builds/3.25 WoC Ele/Act 11/tree.jpg
