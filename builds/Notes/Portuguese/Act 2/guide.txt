@@ -1,0 +1,8 @@
+﻿The Great White Beast: Quicksilver flask
+G,Crypt:                 Trial
+Through Sacred Ground: Passive
+G,Chamber of Sins 2:     Trial
+Intruders in Black:    Herald GEM
+Sharp and Cruel:       GEM
+Bandits:               Escolha baseado na build
+B,Way Forward (Bestel):  Passive

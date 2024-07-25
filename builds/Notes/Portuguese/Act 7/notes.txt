@@ -1,0 +1,63 @@
+﻿zone:Broken Bridge
+Encontre the locket para um Utility flask extra
+Siga a estrada para a esquerda até a saída
+
+zone:The Crossroads
+B,Não se esqueça do Waypoint
+Vá para (1) The Fellshrine Ruins primeiro (2) The Chamber of Sins segundo
+
+zone:Fellshrine Ruins
+Siga a estrada, vá para baixo e para a direita até o final e depois vá para cima e para a direita
+
+zone:The Crypt
+Abra o sarcófago para entrar em Crypt level 2
+Troque manualmente para o layout do Crypt 2
+G,TRIAL - Spinning blades
+G,CRAFT - Damage over time
+
+zone:The Crypt 2
+Quando você encontrar o mapa, saia e use o Waypoint para The Crossroads
+R,Os layouts para 1 e 2 estão conectados, se você tiver o segundo layout no Crypt 1, use a segunda imagem no Crypt 2.
+
+zone:Chamber of Sins Level 1
+Faça uma volta até o centro, depois ative o Waypoint
+B,Use seu mapa obtido em The Crypt no dispositivo de mapa e passe pelos portais
+Após matar Maligaro, você retorna aqui e passa pelo corredor atrás do Waypoint para encontrar a saída
+G,CRAFT - Lightning damage
+
+zone:Maligaro's Sanctum
+Siga as bordas da zona e atravesse as pontes que encontrar até encontrar a arena (Maligaro's Workshop)
+B,Use um pergaminho de portal antes da luta para caso você morra e depois para teleportar para Silk
+Y,RECOMENDADO Lightning resist
+
+zone:Chamber of Sins Level 2
+Vá para o canto superior direito até encontrar o corredor estreito e longo, mova-se até o final e depois vá para a direita e para cima, depois para a direita e para baixo. Há um layout que vai para o canto inferior esquerdo em vez disso, se você encontrar um beco sem saída ao ir para o canto superior direito, siga a parede pela direita. Clique na parede para revelar a saída
+G,TRIAL - Sawblades (lado esquerdo)
+G,CRAFT - Mana regen
+
+zone:The Den
+Bastante simples, vá para o canto superior esquerdo ou direito para encontrar a saída para The Ashen Fields
+
+zone:Ashen Fields
+Siga a estrada para a esquerda
+R,RECOMENDADO mitigação de dano físico, remoção de sangramento
+
+zone:Northern Forest
+Siga a parede do lado esquerdo para The Dread Thicket. Siga a parede do lado direito para The Causeway
+
+zone:Dread Thicket
+Explore a zona e encontre os fireflies (vagalumes), Gruthkul também está aqui
+G,CRAFT - Fire damage
+RECOMENDADO mitigação de dano físico
+
+zone:The Causeway
+Vá para o canto superior direito até a saída. pegue Kishara's star na saída
+G,CRAFT - Cold damage
+
+zone:Vaal City
+Encontre e siga as paredes grossas para guiá-lo até a saída
+
+zone:Temple of Decay
+Zona longa com múltiplos níveis. Vá na diagonal até as saídas
+G,CRAFT - Chaos damage
+Y,RECOMENDADO Lightning resist

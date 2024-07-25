@@ -1,0 +1,63 @@
+﻿zone:Sarn Ramparts
+Siga a parede da esquerda até as escadas, suba as escadas e siga a parede até o fim
+
+zone:Toxic Conduits
+Observe a tinta preta no chão ao entrar na zona para ver em qual direção ela aponta
+
+zone:Doedre's Cesspool
+Encontre o caminho que não tem um beco sem saída, isso o levará até a saída. Após derrotar Doedre, The Grand Promenade está à esquerda, The Quay à direita
+G,CRAFT - Resistance
+
+zone:Grand Promenade
+Siga a parede do lado direito
+
+zone:Bath House
+A saída (1) está sempre do lado direito. Salve Yugul (2) para depois
+G,TRIAL - Furnace traps
+G,CRAFT - Flask duration
+
+zone:High Gardens
+Tenha cuidado ao matar Porcupines
+Siga o caminho até o fim para matar Yugul
+B,RECOMENDADO cold resist
+
+zone:Lunaris Concourse
+Vá para cima e para a direita para o Waypoint, depois para cima e para a esquerda para a entrada do Lunaris Temple primeiro
+Vá para baixo e para a direita para o Harbour Bridge após derrotar ambos os templos
+
+zone:Lunaris Temple Level 1
+Siga os tapetes até o fim e ative o Waypoint
+
+zone:Lunaris Temple Level 2
+Procure escadas e suba, quando chegar à área maior, procure vasos na parede oposta e escolha o lado onde há apenas um
+B,Saia após o Boss e use o Waypoint para Doedre's Cesspool
+G,CRAFT - Minions
+B,RECOMENDADO cold resist
+
+zone:The Quay
+Pegue o item de missão em (1) para usar na arena (2) e depois saia da arena e encontre a saída em (3)
+Mantenha-se na borda inferior do mapa e você deverá encontrar tudo
+
+zone:Grain Gate
+Esta zona tem muitos edifícios, entre e saia dos edifícios apenas por aberturas que tenham um corpo de guarda ao lado; eles indicam o caminho
+B,Mate os gemlings
+
+zone:Imperial Fields
+Siga a estrada até o fim e continue nessa direção
+
+zone:Solaris Concourse
+Siga os tapetes até o Harbour Bridge
+
+zone:Solaris Temple Level 1
+Vá para baixo e para a esquerda, depois para cima e para a esquerda. O Waypoint está sempre no caminho
+
+zone:Solaris Temple Level 2
+Siga os tapetes. Saia após o Boss. Waypoint para Lunaris Concourse
+G,CRAFT - Traps and mines
+R,RECOMENDADO fire resist
+
+zone:Harbour Bridge
+Fique aqui antes do Boss se você estiver abaixo do nível necessário
+Vá para cima e para o meio para a arena com Solaris e Lunaris
+R,RECOMENDADO fire resist
+B,e cold resist

@@ -1,0 +1,46 @@
+﻿zone:Blood Aqueduct
+Vá para o canto superior esquerdo, atravesse as pontes nos becos sem saída
+Local para farmar a carta Humility que trocamos pela Tabula Rasa para iniciantes de liga
+Esta zona é ótima para EXP
+
+zone:The Descent
+Vá para cima e para a direita até o guindaste de suprimentos, depois para baixo e para a esquerda até outro guindaste e depois para cima e para a direita até o Vastiri Desert
+
+zone:Vastiri Desert
+Vá para a direita até o Waypoint, depois para o canto superior esquerdo (1) para os Foothills. Se você quiser matar Shakari, vá para a direita até (2) para o Oasis, pegue o item de missão na cidade e entre na zona
+G,CRAFT - Attack/Cast speed
+
+zone:The Oasis
+Siga a parede esquerda ou direita, baseado em qual lado (inferior ou superior) é o beco sem saída na entrada
+R,RECOMENDADO mitigação de dano físico
+
+zone:The Foothills
+B,Não se esqueça de ativar o Waypoint
+Então vá para a direita até (1) para pegar o item de missão no The Boiling Lake, depois para cima até (2) para o The Tunnel para continuar a história
+
+zone:Boiling Lake
+Vá para o canto superior direito da zona. Se você avistar homens petrificados, você está perto
+B,Após matar o Basilisk, saia e use o Waypoint em The Foothills e vá para o canto superior esquerdo da zona
+G,CRAFT - Spell damage
+
+zone:The Tunnel
+Vá para cima e para a esquerda, o caminho da direita passa pelo Waypoint
+G,TRIAL - Blade sentries
+G,CRAFT - All attributes
+
+zone:The Quarry
+Ative o Waypoint no centro, faça Shrine of the Winds (2), depois The Refinery (1)
+G,CRAFT - Physical damage
+R,RECOMENDADO mitigação de dano físico
+3,000+ EHP e travel skills
+
+zone:The Refinery
+Siga as trilhas dos carrinhos até o topo do prédio à esquerda para o Boss. Saia para a cidade e use o Waypoint para The Quarry
+Y,RECOMENDADO Lightning resist
+
+zone:Belly of the Beast
+Vá para o canto superior esquerdo nesta zona e na próxima
+
+zone:Rotting Core
+Mate Doedre, Maligaro e Shavronne novamente. Depois entre no Black Heart e mate a Depraved Trinity
+Y,RECOMENDADO 3,200+ EHP, mitigação de dano físico, lightning resist e travel skills

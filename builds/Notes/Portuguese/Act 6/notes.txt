@@ -1,0 +1,61 @@
+﻿zone:Twilight Strand
+Esta área e fazer a missão é opcional, isso abre a loja de GEMAS da Lilly
+
+zone:The Coast
+Vá para o lado direito da zona e vá até o canto superior direito
+
+zone:Tidal Island
+Esta zona deve ser pulada para economizar tempo
+
+zone:Mud Flats
+Mate a Dishonoured Queen (1) no lado direito para obter a chave que abre o portão para a próxima zona (2) no lado esquerdo
+
+zone:Karui Fortress
+Siga o lado direito se estiver pronto para Tukohama, ele te dara um passive point e um Pantheon. Se desejar pular Tukohama, siga o lado esquerdo
+G,CRAFT - Defesas
+R,RECOMENDADO Fire resist com 1.500+ EHP
+
+zone:The Ridge
+Siga o caminho até que você possa ir para a direita, depois siga até encontrar um caminho para cima à esquerda
+
+zone:Lower Prison
+Nesta zona geralmente seguimos para baixo ou para a esquerda em direção à saída, há um trial aqui, mas está perto do Waypoint se quiser fazê-lo mais tarde
+G,TRIAL - Spike traps
+G,CRAFT - Double resistance
+
+zone:Shavronne's Tower
+Siga pelos corredores, atravessando pontes, por 4 minizonas
+G,CRAFT - Spell damage
+Y,RECOMENDADO Lightning resist e mitigação de dano físico
+
+zone:Prisoner's Gate
+Se quiser lutar contra Aberrath ele te dara um passive point, vá para o lado da estrada que tem o penhasco, caso contrário, siga a estrada para a próxima área
+R,RECOMENDADO resistência ao fogo
+
+zone:The Riverways
+Siga a estrada e, quando chegar ao acampamento, vá para baixo e para a direita
+B, Se quiser matar Ryslatha ela te dara um passive point, siga o caminho para cima no Waypoint
+
+zone:The Wetlands
+Fique do lado esquerdo para encontrar a entrada para o Spawning Ground
+G,RECOMENDADO Life flasks
+
+zone:Western Forest
+Siga a estrada até os Riverways
+G,CRAFT - Attributes
+
+zone:Southern Forest
+Siga a parede direita até The Cavern of Anger
+
+zone:Cavern of Anger
+B, Não se esqueça da bandeira preta ao entrar nesta zona
+Vá para baixo, depois para cima, depois para a direita, a saída pode estar para cima ou para baixo
+
+zone:The Beacon
+Siga a linha costeira até alcançar os faróis
+G,CRAFT - Life/Mana
+
+zone:Brine King's Reef
+Siga a linha costeira esquerda até a arena do Brine King
+Y,RECOMENDADO Lightning resist
+B, Cold resist com mitigação de dano físico

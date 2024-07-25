@@ -1,0 +1,35 @@
+﻿zone:Cathedral Rooftop
+Vá para cima para salvar Bannon, volte para a cidade e depois vá para baixo e para a direita
+
+zone:Ravaged Square
+B,Deixe um portal ao entrar na zona
+Siga a parede esquerda, pule a primeira abertura, pegue a segunda e atravesse a ponte (parte vermelha), siga a parede esquerda até o Waypoint
+Volte para a cidade e use seu portal para retornar ao início da zona, vá para baixo e faça Control Blocks (4) para um passive point
+Depois vá para o Ossuary (1). Faça Cruel Lab. Depois Torched Courts (2). Finalmente The Canals (5). Opcionalmente faça The Reliquary (3) para um cinto inútil
+
+zone:Control Blocks
+Siga a parede direita. Use travel skills para pular pelas cercas
+
+zone:The Ossuary
+Siga a parede esquerda para encontrar o item de missão e o trial. A entrada do trial está na abertura na parede, o item de missão está próximo dessa abertura, mas você se afasta da parede para encontrá-lo
+G,TRIAL - Dart traps
+G,CRAFT - Chaos damage
+
+zone:Torched Courts
+Siga a parede esquerda
+
+zone:Desecrated Chambers
+Siga a parede direita até encontrar quatro pilares, depois vá reto e para cima
+Esta é uma ótima zona para farmar EXP
+G,CRAFT - Accuracy
+
+zone:The Reliquary
+O item de missão está sempre na borda ou em um canto, geralmente do lado direito. Use habilidade de movimento para atravessar lacunas
+
+zone:The Canals
+Vá para o canto superior esquerdo. Siga a estrada e atravesse as pontes quando vê-las
+
+zone:Feeding Trough
+Vá para o canto superior esquerdo, não deve haver desvios, mate Kitava no final para desbloquear mapas!
+G,CRAFT - Life/Mana
+R,RECOMENDADO 3,700+ EHP, fire resist, mitigação de dano físico, travel skills

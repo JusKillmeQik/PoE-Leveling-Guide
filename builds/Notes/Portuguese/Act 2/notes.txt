@@ -1,0 +1,67 @@
+﻿zone:Southern Forest
+Siga a parede direita
+
+zone:Old Fields
+Siga a estrada
+Deixe um portal em The Den
+
+zone:The Den
+Mate o Great White Beast e faça Logout
+
+zone:The Crossroads
+Siga a estrada até o waypoint
+Volte para a cidade e use o portal para The Den para obter Quicksilver Flask
+Depois continue para o norte até chegar a Chamber of Sins
+Quando voltar, vá para o leste para matar Kraityn
+Finalmente, vá para o sul através das Fellshrine Ruins até o trial em The Crypt
+
+zone:Chamber of Sins Level 1
+Circule até o centro da zona. O corredor na direção do Waypoint sempre leva para Chamber of Sins Level 2
+
+zone:Chamber of Sins Level 2
+O boss está embaixo e à direita, o trial está no canto superior esquerdo
+G,TRIAL - Sawblades
+
+zone:Broken Bridge
+Siga a estrada para a direita
+
+zone:Fellshrine Ruins
+Siga a estrada até The Crypt
+
+zone:The Crypt
+G,TRIAL - Spinning blades
+Vá até o final do segundo andar para completar
+Through Sacred Ground para ganhar um passive point
+
+zone:The Riverways
+Siga a estrada e use travel skills para pular sobre pontes, ative o Waypoint e continue pela estrada até Western Forest
+Quando voltar, a entrada para os Wetlands está sempre do lado oposto da estrada perto do Waypoint
+
+zone:Western Forest
+Alira está ao lado do Waypoint onde a estrada tem uma seção quebrada. The Weaver's Chambers podem ser encontradas do lado oposto da estrada em relação a Alira, com árvores cobertas de teia. Siga a estrada para a missão The Way Forward
+
+zone:Weaver's Chambers
+Vá para a esquerda quando o caminho à esquerda aparecer, caso contrário, dê a volta pelo lado direito
+Mate a Weaver para a recompensa e faça logout, depois reivindique o passive point de The Way Forward de volta no Ato 1
+
+zone:The Wetlands
+Mate Oak no centro, depois vá para o lado esquerdo até que o Waypoint seja visível com a passagem perto dele
+
+zone:Vaal Ruins
+Tente determinar a direção principal e depois zig e zag de acordo através das ruínas
+
+zone:Northern Forest
+Vá para o canto superior direito seguindo a linha costeira
+Não entre no Dread Thicket
+
+zone:Dread Thicket
+Esta zona deve ser pulada para economizar tempo
+
+zone:The Caverns
+Mais ou menos adivinhando onde é a saída
+G,CRAFT - Movement speed
+
+zone:Ancient Pyramid
+As saídas geralmente são diagonais em relação à entrada
+G,CRAFT - Spell damage
+Y,RECOMENDADO lightning resist
