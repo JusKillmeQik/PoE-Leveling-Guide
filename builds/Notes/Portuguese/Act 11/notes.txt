@@ -1,0 +1,13 @@
+﻿zone:The Templar Laboratory
+No canto superior direito está o Laboratório
+Encontre o dispositivo de mapa e aguarde para falar com Kirac
+Depois, volte para Oriath e vá para o canto inferior direito para Fallen Courts
+
+zone:The Fallen Courts
+Siga a parede esquerda para encontrar o escritório de Dominus
+Pegue a Chave e retorne a Oriath para a entrada do Haunted Reliquary no canto inferior esquerdo
+
+zone:The Haunted Reliquary
+Use a chave em ambos os lados da porta para abrir o Cofre
+Mate tudo e depois fale com Kirac no seu Hideout
+Se você não tiver um Hideout, fale com Helena na cidade para obter-lo

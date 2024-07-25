@@ -1,0 +1,37 @@
+﻿zone:Slave Pens
+Vá até o final, depois para a esquerda
+
+zone:Control Blocks
+Vá para o canto superior esquerdo para encontrar o Miasmeter, depois para cima e para a direita
+
+zone:Oriath Square
+Vá para o canto superior direito até atravessar a ponte, depois desça
+
+zone:Templar Courts
+Faça uma volta no sentido horário
+
+zone:Chamber of Innocence
+Vá para cima e para a esquerda, e siga em espiral no sentido anti-horário
+Esta é uma ótima zona para farmar EXP
+G,CRAFT - Movement speed
+Y,RECOMENDADO Lightning resist, Fire resist
+R,1.200+ EHP
+
+zone:Torched Courts
+Faça uma volta no sentido anti-horário
+
+zone:Ruined Square
+Um layout, múltiplas paradas: zig-zag até (1)The Ossuary, vá até o final deixando um portal no meio do caminho antes de descer para chegar em (2)The Reliquary, e então para o meio para (3)Cathedral Rooftop
+
+zone:The Ossuary
+Faça uma volta no sentido horário
+G,CRAFT - Physical damage
+
+zone:The Reliquary
+Encontre vários itens de missão nas extremidades da zona
+G,CRAFT - Accuracy
+
+zone:Cathedral Rooftop
+Corra para o canto superior esquerdo e mate Kitava! Considere fazer seu primeiro Labirinto antes desta luta
+Y,RECOMENDADO Fire resist, mitigação de dano físico (Fortify/Endurance/Armour)
+R,1.500+ EHP

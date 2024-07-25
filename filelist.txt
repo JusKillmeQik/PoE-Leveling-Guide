@@ -246,6 +246,29 @@ builds/Notes/Turkish/Act 8/guide.txt
 builds/Notes/Turkish/Act 8/notes.txt
 builds/Notes/Turkish/Act 9/guide.txt
 builds/Notes/Turkish/Act 9/notes.txt
+builds/Notes/Portuguese/Act 1/guide.txt
+builds/Notes/Portuguese/Act 1/notes.txt
+builds/Notes/Portuguese/Act 10/guide.txt
+builds/Notes/Portuguese/Act 10/notes.txt
+builds/Notes/Portuguese/Act 11/guide.txt
+builds/Notes/Portuguese/Act 11/notes.txt
+builds/Notes/Portuguese/Act 2/guide.txt
+builds/Notes/Portuguese/Act 2/notes.txt
+builds/Notes/Portuguese/Act 3/guide.txt
+builds/Notes/Portuguese/Act 3/notes.txt
+builds/Notes/Portuguese/Act 4/guide.txt
+builds/Notes/Portuguese/Act 4/notes.txt
+builds/Notes/Portuguese/Act 5/guide.txt
+builds/Notes/Portuguese/Act 5/notes.txt
+builds/Notes/Portuguese/Act 6/guide.txt
+builds/Notes/Portuguese/Act 6/notes.txt
+builds/Notes/Portuguese/Act 7/guide.txt
+builds/Notes/Portuguese/Act 7/notes.txt
+builds/Notes/Portuguese/Act 8/guide.txt
+builds/Notes/Portuguese/Act 8/notes.txt
+builds/Notes/Portuguese/Act 9/guide.txt
+builds/Notes/Portuguese/Act 9/notes.txt
+
 filelist.txt
 icons/gear.ico
 icons/lvlG.ico

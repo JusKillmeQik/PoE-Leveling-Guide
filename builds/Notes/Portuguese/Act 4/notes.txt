@@ -1,0 +1,51 @@
+﻿zone:The Aqueduct
+Atravesse pontes sempre que o caminho terminar
+
+zone:Dried Lake
+Mate Voll em um dos três locais de aparecimento
+G,CRAFT - Atk/cast speed
+
+zone:Mines Level 1
+A saída geralmente está no canto superior esquerdo
+
+zone:Mines Level 2
+Layout variado e muitos becos sem saída, você deve procurar o espírito, se encontrar a saída deixe um portal para voltar mais tarde e encontrar o espírito
+
+zone:Crystal Veins
+Faça uma volta no canto inferior direito para ir até a saída do canto superior esquerdo
+B,Waypoint para Highgate se precisar do espírito
+G,CRAFT - Cold damage
+
+zone:Daresso's Dream
+Mova-se em direção ao canto superior direito, alguns becos sem saída
+
+zone:Kaom's Dream
+Siga os corredores e pontes
+
+zone:Grand Arena
+Se você ainda não fez Kaom's Dream, pegue o waypoint para Crystal Veins e faça isso primeiro
+Desça e vá para a esquerda a partir do Waypoint, depois siga o caminho
+G,RECOMENDADO Cold resist
+
+zone:Kaom's Stronghold
+Se você ainda não fez Daresso's Dream, pegue o waypoint para Crystal Veins e faça isso primeiro
+Siga as escadas e pontes
+G,RECOMENDADO Fire resist
+
+zone:Belly of the Beast Level 1
+Vá para o canto superior esquerdo, muitos becos sem saída
+
+zone:Belly of the Beast Level 2
+Vá para o canto superior esquerdo, muitos becos sem saída
+G,CRAFT - Resistance
+
+zone:The Harvest
+Sempre um chefe no lado direito, dois no lado esquerdo
+G,Permaneça na aura verde contra Doedre
+Maligaro dá dano físico, então continue se movendo
+B,Shavronne causa dano de raio
+R,Malachai causa dano de fogo
+
+zone:The Ascent
+Vá para cima e para a direita, atravesse a ponte e siga o caminho até um pequeno corredor para a saída
+G,CRAFT - Ailment, Stun and Curse Mitigation

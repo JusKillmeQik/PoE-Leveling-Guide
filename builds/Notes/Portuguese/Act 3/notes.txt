@@ -1,0 +1,75 @@
+﻿zone:City of Sarn
+Não se esqueça de falar com Clarissa
+
+zone:The Slums
+Encontre as grades para The Sewers, depois desça as escadas próximas, siga até encontrar escadas para cima, depois siga em linha reta até The Crematorium
+
+zone:The Crematorium
+Ir para a esquerda geralmente tem uma alta chance de sucesso
+G,TRIAL - Furnace Traps
+G,CRAFT - Defences
+
+zone:The Sewers
+Pegue o busto antes do Waypoint, depois há outro, suba e vá para a direita para encontrar o último busto, depois saia
+B, Não se esqueça do Waypoint
+G,CRAFT - Physical damage
+
+zone:The Marketplace
+Geralmente, siga para cima e para a direita, passe pelo salão das estátuas, pegue o Waypoint perto de The Catacombs
+Ignore o item da missão
+Quando voltar após o trial, siga a parede à direita para encontrar a saída
+
+zone:The Catacombs
+G,TRIAL - Blade sentries
+G,CRAFT - Elemental Damage with Attack
+
+zone:The Battlefront
+Vá para cima e para a esquerda para obter o Spool e o Thaumetic Sulphite antes de fazer Solaris Temple
+Quando voltar, vá para a direita até o Solaris Temple
+
+zone:The Docks
+Geralmente do lado esquerdo, o Sulphite estará logo após descer algumas escadas
+Esta é uma ótima zona para farmar EXP
+
+zone:Solaris Temple Level 1
+Siga o tapete até a saída
+
+zone:Solaris Temple Level 2
+Siga o tapete, mas pode haver becos sem saída
+G,CRAFT - Fire damage
+
+zone:Ebony Barracks
+Primeiro vá para o Lunaris Temple
+B,Não se esqueça do Waypoint
+Quando voltar, vá para a direita até Imperial Gardens
+
+zone:Lunaris Temple Level 1
+Siga o tapete
+
+zone:Lunaris Temple Level 2
+O layout varia muito, se você vir escadas, suba por elas e encontre mais escadas, até uma área maior, haverá carrinhos dos dois lados, escolha o lado onde há apenas um
+G,CRAFT - Lightning damage
+Y, RECOMENDADO Lightning resist
+
+zone:Imperial Gardens
+Siga a estrada até o fim
+The Library fica ao norte e após fazer a quest do mapa habilita uma loja de Skills Gems
+G,TRIAL - Dart Traps
+G,CRAFT - All attributes
+
+zone:The Library
+Siosa lhe dará uma missão aqui para habilitar uma loja onde poderá comprar todas as gemas atuais
+Ele está no meio da zona, perto do Waypoint
+
+zone:The Archives
+As Golden Pages estão espalhadas aleatoriamente por toda a zona
+< Faça Logout depois de ter todas as 4
+> Teleporte de volta para The Library com moeda em seu inventário
+
+zone:Sceptre of God
+As saídas aparecem em um canto aleatório, podem frequentemente ser encontradas viajando diagonalmente
+
+zone:Upper Sceptre of God
+As saídas aparecem em um canto aleatório, vá para cima diagonalmente até encontrar barricadas na saída
+B, RECOMENDADO Cold resist
+Y, e Lightning resist

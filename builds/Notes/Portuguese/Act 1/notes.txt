@@ -1,0 +1,55 @@
+﻿zone:Twilight Strand
+Siga a costa para cima e à direita
+Mate Hillock
+
+zone:The Coast
+Fique no lado direito seguindo a parede
+B,Vá primeiro para Mud Flats para matar Hailrake mais facilmente
+
+zone:Tidal Island
+O lado sem penhasco é o mais curto
+
+zone:Mud Flats
+Pequenos rios conectam os três itens
+B,No nível 4 vá para Tidal Island para a missão do Quicksilver Flask após pegar o Waypoint de Submerged Passage
+
+zone:Fetid Pool
+Dê uma volta em círculo e mate tudo
+Esta missão é opcional e deve ser ignorada para economizar tempo
+
+zone:Submerged Passage
+Encontre uma grande ponte e coloque um portal
+Então continue atravessando a ponte para The Ledge
+
+zone:Flooded Depths
+Encontre e mate o Deep Dweller
+Desconecte após matar o Deep Dweller (Tarkleigh)
+
+zone:The Ledge
+Pequenos totens no Waypoint apontam para a saída
+
+zone:The Climb
+Sempre suba, ignore Faun para economizar tempo
+
+zone:Lower Prison
+Vá para a cidade no Waypoint e use o portal que deixou para encontrar Flooded Depths
+Tente primeiro à direita para a saída. Há um trial nesta zona que você pode fazer mais tarde graças ao Waypoint
+G,TRIAL - Spiked traps
+
+zone:Upper Prison
+Tente primeiro à esquerda.
+B,Desconecte após matar Brutus, então vá para Prisoner's Gate pelo Waypoint
+
+zone:Prisoner's Gate
+Procure o lado da estrada que tem o declive, geralmente no lado direito
+
+zone:Ship Graveyard
+Procure primeiro o Waypoint e depois vá para a saída. Se encontrar The Cave, pegue o All Flame agora. Caso contrário, continue diretamente para Cavern of Wrath Waypoint
+Quando voltar, Fairgraves estará sempre perto do waypoint, simplesmente desconecte após matá-lo para ir à cidade e obter um passive point de Bestel
+
+zone:Cavern of Wrath
+No Waypoint, volte para The Ship Graveyard para encontrar The Cave e entregar o Allflame. Então desconecte para obter o passive point de Bestel
+
+zone:Cavern of Anger
+Geralmente no canto inferior direito. Você pode seguir os espíritos. Se vir pilhas de ouro, está perto de Merveil
+B,RECOMENDADO alta cold resist
