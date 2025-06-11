@@ -1,0 +1,11 @@
+﻿B,Love is Dead:         Passive
+B,Gemling Legion:       Passive
+Wings of Vastiri:     JEWEL
+G,Bath House:           Trial
+B,Reflection of Terror: Passive
+
+R,Tips:
+ Craft Fire or Minion Damage on gear after Lunaris
+  this works because of Spiritual Aid Node
+ Switch Determination to Punishment
+  after getting Ramako, Sun's Light
