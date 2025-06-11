@@ -1,0 +1,8 @@
+﻿B,The Key to Freedom: Granite Flask
+B,Death to Purity:  Viridian Jewel (can roll % mana leech from phys)
+
+R,Tips: 
+   Craft Anti-Bleed flask
+   Menagerie -> Staunching mod for flask
+   Ossuary: aquire next phys dmg CRAFT
+   Speak to Bannon in the Chamber of Innocence then Defeat Utula, return to Bannon in town to receive a Rare 4 Link Headsman Axe

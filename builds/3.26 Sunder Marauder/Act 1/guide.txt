@@ -1,0 +1,10 @@
+﻿B,Dweller of the Deep: Passive
+G,Lower Prison:        Trial / Support GEM
+B,Marooned Mariner:    Passive
+B,Way Forward:         Passive
+
+R, Tips:
+ Use 2x sapphire ring for Merveil fight (act 1 final boss)
+   buy or find: iron ring x2
+   sell: iron ring + blue gem
+   Check Vendors for Jade Amulet (for Blood Rage at 16)
